@@ -382,10 +382,10 @@
             <x>0</x>
             <y>0</y>
             <width>400</width>
-            <height>299</height>
+            <height>399</height>
            </rect>
           </property>
-          <layout class="QGridLayout" name="gridLayout_6">
+          <layout class="QGridLayout" name="gridLayout_9">
            <item row="1" column="2">
             <widget class="QPushButton" name="pushButton_imagePath">
              <property name="enabled">
@@ -437,6 +437,31 @@
              </item>
             </widget>
            </item>
+            <!-- EDIT -->
+			<item row="4" column="0" colspan="1">
+				<widget class="QGroupBox" name="groupBox_vid">				
+					<property name="title">
+						<string>Video ID</string>
+					</property>
+					<layout class="QHBoxLayout" name="horizontalLayout_20">
+						<item>
+							<widget class="QLabel" name="label_vid">
+								<property name="text">
+									<string>VID:</string>
+								</property>
+							</widget>
+						</item>
+						<item>
+							<widget class="QLineEdit" name="lineEdit_vid">
+								<property name="text">
+									<string>0</string>
+								</property>
+							</widget>
+						</item>
+					</layout>
+				</widget>
+			</item>
+			<!-- EDIT -->
            <item row="1" column="1">
             <widget class="QLineEdit" name="lineEdit_imagePath">
              <property name="enabled">
@@ -473,6 +498,9 @@
              </layout>
             </widget>
            </item>
+          
+			
+           
            <item row="2" column="0">
             <widget class="QLabel" name="label_startFrame">
              <property name="text">

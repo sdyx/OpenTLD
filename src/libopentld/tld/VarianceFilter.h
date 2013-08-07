@@ -26,7 +26,7 @@
 #ifndef VARIANCEFILTER_H_
 #define VARIANCEFILTER_H_
 
-#include <opencv/cv.h>
+#include <cv.h>
 
 #include "IntegralImage.h"
 #include "DetectionResult.h"

@@ -1,3 +1,7 @@
+# About this Version
+
+It has been forked from https://github.com/gnebehay/OpenTLD and has been altered for one to be able to select a webcam device through the GUI.
+
 # Introduction
 
 This is a C++ implementation of OpenTLD that was originally published in MATLAB by Zdenek Kalal. OpenTLD is used for tracking objects in video streams. What makes this algorithm outstanding is that it does not make use of any training data. This implementation is based solely on open source libraries, meaning that you do not need any commercial products to compile or run it.

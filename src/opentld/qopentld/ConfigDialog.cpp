@@ -67,19 +67,23 @@ void ConfigDialog::changeEvent(QEvent *e)
     }
 }
 
-void ConfigDialog::on_comboBox_method_activated(QString element)
+void ConfigDialog::on_comboBox_method_activated( QString element )
 {
     if(element != "Camera")
     {
         ui->pushButton_imagePath->setEnabled(true);
         ui->lineEdit_imagePath->setEnabled(true);
         ui->label_imagePath->setEnabled(true);
+        ui->lineEdit_vid->setEnabled( false );
+/*        ui->label_vid->setEnabled(false);*/
     }
     else
     {
         ui->pushButton_imagePath->setEnabled(false);
         ui->lineEdit_imagePath->setEnabled(false);
         ui->label_imagePath->setEnabled(false);
+        ui->lineEdit_vid->setEnabled( true );
+/*        ui->label_vid->setEnabled(true);*/
     }
 }
 
@@ -129,6 +133,15 @@ void ConfigDialog::on_buttonBox_accepted()
     else
     {
         m_settings->m_imagePath = "";
+    }
+  
+  	if( !ui->lineEdit_vid->text().isEmpty())
+  	{
+        m_settings->m_camNo = (ui->lineEdit_vid->text().toInt());
+    }
+    else
+    {
+        m_settings->m_camNo = 0;
     }
 
     if(!ui->lineEdit_modelPath->text().isEmpty())

@@ -29,8 +29,8 @@
 #include <cmath>
 #include <cstdio>
 
-#include <opencv/cv.h>
-#include <opencv/highgui.h>
+#include <cv.h>
+#include <highgui.h>
 
 const int MAX_COUNT = 500;
 const int MAX_IMG = 2;

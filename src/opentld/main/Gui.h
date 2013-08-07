@@ -22,7 +22,7 @@
 
 #include <string>
 
-#include <opencv/highgui.h>
+#include <highgui.h>
 
 namespace tld
 {

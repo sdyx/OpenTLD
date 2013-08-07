@@ -29,7 +29,7 @@
 #ifndef IMACQ_IMPL_H_
 #define IMACQ_IMPL_H_
 
-#include <opencv/highgui.h>
+#include <highgui.h>
 
 /**
  * Capturing method

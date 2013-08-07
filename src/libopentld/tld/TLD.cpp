@@ -26,7 +26,7 @@
 #include "TLD.h"
 
 #include <iostream>
-
+#include <stdio.h>
 #include "NNClassifier.h"
 #include "TLDUtil.h"
 

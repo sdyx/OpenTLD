@@ -49,7 +49,7 @@ int main(int argc, char **argv)
         return EXIT_FAILURE;
     }
 
-    fprintf(stdout, "OpenTLD appeares soon...\n");
+    fprintf( stdout, "OpenTLD appears soon...\n" );
 
     Config config(*settings);
     config.configure(main);
