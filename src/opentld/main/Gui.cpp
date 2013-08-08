@@ -21,7 +21,9 @@
  * gui.cpp
  *
  *  Created on: Oct 18, 2011
- *      Author: clemensk
+ *      Author: clemensk 
+ *	Modified on: 8th August 2013
+ *		By: Felix Baumann
  */
 
 #include "Gui.h"
@@ -113,8 +115,8 @@ int getBBFromUser(IplImage *img, CvRect &rect, Gui *gui)
     cvInitFont(&font, CV_FONT_HERSHEY_SIMPLEX, 0.5, 0.5, 0, 1, 8);
 
     cvSetMouseCallback(window_name.c_str(), mouseHandler, NULL);
-    cvPutText(img0, "Draw a bounding box and press Enter", cvPoint(0, 60),
-              &font, cvScalar(255, 255, 0));
+    cvPutText(img0, "Draw a bounding box and press Enter", cvPoint( 25, 42 ),
+              &font, cvScalar( 0, 0, 255 ));
     cvShowImage(window_name.c_str(), img0);
 
     while(!correctBB)
@@ -125,7 +127,7 @@ int getBBFromUser(IplImage *img, CvRect &rect, Gui *gui)
         {
             return PROGRAM_EXIT;
         }
-
+		// TODO FB: complains about multi-character character comparison
         if(((key == '\n') || (key == '\r') || (key == '\r\n')) && (bb->x != -1) && (bb->y != -1))
         {
             correctBB = true;

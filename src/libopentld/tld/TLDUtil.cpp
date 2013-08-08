@@ -17,6 +17,11 @@
 *
 */
 
+/* TLDUtil.cpp
+ *	Modified on: 8th August 2013
+ *		By: Felix Baumann
+ */
+ 
 #include "TLDUtil.h"
 
 #include "NormalizedPatch.h"
@@ -27,7 +32,8 @@ using namespace cv;
 
 namespace tld
 {
-
+//FB: commented out because they have never been called from anywhere
+/*
 void tldRectToPoints(Rect rect, CvPoint *p1, CvPoint *p2)
 {
     p1->x = rect.x;
@@ -35,7 +41,8 @@ void tldRectToPoints(Rect rect, CvPoint *p1, CvPoint *p2)
     p2->x = rect.x + rect.width;
     p2->y = rect.y + rect.height;
 }
-
+*/
+/*
 void tldBoundingBoxToPoints(int *bb, CvPoint *p1, CvPoint *p2)
 {
     p1->x = bb[0];
@@ -43,7 +50,7 @@ void tldBoundingBoxToPoints(int *bb, CvPoint *p1, CvPoint *p2)
     p2->x = bb[0] + bb[2];
     p2->y = bb[1] + bb[3];
 }
-
+*/
 
 
 //Returns mean-normalized patch, image must be greyscale

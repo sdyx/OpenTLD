@@ -58,7 +58,6 @@ void DetectionResult::init(int numWindows, int numTrees)
     posteriors = new float[numWindows];
     featureVectors = new int[numWindows * numTrees];
     confidentIndices = new vector<int>();
-
 }
 
 void DetectionResult::reset()

@@ -66,6 +66,8 @@ int main(int argc, char **argv)
     main->doWork();
 
     delete main;
+    delete gui;
+    delete settings;
 
     return EXIT_SUCCESS;
 }

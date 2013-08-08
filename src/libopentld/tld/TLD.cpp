@@ -599,6 +599,8 @@ void TLD::readFromFile(const char *path)
     detectorCascade->initialised = true;
 
     ec->initFeatureOffsets();
+    // FB: close the file to avoid leakage
+    fclose( file );
 
 }
 

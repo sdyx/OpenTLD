@@ -96,6 +96,8 @@ void Main::doWork()
         skipProcessingOnce = true;
         reuseFrameOnce = true;
     }
+    // deleting initialBB to avoid memLeaks
+    delete initialBB;
 
     while(imAcqHasMoreFrames(imAcq))
     {
@@ -287,5 +289,10 @@ void Main::doWork()
     if(exportModelAfterRun)
     {
         tld->writeToFile(modelExportFile);
+    }
+    //FB: Avoiding leakage
+	if(printResults != NULL)
+    {
+		fclose( resultsFile );
     }
 }

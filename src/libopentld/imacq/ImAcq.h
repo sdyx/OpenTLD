@@ -24,6 +24,8 @@
  *      Author: Georg Nebehaiy
  *  Modified on: 26th May 2013
  *      By: Jonathan Senecal
+ *	Modified on: 8th August 2013
+ *		By: Felix Baumann
  */
 
 #ifndef IMACQ_IMPL_H_
@@ -62,15 +64,15 @@ void imAcqInit(ImAcq *imAcq);
 
 void imAcqRelease(ImAcq *imAcq);
 
-void imAcqVidSetNextFrameNumber(ImAcq *imAcq, int nFrame);
-int imAcqVidGetNextFrameNumber(ImAcq *imAcq);
+//void imAcqVidSetNextFrameNumber(ImAcq *imAcq, int nFrame);
+//int imAcqVidGetNextFrameNumber(ImAcq *imAcq);
 int imAcqVidGetNumberOfFrames(ImAcq *imAcq);
 int imAcqHasMoreFrames(ImAcq *imAcq);
-IplImage *imAcqGetImgAndAdvance(ImAcq *imAcq);
+//IplImage *imAcqGetImgAndAdvance(ImAcq *imAcq);
 IplImage *imAcqGetImg(ImAcq *imAcq);
-IplImage *imAcqGetImgByFrame(ImAcq *imAcq, int fNo);
+//IplImage *imAcqGetImgByFrame(ImAcq *imAcq, int fNo);
 IplImage *imAcqGetImgByCurrentTime(ImAcq *imAcq);
-IplImage *imAcqLoadImg(ImAcq *imAcq, char *path);
+//IplImage *imAcqLoadImg(ImAcq *imAcq, char *path);
 IplImage *imAcqLoadCurrentFrame(ImAcq *imAcq);
 IplImage *imAcqLoadVidFrame(CvCapture *capture);
 IplImage *imAcqGrab(CvCapture *capture);

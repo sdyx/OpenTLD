@@ -38,7 +38,7 @@ namespace tld
 
 class NNClassifier
 {
-    float ncc(float *f1, float *f2);
+    static float ncc(float *f1, float *f2);
 public:
     bool enabled;
 

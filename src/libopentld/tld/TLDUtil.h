@@ -21,7 +21,9 @@
  * util.h
  *
  *  Created on: 30.05.2011
- *      Author: Georg Nebehay
+ *      Author: Georg Nebehay 
+ *	Modified on: 8th August 2013
+ *		By: Felix Baumann
  */
 
 #ifndef TLDUTIL_H_
@@ -90,8 +92,9 @@ cv::Rect tldArrayToRect(T *boundary)
 
 
 int tldIsInside(int *bb1, int *bb2);
-void tldRectToPoints(CvRect rect, CvPoint *p1, CvPoint *p2);
-void tldBoundingBoxToPoints(int *bb, CvPoint *p1, CvPoint *p2);
+// FB: commented them out because they were never called (cppcheck-1.61)
+//void tldRectToPoints(CvRect rect, CvPoint *p1, CvPoint *p2);
+//void tldBoundingBoxToPoints(int *bb, CvPoint *p1, CvPoint *p2);
 
 void tldNormalizeImg(const cv::Mat &img, float *result, int size);
 

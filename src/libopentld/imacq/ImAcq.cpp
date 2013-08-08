@@ -106,7 +106,8 @@ void imAcqFree(ImAcq *imAcq)
 
     free(imAcq);
 }
-
+// FB: never used (cppcheck 1.61)
+/*
 IplImage *imAcqLoadImg(ImAcq *imAcq, char *path)
 {
     IplImage *image = cvLoadImage(path);
@@ -119,6 +120,7 @@ IplImage *imAcqLoadImg(ImAcq *imAcq, char *path)
     return image;
 
 }
+*/
 
 IplImage *imAcqLoadFrame(ImAcq *imAcq, int fNo)
 {
@@ -196,7 +198,8 @@ IplImage *imAcqGrab(CvCapture *capture)
 
     return cvCloneImage(frame);
 }
-
+// FB: never used (cppcheck 1.61)
+/*
 IplImage *imAcqGetImgByFrame(ImAcq *imAcq, int fNo)
 {
     int oldFNo = imAcq->currentFrame;
@@ -208,7 +211,9 @@ IplImage *imAcqGetImgByFrame(ImAcq *imAcq, int fNo)
 
     return img;
 }
-
+*/
+// FB: never used (cppcheck 1.61)
+/*
 IplImage *imAcqGetImgAndAdvance(ImAcq *imAcq)
 {
     IplImage *img = imAcqGetImg(imAcq);
@@ -216,6 +221,7 @@ IplImage *imAcqGetImgAndAdvance(ImAcq *imAcq)
 
     return img;
 }
+*/
 
 void imAcqAdvance(ImAcq *imAcq)
 {
@@ -235,7 +241,8 @@ int imAcqHasMoreFrames(ImAcq *imAcq)
         return 1;
     }
 }
-
+// FB: never used (cppcheck 1.61)
+/*
 int imAcqVidGetNextFrameNumber(ImAcq *imAcq)
 {
     // OpenCV index starts with 0
@@ -243,13 +250,15 @@ int imAcqVidGetNextFrameNumber(ImAcq *imAcq)
     // frame number to be encoded not the NEXT
     return ((int) cvGetCaptureProperty(imAcq->capture , CV_CAP_PROP_POS_FRAMES)) + 2;
 }
-
+*/
+// FB: never used (cppcheck 1.61)
+/*
 void imAcqVidSetNextFrameNumber(ImAcq *imAcq, int nFrame)
 {
     // OpenCV index starts with 0
     cvSetCaptureProperty(imAcq->capture , CV_CAP_PROP_POS_FRAMES, nFrame - 2.0);
 }
-
+*/
 int imAcqVidGetNumberOfFrames(ImAcq *imAcq)
 {
     return ((int) cvGetCaptureProperty(imAcq->capture , CV_CAP_PROP_FRAME_COUNT));

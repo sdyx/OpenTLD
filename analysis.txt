@@ -1,0 +1,395 @@
+[../src/3rdparty/cvblobs/BlobContour.h:48]: (style, inconclusive) Technically the member function 'CBlobContour::IsEmpty' can be const.
+[../src/3rdparty/cvblobs/BlobContour.cpp:63]: (information) --check-library: Function cvClearSeq() should have <noreturn> configuration
+[../src/3rdparty/cvblobs/BlobContour.cpp:74]: (information) --check-library: Function cvClearSeq() should have <noreturn> configuration
+[../src/3rdparty/cvblobs/BlobContour.cpp:101]: (information) --check-library: Function cvSeqPush() should have <noreturn> configuration
+[../src/3rdparty/cvblobs/BlobContour.cpp:194]: (information) --check-library: Function cvMoments() should have <noreturn> configuration
+[../src/3rdparty/cvblobs/BlobContour.cpp:248]: (information) --check-library: Function CV_WRITE_SEQ_ELEM() should have <noreturn> configuration
+[../src/3rdparty/cvblobs/BlobOperators.h:30]: (style) C-style pointer casting
+[../src/3rdparty/cvblobs/BlobOperators.h:688]: (style) Variable 'getOrientation' is not assigned a value.
+[../src/3rdparty/cvblobs/BlobOperators.cpp:397]: (style) Variable 'getXCenter' is not assigned a value.
+[../src/3rdparty/cvblobs/BlobOperators.cpp:398]: (style) Variable 'getYCenter' is not assigned a value.
+[../src/3rdparty/cvblobs/blob.h:70]: (style, inconclusive) Technically the member function 'CBlob::GetID' can be const.
+[../src/3rdparty/cvblobs/BlobOperators.h:28]: (style, inconclusive) Technically the member function 'COperadorBlob::operatorCOperadorBlob*' can be const.
+[../src/3rdparty/cvblobs/BlobProperties.cpp:46]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[../src/3rdparty/cvblobs/BlobProperties.cpp:76]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[../src/3rdparty/cvblobs/BlobResult.cpp:938]: (error) fprintf format string has 9 parameters but only 8 are given.
+[../src/3rdparty/cvblobs/BlobResult.cpp:51]: (performance) Variable 'm_blobs' is assigned in constructor body. Consider performing initialization in initialization list.
+[../src/3rdparty/cvblobs/BlobResult.cpp:137]: (performance) Variable 'm_blobs' is assigned in constructor body. Consider performing initialization in initialization list.
+[../src/3rdparty/cvblobs/BlobResult.cpp:867] -> [../src/3rdparty/cvblobs/BlobResult.h:157]: (performance, inconclusive) Technically the member function 'CBlobResult::RaiseError' can be static.
+[../src/3rdparty/cvblobs/BlobResult.cpp:181]: (information) --check-library: Function ClearBlobs() should have <noreturn> configuration
+[../src/3rdparty/cvblobs/BlobResult.cpp:443]: (information) --check-library: Function RaiseError() should have <noreturn> configuration
+[../src/3rdparty/cvblobs/BlobResult.cpp:508]: (information) --check-library: Function DoFilter() should have <noreturn> configuration
+[../src/3rdparty/cvblobs/BlobResult.cpp:722]: (information) --check-library: Function RaiseError() should have <noreturn> configuration
+[../src/3rdparty/cvblobs/BlobResult.cpp:729]: (information) --check-library: Function RaiseError() should have <noreturn> configuration
+[../src/3rdparty/cvblobs/BlobResult.cpp:938]: (information) --check-library: Function fprintf() should have <noreturn> configuration
+[../src/3rdparty/cvblobs/BlobResult.cpp:941]: (information) --check-library: Function fclose() should have <noreturn> configuration
+[../src/3rdparty/cvblobs/BlobResult.cpp:151]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[../src/3rdparty/cvblobs/BlobResult.cpp:152]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[../src/3rdparty/cvblobs/BlobResult.cpp:234]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[../src/3rdparty/cvblobs/BlobResult.cpp:235]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[../src/3rdparty/cvblobs/BlobResult.cpp:282]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[../src/3rdparty/cvblobs/BlobResult.cpp:284]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[../src/3rdparty/cvblobs/BlobResult.cpp:408]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[../src/3rdparty/cvblobs/BlobResult.cpp:409]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[../src/3rdparty/cvblobs/BlobResult.cpp:583]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[../src/3rdparty/cvblobs/BlobResult.cpp:803]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[../src/3rdparty/cvblobs/BlobResult.cpp:835]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[../src/3rdparty/cvblobs/BlobResult.cpp:358]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[../src/3rdparty/cvblobs/BlobResult.cpp:359]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[../src/3rdparty/cvblobs/ComponentLabeling.cpp:101]: (style) The scope of the variable 'pInputImage' can be reduced.
+[../src/3rdparty/cvblobs/ComponentLabeling.cpp:101]: (style) The scope of the variable 'pAboveInputImage' can be reduced.
+[../src/3rdparty/cvblobs/ComponentLabeling.cpp:101]: (style) The scope of the variable 'pBelowInputImage' can be reduced.
+[../src/3rdparty/cvblobs/ComponentLabeling.cpp:394]: (information) --check-library: Function ASSIGN_VISITED() should have <noreturn> configuration
+[../src/3rdparty/cvblobs/blob.cpp:252]: (style) The scope of the variable 'find' can be reduced.
+[../src/3rdparty/cvblobs/blob.cpp:289]: (style, inconclusive) Boolean variable 'xBorder' is used in bitwise operation. Did you mean '&&'?
+[../src/3rdparty/cvblobs/blob.cpp:290]: (style, inconclusive) Boolean variable 'yBorder' is used in bitwise operation. Did you mean '&&'?
+[../src/3rdparty/cvblobs/blob.cpp:74]: (information) --check-library: Function cvReleaseMemStorage() should have <noreturn> configuration
+[../src/3rdparty/cvblobs/blob.cpp:113]: (information) --check-library: Function cvReleaseMemStorage() should have <noreturn> configuration
+[../src/3rdparty/cvblobs/blob.cpp:651]: (information) --check-library: Function cvDrawContours() should have <noreturn> configuration
+[../src/3rdparty/cvblobs/blob.cpp:702]: (information) --check-library: Function CV_WRITE_SEQ_ELEM() should have <noreturn> configuration
+[../src/3rdparty/cvblobs/blob.cpp:704]: (information) --check-library: Function cvEndWriteSeq() should have <noreturn> configuration
+[../src/3rdparty/cvblobs/blob.cpp:84]: (performance) Possible inefficient checking for 'm_internalContours' emptiness.
+[../src/3rdparty/cvblobs/blob.cpp:99]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[../src/3rdparty/cvblobs/blob.cpp:100]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[../src/3rdparty/cvblobs/blob.cpp:125]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[../src/3rdparty/cvblobs/blob.cpp:169]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[../src/3rdparty/cvblobs/blob.cpp:199]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[../src/3rdparty/cvblobs/blob.cpp:391]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[../src/3rdparty/cvblobs/blob.cpp:447]: (performance) Prefer prefix ++/-- operators for non-primitive types.
+[../src/3rdparty/libconfig/grammar.c]: (information) Too many #ifdef configurations - cppcheck only checks 12 of 21 configurations. Use --force to check all configurations.
+[../src/3rdparty/libconfig/grammar.c:1172]: (warning) Assignment of function parameter has no effect outside the function.
+[../src/3rdparty/libconfig/grammar.c:1361]: (information) --check-library: Function free() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:133]: (information) --check-library: Function capture_parse_pos() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:146]: (information) --check-library: Function capture_parse_pos() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:169]: (information) --check-library: Function capture_parse_pos() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:194]: (information) --check-library: Function free() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:195]: (information) --check-library: Function free() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:213]: (information) --check-library: Function capture_parse_pos() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:217]: (information) --check-library: Function config_setting_set_bool() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:232]: (information) --check-library: Function capture_parse_pos() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:238]: (information) --check-library: Function config_setting_set_format() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:254]: (information) --check-library: Function capture_parse_pos() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:260]: (information) --check-library: Function config_setting_set_format() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:276]: (information) --check-library: Function capture_parse_pos() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:282]: (information) --check-library: Function config_setting_set_format() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:298]: (information) --check-library: Function capture_parse_pos() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:304]: (information) --check-library: Function config_setting_set_format() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:319]: (information) --check-library: Function capture_parse_pos() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:323]: (information) --check-library: Function config_setting_set_float() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:340]: (information) --check-library: Function capture_parse_pos() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:347]: (information) --check-library: Function free() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:378]: (information) --check-library: Function capture_parse_pos() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:1822]: (information) --check-library: Function libconfig_yyerror() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:1972]: (information) --check-library: Function yydestruct() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:1986]: (information) --check-library: Function free() should have <noreturn> configuration
+[../src/3rdparty/libconfig/grammar.c:1]: (information) Skipping configuration 'YYPARSE_PARAM' since the value of 'YYPARSE_PARAM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.
+[../src/3rdparty/libconfig/grammar.c:1]: (information) Skipping configuration 'YYTYPE_INT16' since the value of 'YYTYPE_INT16' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.
+[../src/3rdparty/libconfig/grammar.c:1]: (information) Skipping configuration 'YYTYPE_INT8' since the value of 'YYTYPE_INT8' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.
+[../src/3rdparty/libconfig/grammar.c:1]: (information) Skipping configuration 'YYTYPE_UINT16' since the value of 'YYTYPE_UINT16' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.
+[../src/3rdparty/libconfig/grammar.c:1]: (information) Skipping configuration 'YYTYPE_UINT8' since the value of 'YYTYPE_UINT8' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.
+[../src/3rdparty/libconfig/libconfig.c]: (information) Too many #ifdef configurations - cppcheck only checks 12 of 13 configurations. Use --force to check all configurations.
+[../src/3rdparty/libconfig/libconfig.c:224]: (information) --check-library: Function strcat() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:379]: (information) --check-library: Function __config_indent() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:382]: (information) --check-library: Function fputc() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:603]: (information) --check-library: Function libconfig_yy_delete_buffer() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:248]: (style) The scope of the variable 'p' can be reduced.
+[../src/3rdparty/libconfig/libconfig.c:488]: (style) The scope of the variable 'p' can be reduced.
+[../src/3rdparty/libconfig/libconfig.c:489]: (style) The scope of the variable 'i' can be reduced.
+[../src/3rdparty/libconfig/libconfig.c:557]: (style) The scope of the variable 'buffer' can be reduced.
+[../src/3rdparty/libconfig/libconfig.c:589]: (style) Variable 'buffer' is assigned a value that is never used.
+[../src/3rdparty/libconfig/libconfig.c:157]: (information) --check-library: Function fprintf() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:474]: (information) --check-library: Function __config_list_destroy() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:587]: (information) --check-library: Function libconfig_yyrestart() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:636]: (information) --check-library: Function __config_indent() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:641]: (information) --check-library: Function fprintf() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:651]: (information) --check-library: Function fputc() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:663]: (information) --check-library: Function __config_locale_restore() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:162]: (information) --check-library: Function fputc() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:283]: (information) --check-library: Function fputc() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:285]: (information) --check-library: Function fprintf() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:312]: (information) --check-library: Function fputc() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:314]: (information) --check-library: Function fputc() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:341]: (information) --check-library: Function fputc() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:343]: (information) --check-library: Function fputc() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:364]: (information) --check-library: Function __config_indent() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:366]: (information) --check-library: Function fprintf() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:375]: (information) --check-library: Function __config_write_setting() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:464]: (information) --check-library: Function free() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:467]: (information) --check-library: Function free() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:480]: (information) --check-library: Function free() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:497]: (information) --check-library: Function __config_setting_destroy() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:499]: (information) --check-library: Function free() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:502]: (information) --check-library: Function free() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:713]: (information) --check-library: Function free() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:718]: (information) --check-library: Function memset() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:1109]: (information) --check-library: Function free() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.c:91]: (information) --check-library: Function uselocale() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfigcpp.c++:1155]: (information) --check-library: Function config_setting_set_hook() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfigcpp.c++:764]: (style) 'operator=' should return reference to 'this' instance.
+[../src/3rdparty/libconfig/libconfigcpp.c++:191]: (warning) 'operator=' should check for assignment to self to avoid problems with dynamic memory.
+[../src/3rdparty/libconfig/libconfig.h++:302]: (information) --check-library: Function remove() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfigcpp.c++:308]: (information) --check-library: Function config_set_destructor() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfigcpp.c++:323]: (information) --check-library: Function config_set_auto_convert() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfigcpp.c++:363]: (information) --check-library: Function config_set_include_dir() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfigcpp.c++:399]: (information) --check-library: Function handleError() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfigcpp.c++:407]: (information) --check-library: Function handleError() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfigcpp.c++:414]: (information) --check-library: Function config_write() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfigcpp.c++:423]: (information) --check-library: Function handleError() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfigcpp.c++:431]: (information) --check-library: Function handleError() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfigcpp.c++:619]: (information) --check-library: Function config_setting_set_format() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.h++:95]: (information) --check-library: Function SettingTypeException() should have <noreturn> configuration
+[../src/3rdparty/libconfig/libconfig.h++:111]: (information) --check-library: Function SettingNotFoundException() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanctx.c:116]: (information) --check-library: Function strcat() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanctx.c:84]: (information) --check-library: Function fclose() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:1716]: (information) --check-library: Function yy_fatal_error() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:1718] -> [../src/3rdparty/libconfig/scanner.c:1715]: (warning, inconclusive) Possible null pointer dereference: b - otherwise it is redundant to check it against null.
+[../src/3rdparty/libconfig/scanner.c:1723] -> [../src/3rdparty/libconfig/scanner.c:1715]: (warning, inconclusive) Possible null pointer dereference: b - otherwise it is redundant to check it against null.
+[../src/3rdparty/libconfig/scanner.c:1724] -> [../src/3rdparty/libconfig/scanner.c:1715]: (warning, inconclusive) Possible null pointer dereference: b - otherwise it is redundant to check it against null.
+[../src/3rdparty/libconfig/scanner.c:1725]: (information) --check-library: Function yy_fatal_error() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:1727] -> [../src/3rdparty/libconfig/scanner.c:1715]: (warning, inconclusive) Possible null pointer dereference: b - otherwise it is redundant to check it against null.
+[../src/3rdparty/libconfig/scanner.c:1934]: (information) --check-library: Function yy_fatal_error() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:1936] -> [../src/3rdparty/libconfig/scanner.c:1933]: (warning, inconclusive) Possible null pointer dereference: b - otherwise it is redundant to check it against null.
+[../src/3rdparty/libconfig/scanner.c:1937] -> [../src/3rdparty/libconfig/scanner.c:1933]: (warning, inconclusive) Possible null pointer dereference: b - otherwise it is redundant to check it against null.
+[../src/3rdparty/libconfig/scanner.c:1938] -> [../src/3rdparty/libconfig/scanner.c:1933]: (warning, inconclusive) Possible null pointer dereference: b - otherwise it is redundant to check it against null.
+[../src/3rdparty/libconfig/scanner.c:1939] -> [../src/3rdparty/libconfig/scanner.c:1933]: (warning, inconclusive) Possible null pointer dereference: b - otherwise it is redundant to check it against null.
+[../src/3rdparty/libconfig/scanner.c:1940] -> [../src/3rdparty/libconfig/scanner.c:1933]: (warning, inconclusive) Possible null pointer dereference: b - otherwise it is redundant to check it against null.
+[../src/3rdparty/libconfig/scanner.c:1941] -> [../src/3rdparty/libconfig/scanner.c:1933]: (warning, inconclusive) Possible null pointer dereference: b - otherwise it is redundant to check it against null.
+[../src/3rdparty/libconfig/scanner.c:1942] -> [../src/3rdparty/libconfig/scanner.c:1933]: (warning, inconclusive) Possible null pointer dereference: b - otherwise it is redundant to check it against null.
+[../src/3rdparty/libconfig/scanner.c:1943] -> [../src/3rdparty/libconfig/scanner.c:1933]: (warning, inconclusive) Possible null pointer dereference: b - otherwise it is redundant to check it against null.
+[../src/3rdparty/libconfig/scanner.c:1944] -> [../src/3rdparty/libconfig/scanner.c:1933]: (warning, inconclusive) Possible null pointer dereference: b - otherwise it is redundant to check it against null.
+[../src/3rdparty/libconfig/scanner.c:1983]: (information) --check-library: Function yy_fatal_error() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:1992]: (information) --check-library: Function yy_fatal_error() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:1997] -> [../src/3rdparty/libconfig/scanner.c:1991]: (warning, inconclusive) Possible null pointer dereference: b - otherwise it is redundant to check it against null.
+[../src/3rdparty/libconfig/scanner.c:378]: (style) struct or union member 'yy_trans_info::yy_verify' is never used.
+[../src/3rdparty/libconfig/scanner.c:379]: (style) struct or union member 'yy_trans_info::yy_nxt' is never used.
+[../src/3rdparty/libconfig/scanner.c:2310]: (warning) Assignment of function parameter has no effect outside the function.
+[../src/3rdparty/libconfig/scanner.c:895]: (information) --check-library: Function libconfig_yy_load_buffer_state() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:1374]: (information) --check-library: Function yy_fatal_error() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:1656]: (information) --check-library: Function libconfig_yy_load_buffer_state() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:1749]: (information) --check-library: Function libconfig_yyfree() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:1751]: (information) --check-library: Function libconfig_yyfree() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:1812]: (information) --check-library: Function libconfig_yy_load_buffer_state() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:1888]: (information) --check-library: Function yy_fatal_error() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:1908]: (information) --check-library: Function yy_fatal_error() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:2123]: (information) --check-library: Function yy_fatal_error() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:2138]: (information) --check-library: Function yy_fatal_error() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:108]: (information) --check-library: Function strbuf_append() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:109]: (information) --check-library: Function strbuf_append() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:110]: (information) --check-library: Function strbuf_append() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:111]: (information) --check-library: Function strbuf_append() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:112]: (information) --check-library: Function strbuf_append() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:113]: (information) --check-library: Function strbuf_append() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:114]: (information) --check-library: Function strbuf_append() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:118]: (information) --check-library: Function strbuf_append() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:127]: (information) --check-library: Function strbuf_append() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:128]: (information) --check-library: Function strbuf_append() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:129]: (information) --check-library: Function strbuf_append() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:138]: (information) --check-library: Function libconfig_yy_switch_to_buffer() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:186]: (information) --check-library: Function libconfig_yy_switch_to_buffer() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:1352]: (information) --check-library: Function yy_fatal_error() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:1442]: (information) --check-library: Function yy_fatal_error() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:1456]: (information) --check-library: Function yy_fatal_error() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:1466]: (information) --check-library: Function libconfig_yyrestart() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:1485]: (information) --check-library: Function yy_fatal_error() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:2293]: (information) --check-library: Function libconfig_yypop_buffer_state() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:2357]: (information) --check-library: Function free() should have <noreturn> configuration
+[../src/3rdparty/libconfig/scanner.c:1]: (information) Skipping configuration 'YY_USER_INIT' since the value of 'YY_USER_INIT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.
+[../src/libopentld/imacq/ImAcq.cpp:104]: (information) --check-library: Function cvReleaseCapture() should have <noreturn> configuration
+[../src/libopentld/imacq/ImAcq.cpp:107]: (information) --check-library: Function free() should have <noreturn> configuration
+[../src/libopentld/mftracker/Lk.cpp:109]: (information) --check-library: Function cvReleaseImage() should have <noreturn> configuration
+[../src/libopentld/mftracker/Median.cpp:49]: (style) The scope of the variable 'middle' can be reduced.
+[../src/libopentld/mftracker/Median.cpp:49]: (style) The scope of the variable 'll' can be reduced.
+[../src/libopentld/mftracker/Median.cpp:49]: (style) The scope of the variable 'hh' can be reduced.
+[../src/libopentld/tld/IntegralImage.h:44]: (warning) Member variable 'IntegralImage::width' is not initialized in the constructor.
+[../src/libopentld/tld/IntegralImage.h:44]: (warning) Member variable 'IntegralImage::height' is not initialized in the constructor.
+[../src/libopentld/tld/IntegralImage.h:54]: (style, inconclusive) Technically the member function 'tld::IntegralImage::calcIntImg' can be const.
+[../src/libopentld/tld/Clustering.h:38]: (style) 'class Clustering' does not have a copy constructor which is recommended since the class contains a pointer to allocated memory.
+[../src/libopentld/tld/IntegralImage.h:36]: (style) 'class IntegralImage' does not have a copy constructor which is recommended since the class contains a pointer to allocated memory.
+[../src/libopentld/tld/Clustering.cpp:120]: (information) --check-library: Function calcMeanRect() should have <noreturn> configuration
+[../src/libopentld/tld/Clustering.cpp:260]: (error) Mismatching allocation and deallocation: distUsed
+[../src/libopentld/tld/DetectionResult.h:37]: (style) 'class DetectionResult' does not have a copy constructor which is recommended since the class contains a pointer to allocated memory.
+[../src/libopentld/tld/DetectionResult.cpp:52]: (information) --check-library: Function release() should have <noreturn> configuration
+[../src/libopentld/tld/DetectorCascade.cpp:41]: (warning) Member variable 'DetectorCascade::numScales' is not initialized in the constructor.
+[../src/libopentld/tld/DetectorCascade.cpp:41]: (warning) Member variable 'DetectorCascade::scales' is not initialized in the constructor.
+[../src/libopentld/tld/DetectorCascade.cpp:41]: (warning) Member variable 'DetectorCascade::numWindows' is not initialized in the constructor.
+[../src/libopentld/tld/DetectorCascade.cpp:41]: (warning) Member variable 'DetectorCascade::windows' is not initialized in the constructor.
+[../src/libopentld/tld/DetectorCascade.cpp:41]: (warning) Member variable 'DetectorCascade::windowOffsets' is not initialized in the constructor.
+[../src/libopentld/tld/DetectorCascade.h:44]: (style) 'class DetectorCascade' does not have a copy constructor which is recommended since the class contains a pointer to allocated memory.
+[../src/libopentld/tld/DetectorCascade.cpp:243]: (information) --check-library: Function assert() should have <noreturn> configuration
+[../src/libopentld/tld/EnsembleClassifier.cpp:45]: (warning) Member variable 'EnsembleClassifier::img' is not initialized in the constructor.
+[../src/libopentld/tld/EnsembleClassifier.cpp:45]: (warning) Member variable 'EnsembleClassifier::imgWidthStep' is not initialized in the constructor.
+[../src/libopentld/tld/EnsembleClassifier.cpp:45]: (warning) Member variable 'EnsembleClassifier::numScales' is not initialized in the constructor.
+[../src/libopentld/tld/EnsembleClassifier.cpp:45]: (warning) Member variable 'EnsembleClassifier::scales' is not initialized in the constructor.
+[../src/libopentld/tld/EnsembleClassifier.cpp:45]: (warning) Member variable 'EnsembleClassifier::windowOffsets' is not initialized in the constructor.
+[../src/libopentld/tld/EnsembleClassifier.cpp:45]: (warning) Member variable 'EnsembleClassifier::numIndices' is not initialized in the constructor.
+[../src/libopentld/tld/EnsembleClassifier.cpp:45]: (warning) Member variable 'EnsembleClassifier::detectionResult' is not initialized in the constructor.
+[../src/libopentld/tld/EnsembleClassifier.cpp:47] -> [../src/libopentld/tld/EnsembleClassifier.h:54]: (style, inconclusive) Member variable 'EnsembleClassifier::featureOffsets' is in the wrong place in the initializer list.
+[../src/libopentld/tld/EnsembleClassifier.cpp:186] -> [../src/libopentld/tld/EnsembleClassifier.h:38]: (style, inconclusive) Technically the member function 'tld::EnsembleClassifier::calcConfidence' can be const.
+[../src/libopentld/tld/EnsembleClassifier.cpp:153] -> [../src/libopentld/tld/EnsembleClassifier.h:39]: (style, inconclusive) Technically the member function 'tld::EnsembleClassifier::calcFernFeature' can be const.
+[../src/libopentld/tld/EnsembleClassifier.cpp:59]: (information) --check-library: Function release() should have <noreturn> configuration
+[../src/libopentld/tld/EnsembleClassifier.cpp:69]: (information) --check-library: Function initPosteriors() should have <noreturn> configuration
+[../src/libopentld/tld/EnsembleClassifier.cpp:245]: (information) --check-library: Function updatePosteriors() should have <noreturn> configuration
+[../src/libopentld/tld/EnsembleClassifier.cpp:231]: (information) --check-library: Function updatePosterior() should have <noreturn> configuration
+[../src/libopentld/tld/ForegroundDetector.cpp:35]: (warning) Member variable 'ForegroundDetector::detectionResult' is not initialized in the constructor.
+[../src/libopentld/tld/ForegroundDetector.cpp:45] -> [../src/libopentld/tld/ForegroundDetector.h:49]: (performance, inconclusive) Technically the member function 'tld::ForegroundDetector::release' can be static.
+[../src/libopentld/tld/MedianFlowTracker.cpp:45]: (information) --check-library: Function cleanPreviousData() should have <noreturn> configuration
+[../src/libopentld/tld/NNClassifier.cpp:37]: (warning) Member variable 'NNClassifier::enabled' is not initialized in the constructor.
+[../src/libopentld/tld/NNClassifier.cpp:37]: (warning) Member variable 'NNClassifier::windows' is not initialized in the constructor.
+[../src/libopentld/tld/NNClassifier.cpp:37]: (warning) Member variable 'NNClassifier::detectionResult' is not initialized in the constructor.
+[../src/libopentld/tld/NNClassifier.h:39]: (style) 'class NNClassifier' does not have a copy constructor which is recommended since the class contains a pointer to allocated memory.
+[../src/libopentld/tld/TLD.cpp:39]: (warning) Member variable 'TLD::currConf' is not initialized in the constructor.
+[../src/libopentld/tld/TLD.h:38]: (style) 'class TLD' does not have a copy constructor which is recommended since the class contains a pointer to allocated memory.
+[../src/libopentld/tld/TLD.cpp:484]: (portability) scanf without field width limits can crash with huge input data on some versions of libc.
+[../src/libopentld/tld/TLD.cpp:486]: (portability) scanf without field width limits can crash with huge input data on some versions of libc.
+[../src/libopentld/tld/TLD.cpp:489]: (portability) scanf without field width limits can crash with huge input data on some versions of libc.
+[../src/libopentld/tld/TLD.cpp:493]: (portability) scanf without field width limits can crash with huge input data on some versions of libc.
+[../src/libopentld/tld/TLD.cpp:525]: (portability) scanf without field width limits can crash with huge input data on some versions of libc.
+[../src/libopentld/tld/TLD.cpp:556]: (portability) scanf without field width limits can crash with huge input data on some versions of libc.
+[../src/libopentld/tld/TLD.cpp:560]: (portability) scanf without field width limits can crash with huge input data on some versions of libc.
+[../src/libopentld/tld/TLD.cpp:576]: (portability) scanf without field width limits can crash with huge input data on some versions of libc.
+[../src/libopentld/tld/TLD.cpp:582]: (portability) scanf without field width limits can crash with huge input data on some versions of libc.
+[../src/libopentld/tld/TLD.cpp:588]: (portability) scanf without field width limits can crash with huge input data on some versions of libc.
+[../src/libopentld/tld/TLD.cpp:100]: (information) --check-library: Function initialLearning() should have <noreturn> configuration
+[../src/libopentld/tld/TLD.cpp:123]: (information) --check-library: Function learn() should have <noreturn> configuration
+[../src/libopentld/tld/TLD.cpp:507]: (portability) Non reentrant function 'strtok' called. For threadsafe applications it is recommended to use the reentrant replacement function 'strtok_r'.
+[../src/libopentld/tld/TLD.cpp:515]: (portability) Non reentrant function 'strtok' called. For threadsafe applications it is recommended to use the reentrant replacement function 'strtok_r'.
+[../src/libopentld/tld/TLD.cpp:539]: (portability) Non reentrant function 'strtok' called. For threadsafe applications it is recommended to use the reentrant replacement function 'strtok_r'.
+[../src/libopentld/tld/TLD.cpp:547]: (portability) Non reentrant function 'strtok' called. For threadsafe applications it is recommended to use the reentrant replacement function 'strtok_r'.
+[../src/libopentld/tld/TLD.cpp:396]: (information) --check-library: Function fprintf() should have <noreturn> configuration
+[../src/libopentld/tld/TLD.cpp:399]: (information) --check-library: Function fprintf() should have <noreturn> configuration
+[../src/libopentld/tld/TLD.cpp:413]: (information) --check-library: Function fprintf() should have <noreturn> configuration
+[../src/libopentld/tld/TLD.cpp:416]: (information) --check-library: Function fprintf() should have <noreturn> configuration
+[../src/libopentld/tld/TLD.cpp:432]: (information) --check-library: Function fprintf() should have <noreturn> configuration
+[../src/libopentld/tld/TLD.cpp:457]: (information) --check-library: Function fprintf() should have <noreturn> configuration
+[../src/libopentld/tld/TLD.cpp:461]: (information) --check-library: Function fclose() should have <noreturn> configuration
+[../src/libopentld/tld/TLD.cpp:577]: (information) --check-library: Function fgets() should have <noreturn> configuration
+[../src/libopentld/tld/TLD.cpp:603]: (information) --check-library: Function fclose() should have <noreturn> configuration
+[../src/libopentld/tld/TLDUtil.cpp:96]: (information) --check-library: Function tldExtractSubImage() should have <noreturn> configuration
+[../src/libopentld/tld/TLDUtil.cpp:103]: (information) --check-library: Function tldNormalizeImg() should have <noreturn> configuration
+[../src/libopentld/tld/TLDUtil.cpp:111]: (information) --check-library: Function tldExtractNormalizedPatch() should have <noreturn> configuration
+[../src/libopentld/tld/TLDUtil.cpp:116]: (information) --check-library: Function tldExtractNormalizedPatch() should have <noreturn> configuration
+[../src/libopentld/tld/TLDUtil.cpp:218]: (information) --check-library: Function tldOverlap() should have <noreturn> configuration
+[../src/libopentld/tld/VarianceFilter.cpp:37]: (warning) Member variable 'VarianceFilter::windowOffsets' is not initialized in the constructor.
+[../src/libopentld/tld/VarianceFilter.cpp:37]: (warning) Member variable 'VarianceFilter::detectionResult' is not initialized in the constructor.
+[../src/libopentld/tld/VarianceFilter.cpp:61] -> [../src/libopentld/tld/VarianceFilter.h:56]: (style, inconclusive) Technically the member function 'tld::VarianceFilter::calcVariance' can be const.
+[../src/libopentld/tld/VarianceFilter.cpp:47]: (information) --check-library: Function release() should have <noreturn> configuration
+[../src/opentld/main/Config.cpp:530]: (style) Variable 'errbuf' is assigned a value that is never used.
+[../src/opentld/main/Config.cpp:547]: (style) Variable 'errbuf' is assigned a value that is never used.
+[../src/opentld/main/Main.h:63]: (warning) Member variable 'Main::imAcq' is not initialized in the constructor.
+[../src/opentld/main/Main.h:63]: (warning) Member variable 'Main::gui' is not initialized in the constructor.
+[../src/opentld/main/Main.h:63]: (warning) Member variable 'Main::modelPath' is not initialized in the constructor.
+[../src/opentld/main/Config.cpp:75]: (warning) Member variable 'Config::m_selectManuallySet' is not initialized in the constructor.
+[../src/opentld/main/Config.cpp:75]: (warning) Member variable 'Config::m_methodSet' is not initialized in the constructor.
+[../src/opentld/main/Config.cpp:75]: (warning) Member variable 'Config::m_startFrameSet' is not initialized in the constructor.
+[../src/opentld/main/Config.cpp:75]: (warning) Member variable 'Config::m_lastFrameSet' is not initialized in the constructor.
+[../src/opentld/main/Config.cpp:75]: (warning) Member variable 'Config::m_trajectorySet' is not initialized in the constructor.
+[../src/opentld/main/Config.cpp:75]: (warning) Member variable 'Config::m_showDetectionsSet' is not initialized in the constructor.
+[../src/opentld/main/Config.cpp:75]: (warning) Member variable 'Config::m_showForegroundSet' is not initialized in the constructor.
+[../src/opentld/main/Config.cpp:75]: (warning) Member variable 'Config::m_thetaSet' is not initialized in the constructor.
+[../src/opentld/main/Config.cpp:75]: (warning) Member variable 'Config::m_printResultsSet' is not initialized in the constructor.
+[../src/opentld/main/Config.cpp:75]: (warning) Member variable 'Config::m_camNoSet' is not initialized in the constructor.
+[../src/opentld/main/Config.cpp:75]: (warning) Member variable 'Config::m_imagePathSet' is not initialized in the constructor.
+[../src/opentld/main/Config.cpp:75]: (warning) Member variable 'Config::m_modelPathSet' is not initialized in the constructor.
+[../src/opentld/main/Config.cpp:75]: (warning) Member variable 'Config::m_initialBBSet' is not initialized in the constructor.
+[../src/opentld/main/Config.cpp:75]: (warning) Member variable 'Config::m_showOutputSet' is not initialized in the constructor.
+[../src/opentld/main/Config.cpp:75]: (warning) Member variable 'Config::m_exportModelAfterRunSet' is not initialized in the constructor.
+[../src/opentld/main/Config.cpp:428] -> [../src/opentld/main/Config.h:68]: (style, inconclusive) Technically the member function 'tld::Config::configure' can be const.
+[../src/opentld/main/Main.h:40]: (style) 'class Main' does not have a copy constructor which is recommended since the class contains a pointer to allocated memory.
+[../src/opentld/main/Main.h:92]: (information) --check-library: Function imAcqFree() should have <noreturn> configuration
+[../src/opentld/main/Config.cpp:530]: (information) --check-library: Function fputc() should have <noreturn> configuration
+[../src/opentld/main/Config.cpp:547]: (information) --check-library: Function fputc() should have <noreturn> configuration
+[../src/opentld/main/Config.cpp:99]: (portability) Non reentrant function 'strtok' called. For threadsafe applications it is recommended to use the reentrant replacement function 'strtok_r'.
+[../src/opentld/main/Config.cpp:104]: (portability) Non reentrant function 'strtok' called. For threadsafe applications it is recommended to use the reentrant replacement function 'strtok_r'.
+[../src/opentld/main/Gui.cpp:58] -> [../src/opentld/main/Gui.h:37]: (performance, inconclusive) Technically the member function 'tld::Gui::getKey' can be static.
+[../src/opentld/main/Gui.cpp:63] -> [../src/opentld/main/Gui.h:38]: (style, inconclusive) Technically the member function 'tld::Gui::windowName' can be const.
+[../src/opentld/main/Gui.cpp:50]: (information) --check-library: Function cvMoveWindow() should have <noreturn> configuration
+[../src/opentld/main/Gui.cpp:55]: (information) --check-library: Function cvShowImage() should have <noreturn> configuration
+[../src/opentld/main/Gui.cpp:93]: (information) --check-library: Function cvReleaseImage() should have <noreturn> configuration
+[../src/opentld/main/Main.cpp:156]: (information) --check-library: Function strcpy() should have <noreturn> configuration
+[../src/opentld/main/Main.cpp:281]: (information) --check-library: Function cvReleaseImage() should have <noreturn> configuration
+[../src/opentld/main/Main.cpp:116]: (information) --check-library: Function cvtColor() should have <noreturn> configuration
+[../src/opentld/main/Main.cpp:132]: (information) --check-library: Function fprintf() should have <noreturn> configuration
+[../src/opentld/main/Main.cpp:136]: (information) --check-library: Function fprintf() should have <noreturn> configuration
+[../src/opentld/main/Main.cpp:199]: (information) --check-library: Function cvRectangle() should have <noreturn> configuration
+[../src/opentld/main/Main.cpp:236]: (information) --check-library: Function printf() should have <noreturn> configuration
+[../src/opentld/main/Main.cpp:242]: (information) --check-library: Function printf() should have <noreturn> configuration
+[../src/opentld/main/Main.cpp:275]: (information) --check-library: Function cvSaveImage() should have <noreturn> configuration
+[../src/opentld/main/Main.cpp:296]: (information) --check-library: Function fclose() should have <noreturn> configuration
+[../src/opentld/main/Settings.cpp:34] -> [../src/opentld/main/Settings.h:47]: (style, inconclusive) Member variable 'Settings::m_varianceFilterEnabled' is in the wrong place in the initializer list.
+[../src/opentld/main/Settings.cpp:38] -> [../src/opentld/main/Settings.h:46]: (style, inconclusive) Member variable 'Settings::m_trackerEnabled' is in the wrong place in the initializer list.
+[../src/opentld/main/Settings.cpp:62] -> [../src/opentld/main/Settings.h:72]: (style, inconclusive) Member variable 'Settings::m_seed' is in the wrong place in the initializer list.
+[../src/opentld/main/Trajectory.cpp:33]: (warning) Member variable 'Trajectory::m_length' is not initialized in the constructor.
+[../src/opentld/qopentld/ConfigDialog.h:60]: (warning, inconclusive) Member variable 'ConfigDialog::m_settings' is not initialized in the constructor.
+[../src/opentld/qopentld/ConfigDialog.h:60]: (warning, inconclusive) Member variable 'ConfigDialog::m_correctClosed' is not initialized in the constructor.
+[../src/opentld/qopentld/ConfigDialog.h:60]: (warning, inconclusive) Member variable 'ConfigDialog::ui' is not initialized in the constructor.
+[../src/opentld/qopentld/ConfigDialog.cpp:237]: (information) --check-library: Function close() should have <noreturn> configuration
+[../src/opentld/qopentld/ConfigDialog.cpp:242]: (information) --check-library: Function close() should have <noreturn> configuration
+[../src/3rdparty/cvblobs/BlobResult.cpp:306]: (style) The function 'AddBlob' is never used.
+[../src/3rdparty/cvblobs/blob.cpp:649]: (style) The function 'FillBlob' is never used.
+[../src/3rdparty/cvblobs/ComponentLabeling.cpp:23]: (style) The function 'GET_ABOVE_IMAGEPIXEL' is never used.
+[../src/3rdparty/cvblobs/ComponentLabeling.cpp:27]: (style) The function 'GET_BELOW_IMAGEPIXEL' is never used.
+[../src/3rdparty/cvblobs/BlobResult.cpp:764]: (style) The function 'GetNthBlob' is never used.
+[../src/3rdparty/cvblobs/BlobResult.cpp:440]: (style) The function 'GetNumber' is never used.
+[../src/3rdparty/cvblobs/BlobResult.cpp:341]: (style) The function 'GetResult' is never used.
+[../src/3rdparty/cvblobs/blob.cpp:690]: (style) The function 'JoinBlob' is never used.
+[../src/3rdparty/cvblobs/BlobResult.cpp:919]: (style) The function 'PrintBlobs' is never used.
+[../src/3rdparty/cvblobs/BlobOperators.cpp:443]: (style) The function 'RegistraTotsOperadors' is never used.
+[../src/3rdparty/libconfig/libconfig.c:1232]: (style) The function 'config_lookup_bool' is never used.
+[../src/3rdparty/libconfig/libconfig.c:1220]: (style) The function 'config_lookup_float' is never used.
+[../src/3rdparty/libconfig/libconfig.c:1196]: (style) The function 'config_lookup_int' is never used.
+[../src/3rdparty/libconfig/libconfig.c:1208]: (style) The function 'config_lookup_int64' is never used.
+[../src/3rdparty/libconfig/libconfig.c:1179]: (style) The function 'config_lookup_string' is never used.
+[../src/3rdparty/libconfig/libconfig.c:1366]: (style) The function 'config_setting_get_bool_elem' is never used.
+[../src/3rdparty/libconfig/libconfig.c:1328]: (style) The function 'config_setting_get_float_elem' is never used.
+[../src/3rdparty/libconfig/libconfig.c:1287]: (style) The function 'config_setting_get_int64_elem' is never used.
+[../src/3rdparty/libconfig/libconfig.c:1247]: (style) The function 'config_setting_get_int_elem' is never used.
+[../src/3rdparty/libconfig/libconfig.c:958]: (style) The function 'config_setting_lookup_bool' is never used.
+[../src/3rdparty/libconfig/libconfig.c:930]: (style) The function 'config_setting_lookup_float' is never used.
+[../src/3rdparty/libconfig/libconfig.c:863]: (style) The function 'config_setting_lookup_int' is never used.
+[../src/3rdparty/libconfig/libconfig.c:875]: (style) The function 'config_setting_lookup_int64' is never used.
+[../src/3rdparty/libconfig/libconfig.c:942]: (style) The function 'config_setting_lookup_string' is never used.
+[../src/3rdparty/libconfig/libconfigcpp.c++:328]: (style) The function 'getAutoConvert' is never used.
+[../src/3rdparty/libconfig/libconfigcpp.c++:368]: (style) The function 'getIncludeDir' is never used.
+[../src/3rdparty/libconfig/libconfigcpp.c++:177]: (style) The function 'getPath' is never used.
+[../src/3rdparty/libconfig/libconfigcpp.c++:535]: (style) The function 'getRoot' is never used.
+[../src/3rdparty/libconfig/libconfigcpp.c++:1011]: (style) The function 'getSourceFile' is never used.
+[../src/3rdparty/libconfig/libconfigcpp.c++:1004]: (style) The function 'getSourceLine' is never used.
+[../src/3rdparty/libconfig/libconfigcpp.c++:354]: (style) The function 'getTabWidth' is never used.
+[../src/3rdparty/libconfig/scanner.c:2056]: (style) The function 'libconfig_yyget_column' is never used.
+[../src/3rdparty/libconfig/scanner.c:2161]: (style) The function 'libconfig_yyget_debug' is never used.
+[../src/3rdparty/libconfig/scanner.c:2034]: (style) The function 'libconfig_yyget_extra' is never used.
+[../src/3rdparty/libconfig/scanner.c:2069]: (style) The function 'libconfig_yyget_in' is never used.
+[../src/3rdparty/libconfig/scanner.c:2087]: (style) The function 'libconfig_yyget_leng' is never used.
+[../src/3rdparty/libconfig/scanner.c:2175]: (style) The function 'libconfig_yyget_lval' is never used.
+[../src/3rdparty/libconfig/scanner.c:2078]: (style) The function 'libconfig_yyget_out' is never used.
+[../src/3rdparty/libconfig/scanner.c:2097]: (style) The function 'libconfig_yyget_text' is never used.
+[../src/3rdparty/libconfig/scanner.c:2194]: (style) The function 'libconfig_yylex_init' is never used.
+[../src/3rdparty/libconfig/scanner.c:1821]: (style) The function 'libconfig_yypush_buffer_state' is never used.
+[../src/3rdparty/libconfig/scanner.c:2132]: (style) The function 'libconfig_yyset_column' is never used.
+[../src/3rdparty/libconfig/scanner.c:2167]: (style) The function 'libconfig_yyset_debug' is never used.
+[../src/3rdparty/libconfig/scanner.c:2149]: (style) The function 'libconfig_yyset_in' is never used.
+[../src/3rdparty/libconfig/scanner.c:2181]: (style) The function 'libconfig_yyset_lval' is never used.
+[../src/3rdparty/libconfig/scanner.c:2155]: (style) The function 'libconfig_yyset_out' is never used.
+[../src/opentld/qopentld/ConfigDialog.cpp:125]: (style) The function 'on_buttonBox_accepted' is never used.
+[../src/opentld/qopentld/ConfigDialog.cpp:240]: (style) The function 'on_buttonBox_rejected' is never used.
+[../src/opentld/qopentld/ConfigDialog.cpp:70]: (style) The function 'on_comboBox_method_activated' is never used.
+[../src/opentld/qopentld/ConfigDialog.cpp:90]: (style) The function 'on_pushButton_imagePath_clicked' is never used.
+[../src/opentld/qopentld/ConfigDialog.cpp:97]: (style) The function 'on_pushButton_modelPath_clicked' is never used.
+[../src/opentld/qopentld/ConfigDialog.cpp:111]: (style) The function 'on_pushButton_outputDir_clicked' is never used.
+[../src/opentld/qopentld/ConfigDialog.cpp:104]: (style) The function 'on_pushButton_printResults_clicked' is never used.
+[../src/opentld/qopentld/ConfigDialog.cpp:118]: (style) The function 'on_pushButton_printTiming_clicked' is never used.
+[../src/3rdparty/libconfig/libconfigcpp.c++:624]: (style) The function 'operatorbool' is never used.
+[../src/3rdparty/libconfig/libconfigcpp.c++:699]: (style) The function 'operatordouble' is never used.
+[../src/3rdparty/libconfig/libconfigcpp.c++:708]: (style) The function 'operatorfloat' is never used.
+[../src/3rdparty/libconfig/libconfigcpp.c++:727]: (style) The function 'operatorstd::string' is never used.
+[../src/3rdparty/libconfig/libconfigcpp.c++:396]: (style) The function 'read' is never used.
+[../src/3rdparty/libconfig/libconfigcpp.c++:321]: (style) The function 'setAutoConvert' is never used.
+[../src/3rdparty/libconfig/libconfigcpp.c++:335]: (style) The function 'setDefaultFormat' is never used.
+[../src/3rdparty/libconfig/libconfigcpp.c++:607]: (style) The function 'setFormat' is never used.
+[../src/3rdparty/libconfig/libconfigcpp.c++:361]: (style) The function 'setIncludeDir' is never used.
+[../src/3rdparty/libconfig/libconfigcpp.c++:347]: (style) The function 'setTabWidth' is never used.
+[../src/3rdparty/libconfig/libconfigcpp.c++:63]: (style) The function 'what' is never used.
+[../src/3rdparty/libconfig/libconfigcpp.c++:412]: (style) The function 'write' is never used.
+[../src/3rdparty/libconfig/libconfigcpp.c++:428]: (style) The function 'writeFile' is never used.
+[../src/3rdparty/libconfig/scanner.c:2328]: (style) The function 'yy_flex_strlen' is never used.
+(information) Cppcheck cannot find all the include files (use --check-config for details)

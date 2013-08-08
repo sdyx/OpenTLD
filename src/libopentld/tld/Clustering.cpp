@@ -39,6 +39,7 @@ Clustering::Clustering()
     cutoff = .5;
     windows = NULL;
     numWindows = 0;
+    detectionResult = new DetectionResult();
 }
 
 Clustering::~Clustering()
@@ -256,6 +257,7 @@ void Clustering::cluster(float *distances, int *clusterIndices)
             }
         }
     }
+    delete distUsed;
 
     detectionResult->numClusters = numClusters;
 }

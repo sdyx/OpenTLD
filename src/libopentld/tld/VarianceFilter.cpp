@@ -60,7 +60,6 @@ void VarianceFilter::release()
 
 float VarianceFilter::calcVariance(int *off)
 {
-
     int *ii1 = integralImg->data;
     long long *ii2 = integralImg_squared->data;
 
