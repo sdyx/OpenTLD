@@ -1,0 +1,181 @@
+\hypertarget{classtld_1_1_variance_filter}{
+\section{tld::VarianceFilter Class Reference}
+\label{classtld_1_1_variance_filter}\index{tld::VarianceFilter@{tld::VarianceFilter}}
+}
+
+
+{\ttfamily \#include $<$VarianceFilter.h$>$}
+
+
+
+Collaboration diagram for tld::VarianceFilter:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_variance_filter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtld_1_1_variance_filter_a0b8e9189907c3c5e9729b63d9beb8c04}{VarianceFilter} ()
+\item 
+virtual \hyperlink{classtld_1_1_variance_filter_a8dfeb485fdad9b19ab1e37a91b7736f9}{$\sim$VarianceFilter} ()
+\item 
+void \hyperlink{classtld_1_1_variance_filter_aa5ec15d4b3670db357b1c7372f5ba25a}{release} ()
+\item 
+void \hyperlink{classtld_1_1_variance_filter_acd8b8eb452eed28f5a10d830a057eaa7}{nextIteration} (const cv::Mat \&img)
+\item 
+bool \hyperlink{classtld_1_1_variance_filter_af1c369cc5338fae5cea4ad997fb1b642}{filter} (int idx)
+\item 
+float \hyperlink{classtld_1_1_variance_filter_a3afefcc863a70e718a022731f7256d91}{calcVariance} (int $\ast$off)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classtld_1_1_variance_filter_a07f3cd680554508eb6effc4c4b92c322}{enabled}
+\item 
+int $\ast$ \hyperlink{classtld_1_1_variance_filter_a2c8913adc5862adf9eb3034b81c1f02b}{windowOffsets}
+\item 
+\hyperlink{classtld_1_1_detection_result}{DetectionResult} $\ast$ \hyperlink{classtld_1_1_variance_filter_a21c300c5f491726705f82429e919ccd9}{detectionResult}
+\item 
+float \hyperlink{classtld_1_1_variance_filter_ad5fd1b805c1cb461a31f61dd6fdb8f07}{minVar}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtld_1_1_variance_filter_a0b8e9189907c3c5e9729b63d9beb8c04}{
+\index{tld::VarianceFilter@{tld::VarianceFilter}!VarianceFilter@{VarianceFilter}}
+\index{VarianceFilter@{VarianceFilter}!tld::VarianceFilter@{tld::VarianceFilter}}
+\subsubsection[{VarianceFilter}]{\setlength{\rightskip}{0pt plus 5cm}tld::VarianceFilter::VarianceFilter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_variance_filter_a0b8e9189907c3c5e9729b63d9beb8c04}
+\hypertarget{classtld_1_1_variance_filter_a8dfeb485fdad9b19ab1e37a91b7736f9}{
+\index{tld::VarianceFilter@{tld::VarianceFilter}!$\sim$VarianceFilter@{$\sim$VarianceFilter}}
+\index{$\sim$VarianceFilter@{$\sim$VarianceFilter}!tld::VarianceFilter@{tld::VarianceFilter}}
+\subsubsection[{$\sim$VarianceFilter}]{\setlength{\rightskip}{0pt plus 5cm}tld::VarianceFilter::$\sim$VarianceFilter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classtld_1_1_variance_filter_a8dfeb485fdad9b19ab1e37a91b7736f9}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_variance_filter_a8dfeb485fdad9b19ab1e37a91b7736f9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtld_1_1_variance_filter_a3afefcc863a70e718a022731f7256d91}{
+\index{tld::VarianceFilter@{tld::VarianceFilter}!calcVariance@{calcVariance}}
+\index{calcVariance@{calcVariance}!tld::VarianceFilter@{tld::VarianceFilter}}
+\subsubsection[{calcVariance}]{\setlength{\rightskip}{0pt plus 5cm}float tld::VarianceFilter::calcVariance (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{ off}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_variance_filter_a3afefcc863a70e718a022731f7256d91}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_variance_filter_a3afefcc863a70e718a022731f7256d91_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1_variance_filter_af1c369cc5338fae5cea4ad997fb1b642}{
+\index{tld::VarianceFilter@{tld::VarianceFilter}!filter@{filter}}
+\index{filter@{filter}!tld::VarianceFilter@{tld::VarianceFilter}}
+\subsubsection[{filter}]{\setlength{\rightskip}{0pt plus 5cm}bool tld::VarianceFilter::filter (
+\begin{DoxyParamCaption}
+\item[{int}]{ idx}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_variance_filter_af1c369cc5338fae5cea4ad997fb1b642}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_variance_filter_af1c369cc5338fae5cea4ad997fb1b642_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1_variance_filter_acd8b8eb452eed28f5a10d830a057eaa7}{
+\index{tld::VarianceFilter@{tld::VarianceFilter}!nextIteration@{nextIteration}}
+\index{nextIteration@{nextIteration}!tld::VarianceFilter@{tld::VarianceFilter}}
+\subsubsection[{nextIteration}]{\setlength{\rightskip}{0pt plus 5cm}void tld::VarianceFilter::nextIteration (
+\begin{DoxyParamCaption}
+\item[{const cv::Mat \&}]{ img}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_variance_filter_acd8b8eb452eed28f5a10d830a057eaa7}
+\hypertarget{classtld_1_1_variance_filter_aa5ec15d4b3670db357b1c7372f5ba25a}{
+\index{tld::VarianceFilter@{tld::VarianceFilter}!release@{release}}
+\index{release@{release}!tld::VarianceFilter@{tld::VarianceFilter}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}void tld::VarianceFilter::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_variance_filter_aa5ec15d4b3670db357b1c7372f5ba25a}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_variance_filter_aa5ec15d4b3670db357b1c7372f5ba25a_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classtld_1_1_variance_filter_a21c300c5f491726705f82429e919ccd9}{
+\index{tld::VarianceFilter@{tld::VarianceFilter}!detectionResult@{detectionResult}}
+\index{detectionResult@{detectionResult}!tld::VarianceFilter@{tld::VarianceFilter}}
+\subsubsection[{detectionResult}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DetectionResult}$\ast$ {\bf tld::VarianceFilter::detectionResult}}}
+\label{classtld_1_1_variance_filter_a21c300c5f491726705f82429e919ccd9}
+\hypertarget{classtld_1_1_variance_filter_a07f3cd680554508eb6effc4c4b92c322}{
+\index{tld::VarianceFilter@{tld::VarianceFilter}!enabled@{enabled}}
+\index{enabled@{enabled}!tld::VarianceFilter@{tld::VarianceFilter}}
+\subsubsection[{enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf tld::VarianceFilter::enabled}}}
+\label{classtld_1_1_variance_filter_a07f3cd680554508eb6effc4c4b92c322}
+\hypertarget{classtld_1_1_variance_filter_ad5fd1b805c1cb461a31f61dd6fdb8f07}{
+\index{tld::VarianceFilter@{tld::VarianceFilter}!minVar@{minVar}}
+\index{minVar@{minVar}!tld::VarianceFilter@{tld::VarianceFilter}}
+\subsubsection[{minVar}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf tld::VarianceFilter::minVar}}}
+\label{classtld_1_1_variance_filter_ad5fd1b805c1cb461a31f61dd6fdb8f07}
+\hypertarget{classtld_1_1_variance_filter_a2c8913adc5862adf9eb3034b81c1f02b}{
+\index{tld::VarianceFilter@{tld::VarianceFilter}!windowOffsets@{windowOffsets}}
+\index{windowOffsets@{windowOffsets}!tld::VarianceFilter@{tld::VarianceFilter}}
+\subsubsection[{windowOffsets}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf tld::VarianceFilter::windowOffsets}}}
+\label{classtld_1_1_variance_filter_a2c8913adc5862adf9eb3034b81c1f02b}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/libopentld/tld/\hyperlink{_variance_filter_8h}{VarianceFilter.h}\item 
+src/libopentld/tld/\hyperlink{_variance_filter_8cpp}{VarianceFilter.cpp}\end{DoxyCompactItemize}

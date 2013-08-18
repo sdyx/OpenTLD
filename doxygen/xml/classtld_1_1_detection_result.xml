@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="classtld_1_1_detection_result" kind="class" prot="public">
+    <compoundname>tld::DetectionResult</compoundname>
+    <includes refid="_detection_result_8h" local="no">DetectionResult.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtld_1_1_detection_result_1af5202404b0b269bd5f8c6b483356c517" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::DetectionResult::containsValidData</definition>
+        <argsstring></argsstring>
+        <name>containsValidData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.h" line="40" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_detection_result_1a603fdd04a64eb7e6c60ee7e9bb27d747" compoundref="_detection_result_8cpp" startline="37" endline="48">DetectionResult</referencedby>
+        <referencedby refid="classtld_1_1_detection_result_1a23dc924e308f7a2d8f3795fb48fb6648" compoundref="_detection_result_8cpp" startline="76" endline="90">release</referencedby>
+        <referencedby refid="classtld_1_1_detection_result_1afeda3b61ba3d7ba3304b96baf65d184b" compoundref="_detection_result_8cpp" startline="63" endline="74">reset</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detection_result_1ac640285c436ff5166d0ea34116d4dc69" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; cv::Rect &gt; *</type>
+        <definition>std::vector&lt;cv::Rect&gt;* tld::DetectionResult::fgList</definition>
+        <argsstring></argsstring>
+        <name>fgList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.h" line="41" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_detection_result_1a603fdd04a64eb7e6c60ee7e9bb27d747" compoundref="_detection_result_8cpp" startline="37" endline="48">DetectionResult</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+        <referencedby refid="classtld_1_1_detection_result_1a23dc924e308f7a2d8f3795fb48fb6648" compoundref="_detection_result_8cpp" startline="76" endline="90">release</referencedby>
+        <referencedby refid="classtld_1_1_detection_result_1afeda3b61ba3d7ba3304b96baf65d184b" compoundref="_detection_result_8cpp" startline="63" endline="74">reset</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detection_result_1abe6b7a8cc4478cce6351207939e96333" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* tld::DetectionResult::posteriors</definition>
+        <argsstring></argsstring>
+        <name>posteriors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.h" line="42" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1abf7e915ff675720293502be0452cb6c2" compoundref="_ensemble_classifier_8cpp" startline="198" endline="204">tld::EnsembleClassifier::classifyWindow</referencedby>
+        <referencedby refid="classtld_1_1_detection_result_1a603fdd04a64eb7e6c60ee7e9bb27d747" compoundref="_detection_result_8cpp" startline="37" endline="48">DetectionResult</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a42f1f3606d14a7d274f5bb9f4fa5030f" compoundref="_ensemble_classifier_8cpp" startline="206" endline="215">tld::EnsembleClassifier::filter</referencedby>
+        <referencedby refid="classtld_1_1_detection_result_1a20c6fc21a478b99cf88b6e955931e530" compoundref="_detection_result_8cpp" startline="55" endline="61">init</referencedby>
+        <referencedby refid="classtld_1_1_detection_result_1a23dc924e308f7a2d8f3795fb48fb6648" compoundref="_detection_result_8cpp" startline="76" endline="90">release</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detection_result_1aae986474ad532795e262e240a3ddb951" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt; *</type>
+        <definition>std::vector&lt;int&gt;* tld::DetectionResult::confidentIndices</definition>
+        <argsstring></argsstring>
+        <name>confidentIndices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.h" line="43" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_clustering_1a772750b3a1183ef80a9b4cf202e4c203" compoundref="_clustering_8cpp" startline="110" endline="125">tld::Clustering::clusterConfidentIndices</referencedby>
+        <referencedby refid="classtld_1_1_detection_result_1a603fdd04a64eb7e6c60ee7e9bb27d747" compoundref="_detection_result_8cpp" startline="37" endline="48">DetectionResult</referencedby>
+        <referencedby refid="classtld_1_1_detection_result_1a20c6fc21a478b99cf88b6e955931e530" compoundref="_detection_result_8cpp" startline="55" endline="61">init</referencedby>
+        <referencedby refid="classtld_1_1_detection_result_1a23dc924e308f7a2d8f3795fb48fb6648" compoundref="_detection_result_8cpp" startline="76" endline="90">release</referencedby>
+        <referencedby refid="classtld_1_1_detection_result_1afeda3b61ba3d7ba3304b96baf65d184b" compoundref="_detection_result_8cpp" startline="63" endline="74">reset</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detection_result_1a2650bfbdb106c7dd9b774cfccf5fdb25" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* tld::DetectionResult::featureVectors</definition>
+        <argsstring></argsstring>
+        <name>featureVectors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.h" line="44" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1abf7e915ff675720293502be0452cb6c2" compoundref="_ensemble_classifier_8cpp" startline="198" endline="204">tld::EnsembleClassifier::classifyWindow</referencedby>
+        <referencedby refid="classtld_1_1_detection_result_1a603fdd04a64eb7e6c60ee7e9bb27d747" compoundref="_detection_result_8cpp" startline="37" endline="48">DetectionResult</referencedby>
+        <referencedby refid="classtld_1_1_detection_result_1a20c6fc21a478b99cf88b6e955931e530" compoundref="_detection_result_8cpp" startline="55" endline="61">init</referencedby>
+        <referencedby refid="classtld_1_1_detection_result_1a23dc924e308f7a2d8f3795fb48fb6648" compoundref="_detection_result_8cpp" startline="76" endline="90">release</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detection_result_1ae0725362fbe07964e4ac6861fa1d32fb" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* tld::DetectionResult::variances</definition>
+        <argsstring></argsstring>
+        <name>variances</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.h" line="45" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_detection_result_1a603fdd04a64eb7e6c60ee7e9bb27d747" compoundref="_detection_result_8cpp" startline="37" endline="48">DetectionResult</referencedby>
+        <referencedby refid="classtld_1_1_variance_filter_1af1c369cc5338fae5cea4ad997fb1b642" compoundref="_variance_filter_8cpp" startline="84" endline="98">tld::VarianceFilter::filter</referencedby>
+        <referencedby refid="classtld_1_1_detection_result_1a20c6fc21a478b99cf88b6e955931e530" compoundref="_detection_result_8cpp" startline="55" endline="61">init</referencedby>
+        <referencedby refid="classtld_1_1_detection_result_1a23dc924e308f7a2d8f3795fb48fb6648" compoundref="_detection_result_8cpp" startline="76" endline="90">release</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detection_result_1aebf70a6b9d27b4cb34248ac26e5876ab" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::DetectionResult::numClusters</definition>
+        <argsstring></argsstring>
+        <name>numClusters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.h" line="46" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_clustering_1a772750b3a1183ef80a9b4cf202e4c203" compoundref="_clustering_8cpp" startline="110" endline="125">tld::Clustering::clusterConfidentIndices</referencedby>
+        <referencedby refid="classtld_1_1_detection_result_1a603fdd04a64eb7e6c60ee7e9bb27d747" compoundref="_detection_result_8cpp" startline="37" endline="48">DetectionResult</referencedby>
+        <referencedby refid="classtld_1_1_detection_result_1afeda3b61ba3d7ba3304b96baf65d184b" compoundref="_detection_result_8cpp" startline="63" endline="74">reset</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detection_result_1ab3cade119a99e868902e6bca2e6271df" prot="public" static="no" mutable="no">
+        <type>cv::Rect *</type>
+        <definition>cv::Rect* tld::DetectionResult::detectorBB</definition>
+        <argsstring></argsstring>
+        <name>detectorBB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.h" line="47" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_detection_result_1a603fdd04a64eb7e6c60ee7e9bb27d747" compoundref="_detection_result_8cpp" startline="37" endline="48">DetectionResult</referencedby>
+        <referencedby refid="classtld_1_1_detection_result_1a23dc924e308f7a2d8f3795fb48fb6648" compoundref="_detection_result_8cpp" startline="76" endline="90">release</referencedby>
+        <referencedby refid="classtld_1_1_detection_result_1afeda3b61ba3d7ba3304b96baf65d184b" compoundref="_detection_result_8cpp" startline="63" endline="74">reset</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtld_1_1_detection_result_1a603fdd04a64eb7e6c60ee7e9bb27d747" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tld::DetectionResult::DetectionResult</definition>
+        <argsstring>()</argsstring>
+        <name>DetectionResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.h" line="49" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.cpp" bodystart="37" bodyend="48"/>
+        <references refid="classtld_1_1_detection_result_1aae986474ad532795e262e240a3ddb951" compoundref="_detection_result_8h" startline="43">confidentIndices</references>
+        <references refid="classtld_1_1_detection_result_1af5202404b0b269bd5f8c6b483356c517" compoundref="_detection_result_8h" startline="40">containsValidData</references>
+        <references refid="classtld_1_1_detection_result_1ab3cade119a99e868902e6bca2e6271df" compoundref="_detection_result_8h" startline="47">detectorBB</references>
+        <references refid="classtld_1_1_detection_result_1a2650bfbdb106c7dd9b774cfccf5fdb25" compoundref="_detection_result_8h" startline="44">featureVectors</references>
+        <references refid="classtld_1_1_detection_result_1ac640285c436ff5166d0ea34116d4dc69" compoundref="_detection_result_8h" startline="41">fgList</references>
+        <references refid="classtld_1_1_detection_result_1aebf70a6b9d27b4cb34248ac26e5876ab" compoundref="_detection_result_8h" startline="46">numClusters</references>
+        <references refid="classtld_1_1_detection_result_1abe6b7a8cc4478cce6351207939e96333" compoundref="_detection_result_8h" startline="42">posteriors</references>
+        <references refid="classtld_1_1_detection_result_1ae0725362fbe07964e4ac6861fa1d32fb" compoundref="_detection_result_8h" startline="45">variances</references>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_detection_result_1a6e76739d206edcdbbac3d2da474fa5ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>tld::DetectionResult::~DetectionResult</definition>
+        <argsstring>()</argsstring>
+        <name>~DetectionResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.h" line="50" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.cpp" bodystart="50" bodyend="53"/>
+        <references refid="classtld_1_1_detection_result_1a23dc924e308f7a2d8f3795fb48fb6648" compoundref="_detection_result_8cpp" startline="76" endline="90">release</references>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_detection_result_1a20c6fc21a478b99cf88b6e955931e530" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::DetectionResult::init</definition>
+        <argsstring>(int numWindows, int numTrees)</argsstring>
+        <name>init</name>
+        <param>
+          <type>int</type>
+          <declname>numWindows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numTrees</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.h" line="52" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.cpp" bodystart="55" bodyend="61"/>
+        <references refid="classtld_1_1_detection_result_1aae986474ad532795e262e240a3ddb951" compoundref="_detection_result_8h" startline="43">confidentIndices</references>
+        <references refid="classtld_1_1_detection_result_1a2650bfbdb106c7dd9b774cfccf5fdb25" compoundref="_detection_result_8h" startline="44">featureVectors</references>
+        <references refid="classtld_1_1_detection_result_1abe6b7a8cc4478cce6351207939e96333" compoundref="_detection_result_8h" startline="42">posteriors</references>
+        <references refid="classtld_1_1_detection_result_1ae0725362fbe07964e4ac6861fa1d32fb" compoundref="_detection_result_8h" startline="45">variances</references>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">tld::DetectorCascade::propagateMembers</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_detection_result_1afeda3b61ba3d7ba3304b96baf65d184b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::DetectionResult::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.h" line="54" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.cpp" bodystart="63" bodyend="74"/>
+        <references refid="classtld_1_1_detection_result_1aae986474ad532795e262e240a3ddb951" compoundref="_detection_result_8h" startline="43">confidentIndices</references>
+        <references refid="classtld_1_1_detection_result_1af5202404b0b269bd5f8c6b483356c517" compoundref="_detection_result_8h" startline="40">containsValidData</references>
+        <references refid="classtld_1_1_detection_result_1ab3cade119a99e868902e6bca2e6271df" compoundref="_detection_result_8h" startline="47">detectorBB</references>
+        <references refid="classtld_1_1_detection_result_1ac640285c436ff5166d0ea34116d4dc69" compoundref="_detection_result_8h" startline="41">fgList</references>
+        <references refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="_config_8cpp" startline="497">NULL</references>
+        <references refid="classtld_1_1_detection_result_1aebf70a6b9d27b4cb34248ac26e5876ab" compoundref="_detection_result_8h" startline="46">numClusters</references>
+        <referencedby refid="classtld_1_1_detector_cascade_1a56b148b63e2c592624c90bc7f7f50d68" compoundref="_detector_cascade_8cpp" startline="153" endline="156">tld::DetectorCascade::cleanPreviousData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_detection_result_1a23dc924e308f7a2d8f3795fb48fb6648" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::DetectionResult::release</definition>
+        <argsstring>()</argsstring>
+        <name>release</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.h" line="55" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.cpp" bodystart="76" bodyend="90"/>
+        <references refid="classtld_1_1_detection_result_1aae986474ad532795e262e240a3ddb951" compoundref="_detection_result_8h" startline="43">confidentIndices</references>
+        <references refid="classtld_1_1_detection_result_1af5202404b0b269bd5f8c6b483356c517" compoundref="_detection_result_8h" startline="40">containsValidData</references>
+        <references refid="classtld_1_1_detection_result_1ab3cade119a99e868902e6bca2e6271df" compoundref="_detection_result_8h" startline="47">detectorBB</references>
+        <references refid="classtld_1_1_detection_result_1a2650bfbdb106c7dd9b774cfccf5fdb25" compoundref="_detection_result_8h" startline="44">featureVectors</references>
+        <references refid="classtld_1_1_detection_result_1ac640285c436ff5166d0ea34116d4dc69" compoundref="_detection_result_8h" startline="41">fgList</references>
+        <references refid="classtld_1_1_detection_result_1abe6b7a8cc4478cce6351207939e96333" compoundref="_detection_result_8h" startline="42">posteriors</references>
+        <references refid="classtld_1_1_detection_result_1ae0725362fbe07964e4ac6861fa1d32fb" compoundref="_detection_result_8h" startline="45">variances</references>
+        <referencedby refid="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" compoundref="_detector_cascade_8cpp" startline="122" endline="151">tld::DetectorCascade::release</referencedby>
+        <referencedby refid="classtld_1_1_detection_result_1a6e76739d206edcdbbac3d2da474fa5ff" compoundref="_detection_result_8cpp" startline="50" endline="53">~DetectionResult</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.h" line="38" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.h" bodystart="37" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classtld_1_1_detection_result_1aae986474ad532795e262e240a3ddb951" prot="public" virt="non-virtual"><scope>tld::DetectionResult</scope><name>confidentIndices</name></member>
+      <member refid="classtld_1_1_detection_result_1af5202404b0b269bd5f8c6b483356c517" prot="public" virt="non-virtual"><scope>tld::DetectionResult</scope><name>containsValidData</name></member>
+      <member refid="classtld_1_1_detection_result_1a603fdd04a64eb7e6c60ee7e9bb27d747" prot="public" virt="non-virtual"><scope>tld::DetectionResult</scope><name>DetectionResult</name></member>
+      <member refid="classtld_1_1_detection_result_1ab3cade119a99e868902e6bca2e6271df" prot="public" virt="non-virtual"><scope>tld::DetectionResult</scope><name>detectorBB</name></member>
+      <member refid="classtld_1_1_detection_result_1a2650bfbdb106c7dd9b774cfccf5fdb25" prot="public" virt="non-virtual"><scope>tld::DetectionResult</scope><name>featureVectors</name></member>
+      <member refid="classtld_1_1_detection_result_1ac640285c436ff5166d0ea34116d4dc69" prot="public" virt="non-virtual"><scope>tld::DetectionResult</scope><name>fgList</name></member>
+      <member refid="classtld_1_1_detection_result_1a20c6fc21a478b99cf88b6e955931e530" prot="public" virt="non-virtual"><scope>tld::DetectionResult</scope><name>init</name></member>
+      <member refid="classtld_1_1_detection_result_1aebf70a6b9d27b4cb34248ac26e5876ab" prot="public" virt="non-virtual"><scope>tld::DetectionResult</scope><name>numClusters</name></member>
+      <member refid="classtld_1_1_detection_result_1abe6b7a8cc4478cce6351207939e96333" prot="public" virt="non-virtual"><scope>tld::DetectionResult</scope><name>posteriors</name></member>
+      <member refid="classtld_1_1_detection_result_1a23dc924e308f7a2d8f3795fb48fb6648" prot="public" virt="non-virtual"><scope>tld::DetectionResult</scope><name>release</name></member>
+      <member refid="classtld_1_1_detection_result_1afeda3b61ba3d7ba3304b96baf65d184b" prot="public" virt="non-virtual"><scope>tld::DetectionResult</scope><name>reset</name></member>
+      <member refid="classtld_1_1_detection_result_1ae0725362fbe07964e4ac6861fa1d32fb" prot="public" virt="non-virtual"><scope>tld::DetectionResult</scope><name>variances</name></member>
+      <member refid="classtld_1_1_detection_result_1a6e76739d206edcdbbac3d2da474fa5ff" prot="public" virt="virtual"><scope>tld::DetectionResult</scope><name>~DetectionResult</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

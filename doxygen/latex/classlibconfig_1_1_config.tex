@@ -1,0 +1,828 @@
+\hypertarget{classlibconfig_1_1_config}{
+\section{libconfig::Config Class Reference}
+\label{classlibconfig_1_1_config}\index{libconfig::Config@{libconfig::Config}}
+}
+
+
+{\ttfamily \#include $<$libconfig.h++$>$}
+
+
+
+Collaboration diagram for libconfig::Config:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{classlibconfig_1_1_config__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlibconfig_1_1_config_ae4e8fa08259da2a1a222e9d04eb42fb1}{Config} ()
+\item 
+virtual \hyperlink{classlibconfig_1_1_config_a5d94e935833746061f33d58261365f55}{$\sim$Config} ()
+\item 
+void \hyperlink{classlibconfig_1_1_config_aa021f72ce9742f27bf7b5d62c9cb57b5}{setAutoConvert} (bool flag)
+\item 
+bool \hyperlink{classlibconfig_1_1_config_a4986e712dd553c3b9f511a98ada42817}{getAutoConvert} () const 
+\item 
+void \hyperlink{classlibconfig_1_1_config_ad821267b5bd7e4642040a5fe234dcf15}{setDefaultFormat} (\hyperlink{classlibconfig_1_1_setting_a35034c3fd8c1b2e8e590b6f53083106e}{Setting::Format} format)
+\item 
+\hyperlink{classlibconfig_1_1_setting_a35034c3fd8c1b2e8e590b6f53083106e}{Setting::Format} \hyperlink{classlibconfig_1_1_config_affc4cebbf4922d05e0bab5a9e3c25c26}{getDefaultFormat} () const 
+\item 
+void \hyperlink{classlibconfig_1_1_config_aefc250cedb4d03740e43e734913a05ee}{setTabWidth} (unsigned short width)  throw ()
+\item 
+unsigned short \hyperlink{classlibconfig_1_1_config_a49af806089ff70317745e660ac1d5ad4}{getTabWidth} () const   throw ()
+\item 
+void \hyperlink{classlibconfig_1_1_config_aa5a069b2d79157f53fde553295ffff37}{setIncludeDir} (const char $\ast$includeDir)  throw ()
+\item 
+const char $\ast$ \hyperlink{classlibconfig_1_1_config_ae4b7acff869245197eed53f800f3fe4f}{getIncludeDir} () const   throw ()
+\item 
+void \hyperlink{classlibconfig_1_1_config_a468e6ef4c2e36bdd57fc23708dee69a1}{read} (FILE $\ast$stream)  throw (ParseException)
+\item 
+void \hyperlink{classlibconfig_1_1_config_a015b1433153ab1a8c5bb05b4bb96dc46}{write} (FILE $\ast$stream) const 
+\item 
+void \hyperlink{classlibconfig_1_1_config_af3076c6839fa256bef1ad3fc33e17f98}{readString} (const char $\ast$str)  throw (ParseException)
+\item 
+void \hyperlink{classlibconfig_1_1_config_a19da31ba3ee31992a6ddbd6e079d629a}{readString} (const std::string \&str)  throw (ParseException)
+\item 
+void \hyperlink{classlibconfig_1_1_config_a31bc78ca36d4081560de025cbb08c022}{readFile} (const char $\ast$filename)  throw (FileIOException, ParseException)
+\item 
+void \hyperlink{classlibconfig_1_1_config_a9ee45e1ab444c2865bf076fbf4219326}{writeFile} (const char $\ast$filename)  throw (FileIOException)
+\item 
+\hyperlink{classlibconfig_1_1_setting}{Setting} \& \hyperlink{classlibconfig_1_1_config_a0e7f37e3f8a08f35a77778de99515c6e}{lookup} (const std::string \&path) const   throw (SettingNotFoundException)
+\item 
+\hyperlink{classlibconfig_1_1_setting}{Setting} \& \hyperlink{classlibconfig_1_1_config_adcfc1c6a6c7e43e5ac79d1e534fa0744}{lookup} (const char $\ast$path) const   throw (SettingNotFoundException)
+\item 
+bool \hyperlink{classlibconfig_1_1_config_a1fa3eb517f8a6722b170322b5abdad15}{exists} (const std::string \&path) const   throw ()
+\item 
+bool \hyperlink{classlibconfig_1_1_config_a548166ff5b36227a295489a86c5024c8}{exists} (const char $\ast$path) const   throw ()
+\item 
+bool \hyperlink{classlibconfig_1_1_config_abbf777fd9ef13502f049c3cbd8e1742e}{lookupValue} (const char $\ast$path, bool \&value) const   throw ()
+\item 
+bool \hyperlink{classlibconfig_1_1_config_ae82a77068c32d45ac0a006343f6cbec8}{lookupValue} (const char $\ast$path, int \&value) const   throw ()
+\item 
+bool \hyperlink{classlibconfig_1_1_config_a1021af7dfe97eb838d9a9892bd5b8339}{lookupValue} (const char $\ast$path, unsigned int \&value) const   throw ()
+\item 
+bool \hyperlink{classlibconfig_1_1_config_a50124b872c6412045dca2c89a4a71cca}{lookupValue} (const char $\ast$path, long long \&value) const   throw ()
+\item 
+bool \hyperlink{classlibconfig_1_1_config_a9b6cda1b3a631f7f9c912405f96a3601}{lookupValue} (const char $\ast$path, unsigned long long \&value) const   throw ()
+\item 
+bool \hyperlink{classlibconfig_1_1_config_ac1d8313aba68010ec75a52e1f19cdd90}{lookupValue} (const char $\ast$path, double \&value) const   throw ()
+\item 
+bool \hyperlink{classlibconfig_1_1_config_a493217a12b64307ed2917c7ea286e24e}{lookupValue} (const char $\ast$path, float \&value) const   throw ()
+\item 
+bool \hyperlink{classlibconfig_1_1_config_a0934a631059747bd570ced12f9d19ba7}{lookupValue} (const char $\ast$path, const char $\ast$\&value) const   throw ()
+\item 
+bool \hyperlink{classlibconfig_1_1_config_a09f19c13ff6e85b86479e43b3d269e36}{lookupValue} (const char $\ast$path, std::string \&value) const   throw ()
+\item 
+bool \hyperlink{classlibconfig_1_1_config_aefdd467e6bfc1caf66337155e762fa59}{lookupValue} (const std::string \&path, bool \&value) const   throw ()
+\item 
+bool \hyperlink{classlibconfig_1_1_config_ae081df5d2ecb0c67b02dd0e72464a159}{lookupValue} (const std::string \&path, int \&value) const   throw ()
+\item 
+bool \hyperlink{classlibconfig_1_1_config_aeb906407ffb13dc17abc75284bf625e0}{lookupValue} (const std::string \&path, unsigned int \&value) const   throw ()
+\item 
+bool \hyperlink{classlibconfig_1_1_config_abac0ebba041f793bd7f0fdf4b118b22f}{lookupValue} (const std::string \&path, long long \&value) const   throw ()
+\item 
+bool \hyperlink{classlibconfig_1_1_config_a891a38318bcdea1ea8f17c68e1c928a0}{lookupValue} (const std::string \&path, unsigned long long \&value) const   throw ()
+\item 
+bool \hyperlink{classlibconfig_1_1_config_ac4d63696452375134a8a33aa9137e8ad}{lookupValue} (const std::string \&path, double \&value) const   throw ()
+\item 
+bool \hyperlink{classlibconfig_1_1_config_abd86ae4d09edafb2d79a4656b99c9433}{lookupValue} (const std::string \&path, float \&value) const   throw ()
+\item 
+bool \hyperlink{classlibconfig_1_1_config_a5087522213b6c2b2b658c6d1fdbe21dd}{lookupValue} (const std::string \&path, const char $\ast$\&value) const   throw ()
+\item 
+bool \hyperlink{classlibconfig_1_1_config_acbe75986295275d5beb1b6e54bd80554}{lookupValue} (const std::string \&path, std::string \&value) const   throw ()
+\item 
+\hyperlink{classlibconfig_1_1_setting}{Setting} \& \hyperlink{classlibconfig_1_1_config_a10e517e0d174ce21141b9d24b1b2c5db}{getRoot} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlibconfig_1_1_config_ae4e8fa08259da2a1a222e9d04eb42fb1}{
+\index{libconfig::Config@{libconfig::Config}!Config@{Config}}
+\index{Config@{Config}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{Config}]{\setlength{\rightskip}{0pt plus 5cm}libconfig::Config::Config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classlibconfig_1_1_config_ae4e8fa08259da2a1a222e9d04eb42fb1}
+\hypertarget{classlibconfig_1_1_config_a5d94e935833746061f33d58261365f55}{
+\index{libconfig::Config@{libconfig::Config}!$\sim$Config@{$\sim$Config}}
+\index{$\sim$Config@{$\sim$Config}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{$\sim$Config}]{\setlength{\rightskip}{0pt plus 5cm}libconfig::Config::$\sim$Config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classlibconfig_1_1_config_a5d94e935833746061f33d58261365f55}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=372pt]{classlibconfig_1_1_config_a5d94e935833746061f33d58261365f55_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classlibconfig_1_1_config_a1fa3eb517f8a6722b170322b5abdad15}{
+\index{libconfig::Config@{libconfig::Config}!exists@{exists}}
+\index{exists@{exists}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{exists}]{\setlength{\rightskip}{0pt plus 5cm}bool libconfig::Config::exists (
+\begin{DoxyParamCaption}
+\item[{const std::string \&}]{ path}
+\end{DoxyParamCaption}
+) const  throw ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlibconfig_1_1_config_a1fa3eb517f8a6722b170322b5abdad15}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classlibconfig_1_1_config_a1fa3eb517f8a6722b170322b5abdad15_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classlibconfig_1_1_config_a1fa3eb517f8a6722b170322b5abdad15_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classlibconfig_1_1_config_a548166ff5b36227a295489a86c5024c8}{
+\index{libconfig::Config@{libconfig::Config}!exists@{exists}}
+\index{exists@{exists}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{exists}]{\setlength{\rightskip}{0pt plus 5cm}bool libconfig::Config::exists (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ path}
+\end{DoxyParamCaption}
+) const  throw ()}}
+\label{classlibconfig_1_1_config_a548166ff5b36227a295489a86c5024c8}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classlibconfig_1_1_config_a548166ff5b36227a295489a86c5024c8_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classlibconfig_1_1_config_a4986e712dd553c3b9f511a98ada42817}{
+\index{libconfig::Config@{libconfig::Config}!getAutoConvert@{getAutoConvert}}
+\index{getAutoConvert@{getAutoConvert}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{getAutoConvert}]{\setlength{\rightskip}{0pt plus 5cm}bool libconfig::Config::getAutoConvert (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classlibconfig_1_1_config_a4986e712dd553c3b9f511a98ada42817}
+\hypertarget{classlibconfig_1_1_config_affc4cebbf4922d05e0bab5a9e3c25c26}{
+\index{libconfig::Config@{libconfig::Config}!getDefaultFormat@{getDefaultFormat}}
+\index{getDefaultFormat@{getDefaultFormat}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{getDefaultFormat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Setting::Format} libconfig::Config::getDefaultFormat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlibconfig_1_1_config_affc4cebbf4922d05e0bab5a9e3c25c26}
+\hypertarget{classlibconfig_1_1_config_ae4b7acff869245197eed53f800f3fe4f}{
+\index{libconfig::Config@{libconfig::Config}!getIncludeDir@{getIncludeDir}}
+\index{getIncludeDir@{getIncludeDir}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{getIncludeDir}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ libconfig::Config::getIncludeDir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const  throw ()}}
+\label{classlibconfig_1_1_config_ae4b7acff869245197eed53f800f3fe4f}
+\hypertarget{classlibconfig_1_1_config_a10e517e0d174ce21141b9d24b1b2c5db}{
+\index{libconfig::Config@{libconfig::Config}!getRoot@{getRoot}}
+\index{getRoot@{getRoot}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{getRoot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Setting} \& libconfig::Config::getRoot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classlibconfig_1_1_config_a10e517e0d174ce21141b9d24b1b2c5db}
+\hypertarget{classlibconfig_1_1_config_a49af806089ff70317745e660ac1d5ad4}{
+\index{libconfig::Config@{libconfig::Config}!getTabWidth@{getTabWidth}}
+\index{getTabWidth@{getTabWidth}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{getTabWidth}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short libconfig::Config::getTabWidth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const  throw ()}}
+\label{classlibconfig_1_1_config_a49af806089ff70317745e660ac1d5ad4}
+\hypertarget{classlibconfig_1_1_config_adcfc1c6a6c7e43e5ac79d1e534fa0744}{
+\index{libconfig::Config@{libconfig::Config}!lookup@{lookup}}
+\index{lookup@{lookup}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{lookup}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Setting} \& libconfig::Config::lookup (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ path}
+\end{DoxyParamCaption}
+) const  throw ({\bf SettingNotFoundException})}}
+\label{classlibconfig_1_1_config_adcfc1c6a6c7e43e5ac79d1e534fa0744}
+\hypertarget{classlibconfig_1_1_config_a0e7f37e3f8a08f35a77778de99515c6e}{
+\index{libconfig::Config@{libconfig::Config}!lookup@{lookup}}
+\index{lookup@{lookup}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{lookup}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Setting}\& libconfig::Config::lookup (
+\begin{DoxyParamCaption}
+\item[{const std::string \&}]{ path}
+\end{DoxyParamCaption}
+) const  throw ({\bf SettingNotFoundException})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlibconfig_1_1_config_a0e7f37e3f8a08f35a77778de99515c6e}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classlibconfig_1_1_config_a0e7f37e3f8a08f35a77778de99515c6e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classlibconfig_1_1_config_a0e7f37e3f8a08f35a77778de99515c6e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classlibconfig_1_1_config_abac0ebba041f793bd7f0fdf4b118b22f}{
+\index{libconfig::Config@{libconfig::Config}!lookupValue@{lookupValue}}
+\index{lookupValue@{lookupValue}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{lookupValue}]{\setlength{\rightskip}{0pt plus 5cm}bool libconfig::Config::lookupValue (
+\begin{DoxyParamCaption}
+\item[{const std::string \&}]{ path, }
+\item[{long long \&}]{ value}
+\end{DoxyParamCaption}
+) const  throw ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlibconfig_1_1_config_abac0ebba041f793bd7f0fdf4b118b22f}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classlibconfig_1_1_config_abac0ebba041f793bd7f0fdf4b118b22f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classlibconfig_1_1_config_abac0ebba041f793bd7f0fdf4b118b22f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classlibconfig_1_1_config_a891a38318bcdea1ea8f17c68e1c928a0}{
+\index{libconfig::Config@{libconfig::Config}!lookupValue@{lookupValue}}
+\index{lookupValue@{lookupValue}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{lookupValue}]{\setlength{\rightskip}{0pt plus 5cm}bool libconfig::Config::lookupValue (
+\begin{DoxyParamCaption}
+\item[{const std::string \&}]{ path, }
+\item[{unsigned long long \&}]{ value}
+\end{DoxyParamCaption}
+) const  throw ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlibconfig_1_1_config_a891a38318bcdea1ea8f17c68e1c928a0}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classlibconfig_1_1_config_a891a38318bcdea1ea8f17c68e1c928a0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classlibconfig_1_1_config_a891a38318bcdea1ea8f17c68e1c928a0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classlibconfig_1_1_config_a09f19c13ff6e85b86479e43b3d269e36}{
+\index{libconfig::Config@{libconfig::Config}!lookupValue@{lookupValue}}
+\index{lookupValue@{lookupValue}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{lookupValue}]{\setlength{\rightskip}{0pt plus 5cm}bool libconfig::Config::lookupValue (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ path, }
+\item[{std::string \&}]{ value}
+\end{DoxyParamCaption}
+) const  throw ()}}
+\label{classlibconfig_1_1_config_a09f19c13ff6e85b86479e43b3d269e36}
+\hypertarget{classlibconfig_1_1_config_ac4d63696452375134a8a33aa9137e8ad}{
+\index{libconfig::Config@{libconfig::Config}!lookupValue@{lookupValue}}
+\index{lookupValue@{lookupValue}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{lookupValue}]{\setlength{\rightskip}{0pt plus 5cm}bool libconfig::Config::lookupValue (
+\begin{DoxyParamCaption}
+\item[{const std::string \&}]{ path, }
+\item[{double \&}]{ value}
+\end{DoxyParamCaption}
+) const  throw ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlibconfig_1_1_config_ac4d63696452375134a8a33aa9137e8ad}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classlibconfig_1_1_config_ac4d63696452375134a8a33aa9137e8ad_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classlibconfig_1_1_config_ac4d63696452375134a8a33aa9137e8ad_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classlibconfig_1_1_config_abd86ae4d09edafb2d79a4656b99c9433}{
+\index{libconfig::Config@{libconfig::Config}!lookupValue@{lookupValue}}
+\index{lookupValue@{lookupValue}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{lookupValue}]{\setlength{\rightskip}{0pt plus 5cm}bool libconfig::Config::lookupValue (
+\begin{DoxyParamCaption}
+\item[{const std::string \&}]{ path, }
+\item[{float \&}]{ value}
+\end{DoxyParamCaption}
+) const  throw ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlibconfig_1_1_config_abd86ae4d09edafb2d79a4656b99c9433}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classlibconfig_1_1_config_abd86ae4d09edafb2d79a4656b99c9433_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classlibconfig_1_1_config_abd86ae4d09edafb2d79a4656b99c9433_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classlibconfig_1_1_config_a5087522213b6c2b2b658c6d1fdbe21dd}{
+\index{libconfig::Config@{libconfig::Config}!lookupValue@{lookupValue}}
+\index{lookupValue@{lookupValue}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{lookupValue}]{\setlength{\rightskip}{0pt plus 5cm}bool libconfig::Config::lookupValue (
+\begin{DoxyParamCaption}
+\item[{const std::string \&}]{ path, }
+\item[{const char $\ast$\&}]{ value}
+\end{DoxyParamCaption}
+) const  throw ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlibconfig_1_1_config_a5087522213b6c2b2b658c6d1fdbe21dd}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classlibconfig_1_1_config_a5087522213b6c2b2b658c6d1fdbe21dd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classlibconfig_1_1_config_a5087522213b6c2b2b658c6d1fdbe21dd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classlibconfig_1_1_config_a9b6cda1b3a631f7f9c912405f96a3601}{
+\index{libconfig::Config@{libconfig::Config}!lookupValue@{lookupValue}}
+\index{lookupValue@{lookupValue}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{lookupValue}]{\setlength{\rightskip}{0pt plus 5cm}bool libconfig::Config::lookupValue (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ path, }
+\item[{unsigned long long \&}]{ value}
+\end{DoxyParamCaption}
+) const  throw ()}}
+\label{classlibconfig_1_1_config_a9b6cda1b3a631f7f9c912405f96a3601}
+\hypertarget{classlibconfig_1_1_config_acbe75986295275d5beb1b6e54bd80554}{
+\index{libconfig::Config@{libconfig::Config}!lookupValue@{lookupValue}}
+\index{lookupValue@{lookupValue}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{lookupValue}]{\setlength{\rightskip}{0pt plus 5cm}bool libconfig::Config::lookupValue (
+\begin{DoxyParamCaption}
+\item[{const std::string \&}]{ path, }
+\item[{std::string \&}]{ value}
+\end{DoxyParamCaption}
+) const  throw ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlibconfig_1_1_config_acbe75986295275d5beb1b6e54bd80554}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classlibconfig_1_1_config_acbe75986295275d5beb1b6e54bd80554_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classlibconfig_1_1_config_acbe75986295275d5beb1b6e54bd80554_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classlibconfig_1_1_config_abbf777fd9ef13502f049c3cbd8e1742e}{
+\index{libconfig::Config@{libconfig::Config}!lookupValue@{lookupValue}}
+\index{lookupValue@{lookupValue}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{lookupValue}]{\setlength{\rightskip}{0pt plus 5cm}bool libconfig::Config::lookupValue (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ path, }
+\item[{bool \&}]{ value}
+\end{DoxyParamCaption}
+) const  throw ()}}
+\label{classlibconfig_1_1_config_abbf777fd9ef13502f049c3cbd8e1742e}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classlibconfig_1_1_config_abbf777fd9ef13502f049c3cbd8e1742e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classlibconfig_1_1_config_ae82a77068c32d45ac0a006343f6cbec8}{
+\index{libconfig::Config@{libconfig::Config}!lookupValue@{lookupValue}}
+\index{lookupValue@{lookupValue}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{lookupValue}]{\setlength{\rightskip}{0pt plus 5cm}bool libconfig::Config::lookupValue (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ path, }
+\item[{int \&}]{ value}
+\end{DoxyParamCaption}
+) const  throw ()}}
+\label{classlibconfig_1_1_config_ae82a77068c32d45ac0a006343f6cbec8}
+\hypertarget{classlibconfig_1_1_config_a1021af7dfe97eb838d9a9892bd5b8339}{
+\index{libconfig::Config@{libconfig::Config}!lookupValue@{lookupValue}}
+\index{lookupValue@{lookupValue}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{lookupValue}]{\setlength{\rightskip}{0pt plus 5cm}bool libconfig::Config::lookupValue (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ path, }
+\item[{unsigned int \&}]{ value}
+\end{DoxyParamCaption}
+) const  throw ()}}
+\label{classlibconfig_1_1_config_a1021af7dfe97eb838d9a9892bd5b8339}
+\hypertarget{classlibconfig_1_1_config_a50124b872c6412045dca2c89a4a71cca}{
+\index{libconfig::Config@{libconfig::Config}!lookupValue@{lookupValue}}
+\index{lookupValue@{lookupValue}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{lookupValue}]{\setlength{\rightskip}{0pt plus 5cm}bool libconfig::Config::lookupValue (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ path, }
+\item[{long long \&}]{ value}
+\end{DoxyParamCaption}
+) const  throw ()}}
+\label{classlibconfig_1_1_config_a50124b872c6412045dca2c89a4a71cca}
+\hypertarget{classlibconfig_1_1_config_ac1d8313aba68010ec75a52e1f19cdd90}{
+\index{libconfig::Config@{libconfig::Config}!lookupValue@{lookupValue}}
+\index{lookupValue@{lookupValue}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{lookupValue}]{\setlength{\rightskip}{0pt plus 5cm}bool libconfig::Config::lookupValue (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ path, }
+\item[{double \&}]{ value}
+\end{DoxyParamCaption}
+) const  throw ()}}
+\label{classlibconfig_1_1_config_ac1d8313aba68010ec75a52e1f19cdd90}
+\hypertarget{classlibconfig_1_1_config_a493217a12b64307ed2917c7ea286e24e}{
+\index{libconfig::Config@{libconfig::Config}!lookupValue@{lookupValue}}
+\index{lookupValue@{lookupValue}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{lookupValue}]{\setlength{\rightskip}{0pt plus 5cm}bool libconfig::Config::lookupValue (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ path, }
+\item[{float \&}]{ value}
+\end{DoxyParamCaption}
+) const  throw ()}}
+\label{classlibconfig_1_1_config_a493217a12b64307ed2917c7ea286e24e}
+\hypertarget{classlibconfig_1_1_config_aeb906407ffb13dc17abc75284bf625e0}{
+\index{libconfig::Config@{libconfig::Config}!lookupValue@{lookupValue}}
+\index{lookupValue@{lookupValue}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{lookupValue}]{\setlength{\rightskip}{0pt plus 5cm}bool libconfig::Config::lookupValue (
+\begin{DoxyParamCaption}
+\item[{const std::string \&}]{ path, }
+\item[{unsigned int \&}]{ value}
+\end{DoxyParamCaption}
+) const  throw ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlibconfig_1_1_config_aeb906407ffb13dc17abc75284bf625e0}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classlibconfig_1_1_config_aeb906407ffb13dc17abc75284bf625e0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classlibconfig_1_1_config_aeb906407ffb13dc17abc75284bf625e0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classlibconfig_1_1_config_ae081df5d2ecb0c67b02dd0e72464a159}{
+\index{libconfig::Config@{libconfig::Config}!lookupValue@{lookupValue}}
+\index{lookupValue@{lookupValue}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{lookupValue}]{\setlength{\rightskip}{0pt plus 5cm}bool libconfig::Config::lookupValue (
+\begin{DoxyParamCaption}
+\item[{const std::string \&}]{ path, }
+\item[{int \&}]{ value}
+\end{DoxyParamCaption}
+) const  throw ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlibconfig_1_1_config_ae081df5d2ecb0c67b02dd0e72464a159}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classlibconfig_1_1_config_ae081df5d2ecb0c67b02dd0e72464a159_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classlibconfig_1_1_config_ae081df5d2ecb0c67b02dd0e72464a159_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classlibconfig_1_1_config_a0934a631059747bd570ced12f9d19ba7}{
+\index{libconfig::Config@{libconfig::Config}!lookupValue@{lookupValue}}
+\index{lookupValue@{lookupValue}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{lookupValue}]{\setlength{\rightskip}{0pt plus 5cm}bool libconfig::Config::lookupValue (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ path, }
+\item[{const char $\ast$\&}]{ value}
+\end{DoxyParamCaption}
+) const  throw ()}}
+\label{classlibconfig_1_1_config_a0934a631059747bd570ced12f9d19ba7}
+\hypertarget{classlibconfig_1_1_config_aefdd467e6bfc1caf66337155e762fa59}{
+\index{libconfig::Config@{libconfig::Config}!lookupValue@{lookupValue}}
+\index{lookupValue@{lookupValue}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{lookupValue}]{\setlength{\rightskip}{0pt plus 5cm}bool libconfig::Config::lookupValue (
+\begin{DoxyParamCaption}
+\item[{const std::string \&}]{ path, }
+\item[{bool \&}]{ value}
+\end{DoxyParamCaption}
+) const  throw ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlibconfig_1_1_config_aefdd467e6bfc1caf66337155e762fa59}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classlibconfig_1_1_config_aefdd467e6bfc1caf66337155e762fa59_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classlibconfig_1_1_config_aefdd467e6bfc1caf66337155e762fa59_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classlibconfig_1_1_config_a468e6ef4c2e36bdd57fc23708dee69a1}{
+\index{libconfig::Config@{libconfig::Config}!read@{read}}
+\index{read@{read}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}void libconfig::Config::read (
+\begin{DoxyParamCaption}
+\item[{FILE $\ast$}]{ stream}
+\end{DoxyParamCaption}
+)  throw ({\bf ParseException})}}
+\label{classlibconfig_1_1_config_a468e6ef4c2e36bdd57fc23708dee69a1}
+\hypertarget{classlibconfig_1_1_config_a31bc78ca36d4081560de025cbb08c022}{
+\index{libconfig::Config@{libconfig::Config}!readFile@{readFile}}
+\index{readFile@{readFile}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{readFile}]{\setlength{\rightskip}{0pt plus 5cm}void libconfig::Config::readFile (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ filename}
+\end{DoxyParamCaption}
+)  throw ({\bf FileIOException}, {\bf ParseException})}}
+\label{classlibconfig_1_1_config_a31bc78ca36d4081560de025cbb08c022}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classlibconfig_1_1_config_a31bc78ca36d4081560de025cbb08c022_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classlibconfig_1_1_config_a19da31ba3ee31992a6ddbd6e079d629a}{
+\index{libconfig::Config@{libconfig::Config}!readString@{readString}}
+\index{readString@{readString}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{readString}]{\setlength{\rightskip}{0pt plus 5cm}void libconfig::Config::readString (
+\begin{DoxyParamCaption}
+\item[{const std::string \&}]{ str}
+\end{DoxyParamCaption}
+)  throw ({\bf ParseException})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlibconfig_1_1_config_a19da31ba3ee31992a6ddbd6e079d629a}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classlibconfig_1_1_config_a19da31ba3ee31992a6ddbd6e079d629a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classlibconfig_1_1_config_a19da31ba3ee31992a6ddbd6e079d629a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classlibconfig_1_1_config_af3076c6839fa256bef1ad3fc33e17f98}{
+\index{libconfig::Config@{libconfig::Config}!readString@{readString}}
+\index{readString@{readString}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{readString}]{\setlength{\rightskip}{0pt plus 5cm}void libconfig::Config::readString (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ str}
+\end{DoxyParamCaption}
+)  throw ({\bf ParseException})}}
+\label{classlibconfig_1_1_config_af3076c6839fa256bef1ad3fc33e17f98}
+\hypertarget{classlibconfig_1_1_config_aa021f72ce9742f27bf7b5d62c9cb57b5}{
+\index{libconfig::Config@{libconfig::Config}!setAutoConvert@{setAutoConvert}}
+\index{setAutoConvert@{setAutoConvert}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{setAutoConvert}]{\setlength{\rightskip}{0pt plus 5cm}void libconfig::Config::setAutoConvert (
+\begin{DoxyParamCaption}
+\item[{bool}]{ flag}
+\end{DoxyParamCaption}
+)}}
+\label{classlibconfig_1_1_config_aa021f72ce9742f27bf7b5d62c9cb57b5}
+\hypertarget{classlibconfig_1_1_config_ad821267b5bd7e4642040a5fe234dcf15}{
+\index{libconfig::Config@{libconfig::Config}!setDefaultFormat@{setDefaultFormat}}
+\index{setDefaultFormat@{setDefaultFormat}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{setDefaultFormat}]{\setlength{\rightskip}{0pt plus 5cm}void libconfig::Config::setDefaultFormat (
+\begin{DoxyParamCaption}
+\item[{{\bf Setting::Format}}]{ format}
+\end{DoxyParamCaption}
+)}}
+\label{classlibconfig_1_1_config_ad821267b5bd7e4642040a5fe234dcf15}
+\hypertarget{classlibconfig_1_1_config_aa5a069b2d79157f53fde553295ffff37}{
+\index{libconfig::Config@{libconfig::Config}!setIncludeDir@{setIncludeDir}}
+\index{setIncludeDir@{setIncludeDir}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{setIncludeDir}]{\setlength{\rightskip}{0pt plus 5cm}void libconfig::Config::setIncludeDir (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ includeDir}
+\end{DoxyParamCaption}
+)  throw ()}}
+\label{classlibconfig_1_1_config_aa5a069b2d79157f53fde553295ffff37}
+\hypertarget{classlibconfig_1_1_config_aefc250cedb4d03740e43e734913a05ee}{
+\index{libconfig::Config@{libconfig::Config}!setTabWidth@{setTabWidth}}
+\index{setTabWidth@{setTabWidth}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{setTabWidth}]{\setlength{\rightskip}{0pt plus 5cm}void libconfig::Config::setTabWidth (
+\begin{DoxyParamCaption}
+\item[{unsigned short}]{ width}
+\end{DoxyParamCaption}
+)  throw ()}}
+\label{classlibconfig_1_1_config_aefc250cedb4d03740e43e734913a05ee}
+\hypertarget{classlibconfig_1_1_config_a015b1433153ab1a8c5bb05b4bb96dc46}{
+\index{libconfig::Config@{libconfig::Config}!write@{write}}
+\index{write@{write}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}void libconfig::Config::write (
+\begin{DoxyParamCaption}
+\item[{FILE $\ast$}]{ stream}
+\end{DoxyParamCaption}
+) const}}
+\label{classlibconfig_1_1_config_a015b1433153ab1a8c5bb05b4bb96dc46}
+\hypertarget{classlibconfig_1_1_config_a9ee45e1ab444c2865bf076fbf4219326}{
+\index{libconfig::Config@{libconfig::Config}!writeFile@{writeFile}}
+\index{writeFile@{writeFile}!libconfig::Config@{libconfig::Config}}
+\subsubsection[{writeFile}]{\setlength{\rightskip}{0pt plus 5cm}void libconfig::Config::writeFile (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ filename}
+\end{DoxyParamCaption}
+)  throw ({\bf FileIOException})}}
+\label{classlibconfig_1_1_config_a9ee45e1ab444c2865bf076fbf4219326}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classlibconfig_1_1_config_a9ee45e1ab444c2865bf076fbf4219326_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/3rdparty/libconfig/\hyperlink{libconfig_8h_09_09}{libconfig.h++}\item 
+src/3rdparty/libconfig/\hyperlink{libconfigcpp_8c_09_09}{libconfigcpp.c++}\end{DoxyCompactItemize}

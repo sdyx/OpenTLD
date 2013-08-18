@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="class_config_dialog" kind="class" prot="public">
+    <compoundname>ConfigDialog</compoundname>
+    <includes refid="_config_dialog_8h" local="no">ConfigDialog.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_config_dialog_1aebf816c83d7aa4a3bff2b3e1e16ccb6d" prot="private" static="no" mutable="no">
+        <type><ref refid="classtld_1_1_settings" kindref="compound">tld::Settings</ref> *</type>
+        <definition>tld::Settings* ConfigDialog::m_settings</definition>
+        <argsstring></argsstring>
+        <name>m_settings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.h" line="68" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_config_dialog_1a49a00b0b82e40c2e26ddb3702438f3ff" prot="private" static="no" mutable="no">
+        <type>bool *</type>
+        <definition>bool* ConfigDialog::m_correctClosed</definition>
+        <argsstring></argsstring>
+        <name>m_correctClosed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.h" line="69" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_config_dialog_1a0f0ed746b2d7583be3869a363b91136c" prot="private" static="no" mutable="no">
+        <type>Ui_ConfigDialog *</type>
+        <definition>Ui_ConfigDialog* ConfigDialog::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.h" line="70" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_config_dialog_1a28fcaf732c9f363b30b2fc4a9abd9251" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ConfigDialog::ConfigDialog</definition>
+        <argsstring>()</argsstring>
+        <name>ConfigDialog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a dialog <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>all parameters are stored in this object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>correctClosed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if everything went right, false if not </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.h" line="60" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_config_dialog_1a45966fcb35bfca9ee45fe9fc9447a4f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ConfigDialog::ConfigDialog</definition>
+        <argsstring>(tld::Settings *settings, bool *correctClosed, QWidget *parent=0)</argsstring>
+        <name>ConfigDialog</name>
+        <param>
+          <type><ref refid="classtld_1_1_settings" kindref="compound">tld::Settings</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>correctClosed</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.h" line="61" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.cpp" bodystart="41" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_config_dialog_1a485badac4dffa04603f800bb9d396e1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ConfigDialog::~ConfigDialog</definition>
+        <argsstring>()</argsstring>
+        <name>~ConfigDialog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.h" line="62" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.cpp" bodystart="51" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_config_dialog_1a1d92274ba705553f051b1458aaf3d17a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConfigDialog::changeEvent</definition>
+        <argsstring>(QEvent *e)</argsstring>
+        <name>changeEvent</name>
+        <param>
+          <type>QEvent *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.h" line="65" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.cpp" bodystart="56" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_config_dialog_1af7cc8e52db580a91f560e5d60fa53be1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConfigDialog::on_buttonBox_rejected</definition>
+        <argsstring>()</argsstring>
+        <name>on_buttonBox_rejected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.h" line="73" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.cpp" bodystart="240" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_config_dialog_1a99ff17058888a9f4680d931b3dbcc107" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConfigDialog::on_buttonBox_accepted</definition>
+        <argsstring>()</argsstring>
+        <name>on_buttonBox_accepted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.h" line="74" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.cpp" bodystart="125" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_config_dialog_1a213196688dcf491b2118cef2ac0c4d5d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConfigDialog::on_pushButton_printTiming_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_pushButton_printTiming_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.h" line="75" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.cpp" bodystart="118" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_config_dialog_1afcb1c471f181177573ee6e9ebd2e33e7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConfigDialog::on_pushButton_outputDir_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_pushButton_outputDir_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.h" line="76" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.cpp" bodystart="111" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_config_dialog_1a2ac4e126ef0f47b9ccf800bbb2560885" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConfigDialog::on_pushButton_printResults_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_pushButton_printResults_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.h" line="77" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.cpp" bodystart="104" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_config_dialog_1a80ba58182a35015b4cc5c542b0c62fcb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConfigDialog::on_pushButton_modelPath_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_pushButton_modelPath_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.h" line="78" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.cpp" bodystart="97" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_config_dialog_1a05e105aa3357b7fb82a2f5815b2cb853" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConfigDialog::on_pushButton_imagePath_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_pushButton_imagePath_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.h" line="79" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.cpp" bodystart="90" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_config_dialog_1a8f035c7e6b76c9a00b2dbc4a9bbffa2a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConfigDialog::on_comboBox_method_activated</definition>
+        <argsstring>(QString element)</argsstring>
+        <name>on_comboBox_method_activated</name>
+        <param>
+          <type>QString</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.h" line="80" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.cpp" bodystart="70" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Qt-Dialog to configure the program </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="409">
+        <label>string</label>
+      </node>
+      <node id="407">
+        <label>ConfigDialog</label>
+        <link refid="class_config_dialog"/>
+        <childnode refid="408" relation="usage">
+          <edgelabel>m_settings</edgelabel>
+        </childnode>
+      </node>
+      <node id="408">
+        <label>tld::Settings</label>
+        <link refid="classtld_1_1_settings"/>
+        <childnode refid="409" relation="usage">
+          <edgelabel>m_modelExportFile</edgelabel>
+          <edgelabel>m_modelPath</edgelabel>
+          <edgelabel>m_imagePath</edgelabel>
+          <edgelabel>m_printTiming</edgelabel>
+          <edgelabel>m_printResults</edgelabel>
+          <edgelabel>m_outputDir</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.h" line="52" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.h" bodystart="51" bodyend="81"/>
+    <listofallmembers>
+      <member refid="class_config_dialog_1a1d92274ba705553f051b1458aaf3d17a" prot="protected" virt="non-virtual"><scope>ConfigDialog</scope><name>changeEvent</name></member>
+      <member refid="class_config_dialog_1a28fcaf732c9f363b30b2fc4a9abd9251" prot="public" virt="non-virtual"><scope>ConfigDialog</scope><name>ConfigDialog</name></member>
+      <member refid="class_config_dialog_1a45966fcb35bfca9ee45fe9fc9447a4f5" prot="public" virt="non-virtual"><scope>ConfigDialog</scope><name>ConfigDialog</name></member>
+      <member refid="class_config_dialog_1a49a00b0b82e40c2e26ddb3702438f3ff" prot="private" virt="non-virtual"><scope>ConfigDialog</scope><name>m_correctClosed</name></member>
+      <member refid="class_config_dialog_1aebf816c83d7aa4a3bff2b3e1e16ccb6d" prot="private" virt="non-virtual"><scope>ConfigDialog</scope><name>m_settings</name></member>
+      <member refid="class_config_dialog_1a99ff17058888a9f4680d931b3dbcc107" prot="private" virt="non-virtual"><scope>ConfigDialog</scope><name>on_buttonBox_accepted</name></member>
+      <member refid="class_config_dialog_1af7cc8e52db580a91f560e5d60fa53be1" prot="private" virt="non-virtual"><scope>ConfigDialog</scope><name>on_buttonBox_rejected</name></member>
+      <member refid="class_config_dialog_1a8f035c7e6b76c9a00b2dbc4a9bbffa2a" prot="private" virt="non-virtual"><scope>ConfigDialog</scope><name>on_comboBox_method_activated</name></member>
+      <member refid="class_config_dialog_1a05e105aa3357b7fb82a2f5815b2cb853" prot="private" virt="non-virtual"><scope>ConfigDialog</scope><name>on_pushButton_imagePath_clicked</name></member>
+      <member refid="class_config_dialog_1a80ba58182a35015b4cc5c542b0c62fcb" prot="private" virt="non-virtual"><scope>ConfigDialog</scope><name>on_pushButton_modelPath_clicked</name></member>
+      <member refid="class_config_dialog_1afcb1c471f181177573ee6e9ebd2e33e7" prot="private" virt="non-virtual"><scope>ConfigDialog</scope><name>on_pushButton_outputDir_clicked</name></member>
+      <member refid="class_config_dialog_1a2ac4e126ef0f47b9ccf800bbb2560885" prot="private" virt="non-virtual"><scope>ConfigDialog</scope><name>on_pushButton_printResults_clicked</name></member>
+      <member refid="class_config_dialog_1a213196688dcf491b2118cef2ac0c4d5d" prot="private" virt="non-virtual"><scope>ConfigDialog</scope><name>on_pushButton_printTiming_clicked</name></member>
+      <member refid="class_config_dialog_1a0f0ed746b2d7583be3869a363b91136c" prot="private" virt="non-virtual"><scope>ConfigDialog</scope><name>ui</name></member>
+      <member refid="class_config_dialog_1a485badac4dffa04603f800bb9d396e1d" prot="public" virt="non-virtual"><scope>ConfigDialog</scope><name>~ConfigDialog</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

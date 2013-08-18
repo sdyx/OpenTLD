@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="blob_8h" kind="file">
+    <compoundname>blob.h</compoundname>
+    <includes local="no">cxcore.h</includes>
+    <includes refid="_blob_library_configuration_8h" local="yes">BlobLibraryConfiguration.h</includes>
+    <includes refid="_blob_contour_8h" local="yes">BlobContour.h</includes>
+    <includedby refid="blob_8cpp" local="yes">src/3rdparty/cvblobs/blob.cpp</includedby>
+    <includedby refid="_blob_operators_8h" local="yes">src/3rdparty/cvblobs/BlobOperators.h</includedby>
+    <includedby refid="_blob_result_8h" local="yes">src/3rdparty/cvblobs/BlobResult.h</includedby>
+    <includedby refid="_component_labeling_8h" local="yes">src/3rdparty/cvblobs/ComponentLabeling.h</includedby>
+    <incdepgraph>
+      <node id="1028">
+        <label>list</label>
+      </node>
+      <node id="1025">
+        <label>cxcore.h</label>
+      </node>
+      <node id="1026">
+        <label>BlobLibraryConfiguration.h</label>
+        <link refid="_blob_library_configuration_8h"/>
+      </node>
+      <node id="1027">
+        <label>BlobContour.h</label>
+        <link refid="_blob_contour_8h"/>
+        <childnode refid="1028" relation="include">
+        </childnode>
+        <childnode refid="1029" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+      </node>
+      <node id="1029">
+        <label>cv.h</label>
+      </node>
+      <node id="1024">
+        <label>src/3rdparty/cvblobs/blob.h</label>
+        <link refid="blob.h"/>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+        <childnode refid="1027" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1032">
+        <label>src/3rdparty/cvblobs/BlobOperators.h</label>
+        <link refid="_blob_operators_8h"/>
+        <childnode refid="1033" relation="include">
+        </childnode>
+        <childnode refid="1034" relation="include">
+        </childnode>
+      </node>
+      <node id="1036">
+        <label>src/libopentld/tld/ForegroundDetector.cpp</label>
+        <link refid="_foreground_detector_8cpp"/>
+      </node>
+      <node id="1031">
+        <label>src/3rdparty/cvblobs/blob.cpp</label>
+        <link refid="blob_8cpp"/>
+      </node>
+      <node id="1037">
+        <label>src/3rdparty/cvblobs/ComponentLabeling.h</label>
+        <link refid="_component_labeling_8h"/>
+        <childnode refid="1034" relation="include">
+        </childnode>
+        <childnode refid="1038" relation="include">
+        </childnode>
+      </node>
+      <node id="1035">
+        <label>src/3rdparty/cvblobs/BlobResult.cpp</label>
+        <link refid="_blob_result_8cpp"/>
+      </node>
+      <node id="1038">
+        <label>src/3rdparty/cvblobs/ComponentLabeling.cpp</label>
+        <link refid="_component_labeling_8cpp"/>
+      </node>
+      <node id="1033">
+        <label>src/3rdparty/cvblobs/BlobOperators.cpp</label>
+        <link refid="_blob_operators_8cpp"/>
+      </node>
+      <node id="1034">
+        <label>src/3rdparty/cvblobs/BlobResult.h</label>
+        <link refid="_blob_result_8h"/>
+        <childnode refid="1035" relation="include">
+        </childnode>
+        <childnode refid="1036" relation="include">
+        </childnode>
+      </node>
+      <node id="1030">
+        <label>src/3rdparty/cvblobs/blob.h</label>
+        <link refid="blob.h"/>
+        <childnode refid="1031" relation="include">
+        </childnode>
+        <childnode refid="1032" relation="include">
+        </childnode>
+        <childnode refid="1034" relation="include">
+        </childnode>
+        <childnode refid="1037" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_c_blob" prot="public">CBlob</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="blob_8h_1ae21ba61a4f023a2f91fc5feaad495073" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int t_labelType</definition>
+        <argsstring></argsstring>
+        <name>t_labelType</name>
+        <briefdescription>
+<para>Disable warnings referred to 255 character truncation for the std:map. </para>        </briefdescription>
+        <detaileddescription>
+<para>Type of labelled images </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="33" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Blob.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">FUNCIONALITAT:<sp/>Definició<sp/>de<sp/>la<sp/>classe<sp/>CBlob</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">AUTOR:<sp/>Inspecta<sp/>S.L.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">MODIFICACIONS<sp/>(Modificació,<sp/>Autor,<sp/>Data):</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">FUNCTIONALITY:<sp/>Definition<sp/>of<sp/>the<sp/>CBlob<sp/>class<sp/>and<sp/>some<sp/>helper<sp/>classes<sp/>to<sp/>perform</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>some<sp/>calculations<sp/>on<sp/>it</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">AUTHOR:<sp/>Inspecta<sp/>S.L.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">MODIFICATIONS<sp/>(Modification,<sp/>Author,<sp/>Date):</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment">**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor">#pragma<sp/>warning(<sp/>disable<sp/>:<sp/>4786<sp/>)<sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CBLOB_INSPECTA_INCLUDED</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CBLOB_INSPECTA_INCLUDED</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cxcore.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_blob_library_configuration_8h" kindref="compound">BlobLibraryConfiguration.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_blob_contour_8h" kindref="compound">BlobContour.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>BLOB_OBJECT_FACTORY</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#include<sp/>&quot;..\inspecta\DesignPatterns\ObjectFactory.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="blob_8h_1ae21ba61a4f023a2f91fc5feaad495073" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t_labelType;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_c_blob" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::list&lt;CBlobContour&gt;<sp/>t_contourList;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_blob_1acd24304c1bc98128b24914f3e4bfea7c" kindref="member">CBlob</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_blob_1acd24304c1bc98128b24914f3e4bfea7c" kindref="member">CBlob</ref>(<sp/><ref refid="blob_8h_1ae21ba61a4f023a2f91fc5feaad495073" kindref="member" tooltip="Disable warnings referred to 255 character truncation for the std:map.">t_labelType</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>CvPoint<sp/>startPoint,<sp/>CvSize<sp/>originalImageSize<sp/>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_blob_1a593ffb9ba17290432d04c383f2f104e2" kindref="member">~CBlob</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_blob_1acd24304c1bc98128b24914f3e4bfea7c" kindref="member">CBlob</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref><sp/>&amp;src<sp/>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_blob_1acd24304c1bc98128b24914f3e4bfea7c" kindref="member">CBlob</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref><sp/>*src<sp/>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref>&amp;<sp/><ref refid="class_c_blob_1a724e55442a030bf94da856310e324a40" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref><sp/>&amp;src<sp/>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1ad26a1bc4e31809c3bd76424b05824e90" kindref="member" tooltip="Adds a new internal contour to the blob.">AddInternalContour</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_contour" kindref="compound" tooltip="Blob contour class (in crack code).">CBlobContour</ref><sp/>&amp;newContour<sp/>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58" refid="class_c_blob_1ad136387165bd74c368cb4ecc7632e4cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_blob_contour" kindref="compound" tooltip="Blob contour class (in crack code).">CBlobContour</ref><sp/>*<ref refid="class_c_blob_1ad136387165bd74c368cb4ecc7632e4cf" kindref="member" tooltip="Retrieves contour in Freeman&amp;#39;s chain code.">GetExternalContour</ref>()</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;m_externalContour;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="class_c_blob_1a1eeee72a4369dc9485c6ae6573631a02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvMemStorage<sp/>*<ref refid="class_c_blob_1a1eeee72a4369dc9485c6ae6573631a02" kindref="member" tooltip="Retrieves blob storage.">GetStorage</ref>()</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_storage;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="class_c_blob_1a1d3fd90bc98f6d845babb18a3f058bc2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="blob_8h_1ae21ba61a4f023a2f91fc5feaad495073" kindref="member" tooltip="Disable warnings referred to 255 character truncation for the std:map.">t_labelType</ref><sp/><ref refid="class_c_blob_1a1d3fd90bc98f6d845babb18a3f058bc2" kindref="member" tooltip="Get label ID.">GetID</ref>()</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_id;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_blob_1a2d56a7dee1cbeb3178ff083630ee31b0" kindref="member" tooltip="&amp;gt; 0 for extern blobs, 0 if not">Exterior</ref>(<sp/>IplImage<sp/>*mask,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>xBorder<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>yBorder<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1a6f1db9fcb42c0a3ea003aaeb0ec65a8d" kindref="member" tooltip="Compute blob&amp;#39;s area.">Area</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1af63853ea55dbebbee5b013189e765b51" kindref="member" tooltip="Compute blob&amp;#39;s perimeter.">Perimeter</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1a4f5dfca1ee933e07a39965375f9f07c5" kindref="member" tooltip="Compute blob&amp;#39;s moment (p,q up to MAX_CALCULATED_MOMENTS).">Moment</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>q);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1ab1501b07a2c5ee23843bac66d20974e2" kindref="member" tooltip="Compute extern perimeter.">ExternPerimeter</ref>(<sp/>IplImage<sp/>*mask,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>xBorder<sp/><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>yBorder<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1a1b12d25f8e470fdd808ac2e3bfe9bad4" kindref="member" tooltip="Get mean grey color.">Mean</ref>(<sp/>IplImage<sp/>*image<sp/>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1a014b670bb748e6767ef070e1bc25be7a" kindref="member" tooltip="Get standard deviation grey color.">StdDev</ref>(<sp/>IplImage<sp/>*image<sp/>);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1ac97e73d3040530de09a187d02632deb1" kindref="member">IsEmpty</ref>();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_blob_contour_8h_1abf72b29b2c653dd623e9b39a447809c0" kindref="member" tooltip="Type of list of points.">t_PointList</ref><sp/><ref refid="class_c_blob_1aacc50d5d47e0543d4e0a569d05009006" kindref="member">GetConvexHull</ref>();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1a1a12b6dee61d2db86cd3a60c0671382e" kindref="member">FillBlob</ref>(<sp/>IplImage<sp/>*imatge,<sp/>CvScalar<sp/>color,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offsetX<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offsetY<sp/>=<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1a006463cc42ef0e4b8986fa5020cb6f90" kindref="member" tooltip="Join a blob to current one (add&amp;#39;s contour.">JoinBlob</ref>(<sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref><sp/>*blob<sp/>);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvRect<sp/><ref refid="class_c_blob_1a5391167c172eb461eb762fbdd81306de" kindref="member" tooltip="Get bounding box.">GetBoundingBox</ref>();</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvBox2D<sp/><ref refid="class_c_blob_1ad0bb95f395084ee89ca35cf11f203342" kindref="member" tooltip="Get bounding ellipse.">GetEllipse</ref>();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="class_c_blob_1aa3313af22e7f28d65ba245bc3b8a30bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1aa3313af22e7f28d65ba245bc3b8a30bc" kindref="member" tooltip="Minimun X.">MinX</ref>()</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1a5391167c172eb461eb762fbdd81306de" kindref="member" tooltip="Get bounding box.">GetBoundingBox</ref>().x;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118" refid="class_c_blob_1a44e2caf6c7fc6e8360d2576c18c9bc2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1a44e2caf6c7fc6e8360d2576c18c9bc2b" kindref="member" tooltip="Minimun Y.">MinY</ref>()</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1a5391167c172eb461eb762fbdd81306de" kindref="member" tooltip="Get bounding box.">GetBoundingBox</ref>().y;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123" refid="class_c_blob_1ab26a757fffc581df39620425de008cbc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1ab26a757fffc581df39620425de008cbc" kindref="member" tooltip="Maximun X.">MaxX</ref>()</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1a5391167c172eb461eb762fbdd81306de" kindref="member" tooltip="Get bounding box.">GetBoundingBox</ref>().x<sp/>+<sp/><ref refid="class_c_blob_1a5391167c172eb461eb762fbdd81306de" kindref="member" tooltip="Get bounding box.">GetBoundingBox</ref>().width;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128" refid="class_c_blob_1a740a37afcd841bf719587d2f0128c555" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1a740a37afcd841bf719587d2f0128c555" kindref="member" tooltip="Maximun Y.">MaxY</ref>()</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1a5391167c172eb461eb762fbdd81306de" kindref="member" tooltip="Get bounding box.">GetBoundingBox</ref>().y<sp/>+<sp/><ref refid="class_c_blob_1a5391167c172eb461eb762fbdd81306de" kindref="member" tooltip="Get bounding box.">GetBoundingBox</ref>().height;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ClearContours();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Blob<sp/>contours</highlight></codeline>
+<codeline lineno="139"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvMemStorage<sp/>*m_storage;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_blob_contour" kindref="compound" tooltip="Blob contour class (in crack code).">CBlobContour</ref><sp/>m_externalContour;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t_contourList<sp/>m_internalContours;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Blob<sp/>features</highlight></codeline>
+<codeline lineno="151"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="blob_8h_1ae21ba61a4f023a2f91fc5feaad495073" kindref="member" tooltip="Disable warnings referred to 255 character truncation for the std:map.">t_labelType</ref><sp/>m_id;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_area;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_perimeter;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_externPerimeter;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_meanGray;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_stdDevGray;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvRect<sp/>m_boundingBox;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvBox2D<sp/>m_ellipse;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvSize<sp/>m_originalImageSize;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//CBLOB_INSPECTA_INCLUDED</highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h"/>
+  </compounddef>
+</doxygen>

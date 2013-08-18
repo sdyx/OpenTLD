@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="classlibconfig_1_1_config_exception" kind="class" prot="public">
+    <compoundname>libconfig::ConfigException</compoundname>
+    <derivedcompoundref refid="classlibconfig_1_1_file_i_o_exception" prot="public" virt="non-virtual">libconfig::FileIOException</derivedcompoundref>
+    <derivedcompoundref refid="classlibconfig_1_1_parse_exception" prot="public" virt="non-virtual">libconfig::ParseException</derivedcompoundref>
+    <derivedcompoundref refid="classlibconfig_1_1_setting_exception" prot="public" virt="non-virtual">libconfig::SettingException</derivedcompoundref>
+    <includes refid="libconfig_8h_09_09" local="no">libconfig.h++</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="410">
+        <label>libconfig::ConfigException</label>
+        <link refid="classlibconfig_1_1_config_exception"/>
+      </node>
+      <node id="412">
+        <label>libconfig::ParseException</label>
+        <link refid="classlibconfig_1_1_parse_exception"/>
+        <childnode refid="410" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="413">
+        <label>libconfig::SettingException</label>
+        <link refid="classlibconfig_1_1_setting_exception"/>
+        <childnode refid="410" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="415">
+        <label>libconfig::SettingNotFoundException</label>
+        <link refid="classlibconfig_1_1_setting_not_found_exception"/>
+        <childnode refid="413" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="416">
+        <label>libconfig::SettingTypeException</label>
+        <link refid="classlibconfig_1_1_setting_type_exception"/>
+        <childnode refid="413" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="414">
+        <label>libconfig::SettingNameException</label>
+        <link refid="classlibconfig_1_1_setting_name_exception"/>
+        <childnode refid="413" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="411">
+        <label>libconfig::FileIOException</label>
+        <link refid="classlibconfig_1_1_file_i_o_exception"/>
+        <childnode refid="410" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="51" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="51" bodyend="51"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

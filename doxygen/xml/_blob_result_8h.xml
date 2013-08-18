@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_blob_result_8h" kind="file">
+    <compoundname>BlobResult.h</compoundname>
+    <includes refid="_blob_library_configuration_8h" local="yes">BlobLibraryConfiguration.h</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">cxcore.h</includes>
+    <includes local="yes">vector</includes>
+    <includes local="no">functional</includes>
+    <includes refid="blob_8h" local="yes">blob.h</includes>
+    <includes refid="_blob_operators_8h" local="yes">BlobOperators.h</includes>
+    <includes refid="_component_labeling_8h" local="yes">ComponentLabeling.h</includes>
+    <includedby refid="_blob_result_8cpp" local="yes">src/3rdparty/cvblobs/BlobResult.cpp</includedby>
+    <includedby refid="_foreground_detector_8cpp" local="yes">src/libopentld/tld/ForegroundDetector.cpp</includedby>
+    <incdepgraph>
+      <node id="1138">
+        <label>list</label>
+      </node>
+      <node id="1135">
+        <label>functional</label>
+      </node>
+      <node id="1140">
+        <label>BlobOperators.h</label>
+        <link refid="_blob_operators_8h"/>
+        <childnode refid="1136" relation="include">
+        </childnode>
+      </node>
+      <node id="1133">
+        <label>cxcore.h</label>
+      </node>
+      <node id="1131">
+        <label>BlobLibraryConfiguration.h</label>
+        <link refid="_blob_library_configuration_8h"/>
+      </node>
+      <node id="1141">
+        <label>ComponentLabeling.h</label>
+        <link refid="_component_labeling_8h"/>
+        <childnode refid="1134" relation="include">
+        </childnode>
+        <childnode refid="1137" relation="include">
+        </childnode>
+        <childnode refid="1136" relation="include">
+        </childnode>
+      </node>
+      <node id="1137">
+        <label>BlobContour.h</label>
+        <link refid="_blob_contour_8h"/>
+        <childnode refid="1138" relation="include">
+        </childnode>
+        <childnode refid="1139" relation="include">
+        </childnode>
+        <childnode refid="1133" relation="include">
+        </childnode>
+      </node>
+      <node id="1134">
+        <label>vector</label>
+      </node>
+      <node id="1139">
+        <label>cv.h</label>
+      </node>
+      <node id="1132">
+        <label>math.h</label>
+      </node>
+      <node id="1130">
+        <label>src/3rdparty/cvblobs/BlobResult.h</label>
+        <link refid="BlobResult.h"/>
+        <childnode refid="1131" relation="include">
+        </childnode>
+        <childnode refid="1132" relation="include">
+        </childnode>
+        <childnode refid="1133" relation="include">
+        </childnode>
+        <childnode refid="1134" relation="include">
+        </childnode>
+        <childnode refid="1135" relation="include">
+        </childnode>
+        <childnode refid="1136" relation="include">
+        </childnode>
+        <childnode refid="1140" relation="include">
+        </childnode>
+        <childnode refid="1141" relation="include">
+        </childnode>
+      </node>
+      <node id="1136">
+        <label>blob.h</label>
+        <link refid="blob_8h"/>
+        <childnode refid="1133" relation="include">
+        </childnode>
+        <childnode refid="1131" relation="include">
+        </childnode>
+        <childnode refid="1137" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1144">
+        <label>src/libopentld/tld/ForegroundDetector.cpp</label>
+        <link refid="_foreground_detector_8cpp"/>
+      </node>
+      <node id="1143">
+        <label>src/3rdparty/cvblobs/BlobResult.cpp</label>
+        <link refid="_blob_result_8cpp"/>
+      </node>
+      <node id="1142">
+        <label>src/3rdparty/cvblobs/BlobResult.h</label>
+        <link refid="BlobResult.h"/>
+        <childnode refid="1143" relation="include">
+        </childnode>
+        <childnode refid="1144" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BlobResult.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">FUNCIONALITAT:<sp/>Definiciï¿½<sp/>de<sp/>la<sp/>classe<sp/>CBlobResult</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">AUTOR:<sp/>Inspecta<sp/>S.L.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">MODIFICACIONS<sp/>(Modificaciï¿½,<sp/>Autor,<sp/>Data):</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">FUNCTIONALITY:<sp/>Definition<sp/>of<sp/>the<sp/>CBlobResult<sp/>class</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">AUTHOR:<sp/>Inspecta<sp/>S.L.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">MODIFICATIONS<sp/>(Modification,<sp/>Author,<sp/>Date):</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment">**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(_CLASSE_BLOBRESULT_INCLUDED)</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_CLASSE_BLOBRESULT_INCLUDED</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>_MSC_VER<sp/>&gt;<sp/>1000<sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_MSC_VER<sp/>&gt;<sp/>1000</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_blob_library_configuration_8h" kindref="compound">BlobLibraryConfiguration.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cxcore.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MATRIXCV_ACTIU</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#include<sp/>&quot;matrixCV.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>llibreria<sp/>STL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#include<sp/>&quot;vector&quot;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/>double_stl_vector;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>vectors<sp/>de<sp/>la<sp/>STL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="blob_8h" kindref="compound">blob.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_blob_operators_8h" kindref="compound">BlobOperators.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_component_labeling_8h" kindref="compound">ComponentLabeling.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Filtres<sp/>/<sp/>Filters</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor">#define<sp/>B_INCLUDE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1L</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>B_EXCLUDE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2L</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor">#define<sp/>B_EQUAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3L</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>B_NOT_EQUAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4L</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>B_GREATER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5L</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>B_LESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6L</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>B_GREATER_OR_EQUAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7L</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>B_LESS_OR_EQUAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8L</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>B_INSIDE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9L</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>B_OUTSIDE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10L</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Excepcions<sp/>/<sp/>Exceptions</highlight></codeline>
+<codeline lineno="63"><highlight class="comment">**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor">#define<sp/>EXCEPTION_BLOB_OUT_OF_BOUNDS<sp/><sp/><sp/><sp/>1000</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EXCEPCIO_CALCUL_BLOBS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1001</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="76"><highlight class="keyword">class<sp/></highlight><highlight class="normal">CBlobResult<sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CBlobResult();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CBlobResult(IplImage<sp/>*source,<sp/>IplImage<sp/>*mask,<sp/>uchar<sp/>backgroundColor);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CBlobResult(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CBlobResult<sp/>&amp;source<sp/>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~CBlobResult();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CBlobResult&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CBlobResult&amp;<sp/>source);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CBlobResult<sp/>operator+(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CBlobResult&amp;<sp/>source<sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddBlob(<sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref><sp/>*blob<sp/>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MATRIXCV_ACTIU</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="105"></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double_vector<sp/>GetResult(<sp/><ref refid="class_c_operador_blob" kindref="compound">funcio_calculBlob</ref><sp/>*evaluador<sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="109"></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double_stl_vector<sp/>GetSTLResult(<sp/><ref refid="class_c_operador_blob" kindref="compound">funcio_calculBlob</ref><sp/>*evaluador<sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>GetNumber(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indexblob,<sp/><ref refid="class_c_operador_blob" kindref="compound">funcio_calculBlob</ref><sp/>*evaluador<sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Filter(CBlobResult<sp/>&amp;dst,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filterAction,<sp/><ref refid="class_c_operador_blob" kindref="compound">funcio_calculBlob</ref><sp/>*evaluador,<sp/></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>condition,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lowLimit,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>highLimit<sp/>=<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Filter(CBlobResult<sp/>&amp;dst,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filterAction,<sp/><ref refid="class_c_operador_blob" kindref="compound">funcio_calculBlob</ref><sp/>*evaluador,<sp/></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>condition,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lowLimit,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>highLimit<sp/>=<sp/>0<sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GetNthBlob(<sp/><ref refid="class_c_operador_blob" kindref="compound">funcio_calculBlob</ref><sp/>*criteri,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nBlob,<sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref><sp/>&amp;dst<sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref><sp/>GetBlob(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indexblob)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref><sp/>*GetBlob(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indexblob);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ClearBlobs();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PrintBlobs(<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*nom_fitxer<sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="comment">//Metodes<sp/>GET/SET</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetNumBlobs()</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="148"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{<sp/></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(m_blobs.size());<sp/></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RaiseError(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errorCode)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DoFilter(CBlobResult<sp/>&amp;dst,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filterAction,<sp/><ref refid="class_c_operador_blob" kindref="compound">funcio_calculBlob</ref><sp/>*evaluador,<sp/></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>condition,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lowLimit,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>highLimit<sp/>=<sp/>0)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_component_labeling_8h_1a9b2ee33d26a482072b82620e6709e66e" kindref="member" tooltip="definició de que es un vector de blobs">Blob_vector</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_blobs;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!defined(_CLASSE_BLOBRESULT_INCLUDED)</highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobResult.h"/>
+  </compounddef>
+</doxygen>

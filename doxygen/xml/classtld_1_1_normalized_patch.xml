@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="classtld_1_1_normalized_patch" kind="class" prot="public">
+    <compoundname>tld::NormalizedPatch</compoundname>
+    <includes refid="_normalized_patch_8h" local="no">NormalizedPatch.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtld_1_1_normalized_patch_1ae76afafa7dd50901d7c468b92d1c1df5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float tld::NormalizedPatch::values[TLD_PATCH_SIZE *TLD_PATCH_SIZE]</definition>
+        <argsstring>[TLD_PATCH_SIZE *TLD_PATCH_SIZE]</argsstring>
+        <name>values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NormalizedPatch.h" line="37" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NormalizedPatch.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_n_n_classifier_1aa59628d72a448c3ee686d9fd78d3e62a" compoundref="_n_n_classifier_8cpp" startline="81" endline="125">tld::NNClassifier::classifyPatch</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_normalized_patch_1a0d064e4aea00c363f5b0eb768cf743ea" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::NormalizedPatch::positive</definition>
+        <argsstring></argsstring>
+        <name>positive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NormalizedPatch.h" line="38" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NormalizedPatch.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NormalizedPatch.h" line="35" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NormalizedPatch.h" bodystart="34" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classtld_1_1_normalized_patch_1a0d064e4aea00c363f5b0eb768cf743ea" prot="public" virt="non-virtual"><scope>tld::NormalizedPatch</scope><name>positive</name></member>
+      <member refid="classtld_1_1_normalized_patch_1ae76afafa7dd50901d7c468b92d1c1df5" prot="public" virt="non-virtual"><scope>tld::NormalizedPatch</scope><name>values</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

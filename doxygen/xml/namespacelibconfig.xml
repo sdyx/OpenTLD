@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="namespacelibconfig" kind="namespace">
+    <compoundname>libconfig</compoundname>
+    <innerclass refid="classlibconfig_1_1_config_exception" prot="public">libconfig::ConfigException</innerclass>
+    <innerclass refid="classlibconfig_1_1_setting_exception" prot="public">libconfig::SettingException</innerclass>
+    <innerclass refid="classlibconfig_1_1_setting_type_exception" prot="public">libconfig::SettingTypeException</innerclass>
+    <innerclass refid="classlibconfig_1_1_setting_not_found_exception" prot="public">libconfig::SettingNotFoundException</innerclass>
+    <innerclass refid="classlibconfig_1_1_setting_name_exception" prot="public">libconfig::SettingNameException</innerclass>
+    <innerclass refid="classlibconfig_1_1_file_i_o_exception" prot="public">libconfig::FileIOException</innerclass>
+    <innerclass refid="classlibconfig_1_1_parse_exception" prot="public">libconfig::ParseException</innerclass>
+    <innerclass refid="classlibconfig_1_1_setting" prot="public">libconfig::Setting</innerclass>
+    <innerclass refid="classlibconfig_1_1_config" prot="public">libconfig::Config</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacelibconfig_1a8e110477bf88dac91c60df3cc4e7eebe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int libconfig::__toTypeCode</definition>
+        <argsstring>(Setting::Type type)</argsstring>
+        <name>__toTypeCode</name>
+        <param>
+          <type><ref refid="classlibconfig_1_1_setting_1a42f760ff88654e784477a6f040267bb4" kindref="member">Setting::Type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" line="59" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="58" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelibconfig_1ac6ddf54284dd0e8344d0e64a61cf9f17" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void libconfig::__constructPath</definition>
+        <argsstring>(const Setting &amp;setting, std::stringstream &amp;path)</argsstring>
+        <name>__constructPath</name>
+        <param>
+          <type>const <ref refid="classlibconfig_1_1_setting" kindref="compound">Setting</ref> &amp;</type>
+          <declname>setting</declname>
+        </param>
+        <param>
+          <type>std::stringstream &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" line="107" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="105" bodyend="122"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="49"/>
+  </compounddef>
+</doxygen>

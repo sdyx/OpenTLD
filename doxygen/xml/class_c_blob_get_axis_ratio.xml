@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="class_c_blob_get_axis_ratio" kind="class" prot="public">
+    <compoundname>CBlobGetAxisRatio</compoundname>
+    <basecompoundref refid="class_c_operador_blob" prot="public" virt="non-virtual">COperadorBlob</basecompoundref>
+    <includes refid="_blob_operators_8h" local="no">BlobOperators.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_blob_get_axis_ratio_1a8b9deb499fb1c850d92f73e34091469a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double CBlobGetAxisRatio::operator()</definition>
+        <argsstring>(CBlob &amp;blob)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="class_c_operador_blob_1a303c4189cc94cafbcbee116bf014e623">operator()</reimplements>
+        <param>
+          <type><ref refid="class_c_blob" kindref="compound">CBlob</ref> &amp;</type>
+          <declname>blob</declname>
+        </param>
+        <briefdescription>
+<para>Aply operator to blob. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="704" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="703" bodyend="716"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_axis_ratio_1a32387adba4826184cb5296c11973ca6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>const char* CBlobGetAxisRatio::GetNom</definition>
+        <argsstring>()</argsstring>
+        <name>GetNom</name>
+        <reimplements refid="class_c_operador_blob_1a717a19c163a26b45081a2231be24c008">GetNom</reimplements>
+        <briefdescription>
+<para>Get operator name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="718" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="717" bodyend="720"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Classe per calcular el ratio entre l&apos;eix major i menor de la el·lipse Class to calculate the ratio between both axes of the ellipse </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="225">
+        <label>CBlobGetAxisRatio</label>
+        <link refid="class_c_blob_get_axis_ratio"/>
+        <childnode refid="226" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="226">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="227">
+        <label>CBlobGetAxisRatio</label>
+        <link refid="class_c_blob_get_axis_ratio"/>
+        <childnode refid="228" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="228">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="701" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="700" bodyend="721"/>
+    <listofallmembers>
+      <member refid="class_c_blob_get_axis_ratio_1a32387adba4826184cb5296c11973ca6e" prot="public" virt="virtual"><scope>CBlobGetAxisRatio</scope><name>GetNom</name></member>
+      <member refid="class_c_operador_blob_1a477edfe687cf9ef41469bcf6ea636a75" prot="public" virt="non-virtual"><scope>CBlobGetAxisRatio</scope><name>operator COperadorBlob *</name></member>
+      <member refid="class_c_blob_get_axis_ratio_1a8b9deb499fb1c850d92f73e34091469a" prot="public" virt="virtual"><scope>CBlobGetAxisRatio</scope><name>operator()</name></member>
+      <member refid="class_c_operador_blob_1a25ccc652bfa55e7b0143c88f452729a2" prot="public" virt="virtual"><scope>CBlobGetAxisRatio</scope><name>~COperadorBlob</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="class_c_blob_get_area" kind="class" prot="public">
+    <compoundname>CBlobGetArea</compoundname>
+    <basecompoundref refid="class_c_operador_blob" prot="public" virt="non-virtual">COperadorBlob</basecompoundref>
+    <includes refid="_blob_operators_8h" local="no">BlobOperators.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_blob_get_area_1a3c8268e93a2271bcd878dbf13d259afb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double CBlobGetArea::operator()</definition>
+        <argsstring>(CBlob &amp;blob)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="class_c_operador_blob_1a303c4189cc94cafbcbee116bf014e623">operator()</reimplements>
+        <param>
+          <type><ref refid="class_c_blob" kindref="compound">CBlob</ref> &amp;</type>
+          <declname>blob</declname>
+        </param>
+        <briefdescription>
+<para>Aply operator to blob. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="79" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="78" bodyend="81"/>
+        <references refid="class_c_blob_1a6f1db9fcb42c0a3ea003aaeb0ec65a8d" compoundref="blob_8cpp" startline="157" endline="172">CBlob::Area</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_area_1a21824b9cf62da6e2dfacf8084a6992a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>const char* CBlobGetArea::GetNom</definition>
+        <argsstring>()</argsstring>
+        <name>GetNom</name>
+        <reimplements refid="class_c_operador_blob_1a717a19c163a26b45081a2231be24c008">GetNom</reimplements>
+        <briefdescription>
+<para>Get operator name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="83" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="82" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Classe per calcular l&apos;àrea d&apos;un blob Class to get the area of a blob </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="217">
+        <label>CBlobGetArea</label>
+        <link refid="class_c_blob_get_area"/>
+        <childnode refid="218" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="218">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="219">
+        <label>CBlobGetArea</label>
+        <link refid="class_c_blob_get_area"/>
+        <childnode refid="220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="220">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="76" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="75" bodyend="86"/>
+    <listofallmembers>
+      <member refid="class_c_blob_get_area_1a21824b9cf62da6e2dfacf8084a6992a9" prot="public" virt="virtual"><scope>CBlobGetArea</scope><name>GetNom</name></member>
+      <member refid="class_c_operador_blob_1a477edfe687cf9ef41469bcf6ea636a75" prot="public" virt="non-virtual"><scope>CBlobGetArea</scope><name>operator COperadorBlob *</name></member>
+      <member refid="class_c_blob_get_area_1a3c8268e93a2271bcd878dbf13d259afb" prot="public" virt="virtual"><scope>CBlobGetArea</scope><name>operator()</name></member>
+      <member refid="class_c_operador_blob_1a25ccc652bfa55e7b0143c88f452729a2" prot="public" virt="virtual"><scope>CBlobGetArea</scope><name>~COperadorBlob</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

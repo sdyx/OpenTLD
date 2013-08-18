@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_lk_8h" kind="file">
+    <compoundname>Lk.h</compoundname>
+    <includes local="no">cv.h</includes>
+    <includedby refid="_f_b_track_8cpp" local="yes">src/libopentld/mftracker/FBTrack.cpp</includedby>
+    <includedby refid="_lk_8cpp" local="yes">src/libopentld/mftracker/Lk.cpp</includedby>
+    <incdepgraph>
+      <node id="1388">
+        <label>src/libopentld/mftracker/Lk.h</label>
+        <link refid="Lk.h"/>
+        <childnode refid="1389" relation="include">
+        </childnode>
+      </node>
+      <node id="1389">
+        <label>cv.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1391">
+        <label>src/libopentld/mftracker/FBTrack.cpp</label>
+        <link refid="_f_b_track_8cpp"/>
+      </node>
+      <node id="1390">
+        <label>src/libopentld/mftracker/Lk.h</label>
+        <link refid="Lk.h"/>
+        <childnode refid="1391" relation="include">
+        </childnode>
+        <childnode refid="1392" relation="include">
+        </childnode>
+      </node>
+      <node id="1392">
+        <label>src/libopentld/mftracker/Lk.cpp</label>
+        <link refid="_lk_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_lk_8h_1a72f8af92e33c2f2c05d9d0b1ecbbc3c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initImgs</definition>
+        <argsstring>()</argsstring>
+        <name>initImgs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Need before start of trackLK and at the end of the program for cleanup.</para><para>Needed before start of trackLK and at the end of the program for cleanup. Handles PYR(Pyramid cache) variable. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/Lk.h" line="35" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/Lk.cpp" bodystart="116" bodyend="135"/>
+        <references refid="_lk_8cpp_1a52ae776a7c4ac1e8bce389e803672048" compoundref="_lk_8cpp" startline="36">MAX_IMG</references>
+        <referencedby refid="_f_b_track_8h_1a2c818794e6fe6aa3f6efdc9c46ffd164" compoundref="_f_b_track_8cpp" startline="45" endline="150">fbtrack</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_lk_8h_1aeb798560b2c1eda165af271062b840ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int trackLK</definition>
+        <argsstring>(IplImage *imgI, IplImage *imgJ, float ptsI[], int nPtsI, float ptsJ[], int nPtsJ, int level, float *fbOut, float *nccOut, char *statusOut)</argsstring>
+        <name>trackLK</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>imgI</declname>
+        </param>
+        <param>
+          <type>IplImage *</type>
+          <declname>imgJ</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ptsI</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nPtsI</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ptsJ</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nPtsJ</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>fbOut</declname>
+          <defname>fb</defname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>nccOut</declname>
+          <defname>ncc</defname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>statusOut</declname>
+          <defname>status</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tracks Points from 1.Image to 2.Image. Need initImgs before start and at the end of the program for cleanup.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>imgI</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>previous Image source. (isn&apos;t changed) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>imgJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>actual Image target. (isn&apos;t changed) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptsI</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>points to track from first Image. Format [0] = x1, [1] = y1, [2] = x2 ... </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nPtsI</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of Points to track from first Image </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptsJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>container for calculated points of second Image. Must have the length of nPtsI. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nPtsJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of Points </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pyramidlevel, default 5 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>forward-backward confidence value. (corresponds to euclidean distance between). Must have the length of nPtsI: nPtsI * sizeof(float). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ncc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>normCrossCorrelation values. needs as inputlength nPtsI * sizeof(float) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates positive tracks. 1 = PosTrack 0 = NegTrack needs as inputlength nPtsI * sizeof(char)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Based Matlab function: lk(2,imgI,imgJ,ptsI,ptsJ,Level) (Level is optional) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/Lk.h" line="38" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/Lk.cpp" bodystart="162" bodyend="265"/>
+        <references refid="_lk_8cpp_1a6b1f0fbd52a55b99409b426f14d1b05a" compoundref="_lk_8cpp" startline="53" endline="63">euclideanDistance</references>
+        <references refid="_lk_8cpp_1a8e6cabe5b03bb93be3661dee66b4dadc" compoundref="_lk_8cpp" startline="37">N_A_N</references>
+        <references refid="_lk_8cpp_1aecd9b4dead7bfe263a7a068dfb577839" compoundref="_lk_8cpp" startline="82" endline="110">normCrossCorrelation</references>
+        <references refid="_lk_8cpp_1a050769e2adadebcaa87cd2362c274d0c" compoundref="_lk_8cpp" startline="42">points</references>
+        <references refid="_lk_8cpp_1a9e5babd1e574af17a2b200cb34933a00" compoundref="_lk_8cpp" startline="41">win_size_lk</references>
+        <referencedby refid="_f_b_track_8h_1a2c818794e6fe6aa3f6efdc9c46ffd164" compoundref="_f_b_track_8cpp" startline="45" endline="150">fbtrack</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor">#ifndef<sp/>LK_H_</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LK_H_</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cv.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lk_8cpp_1a72f8af92e33c2f2c05d9d0b1ecbbc3c6" kindref="member">initImgs</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_lk_8cpp_1acaf626622b93b98f39c91967ccc26588" kindref="member">trackLK</ref>(IplImage<sp/>*imgI,<sp/>IplImage<sp/>*imgJ,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ptsI[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nPtsI,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ptsJ[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nPtsJ,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*fbOut,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*nccOut,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*statusOut);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LK_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/Lk.h"/>
+  </compounddef>
+</doxygen>

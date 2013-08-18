@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="classtld_1_1_variance_filter" kind="class" prot="public">
+    <compoundname>tld::VarianceFilter</compoundname>
+    <includes refid="_variance_filter_8h" local="no">VarianceFilter.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtld_1_1_variance_filter_1aa0f0c34f7e518419bd8a1583495145ad" prot="private" static="no" mutable="no">
+        <type><ref refid="classtld_1_1_integral_image" kindref="compound">IntegralImage</ref>&lt; int &gt; *</type>
+        <definition>IntegralImage&lt;int&gt;* tld::VarianceFilter::integralImg</definition>
+        <argsstring></argsstring>
+        <name>integralImg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.h" line="39" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_variance_filter_1abe3e9c0796fa8d77551209069500c5bb" prot="private" static="no" mutable="no">
+        <type><ref refid="classtld_1_1_integral_image" kindref="compound">IntegralImage</ref>&lt; long long &gt; *</type>
+        <definition>IntegralImage&lt;long long&gt;* tld::VarianceFilter::integralImg_squared</definition>
+        <argsstring></argsstring>
+        <name>integralImg_squared</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.h" line="40" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtld_1_1_variance_filter_1a07f3cd680554508eb6effc4c4b92c322" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::VarianceFilter::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.h" line="43" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_variance_filter_1af1c369cc5338fae5cea4ad997fb1b642" compoundref="_variance_filter_8cpp" startline="84" endline="98">filter</referencedby>
+        <referencedby refid="classtld_1_1_variance_filter_1a0b8e9189907c3c5e9729b63d9beb8c04" compoundref="_variance_filter_8cpp" startline="37" endline="43">VarianceFilter</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_variance_filter_1a2c8913adc5862adf9eb3034b81c1f02b" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* tld::VarianceFilter::windowOffsets</definition>
+        <argsstring></argsstring>
+        <name>windowOffsets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.h" line="44" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_variance_filter_1af1c369cc5338fae5cea4ad997fb1b642" compoundref="_variance_filter_8cpp" startline="84" endline="98">filter</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">tld::DetectorCascade::propagateMembers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_variance_filter_1a21c300c5f491726705f82429e919ccd9" prot="public" static="no" mutable="no">
+        <type><ref refid="classtld_1_1_detection_result" kindref="compound">DetectionResult</ref> *</type>
+        <definition>DetectionResult* tld::VarianceFilter::detectionResult</definition>
+        <argsstring></argsstring>
+        <name>detectionResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.h" line="46" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_variance_filter_1af1c369cc5338fae5cea4ad997fb1b642" compoundref="_variance_filter_8cpp" startline="84" endline="98">filter</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">tld::DetectorCascade::propagateMembers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_variance_filter_1ad5fd1b805c1cb461a31f61dd6fdb8f07" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float tld::VarianceFilter::minVar</definition>
+        <argsstring></argsstring>
+        <name>minVar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.h" line="48" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_variance_filter_1af1c369cc5338fae5cea4ad997fb1b642" compoundref="_variance_filter_8cpp" startline="84" endline="98">filter</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+        <referencedby refid="classtld_1_1_variance_filter_1a0b8e9189907c3c5e9729b63d9beb8c04" compoundref="_variance_filter_8cpp" startline="37" endline="43">VarianceFilter</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" compoundref="_t_l_d_8cpp" startline="374" endline="463">tld::TLD::writeToFile</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtld_1_1_variance_filter_1a0b8e9189907c3c5e9729b63d9beb8c04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tld::VarianceFilter::VarianceFilter</definition>
+        <argsstring>()</argsstring>
+        <name>VarianceFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.h" line="50" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.cpp" bodystart="37" bodyend="43"/>
+        <references refid="classtld_1_1_variance_filter_1a07f3cd680554508eb6effc4c4b92c322" compoundref="_variance_filter_8h" startline="43">enabled</references>
+        <references refid="classtld_1_1_variance_filter_1ad5fd1b805c1cb461a31f61dd6fdb8f07" compoundref="_variance_filter_8h" startline="48">minVar</references>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_variance_filter_1a8dfeb485fdad9b19ab1e37a91b7736f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>tld::VarianceFilter::~VarianceFilter</definition>
+        <argsstring>()</argsstring>
+        <name>~VarianceFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.h" line="51" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.cpp" bodystart="45" bodyend="48"/>
+        <references refid="classtld_1_1_variance_filter_1aa5ec15d4b3670db357b1c7372f5ba25a" compoundref="_variance_filter_8cpp" startline="50" endline="59">release</references>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_variance_filter_1aa5ec15d4b3670db357b1c7372f5ba25a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::VarianceFilter::release</definition>
+        <argsstring>()</argsstring>
+        <name>release</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.h" line="53" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.cpp" bodystart="50" bodyend="59"/>
+        <references refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="_config_8cpp" startline="497">NULL</references>
+        <referencedby refid="classtld_1_1_variance_filter_1a8dfeb485fdad9b19ab1e37a91b7736f9" compoundref="_variance_filter_8cpp" startline="45" endline="48">~VarianceFilter</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_variance_filter_1acd8b8eb452eed28f5a10d830a057eaa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::VarianceFilter::nextIteration</definition>
+        <argsstring>(const cv::Mat &amp;img)</argsstring>
+        <name>nextIteration</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>img</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.h" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_variance_filter_1af1c369cc5338fae5cea4ad997fb1b642" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tld::VarianceFilter::filter</definition>
+        <argsstring>(int idx)</argsstring>
+        <name>filter</name>
+        <param>
+          <type>int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.h" line="55" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.cpp" bodystart="84" bodyend="98"/>
+        <references refid="classtld_1_1_variance_filter_1a3afefcc863a70e718a022731f7256d91" compoundref="_variance_filter_8cpp" startline="61" endline="69">calcVariance</references>
+        <references refid="classtld_1_1_variance_filter_1a21c300c5f491726705f82429e919ccd9" compoundref="_variance_filter_8h" startline="46">detectionResult</references>
+        <references refid="classtld_1_1_variance_filter_1a07f3cd680554508eb6effc4c4b92c322" compoundref="_variance_filter_8h" startline="43">enabled</references>
+        <references refid="classtld_1_1_variance_filter_1ad5fd1b805c1cb461a31f61dd6fdb8f07" compoundref="_variance_filter_8h" startline="48">minVar</references>
+        <references refid="classtld_1_1_detection_result_1ae0725362fbe07964e4ac6861fa1d32fb" compoundref="_detection_result_8h" startline="45">tld::DetectionResult::variances</references>
+        <references refid="classtld_1_1_variance_filter_1a2c8913adc5862adf9eb3034b81c1f02b" compoundref="_variance_filter_8h" startline="44">windowOffsets</references>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_variance_filter_1a3afefcc863a70e718a022731f7256d91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float tld::VarianceFilter::calcVariance</definition>
+        <argsstring>(int *off)</argsstring>
+        <name>calcVariance</name>
+        <param>
+          <type>int *</type>
+          <declname>off</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.h" line="56" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.cpp" bodystart="61" bodyend="69"/>
+        <references refid="classtld_1_1_integral_image_1a671be18d2f3a30aa1aea12d63a787e48" compoundref="_integral_image_8h" startline="39">tld::IntegralImage&lt; T &gt;::data</references>
+        <referencedby refid="classtld_1_1_variance_filter_1af1c369cc5338fae5cea4ad997fb1b642" compoundref="_variance_filter_8cpp" startline="84" endline="98">filter</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="582">
+        <label>tld::IntegralImage&lt; int &gt;</label>
+        <link refid="classtld_1_1_integral_image"/>
+      </node>
+      <node id="580">
+        <label>tld::VarianceFilter</label>
+        <link refid="classtld_1_1_variance_filter"/>
+        <childnode refid="581" relation="usage">
+          <edgelabel>detectionResult</edgelabel>
+        </childnode>
+        <childnode refid="582" relation="usage">
+          <edgelabel>integralImg</edgelabel>
+        </childnode>
+        <childnode refid="583" relation="usage">
+          <edgelabel>integralImg_squared</edgelabel>
+        </childnode>
+      </node>
+      <node id="583">
+        <label>tld::IntegralImage&lt; long long &gt;</label>
+        <link refid="classtld_1_1_integral_image"/>
+      </node>
+      <node id="581">
+        <label>tld::DetectionResult</label>
+        <link refid="classtld_1_1_detection_result"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.h" line="38" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.h" bodystart="37" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classtld_1_1_variance_filter_1a3afefcc863a70e718a022731f7256d91" prot="public" virt="non-virtual"><scope>tld::VarianceFilter</scope><name>calcVariance</name></member>
+      <member refid="classtld_1_1_variance_filter_1a21c300c5f491726705f82429e919ccd9" prot="public" virt="non-virtual"><scope>tld::VarianceFilter</scope><name>detectionResult</name></member>
+      <member refid="classtld_1_1_variance_filter_1a07f3cd680554508eb6effc4c4b92c322" prot="public" virt="non-virtual"><scope>tld::VarianceFilter</scope><name>enabled</name></member>
+      <member refid="classtld_1_1_variance_filter_1af1c369cc5338fae5cea4ad997fb1b642" prot="public" virt="non-virtual"><scope>tld::VarianceFilter</scope><name>filter</name></member>
+      <member refid="classtld_1_1_variance_filter_1aa0f0c34f7e518419bd8a1583495145ad" prot="private" virt="non-virtual"><scope>tld::VarianceFilter</scope><name>integralImg</name></member>
+      <member refid="classtld_1_1_variance_filter_1abe3e9c0796fa8d77551209069500c5bb" prot="private" virt="non-virtual"><scope>tld::VarianceFilter</scope><name>integralImg_squared</name></member>
+      <member refid="classtld_1_1_variance_filter_1ad5fd1b805c1cb461a31f61dd6fdb8f07" prot="public" virt="non-virtual"><scope>tld::VarianceFilter</scope><name>minVar</name></member>
+      <member refid="classtld_1_1_variance_filter_1acd8b8eb452eed28f5a10d830a057eaa7" prot="public" virt="non-virtual"><scope>tld::VarianceFilter</scope><name>nextIteration</name></member>
+      <member refid="classtld_1_1_variance_filter_1aa5ec15d4b3670db357b1c7372f5ba25a" prot="public" virt="non-virtual"><scope>tld::VarianceFilter</scope><name>release</name></member>
+      <member refid="classtld_1_1_variance_filter_1a0b8e9189907c3c5e9729b63d9beb8c04" prot="public" virt="non-virtual"><scope>tld::VarianceFilter</scope><name>VarianceFilter</name></member>
+      <member refid="classtld_1_1_variance_filter_1a2c8913adc5862adf9eb3034b81c1f02b" prot="public" virt="non-virtual"><scope>tld::VarianceFilter</scope><name>windowOffsets</name></member>
+      <member refid="classtld_1_1_variance_filter_1a8dfeb485fdad9b19ab1e37a91b7736f9" prot="public" virt="virtual"><scope>tld::VarianceFilter</scope><name>~VarianceFilter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

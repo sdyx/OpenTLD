@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="structconfig__setting__t" kind="struct" prot="public">
+    <compoundname>config_setting_t</compoundname>
+    <includes refid="libconfig_8h" local="no">libconfig.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structconfig__setting__t_1a2228af4451498a4961b72dd4dcfe57cb" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* config_setting_t::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h" line="77" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structconfig__setting__t_1aab8065083de2436448b7b99b46feff18" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short config_setting_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h" line="78" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h" bodystart="78" bodyend="-1"/>
+        <referencedby refid="libconfig_8h_1a2473fc205d9cbf32b908c7f065b20247" compoundref="libconfig_8c" startline="1521" endline="1543">config_setting_add</referencedby>
+        <referencedby refid="libconfig_8h_1a06ee80cf229ee84e24636f18ca448811" compoundref="libconfig_8c" startline="1074" endline="1077">config_setting_get_bool</referencedby>
+        <referencedby refid="libconfig_8h_1a8e3541a2f0bb8c5a1c0c974b9349e258" compoundref="libconfig_8c" startline="1366" endline="1377">config_setting_get_bool_elem</referencedby>
+        <referencedby refid="libconfig_8h_1afc84573448608b181c20cdb1f2d08e65" compoundref="libconfig_8c" startline="1455" endline="1469">config_setting_get_elem</referencedby>
+        <referencedby refid="libconfig_8h_1a527e54d721f9f0a901e721b0cb517a8a" compoundref="libconfig_8c" startline="1473" endline="1480">config_setting_get_member</referencedby>
+        <referencedby refid="libconfig_8h_1a49c33f493b261e97a4c49d09ecc666eb" compoundref="libconfig_8c" startline="1094" endline="1097">config_setting_get_string</referencedby>
+        <referencedby refid="libconfig_8h_1a8b4cee12cd2e975e7a9700d4139e34b0" compoundref="libconfig_8c" startline="1410" endline="1422">config_setting_get_string_elem</referencedby>
+        <referencedby refid="libconfig_8h_1aa061576c1ac9497eec69561d78a33772" compoundref="libconfig_8c" startline="1499" endline="1510">config_setting_length</referencedby>
+        <referencedby refid="libconfig_8h_1a8985087ce09c9cd2fafc3ef999255a76" compoundref="libconfig_8c" startline="1547" endline="1565">config_setting_remove</referencedby>
+        <referencedby refid="libconfig_8h_1a1b9e9f12ebad863eecba7862ab33c774" compoundref="libconfig_8c" startline="1569" endline="1591">config_setting_remove_elem</referencedby>
+        <referencedby refid="libconfig_8h_1aa234eb9557b7c0463763ecf9a373d2f9" compoundref="libconfig_8c" startline="1081" endline="1090">config_setting_set_bool</referencedby>
+        <referencedby refid="libconfig_8h_1a52b5c9c66db0531f6053f250250d30aa" compoundref="libconfig_8c" startline="1381" endline="1406">config_setting_set_bool_elem</referencedby>
+        <referencedby refid="libconfig_8h_1a40330aa93a3be802ffc486e887d0d303" compoundref="libconfig_8c" startline="1037" endline="1070">config_setting_set_float</referencedby>
+        <referencedby refid="libconfig_8h_1a1fd53974e04e1a119eda0ad68d6e1937" compoundref="libconfig_8c" startline="1337" endline="1362">config_setting_set_float_elem</referencedby>
+        <referencedby refid="libconfig_8h_1a576b6feb860adbc89be91f07281424b4" compoundref="libconfig_8c" startline="1117" endline="1127">config_setting_set_format</referencedby>
+        <referencedby refid="libconfig_8h_1a10c2f141b32bcca44df4c60bf04c4a2d" compoundref="libconfig_8c" startline="974" endline="998">config_setting_set_int</referencedby>
+        <referencedby refid="libconfig_8h_1a4161c3f83fe35355a477667cc28e344d" compoundref="libconfig_8c" startline="1002" endline="1033">config_setting_set_int64</referencedby>
+        <referencedby refid="libconfig_8h_1aa3a474db0c9ebe27c549f5c2be69053d" compoundref="libconfig_8c" startline="1297" endline="1324">config_setting_set_int64_elem</referencedby>
+        <referencedby refid="libconfig_8h_1aedf57606b3ff02ca7f524d62a6094e83" compoundref="libconfig_8c" startline="1256" endline="1283">config_setting_set_int_elem</referencedby>
+        <referencedby refid="libconfig_8h_1a51e31824990a8112f638da692e593d30" compoundref="libconfig_8c" startline="1101" endline="1113">config_setting_set_string</referencedby>
+        <referencedby refid="libconfig_8h_1a1542d7099aa894f705e897d084fc7a06" compoundref="libconfig_8c" startline="1426" endline="1451">config_setting_set_string_elem</referencedby>
+        <referencedby refid="grammar_8c_1aa95461e463ec8927a2b16e55683cfcaf" compoundref="grammar_8c" startline="1223" endline="1994">yyparse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structconfig__setting__t_1a8957b2dcbf59fcfd00a3abe41bd0d7b5" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short config_setting_t::format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h" line="79" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h" bodystart="79" bodyend="-1"/>
+        <referencedby refid="libconfig_8h_1a80963b491d174f650bce4a29d6bf35a3" compoundref="libconfig_8c" startline="1131" endline="1135">config_setting_get_format</referencedby>
+        <referencedby refid="libconfig_8h_1a576b6feb860adbc89be91f07281424b4" compoundref="libconfig_8c" startline="1117" endline="1127">config_setting_set_format</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structconfig__setting__t_1a2d217386c7e30456e484151b61ce597f" prot="public" static="no" mutable="no">
+        <type><ref refid="unionconfig__value__t" kindref="compound">config_value_t</ref></type>
+        <definition>config_value_t config_setting_t::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h" line="80" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h" bodystart="80" bodyend="-1"/>
+        <referencedby refid="libconfig_8h_1a06ee80cf229ee84e24636f18ca448811" compoundref="libconfig_8c" startline="1074" endline="1077">config_setting_get_bool</referencedby>
+        <referencedby refid="libconfig_8h_1a8e3541a2f0bb8c5a1c0c974b9349e258" compoundref="libconfig_8c" startline="1366" endline="1377">config_setting_get_bool_elem</referencedby>
+        <referencedby refid="libconfig_8h_1afc84573448608b181c20cdb1f2d08e65" compoundref="libconfig_8c" startline="1455" endline="1469">config_setting_get_elem</referencedby>
+        <referencedby refid="libconfig_8h_1a527e54d721f9f0a901e721b0cb517a8a" compoundref="libconfig_8c" startline="1473" endline="1480">config_setting_get_member</referencedby>
+        <referencedby refid="libconfig_8h_1a49c33f493b261e97a4c49d09ecc666eb" compoundref="libconfig_8c" startline="1094" endline="1097">config_setting_get_string</referencedby>
+        <referencedby refid="libconfig_8h_1a8b4cee12cd2e975e7a9700d4139e34b0" compoundref="libconfig_8c" startline="1410" endline="1422">config_setting_get_string_elem</referencedby>
+        <referencedby refid="libconfig_8h_1a3bdeb32c005a97e582d130d227ac3a81" compoundref="libconfig_8c" startline="1595" endline="1613">config_setting_index</referencedby>
+        <referencedby refid="libconfig_8h_1aa061576c1ac9497eec69561d78a33772" compoundref="libconfig_8c" startline="1499" endline="1510">config_setting_length</referencedby>
+        <referencedby refid="libconfig_8h_1a8985087ce09c9cd2fafc3ef999255a76" compoundref="libconfig_8c" startline="1547" endline="1565">config_setting_remove</referencedby>
+        <referencedby refid="libconfig_8h_1a1b9e9f12ebad863eecba7862ab33c774" compoundref="libconfig_8c" startline="1569" endline="1591">config_setting_remove_elem</referencedby>
+        <referencedby refid="libconfig_8h_1aa234eb9557b7c0463763ecf9a373d2f9" compoundref="libconfig_8c" startline="1081" endline="1090">config_setting_set_bool</referencedby>
+        <referencedby refid="libconfig_8h_1a40330aa93a3be802ffc486e887d0d303" compoundref="libconfig_8c" startline="1037" endline="1070">config_setting_set_float</referencedby>
+        <referencedby refid="libconfig_8h_1a10c2f141b32bcca44df4c60bf04c4a2d" compoundref="libconfig_8c" startline="974" endline="998">config_setting_set_int</referencedby>
+        <referencedby refid="libconfig_8h_1a4161c3f83fe35355a477667cc28e344d" compoundref="libconfig_8c" startline="1002" endline="1033">config_setting_set_int64</referencedby>
+        <referencedby refid="libconfig_8h_1a51e31824990a8112f638da692e593d30" compoundref="libconfig_8c" startline="1101" endline="1113">config_setting_set_string</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structconfig__setting__t_1a70368ebbbb3c902adbbcd96606547d7d" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structconfig__setting__t" kindref="compound">config_setting_t</ref> *</type>
+        <definition>struct config_setting_t* config_setting_t::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h" line="81" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h" bodystart="81" bodyend="-1"/>
+        <referencedby refid="libconfig_8h_1a3bdeb32c005a97e582d130d227ac3a81" compoundref="libconfig_8c" startline="1595" endline="1613">config_setting_index</referencedby>
+        <referencedby refid="grammar_8c_1aa95461e463ec8927a2b16e55683cfcaf" compoundref="grammar_8c" startline="1223" endline="1994">yyparse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structconfig__setting__t_1a8d6d8450cc6e3485d9f2da3302c231f4" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structconfig__t" kindref="compound">config_t</ref> *</type>
+        <definition>struct config_t* config_setting_t::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h" line="82" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h" bodystart="82" bodyend="-1"/>
+        <referencedby refid="libconfig_8h_1a80963b491d174f650bce4a29d6bf35a3" compoundref="libconfig_8c" startline="1131" endline="1135">config_setting_get_format</referencedby>
+        <referencedby refid="libconfig_8h_1a40330aa93a3be802ffc486e887d0d303" compoundref="libconfig_8c" startline="1037" endline="1070">config_setting_set_float</referencedby>
+        <referencedby refid="libconfig_8h_1a10c2f141b32bcca44df4c60bf04c4a2d" compoundref="libconfig_8c" startline="974" endline="998">config_setting_set_int</referencedby>
+        <referencedby refid="libconfig_8h_1a4161c3f83fe35355a477667cc28e344d" compoundref="libconfig_8c" startline="1002" endline="1033">config_setting_set_int64</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structconfig__setting__t_1aa8238d7d2cc16b51eac47e82867494a5" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* config_setting_t::hook</definition>
+        <argsstring></argsstring>
+        <name>hook</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h" line="83" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h" bodystart="83" bodyend="-1"/>
+        <referencedby refid="libconfig_8h_1a5ba715704c1cde127933c07fc9ca6cd5" compoundref="libconfig_8c" startline="1514" endline="1517">config_setting_set_hook</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structconfig__setting__t_1a11fc7f855c8200ea53458451d0ef0e9c" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int config_setting_t::line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h" line="84" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structconfig__setting__t_1af28d89c366212409e49f5dd52c9b7240" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* config_setting_t::file</definition>
+        <argsstring></argsstring>
+        <name>file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h" line="85" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="395">
+        <label>config_list_t</label>
+        <link refid="structconfig__list__t"/>
+        <childnode refid="392" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="392">
+        <label>config_setting_t</label>
+        <link refid="structconfig__setting__t"/>
+        <childnode refid="393" relation="usage">
+          <edgelabel>config</edgelabel>
+        </childnode>
+        <childnode refid="392" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="394" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="393">
+        <label>config_t</label>
+        <link refid="structconfig__t"/>
+        <childnode refid="392" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="394">
+        <label>config_value_t</label>
+        <link refid="unionconfig__value__t"/>
+        <childnode refid="395" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h" line="76" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h" bodystart="75" bodyend="86"/>
+    <listofallmembers>
+      <member refid="structconfig__setting__t_1a8d6d8450cc6e3485d9f2da3302c231f4" prot="public" virt="non-virtual"><scope>config_setting_t</scope><name>config</name></member>
+      <member refid="structconfig__setting__t_1af28d89c366212409e49f5dd52c9b7240" prot="public" virt="non-virtual"><scope>config_setting_t</scope><name>file</name></member>
+      <member refid="structconfig__setting__t_1a8957b2dcbf59fcfd00a3abe41bd0d7b5" prot="public" virt="non-virtual"><scope>config_setting_t</scope><name>format</name></member>
+      <member refid="structconfig__setting__t_1aa8238d7d2cc16b51eac47e82867494a5" prot="public" virt="non-virtual"><scope>config_setting_t</scope><name>hook</name></member>
+      <member refid="structconfig__setting__t_1a11fc7f855c8200ea53458451d0ef0e9c" prot="public" virt="non-virtual"><scope>config_setting_t</scope><name>line</name></member>
+      <member refid="structconfig__setting__t_1a2228af4451498a4961b72dd4dcfe57cb" prot="public" virt="non-virtual"><scope>config_setting_t</scope><name>name</name></member>
+      <member refid="structconfig__setting__t_1a70368ebbbb3c902adbbcd96606547d7d" prot="public" virt="non-virtual"><scope>config_setting_t</scope><name>parent</name></member>
+      <member refid="structconfig__setting__t_1aab8065083de2436448b7b99b46feff18" prot="public" virt="non-virtual"><scope>config_setting_t</scope><name>type</name></member>
+      <member refid="structconfig__setting__t_1a2d217386c7e30456e484151b61ce597f" prot="public" virt="non-virtual"><scope>config_setting_t</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

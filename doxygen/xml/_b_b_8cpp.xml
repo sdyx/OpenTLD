@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_b_b_8cpp" kind="file">
+    <compoundname>BB.cpp</compoundname>
+    <includes refid="_b_b_8h" local="yes">BB.h</includes>
+    <incdepgraph>
+      <node id="1350">
+        <label>BB.h</label>
+        <link refid="_b_b_8h"/>
+      </node>
+      <node id="1349">
+        <label>src/libopentld/mftracker/BB.cpp</label>
+        <link refid="BB.cpp"/>
+        <childnode refid="1350" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_b_b_8cpp_1acf54357bbf511d049e50a99f0ee28121" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int calculateBBCenter</definition>
+        <argsstring>(float bb[4], float center[2])</argsstring>
+        <name>calculateBBCenter</name>
+        <param>
+          <type>float</type>
+          <declname>bb</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>center</declname>
+          <array>[2]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculates center of a Rectangle/Boundingbox. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>defined with 2 points x,y,x1,y1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>center</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output. point center[0]=x,center[1]=y </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if bb is NULL and the center couldn&apos;t be computed, 1 on success. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/BB.cpp" line="30" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/BB.cpp" bodystart="150" bodyend="158"/>
+        <referencedby refid="_b_b_8h_1a2ef4a63d6f593c4477ece315fe7d1ae4" compoundref="_b_b_8cpp" startline="42" endline="142">getFilledBBPoints</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_b_b_8cpp_1a2ef4a63d6f593c4477ece315fe7d1ae4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int getFilledBBPoints</definition>
+        <argsstring>(float *bb, int numM, int numN, int margin, float *pts)</argsstring>
+        <name>getFilledBBPoints</name>
+        <param>
+          <type>float *</type>
+          <declname>bb</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numM</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numN</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>margin</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>pts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates numM x numN points grid on BBox. Points ordered in 1 dimensional array (x1, y1, x2, y2). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bounding box represented through 2 points(x1,y1,x2,y2) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of points in height direction. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numN</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of points in width direction. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>margin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>margin (in pixel) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the calculated points in the form (x1, y1, x2, y2). Size of the array must be numM * numN * 2. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>gap between points in width direction FB: set to 1.0 in order to avoid division by 0 if none of the numN &amp;&amp; numM checks are hit.</para><para>gap between points in height direction FB: set to 1.0 in order to avoid division by 0 if none of the numN &amp;&amp; numM checks are hit.</para>        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/BB.cpp" line="43" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/BB.cpp" bodystart="42" bodyend="142"/>
+        <references refid="_b_b_8cpp_1acf54357bbf511d049e50a99f0ee28121" compoundref="_b_b_8cpp" startline="150" endline="158">calculateBBCenter</references>
+        <referencedby refid="_f_b_track_8h_1a2c818794e6fe6aa3f6efdc9c46ffd164" compoundref="_f_b_track_8cpp" startline="45" endline="150">fbtrack</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_b_b_8h" kindref="compound">BB.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_b_b_8cpp_1acf54357bbf511d049e50a99f0ee28121" kindref="member">calculateBBCenter</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>bb[4],<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>center[2]);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="_b_b_8h_1a2ef4a63d6f593c4477ece315fe7d1ae4" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_b_b_8cpp_1a2ef4a63d6f593c4477ece315fe7d1ae4" kindref="member">getFilledBBPoints</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*bb,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numM,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numN,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>margin,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*pts)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointDim<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>divN<sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>divM<sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>bb_local[4];</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>center[2];</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>spaceN;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>spaceM;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*add<sp/>margin*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>bb_local[0]<sp/>=<sp/>bb[0]<sp/>+<sp/>margin;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>bb_local[1]<sp/>=<sp/>bb[1]<sp/>+<sp/>margin;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>bb_local[2]<sp/>=<sp/>bb[2]<sp/>-<sp/>margin;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>bb_local[3]<sp/>=<sp/>bb[3]<sp/>-<sp/>margin;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>printf(&quot;PointArraySize<sp/>should<sp/>be:<sp/>%d\n&quot;,<sp/>numM<sp/>*<sp/>numN<sp/>*<sp/>pointDim);*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*handle<sp/>cases<sp/>numX<sp/>=<sp/>1*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(numN<sp/>==<sp/>1<sp/>&amp;&amp;<sp/>numM<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_b_b_8cpp_1acf54357bbf511d049e50a99f0ee28121" kindref="member">calculateBBCenter</ref>(bb_local,<sp/>pts);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(numN<sp/>==<sp/>1<sp/>&amp;&amp;<sp/>numM<sp/>&gt;<sp/>1)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>divM<sp/>=<sp/>numM<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>divN<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*maybe<sp/>save<sp/>center<sp/>coordinate<sp/>into<sp/>bb[1]<sp/>instead<sp/>of<sp/>loop<sp/>again*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*calculate<sp/>step<sp/>width*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spaceM<sp/>=<sp/>(bb_local[3]<sp/>-<sp/>bb_local[1])<sp/>/<sp/>divM;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_b_b_8cpp_1acf54357bbf511d049e50a99f0ee28121" kindref="member">calculateBBCenter</ref>(bb_local,<sp/>center);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*calculate<sp/>points<sp/>and<sp/>save<sp/>them<sp/>to<sp/>the<sp/>array*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>numN;<sp/>i++)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>numM;<sp/>j++)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pts[i<sp/>*<sp/>numM<sp/>*<sp/>pointDim<sp/>+<sp/>j<sp/>*<sp/>pointDim<sp/>+<sp/>0]<sp/>=<sp/>center[0];</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pts[i<sp/>*<sp/>numM<sp/>*<sp/>pointDim<sp/>+<sp/>j<sp/>*<sp/>pointDim<sp/>+<sp/>1]<sp/>=<sp/>bb_local[1]<sp/>+<sp/>j<sp/>*<sp/>spaceM;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(numN<sp/>&gt;<sp/>1<sp/>&amp;&amp;<sp/>numM<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>center[2];</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*cen;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>divM<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>divN<sp/>=<sp/>numN<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//maybe<sp/>save<sp/>center<sp/>coordinate<sp/>into<sp/>bb[1]<sp/>instead<sp/>of<sp/>loop<sp/>again</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//calculate<sp/>step<sp/>width</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spaceN<sp/>=<sp/>(bb_local[2]<sp/>-<sp/>bb_local[0])<sp/>/<sp/>divN;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cen<sp/>=<sp/>center;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_b_b_8cpp_1acf54357bbf511d049e50a99f0ee28121" kindref="member">calculateBBCenter</ref>(bb_local,<sp/>center);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//calculate<sp/>points<sp/>and<sp/>save<sp/>them<sp/>to<sp/>the<sp/>array</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>numN;<sp/>i++)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>numM;<sp/>j++)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pts[i<sp/>*<sp/>numM<sp/>*<sp/>pointDim<sp/>+<sp/>j<sp/>*<sp/>pointDim<sp/>+<sp/>0]<sp/>=<sp/>bb_local[0]<sp/>+<sp/>i<sp/>*<sp/>spaceN;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pts[i<sp/>*<sp/>numM<sp/>*<sp/>pointDim<sp/>+<sp/>j<sp/>*<sp/>pointDim<sp/>+<sp/>1]<sp/>=<sp/>cen[1];</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(numN<sp/>&gt;<sp/>1<sp/>&amp;&amp;<sp/>numM<sp/>&gt;<sp/>1)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>divM<sp/>=<sp/>numM<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>divN<sp/>=<sp/>numN<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//calculate<sp/>step<sp/>width</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>spaceN<sp/>=<sp/>(bb_local[2]<sp/>-<sp/>bb_local[0])<sp/>/<sp/>divN;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>spaceM<sp/>=<sp/>(bb_local[3]<sp/>-<sp/>bb_local[1])<sp/>/<sp/>divM;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//calculate<sp/>points<sp/>and<sp/>save<sp/>them<sp/>to<sp/>the<sp/>array</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>numN;<sp/>i++)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>numM;<sp/>j++)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pts[i<sp/>*<sp/>numM<sp/>*<sp/>pointDim<sp/>+<sp/>j<sp/>*<sp/>pointDim<sp/>+<sp/>0]<sp/>=<sp/>bb_local[0]<sp/>+<sp/>i<sp/>*<sp/>spaceN;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pts[i<sp/>*<sp/>numM<sp/>*<sp/>pointDim<sp/>+<sp/>j<sp/>*<sp/>pointDim<sp/>+<sp/>1]<sp/>=<sp/>bb_local[1]<sp/>+<sp/>j<sp/>*<sp/>spaceM;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="_b_b_8cpp_1acf54357bbf511d049e50a99f0ee28121" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_b_b_8cpp_1acf54357bbf511d049e50a99f0ee28121" kindref="member">calculateBBCenter</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>bb[4],<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>center[2])</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(bb<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>center[0]<sp/>=<sp/>0.5<sp/>*<sp/>(bb[0]<sp/>+<sp/>bb[2]);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>center[1]<sp/>=<sp/>0.5<sp/>*<sp/>(bb[1]<sp/>+<sp/>bb[3]);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/BB.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="class_c_blob_get_area_elipse_ratio" kind="class" prot="public">
+    <compoundname>CBlobGetAreaElipseRatio</compoundname>
+    <basecompoundref refid="class_c_operador_blob" prot="public" virt="non-virtual">COperadorBlob</basecompoundref>
+    <includes refid="_blob_operators_8h" local="no">BlobOperators.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_blob_get_area_elipse_ratio_1a24f9703155af6e963a1ae226cdb71125" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double CBlobGetAreaElipseRatio::operator()</definition>
+        <argsstring>(CBlob &amp;blob)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="class_c_operador_blob_1a303c4189cc94cafbcbee116bf014e623">operator()</reimplements>
+        <param>
+          <type><ref refid="class_c_blob" kindref="compound">CBlob</ref> &amp;</type>
+          <declname>blob</declname>
+        </param>
+        <briefdescription>
+<para>Aply operator to blob. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="622" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="621" bodyend="635"/>
+        <references refid="class_c_blob_1a6f1db9fcb42c0a3ea003aaeb0ec65a8d" compoundref="blob_8cpp" startline="157" endline="172">CBlob::Area</references>
+        <references refid="class_c_blob_1ad0bb95f395084ee89ca35cf11f203342" compoundref="blob_8cpp" startline="555" endline="633">CBlob::GetEllipse</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_area_elipse_ratio_1ad50ae738cd5ceff0b9a8af85e499c4b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>const char* CBlobGetAreaElipseRatio::GetNom</definition>
+        <argsstring>()</argsstring>
+        <name>GetNom</name>
+        <reimplements refid="class_c_operador_blob_1a717a19c163a26b45081a2231be24c008">GetNom</reimplements>
+        <briefdescription>
+<para>Get operator name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="637" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="636" bodyend="639"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Classe per calcular el ratio entre l&apos;area de la elipse i la de la taca Class </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="221">
+        <label>CBlobGetAreaElipseRatio</label>
+        <link refid="class_c_blob_get_area_elipse_ratio"/>
+        <childnode refid="222" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="222">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="223">
+        <label>CBlobGetAreaElipseRatio</label>
+        <link refid="class_c_blob_get_area_elipse_ratio"/>
+        <childnode refid="224" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="224">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="619" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="618" bodyend="640"/>
+    <listofallmembers>
+      <member refid="class_c_blob_get_area_elipse_ratio_1ad50ae738cd5ceff0b9a8af85e499c4b6" prot="public" virt="virtual"><scope>CBlobGetAreaElipseRatio</scope><name>GetNom</name></member>
+      <member refid="class_c_operador_blob_1a477edfe687cf9ef41469bcf6ea636a75" prot="public" virt="non-virtual"><scope>CBlobGetAreaElipseRatio</scope><name>operator COperadorBlob *</name></member>
+      <member refid="class_c_blob_get_area_elipse_ratio_1a24f9703155af6e963a1ae226cdb71125" prot="public" virt="virtual"><scope>CBlobGetAreaElipseRatio</scope><name>operator()</name></member>
+      <member refid="class_c_operador_blob_1a25ccc652bfa55e7b0143c88f452729a2" prot="public" virt="virtual"><scope>CBlobGetAreaElipseRatio</scope><name>~COperadorBlob</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

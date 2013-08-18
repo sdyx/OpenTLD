@@ -1,0 +1,200 @@
+\hypertarget{_lk_8cpp}{
+\section{src/libopentld/mftracker/Lk.cpp File Reference}
+\label{_lk_8cpp}\index{src/libopentld/mftracker/Lk.cpp@{src/libopentld/mftracker/Lk.cpp}}
+}
+{\ttfamily \#include \char`\"{}Lk.h\char`\"{}}\par
+{\ttfamily \#include $<$cmath$>$}\par
+{\ttfamily \#include $<$cstdio$>$}\par
+{\ttfamily \#include $<$cv.h$>$}\par
+{\ttfamily \#include $<$highgui.h$>$}\par
+Include dependency graph for Lk.cpp:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=358pt]{_lk_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_lk_8cpp_a6b1f0fbd52a55b99409b426f14d1b05a}{euclideanDistance} (CvPoint2D32f $\ast$point1, CvPoint2D32f $\ast$point2, float $\ast$match, int nPts)
+\item 
+void \hyperlink{_lk_8cpp_aecd9b4dead7bfe263a7a068dfb577839}{normCrossCorrelation} (IplImage $\ast$imgI, IplImage $\ast$imgJ, CvPoint2D32f $\ast$points0, CvPoint2D32f $\ast$points1, int nPts, char $\ast$status, float $\ast$match, int winsize, int method)
+\item 
+void \hyperlink{_lk_8cpp_a72f8af92e33c2f2c05d9d0b1ecbbc3c6}{initImgs} ()
+\item 
+int \hyperlink{_lk_8cpp_acaf626622b93b98f39c91967ccc26588}{trackLK} (IplImage $\ast$imgI, IplImage $\ast$imgJ, float ptsI\mbox{[}$\,$\mbox{]}, int nPtsI, float ptsJ\mbox{[}$\,$\mbox{]}, int nPtsJ, int level, float $\ast$fb, float $\ast$ncc, char $\ast$status)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{_lk_8cpp_af50babfff1c5fe54579431e28e45e7ad}{MAX\_\-COUNT} = 500
+\item 
+const int \hyperlink{_lk_8cpp_a52ae776a7c4ac1e8bce389e803672048}{MAX\_\-IMG} = 2
+\item 
+const double \hyperlink{_lk_8cpp_a8e6cabe5b03bb93be3661dee66b4dadc}{N\_\-A\_\-N} = -\/1.0
+\item 
+int \hyperlink{_lk_8cpp_a9e5babd1e574af17a2b200cb34933a00}{win\_\-size\_\-lk} = 4
+\item 
+CvPoint2D32f $\ast$ \hyperlink{_lk_8cpp_a050769e2adadebcaa87cd2362c274d0c}{points} \mbox{[}3\mbox{]} = \{ 0, 0, 0 \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_lk_8cpp_a6b1f0fbd52a55b99409b426f14d1b05a}{
+\index{Lk.cpp@{Lk.cpp}!euclideanDistance@{euclideanDistance}}
+\index{euclideanDistance@{euclideanDistance}!Lk.cpp@{Lk.cpp}}
+\subsubsection[{euclideanDistance}]{\setlength{\rightskip}{0pt plus 5cm}void euclideanDistance (
+\begin{DoxyParamCaption}
+\item[{CvPoint2D32f $\ast$}]{ point1, }
+\item[{CvPoint2D32f $\ast$}]{ point2, }
+\item[{float $\ast$}]{ match, }
+\item[{int}]{ nPts}
+\end{DoxyParamCaption}
+)}}
+\label{_lk_8cpp_a6b1f0fbd52a55b99409b426f14d1b05a}
+Calculates euclidean distance between the point pairs. 
+\begin{DoxyParams}{Parameters}
+\item[{\em point1}]Array of points. Pairs with point2 at every Position. \item[{\em point2}]Array of points. Pairs with point1 at every Position. \item[{\em match}]Output: Contains the result of the distance calculation. Must have the length of nPts. \item[{\em nPts}]Number of pairs. \end{DoxyParams}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=358pt]{_lk_8cpp_a6b1f0fbd52a55b99409b426f14d1b05a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_lk_8cpp_a72f8af92e33c2f2c05d9d0b1ecbbc3c6}{
+\index{Lk.cpp@{Lk.cpp}!initImgs@{initImgs}}
+\index{initImgs@{initImgs}!Lk.cpp@{Lk.cpp}}
+\subsubsection[{initImgs}]{\setlength{\rightskip}{0pt plus 5cm}void initImgs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{_lk_8cpp_a72f8af92e33c2f2c05d9d0b1ecbbc3c6}
+Needed before start of trackLK and at the end of the program for cleanup. Handles PYR(Pyramid cache) variable. 
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{_lk_8cpp_a72f8af92e33c2f2c05d9d0b1ecbbc3c6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_lk_8cpp_aecd9b4dead7bfe263a7a068dfb577839}{
+\index{Lk.cpp@{Lk.cpp}!normCrossCorrelation@{normCrossCorrelation}}
+\index{normCrossCorrelation@{normCrossCorrelation}!Lk.cpp@{Lk.cpp}}
+\subsubsection[{normCrossCorrelation}]{\setlength{\rightskip}{0pt plus 5cm}void normCrossCorrelation (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ imgI, }
+\item[{IplImage $\ast$}]{ imgJ, }
+\item[{CvPoint2D32f $\ast$}]{ points0, }
+\item[{CvPoint2D32f $\ast$}]{ points1, }
+\item[{int}]{ nPts, }
+\item[{char $\ast$}]{ status, }
+\item[{float $\ast$}]{ match, }
+\item[{int}]{ winsize, }
+\item[{int}]{ method}
+\end{DoxyParamCaption}
+)}}
+\label{_lk_8cpp_aecd9b4dead7bfe263a7a068dfb577839}
+Calculates normalized cross correlation for every point. 
+\begin{DoxyParams}{Parameters}
+\item[{\em imgI}]Image 1. \item[{\em imgJ}]Image 2. \item[{\em points0}]Array of points of imgI \item[{\em points1}]Array of points of imgJ \item[{\em nPts}]Length of array/number of points. \item[{\em status}]Switch which point pairs should be calculated. if status\mbox{[}i\mbox{]} == 1 =$>$ match\mbox{[}i\mbox{]} is calculated. else match\mbox{[}i\mbox{]} = 0.0 \item[{\em match}]Output: Array will contain ncc values. 0.0 if not calculated. \item[{\em winsize}]Size of quadratic area around the point which is compared. \item[{\em method}]Specifies the way how image regions are compared. see cvMatchTemplate \end{DoxyParams}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=376pt]{_lk_8cpp_aecd9b4dead7bfe263a7a068dfb577839_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_lk_8cpp_acaf626622b93b98f39c91967ccc26588}{
+\index{Lk.cpp@{Lk.cpp}!trackLK@{trackLK}}
+\index{trackLK@{trackLK}!Lk.cpp@{Lk.cpp}}
+\subsubsection[{trackLK}]{\setlength{\rightskip}{0pt plus 5cm}int trackLK (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ imgI, }
+\item[{IplImage $\ast$}]{ imgJ, }
+\item[{float}]{ ptsI\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{ nPtsI, }
+\item[{float}]{ ptsJ\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{ nPtsJ, }
+\item[{int}]{ level, }
+\item[{float $\ast$}]{ fb, }
+\item[{float $\ast$}]{ ncc, }
+\item[{char $\ast$}]{ status}
+\end{DoxyParamCaption}
+)}}
+\label{_lk_8cpp_acaf626622b93b98f39c91967ccc26588}
+Tracks Points from 1.Image to 2.Image. Need initImgs before start and at the end of the program for cleanup.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em imgI}]previous Image source. (isn't changed) \item[{\em imgJ}]actual Image target. (isn't changed) \item[{\em ptsI}]points to track from first Image. Format \mbox{[}0\mbox{]} = x1, \mbox{[}1\mbox{]} = y1, \mbox{[}2\mbox{]} = x2 ... \item[{\em nPtsI}]number of Points to track from first Image \item[{\em ptsJ}]container for calculated points of second Image. Must have the length of nPtsI. \item[{\em nPtsJ}]number of Points \item[{\em level}]Pyramidlevel, default 5 \item[{\em fb}]forward-\/backward confidence value. (corresponds to euclidean distance between). Must have the length of nPtsI: nPtsI $\ast$ sizeof(float). \item[{\em ncc}]normCrossCorrelation values. needs as inputlength nPtsI $\ast$ sizeof(float) \item[{\em status}]Indicates positive tracks. 1 = PosTrack 0 = NegTrack needs as inputlength nPtsI $\ast$ sizeof(char)\end{DoxyParams}
+Based Matlab function: lk(2,imgI,imgJ,ptsI,ptsJ,Level) (Level is optional) 
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{_lk_8cpp_acaf626622b93b98f39c91967ccc26588_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{_lk_8cpp_acaf626622b93b98f39c91967ccc26588_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{_lk_8cpp_af50babfff1c5fe54579431e28e45e7ad}{
+\index{Lk.cpp@{Lk.cpp}!MAX\_\-COUNT@{MAX\_\-COUNT}}
+\index{MAX\_\-COUNT@{MAX\_\-COUNT}!Lk.cpp@{Lk.cpp}}
+\subsubsection[{MAX\_\-COUNT}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf MAX\_\-COUNT} = 500}}
+\label{_lk_8cpp_af50babfff1c5fe54579431e28e45e7ad}
+\hypertarget{_lk_8cpp_a52ae776a7c4ac1e8bce389e803672048}{
+\index{Lk.cpp@{Lk.cpp}!MAX\_\-IMG@{MAX\_\-IMG}}
+\index{MAX\_\-IMG@{MAX\_\-IMG}!Lk.cpp@{Lk.cpp}}
+\subsubsection[{MAX\_\-IMG}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf MAX\_\-IMG} = 2}}
+\label{_lk_8cpp_a52ae776a7c4ac1e8bce389e803672048}
+\hypertarget{_lk_8cpp_a8e6cabe5b03bb93be3661dee66b4dadc}{
+\index{Lk.cpp@{Lk.cpp}!N\_\-A\_\-N@{N\_\-A\_\-N}}
+\index{N\_\-A\_\-N@{N\_\-A\_\-N}!Lk.cpp@{Lk.cpp}}
+\subsubsection[{N\_\-A\_\-N}]{\setlength{\rightskip}{0pt plus 5cm}const double {\bf N\_\-A\_\-N} = -\/1.0}}
+\label{_lk_8cpp_a8e6cabe5b03bb93be3661dee66b4dadc}
+\hypertarget{_lk_8cpp_a050769e2adadebcaa87cd2362c274d0c}{
+\index{Lk.cpp@{Lk.cpp}!points@{points}}
+\index{points@{points}!Lk.cpp@{Lk.cpp}}
+\subsubsection[{points}]{\setlength{\rightskip}{0pt plus 5cm}CvPoint2D32f$\ast$ {\bf points}\mbox{[}3\mbox{]} = \{ 0, 0, 0 \}}}
+\label{_lk_8cpp_a050769e2adadebcaa87cd2362c274d0c}
+\hypertarget{_lk_8cpp_a9e5babd1e574af17a2b200cb34933a00}{
+\index{Lk.cpp@{Lk.cpp}!win\_\-size\_\-lk@{win\_\-size\_\-lk}}
+\index{win\_\-size\_\-lk@{win\_\-size\_\-lk}!Lk.cpp@{Lk.cpp}}
+\subsubsection[{win\_\-size\_\-lk}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf win\_\-size\_\-lk} = 4}}
+\label{_lk_8cpp_a9e5babd1e574af17a2b200cb34933a00}
+Size of the search window of each pyramid level in cvCalcOpticalFlowPyrLK. 

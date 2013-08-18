@@ -1,0 +1,863 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="class_c_blob" kind="class" prot="public">
+    <compoundname>CBlob</compoundname>
+    <includes refid="blob_8h" local="no">blob.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_c_blob_1a6c917467ff363aa242e6a46cde41da79" prot="private" static="no">
+        <type>std::list&lt; <ref refid="class_c_blob_contour" kindref="compound">CBlobContour</ref> &gt;</type>
+        <definition>typedef std::list&lt;CBlobContour&gt; CBlob::t_contourList</definition>
+        <argsstring></argsstring>
+        <name>t_contourList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="39" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_blob_1aca7cb0f750e553fa34935ea927fd2122" prot="private" static="no" mutable="no">
+        <type>CvMemStorage *</type>
+        <definition>CvMemStorage* CBlob::m_storage</definition>
+        <argsstring></argsstring>
+        <name>m_storage</name>
+        <briefdescription>
+<para>Contour storage memory. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="142" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_1a6432d83f68a1c75464bb1c2f7450e4b5" prot="private" static="no" mutable="no">
+        <type><ref refid="class_c_blob_contour" kindref="compound">CBlobContour</ref></type>
+        <definition>CBlobContour CBlob::m_externalContour</definition>
+        <argsstring></argsstring>
+        <name>m_externalContour</name>
+        <briefdescription>
+<para>External contour of the blob (crack codes). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="144" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_1a88071948e0c48f4b256147df3a03a7de" prot="private" static="no" mutable="no">
+        <type>t_contourList</type>
+        <definition>t_contourList CBlob::m_internalContours</definition>
+        <argsstring></argsstring>
+        <name>m_internalContours</name>
+        <briefdescription>
+<para>Internal contours (crack codes). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="146" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_1aee7e60307972994de76d4128f08851c0" prot="private" static="no" mutable="no">
+        <type><ref refid="blob_8h_1ae21ba61a4f023a2f91fc5feaad495073" kindref="member">t_labelType</ref></type>
+        <definition>t_labelType CBlob::m_id</definition>
+        <argsstring></argsstring>
+        <name>m_id</name>
+        <briefdescription>
+<para>Label number. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="153" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_1a9dd356b7cf492e6c8fa0109c81f6ac3c" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CBlob::m_area</definition>
+        <argsstring></argsstring>
+        <name>m_area</name>
+        <briefdescription>
+<para>Area. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="155" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_1a4d08eee6c8bb843469afa60834707bb8" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CBlob::m_perimeter</definition>
+        <argsstring></argsstring>
+        <name>m_perimeter</name>
+        <briefdescription>
+<para>Perimeter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="157" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_1adf1b82bc3602c5d08028730ee3a3d47e" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CBlob::m_externPerimeter</definition>
+        <argsstring></argsstring>
+        <name>m_externPerimeter</name>
+        <briefdescription>
+<para>Extern perimeter from blob. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="159" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_1aeb1c6a7e54a529c9231a96cbe644c9d4" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CBlob::m_meanGray</definition>
+        <argsstring></argsstring>
+        <name>m_meanGray</name>
+        <briefdescription>
+<para>Mean gray color. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="161" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_1ab54c421db7988eef96af434d2cf0b0da" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CBlob::m_stdDevGray</definition>
+        <argsstring></argsstring>
+        <name>m_stdDevGray</name>
+        <briefdescription>
+<para>Standard deviation from gray color blob distribution. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="163" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_1ad153da0682f927274e3493e0f0a8e9ff" prot="private" static="no" mutable="no">
+        <type>CvRect</type>
+        <definition>CvRect CBlob::m_boundingBox</definition>
+        <argsstring></argsstring>
+        <name>m_boundingBox</name>
+        <briefdescription>
+<para>Bounding box. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="165" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_1aa06a47b96675de402b95dbbff330f3f0" prot="private" static="no" mutable="no">
+        <type>CvBox2D</type>
+        <definition>CvBox2D CBlob::m_ellipse</definition>
+        <argsstring></argsstring>
+        <name>m_ellipse</name>
+        <briefdescription>
+<para>Bounding ellipse. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="167" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_1a0dc76004877e49c4607ecf3bea800d49" prot="private" static="no" mutable="no">
+        <type>CvSize</type>
+        <definition>CvSize CBlob::m_originalImageSize</definition>
+        <argsstring></argsstring>
+        <name>m_originalImageSize</name>
+        <briefdescription>
+<para>Sizes from image where blob is extracted. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="169" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_blob_1acd24304c1bc98128b24914f3e4bfea7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CBlob::CBlob</definition>
+        <argsstring>()</argsstring>
+        <name>CBlob</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="42" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.cpp" bodystart="20" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1a45d7bbe67ef246fe180e16f5a7116c6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CBlob::CBlob</definition>
+        <argsstring>(t_labelType id, CvPoint startPoint, CvSize originalImageSize)</argsstring>
+        <name>CBlob</name>
+        <param>
+          <type><ref refid="blob_8h_1ae21ba61a4f023a2f91fc5feaad495073" kindref="member">t_labelType</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>CvPoint</type>
+          <declname>startPoint</declname>
+        </param>
+        <param>
+          <type>CvSize</type>
+          <declname>originalImageSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="43" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.cpp" bodystart="29" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1a593ffb9ba17290432d04c383f2f104e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CBlob::~CBlob</definition>
+        <argsstring>()</argsstring>
+        <name>~CBlob</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="44" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.cpp" bodystart="108" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1af87156ca1ac7f64a860b7cf8c07fd1fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CBlob::CBlob</definition>
+        <argsstring>(const CBlob &amp;src)</argsstring>
+        <name>CBlob</name>
+        <param>
+          <type>const <ref refid="class_c_blob" kindref="compound">CBlob</ref> &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="47" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.cpp" bodystart="41" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1a61719b6e5ebff6d3e383b98bce4137dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CBlob::CBlob</definition>
+        <argsstring>(const CBlob *src)</argsstring>
+        <name>CBlob</name>
+        <param>
+          <type>const <ref refid="class_c_blob" kindref="compound">CBlob</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="48" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.cpp" bodystart="47" bodyend="54"/>
+        <references refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="_config_8cpp" startline="497">NULL</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1a724e55442a030bf94da856310e324a40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_c_blob" kindref="compound">CBlob</ref> &amp;</type>
+        <definition>CBlob &amp; CBlob::operator=</definition>
+        <argsstring>(const CBlob &amp;src)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_c_blob" kindref="compound">CBlob</ref> &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Operador d&apos;assignació Assigment operator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="52" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.cpp" bodystart="56" bodyend="106"/>
+        <references refid="class_c_blob_contour_1ac8f0fbdce452ede583013e010ce0c8e3" compoundref="_blob_contour_8h" startline="58" endline="61">CBlobContour::GetStartPoint</references>
+        <references refid="class_c_blob_contour_1a98c36d7be8524da3976fad97b611123e" compoundref="_blob_contour_8h" startline="76">CBlobContour::m_contour</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1ad26a1bc4e31809c3bd76424b05824e90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CBlob::AddInternalContour</definition>
+        <argsstring>(const CBlobContour &amp;newContour)</argsstring>
+        <name>AddInternalContour</name>
+        <param>
+          <type>const <ref refid="class_c_blob_contour" kindref="compound">CBlobContour</ref> &amp;</type>
+          <declname>newContour</declname>
+        </param>
+        <briefdescription>
+<para>Adds a new internal contour to the blob. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="55" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.cpp" bodystart="132" bodyend="135"/>
+        <referencedby refid="_component_labeling_8h_1a05b80d9c559310ac95461bd523d888f6" compoundref="_component_labeling_8cpp" startline="93" endline="269">ComponentLabeling</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1ad136387165bd74c368cb4ecc7632e4cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_blob_contour" kindref="compound">CBlobContour</ref> *</type>
+        <definition>CBlobContour* CBlob::GetExternalContour</definition>
+        <argsstring>()</argsstring>
+        <name>GetExternalContour</name>
+        <briefdescription>
+<para>Retrieves contour in Freeman&apos;s chain code. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="59" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" bodystart="58" bodyend="61"/>
+        <referencedby refid="_component_labeling_8h_1a05b80d9c559310ac95461bd523d888f6" compoundref="_component_labeling_8cpp" startline="93" endline="269">ComponentLabeling</referencedby>
+        <referencedby refid="class_c_blob_1ac97e73d3040530de09a187d02632deb1" compoundref="blob_8cpp" startline="139" endline="142">IsEmpty</referencedby>
+        <referencedby refid="class_c_blob_1a006463cc42ef0e4b8986fa5020cb6f90" compoundref="blob_8cpp" startline="690" endline="706">JoinBlob</referencedby>
+        <referencedby refid="class_c_blob_get_x_y_inside_1a5f816b668c59d6f782bea83076ccf96e" compoundref="_blob_operators_8cpp" startline="418" endline="426">CBlobGetXYInside::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_max_yat_min_x_1a107cc7896ca6af559e8410b3c452e80d" compoundref="_blob_operators_8cpp" startline="204" endline="229">CBlobGetMaxYatMinX::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_max_xat_max_y_1a45c075e8968d1078c6b49ea2acbb6d58" compoundref="_blob_operators_8cpp" startline="168" endline="192">CBlobGetMaxXatMaxY::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_min_yat_max_x_1a41bc24b0214b58f979396208296d3dd6" compoundref="_blob_operators_8cpp" startline="133" endline="156">CBlobGetMinYatMaxX::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_min_xat_min_y_1ae2f3ba428e780a826de213726d2a8f35" compoundref="_blob_operators_8cpp" startline="98" endline="121">CBlobGetMinXatMinY::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1a1eeee72a4369dc9485c6ae6573631a02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CvMemStorage *</type>
+        <definition>CvMemStorage* CBlob::GetStorage</definition>
+        <argsstring>()</argsstring>
+        <name>GetStorage</name>
+        <briefdescription>
+<para>Retrieves blob storage. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="65" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" bodystart="64" bodyend="67"/>
+        <referencedby refid="_component_labeling_8h_1a05b80d9c559310ac95461bd523d888f6" compoundref="_component_labeling_8cpp" startline="93" endline="269">ComponentLabeling</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1a1d3fd90bc98f6d845babb18a3f058bc2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="blob_8h_1ae21ba61a4f023a2f91fc5feaad495073" kindref="member">t_labelType</ref></type>
+        <definition>t_labelType CBlob::GetID</definition>
+        <argsstring>()</argsstring>
+        <name>GetID</name>
+        <briefdescription>
+<para>Get label ID. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="71" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" bodystart="70" bodyend="73"/>
+        <referencedby refid="class_c_blob_get_i_d_1a01557f50837f1e52f3b6c690c0af6592" compoundref="_blob_operators_8h" startline="62" endline="65">CBlobGetID::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1a2d56a7dee1cbeb3178ff083630ee31b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CBlob::Exterior</definition>
+        <argsstring>(IplImage *mask, bool xBorder=true, bool yBorder=true)</argsstring>
+        <name>Exterior</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>xBorder</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>yBorder</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>&gt; 0 for extern blobs, 0 if not </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCIÓ: Exterior</para></listitem><listitem><para>FUNCIONALITAT: Return true for extern blobs</para></listitem><listitem><para>PARÀMETRES:<itemizedlist>
+<listitem><para>xBorder: true to consider blobs touching horizontal borders as extern</para></listitem><listitem><para>yBorder: true to consider blobs touching vertical borders as extern</para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULTAT:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICCIONS:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>AUTOR: rborras</para></listitem><listitem><para>DATA DE CREACIÓ: 2008/05/06</para></listitem><listitem><para>MODIFICACIÓ: Data. Autor. Descripció. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="75" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.cpp" bodystart="219" bodyend="227"/>
+        <references refid="class_c_blob_1ab1501b07a2c5ee23843bac66d20974e2" compoundref="blob_8cpp" startline="246" endline="376">ExternPerimeter</references>
+        <referencedby refid="class_c_blob_get_exterior_1ad272326f713272424a2b4763b27edeaa" compoundref="_blob_operators_8h" startline="120" endline="123">CBlobGetExterior::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1a6f1db9fcb42c0a3ea003aaeb0ec65a8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double CBlob::Area</definition>
+        <argsstring>()</argsstring>
+        <name>Area</name>
+        <briefdescription>
+<para>Compute blob&apos;s area. </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCIÓ: Area</para></listitem><listitem><para>FUNCIONALITAT: Get blob area, ie. external contour area minus internal contours area</para></listitem><listitem><para>PARÀMETRES:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULTAT:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICCIONS:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>AUTOR: rborras</para></listitem><listitem><para>DATA DE CREACIÓ: 2008/04/30</para></listitem><listitem><para>MODIFICACIÓ: Data. Autor. Descripció. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="77" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.cpp" bodystart="157" bodyend="172"/>
+        <references refid="class_c_blob_contour_1a2c68f462fc31a0e7add9a85b007fa42a" compoundref="_blob_contour_8cpp" startline="163" endline="177">CBlobContour::GetArea</references>
+        <referencedby refid="class_c_blob_get_area_elipse_ratio_1a24f9703155af6e963a1ae226cdb71125" compoundref="_blob_operators_8h" startline="621" endline="635">CBlobGetAreaElipseRatio::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_area_1a3c8268e93a2271bcd878dbf13d259afb" compoundref="_blob_operators_8h" startline="78" endline="81">CBlobGetArea::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_breadth_1a753a100a61978c0f6817787a27db1a55" compoundref="_blob_operators_8cpp" startline="361" endline="378">CBlobGetBreadth::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_length_1a6c56ce1a327e5e7e6f5bddaab074db71" compoundref="_blob_operators_8cpp" startline="328" endline="345">CBlobGetLength::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_compactness_1a315844b8ce0ea4c05e8422016f70ea2d" compoundref="_blob_operators_8cpp" startline="280" endline="286">CBlobGetCompactness::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_elongation_1a6811278c746413830d80ff21d979b5ab" compoundref="_blob_operators_8cpp" startline="243" endline="264">CBlobGetElongation::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1af63853ea55dbebbee5b013189e765b51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double CBlob::Perimeter</definition>
+        <argsstring>()</argsstring>
+        <name>Perimeter</name>
+        <briefdescription>
+<para>Compute blob&apos;s perimeter. </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCIÓ: Perimeter</para></listitem><listitem><para>FUNCIONALITAT: Get blob perimeter, ie. sum of the lenght of all the contours</para></listitem><listitem><para>PARÀMETRES:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULTAT:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICCIONS:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>AUTOR: rborras</para></listitem><listitem><para>DATA DE CREACIÓ: 2008/04/30</para></listitem><listitem><para>MODIFICACIÓ: Data. Autor. Descripció. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="79" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.cpp" bodystart="187" bodyend="203"/>
+        <references refid="class_c_blob_contour_1a893d57d625bb8f26f4a31ff0b66b8406" compoundref="_blob_contour_8cpp" startline="133" endline="147">CBlobContour::GetPerimeter</references>
+        <referencedby refid="class_c_blob_get_extern_perimeter_ratio_1a28c984e9b6de7d6303704b34b76c1c5b" compoundref="_blob_operators_8h" startline="514" endline="520">CBlobGetExternPerimeterRatio::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_perimeter_1a27d6922b9fb5ad220bd0e3876aef7f28" compoundref="_blob_operators_8h" startline="93" endline="96">CBlobGetPerimeter::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_breadth_1a753a100a61978c0f6817787a27db1a55" compoundref="_blob_operators_8cpp" startline="361" endline="378">CBlobGetBreadth::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_length_1a6c56ce1a327e5e7e6f5bddaab074db71" compoundref="_blob_operators_8cpp" startline="328" endline="345">CBlobGetLength::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_roughness_1a7b63d1da4133b0abf4a4af9450c0526c" compoundref="_blob_operators_8cpp" startline="302" endline="312">CBlobGetRoughness::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_compactness_1a315844b8ce0ea4c05e8422016f70ea2d" compoundref="_blob_operators_8cpp" startline="280" endline="286">CBlobGetCompactness::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_elongation_1a6811278c746413830d80ff21d979b5ab" compoundref="_blob_operators_8cpp" startline="243" endline="264">CBlobGetElongation::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1a4f5dfca1ee933e07a39965375f9f07c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double CBlob::Moment</definition>
+        <argsstring>(int p, int q)</argsstring>
+        <name>Moment</name>
+        <param>
+          <type>int</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+<para>Compute blob&apos;s moment (p,q up to MAX_CALCULATED_MOMENTS). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="81" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.cpp" bodystart="379" bodyend="394"/>
+        <references refid="class_c_blob_contour_1a301727633680b38714302593945b748f" compoundref="_blob_contour_8cpp" startline="180" endline="200">CBlobContour::GetMoment</references>
+        <referencedby refid="class_c_blob_1ad0bb95f395084ee89ca35cf11f203342" compoundref="blob_8cpp" startline="555" endline="633">GetEllipse</referencedby>
+        <referencedby refid="class_c_blob_get_moment_1aefebc825f026670fab8517bc0ea052ca" compoundref="_blob_operators_8cpp" startline="22" endline="25">CBlobGetMoment::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1ab1501b07a2c5ee23843bac66d20974e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double CBlob::ExternPerimeter</definition>
+        <argsstring>(IplImage *mask, bool xBorder=true, bool yBorder=true)</argsstring>
+        <name>ExternPerimeter</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>mask</declname>
+          <defname>maskImage</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>xBorder</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>yBorder</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Compute extern perimeter. </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCIÓ: ExternPerimeter</para></listitem><listitem><para>FUNCIONALITAT: Get extern perimeter (perimeter touching image borders)</para></listitem><listitem><para>PARÀMETRES:<itemizedlist>
+<listitem><para>maskImage: if != NULL, counts maskImage black pixels as external pixels and contour points touching them are counted as external contour points.</para></listitem><listitem><para>xBorder: true to consider blobs touching horizontal borders as extern</para></listitem><listitem><para>yBorder: true to consider blobs touching vertical borders as extern</para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULTAT:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICCIONS:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>AUTOR: rborras</para></listitem><listitem><para>DATA DE CREACIÓ: 2008/05/05</para></listitem><listitem><para>MODIFICACIÓ: Data. Autor. Descripció.</para></listitem><listitem><para>NOTA: If <ref refid="class_c_blob_contour_1a245d5e59180619aa9ae4ec14acc18744" kindref="member">CBlobContour::GetContourPoints</ref> aproximates contours with a method different that NONE, this function will not give correct results </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="84" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.cpp" bodystart="246" bodyend="376"/>
+        <references refid="class_c_blob_contour_1a245d5e59180619aa9ae4ec14acc18744" compoundref="_blob_contour_8cpp" startline="203" endline="258">CBlobContour::GetContourPoints</references>
+        <references refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="_config_8cpp" startline="497">NULL</references>
+        <referencedby refid="class_c_blob_1a2d56a7dee1cbeb3178ff083630ee31b0" compoundref="blob_8cpp" startline="219" endline="227">Exterior</referencedby>
+        <referencedby refid="class_c_blob_get_extern_hull_perimeter_ratio_1a9b841221281e5efd45d4e3d8117369c4" compoundref="_blob_operators_8h" startline="549" endline="558">CBlobGetExternHullPerimeterRatio::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_extern_perimeter_ratio_1a28c984e9b6de7d6303704b34b76c1c5b" compoundref="_blob_operators_8h" startline="514" endline="520">CBlobGetExternPerimeterRatio::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_extern_perimeter_1a3c506f7355bab0299f1992dcda2e0a0a" compoundref="_blob_operators_8h" startline="482" endline="485">CBlobGetExternPerimeter::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1a1b12d25f8e470fdd808ac2e3bfe9bad4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double CBlob::Mean</definition>
+        <argsstring>(IplImage *image)</argsstring>
+        <name>Mean</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Get mean grey color. </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCIÓ: Mean</para></listitem><listitem><para>FUNCIONALITAT: Get blob mean color in input image</para></listitem><listitem><para>PARÀMETRES:<itemizedlist>
+<listitem><para>image: image from gray color are extracted</para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULTAT:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICCIONS:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>AUTOR: rborras</para></listitem><listitem><para>DATA DE CREACIÓ: 2008/05/06</para></listitem><listitem><para>MODIFICACIÓ: Data. Autor. Descripció. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="87" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.cpp" bodystart="409" bodyend="460"/>
+        <references refid="class_c_blob_1a5391167c172eb461eb762fbdd81306de" compoundref="blob_8cpp" startline="488" endline="539">GetBoundingBox</references>
+        <references refid="class_c_blob_contour_1a245d5e59180619aa9ae4ec14acc18744" compoundref="_blob_contour_8cpp" startline="203" endline="258">CBlobContour::GetContourPoints</references>
+        <referencedby refid="class_c_blob_get_mean_1ad1aff39c601989402d096fb649b9703c" compoundref="_blob_operators_8h" startline="147" endline="150">CBlobGetMean::operator()</referencedby>
+        <referencedby refid="class_c_blob_1a014b670bb748e6767ef070e1bc25be7a" compoundref="blob_8cpp" startline="462" endline="474">StdDev</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1a014b670bb748e6767ef070e1bc25be7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double CBlob::StdDev</definition>
+        <argsstring>(IplImage *image)</argsstring>
+        <name>StdDev</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Get standard deviation grey color. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="90" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.cpp" bodystart="462" bodyend="474"/>
+        <references refid="class_c_blob_1a1b12d25f8e470fdd808ac2e3bfe9bad4" compoundref="blob_8cpp" startline="409" endline="460">Mean</references>
+        <referencedby refid="class_c_blob_get_std_dev_1a9a52512df47b9ff51ad0cb4cb48d3d1f" compoundref="_blob_operators_8h" startline="173" endline="176">CBlobGetStdDev::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1ac97e73d3040530de09a187d02632deb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CBlob::IsEmpty</definition>
+        <argsstring>()</argsstring>
+        <name>IsEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indica si el blob està buit ( no té cap info associada ) Shows if the blob has associated information </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="94" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.cpp" bodystart="139" bodyend="142"/>
+        <references refid="class_c_blob_1ad136387165bd74c368cb4ecc7632e4cf" compoundref="blob_8h" startline="58" endline="61">GetExternalContour</references>
+        <references refid="class_c_blob_contour_1a98c36d7be8524da3976fad97b611123e" compoundref="_blob_contour_8h" startline="76">CBlobContour::m_contour</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1aacc50d5d47e0543d4e0a569d05009006" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_blob_contour_8h_1abf72b29b2c653dd623e9b39a447809c0" kindref="member">t_PointList</ref></type>
+        <definition>t_PointList CBlob::GetConvexHull</definition>
+        <argsstring>()</argsstring>
+        <name>GetConvexHull</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retorna el poligon convex del blob Calculates the convex hull of the blob</para><para><itemizedlist>
+<listitem><para>FUNCTION: GetConvexHull</para></listitem><listitem><para>FUNCTIONALITY: Calculates the convex hull polygon of the blob</para></listitem><listitem><para>PARAMETERS:<itemizedlist>
+<listitem><para>dst: where to store the result</para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULT:<itemizedlist>
+<listitem><para>true if no error ocurred</para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICTIONS:</para></listitem><listitem><para>AUTHOR: Ricard Borràs</para></listitem><listitem><para>CREATION DATE: 25-05-2005.</para></listitem><listitem><para>MODIFICATION: Date. Author. Description. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="98" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.cpp" bodystart="667" bodyend="676"/>
+        <references refid="class_c_blob_contour_1a245d5e59180619aa9ae4ec14acc18744" compoundref="_blob_contour_8cpp" startline="203" endline="258">CBlobContour::GetContourPoints</references>
+        <referencedby refid="class_c_blob_get_hull_area_1a39fab727f23b9854011b6cbd00203a9b" compoundref="_blob_operators_8cpp" startline="71" endline="86">CBlobGetHullArea::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_hull_perimeter_1a9c59c9b9581ca9b8847fd98cb30087cc" compoundref="_blob_operators_8cpp" startline="54" endline="69">CBlobGetHullPerimeter::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1a1a12b6dee61d2db86cd3a60c0671382e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CBlob::FillBlob</definition>
+        <argsstring>(IplImage *imatge, CvScalar color, int offsetX=0, int offsetY=0)</argsstring>
+        <name>FillBlob</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>imatge</declname>
+        </param>
+        <param>
+          <type>CvScalar</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offsetX</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offsetY</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pinta l&apos;interior d&apos;un blob d&apos;un color determinat Paints the blob in an image</para><para><itemizedlist>
+<listitem><para>FUNCTION: FillBlob</para></listitem><listitem><para>FUNCTIONALITY:<itemizedlist>
+<listitem><para>Fills the blob with a specified colour</para></listitem></itemizedlist>
+</para></listitem><listitem><para>PARAMETERS:<itemizedlist>
+<listitem><para>imatge: where to paint</para></listitem><listitem><para>color: colour to paint the blob</para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULT:<itemizedlist>
+<listitem><para>modifies input image and returns the seed point used to fill the blob</para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICTIONS:</para></listitem><listitem><para>AUTHOR: Ricard Borràs</para></listitem><listitem><para>CREATION DATE: 25-05-2005.</para></listitem><listitem><para>MODIFICATION: Date. Author. Description. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="102" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.cpp" bodystart="649" bodyend="652"/>
+        <references refid="class_c_blob_contour_1a245d5e59180619aa9ae4ec14acc18744" compoundref="_blob_contour_8cpp" startline="203" endline="258">CBlobContour::GetContourPoints</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1a006463cc42ef0e4b8986fa5020cb6f90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CBlob::JoinBlob</definition>
+        <argsstring>(CBlob *blob)</argsstring>
+        <name>JoinBlob</name>
+        <param>
+          <type><ref refid="class_c_blob" kindref="compound">CBlob</ref> *</type>
+          <declname>blob</declname>
+        </param>
+        <briefdescription>
+<para>Join a blob to current one (add&apos;s contour. </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCTION: JoinBlob</para></listitem><listitem><para>FUNCTIONALITY: Add&apos;s external contour to current external contour</para></listitem><listitem><para>PARAMETERS:<itemizedlist>
+<listitem><para>blob: blob from which extract the added external contour</para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULT:<itemizedlist>
+<listitem><para>true if no error ocurred</para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICTIONS: Only external contours are added</para></listitem><listitem><para>AUTHOR: Ricard Borràs</para></listitem><listitem><para>CREATION DATE: 25-05-2005.</para></listitem><listitem><para>MODIFICATION: Date. Author. Description. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="105" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.cpp" bodystart="690" bodyend="706"/>
+        <references refid="class_c_blob_contour_1ae783c063f2d89f4d06396b552c92f9a6" compoundref="_blob_contour_8h" startline="43" endline="46">CBlobContour::GetChainCode</references>
+        <references refid="class_c_blob_1ad136387165bd74c368cb4ecc7632e4cf" compoundref="blob_8h" startline="58" endline="61">GetExternalContour</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1a5391167c172eb461eb762fbdd81306de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CvRect</type>
+        <definition>CvRect CBlob::GetBoundingBox</definition>
+        <argsstring>()</argsstring>
+        <name>GetBoundingBox</name>
+        <briefdescription>
+<para>Get bounding box. </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCIÓ: GetBoundingBox</para></listitem><listitem><para>FUNCIONALITAT: Get bounding box (without rotation) of a blob</para></listitem><listitem><para>PARÀMETRES:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULTAT:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICCIONS:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>AUTOR: rborras</para></listitem><listitem><para>DATA DE CREACIÓ: 2008/05/06</para></listitem><listitem><para>MODIFICACIÓ: Data. Autor. Descripció. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="108" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.cpp" bodystart="488" bodyend="539"/>
+        <references refid="class_c_blob_contour_1a245d5e59180619aa9ae4ec14acc18744" compoundref="_blob_contour_8cpp" startline="203" endline="258">CBlobContour::GetContourPoints</references>
+        <referencedby refid="class_c_blob_1ab26a757fffc581df39620425de008cbc" compoundref="blob_8h" startline="123" endline="126">MaxX</referencedby>
+        <referencedby refid="class_c_blob_1a740a37afcd841bf719587d2f0128c555" compoundref="blob_8h" startline="128" endline="131">MaxY</referencedby>
+        <referencedby refid="class_c_blob_1a1b12d25f8e470fdd808ac2e3bfe9bad4" compoundref="blob_8cpp" startline="409" endline="460">Mean</referencedby>
+        <referencedby refid="class_c_blob_1aa3313af22e7f28d65ba245bc3b8a30bc" compoundref="blob_8h" startline="113" endline="116">MinX</referencedby>
+        <referencedby refid="class_c_blob_1a44e2caf6c7fc6e8360d2576c18c9bc2b" compoundref="blob_8h" startline="118" endline="121">MinY</referencedby>
+        <referencedby refid="class_c_blob_get_diff_y_1aab9f6a96902b89dd9b8283db51a1b6f3" compoundref="_blob_operators_8h" startline="241" endline="244">CBlobGetDiffY::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_diff_x_1a0bf92752dbffa496a2551ad9622836ac" compoundref="_blob_operators_8h" startline="227" endline="230">CBlobGetDiffX::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1ad0bb95f395084ee89ca35cf11f203342" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CvBox2D</type>
+        <definition>CvBox2D CBlob::GetEllipse</definition>
+        <argsstring>()</argsstring>
+        <name>GetEllipse</name>
+        <briefdescription>
+<para>Get bounding ellipse. </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCIÓ: GetEllipse</para></listitem><listitem><para>FUNCIONALITAT: Calculates bounding ellipse of external contour points</para></listitem><listitem><para>PARÀMETRES:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULTAT:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICCIONS:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>AUTOR: rborras</para></listitem><listitem><para>DATA DE CREACIÓ: 2008/05/06</para></listitem><listitem><para>MODIFICACIÓ: Data. Autor. Descripció.</para></listitem><listitem><para>NOTA: Calculation is made using second order moment aproximation </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="110" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.cpp" bodystart="555" bodyend="633"/>
+        <references refid="class_c_blob_1a4f5dfca1ee933e07a39965375f9f07c5" compoundref="blob_8cpp" startline="379" endline="394">Moment</references>
+        <referencedby refid="class_c_blob_get_orientation_1a083233587fed855654e580a355265be3" compoundref="_blob_operators_8h" startline="664" endline="674">CBlobGetOrientation::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_minor_axis_length_1a2269bfa1651667f020e27d9f1e8f8d98" compoundref="_blob_operators_8h" startline="647" endline="652">CBlobGetMinorAxisLength::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_area_elipse_ratio_1a24f9703155af6e963a1ae226cdb71125" compoundref="_blob_operators_8h" startline="621" endline="635">CBlobGetAreaElipseRatio::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_major_axis_length_1a535c9a23d16bf020ed0c6aa9f36b884f" compoundref="_blob_operators_8h" startline="604" endline="609">CBlobGetMajorAxisLength::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1aa3313af22e7f28d65ba245bc3b8a30bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CBlob::MinX</definition>
+        <argsstring>()</argsstring>
+        <name>MinX</name>
+        <briefdescription>
+<para>Minimun X. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="114" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" bodystart="113" bodyend="116"/>
+        <references refid="class_c_blob_1a5391167c172eb461eb762fbdd81306de" compoundref="blob_8cpp" startline="488" endline="539">GetBoundingBox</references>
+        <referencedby refid="class_c_blob_get_x_center_1aaaae40df5c1c031658100b16015896f0" compoundref="_blob_operators_8h" startline="574" endline="577">CBlobGetXCenter::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_min_x_1a4930f236b5afa5c987ce0b5062b79b09" compoundref="_blob_operators_8h" startline="357" endline="360">CBlobGetMinX::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_max_yat_min_x_1a107cc7896ca6af559e8410b3c452e80d" compoundref="_blob_operators_8cpp" startline="204" endline="229">CBlobGetMaxYatMinX::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1a44e2caf6c7fc6e8360d2576c18c9bc2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CBlob::MinY</definition>
+        <argsstring>()</argsstring>
+        <name>MinY</name>
+        <briefdescription>
+<para>Minimun Y. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="119" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" bodystart="118" bodyend="121"/>
+        <references refid="class_c_blob_1a5391167c172eb461eb762fbdd81306de" compoundref="blob_8cpp" startline="488" endline="539">GetBoundingBox</references>
+        <referencedby refid="class_c_blob_get_y_center_1a5cdb219c957adc1bf08c95e7823e407b" compoundref="_blob_operators_8h" startline="589" endline="592">CBlobGetYCenter::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_min_y_1acf1b21431bc7cba83741b6ed8b3f1bd9" compoundref="_blob_operators_8h" startline="387" endline="390">CBlobGetMinY::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_min_xat_min_y_1ae2f3ba428e780a826de213726d2a8f35" compoundref="_blob_operators_8cpp" startline="98" endline="121">CBlobGetMinXatMinY::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1ab26a757fffc581df39620425de008cbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CBlob::MaxX</definition>
+        <argsstring>()</argsstring>
+        <name>MaxX</name>
+        <briefdescription>
+<para>Maximun X. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="124" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" bodystart="123" bodyend="126"/>
+        <references refid="class_c_blob_1a5391167c172eb461eb762fbdd81306de" compoundref="blob_8cpp" startline="488" endline="539">GetBoundingBox</references>
+        <referencedby refid="class_c_blob_get_x_center_1aaaae40df5c1c031658100b16015896f0" compoundref="_blob_operators_8h" startline="574" endline="577">CBlobGetXCenter::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_max_x_1a187bed7f1f1e467fc5170324f4434bc2" compoundref="_blob_operators_8h" startline="372" endline="375">CBlobGetMaxX::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_min_yat_max_x_1a41bc24b0214b58f979396208296d3dd6" compoundref="_blob_operators_8cpp" startline="133" endline="156">CBlobGetMinYatMaxX::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_1a740a37afcd841bf719587d2f0128c555" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CBlob::MaxY</definition>
+        <argsstring>()</argsstring>
+        <name>MaxY</name>
+        <briefdescription>
+<para>Maximun Y. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="129" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" bodystart="128" bodyend="131"/>
+        <references refid="class_c_blob_1a5391167c172eb461eb762fbdd81306de" compoundref="blob_8cpp" startline="488" endline="539">GetBoundingBox</references>
+        <referencedby refid="class_c_blob_get_y_center_1a5cdb219c957adc1bf08c95e7823e407b" compoundref="_blob_operators_8h" startline="589" endline="592">CBlobGetYCenter::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_max_y_1abd3fc708b60aa0716a1f335f4313e46e" compoundref="_blob_operators_8h" startline="402" endline="405">CBlobGetMaxY::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_max_xat_max_y_1a45c075e8968d1078c6b49ea2acbb6d58" compoundref="_blob_operators_8cpp" startline="168" endline="192">CBlobGetMaxXatMaxY::operator()</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_c_blob_1a4e3c8e5c89036d0a141ca8f839e4e7e3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CBlob::ClearContours</definition>
+        <argsstring>()</argsstring>
+        <name>ClearContours</name>
+        <briefdescription>
+<para>Deallocates all contours. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="135" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.cpp" bodystart="116" bodyend="131"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Blob class. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="214">
+        <label>CBlobContour</label>
+        <link refid="class_c_blob_contour"/>
+      </node>
+      <node id="213">
+        <label>CBlob</label>
+        <link refid="class_c_blob"/>
+        <childnode refid="214" relation="usage">
+          <edgelabel>m_externalContour</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" line="38" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.h" bodystart="37" bodyend="170"/>
+    <listofallmembers>
+      <member refid="class_c_blob_1ad26a1bc4e31809c3bd76424b05824e90" prot="public" virt="non-virtual"><scope>CBlob</scope><name>AddInternalContour</name></member>
+      <member refid="class_c_blob_1a6f1db9fcb42c0a3ea003aaeb0ec65a8d" prot="public" virt="non-virtual"><scope>CBlob</scope><name>Area</name></member>
+      <member refid="class_c_blob_1acd24304c1bc98128b24914f3e4bfea7c" prot="public" virt="non-virtual"><scope>CBlob</scope><name>CBlob</name></member>
+      <member refid="class_c_blob_1a45d7bbe67ef246fe180e16f5a7116c6f" prot="public" virt="non-virtual"><scope>CBlob</scope><name>CBlob</name></member>
+      <member refid="class_c_blob_1af87156ca1ac7f64a860b7cf8c07fd1fa" prot="public" virt="non-virtual"><scope>CBlob</scope><name>CBlob</name></member>
+      <member refid="class_c_blob_1a61719b6e5ebff6d3e383b98bce4137dc" prot="public" virt="non-virtual"><scope>CBlob</scope><name>CBlob</name></member>
+      <member refid="class_c_blob_1a4e3c8e5c89036d0a141ca8f839e4e7e3" prot="private" virt="non-virtual"><scope>CBlob</scope><name>ClearContours</name></member>
+      <member refid="class_c_blob_1a2d56a7dee1cbeb3178ff083630ee31b0" prot="public" virt="non-virtual"><scope>CBlob</scope><name>Exterior</name></member>
+      <member refid="class_c_blob_1ab1501b07a2c5ee23843bac66d20974e2" prot="public" virt="non-virtual"><scope>CBlob</scope><name>ExternPerimeter</name></member>
+      <member refid="class_c_blob_1a1a12b6dee61d2db86cd3a60c0671382e" prot="public" virt="non-virtual"><scope>CBlob</scope><name>FillBlob</name></member>
+      <member refid="class_c_blob_1a5391167c172eb461eb762fbdd81306de" prot="public" virt="non-virtual"><scope>CBlob</scope><name>GetBoundingBox</name></member>
+      <member refid="class_c_blob_1aacc50d5d47e0543d4e0a569d05009006" prot="public" virt="non-virtual"><scope>CBlob</scope><name>GetConvexHull</name></member>
+      <member refid="class_c_blob_1ad0bb95f395084ee89ca35cf11f203342" prot="public" virt="non-virtual"><scope>CBlob</scope><name>GetEllipse</name></member>
+      <member refid="class_c_blob_1ad136387165bd74c368cb4ecc7632e4cf" prot="public" virt="non-virtual"><scope>CBlob</scope><name>GetExternalContour</name></member>
+      <member refid="class_c_blob_1a1d3fd90bc98f6d845babb18a3f058bc2" prot="public" virt="non-virtual"><scope>CBlob</scope><name>GetID</name></member>
+      <member refid="class_c_blob_1a1eeee72a4369dc9485c6ae6573631a02" prot="public" virt="non-virtual"><scope>CBlob</scope><name>GetStorage</name></member>
+      <member refid="class_c_blob_1ac97e73d3040530de09a187d02632deb1" prot="public" virt="non-virtual"><scope>CBlob</scope><name>IsEmpty</name></member>
+      <member refid="class_c_blob_1a006463cc42ef0e4b8986fa5020cb6f90" prot="public" virt="non-virtual"><scope>CBlob</scope><name>JoinBlob</name></member>
+      <member refid="class_c_blob_1a9dd356b7cf492e6c8fa0109c81f6ac3c" prot="private" virt="non-virtual"><scope>CBlob</scope><name>m_area</name></member>
+      <member refid="class_c_blob_1ad153da0682f927274e3493e0f0a8e9ff" prot="private" virt="non-virtual"><scope>CBlob</scope><name>m_boundingBox</name></member>
+      <member refid="class_c_blob_1aa06a47b96675de402b95dbbff330f3f0" prot="private" virt="non-virtual"><scope>CBlob</scope><name>m_ellipse</name></member>
+      <member refid="class_c_blob_1a6432d83f68a1c75464bb1c2f7450e4b5" prot="private" virt="non-virtual"><scope>CBlob</scope><name>m_externalContour</name></member>
+      <member refid="class_c_blob_1adf1b82bc3602c5d08028730ee3a3d47e" prot="private" virt="non-virtual"><scope>CBlob</scope><name>m_externPerimeter</name></member>
+      <member refid="class_c_blob_1aee7e60307972994de76d4128f08851c0" prot="private" virt="non-virtual"><scope>CBlob</scope><name>m_id</name></member>
+      <member refid="class_c_blob_1a88071948e0c48f4b256147df3a03a7de" prot="private" virt="non-virtual"><scope>CBlob</scope><name>m_internalContours</name></member>
+      <member refid="class_c_blob_1aeb1c6a7e54a529c9231a96cbe644c9d4" prot="private" virt="non-virtual"><scope>CBlob</scope><name>m_meanGray</name></member>
+      <member refid="class_c_blob_1a0dc76004877e49c4607ecf3bea800d49" prot="private" virt="non-virtual"><scope>CBlob</scope><name>m_originalImageSize</name></member>
+      <member refid="class_c_blob_1a4d08eee6c8bb843469afa60834707bb8" prot="private" virt="non-virtual"><scope>CBlob</scope><name>m_perimeter</name></member>
+      <member refid="class_c_blob_1ab54c421db7988eef96af434d2cf0b0da" prot="private" virt="non-virtual"><scope>CBlob</scope><name>m_stdDevGray</name></member>
+      <member refid="class_c_blob_1aca7cb0f750e553fa34935ea927fd2122" prot="private" virt="non-virtual"><scope>CBlob</scope><name>m_storage</name></member>
+      <member refid="class_c_blob_1ab26a757fffc581df39620425de008cbc" prot="public" virt="non-virtual"><scope>CBlob</scope><name>MaxX</name></member>
+      <member refid="class_c_blob_1a740a37afcd841bf719587d2f0128c555" prot="public" virt="non-virtual"><scope>CBlob</scope><name>MaxY</name></member>
+      <member refid="class_c_blob_1a1b12d25f8e470fdd808ac2e3bfe9bad4" prot="public" virt="non-virtual"><scope>CBlob</scope><name>Mean</name></member>
+      <member refid="class_c_blob_1aa3313af22e7f28d65ba245bc3b8a30bc" prot="public" virt="non-virtual"><scope>CBlob</scope><name>MinX</name></member>
+      <member refid="class_c_blob_1a44e2caf6c7fc6e8360d2576c18c9bc2b" prot="public" virt="non-virtual"><scope>CBlob</scope><name>MinY</name></member>
+      <member refid="class_c_blob_1a4f5dfca1ee933e07a39965375f9f07c5" prot="public" virt="non-virtual"><scope>CBlob</scope><name>Moment</name></member>
+      <member refid="class_c_blob_1a724e55442a030bf94da856310e324a40" prot="public" virt="non-virtual"><scope>CBlob</scope><name>operator=</name></member>
+      <member refid="class_c_blob_1af63853ea55dbebbee5b013189e765b51" prot="public" virt="non-virtual"><scope>CBlob</scope><name>Perimeter</name></member>
+      <member refid="class_c_blob_1a014b670bb748e6767ef070e1bc25be7a" prot="public" virt="non-virtual"><scope>CBlob</scope><name>StdDev</name></member>
+      <member refid="class_c_blob_1a6c917467ff363aa242e6a46cde41da79" prot="private" virt="non-virtual"><scope>CBlob</scope><name>t_contourList</name></member>
+      <member refid="class_c_blob_1a593ffb9ba17290432d04c383f2f104e2" prot="public" virt="non-virtual"><scope>CBlob</scope><name>~CBlob</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

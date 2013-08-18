@@ -1,0 +1,105 @@
+\hypertarget{_median_8cpp}{
+\section{src/libopentld/mftracker/Median.cpp File Reference}
+\label{_median_8cpp}\index{src/libopentld/mftracker/Median.cpp@{src/libopentld/mftracker/Median.cpp}}
+}
+{\ttfamily \#include \char`\"{}Median.h\char`\"{}}\par
+{\ttfamily \#include $<$cstdlib$>$}\par
+{\ttfamily \#include $<$cstring$>$}\par
+Include dependency graph for Median.cpp:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{_median_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_median_8cpp_a85a69dd703a28a51142294036a464907}{ELEM\_\-SWAP}(a, b)~\{ register float t=(a);(a)=(b);(b)=t; \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{_median_8cpp_a90a27fb293134af27d1615ff29dd1417}{getMedianUnmanaged} (float arr\mbox{[}$\,$\mbox{]}, int n)
+\item 
+float \hyperlink{_median_8cpp_a6c78c19fafa7ef19523fb62d09086f30}{getMedian} (float arr\mbox{[}$\,$\mbox{]}, int n)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{_median_8cpp_a85a69dd703a28a51142294036a464907}{
+\index{Median.cpp@{Median.cpp}!ELEM\_\-SWAP@{ELEM\_\-SWAP}}
+\index{ELEM\_\-SWAP@{ELEM\_\-SWAP}!Median.cpp@{Median.cpp}}
+\subsubsection[{ELEM\_\-SWAP}]{\setlength{\rightskip}{0pt plus 5cm}\#define ELEM\_\-SWAP(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b}
+\end{DoxyParamCaption}
+)~\{ register float t=(a);(a)=(b);(b)=t; \}}}
+\label{_median_8cpp_a85a69dd703a28a51142294036a464907}
+
+
+\subsection{Function Documentation}
+\hypertarget{_median_8cpp_a6c78c19fafa7ef19523fb62d09086f30}{
+\index{Median.cpp@{Median.cpp}!getMedian@{getMedian}}
+\index{getMedian@{getMedian}!Median.cpp@{Median.cpp}}
+\subsubsection[{getMedian}]{\setlength{\rightskip}{0pt plus 5cm}float getMedian (
+\begin{DoxyParamCaption}
+\item[{float}]{ arr\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{ n}
+\end{DoxyParamCaption}
+)}}
+\label{_median_8cpp_a6c78c19fafa7ef19523fb62d09086f30}
+Calculates Median of the array. Don't change array(makes copy). 
+\begin{DoxyParams}{Parameters}
+\item[{\em arr}]the array  n length of array \end{DoxyParams}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{_median_8cpp_a6c78c19fafa7ef19523fb62d09086f30_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{_median_8cpp_a6c78c19fafa7ef19523fb62d09086f30_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_median_8cpp_a90a27fb293134af27d1615ff29dd1417}{
+\index{Median.cpp@{Median.cpp}!getMedianUnmanaged@{getMedianUnmanaged}}
+\index{getMedianUnmanaged@{getMedianUnmanaged}!Median.cpp@{Median.cpp}}
+\subsubsection[{getMedianUnmanaged}]{\setlength{\rightskip}{0pt plus 5cm}float getMedianUnmanaged (
+\begin{DoxyParamCaption}
+\item[{float}]{ arr\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{ n}
+\end{DoxyParamCaption}
+)}}
+\label{_median_8cpp_a90a27fb293134af27d1615ff29dd1417}
+Returns median of the array. Changes array! 
+\begin{DoxyParams}{Parameters}
+\item[{\em arr}]the array  n length of array\end{DoxyParams}
+This Quickselect routine is based on the algorithm described in \char`\"{}Numerical recipes in C\char`\"{}, Second Edition, Cambridge University Press, 1992, Section 8.5, ISBN 0-\/521-\/43108-\/5 This code by Nicolas Devillard -\/ 1998. Public domain. 
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=396pt]{_median_8cpp_a90a27fb293134af27d1615ff29dd1417_icgraph}
+\end{center}
+\end{figure}
+
+

@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_component_labeling_8h" kind="file">
+    <compoundname>ComponentLabeling.h</compoundname>
+    <includes local="yes">vector</includes>
+    <includes refid="_blob_contour_8h" local="yes">BlobContour.h</includes>
+    <includes refid="blob_8h" local="yes">blob.h</includes>
+    <includedby refid="_blob_result_8h" local="yes">src/3rdparty/cvblobs/BlobResult.h</includedby>
+    <includedby refid="_component_labeling_8cpp" local="yes">src/3rdparty/cvblobs/ComponentLabeling.cpp</includedby>
+    <incdepgraph>
+      <node id="1158">
+        <label>list</label>
+      </node>
+      <node id="1160">
+        <label>cxcore.h</label>
+      </node>
+      <node id="1162">
+        <label>BlobLibraryConfiguration.h</label>
+        <link refid="_blob_library_configuration_8h"/>
+      </node>
+      <node id="1155">
+        <label>src/3rdparty/cvblobs/ComponentLabeling.h</label>
+        <link refid="ComponentLabeling.h"/>
+        <childnode refid="1156" relation="include">
+        </childnode>
+        <childnode refid="1157" relation="include">
+        </childnode>
+        <childnode refid="1161" relation="include">
+        </childnode>
+      </node>
+      <node id="1157">
+        <label>BlobContour.h</label>
+        <link refid="_blob_contour_8h"/>
+        <childnode refid="1158" relation="include">
+        </childnode>
+        <childnode refid="1159" relation="include">
+        </childnode>
+        <childnode refid="1160" relation="include">
+        </childnode>
+      </node>
+      <node id="1156">
+        <label>vector</label>
+      </node>
+      <node id="1159">
+        <label>cv.h</label>
+      </node>
+      <node id="1161">
+        <label>blob.h</label>
+        <link refid="blob_8h"/>
+        <childnode refid="1160" relation="include">
+        </childnode>
+        <childnode refid="1162" relation="include">
+        </childnode>
+        <childnode refid="1157" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1166">
+        <label>src/libopentld/tld/ForegroundDetector.cpp</label>
+        <link refid="_foreground_detector_8cpp"/>
+      </node>
+      <node id="1163">
+        <label>src/3rdparty/cvblobs/ComponentLabeling.h</label>
+        <link refid="ComponentLabeling.h"/>
+        <childnode refid="1164" relation="include">
+        </childnode>
+        <childnode refid="1167" relation="include">
+        </childnode>
+      </node>
+      <node id="1165">
+        <label>src/3rdparty/cvblobs/BlobResult.cpp</label>
+        <link refid="_blob_result_8cpp"/>
+      </node>
+      <node id="1167">
+        <label>src/3rdparty/cvblobs/ComponentLabeling.cpp</label>
+        <link refid="_component_labeling_8cpp"/>
+      </node>
+      <node id="1164">
+        <label>src/3rdparty/cvblobs/BlobResult.h</label>
+        <link refid="_blob_result_8h"/>
+        <childnode refid="1165" relation="include">
+        </childnode>
+        <childnode refid="1166" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_component_labeling_8h_1a5d4c27007aef34e8ef740c52b24f0403" prot="public" static="no">
+        <name>_CLASSE_BLOBRESULT_INCLUDED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.h" line="2" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.h" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_component_labeling_8h_1a9b2ee33d26a482072b82620e6709e66e" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="class_c_blob" kindref="compound">CBlob</ref> * &gt;</type>
+        <definition>typedef std::vector&lt;CBlob*&gt; Blob_vector</definition>
+        <argsstring></argsstring>
+        <name>Blob_vector</name>
+        <briefdescription>
+<para>definició de que es un vector de blobs </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.h" line="10" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_component_labeling_8h_1a05b80d9c559310ac95461bd523d888f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ComponentLabeling</definition>
+        <argsstring>(IplImage *inputImage, IplImage *maskImage, unsigned char backgroundColor, Blob_vector &amp;blobs)</argsstring>
+        <name>ComponentLabeling</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>inputImage</declname>
+        </param>
+        <param>
+          <type>IplImage *</type>
+          <declname>maskImage</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>backgroundColor</declname>
+        </param>
+        <param>
+          <type><ref refid="_component_labeling_8h_1a9b2ee33d26a482072b82620e6709e66e" kindref="member">Blob_vector</ref> &amp;</type>
+          <declname>blobs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCIÓ: ComponentLabeling</para></listitem><listitem><para>FUNCIONALITAT: Calcula els components binaris (blobs) d&apos;una imatge amb connectivitat a 8</para></listitem><listitem><para>PARÀMETRES:<itemizedlist>
+<listitem><para>inputImage: image to segment (pixel values different than blobColor are treated as background)</para></listitem><listitem><para>maskImage: if not NULL, all the pixels equal to 0 in mask are skipped in input image</para></listitem><listitem><para>backgroundColor: color of background (ignored pixels)</para></listitem><listitem><para>blobs: blob vector destination</para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULTAT:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICCIONS:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>AUTOR: rborras</para></listitem><listitem><para>DATA DE CREACIÓ: 2008/04/21</para></listitem><listitem><para>MODIFICACIÓ: Data. Autor. Descripció.</para></listitem><listitem><para>NOTA: Algorithm based on &quot;A linear-time component labeling algorithm using contour tracing technique&quot;, F.Chang et al </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>current blob pointer </para>        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.h" line="17" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" bodystart="93" bodyend="269"/>
+        <references refid="class_c_blob_1ad26a1bc4e31809c3bd76424b05824e90" compoundref="blob_8cpp" startline="132" endline="135">CBlob::AddInternalContour</references>
+        <references refid="_component_labeling_8cpp_1a36ce253ae4e842675730bfc013e6485a" compoundref="_component_labeling_8cpp" startline="286" endline="349">contourTracing</references>
+        <references refid="_component_labeling_8cpp_1ae950b1a18f9c56ae84e9338f2b87aa84" compoundref="_component_labeling_8cpp" startline="46" endline="49">GET_BELOW_VISITEDPIXEL</references>
+        <references refid="class_c_blob_1ad136387165bd74c368cb4ecc7632e4cf" compoundref="blob_8h" startline="58" endline="61">CBlob::GetExternalContour</references>
+        <references refid="class_c_blob_1a1eeee72a4369dc9485c6ae6573631a02" compoundref="blob_8h" startline="64" endline="67">CBlob::GetStorage</references>
+      </memberdef>
+      <memberdef kind="function" id="_component_labeling_8h_1aae4e0baf3210d155e7b07f46212b4031" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void contourTracing</definition>
+        <argsstring>(IplImage *image, IplImage *mask, CvPoint contourStart, t_labelType *labels, bool *visitedPoints, t_labelType label, bool internalContour, unsigned char backgroundColor, CBlobContour *currentBlobContour)</argsstring>
+        <name>contourTracing</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>IplImage *</type>
+          <declname>mask</declname>
+          <defname>maskImage</defname>
+        </param>
+        <param>
+          <type>CvPoint</type>
+          <declname>contourStart</declname>
+        </param>
+        <param>
+          <type><ref refid="blob_8h_1ae21ba61a4f023a2f91fc5feaad495073" kindref="member">t_labelType</ref> *</type>
+          <declname>labels</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>visitedPoints</declname>
+        </param>
+        <param>
+          <type><ref refid="blob_8h_1ae21ba61a4f023a2f91fc5feaad495073" kindref="member">t_labelType</ref></type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>internalContour</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>backgroundColor</declname>
+        </param>
+        <param>
+          <type><ref refid="class_c_blob_contour" kindref="compound">CBlobContour</ref> *</type>
+          <declname>currentBlobContour</declname>
+          <defname>currentBlobcontour</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCIÓ:</para></listitem><listitem><para>FUNCIONALITAT:</para></listitem><listitem><para>PARÀMETRES:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULTAT:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICCIONS:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>AUTOR: rborras</para></listitem><listitem><para>DATA DE CREACIÓ: 2008/04/29</para></listitem><listitem><para>MODIFICACIÓ: Data. Autor. Descripció. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.h" line="23" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" bodystart="286" bodyend="349"/>
+        <references refid="class_c_blob_contour_1a5a10813d71e48c52e099001e6581366c" compoundref="_blob_contour_8cpp" startline="99" endline="102">CBlobContour::AddChainCode</references>
+        <references refid="_component_labeling_8cpp_1a509d4ac5415f87f32ac7a8b088bf3d68" compoundref="_component_labeling_8cpp" startline="64" endline="67">ASSIGN_LABEL</references>
+        <references refid="_component_labeling_8cpp_1ae0881dec50a29351bda94e482ce3cb28" compoundref="_component_labeling_8cpp" startline="364" endline="404">tracer</references>
+        <referencedby refid="_component_labeling_8h_1a05b80d9c559310ac95461bd523d888f6" compoundref="_component_labeling_8cpp" startline="93" endline="269">ComponentLabeling</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_component_labeling_8h_1aa08fde94b6ebc2330039f5ed1709c3c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CvPoint</type>
+        <definition>CvPoint tracer</definition>
+        <argsstring>(IplImage *image, IplImage *mask, CvPoint P, bool *visitedPoints, short initialMovement, unsigned char backgroundColor, short &amp;movement)</argsstring>
+        <name>tracer</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>IplImage *</type>
+          <declname>mask</declname>
+          <defname>maskImage</defname>
+        </param>
+        <param>
+          <type>CvPoint</type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>visitedPoints</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>initialMovement</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>backgroundColor</declname>
+        </param>
+        <param>
+          <type>short &amp;</type>
+          <declname>movement</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCIÓ: tracer</para></listitem><listitem><para>FUNCIONALITAT: Searches for next point of a contour</para></listitem><listitem><para>PARÀMETRES:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULTAT:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICCIONS:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>AUTOR: rborras</para></listitem><listitem><para>DATA DE CREACIÓ: 2008/04/30</para></listitem><listitem><para>MODIFICACIÓ: Data. Autor. Descripció. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.h" line="27" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" bodystart="364" bodyend="404"/>
+        <references refid="_component_labeling_8cpp_1a60f487d43bfd39b64f320c5487926a23" compoundref="_component_labeling_8cpp" startline="70" endline="73">ASSIGN_VISITED</references>
+        <references refid="_component_labeling_8cpp_1a2bcdcae4cc36c0060f85f904cc6c826e" compoundref="_component_labeling_8cpp" startline="34" endline="37">GET_IMAGE_PIXEL</references>
+        <references refid="_component_labeling_8cpp_1ae2b92da1ce3ca327bddd6b4a5c39cfc5" compoundref="_component_labeling_8cpp" startline="39" endline="45">GET_IMAGEMASK_PIXEL</references>
+        <referencedby refid="_component_labeling_8h_1aae4e0baf3210d155e7b07f46212b4031" compoundref="_component_labeling_8cpp" startline="286" endline="349">contourTracing</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#if<sp/>!defined(_COMPONENT_LABELING_H_INCLUDED)</highlight></codeline>
+<codeline lineno="2" refid="_component_labeling_8h_1a5d4c27007aef34e8ef740c52b24f0403" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_CLASSE_BLOBRESULT_INCLUDED</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;vector&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_blob_contour_8h" kindref="compound">BlobContour.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="blob_8h" kindref="compound">blob.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="_component_labeling_8h_1a9b2ee33d26a482072b82620e6709e66e" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::vector&lt;CBlob*&gt;<sp/><sp/><sp/><sp/><sp/>Blob_vector;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_component_labeling_8cpp_1a05b80d9c559310ac95461bd523d888f6" kindref="member">ComponentLabeling</ref>(<sp/>IplImage*<sp/>inputImage,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IplImage*<sp/>maskImage,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>backgroundColor,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_component_labeling_8h_1a9b2ee33d26a482072b82620e6709e66e" kindref="member" tooltip="definició de que es un vector de blobs">Blob_vector</ref><sp/>&amp;blobs<sp/>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_component_labeling_8cpp_1a36ce253ae4e842675730bfc013e6485a" kindref="member">contourTracing</ref>(<sp/>IplImage<sp/>*image,<sp/>IplImage<sp/>*mask,<sp/>CvPoint<sp/>contourStart,<sp/><ref refid="blob_8h_1ae21ba61a4f023a2f91fc5feaad495073" kindref="member" tooltip="Disable warnings referred to 255 character truncation for the std:map.">t_labelType</ref><sp/>*labels,<sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*visitedPoints,<sp/><ref refid="blob_8h_1ae21ba61a4f023a2f91fc5feaad495073" kindref="member" tooltip="Disable warnings referred to 255 character truncation for the std:map.">t_labelType</ref><sp/>label,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>internalContour,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>backgroundColor,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_blob_contour" kindref="compound" tooltip="Blob contour class (in crack code).">CBlobContour</ref><sp/>*currentBlobContour<sp/>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">CvPoint<sp/><ref refid="_component_labeling_8cpp_1ae0881dec50a29351bda94e482ce3cb28" kindref="member">tracer</ref>(<sp/>IplImage<sp/>*image,<sp/>IplImage<sp/>*mask,<sp/>CvPoint<sp/>P,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*visitedPoints,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>initialMovement,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>backgroundColor,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>&amp;movement<sp/>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//!_CLASSE_BLOBRESULT_INCLUDED</highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.h"/>
+  </compounddef>
+</doxygen>

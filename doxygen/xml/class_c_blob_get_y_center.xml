@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="class_c_blob_get_y_center" kind="class" prot="public">
+    <compoundname>CBlobGetYCenter</compoundname>
+    <basecompoundref refid="class_c_operador_blob" prot="public" virt="non-virtual">COperadorBlob</basecompoundref>
+    <includes refid="_blob_operators_8h" local="no">BlobOperators.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_blob_get_y_center_1a5cdb219c957adc1bf08c95e7823e407b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double CBlobGetYCenter::operator()</definition>
+        <argsstring>(CBlob &amp;blob)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="class_c_operador_blob_1a303c4189cc94cafbcbee116bf014e623">operator()</reimplements>
+        <param>
+          <type><ref refid="class_c_blob" kindref="compound">CBlob</ref> &amp;</type>
+          <declname>blob</declname>
+        </param>
+        <briefdescription>
+<para>Aply operator to blob. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="590" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="589" bodyend="592"/>
+        <references refid="class_c_blob_1a740a37afcd841bf719587d2f0128c555" compoundref="blob_8h" startline="128" endline="131">CBlob::MaxY</references>
+        <references refid="class_c_blob_1a44e2caf6c7fc6e8360d2576c18c9bc2b" compoundref="blob_8h" startline="118" endline="121">CBlob::MinY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_y_center_1a20c0a7b0fe20ab1e43aaad7a8462f9e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>const char* CBlobGetYCenter::GetNom</definition>
+        <argsstring>()</argsstring>
+        <name>GetNom</name>
+        <reimplements refid="class_c_operador_blob_1a717a19c163a26b45081a2231be24c008">GetNom</reimplements>
+        <briefdescription>
+<para>Get operator name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="594" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="593" bodyend="596"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Classe per calcular el centre en el eix Y d&apos;un blob Class to calculate the center in the Y direction </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="361">
+        <label>CBlobGetYCenter</label>
+        <link refid="class_c_blob_get_y_center"/>
+        <childnode refid="362" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="362">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="363">
+        <label>CBlobGetYCenter</label>
+        <link refid="class_c_blob_get_y_center"/>
+        <childnode refid="364" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="364">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="587" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="586" bodyend="597"/>
+    <listofallmembers>
+      <member refid="class_c_blob_get_y_center_1a20c0a7b0fe20ab1e43aaad7a8462f9e1" prot="public" virt="virtual"><scope>CBlobGetYCenter</scope><name>GetNom</name></member>
+      <member refid="class_c_operador_blob_1a477edfe687cf9ef41469bcf6ea636a75" prot="public" virt="non-virtual"><scope>CBlobGetYCenter</scope><name>operator COperadorBlob *</name></member>
+      <member refid="class_c_blob_get_y_center_1a5cdb219c957adc1bf08c95e7823e407b" prot="public" virt="virtual"><scope>CBlobGetYCenter</scope><name>operator()</name></member>
+      <member refid="class_c_operador_blob_1a25ccc652bfa55e7b0143c88f452729a2" prot="public" virt="virtual"><scope>CBlobGetYCenter</scope><name>~COperadorBlob</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

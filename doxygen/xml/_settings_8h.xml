@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_settings_8h" kind="file">
+    <compoundname>Settings.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes refid="_im_acq_8h" local="yes">ImAcq.h</includes>
+    <includedby refid="_config_8h" local="yes">src/opentld/main/Config.h</includedby>
+    <includedby refid="_settings_8cpp" local="yes">src/opentld/main/Settings.cpp</includedby>
+    <includedby refid="_config_dialog_8cpp" local="no">src/opentld/qopentld/ConfigDialog.cpp</includedby>
+    <incdepgraph>
+      <node id="1930">
+        <label>src/opentld/main/Settings.h</label>
+        <link refid="Settings.h"/>
+        <childnode refid="1931" relation="include">
+        </childnode>
+        <childnode refid="1932" relation="include">
+        </childnode>
+      </node>
+      <node id="1933">
+        <label>highgui.h</label>
+      </node>
+      <node id="1931">
+        <label>vector</label>
+      </node>
+      <node id="1932">
+        <label>ImAcq.h</label>
+        <link refid="_im_acq_8h"/>
+        <childnode refid="1933" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1934">
+        <label>src/opentld/main/Settings.h</label>
+        <link refid="Settings.h"/>
+        <childnode refid="1935" relation="include">
+        </childnode>
+        <childnode refid="1940" relation="include">
+        </childnode>
+        <childnode refid="1941" relation="include">
+        </childnode>
+      </node>
+      <node id="1941">
+        <label>src/opentld/qopentld/ConfigDialog.cpp</label>
+        <link refid="_config_dialog_8cpp"/>
+      </node>
+      <node id="1935">
+        <label>src/opentld/main/Config.h</label>
+        <link refid="_config_8h"/>
+        <childnode refid="1936" relation="include">
+        </childnode>
+        <childnode refid="1937" relation="include">
+        </childnode>
+        <childnode refid="1938" relation="include">
+        </childnode>
+        <childnode refid="1939" relation="include">
+        </childnode>
+      </node>
+      <node id="1937">
+        <label>src/opentld/main/Main.cpp</label>
+        <link refid="_main_8cpp"/>
+      </node>
+      <node id="1938">
+        <label>src/opentld/OpenTLD.cpp</label>
+        <link refid="_open_t_l_d_8cpp"/>
+      </node>
+      <node id="1936">
+        <label>src/opentld/main/Config.cpp</label>
+        <link refid="_config_8cpp"/>
+      </node>
+      <node id="1940">
+        <label>src/opentld/main/Settings.cpp</label>
+        <link refid="_settings_8cpp"/>
+      </node>
+      <node id="1939">
+        <label>src/opentld/QOpenTLD.cpp</label>
+        <link refid="_q_open_t_l_d_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classtld_1_1_settings" prot="public">tld::Settings</innerclass>
+    <innernamespace refid="namespacetld">tld</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SETTINGS_H</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SETTINGS_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_im_acq_8h" kindref="compound">ImAcq.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">tld</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classtld_1_1_settings" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtld_1_1_settings" kindref="compound">Settings</ref></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_settings_1a1a1d6373d0e350ef0f2697ea2a42894e" kindref="member">Settings</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_settings_1a96eee0f4e98b706b8b5f8ec973c24dbc" kindref="member">~Settings</ref>();</highlight></codeline>
+<codeline lineno="46" refid="classtld_1_1_settings_1a54a14f7a08a919ee6ff19514205c6b47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1a54a14f7a08a919ee6ff19514205c6b47" kindref="member">m_trackerEnabled</ref>;</highlight></codeline>
+<codeline lineno="47" refid="classtld_1_1_settings_1ab3100039fb52ee1a41813812320a6ca3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1ab3100039fb52ee1a41813812320a6ca3" kindref="member">m_varianceFilterEnabled</ref>;</highlight></codeline>
+<codeline lineno="48" refid="classtld_1_1_settings_1af184f95560d875d91951dbbc368ba04d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1af184f95560d875d91951dbbc368ba04d" kindref="member">m_ensembleClassifierEnabled</ref>;</highlight></codeline>
+<codeline lineno="49" refid="classtld_1_1_settings_1a8ec793b6668a626308d8ee8d697d9f67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1a8ec793b6668a626308d8ee8d697d9f67" kindref="member">m_nnClassifierEnabled</ref>;</highlight></codeline>
+<codeline lineno="50" refid="classtld_1_1_settings_1afd89a9d1a0a8dec5ce524eeed5b0f5e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1afd89a9d1a0a8dec5ce524eeed5b0f5e0" kindref="member" tooltip="sets scanwindows off by a percentage value of the window dimensions (specified in proportionalShift) ...">m_useProportionalShift</ref>;<sp/></highlight></codeline>
+<codeline lineno="51" refid="classtld_1_1_settings_1a6c06df5b2a9028a1c9a77269601f4a36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1a6c06df5b2a9028a1c9a77269601f4a36" kindref="member" tooltip="if true, model specified by &amp;quot;modelPath&amp;quot; is loaded at startup">m_loadModel</ref>;<sp/></highlight></codeline>
+<codeline lineno="52" refid="classtld_1_1_settings_1afadc64d205d5386d94088e87dba72519" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1afadc64d205d5386d94088e87dba72519" kindref="member" tooltip="if true, user can select initial bounding box (which then overrides the setting &amp;quot;initialBounding...">m_selectManually</ref>;<sp/></highlight></codeline>
+<codeline lineno="53" refid="classtld_1_1_settings_1abd4a98a18a910313cf3590f507f1ceef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1abd4a98a18a910313cf3590f507f1ceef" kindref="member" tooltip="enables learning while processing">m_learningEnabled</ref>;<sp/></highlight></codeline>
+<codeline lineno="54" refid="classtld_1_1_settings_1abce1f9678efba0511db88545d97bb535" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1abce1f9678efba0511db88545d97bb535" kindref="member" tooltip="creates a window displaying results">m_showOutput</ref>;<sp/></highlight></codeline>
+<codeline lineno="55" refid="classtld_1_1_settings_1acd69b3d8edc2fe3a05bb763dfd17b30b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1acd69b3d8edc2fe3a05bb763dfd17b30b" kindref="member" tooltip="show bounding box also if confidence is low">m_showNotConfident</ref>;<sp/></highlight></codeline>
+<codeline lineno="56" refid="classtld_1_1_settings_1a495b2aba7d0c9ec5fb914ab04b6d42cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1a495b2aba7d0c9ec5fb914ab04b6d42cf" kindref="member" tooltip="shows color images instead of greyscale">m_showColorImage</ref>;<sp/></highlight></codeline>
+<codeline lineno="57" refid="classtld_1_1_settings_1abcc93dd632486081ba14ebfaaaecd392" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1abcc93dd632486081ba14ebfaaaecd392" kindref="member" tooltip="shows detections">m_showDetections</ref>;<sp/></highlight></codeline>
+<codeline lineno="58" refid="classtld_1_1_settings_1ab2398d08ccb9bab01c3240651d07f8c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1ab2398d08ccb9bab01c3240651d07f8c3" kindref="member" tooltip="shows foreground">m_showForeground</ref>;<sp/></highlight></codeline>
+<codeline lineno="59" refid="classtld_1_1_settings_1a46de5897c9f1bc410c0f44f459181e05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1a46de5897c9f1bc410c0f44f459181e05" kindref="member" tooltip="specifies whether to save visual output">m_saveOutput</ref>;<sp/></highlight></codeline>
+<codeline lineno="60" refid="classtld_1_1_settings_1ae4a5b3fb575a1a49823f8305f3aefded" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1ae4a5b3fb575a1a49823f8305f3aefded" kindref="member" tooltip="if set to true, detector is disabled while tracker is running.">m_alternating</ref>;<sp/></highlight></codeline>
+<codeline lineno="61" refid="classtld_1_1_settings_1a5d0b425a526e5f7f78c758bfde3d9ee9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1a5d0b425a526e5f7f78c758bfde3d9ee9" kindref="member" tooltip="if set to true, model is exported after run.">m_exportModelAfterRun</ref>;<sp/></highlight></codeline>
+<codeline lineno="62" refid="classtld_1_1_settings_1a56281480120f9cb2dbf69022cf97a30a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1a56281480120f9cb2dbf69022cf97a30a" kindref="member" tooltip="specifies the number of the last frames which are considered by the trajectory; 0 disables the trajec...">m_trajectory</ref>;<sp/></highlight></codeline>
+<codeline lineno="63" refid="classtld_1_1_settings_1a2438efb226c38f806bf1b3e023aa3760" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1a2438efb226c38f806bf1b3e023aa3760" kindref="member" tooltip="method of capturing: IMACQ_CAM, IMACQ_IMGS or IMACQ_VID">m_method</ref>;<sp/></highlight></codeline>
+<codeline lineno="64" refid="classtld_1_1_settings_1ac63c6dfae7c0be1fc167608dd52e1d7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1ac63c6dfae7c0be1fc167608dd52e1d7f" kindref="member" tooltip="first frame of capturing">m_startFrame</ref>;<sp/></highlight></codeline>
+<codeline lineno="65" refid="classtld_1_1_settings_1a4935fe002dd6358506813d7c48ec5322" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1a4935fe002dd6358506813d7c48ec5322" kindref="member" tooltip="last frame of caputing; 0 means take all frames">m_lastFrame</ref>;<sp/></highlight></codeline>
+<codeline lineno="66" refid="classtld_1_1_settings_1a46e4d9f59b1f87508cf0ad9a154fdc21" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1a46e4d9f59b1f87508cf0ad9a154fdc21" kindref="member" tooltip="number of scales smaller than initial object size">m_minScale</ref>;<sp/></highlight></codeline>
+<codeline lineno="67" refid="classtld_1_1_settings_1a548c317f8242ea8513d13573acdaaa4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1a548c317f8242ea8513d13573acdaaa4c" kindref="member" tooltip="number of scales larger than initial object size">m_maxScale</ref>;<sp/></highlight></codeline>
+<codeline lineno="68" refid="classtld_1_1_settings_1af15afe9f4ffb32e89686c8e90026e2bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1af15afe9f4ffb32e89686c8e90026e2bc" kindref="member" tooltip="number of features">m_numFeatures</ref>;<sp/></highlight></codeline>
+<codeline lineno="69" refid="classtld_1_1_settings_1a959d793b002e13f6758fc84765b7d33d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1a959d793b002e13f6758fc84765b7d33d" kindref="member" tooltip="number of trees">m_numTrees</ref>;<sp/></highlight></codeline>
+<codeline lineno="70" refid="classtld_1_1_settings_1adade7d3269f34113e92abdb3816058f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1adade7d3269f34113e92abdb3816058f7" kindref="member">m_thetaP</ref>;</highlight></codeline>
+<codeline lineno="71" refid="classtld_1_1_settings_1aef49627d1ffac7dda7cc83c7ba6a25bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1aef49627d1ffac7dda7cc83c7ba6a25bd" kindref="member">m_thetaN</ref>;</highlight></codeline>
+<codeline lineno="72" refid="classtld_1_1_settings_1a07dc62407c3373e7fa3906c145593b69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1a07dc62407c3373e7fa3906c145593b69" kindref="member">m_seed</ref>;</highlight></codeline>
+<codeline lineno="73" refid="classtld_1_1_settings_1aa08ffe8f36cb983224fadfd3d3b28391" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1aa08ffe8f36cb983224fadfd3d3b28391" kindref="member" tooltip="minimum size of scanWindows">m_minSize</ref>;<sp/></highlight></codeline>
+<codeline lineno="74" refid="classtld_1_1_settings_1a01db1115a98b15abdab2c03cdacadfdd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1a01db1115a98b15abdab2c03cdacadfdd" kindref="member" tooltip="Which camera to use.">m_camNo</ref>;<sp/></highlight></codeline>
+<codeline lineno="75" refid="classtld_1_1_settings_1aaa119898fb2f14ce2eed7fc861733eac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1aaa119898fb2f14ce2eed7fc861733eac" kindref="member" tooltip="Frames per second.">m_fps</ref>;<sp/></highlight></codeline>
+<codeline lineno="76" refid="classtld_1_1_settings_1afc2357da344888ad2158cbb51f8eb377" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1afc2357da344888ad2158cbb51f8eb377" kindref="member" tooltip="threshold for determining positive results">m_threshold</ref>;<sp/></highlight></codeline>
+<codeline lineno="77" refid="classtld_1_1_settings_1afcb52ecca38e4e236a66c3f36ec7cdbf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings_1afcb52ecca38e4e236a66c3f36ec7cdbf" kindref="member" tooltip="proportional shift">m_proportionalShift</ref>;<sp/></highlight></codeline>
+<codeline lineno="78" refid="classtld_1_1_settings_1abfd40dee05d0005e6cdaab2e0a84a4a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><sp/><ref refid="classtld_1_1_settings_1abfd40dee05d0005e6cdaab2e0a84a4a9" kindref="member" tooltip="path to the images or the video if m_method is IMACQ_VID or IMACQ_IMGS">m_imagePath</ref>;<sp/></highlight></codeline>
+<codeline lineno="79" refid="classtld_1_1_settings_1ac09a844a6ee9727f04e2de086f4fa9ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classtld_1_1_settings_1ac09a844a6ee9727f04e2de086f4fa9ce" kindref="member" tooltip="if modelPath is not set then either an initialBoundingBox must be specified or selectManually must be...">m_modelPath</ref>;<sp/></highlight></codeline>
+<codeline lineno="80" refid="classtld_1_1_settings_1a2fb70f5b39e773b64d62f902009827fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classtld_1_1_settings_1a2fb70f5b39e773b64d62f902009827fc" kindref="member" tooltip="Path where model is saved on export.">m_modelExportFile</ref>;<sp/></highlight></codeline>
+<codeline lineno="81" refid="classtld_1_1_settings_1a8893600d99c4d096e384e4aeff2155f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classtld_1_1_settings_1a8893600d99c4d096e384e4aeff2155f7" kindref="member" tooltip="required if saveOutput = true, no default">m_outputDir</ref>;<sp/></highlight></codeline>
+<codeline lineno="82" refid="classtld_1_1_settings_1a214e9008680cab432e095e5d07372dd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classtld_1_1_settings_1a214e9008680cab432e095e5d07372dd1" kindref="member" tooltip="path to the file were the results should be printed; NULL -&amp;gt; results will not be printed...">m_printResults</ref>;<sp/></highlight></codeline>
+<codeline lineno="83" refid="classtld_1_1_settings_1af986bcadbc3f34693dd13191bbf65947" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classtld_1_1_settings_1af986bcadbc3f34693dd13191bbf65947" kindref="member" tooltip="path to the file were the timings should be printed; NULL -&amp;gt; results will not be printed...">m_printTiming</ref>;<sp/></highlight></codeline>
+<codeline lineno="84" refid="classtld_1_1_settings_1a42d73d86dc15625a1394e7491ebaf0e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="classtld_1_1_settings_1a42d73d86dc15625a1394e7491ebaf0e4" kindref="member" tooltip="Initial Bounding Box can be specified here.">m_initialBoundingBox</ref>;<sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>SETTINGS_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h"/>
+  </compounddef>
+</doxygen>

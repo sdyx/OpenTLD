@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="class_c_blob_get_max_xat_max_y" kind="class" prot="public">
+    <compoundname>CBlobGetMaxXatMaxY</compoundname>
+    <basecompoundref refid="class_c_operador_blob" prot="public" virt="non-virtual">COperadorBlob</basecompoundref>
+    <includes refid="_blob_operators_8h" local="no">BlobOperators.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_blob_get_max_xat_max_y_1a45c075e8968d1078c6b49ea2acbb6d58" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double CBlobGetMaxXatMaxY::operator()</definition>
+        <argsstring>(CBlob &amp;blob)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="class_c_operador_blob_1a303c4189cc94cafbcbee116bf014e623">operator()</reimplements>
+        <param>
+          <type><ref refid="class_c_blob" kindref="compound">CBlob</ref> &amp;</type>
+          <declname>blob</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCTION: <ref refid="class_c_blob_get_max_xat_max_y" kindref="compound">CBlobGetMaxXatMaxY</ref></para></listitem><listitem><para>FUNCTIONALITY: Calculates the maximum X on the maximum Y</para></listitem><listitem><para>PARAMETERS:</para></listitem><listitem><para>RESULT:</para></listitem><listitem><para>RESTRICTIONS:</para></listitem><listitem><para>AUTHOR: Ricard Borràs</para></listitem><listitem><para>CREATION DATE: 25-05-2005.</para></listitem><listitem><para>MODIFICATION: Date. Author. Description. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="333" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.cpp" bodystart="168" bodyend="192"/>
+        <references refid="class_c_blob_contour_1a245d5e59180619aa9ae4ec14acc18744" compoundref="_blob_contour_8cpp" startline="203" endline="258">CBlobContour::GetContourPoints</references>
+        <references refid="class_c_blob_1ad136387165bd74c368cb4ecc7632e4cf" compoundref="blob_8h" startline="58" endline="61">CBlob::GetExternalContour</references>
+        <references refid="class_c_blob_1a740a37afcd841bf719587d2f0128c555" compoundref="blob_8h" startline="128" endline="131">CBlob::MaxY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_max_xat_max_y_1a563198e842a5eb22cedc80ef09d1970b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>const char* CBlobGetMaxXatMaxY::GetNom</definition>
+        <argsstring>()</argsstring>
+        <name>GetNom</name>
+        <reimplements refid="class_c_operador_blob_1a717a19c163a26b45081a2231be24c008">GetNom</reimplements>
+        <briefdescription>
+<para>Get operator name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="335" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="334" bodyend="337"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Classe per calcular la x maxima en la y maxima Class to calculate the maximum x on the maximum y </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="293">
+        <label>CBlobGetMaxXatMaxY</label>
+        <link refid="class_c_blob_get_max_xat_max_y"/>
+        <childnode refid="294" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="294">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="295">
+        <label>CBlobGetMaxXatMaxY</label>
+        <link refid="class_c_blob_get_max_xat_max_y"/>
+        <childnode refid="296" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="296">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="331" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="330" bodyend="338"/>
+    <listofallmembers>
+      <member refid="class_c_blob_get_max_xat_max_y_1a563198e842a5eb22cedc80ef09d1970b" prot="public" virt="virtual"><scope>CBlobGetMaxXatMaxY</scope><name>GetNom</name></member>
+      <member refid="class_c_operador_blob_1a477edfe687cf9ef41469bcf6ea636a75" prot="public" virt="non-virtual"><scope>CBlobGetMaxXatMaxY</scope><name>operator COperadorBlob *</name></member>
+      <member refid="class_c_blob_get_max_xat_max_y_1a45c075e8968d1078c6b49ea2acbb6d58" prot="public" virt="virtual"><scope>CBlobGetMaxXatMaxY</scope><name>operator()</name></member>
+      <member refid="class_c_operador_blob_1a25ccc652bfa55e7b0143c88f452729a2" prot="public" virt="virtual"><scope>CBlobGetMaxXatMaxY</scope><name>~COperadorBlob</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

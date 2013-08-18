@@ -1,0 +1,491 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_detector_cascade_8cpp" kind="file">
+    <compoundname>DetectorCascade.cpp</compoundname>
+    <includes refid="_detector_cascade_8h" local="yes">DetectorCascade.h</includes>
+    <includes local="no">algorithm</includes>
+    <includes refid="_t_l_d_util_8h" local="yes">TLDUtil.h</includes>
+    <incdepgraph>
+      <node id="1473">
+        <label>DetectorCascade.h</label>
+        <link refid="_detector_cascade_8h"/>
+        <childnode refid="1474" relation="include">
+        </childnode>
+        <childnode refid="1477" relation="include">
+        </childnode>
+        <childnode refid="1478" relation="include">
+        </childnode>
+        <childnode refid="1480" relation="include">
+        </childnode>
+        <childnode refid="1481" relation="include">
+        </childnode>
+        <childnode refid="1482" relation="include">
+        </childnode>
+      </node>
+      <node id="1480">
+        <label>EnsembleClassifier.h</label>
+        <link refid="_ensemble_classifier_8h"/>
+        <childnode refid="1476" relation="include">
+        </childnode>
+      </node>
+      <node id="1482">
+        <label>NNClassifier.h</label>
+        <link refid="_n_n_classifier_8h"/>
+        <childnode refid="1475" relation="include">
+        </childnode>
+        <childnode refid="1476" relation="include">
+        </childnode>
+        <childnode refid="1483" relation="include">
+        </childnode>
+        <childnode refid="1474" relation="include">
+        </childnode>
+      </node>
+      <node id="1478">
+        <label>VarianceFilter.h</label>
+        <link refid="_variance_filter_8h"/>
+        <childnode refid="1476" relation="include">
+        </childnode>
+        <childnode refid="1479" relation="include">
+        </childnode>
+        <childnode refid="1474" relation="include">
+        </childnode>
+      </node>
+      <node id="1472">
+        <label>src/libopentld/tld/DetectorCascade.cpp</label>
+        <link refid="DetectorCascade.cpp"/>
+        <childnode refid="1473" relation="include">
+        </childnode>
+        <childnode refid="1484" relation="include">
+        </childnode>
+        <childnode refid="1485" relation="include">
+        </childnode>
+      </node>
+      <node id="1483">
+        <label>NormalizedPatch.h</label>
+        <link refid="_normalized_patch_8h"/>
+      </node>
+      <node id="1485">
+        <label>TLDUtil.h</label>
+        <link refid="_t_l_d_util_8h"/>
+        <childnode refid="1486" relation="include">
+        </childnode>
+        <childnode refid="1476" relation="include">
+        </childnode>
+      </node>
+      <node id="1479">
+        <label>IntegralImage.h</label>
+        <link refid="_integral_image_8h"/>
+        <childnode refid="1476" relation="include">
+        </childnode>
+      </node>
+      <node id="1481">
+        <label>Clustering.h</label>
+        <link refid="_clustering_8h"/>
+        <childnode refid="1475" relation="include">
+        </childnode>
+        <childnode refid="1476" relation="include">
+        </childnode>
+        <childnode refid="1474" relation="include">
+        </childnode>
+      </node>
+      <node id="1477">
+        <label>ForegroundDetector.h</label>
+        <link refid="_foreground_detector_8h"/>
+        <childnode refid="1475" relation="include">
+        </childnode>
+        <childnode refid="1476" relation="include">
+        </childnode>
+        <childnode refid="1474" relation="include">
+        </childnode>
+      </node>
+      <node id="1475">
+        <label>vector</label>
+      </node>
+      <node id="1486">
+        <label>utility</label>
+      </node>
+      <node id="1476">
+        <label>cv.h</label>
+      </node>
+      <node id="1474">
+        <label>DetectionResult.h</label>
+        <link refid="_detection_result_8h"/>
+        <childnode refid="1475" relation="include">
+        </childnode>
+        <childnode refid="1476" relation="include">
+        </childnode>
+      </node>
+      <node id="1484">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacetld">tld</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_detector_cascade_8cpp_1a46b6d61644f123e9f367092cf5ac4de7" prot="public" static="no">
+        <name>sub2idx</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>imgWidthStep</defname></param>
+        <initializer>((int) (floor((x)+0.5) + floor((y)+0.5)*(imgWidthStep)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.cpp" line="39" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.cpp" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_detector_cascade_1a39760d6c54ddb41785ffd05a7b881d8d" compoundref="_detector_cascade_8cpp" startline="249" endline="268">tld::DetectorCascade::initWindowOffsets</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DetectorCascade.cpp</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Nov<sp/>16,<sp/>2011</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>Georg<sp/>Nebehay</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_detector_cascade_8h" kindref="compound">DetectorCascade.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_t_l_d_util_8h" kindref="compound">TLDUtil.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">cv;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">tld</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//TODO:<sp/>Convert<sp/>this<sp/>to<sp/>a<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="_detector_cascade_8cpp_1a46b6d61644f123e9f367092cf5ac4de7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>sub2idx(x,y,imgWidthStep)<sp/>((int)<sp/>(floor((x)+0.5)<sp/>+<sp/>floor((y)+0.5)*(imgWidthStep)))</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classtld_1_1_detector_cascade_1a709b4d4802e4f8391fad8fd1b6f892eb" refkind="member"><highlight class="normal">DetectorCascade::DetectorCascade()</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a1c7a7fddb085fca4577779110637c5c8" kindref="member">objWidth</ref><sp/>=<sp/>-1;<sp/></highlight><highlight class="comment">//MUST<sp/>be<sp/>set<sp/>before<sp/>calling<sp/>init</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a1186ed695cf6e9f00d180ec92e4aa1ea" kindref="member">objHeight</ref><sp/>=<sp/>-1;<sp/></highlight><highlight class="comment">//MUST<sp/>be<sp/>set<sp/>before<sp/>calling<sp/>init</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a2549b35ac099860f20a13ef830081bbb" kindref="member">useShift</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a4e9b954d0b95f6e91d479bba9ec6beac" kindref="member">imgHeight</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a593db7c6ab225f17ac02cd9ef5faebd2" kindref="member">imgWidth</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a18b12b643d662cc9c8850c963079233c" kindref="member">shift</ref><sp/>=<sp/>0.1;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a24aed44c48fe4616465a556bd6642d5e" kindref="member">minScale</ref><sp/>=<sp/>-10;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1aac2cd4b31c290d1eeba69591cbb65ce4" kindref="member">maxScale</ref><sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1add27e1ff17e2fda214d08f74d0c164e9" kindref="member">minSize</ref><sp/>=<sp/>25;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1aa47c6463f1ae23868551a4c82c555f24" kindref="member">imgWidthStep</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a2d41ea56f304562878151ae09c34aa8f" kindref="member">numTrees</ref><sp/>=<sp/>13;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a63af0a8c55ac292b25f2f72b6e734280" kindref="member">numFeatures</ref><sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a4a61cd265a92bce6f8f148db532a1789" kindref="member">initialised</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1ad03faad5b05805f5edba330cccfee1f1" kindref="member">foregroundDetector</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_foreground_detector" kindref="compound">ForegroundDetector</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a5d2600fc22f6cc39ef1940457324c5eb" kindref="member">varianceFilter</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_variance_filter" kindref="compound">VarianceFilter</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" kindref="member">ensembleClassifier</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_ensemble_classifier" kindref="compound">EnsembleClassifier</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1abc9da459b6d66e5a2f2658f52b4dfdc6" kindref="member">nnClassifier</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_n_n_classifier" kindref="compound">NNClassifier</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a5a5c292573778fa38a462921c1928e40" kindref="member">clustering</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_clustering" kindref="compound">Clustering</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" kindref="member">detectionResult</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detection_result" kindref="compound">DetectionResult</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classtld_1_1_detector_cascade_1a1154ee7d1fd731055af1f6b5b697d8ba" refkind="member"><highlight class="normal"><ref refid="classtld_1_1_detector_cascade_1a1154ee7d1fd731055af1f6b5b697d8ba" kindref="member">DetectorCascade::~DetectorCascade</ref>()</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" kindref="member">release</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1ad03faad5b05805f5edba330cccfee1f1" kindref="member">foregroundDetector</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a5d2600fc22f6cc39ef1940457324c5eb" kindref="member">varianceFilter</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" kindref="member">ensembleClassifier</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1abc9da459b6d66e5a2f2658f52b4dfdc6" kindref="member">nnClassifier</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" kindref="member">detectionResult</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classtld_1_1_detector_cascade_1a98d5393088a53188dcde7d530101534a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a98d5393088a53188dcde7d530101534a" kindref="member">DetectorCascade::init</ref>()</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classtld_1_1_detector_cascade_1a593db7c6ab225f17ac02cd9ef5faebd2" kindref="member">imgWidth</ref><sp/>==<sp/>-1<sp/>||<sp/><ref refid="classtld_1_1_detector_cascade_1a4e9b954d0b95f6e91d479bba9ec6beac" kindref="member">imgHeight</ref><sp/>==<sp/>-1<sp/>||<sp/><ref refid="classtld_1_1_detector_cascade_1aa47c6463f1ae23868551a4c82c555f24" kindref="member">imgWidthStep</ref><sp/>==<sp/>-1<sp/>||<sp/><ref refid="classtld_1_1_detector_cascade_1a1c7a7fddb085fca4577779110637c5c8" kindref="member">objWidth</ref><sp/>==<sp/>-1<sp/>||<sp/><ref refid="classtld_1_1_detector_cascade_1a1186ed695cf6e9f00d180ec92e4aa1ea" kindref="member">objHeight</ref><sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//printf(&quot;Error:<sp/>Window<sp/>dimensions<sp/>not<sp/>set\n&quot;);<sp/>//TODO:<sp/>Convert<sp/>this<sp/>to<sp/>exception</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a0515043558291c0bfbd5d403315c0334" kindref="member">initWindowsAndScales</ref>();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a39760d6c54ddb41785ffd05a7b881d8d" kindref="member">initWindowOffsets</ref>();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" kindref="member">propagateMembers</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" kindref="member">ensembleClassifier</ref>-&gt;<ref refid="classtld_1_1_ensemble_classifier_1afb0e8ed03adef91257801bf0e3ca73f7" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a4a61cd265a92bce6f8f148db532a1789" kindref="member">initialised</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">//TODO:<sp/>This<sp/>is<sp/>error-prone.<sp/>Better<sp/>give<sp/>components<sp/>a<sp/>reference<sp/>to<sp/>DetectorCascade?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" kindref="member">DetectorCascade::propagateMembers</ref>()</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" kindref="member">detectionResult</ref>-&gt;<ref refid="classtld_1_1_detection_result_1a20c6fc21a478b99cf88b6e955931e530" kindref="member">init</ref>(<ref refid="classtld_1_1_detector_cascade_1a700932efdadfdd218697b56aa7703b4b" kindref="member">numWindows</ref>,<sp/><ref refid="classtld_1_1_detector_cascade_1a2d41ea56f304562878151ae09c34aa8f" kindref="member">numTrees</ref>);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a5d2600fc22f6cc39ef1940457324c5eb" kindref="member">varianceFilter</ref>-&gt;<ref refid="classtld_1_1_variance_filter_1a2c8913adc5862adf9eb3034b81c1f02b" kindref="member">windowOffsets</ref><sp/>=<sp/><ref refid="classtld_1_1_detector_cascade_1a259b095591f3d09904277ff844d94b0b" kindref="member">windowOffsets</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" kindref="member">ensembleClassifier</ref>-&gt;<ref refid="classtld_1_1_ensemble_classifier_1abc6ed3b991a724b07dfcc25108769e92" kindref="member">windowOffsets</ref><sp/>=<sp/><ref refid="classtld_1_1_detector_cascade_1a259b095591f3d09904277ff844d94b0b" kindref="member">windowOffsets</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" kindref="member">ensembleClassifier</ref>-&gt;<ref refid="classtld_1_1_ensemble_classifier_1a149e36a3d0d287ee804ec7cf92dc6569" kindref="member">imgWidthStep</ref><sp/>=<sp/><ref refid="classtld_1_1_detector_cascade_1aa47c6463f1ae23868551a4c82c555f24" kindref="member">imgWidthStep</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" kindref="member">ensembleClassifier</ref>-&gt;<ref refid="classtld_1_1_ensemble_classifier_1ae10dcd7614a39f9b29b3fbe957889fb9" kindref="member">numScales</ref><sp/>=<sp/>numScales;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" kindref="member">ensembleClassifier</ref>-&gt;<ref refid="classtld_1_1_ensemble_classifier_1ae2ea00a933d9c96498ba756a2b4ec6b5" kindref="member">scales</ref><sp/>=<sp/>scales;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" kindref="member">ensembleClassifier</ref>-&gt;<ref refid="classtld_1_1_ensemble_classifier_1a176aba4e90f0b9373d8aedd7c25fa262" kindref="member">numFeatures</ref><sp/>=<sp/><ref refid="classtld_1_1_detector_cascade_1a63af0a8c55ac292b25f2f72b6e734280" kindref="member">numFeatures</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" kindref="member">ensembleClassifier</ref>-&gt;<ref refid="classtld_1_1_ensemble_classifier_1a60e802769e79c833d1484d96bb345b7c" kindref="member">numTrees</ref><sp/>=<sp/><ref refid="classtld_1_1_detector_cascade_1a2d41ea56f304562878151ae09c34aa8f" kindref="member">numTrees</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1abc9da459b6d66e5a2f2658f52b4dfdc6" kindref="member">nnClassifier</ref>-&gt;<ref refid="classtld_1_1_n_n_classifier_1a6a4aab5ed014405c9dbd9162af1b1d7c" kindref="member">windows</ref><sp/>=<sp/><ref refid="classtld_1_1_detector_cascade_1a0acc3bf212228a7b3d47b2d795f1a5a4" kindref="member">windows</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a5a5c292573778fa38a462921c1928e40" kindref="member">clustering</ref>-&gt;<ref refid="classtld_1_1_clustering_1acd1251895c2999f2041b50142cf81dda" kindref="member">windows</ref><sp/>=<sp/><ref refid="classtld_1_1_detector_cascade_1a0acc3bf212228a7b3d47b2d795f1a5a4" kindref="member">windows</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a5a5c292573778fa38a462921c1928e40" kindref="member">clustering</ref>-&gt;<ref refid="classtld_1_1_clustering_1a25b3b82795ea06758b6a321f856f004b" kindref="member">numWindows</ref><sp/>=<sp/><ref refid="classtld_1_1_detector_cascade_1a700932efdadfdd218697b56aa7703b4b" kindref="member">numWindows</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1ad03faad5b05805f5edba330cccfee1f1" kindref="member">foregroundDetector</ref>-&gt;<ref refid="classtld_1_1_foreground_detector_1ac274f17680c4551c9b3198e88b5bcd42" kindref="member">minBlobSize</ref><sp/>=<sp/><ref refid="classtld_1_1_detector_cascade_1add27e1ff17e2fda214d08f74d0c164e9" kindref="member">minSize</ref><sp/>*<sp/><ref refid="classtld_1_1_detector_cascade_1add27e1ff17e2fda214d08f74d0c164e9" kindref="member">minSize</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1ad03faad5b05805f5edba330cccfee1f1" kindref="member">foregroundDetector</ref>-&gt;<ref refid="classtld_1_1_foreground_detector_1a01d0c37f4019847febbea0f9a121b49b" kindref="member">detectionResult</ref><sp/>=<sp/><ref refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" kindref="member">detectionResult</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a5d2600fc22f6cc39ef1940457324c5eb" kindref="member">varianceFilter</ref>-&gt;<ref refid="classtld_1_1_variance_filter_1a21c300c5f491726705f82429e919ccd9" kindref="member">detectionResult</ref><sp/>=<sp/><ref refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" kindref="member">detectionResult</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" kindref="member">ensembleClassifier</ref>-&gt;<ref refid="classtld_1_1_ensemble_classifier_1af57e5de2c583e7f1cf39e6de03159323" kindref="member">detectionResult</ref><sp/>=<sp/><ref refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" kindref="member">detectionResult</ref>;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1abc9da459b6d66e5a2f2658f52b4dfdc6" kindref="member">nnClassifier</ref>-&gt;<ref refid="classtld_1_1_n_n_classifier_1a5320e517bb5ad4ed524701df5cc200aa" kindref="member">detectionResult</ref><sp/>=<sp/><ref refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" kindref="member">detectionResult</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a5a5c292573778fa38a462921c1928e40" kindref="member">clustering</ref>-&gt;<ref refid="classtld_1_1_clustering_1abfc41de1f95b5c019676aa5f42d9e960" kindref="member">detectionResult</ref><sp/>=<sp/><ref refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" kindref="member">detectionResult</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" kindref="member">DetectorCascade::release</ref>()</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classtld_1_1_detector_cascade_1a4a61cd265a92bce6f8f148db532a1789" kindref="member">initialised</ref>)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//Do<sp/>nothing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a4a61cd265a92bce6f8f148db532a1789" kindref="member">initialised</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1ad03faad5b05805f5edba330cccfee1f1" kindref="member">foregroundDetector</ref>-&gt;<ref refid="classtld_1_1_foreground_detector_1a0bf609b2ba46774804a929253c225aac" kindref="member">release</ref>();</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" kindref="member">ensembleClassifier</ref>-&gt;<ref refid="classtld_1_1_ensemble_classifier_1a3fd93c80d37f7f115443c2e147ec9967" kindref="member">release</ref>();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1abc9da459b6d66e5a2f2658f52b4dfdc6" kindref="member">nnClassifier</ref>-&gt;<ref refid="classtld_1_1_n_n_classifier_1aabb548e7b9535ad8040fe65d344b3142" kindref="member">release</ref>();</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a5a5c292573778fa38a462921c1928e40" kindref="member">clustering</ref>-&gt;<ref refid="classtld_1_1_clustering_1a2dbde4a94a483e8befe4b710445941bf" kindref="member">release</ref>();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a700932efdadfdd218697b56aa7703b4b" kindref="member">numWindows</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>numScales<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>scales;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>scales<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="classtld_1_1_detector_cascade_1a0acc3bf212228a7b3d47b2d795f1a5a4" kindref="member">windows</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a0acc3bf212228a7b3d47b2d795f1a5a4" kindref="member">windows</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="classtld_1_1_detector_cascade_1a259b095591f3d09904277ff844d94b0b" kindref="member">windowOffsets</ref>;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a259b095591f3d09904277ff844d94b0b" kindref="member">windowOffsets</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a1c7a7fddb085fca4577779110637c5c8" kindref="member">objWidth</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a1186ed695cf6e9f00d180ec92e4aa1ea" kindref="member">objHeight</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" kindref="member">detectionResult</ref>-&gt;<ref refid="classtld_1_1_detection_result_1a23dc924e308f7a2d8f3795fb48fb6648" kindref="member">release</ref>();</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="classtld_1_1_detector_cascade_1a56b148b63e2c592624c90bc7f7f50d68" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a56b148b63e2c592624c90bc7f7f50d68" kindref="member">DetectorCascade::cleanPreviousData</ref>()</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" kindref="member">detectionResult</ref>-&gt;<ref refid="classtld_1_1_detection_result_1afeda3b61ba3d7ba3304b96baf65d184b" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>returns<sp/>number<sp/>of<sp/>bounding<sp/>boxes,<sp/>bounding<sp/>boxes,<sp/>number<sp/>of<sp/>scales,<sp/>scales</highlight></codeline>
+<codeline lineno="159"><highlight class="comment"><sp/>*<sp/>bounding<sp/>boxes<sp/>are<sp/>stored<sp/>in<sp/>an<sp/>array<sp/>of<sp/>size<sp/>5*numBBs<sp/>using<sp/>the<sp/>format<sp/>&lt;x<sp/>y<sp/>w<sp/>h<sp/>scaleIndex&gt;</highlight></codeline>
+<codeline lineno="160"><highlight class="comment"><sp/>*<sp/>scales<sp/>are<sp/>stored<sp/>using<sp/>the<sp/>format<sp/>&lt;w<sp/>h&gt;</highlight></codeline>
+<codeline lineno="161"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="162"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="classtld_1_1_detector_cascade_1a0515043558291c0bfbd5d403315c0334" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a0515043558291c0bfbd5d403315c0334" kindref="member">DetectorCascade::initWindowsAndScales</ref>()</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scanAreaX<sp/>=<sp/>1;<sp/></highlight><highlight class="comment">//<sp/>It<sp/>is<sp/>important<sp/>to<sp/>start<sp/>with<sp/>1/1,<sp/>because<sp/>the<sp/>integral<sp/>images<sp/>aren&apos;t<sp/>defined<sp/>at<sp/>pos(-1,-1)<sp/>due<sp/>to<sp/>speed<sp/>reasons</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scanAreaY<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scanAreaW<sp/>=<sp/><ref refid="classtld_1_1_detector_cascade_1a593db7c6ab225f17ac02cd9ef5faebd2" kindref="member">imgWidth</ref><sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scanAreaH<sp/>=<sp/><ref refid="classtld_1_1_detector_cascade_1a4e9b954d0b95f6e91d479bba9ec6beac" kindref="member">imgHeight</ref><sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>windowIndex<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>scales<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Size[<ref refid="classtld_1_1_detector_cascade_1aac2cd4b31c290d1eeba69591cbb65ce4" kindref="member">maxScale</ref><sp/>-<sp/><ref refid="classtld_1_1_detector_cascade_1a24aed44c48fe4616465a556bd6642d5e" kindref="member">minScale</ref><sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a700932efdadfdd218697b56aa7703b4b" kindref="member">numWindows</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scaleIndex<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/><ref refid="classtld_1_1_detector_cascade_1a24aed44c48fe4616465a556bd6642d5e" kindref="member">minScale</ref>;<sp/>i<sp/>&lt;=<sp/><ref refid="classtld_1_1_detector_cascade_1aac2cd4b31c290d1eeba69591cbb65ce4" kindref="member">maxScale</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scale<sp/>=<sp/>pow(1.2,<sp/>i);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w<sp/>=<sp/>(int)<ref refid="classtld_1_1_detector_cascade_1a1c7a7fddb085fca4577779110637c5c8" kindref="member">objWidth</ref><sp/>*<sp/>scale;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h<sp/>=<sp/>(int)<ref refid="classtld_1_1_detector_cascade_1a1186ed695cf6e9f00d180ec92e4aa1ea" kindref="member">objHeight</ref><sp/>*<sp/>scale;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ssw,<sp/>ssh;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classtld_1_1_detector_cascade_1a2549b35ac099860f20a13ef830081bbb" kindref="member">useShift</ref>)</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssw<sp/>=<sp/>max&lt;float&gt;(1,<sp/>w<sp/>*<sp/><ref refid="classtld_1_1_detector_cascade_1a18b12b643d662cc9c8850c963079233c" kindref="member">shift</ref>);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssh<sp/>=<sp/>max&lt;float&gt;(1,<sp/>h<sp/>*<sp/><ref refid="classtld_1_1_detector_cascade_1a18b12b643d662cc9c8850c963079233c" kindref="member">shift</ref>);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssw<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssh<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(w<sp/>&lt;<sp/><ref refid="classtld_1_1_detector_cascade_1add27e1ff17e2fda214d08f74d0c164e9" kindref="member">minSize</ref><sp/>||<sp/>h<sp/>&lt;<sp/>minSize<sp/>||<sp/>w<sp/>&gt;<sp/>scanAreaW<sp/>||<sp/>h<sp/>&gt;<sp/>scanAreaH)<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scales[scaleIndex].width<sp/>=<sp/>w;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scales[scaleIndex].height<sp/>=<sp/>h;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scaleIndex++;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a700932efdadfdd218697b56aa7703b4b" kindref="member">numWindows</ref><sp/>+=<sp/>floor((</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)(scanAreaW<sp/>-<sp/>w<sp/>+<sp/>ssw)<sp/>/<sp/>ssw)<sp/>*<sp/>floor((</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)(scanAreaH<sp/>-<sp/>h<sp/>+<sp/>ssh)<sp/>/<sp/>ssh);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>numScales<sp/>=<sp/>scaleIndex;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a0acc3bf212228a7b3d47b2d795f1a5a4" kindref="member">windows</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">[TLD_WINDOW_SIZE<sp/>*<sp/><ref refid="classtld_1_1_detector_cascade_1a700932efdadfdd218697b56aa7703b4b" kindref="member">numWindows</ref>];</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(scaleIndex<sp/>=<sp/>0;<sp/>scaleIndex<sp/>&lt;<sp/>numScales;<sp/>scaleIndex++)</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w<sp/>=<sp/>scales[scaleIndex].width;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h<sp/>=<sp/>scales[scaleIndex].height;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ssw,<sp/>ssh;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classtld_1_1_detector_cascade_1a2549b35ac099860f20a13ef830081bbb" kindref="member">useShift</ref>)</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssw<sp/>=<sp/>max&lt;float&gt;(1,<sp/>w<sp/>*<sp/><ref refid="classtld_1_1_detector_cascade_1a18b12b643d662cc9c8850c963079233c" kindref="member">shift</ref>);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssh<sp/>=<sp/>max&lt;float&gt;(1,<sp/>h<sp/>*<sp/><ref refid="classtld_1_1_detector_cascade_1a18b12b643d662cc9c8850c963079233c" kindref="member">shift</ref>);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssw<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssh<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>scanAreaY;<sp/>y<sp/>+<sp/>h<sp/>&lt;=<sp/>scanAreaY<sp/>+<sp/>scanAreaH;<sp/>y<sp/>+=<sp/>ssh)</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>scanAreaX;<sp/>x<sp/>+<sp/>w<sp/>&lt;=<sp/>scanAreaX<sp/>+<sp/>scanAreaW;<sp/>x<sp/>+=<sp/>ssw)</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*bb<sp/>=<sp/>&amp;<ref refid="classtld_1_1_detector_cascade_1a0acc3bf212228a7b3d47b2d795f1a5a4" kindref="member">windows</ref>[TLD_WINDOW_SIZE<sp/>*<sp/>windowIndex];</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tldCopyBoundaryToArray&lt;int&gt;(x,<sp/>y,<sp/>w,<sp/>h,<sp/>bb);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bb[4]<sp/>=<sp/>scaleIndex;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>windowIndex++;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(windowIndex<sp/>==<sp/><ref refid="classtld_1_1_detector_cascade_1a700932efdadfdd218697b56aa7703b4b" kindref="member">numWindows</ref>);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight><highlight class="comment">//Creates<sp/>offsets<sp/>that<sp/>can<sp/>be<sp/>added<sp/>to<sp/>bounding<sp/>boxes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="comment">//offsets<sp/>are<sp/>contained<sp/>in<sp/>the<sp/>form<sp/>delta11,<sp/>delta12,...<sp/>(combined<sp/>index<sp/>of<sp/>dw<sp/>and<sp/>dh)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="comment">//Order:<sp/>scale-&gt;tree-&gt;feature</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249" refid="classtld_1_1_detector_cascade_1a39760d6c54ddb41785ffd05a7b881d8d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a39760d6c54ddb41785ffd05a7b881d8d" kindref="member">DetectorCascade::initWindowOffsets</ref>()</highlight></codeline>
+<codeline lineno="250"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a259b095591f3d09904277ff844d94b0b" kindref="member">windowOffsets</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">[TLD_WINDOW_OFFSET_SIZE<sp/>*<sp/><ref refid="classtld_1_1_detector_cascade_1a700932efdadfdd218697b56aa7703b4b" kindref="member">numWindows</ref>];</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*off<sp/>=<sp/><ref refid="classtld_1_1_detector_cascade_1a259b095591f3d09904277ff844d94b0b" kindref="member">windowOffsets</ref>;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>windowSize<sp/>=<sp/>TLD_WINDOW_SIZE;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classtld_1_1_detector_cascade_1a700932efdadfdd218697b56aa7703b4b" kindref="member">numWindows</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*window<sp/>=<sp/><ref refid="classtld_1_1_detector_cascade_1a0acc3bf212228a7b3d47b2d795f1a5a4" kindref="member">windows</ref><sp/>+<sp/>windowSize<sp/>*<sp/>i;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*off++<sp/>=<sp/><ref refid="_detector_cascade_8cpp_1a46b6d61644f123e9f367092cf5ac4de7" kindref="member">sub2idx</ref>(window[0]<sp/>-<sp/>1,<sp/>window[1]<sp/>-<sp/>1,<sp/><ref refid="classtld_1_1_detector_cascade_1aa47c6463f1ae23868551a4c82c555f24" kindref="member">imgWidthStep</ref>);<sp/></highlight><highlight class="comment">//<sp/>x1-1,y1-1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*off++<sp/>=<sp/><ref refid="_detector_cascade_8cpp_1a46b6d61644f123e9f367092cf5ac4de7" kindref="member">sub2idx</ref>(window[0]<sp/>-<sp/>1,<sp/>window[1]<sp/>+<sp/>window[3]<sp/>-<sp/>1,<sp/><ref refid="classtld_1_1_detector_cascade_1aa47c6463f1ae23868551a4c82c555f24" kindref="member">imgWidthStep</ref>);<sp/></highlight><highlight class="comment">//<sp/>x1-1,y2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*off++<sp/>=<sp/><ref refid="_detector_cascade_8cpp_1a46b6d61644f123e9f367092cf5ac4de7" kindref="member">sub2idx</ref>(window[0]<sp/>+<sp/>window[2]<sp/>-<sp/>1,<sp/>window[1]<sp/>-<sp/>1,<sp/><ref refid="classtld_1_1_detector_cascade_1aa47c6463f1ae23868551a4c82c555f24" kindref="member">imgWidthStep</ref>);<sp/></highlight><highlight class="comment">//<sp/>x2,y1-1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*off++<sp/>=<sp/><ref refid="_detector_cascade_8cpp_1a46b6d61644f123e9f367092cf5ac4de7" kindref="member">sub2idx</ref>(window[0]<sp/>+<sp/>window[2]<sp/>-<sp/>1,<sp/>window[1]<sp/>+<sp/>window[3]<sp/>-<sp/>1,<sp/><ref refid="classtld_1_1_detector_cascade_1aa47c6463f1ae23868551a4c82c555f24" kindref="member">imgWidthStep</ref>);<sp/></highlight><highlight class="comment">//<sp/>x2,y2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*off++<sp/>=<sp/>window[4]<sp/>*<sp/>2<sp/>*<sp/><ref refid="classtld_1_1_detector_cascade_1a63af0a8c55ac292b25f2f72b6e734280" kindref="member">numFeatures</ref><sp/>*<sp/><ref refid="classtld_1_1_detector_cascade_1a2d41ea56f304562878151ae09c34aa8f" kindref="member">numTrees</ref>;<sp/></highlight><highlight class="comment">//<sp/>pointer<sp/>to<sp/>features<sp/>for<sp/>this<sp/>scale</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*off++<sp/>=<sp/>window[2]<sp/>*<sp/>window[3];<sp/></highlight><highlight class="comment">//Area<sp/>of<sp/>bounding<sp/>box</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="268"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a4ec511b5488bd1a1dc241e6dac191165" kindref="member">DetectorCascade::detect</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mat<sp/>&amp;img)</highlight></codeline>
+<codeline lineno="271"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//For<sp/>every<sp/>bounding<sp/>box,<sp/>the<sp/>output<sp/>is<sp/>confidence,<sp/>pattern,<sp/>variance</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" kindref="member">detectionResult</ref>-&gt;<ref refid="classtld_1_1_detection_result_1afeda3b61ba3d7ba3304b96baf65d184b" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classtld_1_1_detector_cascade_1a4a61cd265a92bce6f8f148db532a1789" kindref="member">initialised</ref>)</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Prepare<sp/>components</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1ad03faad5b05805f5edba330cccfee1f1" kindref="member">foregroundDetector</ref>-&gt;nextIteration(img);<sp/></highlight><highlight class="comment">//Calculates<sp/>foreground</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a5d2600fc22f6cc39ef1940457324c5eb" kindref="member">varianceFilter</ref>-&gt;nextIteration(img);<sp/></highlight><highlight class="comment">//Calculates<sp/>integral<sp/>images</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" kindref="member">ensembleClassifier</ref>-&gt;nextIteration(img);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#pragma<sp/>omp<sp/>parallel<sp/>for</highlight></codeline>
+<codeline lineno="287"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classtld_1_1_detector_cascade_1a700932efdadfdd218697b56aa7703b4b" kindref="member">numWindows</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*window<sp/>=<sp/>&amp;<ref refid="classtld_1_1_detector_cascade_1a0acc3bf212228a7b3d47b2d795f1a5a4" kindref="member">windows</ref>[TLD_WINDOW_SIZE<sp/>*<sp/>i];</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classtld_1_1_detector_cascade_1ad03faad5b05805f5edba330cccfee1f1" kindref="member">foregroundDetector</ref>-&gt;isActive())</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isInside<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/><ref refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" kindref="member">detectionResult</ref>-&gt;fgList-&gt;size();<sp/>j++)</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bgBox[4];</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetld_1acca496d96df1e566f1a08bebb7e75f1c" kindref="member">tldRectToArray</ref>(<ref refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" kindref="member">detectionResult</ref>-&gt;fgList-&gt;at(j),<sp/>bgBox);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespacetld_1a8b28e6d4868ad30e826a6248dd2ae7a0" kindref="member">tldIsInside</ref>(window,<sp/>bgBox))<sp/><sp/></highlight><highlight class="comment">//TODO:<sp/>This<sp/>is<sp/>inefficient<sp/>and<sp/>should<sp/>be<sp/>replaced<sp/>by<sp/>a<sp/>quadtree</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isInside<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!isInside)</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" kindref="member">detectionResult</ref>-&gt;posteriors[i]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classtld_1_1_detector_cascade_1a5d2600fc22f6cc39ef1940457324c5eb" kindref="member">varianceFilter</ref>-&gt;filter(i))</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" kindref="member">detectionResult</ref>-&gt;posteriors[i]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" kindref="member">ensembleClassifier</ref>-&gt;filter(i))</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classtld_1_1_detector_cascade_1abc9da459b6d66e5a2f2658f52b4dfdc6" kindref="member">nnClassifier</ref>-&gt;filter(img,<sp/>i))</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" kindref="member">detectionResult</ref>-&gt;confidentIndices-&gt;push_back(i);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Cluster</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a5a5c292573778fa38a462921c1928e40" kindref="member">clustering</ref>-&gt;clusterConfidentIndices();</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" kindref="member">detectionResult</ref>-&gt;containsValidData<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>tld<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.cpp"/>
+  </compounddef>
+</doxygen>

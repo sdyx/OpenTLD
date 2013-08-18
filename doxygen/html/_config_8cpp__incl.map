@@ -1,0 +1,19 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_config_8h.html" title="Config.h" alt="" coords="307,83,381,111"/>
+<area shape="rect" id="node25" href="$_main_8h.html" title="Main.h" alt="" coords="461,161,525,189"/>
+<area shape="rect" id="node9" href="$libconfig_8h_09_09.html" title="libconfig.h++" alt="" coords="120,161,227,189"/>
+<area shape="rect" id="node16" href="$_im_acq_8h.html" title="ImAcq.h" alt="" coords="368,238,443,266"/>
+<area shape="rect" id="node20" href="$_settings_8h.html" title="Settings.h" alt="" coords="301,161,387,189"/>
+<area shape="rect" id="node27" href="$_t_l_d_8h.html" title="TLD.h" alt="" coords="1124,238,1183,266"/>
+<area shape="rect" id="node68" href="$_gui_8h.html" title="Gui.h" alt="" coords="467,238,520,266"/>
+<area shape="rect" id="node31" href="$_median_flow_tracker_8h.html" title="MedianFlowTracker.h" alt="" coords="1419,470,1568,498"/>
+<area shape="rect" id="node34" href="$_detector_cascade_8h.html" title="DetectorCascade.h" alt="" coords="853,315,997,343"/>
+<area shape="rect" id="node36" href="$_detection_result_8h.html" title="DetectionResult.h" alt="" coords="736,470,869,498"/>
+<area shape="rect" id="node40" href="$_foreground_detector_8h.html" title="ForegroundDetector.h" alt="" coords="844,393,1007,421"/>
+<area shape="rect" id="node45" href="$_variance_filter_8h.html" title="VarianceFilter.h" alt="" coords="1109,393,1227,421"/>
+<area shape="rect" id="node52" href="$_ensemble_classifier_8h.html" title="EnsembleClassifier.h" alt="" coords="995,470,1147,498"/>
+<area shape="rect" id="node55" href="$_clustering_8h.html" title="Clustering.h" alt="" coords="671,393,769,421"/>
+<area shape="rect" id="node60" href="$_n_n_classifier_8h.html" title="NNClassifier.h" alt="" coords="537,393,647,421"/>
+<area shape="rect" id="node48" href="$_integral_image_8h.html" title="IntegralImage.h" alt="" coords="1221,470,1344,498"/>
+<area shape="rect" id="node64" href="$_normalized_patch_8h.html" title="NormalizedPatch.h" alt="" coords="368,470,509,498"/>
+</map>

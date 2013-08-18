@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_c_blob_get_area_elipse_ratio.html#a24f9703155af6e963a1ae226cdb71125" title="Aply operator to blob." alt="" coords="153,5,407,33"/>
+<area shape="rect" id="node5" href="$class_c_blob_get_area.html#a3c8268e93a2271bcd878dbf13d259afb" title="Aply operator to blob." alt="" coords="188,55,372,83"/>
+<area shape="rect" id="node7" href="$class_c_blob_get_breadth.html#a753a100a61978c0f6817787a27db1a55" title="CBlobGetBreadth::operator()" alt="" coords="177,106,383,134"/>
+<area shape="rect" id="node9" href="$class_c_blob_get_length.html#a6c56ce1a327e5e7e6f5bddaab074db71" title="CBlobGetLength::operator()" alt="" coords="181,157,379,185"/>
+<area shape="rect" id="node11" href="$class_c_blob_get_compactness.html#a315844b8ce0ea4c05e8422016f70ea2d" title="CBlobGetCompactness::operator()" alt="" coords="159,207,401,235"/>
+<area shape="rect" id="node13" href="$class_c_blob_get_elongation.html#a6811278c746413830d80ff21d979b5ab" title="CBlobGetElongation::operator()" alt="" coords="169,258,391,286"/>
+</map>

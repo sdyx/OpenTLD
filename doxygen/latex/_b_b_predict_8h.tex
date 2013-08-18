@@ -1,0 +1,70 @@
+\hypertarget{_b_b_predict_8h}{
+\section{src/libopentld/mftracker/BBPredict.h File Reference}
+\label{_b_b_predict_8h}\index{src/libopentld/mftracker/BBPredict.h@{src/libopentld/mftracker/BBPredict.h}}
+}
+{\ttfamily \#include $<$cv.h$>$}\par
+Include dependency graph for BBPredict.h:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{_b_b_predict_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_b_b_predict_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_b_b_predict_8h_a0181c4b3c3e424d149a8d89a05c98de7}{predictbb} (float $\ast$bb0, CvPoint2D32f $\ast$pt0, CvPoint2D32f $\ast$pt1, int nPts, float $\ast$bb1, float $\ast$shift)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_b_b_predict_8h_a0181c4b3c3e424d149a8d89a05c98de7}{
+\index{BBPredict.h@{BBPredict.h}!predictbb@{predictbb}}
+\index{predictbb@{predictbb}!BBPredict.h@{BBPredict.h}}
+\subsubsection[{predictbb}]{\setlength{\rightskip}{0pt plus 5cm}int predictbb (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{ bb0, }
+\item[{CvPoint2D32f $\ast$}]{ pt0, }
+\item[{CvPoint2D32f $\ast$}]{ pt1, }
+\item[{int}]{ nPts, }
+\item[{float $\ast$}]{ bb1, }
+\item[{float $\ast$}]{ shift}
+\end{DoxyParamCaption}
+)}}
+\label{_b_b_predict_8h_a0181c4b3c3e424d149a8d89a05c98de7}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em bb0}]The previous BoundingBox. \item[{\em pt0}]Feature points in the previous BoundingBox. \item[{\em pt1}]Feature points of the new BoundingBox. \item[{\em nPts}]Length of pt0/pt1. \item[{\em bb1}]Output, contains predicted BoundingBox. \item[{\em shift}]Output, contains relative scale change. 1 == no scalechange, experience: if shift == 0 BoundingBox moved completely out of picture (not validated)\end{DoxyParams}
+Calculates the new (moved and resized) Bounding box. Calculation based on all relative distance changes of all points to every point. Then the Median of the relative Values is used. 
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{_b_b_predict_8h_a0181c4b3c3e424d149a8d89a05c98de7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{_b_b_predict_8h_a0181c4b3c3e424d149a8d89a05c98de7_icgraph}
+\end{center}
+\end{figure}
+
+

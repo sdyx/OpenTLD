@@ -1,0 +1,54 @@
+\hypertarget{_f_b_track_8cpp}{
+\section{src/libopentld/mftracker/FBTrack.cpp File Reference}
+\label{_f_b_track_8cpp}\index{src/libopentld/mftracker/FBTrack.cpp@{src/libopentld/mftracker/FBTrack.cpp}}
+}
+{\ttfamily \#include \char`\"{}FBTrack.h\char`\"{}}\par
+{\ttfamily \#include $<$cstdio$>$}\par
+{\ttfamily \#include \char`\"{}BB.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}BBPredict.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}Median.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}Lk.h\char`\"{}}\par
+Include dependency graph for FBTrack.cpp:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_f_b_track_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_f_b_track_8cpp_a2c818794e6fe6aa3f6efdc9c46ffd164}{fbtrack} (IplImage $\ast$imgI, IplImage $\ast$imgJ, float $\ast$bb, float $\ast$bbnew, float $\ast$scaleshift)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_f_b_track_8cpp_a2c818794e6fe6aa3f6efdc9c46ffd164}{
+\index{FBTrack.cpp@{FBTrack.cpp}!fbtrack@{fbtrack}}
+\index{fbtrack@{fbtrack}!FBTrack.cpp@{FBTrack.cpp}}
+\subsubsection[{fbtrack}]{\setlength{\rightskip}{0pt plus 5cm}int fbtrack (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ imgI, }
+\item[{IplImage $\ast$}]{ imgJ, }
+\item[{float $\ast$}]{ bb, }
+\item[{float $\ast$}]{ bbnew, }
+\item[{float $\ast$}]{ scaleshift}
+\end{DoxyParamCaption}
+)}}
+\label{_f_b_track_8cpp_a2c818794e6fe6aa3f6efdc9c46ffd164}
+Calculate the bounding box of an Object in a following Image. Imgs aren't changed. 
+\begin{DoxyParams}{Parameters}
+\item[{\em imgI}]Image contain Object with known BoundingBox \item[{\em imgJ}]Following Image. \item[{\em bb}]Bounding box of object to track in imgI. Format x1,y1,x2,y2 \item[{\em scaleshift}]returns relative scale change of bb \end{DoxyParams}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_f_b_track_8cpp_a2c818794e6fe6aa3f6efdc9c46ffd164_cgraph}
+\end{center}
+\end{figure}
+
+

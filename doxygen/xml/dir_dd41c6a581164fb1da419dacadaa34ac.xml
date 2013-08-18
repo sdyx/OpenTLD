@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="dir_dd41c6a581164fb1da419dacadaa34ac" kind="dir">
+    <compoundname>src/opentld/</compoundname>
+    <innerdir refid="dir_001d5e763521816e33f579194933189c">src/opentld/main/</innerdir>
+    <innerdir refid="dir_3ccf86cf4dd93a59edc5f3839ab37391">src/opentld/qopentld/</innerdir>
+    <innerfile refid="_open_t_l_d_8cpp">OpenTLD.cpp</innerfile>
+    <innerfile refid="_q_open_t_l_d_8cpp">QOpenTLD.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/horst/repos/opentld-sdyx/src/opentld/"/>
+  </compounddef>
+</doxygen>

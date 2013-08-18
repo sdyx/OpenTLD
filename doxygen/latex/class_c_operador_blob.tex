@@ -1,0 +1,89 @@
+\hypertarget{class_c_operador_blob}{
+\section{COperadorBlob Class Reference}
+\label{class_c_operador_blob}\index{COperadorBlob@{COperadorBlob}}
+}
+
+
+{\ttfamily \#include $<$BlobOperators.h$>$}
+
+
+
+Inherited by \hyperlink{class_c_blob_get_area}{CBlobGetArea}, \hyperlink{class_c_blob_get_area_elipse_ratio}{CBlobGetAreaElipseRatio}, \hyperlink{class_c_blob_get_axis_ratio}{CBlobGetAxisRatio}, \hyperlink{class_c_blob_get_breadth}{CBlobGetBreadth}, \hyperlink{class_c_blob_get_compactness}{CBlobGetCompactness}, \hyperlink{class_c_blob_get_diff_x}{CBlobGetDiffX}, \hyperlink{class_c_blob_get_diff_y}{CBlobGetDiffY}, \hyperlink{class_c_blob_get_distance_from_point}{CBlobGetDistanceFromPoint}, \hyperlink{class_c_blob_get_elongation}{CBlobGetElongation}, \hyperlink{class_c_blob_get_exterior}{CBlobGetExterior}, \hyperlink{class_c_blob_get_extern_hull_perimeter_ratio}{CBlobGetExternHullPerimeterRatio}, \hyperlink{class_c_blob_get_extern_perimeter}{CBlobGetExternPerimeter}, \hyperlink{class_c_blob_get_extern_perimeter_ratio}{CBlobGetExternPerimeterRatio}, \hyperlink{class_c_blob_get_hull_area}{CBlobGetHullArea}, \hyperlink{class_c_blob_get_hull_perimeter}{CBlobGetHullPerimeter}, \hyperlink{class_c_blob_get_i_d}{CBlobGetID}, \hyperlink{class_c_blob_get_length}{CBlobGetLength}, \hyperlink{class_c_blob_get_major_axis_length}{CBlobGetMajorAxisLength}, \hyperlink{class_c_blob_get_max_x}{CBlobGetMaxX}, \hyperlink{class_c_blob_get_max_xat_max_y}{CBlobGetMaxXatMaxY}, \hyperlink{class_c_blob_get_max_y}{CBlobGetMaxY}, \hyperlink{class_c_blob_get_max_yat_min_x}{CBlobGetMaxYatMinX}, \hyperlink{class_c_blob_get_mean}{CBlobGetMean}, \hyperlink{class_c_blob_get_minor_axis_length}{CBlobGetMinorAxisLength}, \hyperlink{class_c_blob_get_min_x}{CBlobGetMinX}, \hyperlink{class_c_blob_get_min_xat_min_y}{CBlobGetMinXatMinY}, \hyperlink{class_c_blob_get_min_y}{CBlobGetMinY}, \hyperlink{class_c_blob_get_min_yat_max_x}{CBlobGetMinYatMaxX}, \hyperlink{class_c_blob_get_moment}{CBlobGetMoment}, \hyperlink{class_c_blob_get_orientation}{CBlobGetOrientation}, \hyperlink{class_c_blob_get_orientation_cos}{CBlobGetOrientationCos}, \hyperlink{class_c_blob_get_perimeter}{CBlobGetPerimeter}, \hyperlink{class_c_blob_get_roughness}{CBlobGetRoughness}, \hyperlink{class_c_blob_get_std_dev}{CBlobGetStdDev}, \hyperlink{class_c_blob_get_x_center}{CBlobGetXCenter}, \hyperlink{class_c_blob_get_x_y_inside}{CBlobGetXYInside}, and \hyperlink{class_c_blob_get_y_center}{CBlobGetYCenter}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_c_operador_blob_a25ccc652bfa55e7b0143c88f452729a2}{$\sim$COperadorBlob} ()
+\item 
+virtual double \hyperlink{class_c_operador_blob_a303c4189cc94cafbcbee116bf014e623}{operator()} (\hyperlink{class_c_blob}{CBlob} \&blob)=0
+\begin{DoxyCompactList}\small\item\em Aply operator to blob. \item\end{DoxyCompactList}\item 
+virtual const char $\ast$ \hyperlink{class_c_operador_blob_a717a19c163a26b45081a2231be24c008}{GetNom} ()=0
+\begin{DoxyCompactList}\small\item\em Get operator name. \item\end{DoxyCompactList}\item 
+\hyperlink{class_c_operador_blob_a477edfe687cf9ef41469bcf6ea636a75}{operator COperadorBlob $\ast$} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe d'on derivarem totes les operacions sobre els blobs Interface to derive all blob operations 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_operador_blob_a25ccc652bfa55e7b0143c88f452729a2}{
+\index{COperadorBlob@{COperadorBlob}!$\sim$COperadorBlob@{$\sim$COperadorBlob}}
+\index{$\sim$COperadorBlob@{$\sim$COperadorBlob}!COperadorBlob@{COperadorBlob}}
+\subsubsection[{$\sim$COperadorBlob}]{\setlength{\rightskip}{0pt plus 5cm}virtual COperadorBlob::$\sim$COperadorBlob (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_c_operador_blob_a25ccc652bfa55e7b0143c88f452729a2}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_operador_blob_a717a19c163a26b45081a2231be24c008}{
+\index{COperadorBlob@{COperadorBlob}!GetNom@{GetNom}}
+\index{GetNom@{GetNom}!COperadorBlob@{COperadorBlob}}
+\subsubsection[{GetNom}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ COperadorBlob::GetNom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{class_c_operador_blob_a717a19c163a26b45081a2231be24c008}
+
+
+Get operator name. 
+
+
+
+Implemented in \hyperlink{class_c_blob_get_i_d_a2e8c1e291d6b13bb1ecbbf8964cb9d2f}{CBlobGetID}, \hyperlink{class_c_blob_get_area_a21824b9cf62da6e2dfacf8084a6992a9}{CBlobGetArea}, \hyperlink{class_c_blob_get_perimeter_a035bfb1a62dfc75747ac8c8a61eb3670}{CBlobGetPerimeter}, \hyperlink{class_c_blob_get_exterior_a9f4f6f22567417da701e84a2eb44a984}{CBlobGetExterior}, \hyperlink{class_c_blob_get_mean_a1992d893f77cf9be2fc6d3521fd51639}{CBlobGetMean}, \hyperlink{class_c_blob_get_std_dev_ab98436c9d9211401634906334c59786b}{CBlobGetStdDev}, \hyperlink{class_c_blob_get_compactness_a93b67c8c8bd3389cb0cf06324f0583d1}{CBlobGetCompactness}, \hyperlink{class_c_blob_get_length_a0e2c65bd97c146f51ab772e5ba8d62d5}{CBlobGetLength}, \hyperlink{class_c_blob_get_breadth_ab6a0594bd82954cf625aa5a165e58097}{CBlobGetBreadth}, \hyperlink{class_c_blob_get_diff_x_a9d8db33eae0fb3f8cb5deee1e5b40f7e}{CBlobGetDiffX}, \hyperlink{class_c_blob_get_diff_y_aff0f4b9d1b1c3700710b3ecb7d2feabf}{CBlobGetDiffY}, \hyperlink{class_c_blob_get_moment_a44e020df4120067b870455a6fe6262e6}{CBlobGetMoment}, \hyperlink{class_c_blob_get_hull_perimeter_a941b3e608d94e99452ad6b2d24673b12}{CBlobGetHullPerimeter}, \hyperlink{class_c_blob_get_hull_area_a86d7f24b5e8f5ceaa8edf0b93b811000}{CBlobGetHullArea}, \hyperlink{class_c_blob_get_min_xat_min_y_ae2e9e5ebdae13167e148979cdaaea3bf}{CBlobGetMinXatMinY}, \hyperlink{class_c_blob_get_min_yat_max_x_ab2543b060facf48cadb4beddddc8c81e}{CBlobGetMinYatMaxX}, \hyperlink{class_c_blob_get_max_xat_max_y_a563198e842a5eb22cedc80ef09d1970b}{CBlobGetMaxXatMaxY}, \hyperlink{class_c_blob_get_max_yat_min_x_a46dc3ec1afbf2460d2425063d19caa08}{CBlobGetMaxYatMinX}, \hyperlink{class_c_blob_get_min_x_a97213bcb8b1cd6384c1f2252a8ea6047}{CBlobGetMinX}, \hyperlink{class_c_blob_get_max_x_af64d5492b98c3b8dec4d74880b39dfa9}{CBlobGetMaxX}, \hyperlink{class_c_blob_get_min_y_a4e7323181b4ac791a31ed2baab9c2a90}{CBlobGetMinY}, \hyperlink{class_c_blob_get_max_y_ab47575f475d0202a372ef23436ad5c26}{CBlobGetMaxY}, \hyperlink{class_c_blob_get_elongation_ab722feb62c85c65f06291cee5fc6ef7b}{CBlobGetElongation}, \hyperlink{class_c_blob_get_roughness_a3acea138bb559faa976c9311a698b515}{CBlobGetRoughness}, \hyperlink{class_c_blob_get_distance_from_point_ac62cce7fd33668c79df66a9eeb957115}{CBlobGetDistanceFromPoint}, \hyperlink{class_c_blob_get_extern_perimeter_a0565de9fba118d0de191359934fb59d0}{CBlobGetExternPerimeter}, \hyperlink{class_c_blob_get_extern_perimeter_ratio_a02ed09eee429406e6064cf1264cdfaa9}{CBlobGetExternPerimeterRatio}, \hyperlink{class_c_blob_get_extern_hull_perimeter_ratio_ae82b7fd47a5b269a6669cd92254d5633}{CBlobGetExternHullPerimeterRatio}, \hyperlink{class_c_blob_get_x_center_a56bdbbabb49a6678cd2dd1c86f75f7b2}{CBlobGetXCenter}, \hyperlink{class_c_blob_get_y_center_a20c0a7b0fe20ab1e43aaad7a8462f9e1}{CBlobGetYCenter}, \hyperlink{class_c_blob_get_major_axis_length_a15cc57a607e31d659b0cf72caba17ffd}{CBlobGetMajorAxisLength}, \hyperlink{class_c_blob_get_area_elipse_ratio_ad50ae738cd5ceff0b9a8af85e499c4b6}{CBlobGetAreaElipseRatio}, \hyperlink{class_c_blob_get_minor_axis_length_a2aad4f4a473864a2ce0409c7db35388d}{CBlobGetMinorAxisLength}, \hyperlink{class_c_blob_get_orientation_acc417f0effab6161ebbd3bc279b0bccd}{CBlobGetOrientation}, \hyperlink{class_c_blob_get_orientation_cos_a080073c288f37e86454cc51979db6534}{CBlobGetOrientationCos}, \hyperlink{class_c_blob_get_axis_ratio_a32387adba4826184cb5296c11973ca6e}{CBlobGetAxisRatio}, and \hyperlink{class_c_blob_get_x_y_inside_aace8ea2f96e16acafc3c85038760a7ae}{CBlobGetXYInside}.
+
+\hypertarget{class_c_operador_blob_a477edfe687cf9ef41469bcf6ea636a75}{
+\index{COperadorBlob@{COperadorBlob}!operator COperadorBlob $\ast$@{operator COperadorBlob $\ast$}}
+\index{operator COperadorBlob $\ast$@{operator COperadorBlob $\ast$}!COperadorBlob@{COperadorBlob}}
+\subsubsection[{operator COperadorBlob $\ast$}]{\setlength{\rightskip}{0pt plus 5cm}COperadorBlob::operator {\bf COperadorBlob} $\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_operador_blob_a477edfe687cf9ef41469bcf6ea636a75}
+\hypertarget{class_c_operador_blob_a303c4189cc94cafbcbee116bf014e623}{
+\index{COperadorBlob@{COperadorBlob}!operator()@{operator()}}
+\index{operator()@{operator()}!COperadorBlob@{COperadorBlob}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}virtual double COperadorBlob::operator() (
+\begin{DoxyParamCaption}
+\item[{{\bf CBlob} \&}]{ blob}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{class_c_operador_blob_a303c4189cc94cafbcbee116bf014e623}
+
+
+Aply operator to blob. 
+
+
+
+Implemented in \hyperlink{class_c_blob_get_i_d_a01557f50837f1e52f3b6c690c0af6592}{CBlobGetID}, \hyperlink{class_c_blob_get_area_a3c8268e93a2271bcd878dbf13d259afb}{CBlobGetArea}, \hyperlink{class_c_blob_get_perimeter_a27d6922b9fb5ad220bd0e3876aef7f28}{CBlobGetPerimeter}, \hyperlink{class_c_blob_get_exterior_ad272326f713272424a2b4763b27edeaa}{CBlobGetExterior}, \hyperlink{class_c_blob_get_mean_ad1aff39c601989402d096fb649b9703c}{CBlobGetMean}, \hyperlink{class_c_blob_get_std_dev_a9a52512df47b9ff51ad0cb4cb48d3d1f}{CBlobGetStdDev}, \hyperlink{class_c_blob_get_compactness_a315844b8ce0ea4c05e8422016f70ea2d}{CBlobGetCompactness}, \hyperlink{class_c_blob_get_length_a6c56ce1a327e5e7e6f5bddaab074db71}{CBlobGetLength}, \hyperlink{class_c_blob_get_breadth_a753a100a61978c0f6817787a27db1a55}{CBlobGetBreadth}, \hyperlink{class_c_blob_get_diff_x_a0bf92752dbffa496a2551ad9622836ac}{CBlobGetDiffX}, \hyperlink{class_c_blob_get_diff_y_aab9f6a96902b89dd9b8283db51a1b6f3}{CBlobGetDiffY}, \hyperlink{class_c_blob_get_moment_aefebc825f026670fab8517bc0ea052ca}{CBlobGetMoment}, \hyperlink{class_c_blob_get_hull_perimeter_a9c59c9b9581ca9b8847fd98cb30087cc}{CBlobGetHullPerimeter}, \hyperlink{class_c_blob_get_hull_area_a39fab727f23b9854011b6cbd00203a9b}{CBlobGetHullArea}, \hyperlink{class_c_blob_get_min_xat_min_y_ae2f3ba428e780a826de213726d2a8f35}{CBlobGetMinXatMinY}, \hyperlink{class_c_blob_get_min_yat_max_x_a41bc24b0214b58f979396208296d3dd6}{CBlobGetMinYatMaxX}, \hyperlink{class_c_blob_get_max_xat_max_y_a45c075e8968d1078c6b49ea2acbb6d58}{CBlobGetMaxXatMaxY}, \hyperlink{class_c_blob_get_max_yat_min_x_a107cc7896ca6af559e8410b3c452e80d}{CBlobGetMaxYatMinX}, \hyperlink{class_c_blob_get_min_x_a4930f236b5afa5c987ce0b5062b79b09}{CBlobGetMinX}, \hyperlink{class_c_blob_get_max_x_a187bed7f1f1e467fc5170324f4434bc2}{CBlobGetMaxX}, \hyperlink{class_c_blob_get_min_y_acf1b21431bc7cba83741b6ed8b3f1bd9}{CBlobGetMinY}, \hyperlink{class_c_blob_get_max_y_abd3fc708b60aa0716a1f335f4313e46e}{CBlobGetMaxY}, \hyperlink{class_c_blob_get_elongation_a6811278c746413830d80ff21d979b5ab}{CBlobGetElongation}, \hyperlink{class_c_blob_get_roughness_a7b63d1da4133b0abf4a4af9450c0526c}{CBlobGetRoughness}, \hyperlink{class_c_blob_get_distance_from_point_a0a17d2d50bcadef8317932e7e1cb138a}{CBlobGetDistanceFromPoint}, \hyperlink{class_c_blob_get_extern_perimeter_a3c506f7355bab0299f1992dcda2e0a0a}{CBlobGetExternPerimeter}, \hyperlink{class_c_blob_get_extern_perimeter_ratio_a28c984e9b6de7d6303704b34b76c1c5b}{CBlobGetExternPerimeterRatio}, \hyperlink{class_c_blob_get_extern_hull_perimeter_ratio_a9b841221281e5efd45d4e3d8117369c4}{CBlobGetExternHullPerimeterRatio}, \hyperlink{class_c_blob_get_x_center_aaaae40df5c1c031658100b16015896f0}{CBlobGetXCenter}, \hyperlink{class_c_blob_get_y_center_a5cdb219c957adc1bf08c95e7823e407b}{CBlobGetYCenter}, \hyperlink{class_c_blob_get_major_axis_length_a535c9a23d16bf020ed0c6aa9f36b884f}{CBlobGetMajorAxisLength}, \hyperlink{class_c_blob_get_area_elipse_ratio_a24f9703155af6e963a1ae226cdb71125}{CBlobGetAreaElipseRatio}, \hyperlink{class_c_blob_get_minor_axis_length_a2269bfa1651667f020e27d9f1e8f8d98}{CBlobGetMinorAxisLength}, \hyperlink{class_c_blob_get_orientation_a083233587fed855654e580a355265be3}{CBlobGetOrientation}, \hyperlink{class_c_blob_get_orientation_cos_ae5701293031dde73229d7515ad41e3bb}{CBlobGetOrientationCos}, \hyperlink{class_c_blob_get_axis_ratio_a8b9deb499fb1c850d92f73e34091469a}{CBlobGetAxisRatio}, and \hyperlink{class_c_blob_get_x_y_inside_a5f816b668c59d6f782bea83076ccf96e}{CBlobGetXYInside}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/3rdparty/cvblobs/\hyperlink{_blob_operators_8h}{BlobOperators.h}\end{DoxyCompactItemize}

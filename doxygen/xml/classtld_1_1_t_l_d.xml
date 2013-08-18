@@ -1,0 +1,602 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="classtld_1_1_t_l_d" kind="class" prot="public">
+    <compoundname>tld::TLD</compoundname>
+    <includes refid="_t_l_d_8h" local="no">TLD.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtld_1_1_t_l_d_1ab94fab1f55f6ef122c9e3fcf4747ac50" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::TLD::trackerEnabled</definition>
+        <argsstring></argsstring>
+        <name>trackerEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="45" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a7dd24a107de7e84f9b0459c3bfa078aa" compoundref="_t_l_d_8cpp" startline="39" endline="54">TLD</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_t_l_d_1a925a0be8c0b83bcb8c2c91a046c7db1b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::TLD::detectorEnabled</definition>
+        <argsstring></argsstring>
+        <name>detectorEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="46" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_t_l_d_1a7dd24a107de7e84f9b0459c3bfa078aa" compoundref="_t_l_d_8cpp" startline="39" endline="54">TLD</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_t_l_d_1a86422799478881dd711d0a78444be245" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::TLD::learningEnabled</definition>
+        <argsstring></argsstring>
+        <name>learningEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="47" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a7dd24a107de7e84f9b0459c3bfa078aa" compoundref="_t_l_d_8cpp" startline="39" endline="54">TLD</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_t_l_d_1a873bb61492173098b134d94239ef0ba4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::TLD::alternating</definition>
+        <argsstring></argsstring>
+        <name>alternating</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="48" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a7dd24a107de7e84f9b0459c3bfa078aa" compoundref="_t_l_d_8cpp" startline="39" endline="54">TLD</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_t_l_d_1a8b523afaefa5fbd9bc86fd656b87e1c0" prot="public" static="no" mutable="no">
+        <type><ref refid="classtld_1_1_median_flow_tracker" kindref="compound">MedianFlowTracker</ref> *</type>
+        <definition>MedianFlowTracker* tld::TLD::medianFlowTracker</definition>
+        <argsstring></argsstring>
+        <name>medianFlowTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="50" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_t_l_d_1a42636c4a6fef7de9b71af987151a7f9e" compoundref="_t_l_d_8cpp" startline="64" endline="69">release</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a7dd24a107de7e84f9b0459c3bfa078aa" compoundref="_t_l_d_8cpp" startline="39" endline="54">TLD</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a0bd3497a3d97108b74a107ead3b716f5" compoundref="_t_l_d_8cpp" startline="56" endline="62">~TLD</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_t_l_d_1abe59bf99d46b55f6ef402cb48f9d290b" prot="public" static="no" mutable="no">
+        <type><ref refid="classtld_1_1_detector_cascade" kindref="compound">DetectorCascade</ref> *</type>
+        <definition>DetectorCascade* tld::TLD::detectorCascade</definition>
+        <argsstring></argsstring>
+        <name>detectorCascade</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="51" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">readFromFile</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a42636c4a6fef7de9b71af987151a7f9e" compoundref="_t_l_d_8cpp" startline="64" endline="69">release</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a7dd24a107de7e84f9b0459c3bfa078aa" compoundref="_t_l_d_8cpp" startline="39" endline="54">TLD</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" compoundref="_t_l_d_8cpp" startline="374" endline="463">writeToFile</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a0bd3497a3d97108b74a107ead3b716f5" compoundref="_t_l_d_8cpp" startline="56" endline="62">~TLD</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_t_l_d_1a98a1be08a4b630d85e5e60dc4bb78b13" prot="public" static="no" mutable="no">
+        <type><ref refid="classtld_1_1_n_n_classifier" kindref="compound">NNClassifier</ref> *</type>
+        <definition>NNClassifier* tld::TLD::nnClassifier</definition>
+        <argsstring></argsstring>
+        <name>nnClassifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="52" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_t_l_d_1a7dd24a107de7e84f9b0459c3bfa078aa" compoundref="_t_l_d_8cpp" startline="39" endline="54">TLD</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_t_l_d_1a2a238338a62dac450b2759f99d5ae304" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::TLD::valid</definition>
+        <argsstring></argsstring>
+        <name>valid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="53" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_t_l_d_1a7dd24a107de7e84f9b0459c3bfa078aa" compoundref="_t_l_d_8cpp" startline="39" endline="54">TLD</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_t_l_d_1a26e0c624178eb37a57cd0146efa6d262" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::TLD::wasValid</definition>
+        <argsstring></argsstring>
+        <name>wasValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="54" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_t_l_d_1a7dd24a107de7e84f9b0459c3bfa078aa" compoundref="_t_l_d_8cpp" startline="39" endline="54">TLD</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_t_l_d_1a7b402ff7a0260f00b8d3dbcea5c87efa" prot="public" static="no" mutable="no">
+        <type>cv::Mat</type>
+        <definition>cv::Mat tld::TLD::prevImg</definition>
+        <argsstring></argsstring>
+        <name>prevImg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="55" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_t_l_d_1a7bb2c3271567719afb2f97e5953c31d5" prot="public" static="no" mutable="no">
+        <type>cv::Mat</type>
+        <definition>cv::Mat tld::TLD::currImg</definition>
+        <argsstring></argsstring>
+        <name>currImg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="56" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_t_l_d_1adc7a217f04d600daffe8d025f424677f" prot="public" static="no" mutable="no">
+        <type>cv::Rect *</type>
+        <definition>cv::Rect* tld::TLD::prevBB</definition>
+        <argsstring></argsstring>
+        <name>prevBB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="57" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_t_l_d_1a7dd24a107de7e84f9b0459c3bfa078aa" compoundref="_t_l_d_8cpp" startline="39" endline="54">TLD</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_t_l_d_1a5af4bc9d8fa64c4423b294f727c4ba55" prot="public" static="no" mutable="no">
+        <type>cv::Rect *</type>
+        <definition>cv::Rect* tld::TLD::currBB</definition>
+        <argsstring></argsstring>
+        <name>currBB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="58" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a42636c4a6fef7de9b71af987151a7f9e" compoundref="_t_l_d_8cpp" startline="64" endline="69">release</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a7dd24a107de7e84f9b0459c3bfa078aa" compoundref="_t_l_d_8cpp" startline="39" endline="54">TLD</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_t_l_d_1ab2e815db72cb2f40a7864c4d4457eb34" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float tld::TLD::currConf</definition>
+        <argsstring></argsstring>
+        <name>currConf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="59" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_t_l_d_1a0f108af012bc9b7d004bed33cf8e4d90" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::TLD::learning</definition>
+        <argsstring></argsstring>
+        <name>learning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="60" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a7dd24a107de7e84f9b0459c3bfa078aa" compoundref="_t_l_d_8cpp" startline="39" endline="54">TLD</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtld_1_1_t_l_d_1aa8aac5ead8b421b76f78c8a49bef50ff" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::TLD::storeCurrentData</definition>
+        <argsstring>()</argsstring>
+        <name>storeCurrentData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="40" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.cpp" bodystart="71" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_t_l_d_1a9c7cca98a9fb1d94f8bda3553c83ad7c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::TLD::fuseHypotheses</definition>
+        <argsstring>()</argsstring>
+        <name>fuseHypotheses</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="41" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.cpp" bodystart="127" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_t_l_d_1a40742c77216ac9b06a4141db6184ac85" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::TLD::learn</definition>
+        <argsstring>()</argsstring>
+        <name>learn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="42" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.cpp" bodystart="269" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_t_l_d_1afbdde1733ec8944d0ec6224a10881d41" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::TLD::initialLearning</definition>
+        <argsstring>()</argsstring>
+        <name>initialLearning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="43" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.cpp" bodystart="185" bodyend="266"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtld_1_1_t_l_d_1a7dd24a107de7e84f9b0459c3bfa078aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tld::TLD::TLD</definition>
+        <argsstring>()</argsstring>
+        <name>TLD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="62" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.cpp" bodystart="39" bodyend="54"/>
+        <references refid="classtld_1_1_t_l_d_1a873bb61492173098b134d94239ef0ba4" compoundref="_t_l_d_8h" startline="48">alternating</references>
+        <references refid="classtld_1_1_t_l_d_1a5af4bc9d8fa64c4423b294f727c4ba55" compoundref="_t_l_d_8h" startline="58">currBB</references>
+        <references refid="classtld_1_1_t_l_d_1abe59bf99d46b55f6ef402cb48f9d290b" compoundref="_t_l_d_8h" startline="51">detectorCascade</references>
+        <references refid="classtld_1_1_t_l_d_1a925a0be8c0b83bcb8c2c91a046c7db1b" compoundref="_t_l_d_8h" startline="46">detectorEnabled</references>
+        <references refid="classtld_1_1_t_l_d_1a0f108af012bc9b7d004bed33cf8e4d90" compoundref="_t_l_d_8h" startline="60">learning</references>
+        <references refid="classtld_1_1_t_l_d_1a86422799478881dd711d0a78444be245" compoundref="_t_l_d_8h" startline="47">learningEnabled</references>
+        <references refid="classtld_1_1_t_l_d_1a8b523afaefa5fbd9bc86fd656b87e1c0" compoundref="_t_l_d_8h" startline="50">medianFlowTracker</references>
+        <references refid="classtld_1_1_detector_cascade_1abc9da459b6d66e5a2f2658f52b4dfdc6" compoundref="_detector_cascade_8h" startline="78">tld::DetectorCascade::nnClassifier</references>
+        <references refid="classtld_1_1_t_l_d_1a98a1be08a4b630d85e5e60dc4bb78b13" compoundref="_t_l_d_8h" startline="52">nnClassifier</references>
+        <references refid="classtld_1_1_t_l_d_1adc7a217f04d600daffe8d025f424677f" compoundref="_t_l_d_8h" startline="57">prevBB</references>
+        <references refid="classtld_1_1_t_l_d_1ab94fab1f55f6ef122c9e3fcf4747ac50" compoundref="_t_l_d_8h" startline="45">trackerEnabled</references>
+        <references refid="classtld_1_1_t_l_d_1a2a238338a62dac450b2759f99d5ae304" compoundref="_t_l_d_8h" startline="53">valid</references>
+        <references refid="classtld_1_1_t_l_d_1a26e0c624178eb37a57cd0146efa6d262" compoundref="_t_l_d_8h" startline="54">wasValid</references>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_t_l_d_1a0bd3497a3d97108b74a107ead3b716f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>tld::TLD::~TLD</definition>
+        <argsstring>()</argsstring>
+        <name>~TLD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="63" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.cpp" bodystart="56" bodyend="62"/>
+        <references refid="classtld_1_1_t_l_d_1abe59bf99d46b55f6ef402cb48f9d290b" compoundref="_t_l_d_8h" startline="51">detectorCascade</references>
+        <references refid="classtld_1_1_t_l_d_1a8b523afaefa5fbd9bc86fd656b87e1c0" compoundref="_t_l_d_8h" startline="50">medianFlowTracker</references>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_t_l_d_1a42636c4a6fef7de9b71af987151a7f9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::TLD::release</definition>
+        <argsstring>()</argsstring>
+        <name>release</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="64" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.cpp" bodystart="64" bodyend="69"/>
+        <references refid="classtld_1_1_median_flow_tracker_1ad5c1599acad1607c20c7d2ca8aacf56c" compoundref="_median_flow_tracker_8cpp" startline="48" endline="52">tld::MedianFlowTracker::cleanPreviousData</references>
+        <references refid="classtld_1_1_t_l_d_1a5af4bc9d8fa64c4423b294f727c4ba55" compoundref="_t_l_d_8h" startline="58">currBB</references>
+        <references refid="classtld_1_1_t_l_d_1abe59bf99d46b55f6ef402cb48f9d290b" compoundref="_t_l_d_8h" startline="51">detectorCascade</references>
+        <references refid="classtld_1_1_t_l_d_1a8b523afaefa5fbd9bc86fd656b87e1c0" compoundref="_t_l_d_8h" startline="50">medianFlowTracker</references>
+        <references refid="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" compoundref="_detector_cascade_8cpp" startline="122" endline="151">tld::DetectorCascade::release</references>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">readFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_t_l_d_1a6a1b9edb0ae0f79d4447c2ff7ab983be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::TLD::selectObject</definition>
+        <argsstring>(const cv::Mat &amp;img, cv::Rect *bb)</argsstring>
+        <name>selectObject</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>cv::Rect *</type>
+          <declname>bb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="65"/>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_t_l_d_1a8161e09603dc40c43d314cfec9e0746b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::TLD::processImage</definition>
+        <argsstring>(const cv::Mat &amp;img)</argsstring>
+        <name>processImage</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>img</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="66"/>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::TLD::writeToFile</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>writeToFile</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="67" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.cpp" bodystart="374" bodyend="463"/>
+        <references refid="classtld_1_1_t_l_d_1abe59bf99d46b55f6ef402cb48f9d290b" compoundref="_t_l_d_8h" startline="51">detectorCascade</references>
+        <references refid="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" compoundref="_detector_cascade_8h" startline="76">tld::DetectorCascade::ensembleClassifier</references>
+        <references refid="classtld_1_1_n_n_classifier_1abc088471e8f9e259cc07cbb9a704fb28" compoundref="_n_n_classifier_8h" startline="49">tld::NNClassifier::falsePositives</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a02deffee640b4106051024d1ae8a55aa" compoundref="_ensemble_classifier_8h" startline="55">tld::EnsembleClassifier::features</references>
+        <references refid="structtld_1_1_tld_export_entry_1a8b67c3367255beab5b728d8803c7cb78" compoundref="_t_l_d_8cpp" startline="369">tld::TldExportEntry::index</references>
+        <references refid="classtld_1_1_variance_filter_1ad5fd1b805c1cb461a31f61dd6fdb8f07" compoundref="_variance_filter_8h" startline="48">tld::VarianceFilter::minVar</references>
+        <references refid="structtld_1_1_tld_export_entry_1a22f1125d40eecedb725e0f15aa07b01e" compoundref="_t_l_d_8cpp" startline="371">tld::TldExportEntry::N</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a2de7561eb20a0f0a1b4909d6dfd89d0b" compoundref="_ensemble_classifier_8h" startline="61">tld::EnsembleClassifier::negatives</references>
+        <references refid="classtld_1_1_detector_cascade_1abc9da459b6d66e5a2f2658f52b4dfdc6" compoundref="_detector_cascade_8h" startline="78">tld::DetectorCascade::nnClassifier</references>
+        <references refid="classtld_1_1_detector_cascade_1a63af0a8c55ac292b25f2f72b6e734280" compoundref="_detector_cascade_8h" startline="56">tld::DetectorCascade::numFeatures</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a176aba4e90f0b9373d8aedd7c25fa262" compoundref="_ensemble_classifier_8h" startline="47">tld::EnsembleClassifier::numFeatures</references>
+        <references refid="classtld_1_1_ensemble_classifier_1afbfbda1b693525895467fba88a8debe3" compoundref="_ensemble_classifier_8h" startline="57">tld::EnsembleClassifier::numIndices</references>
+        <references refid="classtld_1_1_detector_cascade_1a2d41ea56f304562878151ae09c34aa8f" compoundref="_detector_cascade_8h" startline="57">tld::DetectorCascade::numTrees</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a60e802769e79c833d1484d96bb345b7c" compoundref="_ensemble_classifier_8h" startline="46">tld::EnsembleClassifier::numTrees</references>
+        <references refid="classtld_1_1_detector_cascade_1a1186ed695cf6e9f00d180ec92e4aa1ea" compoundref="_detector_cascade_8h" startline="64">tld::DetectorCascade::objHeight</references>
+        <references refid="classtld_1_1_detector_cascade_1a1c7a7fddb085fca4577779110637c5c8" compoundref="_detector_cascade_8h" startline="63">tld::DetectorCascade::objWidth</references>
+        <references refid="structtld_1_1_tld_export_entry_1aa7f1939c611aeff5ef09cebad2fdea79" compoundref="_t_l_d_8cpp" startline="370">tld::TldExportEntry::P</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a572549e31f9bfc34c7b464e02aa41397" compoundref="_ensemble_classifier_8h" startline="60">tld::EnsembleClassifier::positives</references>
+        <references refid="classtld_1_1_n_n_classifier_1ac17849309a8aed1fdc3e3247f22b5fa2" compoundref="_n_n_classifier_8h" startline="50">tld::NNClassifier::truePositives</references>
+        <references refid="classtld_1_1_detector_cascade_1a5d2600fc22f6cc39ef1940457324c5eb" compoundref="_detector_cascade_8h" startline="75">tld::DetectorCascade::varianceFilter</references>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::TLD::readFromFile</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>readFromFile</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="68" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.cpp" bodystart="465" bodyend="605"/>
+        <references refid="classtld_1_1_t_l_d_1abe59bf99d46b55f6ef402cb48f9d290b" compoundref="_t_l_d_8h" startline="51">detectorCascade</references>
+        <references refid="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" compoundref="_detector_cascade_8h" startline="76">tld::DetectorCascade::ensembleClassifier</references>
+        <references refid="classtld_1_1_n_n_classifier_1abc088471e8f9e259cc07cbb9a704fb28" compoundref="_n_n_classifier_8h" startline="49">tld::NNClassifier::falsePositives</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a02deffee640b4106051024d1ae8a55aa" compoundref="_ensemble_classifier_8h" startline="55">tld::EnsembleClassifier::features</references>
+        <references refid="structtld_1_1_tld_export_entry_1a8b67c3367255beab5b728d8803c7cb78" compoundref="_t_l_d_8cpp" startline="369">tld::TldExportEntry::index</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a92ddef7701b1062b1f4a53e5cfcd79a2" compoundref="_ensemble_classifier_8cpp" startline="105" endline="126">tld::EnsembleClassifier::initFeatureOffsets</references>
+        <references refid="classtld_1_1_detector_cascade_1a4a61cd265a92bce6f8f148db532a1789" compoundref="_detector_cascade_8h" startline="71">tld::DetectorCascade::initialised</references>
+        <references refid="classtld_1_1_ensemble_classifier_1ab342db231d14bbaa892b2664d210e152" compoundref="_ensemble_classifier_8cpp" startline="128" endline="143">tld::EnsembleClassifier::initPosteriors</references>
+        <references refid="classtld_1_1_detector_cascade_1a39760d6c54ddb41785ffd05a7b881d8d" compoundref="_detector_cascade_8cpp" startline="249" endline="268">tld::DetectorCascade::initWindowOffsets</references>
+        <references refid="classtld_1_1_detector_cascade_1a0515043558291c0bfbd5d403315c0334" compoundref="_detector_cascade_8cpp" startline="163" endline="244">tld::DetectorCascade::initWindowsAndScales</references>
+        <references refid="classtld_1_1_variance_filter_1ad5fd1b805c1cb461a31f61dd6fdb8f07" compoundref="_variance_filter_8h" startline="48">tld::VarianceFilter::minVar</references>
+        <references refid="structtld_1_1_tld_export_entry_1a22f1125d40eecedb725e0f15aa07b01e" compoundref="_t_l_d_8cpp" startline="371">tld::TldExportEntry::N</references>
+        <references refid="classtld_1_1_detector_cascade_1abc9da459b6d66e5a2f2658f52b4dfdc6" compoundref="_detector_cascade_8h" startline="78">tld::DetectorCascade::nnClassifier</references>
+        <references refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="_config_8cpp" startline="497">NULL</references>
+        <references refid="classtld_1_1_detector_cascade_1a63af0a8c55ac292b25f2f72b6e734280" compoundref="_detector_cascade_8h" startline="56">tld::DetectorCascade::numFeatures</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a176aba4e90f0b9373d8aedd7c25fa262" compoundref="_ensemble_classifier_8h" startline="47">tld::EnsembleClassifier::numFeatures</references>
+        <references refid="classtld_1_1_ensemble_classifier_1afbfbda1b693525895467fba88a8debe3" compoundref="_ensemble_classifier_8h" startline="57">tld::EnsembleClassifier::numIndices</references>
+        <references refid="classtld_1_1_detector_cascade_1a2d41ea56f304562878151ae09c34aa8f" compoundref="_detector_cascade_8h" startline="57">tld::DetectorCascade::numTrees</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a60e802769e79c833d1484d96bb345b7c" compoundref="_ensemble_classifier_8h" startline="46">tld::EnsembleClassifier::numTrees</references>
+        <references refid="classtld_1_1_detector_cascade_1a1186ed695cf6e9f00d180ec92e4aa1ea" compoundref="_detector_cascade_8h" startline="64">tld::DetectorCascade::objHeight</references>
+        <references refid="classtld_1_1_detector_cascade_1a1c7a7fddb085fca4577779110637c5c8" compoundref="_detector_cascade_8h" startline="63">tld::DetectorCascade::objWidth</references>
+        <references refid="structtld_1_1_tld_export_entry_1aa7f1939c611aeff5ef09cebad2fdea79" compoundref="_t_l_d_8cpp" startline="370">tld::TldExportEntry::P</references>
+        <references refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">tld::DetectorCascade::propagateMembers</references>
+        <references refid="classtld_1_1_t_l_d_1a42636c4a6fef7de9b71af987151a7f9e" compoundref="_t_l_d_8cpp" startline="64" endline="69">release</references>
+        <references refid="_normalized_patch_8h_1af7b481162876c5821cbfe7cb11f3a7d0" compoundref="_normalized_patch_8h" startline="29">TLD_PATCH_SIZE</references>
+        <references refid="classtld_1_1_n_n_classifier_1ac17849309a8aed1fdc3e3247f22b5fa2" compoundref="_n_n_classifier_8h" startline="50">tld::NNClassifier::truePositives</references>
+        <references refid="classtld_1_1_ensemble_classifier_1acfc0c9d71c16dfed9750b6aa409afb0c" compoundref="_ensemble_classifier_8cpp" startline="217" endline="222">tld::EnsembleClassifier::updatePosterior</references>
+        <references refid="classtld_1_1_normalized_patch_1ae76afafa7dd50901d7c468b92d1c1df5" compoundref="_normalized_patch_8h" startline="37">tld::NormalizedPatch::values</references>
+        <references refid="classtld_1_1_detector_cascade_1a5d2600fc22f6cc39ef1940457324c5eb" compoundref="_detector_cascade_8h" startline="75">tld::DetectorCascade::varianceFilter</references>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="574">
+        <label>tld::MedianFlowTracker</label>
+        <link refid="classtld_1_1_median_flow_tracker"/>
+      </node>
+      <node id="564">
+        <label>tld::TLD</label>
+        <link refid="classtld_1_1_t_l_d"/>
+        <childnode refid="565" relation="usage">
+          <edgelabel>detectorCascade</edgelabel>
+        </childnode>
+        <childnode refid="574" relation="usage">
+          <edgelabel>medianFlowTracker</edgelabel>
+        </childnode>
+        <childnode refid="573" relation="usage">
+          <edgelabel>nnClassifier</edgelabel>
+        </childnode>
+      </node>
+      <node id="569">
+        <label>tld::EnsembleClassifier</label>
+        <link refid="classtld_1_1_ensemble_classifier"/>
+        <childnode refid="566" relation="usage">
+          <edgelabel>detectionResult</edgelabel>
+        </childnode>
+      </node>
+      <node id="568">
+        <label>tld::Clustering</label>
+        <link refid="classtld_1_1_clustering"/>
+        <childnode refid="566" relation="usage">
+          <edgelabel>detectionResult</edgelabel>
+        </childnode>
+      </node>
+      <node id="571">
+        <label>tld::IntegralImage&lt; int &gt;</label>
+        <link refid="classtld_1_1_integral_image"/>
+      </node>
+      <node id="573">
+        <label>tld::NNClassifier</label>
+        <link refid="classtld_1_1_n_n_classifier"/>
+        <childnode refid="566" relation="usage">
+          <edgelabel>detectionResult</edgelabel>
+        </childnode>
+      </node>
+      <node id="570">
+        <label>tld::VarianceFilter</label>
+        <link refid="classtld_1_1_variance_filter"/>
+        <childnode refid="566" relation="usage">
+          <edgelabel>detectionResult</edgelabel>
+        </childnode>
+        <childnode refid="571" relation="usage">
+          <edgelabel>integralImg</edgelabel>
+        </childnode>
+        <childnode refid="572" relation="usage">
+          <edgelabel>integralImg_squared</edgelabel>
+        </childnode>
+      </node>
+      <node id="572">
+        <label>tld::IntegralImage&lt; long long &gt;</label>
+        <link refid="classtld_1_1_integral_image"/>
+      </node>
+      <node id="565">
+        <label>tld::DetectorCascade</label>
+        <link refid="classtld_1_1_detector_cascade"/>
+        <childnode refid="566" relation="usage">
+          <edgelabel>detectionResult</edgelabel>
+        </childnode>
+        <childnode refid="567" relation="usage">
+          <edgelabel>foregroundDetector</edgelabel>
+        </childnode>
+        <childnode refid="568" relation="usage">
+          <edgelabel>clustering</edgelabel>
+        </childnode>
+        <childnode refid="569" relation="usage">
+          <edgelabel>ensembleClassifier</edgelabel>
+        </childnode>
+        <childnode refid="570" relation="usage">
+          <edgelabel>varianceFilter</edgelabel>
+        </childnode>
+        <childnode refid="573" relation="usage">
+          <edgelabel>nnClassifier</edgelabel>
+        </childnode>
+      </node>
+      <node id="566">
+        <label>tld::DetectionResult</label>
+        <link refid="classtld_1_1_detection_result"/>
+      </node>
+      <node id="567">
+        <label>tld::ForegroundDetector</label>
+        <link refid="classtld_1_1_foreground_detector"/>
+        <childnode refid="566" relation="usage">
+          <edgelabel>detectionResult</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" line="39" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h" bodystart="38" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classtld_1_1_t_l_d_1a873bb61492173098b134d94239ef0ba4" prot="public" virt="non-virtual"><scope>tld::TLD</scope><name>alternating</name></member>
+      <member refid="classtld_1_1_t_l_d_1a5af4bc9d8fa64c4423b294f727c4ba55" prot="public" virt="non-virtual"><scope>tld::TLD</scope><name>currBB</name></member>
+      <member refid="classtld_1_1_t_l_d_1ab2e815db72cb2f40a7864c4d4457eb34" prot="public" virt="non-virtual"><scope>tld::TLD</scope><name>currConf</name></member>
+      <member refid="classtld_1_1_t_l_d_1a7bb2c3271567719afb2f97e5953c31d5" prot="public" virt="non-virtual"><scope>tld::TLD</scope><name>currImg</name></member>
+      <member refid="classtld_1_1_t_l_d_1abe59bf99d46b55f6ef402cb48f9d290b" prot="public" virt="non-virtual"><scope>tld::TLD</scope><name>detectorCascade</name></member>
+      <member refid="classtld_1_1_t_l_d_1a925a0be8c0b83bcb8c2c91a046c7db1b" prot="public" virt="non-virtual"><scope>tld::TLD</scope><name>detectorEnabled</name></member>
+      <member refid="classtld_1_1_t_l_d_1a9c7cca98a9fb1d94f8bda3553c83ad7c" prot="private" virt="non-virtual"><scope>tld::TLD</scope><name>fuseHypotheses</name></member>
+      <member refid="classtld_1_1_t_l_d_1afbdde1733ec8944d0ec6224a10881d41" prot="private" virt="non-virtual"><scope>tld::TLD</scope><name>initialLearning</name></member>
+      <member refid="classtld_1_1_t_l_d_1a40742c77216ac9b06a4141db6184ac85" prot="private" virt="non-virtual"><scope>tld::TLD</scope><name>learn</name></member>
+      <member refid="classtld_1_1_t_l_d_1a0f108af012bc9b7d004bed33cf8e4d90" prot="public" virt="non-virtual"><scope>tld::TLD</scope><name>learning</name></member>
+      <member refid="classtld_1_1_t_l_d_1a86422799478881dd711d0a78444be245" prot="public" virt="non-virtual"><scope>tld::TLD</scope><name>learningEnabled</name></member>
+      <member refid="classtld_1_1_t_l_d_1a8b523afaefa5fbd9bc86fd656b87e1c0" prot="public" virt="non-virtual"><scope>tld::TLD</scope><name>medianFlowTracker</name></member>
+      <member refid="classtld_1_1_t_l_d_1a98a1be08a4b630d85e5e60dc4bb78b13" prot="public" virt="non-virtual"><scope>tld::TLD</scope><name>nnClassifier</name></member>
+      <member refid="classtld_1_1_t_l_d_1adc7a217f04d600daffe8d025f424677f" prot="public" virt="non-virtual"><scope>tld::TLD</scope><name>prevBB</name></member>
+      <member refid="classtld_1_1_t_l_d_1a7b402ff7a0260f00b8d3dbcea5c87efa" prot="public" virt="non-virtual"><scope>tld::TLD</scope><name>prevImg</name></member>
+      <member refid="classtld_1_1_t_l_d_1a8161e09603dc40c43d314cfec9e0746b" prot="public" virt="non-virtual"><scope>tld::TLD</scope><name>processImage</name></member>
+      <member refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" prot="public" virt="non-virtual"><scope>tld::TLD</scope><name>readFromFile</name></member>
+      <member refid="classtld_1_1_t_l_d_1a42636c4a6fef7de9b71af987151a7f9e" prot="public" virt="non-virtual"><scope>tld::TLD</scope><name>release</name></member>
+      <member refid="classtld_1_1_t_l_d_1a6a1b9edb0ae0f79d4447c2ff7ab983be" prot="public" virt="non-virtual"><scope>tld::TLD</scope><name>selectObject</name></member>
+      <member refid="classtld_1_1_t_l_d_1aa8aac5ead8b421b76f78c8a49bef50ff" prot="private" virt="non-virtual"><scope>tld::TLD</scope><name>storeCurrentData</name></member>
+      <member refid="classtld_1_1_t_l_d_1a7dd24a107de7e84f9b0459c3bfa078aa" prot="public" virt="non-virtual"><scope>tld::TLD</scope><name>TLD</name></member>
+      <member refid="classtld_1_1_t_l_d_1ab94fab1f55f6ef122c9e3fcf4747ac50" prot="public" virt="non-virtual"><scope>tld::TLD</scope><name>trackerEnabled</name></member>
+      <member refid="classtld_1_1_t_l_d_1a2a238338a62dac450b2759f99d5ae304" prot="public" virt="non-virtual"><scope>tld::TLD</scope><name>valid</name></member>
+      <member refid="classtld_1_1_t_l_d_1a26e0c624178eb37a57cd0146efa6d262" prot="public" virt="non-virtual"><scope>tld::TLD</scope><name>wasValid</name></member>
+      <member refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" prot="public" virt="non-virtual"><scope>tld::TLD</scope><name>writeToFile</name></member>
+      <member refid="classtld_1_1_t_l_d_1a0bd3497a3d97108b74a107ead3b716f5" prot="public" virt="virtual"><scope>tld::TLD</scope><name>~TLD</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,512 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_im_acq_8h" kind="file">
+    <compoundname>ImAcq.h</compoundname>
+    <includes local="no">highgui.h</includes>
+    <includedby refid="_im_acq_8cpp" local="yes">src/libopentld/imacq/ImAcq.cpp</includedby>
+    <includedby refid="_config_8h" local="yes">src/opentld/main/Config.h</includedby>
+    <includedby refid="_settings_8h" local="yes">src/opentld/main/Settings.h</includedby>
+    <includedby refid="_main_8h" local="yes">src/opentld/main/Main.h</includedby>
+    <includedby refid="_main_8cpp" local="yes">src/opentld/main/Main.cpp</includedby>
+    <includedby refid="_open_t_l_d_8cpp" local="yes">src/opentld/OpenTLD.cpp</includedby>
+    <includedby refid="_q_open_t_l_d_8cpp" local="yes">src/opentld/QOpenTLD.cpp</includedby>
+    <incdepgraph>
+      <node id="1336">
+        <label>highgui.h</label>
+      </node>
+      <node id="1335">
+        <label>src/libopentld/imacq/ImAcq.h</label>
+        <link refid="ImAcq.h"/>
+        <childnode refid="1336" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1344">
+        <label>src/opentld/main/Settings.h</label>
+        <link refid="_settings_8h"/>
+        <childnode refid="1339" relation="include">
+        </childnode>
+        <childnode refid="1345" relation="include">
+        </childnode>
+        <childnode refid="1346" relation="include">
+        </childnode>
+      </node>
+      <node id="1347">
+        <label>src/opentld/main/Main.h</label>
+        <link refid="_main_8h"/>
+        <childnode refid="1339" relation="include">
+        </childnode>
+        <childnode refid="1340" relation="include">
+        </childnode>
+        <childnode refid="1348" relation="include">
+        </childnode>
+        <childnode refid="1341" relation="include">
+        </childnode>
+        <childnode refid="1342" relation="include">
+        </childnode>
+        <childnode refid="1343" relation="include">
+        </childnode>
+      </node>
+      <node id="1346">
+        <label>src/opentld/qopentld/ConfigDialog.cpp</label>
+        <link refid="_config_dialog_8cpp"/>
+      </node>
+      <node id="1339">
+        <label>src/opentld/main/Config.h</label>
+        <link refid="_config_8h"/>
+        <childnode refid="1340" relation="include">
+        </childnode>
+        <childnode refid="1341" relation="include">
+        </childnode>
+        <childnode refid="1342" relation="include">
+        </childnode>
+        <childnode refid="1343" relation="include">
+        </childnode>
+      </node>
+      <node id="1348">
+        <label>src/opentld/main/Gui.cpp</label>
+        <link refid="_gui_8cpp"/>
+      </node>
+      <node id="1341">
+        <label>src/opentld/main/Main.cpp</label>
+        <link refid="_main_8cpp"/>
+      </node>
+      <node id="1342">
+        <label>src/opentld/OpenTLD.cpp</label>
+        <link refid="_open_t_l_d_8cpp"/>
+      </node>
+      <node id="1340">
+        <label>src/opentld/main/Config.cpp</label>
+        <link refid="_config_8cpp"/>
+      </node>
+      <node id="1337">
+        <label>src/libopentld/imacq/ImAcq.h</label>
+        <link refid="ImAcq.h"/>
+        <childnode refid="1338" relation="include">
+        </childnode>
+        <childnode refid="1339" relation="include">
+        </childnode>
+        <childnode refid="1344" relation="include">
+        </childnode>
+        <childnode refid="1347" relation="include">
+        </childnode>
+        <childnode refid="1341" relation="include">
+        </childnode>
+        <childnode refid="1342" relation="include">
+        </childnode>
+        <childnode refid="1343" relation="include">
+        </childnode>
+      </node>
+      <node id="1338">
+        <label>src/libopentld/imacq/ImAcq.cpp</label>
+        <link refid="_im_acq_8cpp"/>
+      </node>
+      <node id="1345">
+        <label>src/opentld/main/Settings.cpp</label>
+        <link refid="_settings_8cpp"/>
+      </node>
+      <node id="1343">
+        <label>src/opentld/QOpenTLD.cpp</label>
+        <link refid="_q_open_t_l_d_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_im_acq" prot="public">ImAcq</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959" prot="public" static="no">
+        <name>ImacqMethod</name>
+        <enumvalue id="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959aa4ee82d42669445b20f5a7ae43e8707d" prot="public">
+          <name>IMACQ_IMGS</name>
+          <briefdescription>
+<para>Images. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959a745a2a615a5c4db28edf11ae52cf64fa" prot="public">
+          <name>IMACQ_CAM</name>
+          <briefdescription>
+<para>Camera. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959ad1eefb7dbceaeefceacd799645c0693d" prot="public">
+          <name>IMACQ_VID</name>
+          <briefdescription>
+<para>Video. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959a398473240a6805610efe8a8e7ff80640" prot="public">
+          <name>IMACQ_LIVESIM</name>
+          <briefdescription>
+<para>Livesim. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959a3751056006d266c090ed230dbfd082f5" prot="public">
+          <name>IMACQ_STREAM</name>
+          <briefdescription>
+<para>Stream. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Capturing method </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.h" line="40" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.h" bodystart="39" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_im_acq_8h_1a92fb66a856dbc776d02d3f39e2373679" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_im_acq" kindref="compound">ImAcq</ref> *</type>
+        <definition>ImAcq* imAcqAlloc</definition>
+        <argsstring>()</argsstring>
+        <name>imAcqAlloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.h" line="61" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.cpp" bodystart="27" bodyend="36"/>
+        <references refid="struct_im_acq_1a9c151285da789cd035360b34d9637831" compoundref="_im_acq_8h" startline="56">ImAcq::camNo</references>
+        <references refid="struct_im_acq_1a0be9cca3c7dbda6da3ce2752717ce885" compoundref="_im_acq_8h" startline="54">ImAcq::currentFrame</references>
+        <references refid="struct_im_acq_1ac17ac96f1bb1ef278a70eeaec6e0275f" compoundref="_im_acq_8h" startline="58">ImAcq::fps</references>
+        <references refid="struct_im_acq_1a0afeeee09d54a896433376cf359d209f" compoundref="_im_acq_8h" startline="53">ImAcq::lastFrame</references>
+        <references refid="struct_im_acq_1a338a470fffa65fbfb9fade98a8fc12ca" compoundref="_im_acq_8h" startline="50">ImAcq::method</references>
+        <referencedby refid="_open_t_l_d_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="_open_t_l_d_8cpp" startline="33" endline="65">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_im_acq_8h_1a9d45e2a76bf8d7db08e938dd16383f10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imAcqInit</definition>
+        <argsstring>(ImAcq *imAcq)</argsstring>
+        <name>imAcqInit</name>
+        <param>
+          <type><ref refid="struct_im_acq" kindref="compound">ImAcq</ref> *</type>
+          <declname>imAcq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.h" line="63" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.cpp" bodystart="38" bodyend="98"/>
+        <references refid="struct_im_acq_1a9c151285da789cd035360b34d9637831" compoundref="_im_acq_8h" startline="56">ImAcq::camNo</references>
+        <references refid="struct_im_acq_1a71a1e8a55bfdf429634751a597a6dcba" compoundref="_im_acq_8h" startline="52">ImAcq::capture</references>
+        <references refid="struct_im_acq_1a0be9cca3c7dbda6da3ce2752717ce885" compoundref="_im_acq_8h" startline="54">ImAcq::currentFrame</references>
+        <references refid="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959a745a2a615a5c4db28edf11ae52cf64fa" compoundref="_im_acq_8h" startline="42">IMACQ_CAM</references>
+        <references refid="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959a3751056006d266c090ed230dbfd082f5" compoundref="_im_acq_8h" startline="45">IMACQ_STREAM</references>
+        <references refid="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959ad1eefb7dbceaeefceacd799645c0693d" compoundref="_im_acq_8h" startline="43">IMACQ_VID</references>
+        <references refid="_im_acq_8cpp_1a443b3a926d4435ab46a37f483138681b" compoundref="_im_acq_8cpp" startline="262" endline="265">imAcqVidGetNumberOfFrames</references>
+        <references refid="struct_im_acq_1ae389de4997bf71e132171734a7d627eb" compoundref="_im_acq_8h" startline="51">ImAcq::imgPath</references>
+        <references refid="struct_im_acq_1a0afeeee09d54a896433376cf359d209f" compoundref="_im_acq_8h" startline="53">ImAcq::lastFrame</references>
+        <references refid="struct_im_acq_1a338a470fffa65fbfb9fade98a8fc12ca" compoundref="_im_acq_8h" startline="50">ImAcq::method</references>
+        <references refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="_config_8cpp" startline="497">NULL</references>
+        <references refid="struct_im_acq_1a1f52cf31c1f19f27846d481654a370e2" compoundref="_im_acq_8h" startline="55">ImAcq::startFrame</references>
+        <references refid="struct_im_acq_1a6a4ccba3d36d599a7902a943f1f6a08c" compoundref="_im_acq_8h" startline="57">ImAcq::startTime</references>
+        <referencedby refid="_open_t_l_d_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="_open_t_l_d_8cpp" startline="33" endline="65">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_im_acq_8h_1a6092ef2b2b5f8a414d67f192a7dfbccc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imAcqRelease</definition>
+        <argsstring>(ImAcq *imAcq)</argsstring>
+        <name>imAcqRelease</name>
+        <param>
+          <type><ref refid="struct_im_acq" kindref="compound">ImAcq</ref> *</type>
+          <declname>imAcq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.h" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="_im_acq_8h_1a443b3a926d4435ab46a37f483138681b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int imAcqVidGetNumberOfFrames</definition>
+        <argsstring>(ImAcq *imAcq)</argsstring>
+        <name>imAcqVidGetNumberOfFrames</name>
+        <param>
+          <type><ref refid="struct_im_acq" kindref="compound">ImAcq</ref> *</type>
+          <declname>imAcq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.h" line="69" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.cpp" bodystart="262" bodyend="265"/>
+        <references refid="struct_im_acq_1a71a1e8a55bfdf429634751a597a6dcba" compoundref="_im_acq_8h" startline="52">ImAcq::capture</references>
+        <referencedby refid="_im_acq_8h_1a9d45e2a76bf8d7db08e938dd16383f10" compoundref="_im_acq_8cpp" startline="38" endline="98">imAcqInit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_im_acq_8h_1a864124578948857087e2ba9021351e80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int imAcqHasMoreFrames</definition>
+        <argsstring>(ImAcq *imAcq)</argsstring>
+        <name>imAcqHasMoreFrames</name>
+        <param>
+          <type><ref refid="struct_im_acq" kindref="compound">ImAcq</ref> *</type>
+          <declname>imAcq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.h" line="70" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.cpp" bodystart="231" bodyend="243"/>
+        <references refid="struct_im_acq_1a0be9cca3c7dbda6da3ce2752717ce885" compoundref="_im_acq_8h" startline="54">ImAcq::currentFrame</references>
+        <references refid="struct_im_acq_1a0afeeee09d54a896433376cf359d209f" compoundref="_im_acq_8h" startline="53">ImAcq::lastFrame</references>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_im_acq_8h_1aa2d578629cc485cf191adede101d032f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IplImage *</type>
+        <definition>IplImage* imAcqGetImg</definition>
+        <argsstring>(ImAcq *imAcq)</argsstring>
+        <name>imAcqGetImg</name>
+        <param>
+          <type><ref refid="struct_im_acq" kindref="compound">ImAcq</ref> *</type>
+          <declname>imAcq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.h" line="72" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.cpp" bodystart="162" bodyend="185"/>
+        <references refid="struct_im_acq_1a71a1e8a55bfdf429634751a597a6dcba" compoundref="_im_acq_8h" startline="52">ImAcq::capture</references>
+        <references refid="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959a745a2a615a5c4db28edf11ae52cf64fa" compoundref="_im_acq_8h" startline="42">IMACQ_CAM</references>
+        <references refid="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959aa4ee82d42669445b20f5a7ae43e8707d" compoundref="_im_acq_8h" startline="41">IMACQ_IMGS</references>
+        <references refid="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959a398473240a6805610efe8a8e7ff80640" compoundref="_im_acq_8h" startline="44">IMACQ_LIVESIM</references>
+        <references refid="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959a3751056006d266c090ed230dbfd082f5" compoundref="_im_acq_8h" startline="45">IMACQ_STREAM</references>
+        <references refid="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959ad1eefb7dbceaeefceacd799645c0693d" compoundref="_im_acq_8h" startline="43">IMACQ_VID</references>
+        <references refid="_im_acq_8cpp_1a8f0d4ea2207021c8b2f9884edcb50fee" compoundref="_im_acq_8cpp" startline="226" endline="229">imAcqAdvance</references>
+        <references refid="_im_acq_8cpp_1adad11684c86a1fcdbb6f736878bba8cc" compoundref="_im_acq_8cpp" startline="141" endline="160">imAcqGetImgByCurrentTime</references>
+        <references refid="_im_acq_8cpp_1affd4242000946f8dcf68beed336cb540" compoundref="_im_acq_8cpp" startline="187" endline="200">imAcqGrab</references>
+        <references refid="_im_acq_8cpp_1a302e2a11dfe69f3925807ae0ff9cb2ec" compoundref="_im_acq_8cpp" startline="135" endline="139">imAcqLoadCurrentFrame</references>
+        <references refid="struct_im_acq_1a338a470fffa65fbfb9fade98a8fc12ca" compoundref="_im_acq_8h" startline="50">ImAcq::method</references>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_im_acq_8h_1adad11684c86a1fcdbb6f736878bba8cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IplImage *</type>
+        <definition>IplImage* imAcqGetImgByCurrentTime</definition>
+        <argsstring>(ImAcq *imAcq)</argsstring>
+        <name>imAcqGetImgByCurrentTime</name>
+        <param>
+          <type><ref refid="struct_im_acq" kindref="compound">ImAcq</ref> *</type>
+          <declname>imAcq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.h" line="74" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.cpp" bodystart="141" bodyend="160"/>
+        <references refid="struct_im_acq_1a71a1e8a55bfdf429634751a597a6dcba" compoundref="_im_acq_8h" startline="52">ImAcq::capture</references>
+        <references refid="struct_im_acq_1ac17ac96f1bb1ef278a70eeaec6e0275f" compoundref="_im_acq_8h" startline="58">ImAcq::fps</references>
+        <references refid="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959a745a2a615a5c4db28edf11ae52cf64fa" compoundref="_im_acq_8h" startline="42">IMACQ_CAM</references>
+        <references refid="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959a3751056006d266c090ed230dbfd082f5" compoundref="_im_acq_8h" startline="45">IMACQ_STREAM</references>
+        <references refid="_im_acq_8cpp_1affd4242000946f8dcf68beed336cb540" compoundref="_im_acq_8cpp" startline="187" endline="200">imAcqGrab</references>
+        <references refid="_im_acq_8cpp_1ad7a472fe90064b4c9292c879ecea82fe" compoundref="_im_acq_8cpp" startline="125" endline="133">imAcqLoadFrame</references>
+        <references refid="struct_im_acq_1a0afeeee09d54a896433376cf359d209f" compoundref="_im_acq_8h" startline="53">ImAcq::lastFrame</references>
+        <references refid="struct_im_acq_1a338a470fffa65fbfb9fade98a8fc12ca" compoundref="_im_acq_8h" startline="50">ImAcq::method</references>
+        <references refid="struct_im_acq_1a1f52cf31c1f19f27846d481654a370e2" compoundref="_im_acq_8h" startline="55">ImAcq::startFrame</references>
+        <references refid="struct_im_acq_1a6a4ccba3d36d599a7902a943f1f6a08c" compoundref="_im_acq_8h" startline="57">ImAcq::startTime</references>
+        <referencedby refid="_im_acq_8h_1aa2d578629cc485cf191adede101d032f" compoundref="_im_acq_8cpp" startline="162" endline="185">imAcqGetImg</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_im_acq_8h_1a302e2a11dfe69f3925807ae0ff9cb2ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IplImage *</type>
+        <definition>IplImage* imAcqLoadCurrentFrame</definition>
+        <argsstring>(ImAcq *imAcq)</argsstring>
+        <name>imAcqLoadCurrentFrame</name>
+        <param>
+          <type><ref refid="struct_im_acq" kindref="compound">ImAcq</ref> *</type>
+          <declname>imAcq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.h" line="76" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.cpp" bodystart="135" bodyend="139"/>
+        <references refid="struct_im_acq_1a0be9cca3c7dbda6da3ce2752717ce885" compoundref="_im_acq_8h" startline="54">ImAcq::currentFrame</references>
+        <references refid="_im_acq_8cpp_1ad7a472fe90064b4c9292c879ecea82fe" compoundref="_im_acq_8cpp" startline="125" endline="133">imAcqLoadFrame</references>
+        <referencedby refid="_im_acq_8h_1aa2d578629cc485cf191adede101d032f" compoundref="_im_acq_8cpp" startline="162" endline="185">imAcqGetImg</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_im_acq_8h_1a5c97842aa89ab53c3a600b6710d7a793" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IplImage *</type>
+        <definition>IplImage* imAcqLoadVidFrame</definition>
+        <argsstring>(CvCapture *capture)</argsstring>
+        <name>imAcqLoadVidFrame</name>
+        <param>
+          <type>CvCapture *</type>
+          <declname>capture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="_im_acq_8h_1affd4242000946f8dcf68beed336cb540" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IplImage *</type>
+        <definition>IplImage* imAcqGrab</definition>
+        <argsstring>(CvCapture *capture)</argsstring>
+        <name>imAcqGrab</name>
+        <param>
+          <type>CvCapture *</type>
+          <declname>capture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.h" line="78" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.cpp" bodystart="187" bodyend="200"/>
+        <references refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="_config_8cpp" startline="497">NULL</references>
+        <referencedby refid="_im_acq_8h_1aa2d578629cc485cf191adede101d032f" compoundref="_im_acq_8cpp" startline="162" endline="185">imAcqGetImg</referencedby>
+        <referencedby refid="_im_acq_8h_1adad11684c86a1fcdbb6f736878bba8cc" compoundref="_im_acq_8cpp" startline="141" endline="160">imAcqGetImgByCurrentTime</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_im_acq_8h_1a8f0d4ea2207021c8b2f9884edcb50fee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imAcqAdvance</definition>
+        <argsstring>(ImAcq *imAcq)</argsstring>
+        <name>imAcqAdvance</name>
+        <param>
+          <type><ref refid="struct_im_acq" kindref="compound">ImAcq</ref> *</type>
+          <declname>imAcq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.h" line="79" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.cpp" bodystart="226" bodyend="229"/>
+        <references refid="struct_im_acq_1a0be9cca3c7dbda6da3ce2752717ce885" compoundref="_im_acq_8h" startline="54">ImAcq::currentFrame</references>
+        <referencedby refid="_im_acq_8h_1aa2d578629cc485cf191adede101d032f" compoundref="_im_acq_8cpp" startline="162" endline="185">imAcqGetImg</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_im_acq_8h_1a03fcfd168e7e1542fdf4274118443c18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imAcqFree</definition>
+        <argsstring>(ImAcq *)</argsstring>
+        <name>imAcqFree</name>
+        <param>
+          <type><ref refid="struct_im_acq" kindref="compound">ImAcq</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.h" line="80" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.cpp" bodystart="100" bodyend="108"/>
+        <references refid="struct_im_acq_1a71a1e8a55bfdf429634751a597a6dcba" compoundref="_im_acq_8h" startline="52">ImAcq::capture</references>
+        <references refid="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959a745a2a615a5c4db28edf11ae52cf64fa" compoundref="_im_acq_8h" startline="42">IMACQ_CAM</references>
+        <references refid="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959a3751056006d266c090ed230dbfd082f5" compoundref="_im_acq_8h" startline="45">IMACQ_STREAM</references>
+        <references refid="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959ad1eefb7dbceaeefceacd799645c0693d" compoundref="_im_acq_8h" startline="43">IMACQ_VID</references>
+        <references refid="struct_im_acq_1a338a470fffa65fbfb9fade98a8fc12ca" compoundref="_im_acq_8h" startline="50">ImAcq::method</references>
+        <referencedby refid="class_main_1a58d9c0798f0d2114e736d04d780a080f" compoundref="_main_8h" startline="89" endline="93">Main::~Main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>imAcq.h</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>18<sp/>May<sp/>2011</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>Georg<sp/>Nebehaiy</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/><sp/>Modified<sp/>on:<sp/>26th<sp/>May<sp/>2013</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>By:<sp/>Jonathan<sp/>Senecal</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Modified<sp/>on:<sp/>8th<sp/>August<sp/>2013</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>By:<sp/>Felix<sp/>Baumann</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IMACQ_IMPL_H_</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>IMACQ_IMPL_H_</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;highgui.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959" kindref="member">ImacqMethod</ref></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41" refid="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959aa4ee82d42669445b20f5a7ae43e8707d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>IMACQ_IMGS,<sp/></highlight></codeline>
+<codeline lineno="42" refid="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959a745a2a615a5c4db28edf11ae52cf64fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>IMACQ_CAM,<sp/></highlight></codeline>
+<codeline lineno="43" refid="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959ad1eefb7dbceaeefceacd799645c0693d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>IMACQ_VID,<sp/></highlight></codeline>
+<codeline lineno="44" refid="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959a398473240a6805610efe8a8e7ff80640" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>IMACQ_LIVESIM,<sp/></highlight></codeline>
+<codeline lineno="45" refid="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959a3751056006d266c090ed230dbfd082f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_im_acq_8h_1a0c8f8f6fcd28d6dc10eefa0c051ac959a3751056006d266c090ed230dbfd082f5" kindref="member" tooltip="Stream.">IMACQ_STREAM</ref><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="struct_im_acq" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50" refid="struct_im_acq_1a338a470fffa65fbfb9fade98a8fc12ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>method;</highlight></codeline>
+<codeline lineno="51" refid="struct_im_acq_1ae389de4997bf71e132171734a7d627eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*imgPath;</highlight></codeline>
+<codeline lineno="52" refid="struct_im_acq_1a71a1e8a55bfdf429634751a597a6dcba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>CvCapture<sp/>*capture;</highlight></codeline>
+<codeline lineno="53" refid="struct_im_acq_1a0afeeee09d54a896433376cf359d209f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lastFrame;</highlight></codeline>
+<codeline lineno="54" refid="struct_im_acq_1a0be9cca3c7dbda6da3ce2752717ce885" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>currentFrame;</highlight></codeline>
+<codeline lineno="55" refid="struct_im_acq_1a1f52cf31c1f19f27846d481654a370e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>startFrame;</highlight></codeline>
+<codeline lineno="56" refid="struct_im_acq_1a9c151285da789cd035360b34d9637831" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>camNo;</highlight></codeline>
+<codeline lineno="57" refid="struct_im_acq_1a6a4ccba3d36d599a7902a943f1f6a08c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>startTime;</highlight></codeline>
+<codeline lineno="58" refid="struct_im_acq_1ac17ac96f1bb1ef278a70eeaec6e0275f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>fps;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}<sp/><ref refid="struct_im_acq" kindref="compound">ImAcq</ref><sp/>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><ref refid="struct_im_acq" kindref="compound">ImAcq</ref><sp/>*<ref refid="_im_acq_8cpp_1a92fb66a856dbc776d02d3f39e2373679" kindref="member">imAcqAlloc</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_im_acq_8cpp_1a9d45e2a76bf8d7db08e938dd16383f10" kindref="member">imAcqInit</ref>(<ref refid="struct_im_acq" kindref="compound">ImAcq</ref><sp/>*imAcq);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_im_acq_8h_1a6092ef2b2b5f8a414d67f192a7dfbccc" kindref="member">imAcqRelease</ref>(<ref refid="struct_im_acq" kindref="compound">ImAcq</ref><sp/>*imAcq);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//void<sp/>imAcqVidSetNextFrameNumber(ImAcq<sp/>*imAcq,<sp/>int<sp/>nFrame);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//int<sp/>imAcqVidGetNextFrameNumber(ImAcq<sp/>*imAcq);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_im_acq_8cpp_1a443b3a926d4435ab46a37f483138681b" kindref="member">imAcqVidGetNumberOfFrames</ref>(<ref refid="struct_im_acq" kindref="compound">ImAcq</ref><sp/>*imAcq);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_im_acq_8cpp_1a864124578948857087e2ba9021351e80" kindref="member">imAcqHasMoreFrames</ref>(<ref refid="struct_im_acq" kindref="compound">ImAcq</ref><sp/>*imAcq);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//IplImage<sp/>*imAcqGetImgAndAdvance(ImAcq<sp/>*imAcq);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">IplImage<sp/>*<ref refid="_im_acq_8cpp_1aa2d578629cc485cf191adede101d032f" kindref="member">imAcqGetImg</ref>(<ref refid="struct_im_acq" kindref="compound">ImAcq</ref><sp/>*imAcq);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//IplImage<sp/>*imAcqGetImgByFrame(ImAcq<sp/>*imAcq,<sp/>int<sp/>fNo);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">IplImage<sp/>*<ref refid="_im_acq_8cpp_1adad11684c86a1fcdbb6f736878bba8cc" kindref="member">imAcqGetImgByCurrentTime</ref>(<ref refid="struct_im_acq" kindref="compound">ImAcq</ref><sp/>*imAcq);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//IplImage<sp/>*imAcqLoadImg(ImAcq<sp/>*imAcq,<sp/>char<sp/>*path);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">IplImage<sp/>*<ref refid="_im_acq_8cpp_1a302e2a11dfe69f3925807ae0ff9cb2ec" kindref="member">imAcqLoadCurrentFrame</ref>(<ref refid="struct_im_acq" kindref="compound">ImAcq</ref><sp/>*imAcq);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">IplImage<sp/>*<ref refid="_im_acq_8h_1a5c97842aa89ab53c3a600b6710d7a793" kindref="member">imAcqLoadVidFrame</ref>(CvCapture<sp/>*capture);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">IplImage<sp/>*<ref refid="_im_acq_8cpp_1affd4242000946f8dcf68beed336cb540" kindref="member">imAcqGrab</ref>(CvCapture<sp/>*capture);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_im_acq_8cpp_1a8f0d4ea2207021c8b2f9884edcb50fee" kindref="member">imAcqAdvance</ref>(<ref refid="struct_im_acq" kindref="compound">ImAcq</ref><sp/>*imAcq);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_im_acq_8cpp_1af22c593106dca7c35449ce54805f533a" kindref="member">imAcqFree</ref>(<ref refid="struct_im_acq" kindref="compound">ImAcq</ref><sp/>*);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>IMACQ_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/ImAcq.h"/>
+  </compounddef>
+</doxygen>

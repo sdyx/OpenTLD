@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_c_blob.html#a6f1db9fcb42c0a3ea003aaeb0ec65a8d" title="Compute blob&#39;s area." alt="" coords="271,5,367,33"/>
+<area shape="rect" id="node11" href="$class_c_blob.html#af63853ea55dbebbee5b013189e765b51" title="Compute blob&#39;s perimeter." alt="" coords="253,55,384,83"/>
+<area shape="rect" id="node5" href="$class_c_blob_contour.html#a2c68f462fc31a0e7add9a85b007fa42a" title="Computes area from contour." alt="" coords="449,5,620,33"/>
+<area shape="rect" id="node7" href="$class_c_blob_contour.html#a245d5e59180619aa9ae4ec14acc18744" title="Return all contour points." alt="" coords="687,5,916,33"/>
+<area shape="rect" id="node9" href="$class_c_blob_contour.html#af4e715a94924d5dc1a0e67cf75818bb5" title="CBlobContour::IsEmpty" alt="" coords="717,55,885,83"/>
+<area shape="rect" id="node13" href="$class_c_blob_contour.html#a893d57d625bb8f26f4a31ff0b66b8406" title="Computes perimeter from contour." alt="" coords="433,55,636,83"/>
+</map>

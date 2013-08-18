@@ -1,0 +1,57 @@
+\hypertarget{_t_l_d_util_8cpp}{
+\section{src/libopentld/tld/TLDUtil.cpp File Reference}
+\label{_t_l_d_util_8cpp}\index{src/libopentld/tld/TLDUtil.cpp@{src/libopentld/tld/TLDUtil.cpp}}
+}
+{\ttfamily \#include \char`\"{}TLDUtil.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}NormalizedPatch.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}DetectorCascade.h\char`\"{}}\par
+Include dependency graph for TLDUtil.cpp:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_t_l_d_util_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespacetld}{tld}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespacetld_a87d078ec7492f2a2a4ef8856abaf6881}{tld::tldNormalizeImg} (const Mat \&img, float $\ast$output)
+\item 
+CvRect \hyperlink{namespacetld_afd43d8a27c419d1f5da8718be917d4b5}{tld::tldBoundaryToRect} (int $\ast$boundary)
+\item 
+void \hyperlink{namespacetld_a200bdf631ed45b6d0875996d2e4709f2}{tld::tldExtractSubImage} (const Mat \&img, Mat \&subImage, CvRect rect)
+\item 
+void \hyperlink{namespacetld_a4af40ddc19d189513b3f34f6625eb04f}{tld::tldExtractSubImage} (const Mat \&img, Mat \&subImage, int $\ast$boundary)
+\item 
+void \hyperlink{namespacetld_a1bf69e140ab91bdd7bfc794a93a1a096}{tld::tldExtractNormalizedPatch} (const Mat \&img, int x, int y, int w, int h, float $\ast$output)
+\item 
+void \hyperlink{namespacetld_adf30e26ca7073712ac0eae4a1f1136ba}{tld::tldExtractNormalizedPatchBB} (const Mat \&img, int $\ast$boundary, float $\ast$output)
+\item 
+void \hyperlink{namespacetld_a7bbab27cff309fae59b25b37268c22d4}{tld::tldExtractNormalizedPatchRect} (const Mat \&img, Rect $\ast$rect, float $\ast$output)
+\item 
+float \hyperlink{namespacetld_a34eeb46b85efa569359847443ee96eba}{tld::CalculateMean} (float $\ast$value, int n)
+\item 
+float \hyperlink{namespacetld_a53d4a014fd3df2b3e8a3026a1c1768a7}{tld::tldCalcVariance} (float $\ast$value, int n)
+\item 
+float \hyperlink{namespacetld_a19776566a098d3b1fb15030e945a8c14}{tld::tldBBOverlap} (int $\ast$bb1, int $\ast$bb2)
+\item 
+void \hyperlink{namespacetld_a6db9360f372b596337a075a09b715ee4}{tld::tldOverlapOne} (int $\ast$windows, int numWindows, int index, vector$<$ int $>$ $\ast$indices, float $\ast$overlap)
+\item 
+float \hyperlink{namespacetld_afe4210f75b17cb13bb95c8d4c08a543a}{tld::tldOverlapRectRect} (Rect r1, Rect r2)
+\item 
+Rect $\ast$ \hyperlink{namespacetld_a05ea18fc911b12873acd2211f83689f7}{tld::tldCopyRect} (Rect $\ast$r)
+\item 
+void \hyperlink{namespacetld_ab71405a293095380c793589e8d59d4c7}{tld::tldOverlapRect} (int $\ast$windows, int numWindows, Rect $\ast$boundary, float $\ast$overlap)
+\item 
+void \hyperlink{namespacetld_aa9470de30170cb8b3f877dcae45df1b1}{tld::tldOverlap} (int $\ast$windows, int numWindows, int $\ast$boundary, float $\ast$overlap)
+\item 
+bool \hyperlink{namespacetld_a1899d52f23a94a9042fb95249b4714ba}{tld::tldSortByOverlapDesc} (pair$<$ int, float $>$ bb1, pair$<$ int, float $>$ bb2)
+\item 
+int \hyperlink{namespacetld_a8b28e6d4868ad30e826a6248dd2ae7a0}{tld::tldIsInside} (int $\ast$bb1, int $\ast$bb2)
+\end{DoxyCompactItemize}

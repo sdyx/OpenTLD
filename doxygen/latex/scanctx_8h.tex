@@ -1,0 +1,178 @@
+\hypertarget{scanctx_8h}{
+\section{src/3rdparty/libconfig/scanctx.h File Reference}
+\label{scanctx_8h}\index{src/3rdparty/libconfig/scanctx.h@{src/3rdparty/libconfig/scanctx.h}}
+}
+{\ttfamily \#include \char`\"{}libconfig.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}strbuf.h\char`\"{}}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$sys/types.h$>$}\par
+Include dependency graph for scanctx.h:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{scanctx_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{scanctx_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structscan__context}{scan\_\-context}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{scanctx_8h_a641f7209d924c2c4cb24420dcd631f37}{MAX\_\-INCLUDE\_\-DEPTH}~10
+\item 
+\#define \hyperlink{scanctx_8h_ade0ae565e63adca6284791f2f27abca0}{scanctx\_\-append\_\-string}(C, S)~strbuf\_\-append(\&((C)-\/$>$string), (S))
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{scanctx_8h_a71411477cefb2144fa40af836f994bc7}{scanctx\_\-init} (struct \hyperlink{structscan__context}{scan\_\-context} $\ast$ctx, const char $\ast$top\_\-filename)
+\item 
+const char $\ast$$\ast$ \hyperlink{scanctx_8h_a14a602e9acf5d8b5b1bb527082a84f19}{scanctx\_\-cleanup} (struct \hyperlink{structscan__context}{scan\_\-context} $\ast$ctx, unsigned int $\ast$num\_\-filenames)
+\item 
+FILE $\ast$ \hyperlink{scanctx_8h_a7f822b7d87edd355a54135b238e107b3}{scanctx\_\-push\_\-include} (struct \hyperlink{structscan__context}{scan\_\-context} $\ast$ctx, void $\ast$prev\_\-buffer, const char $\ast$$\ast$error)
+\item 
+void $\ast$ \hyperlink{scanctx_8h_a101e8ed9a1d768c5b70697f6ff14fca3}{scanctx\_\-pop\_\-include} (struct \hyperlink{structscan__context}{scan\_\-context} $\ast$ctx)
+\item 
+char $\ast$ \hyperlink{scanctx_8h_a8865cbf5960e1a551474e363f459083b}{scanctx\_\-take\_\-string} (struct \hyperlink{structscan__context}{scan\_\-context} $\ast$ctx)
+\item 
+const char $\ast$ \hyperlink{scanctx_8h_abb4cccee04b8644306427be8df2978d5}{scanctx\_\-current\_\-filename} (struct \hyperlink{structscan__context}{scan\_\-context} $\ast$ctx)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{scanctx_8h_a641f7209d924c2c4cb24420dcd631f37}{
+\index{scanctx.h@{scanctx.h}!MAX\_\-INCLUDE\_\-DEPTH@{MAX\_\-INCLUDE\_\-DEPTH}}
+\index{MAX\_\-INCLUDE\_\-DEPTH@{MAX\_\-INCLUDE\_\-DEPTH}!scanctx.h@{scanctx.h}}
+\subsubsection[{MAX\_\-INCLUDE\_\-DEPTH}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAX\_\-INCLUDE\_\-DEPTH~10}}
+\label{scanctx_8h_a641f7209d924c2c4cb24420dcd631f37}
+\hypertarget{scanctx_8h_ade0ae565e63adca6284791f2f27abca0}{
+\index{scanctx.h@{scanctx.h}!scanctx\_\-append\_\-string@{scanctx\_\-append\_\-string}}
+\index{scanctx\_\-append\_\-string@{scanctx\_\-append\_\-string}!scanctx.h@{scanctx.h}}
+\subsubsection[{scanctx\_\-append\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}\#define scanctx\_\-append\_\-string(
+\begin{DoxyParamCaption}
+\item[{}]{C, }
+\item[{}]{S}
+\end{DoxyParamCaption}
+)~strbuf\_\-append(\&((C)-\/$>$string), (S))}}
+\label{scanctx_8h_ade0ae565e63adca6284791f2f27abca0}
+
+
+\subsection{Function Documentation}
+\hypertarget{scanctx_8h_a14a602e9acf5d8b5b1bb527082a84f19}{
+\index{scanctx.h@{scanctx.h}!scanctx\_\-cleanup@{scanctx\_\-cleanup}}
+\index{scanctx\_\-cleanup@{scanctx\_\-cleanup}!scanctx.h@{scanctx.h}}
+\subsubsection[{scanctx\_\-cleanup}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$$\ast$ scanctx\_\-cleanup (
+\begin{DoxyParamCaption}
+\item[{struct {\bf scan\_\-context} $\ast$}]{ ctx, }
+\item[{unsigned int $\ast$}]{ num\_\-filenames}
+\end{DoxyParamCaption}
+)}}
+\label{scanctx_8h_a14a602e9acf5d8b5b1bb527082a84f19}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{scanctx_8h_a14a602e9acf5d8b5b1bb527082a84f19_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{scanctx_8h_abb4cccee04b8644306427be8df2978d5}{
+\index{scanctx.h@{scanctx.h}!scanctx\_\-current\_\-filename@{scanctx\_\-current\_\-filename}}
+\index{scanctx\_\-current\_\-filename@{scanctx\_\-current\_\-filename}!scanctx.h@{scanctx.h}}
+\subsubsection[{scanctx\_\-current\_\-filename}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ scanctx\_\-current\_\-filename (
+\begin{DoxyParamCaption}
+\item[{struct {\bf scan\_\-context} $\ast$}]{ ctx}
+\end{DoxyParamCaption}
+)}}
+\label{scanctx_8h_abb4cccee04b8644306427be8df2978d5}
+\hypertarget{scanctx_8h_a71411477cefb2144fa40af836f994bc7}{
+\index{scanctx.h@{scanctx.h}!scanctx\_\-init@{scanctx\_\-init}}
+\index{scanctx\_\-init@{scanctx\_\-init}!scanctx.h@{scanctx.h}}
+\subsubsection[{scanctx\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}void scanctx\_\-init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf scan\_\-context} $\ast$}]{ ctx, }
+\item[{const char $\ast$}]{ top\_\-filename}
+\end{DoxyParamCaption}
+)}}
+\label{scanctx_8h_a71411477cefb2144fa40af836f994bc7}
+\hypertarget{scanctx_8h_a101e8ed9a1d768c5b70697f6ff14fca3}{
+\index{scanctx.h@{scanctx.h}!scanctx\_\-pop\_\-include@{scanctx\_\-pop\_\-include}}
+\index{scanctx\_\-pop\_\-include@{scanctx\_\-pop\_\-include}!scanctx.h@{scanctx.h}}
+\subsubsection[{scanctx\_\-pop\_\-include}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ scanctx\_\-pop\_\-include (
+\begin{DoxyParamCaption}
+\item[{struct {\bf scan\_\-context} $\ast$}]{ ctx}
+\end{DoxyParamCaption}
+)}}
+\label{scanctx_8h_a101e8ed9a1d768c5b70697f6ff14fca3}
+\hypertarget{scanctx_8h_a7f822b7d87edd355a54135b238e107b3}{
+\index{scanctx.h@{scanctx.h}!scanctx\_\-push\_\-include@{scanctx\_\-push\_\-include}}
+\index{scanctx\_\-push\_\-include@{scanctx\_\-push\_\-include}!scanctx.h@{scanctx.h}}
+\subsubsection[{scanctx\_\-push\_\-include}]{\setlength{\rightskip}{0pt plus 5cm}FILE$\ast$ scanctx\_\-push\_\-include (
+\begin{DoxyParamCaption}
+\item[{struct {\bf scan\_\-context} $\ast$}]{ ctx, }
+\item[{void $\ast$}]{ prev\_\-buffer, }
+\item[{const char $\ast$$\ast$}]{ error}
+\end{DoxyParamCaption}
+)}}
+\label{scanctx_8h_a7f822b7d87edd355a54135b238e107b3}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{scanctx_8h_a7f822b7d87edd355a54135b238e107b3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{scanctx_8h_a8865cbf5960e1a551474e363f459083b}{
+\index{scanctx.h@{scanctx.h}!scanctx\_\-take\_\-string@{scanctx\_\-take\_\-string}}
+\index{scanctx\_\-take\_\-string@{scanctx\_\-take\_\-string}!scanctx.h@{scanctx.h}}
+\subsubsection[{scanctx\_\-take\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ scanctx\_\-take\_\-string (
+\begin{DoxyParamCaption}
+\item[{struct {\bf scan\_\-context} $\ast$}]{ ctx}
+\end{DoxyParamCaption}
+)}}
+\label{scanctx_8h_a8865cbf5960e1a551474e363f459083b}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{scanctx_8h_a8865cbf5960e1a551474e363f459083b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{scanctx_8h_a8865cbf5960e1a551474e363f459083b_icgraph}
+\end{center}
+\end{figure}
+
+

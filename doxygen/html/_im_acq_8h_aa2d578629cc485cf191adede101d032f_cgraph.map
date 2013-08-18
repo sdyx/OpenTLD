@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_im_acq_8cpp.html#a8f0d4ea2207021c8b2f9884edcb50fee" title="imAcqAdvance" alt="" coords="207,5,324,33"/>
+<area shape="rect" id="node5" href="$_im_acq_8cpp.html#adad11684c86a1fcdbb6f736878bba8cc" title="imAcqGetImgByCurrentTime" alt="" coords="164,106,367,134"/>
+<area shape="rect" id="node7" href="$_im_acq_8cpp.html#affd4242000946f8dcf68beed336cb540" title="imAcqGrab" alt="" coords="436,81,529,109"/>
+<area shape="rect" id="node12" href="$_im_acq_8cpp.html#a302e2a11dfe69f3925807ae0ff9cb2ec" title="imAcqLoadCurrentFrame" alt="" coords="175,157,356,185"/>
+<area shape="rect" id="node9" href="$_im_acq_8cpp.html#ad7a472fe90064b4c9292c879ecea82fe" title="imAcqLoadFrame" alt="" coords="416,143,549,171"/>
+</map>

@@ -1,0 +1,113 @@
+\hypertarget{class_c_blob_get_extern_perimeter_ratio}{
+\section{CBlobGetExternPerimeterRatio Class Reference}
+\label{class_c_blob_get_extern_perimeter_ratio}\index{CBlobGetExternPerimeterRatio@{CBlobGetExternPerimeterRatio}}
+}
+
+
+{\ttfamily \#include $<$BlobOperators.h$>$}
+
+
+
+Inherits \hyperlink{class_c_operador_blob}{COperadorBlob}.
+
+
+
+Collaboration diagram for CBlobGetExternPerimeterRatio:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{class_c_blob_get_extern_perimeter_ratio__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_blob_get_extern_perimeter_ratio_ad1494605392bd7bb85b33a9886eb2c07}{CBlobGetExternPerimeterRatio} ()
+\item 
+\hyperlink{class_c_blob_get_extern_perimeter_ratio_a6a22493725b68f8f6aab2f5e87e22a2b}{CBlobGetExternPerimeterRatio} (IplImage $\ast$mask, bool xBorder=true, bool yBorder=true)
+\item 
+double \hyperlink{class_c_blob_get_extern_perimeter_ratio_a28c984e9b6de7d6303704b34b76c1c5b}{operator()} (\hyperlink{class_c_blob}{CBlob} \&blob)
+\begin{DoxyCompactList}\small\item\em Aply operator to blob. \item\end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{class_c_blob_get_extern_perimeter_ratio_a02ed09eee429406e6064cf1264cdfaa9}{GetNom} ()
+\begin{DoxyCompactList}\small\item\em Get operator name. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe per calcular el ratio entre el perimetre i nombre pixels externs valors propers a 0 indiquen que la majoria del blob és intern valors propers a 1 indiquen que la majoria del blob és extern Class to calculate the ratio between the perimeter and the number of extern pixels 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_blob_get_extern_perimeter_ratio_ad1494605392bd7bb85b33a9886eb2c07}{
+\index{CBlobGetExternPerimeterRatio@{CBlobGetExternPerimeterRatio}!CBlobGetExternPerimeterRatio@{CBlobGetExternPerimeterRatio}}
+\index{CBlobGetExternPerimeterRatio@{CBlobGetExternPerimeterRatio}!CBlobGetExternPerimeterRatio@{CBlobGetExternPerimeterRatio}}
+\subsubsection[{CBlobGetExternPerimeterRatio}]{\setlength{\rightskip}{0pt plus 5cm}CBlobGetExternPerimeterRatio::CBlobGetExternPerimeterRatio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_blob_get_extern_perimeter_ratio_ad1494605392bd7bb85b33a9886eb2c07}
+\hypertarget{class_c_blob_get_extern_perimeter_ratio_a6a22493725b68f8f6aab2f5e87e22a2b}{
+\index{CBlobGetExternPerimeterRatio@{CBlobGetExternPerimeterRatio}!CBlobGetExternPerimeterRatio@{CBlobGetExternPerimeterRatio}}
+\index{CBlobGetExternPerimeterRatio@{CBlobGetExternPerimeterRatio}!CBlobGetExternPerimeterRatio@{CBlobGetExternPerimeterRatio}}
+\subsubsection[{CBlobGetExternPerimeterRatio}]{\setlength{\rightskip}{0pt plus 5cm}CBlobGetExternPerimeterRatio::CBlobGetExternPerimeterRatio (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ mask, }
+\item[{bool}]{ xBorder = {\ttfamily true}, }
+\item[{bool}]{ yBorder = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_blob_get_extern_perimeter_ratio_a6a22493725b68f8f6aab2f5e87e22a2b}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_blob_get_extern_perimeter_ratio_a02ed09eee429406e6064cf1264cdfaa9}{
+\index{CBlobGetExternPerimeterRatio@{CBlobGetExternPerimeterRatio}!GetNom@{GetNom}}
+\index{GetNom@{GetNom}!CBlobGetExternPerimeterRatio@{CBlobGetExternPerimeterRatio}}
+\subsubsection[{GetNom}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ CBlobGetExternPerimeterRatio::GetNom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_c_blob_get_extern_perimeter_ratio_a02ed09eee429406e6064cf1264cdfaa9}
+
+
+Get operator name. 
+
+
+
+Implements \hyperlink{class_c_operador_blob_a717a19c163a26b45081a2231be24c008}{COperadorBlob}.
+
+\hypertarget{class_c_blob_get_extern_perimeter_ratio_a28c984e9b6de7d6303704b34b76c1c5b}{
+\index{CBlobGetExternPerimeterRatio@{CBlobGetExternPerimeterRatio}!operator()@{operator()}}
+\index{operator()@{operator()}!CBlobGetExternPerimeterRatio@{CBlobGetExternPerimeterRatio}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}double CBlobGetExternPerimeterRatio::operator() (
+\begin{DoxyParamCaption}
+\item[{{\bf CBlob} \&}]{ blob}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_c_blob_get_extern_perimeter_ratio_a28c984e9b6de7d6303704b34b76c1c5b}
+
+
+Aply operator to blob. 
+
+
+
+Implements \hyperlink{class_c_operador_blob_a303c4189cc94cafbcbee116bf014e623}{COperadorBlob}.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_get_extern_perimeter_ratio_a28c984e9b6de7d6303704b34b76c1c5b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/3rdparty/cvblobs/\hyperlink{_blob_operators_8h}{BlobOperators.h}\end{DoxyCompactItemize}

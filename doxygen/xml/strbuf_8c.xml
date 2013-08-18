@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="strbuf_8c" kind="file">
+    <compoundname>strbuf.c</compoundname>
+    <includes refid="strbuf_8h" local="yes">strbuf.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <incdepgraph>
+      <node id="1309">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1308">
+        <label>sys/types.h</label>
+      </node>
+      <node id="1307">
+        <label>string.h</label>
+      </node>
+      <node id="1305">
+        <label>src/3rdparty/libconfig/strbuf.c</label>
+        <link refid="strbuf.c"/>
+        <childnode refid="1306" relation="include">
+        </childnode>
+        <childnode refid="1307" relation="include">
+        </childnode>
+        <childnode refid="1309" relation="include">
+        </childnode>
+      </node>
+      <node id="1306">
+        <label>strbuf.h</label>
+        <link refid="strbuf_8h"/>
+        <childnode refid="1307" relation="include">
+        </childnode>
+        <childnode refid="1308" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="strbuf_8c_1ad58e8dedb18e631dc57a9f8f623effb9" prot="public" static="no">
+        <name>STRING_BLOCK_SIZE</name>
+        <initializer>64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/strbuf.c" line="28" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/strbuf.c" bodystart="28" bodyend="-1"/>
+        <referencedby refid="strbuf_8h_1a7a0ae92a51caf3d76c4e0bbd15b764f9" compoundref="strbuf_8c" startline="41" endline="55">strbuf_append</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="strbuf_8c_1afd2cb5519e41bc819733aae836c7a0f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* strbuf_release</definition>
+        <argsstring>(strbuf_t *buf)</argsstring>
+        <name>strbuf_release</name>
+        <param>
+          <type><ref refid="structstrbuf__t" kindref="compound">strbuf_t</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/strbuf.c" line="33" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/strbuf.c" bodystart="32" bodyend="37"/>
+        <references refid="structstrbuf__t_1ac33d87e4a1e65b81c34728c08c58e225" compoundref="strbuf_8h" startline="31">strbuf_t::string</references>
+        <referencedby refid="scanctx_8h_1a14a602e9acf5d8b5b1bb527082a84f19" compoundref="scanctx_8c" startline="78" endline="90">scanctx_cleanup</referencedby>
+        <referencedby refid="scanctx_8h_1a8865cbf5960e1a551474e363f459083b" compoundref="scanctx_8c" startline="156" endline="161">scanctx_take_string</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="strbuf_8c_1a7a0ae92a51caf3d76c4e0bbd15b764f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void strbuf_append</definition>
+        <argsstring>(strbuf_t *buf, const char *text)</argsstring>
+        <name>strbuf_append</name>
+        <param>
+          <type><ref refid="structstrbuf__t" kindref="compound">strbuf_t</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/strbuf.c" line="42" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/strbuf.c" bodystart="41" bodyend="55"/>
+        <references refid="structstrbuf__t_1af532e798544a7dab19767406c6504649" compoundref="strbuf_8h" startline="33">strbuf_t::capacity</references>
+        <references refid="structstrbuf__t_1ae6fc3758286e761d9c7873b489786a89" compoundref="strbuf_8h" startline="32">strbuf_t::length</references>
+        <references refid="structstrbuf__t_1ac33d87e4a1e65b81c34728c08c58e225" compoundref="strbuf_8h" startline="31">strbuf_t::string</references>
+        <references refid="strbuf_8c_1ad58e8dedb18e631dc57a9f8f623effb9" compoundref="strbuf_8c" startline="28">STRING_BLOCK_SIZE</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/>libconfig<sp/>-<sp/>A<sp/>library<sp/>for<sp/>processing<sp/>structured<sp/>configuration<sp/>files</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2005-2010<sp/><sp/>Mark<sp/>A<sp/>Lindner</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>libconfig.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/>This<sp/>library<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2.1<sp/>of</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/>This<sp/>library<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Library<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/>License<sp/>along<sp/>with<sp/>this<sp/>library;<sp/>if<sp/>not,<sp/>see</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/>----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="strbuf_8h" kindref="compound">strbuf.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="strbuf_8c_1ad58e8dedb18e631dc57a9f8f623effb9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STRING_BLOCK_SIZE<sp/>64</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>-------------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="strbuf_8h_1afd2cb5519e41bc819733aae836c7a0f3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="strbuf_8c_1afd2cb5519e41bc819733aae836c7a0f3" kindref="member">strbuf_release</ref>(<ref refid="structstrbuf__t" kindref="compound">strbuf_t</ref><sp/>*buf)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*r<sp/>=<sp/>buf-&gt;<ref refid="structstrbuf__t_1ac33d87e4a1e65b81c34728c08c58e225" kindref="member">string</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>memset(buf,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structstrbuf__t" kindref="compound">strbuf_t</ref>));</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(r);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>-------------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="strbuf_8h_1a7a0ae92a51caf3d76c4e0bbd15b764f9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="strbuf_8c_1a7a0ae92a51caf3d76c4e0bbd15b764f9" kindref="member">strbuf_append</ref>(<ref refid="structstrbuf__t" kindref="compound">strbuf_t</ref><sp/>*buf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*text)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>mask<sp/>=<sp/>~(<ref refid="strbuf_8c_1ad58e8dedb18e631dc57a9f8f623effb9" kindref="member">STRING_BLOCK_SIZE</ref><sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>strlen(text);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>newlen<sp/>=<sp/>buf-&gt;<ref refid="structstrbuf__t_1ae6fc3758286e761d9c7873b489786a89" kindref="member">length</ref><sp/>+<sp/>len<sp/>+<sp/>1;<sp/></highlight><highlight class="comment">/*<sp/>add<sp/>1<sp/>for<sp/>NUL<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(newlen<sp/>&gt;<sp/>buf-&gt;<ref refid="structstrbuf__t_1af532e798544a7dab19767406c6504649" kindref="member">capacity</ref>)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>buf-&gt;<ref refid="structstrbuf__t_1af532e798544a7dab19767406c6504649" kindref="member">capacity</ref><sp/>=<sp/>(newlen<sp/>+<sp/>(<ref refid="strbuf_8c_1ad58e8dedb18e631dc57a9f8f623effb9" kindref="member">STRING_BLOCK_SIZE</ref><sp/>-<sp/>1))<sp/>&amp;<sp/>mask;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>buf-&gt;<ref refid="structstrbuf__t_1ac33d87e4a1e65b81c34728c08c58e225" kindref="member">string</ref><sp/>=<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*)realloc(buf-&gt;<ref refid="structstrbuf__t_1ac33d87e4a1e65b81c34728c08c58e225" kindref="member">string</ref>,<sp/>buf-&gt;<ref refid="structstrbuf__t_1af532e798544a7dab19767406c6504649" kindref="member">capacity</ref>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>strcpy(buf-&gt;<ref refid="structstrbuf__t_1ac33d87e4a1e65b81c34728c08c58e225" kindref="member">string</ref><sp/>+<sp/>buf-&gt;<ref refid="structstrbuf__t_1ae6fc3758286e761d9c7873b489786a89" kindref="member">length</ref>,<sp/>text);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>buf-&gt;<ref refid="structstrbuf__t_1ae6fc3758286e761d9c7873b489786a89" kindref="member">length</ref><sp/>+=<sp/>len;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>-------------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>eof<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/strbuf.c"/>
+  </compounddef>
+</doxygen>

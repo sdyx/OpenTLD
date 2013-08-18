@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_q_open_t_l_d_8cpp" kind="file">
+    <compoundname>QOpenTLD.cpp</compoundname>
+    <includes local="no">cstdio</includes>
+    <includes refid="_main_8h" local="yes">Main.h</includes>
+    <includes refid="_config_8h" local="yes">Config.h</includes>
+    <includes refid="_im_acq_8h" local="yes">ImAcq.h</includes>
+    <includes refid="_gui_8h" local="yes">Gui.h</includes>
+    <includes refid="_config_dialog_8h" local="yes">ConfigDialog.h</includes>
+    <incdepgraph>
+      <node id="2005">
+        <label>Settings.h</label>
+        <link refid="_settings_8h"/>
+        <childnode refid="1988" relation="include">
+        </childnode>
+        <childnode refid="1996" relation="include">
+        </childnode>
+      </node>
+      <node id="1986">
+        <label>DetectorCascade.h</label>
+        <link refid="_detector_cascade_8h"/>
+        <childnode refid="1987" relation="include">
+        </childnode>
+        <childnode refid="1989" relation="include">
+        </childnode>
+        <childnode refid="1990" relation="include">
+        </childnode>
+        <childnode refid="1992" relation="include">
+        </childnode>
+        <childnode refid="1993" relation="include">
+        </childnode>
+        <childnode refid="1994" relation="include">
+        </childnode>
+      </node>
+      <node id="1982">
+        <label>Main.h</label>
+        <link refid="_main_8h"/>
+        <childnode refid="1983" relation="include">
+        </childnode>
+        <childnode refid="1996" relation="include">
+        </childnode>
+        <childnode refid="1998" relation="include">
+        </childnode>
+      </node>
+      <node id="1992">
+        <label>EnsembleClassifier.h</label>
+        <link refid="_ensemble_classifier_8h"/>
+        <childnode refid="1984" relation="include">
+        </childnode>
+      </node>
+      <node id="1994">
+        <label>NNClassifier.h</label>
+        <link refid="_n_n_classifier_8h"/>
+        <childnode refid="1988" relation="include">
+        </childnode>
+        <childnode refid="1984" relation="include">
+        </childnode>
+        <childnode refid="1995" relation="include">
+        </childnode>
+        <childnode refid="1987" relation="include">
+        </childnode>
+      </node>
+      <node id="1990">
+        <label>VarianceFilter.h</label>
+        <link refid="_variance_filter_8h"/>
+        <childnode refid="1984" relation="include">
+        </childnode>
+        <childnode refid="1991" relation="include">
+        </childnode>
+        <childnode refid="1987" relation="include">
+        </childnode>
+      </node>
+      <node id="1999">
+        <label>string</label>
+      </node>
+      <node id="1997">
+        <label>highgui.h</label>
+      </node>
+      <node id="1995">
+        <label>NormalizedPatch.h</label>
+        <link refid="_normalized_patch_8h"/>
+      </node>
+      <node id="2007">
+        <label>QtGui/QApplication</label>
+      </node>
+      <node id="2004">
+        <label>exception</label>
+      </node>
+      <node id="2000">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+        <childnode refid="2001" relation="include">
+        </childnode>
+        <childnode refid="1999" relation="include">
+        </childnode>
+        <childnode refid="2002" relation="include">
+        </childnode>
+        <childnode refid="1996" relation="include">
+        </childnode>
+        <childnode refid="2005" relation="include">
+        </childnode>
+        <childnode refid="1982" relation="include">
+        </childnode>
+      </node>
+      <node id="2002">
+        <label>libconfig.h++</label>
+        <link refid="libconfig_8h_09_09"/>
+        <childnode refid="2003" relation="include">
+        </childnode>
+        <childnode refid="2004" relation="include">
+        </childnode>
+        <childnode refid="1999" relation="include">
+        </childnode>
+      </node>
+      <node id="1991">
+        <label>IntegralImage.h</label>
+        <link refid="_integral_image_8h"/>
+        <childnode refid="1984" relation="include">
+        </childnode>
+      </node>
+      <node id="1993">
+        <label>Clustering.h</label>
+        <link refid="_clustering_8h"/>
+        <childnode refid="1988" relation="include">
+        </childnode>
+        <childnode refid="1984" relation="include">
+        </childnode>
+        <childnode refid="1987" relation="include">
+        </childnode>
+      </node>
+      <node id="2008">
+        <label>QFileDialog</label>
+      </node>
+      <node id="1981">
+        <label>cstdio</label>
+      </node>
+      <node id="1989">
+        <label>ForegroundDetector.h</label>
+        <link refid="_foreground_detector_8h"/>
+        <childnode refid="1988" relation="include">
+        </childnode>
+        <childnode refid="1984" relation="include">
+        </childnode>
+        <childnode refid="1987" relation="include">
+        </childnode>
+      </node>
+      <node id="2009">
+        <label>QDialog</label>
+      </node>
+      <node id="1998">
+        <label>Gui.h</label>
+        <link refid="_gui_8h"/>
+        <childnode refid="1999" relation="include">
+        </childnode>
+        <childnode refid="1997" relation="include">
+        </childnode>
+      </node>
+      <node id="1988">
+        <label>vector</label>
+      </node>
+      <node id="1996">
+        <label>ImAcq.h</label>
+        <link refid="_im_acq_8h"/>
+        <childnode refid="1997" relation="include">
+        </childnode>
+      </node>
+      <node id="1984">
+        <label>cv.h</label>
+      </node>
+      <node id="2006">
+        <label>ConfigDialog.h</label>
+        <link refid="_config_dialog_8h"/>
+        <childnode refid="2007" relation="include">
+        </childnode>
+        <childnode refid="2008" relation="include">
+        </childnode>
+        <childnode refid="2009" relation="include">
+        </childnode>
+        <childnode refid="2010" relation="include">
+        </childnode>
+      </node>
+      <node id="2001">
+        <label>iostream</label>
+      </node>
+      <node id="1983">
+        <label>TLD.h</label>
+        <link refid="_t_l_d_8h"/>
+        <childnode refid="1984" relation="include">
+        </childnode>
+        <childnode refid="1985" relation="include">
+        </childnode>
+        <childnode refid="1986" relation="include">
+        </childnode>
+      </node>
+      <node id="1985">
+        <label>MedianFlowTracker.h</label>
+        <link refid="_median_flow_tracker_8h"/>
+        <childnode refid="1984" relation="include">
+        </childnode>
+      </node>
+      <node id="2010">
+        <label>ui_ConfigDialog.h</label>
+      </node>
+      <node id="1987">
+        <label>DetectionResult.h</label>
+        <link refid="_detection_result_8h"/>
+        <childnode refid="1988" relation="include">
+        </childnode>
+        <childnode refid="1984" relation="include">
+        </childnode>
+      </node>
+      <node id="1980">
+        <label>src/opentld/QOpenTLD.cpp</label>
+        <link refid="QOpenTLD.cpp"/>
+        <childnode refid="1981" relation="include">
+        </childnode>
+        <childnode refid="1982" relation="include">
+        </childnode>
+        <childnode refid="2000" relation="include">
+        </childnode>
+        <childnode refid="1996" relation="include">
+        </childnode>
+        <childnode refid="1998" relation="include">
+        </childnode>
+        <childnode refid="2006" relation="include">
+        </childnode>
+      </node>
+      <node id="2003">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_q_open_t_l_d_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/QOpenTLD.cpp" line="37" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/QOpenTLD.cpp" bodystart="36" bodyend="73"/>
+        <references refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</references>
+        <references refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</references>
+        <references refid="_config_dialog_8cpp_1a25273d83c6fbf5a277f6a46ad99b8bce" compoundref="_config_dialog_8cpp" startline="30" endline="39">getSettingsFromConfigDialog</references>
+        <references refid="class_main_1a56afdbd63fd6e0f92ed2113ad53cc8df" compoundref="_main_8h" startline="45">Main::gui</references>
+        <references refid="class_main_1a37f97b28ea0f64421b5a0bb590059321" compoundref="_main_8h" startline="44">Main::imAcq</references>
+        <references refid="_im_acq_8cpp_1a92fb66a856dbc776d02d3f39e2373679" compoundref="_im_acq_8cpp" startline="27" endline="36">imAcqAlloc</references>
+        <references refid="_im_acq_8cpp_1a9d45e2a76bf8d7db08e938dd16383f10" compoundref="_im_acq_8cpp" startline="38" endline="98">imAcqInit</references>
+        <references refid="classtld_1_1_gui_1aed1a0c246dfc3795560422ae762d58b3" compoundref="_gui_8cpp" startline="49" endline="53">tld::Gui::init</references>
+        <references refid="_open_t_l_d_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="_open_t_l_d_8cpp" startline="33" endline="65">main</references>
+        <references refid="class_main_1a886ff721bab62f931d37b4a0a7ce4b2d" compoundref="_main_8h" startline="61">Main::seed</references>
+        <references refid="class_main_1ae687ebbff0ebf899894316a3db89fdb5" compoundref="_main_8h" startline="46">Main::showOutput</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor">#include<sp/>&lt;cstdio&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_main_8h" kindref="compound">Main.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_config_8h" kindref="compound">Config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_im_acq_8h" kindref="compound">ImAcq.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_gui_8h" kindref="compound">Gui.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_config_dialog_8h" kindref="compound">ConfigDialog.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_config" kindref="compound">tld::Config</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_gui" kindref="compound">tld::Gui</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings" kindref="compound">tld::Settings</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="_q_open_t_l_d_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_open_t_l_d_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main" kindref="compound">Main</ref><sp/>*<ref refid="_open_t_l_d_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_main" kindref="compound">Main</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_im_acq" kindref="compound">ImAcq</ref><sp/>*imAcq<sp/>=<sp/><ref refid="_im_acq_8cpp_1a92fb66a856dbc776d02d3f39e2373679" kindref="member">imAcqAlloc</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_gui" kindref="compound">Gui</ref><sp/>*gui<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_gui" kindref="compound">Gui</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_settings" kindref="compound">Settings</ref><sp/>*settings<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_settings" kindref="compound">Settings</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>main-&gt;<ref refid="class_main_1a56afdbd63fd6e0f92ed2113ad53cc8df" kindref="member">gui</ref><sp/>=<sp/>gui;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>main-&gt;<ref refid="class_main_1a37f97b28ea0f64421b5a0bb590059321" kindref="member">imAcq</ref><sp/>=<sp/>imAcq;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="_config_dialog_8cpp_1a25273d83c6fbf5a277f6a46ad99b8bce" kindref="member">getSettingsFromConfigDialog</ref>(argc,<sp/>argv,<sp/>settings))</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EXIT_FAILURE;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(<sp/>stdout,<sp/></highlight><highlight class="stringliteral">&quot;OpenTLD<sp/>appears<sp/>soon...\n&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_config" kindref="compound">Config</ref><sp/>config(*settings);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>config.<ref refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" kindref="member">configure</ref>(main);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>srand(main-&gt;<ref refid="class_main_1a886ff721bab62f931d37b4a0a7ce4b2d" kindref="member">seed</ref>);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_im_acq_8cpp_1a9d45e2a76bf8d7db08e938dd16383f10" kindref="member">imAcqInit</ref>(imAcq);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(main-&gt;<ref refid="class_main_1ae687ebbff0ebf899894316a3db89fdb5" kindref="member">showOutput</ref>)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gui-&gt;<ref refid="classtld_1_1_gui_1aed1a0c246dfc3795560422ae762d58b3" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>main-&gt;<ref refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" kindref="member">doWork</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>main;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>gui;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>settings;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EXIT_SUCCESS;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/opentld/QOpenTLD.cpp"/>
+  </compounddef>
+</doxygen>

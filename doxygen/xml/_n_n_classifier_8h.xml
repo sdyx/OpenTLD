@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_n_n_classifier_8h" kind="file">
+    <compoundname>NNClassifier.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">cv.h</includes>
+    <includes refid="_normalized_patch_8h" local="yes">NormalizedPatch.h</includes>
+    <includes refid="_detection_result_8h" local="yes">DetectionResult.h</includes>
+    <includedby refid="_detector_cascade_8h" local="yes">src/libopentld/tld/DetectorCascade.h</includedby>
+    <includedby refid="_n_n_classifier_8cpp" local="yes">src/libopentld/tld/NNClassifier.cpp</includedby>
+    <includedby refid="_t_l_d_8cpp" local="yes">src/libopentld/tld/TLD.cpp</includedby>
+    <incdepgraph>
+      <node id="1641">
+        <label>src/libopentld/tld/NNClassifier.h</label>
+        <link refid="NNClassifier.h"/>
+        <childnode refid="1642" relation="include">
+        </childnode>
+        <childnode refid="1643" relation="include">
+        </childnode>
+        <childnode refid="1644" relation="include">
+        </childnode>
+        <childnode refid="1645" relation="include">
+        </childnode>
+      </node>
+      <node id="1644">
+        <label>NormalizedPatch.h</label>
+        <link refid="_normalized_patch_8h"/>
+      </node>
+      <node id="1642">
+        <label>vector</label>
+      </node>
+      <node id="1643">
+        <label>cv.h</label>
+      </node>
+      <node id="1645">
+        <label>DetectionResult.h</label>
+        <link refid="_detection_result_8h"/>
+        <childnode refid="1642" relation="include">
+        </childnode>
+        <childnode refid="1643" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1647">
+        <label>src/libopentld/tld/DetectorCascade.h</label>
+        <link refid="_detector_cascade_8h"/>
+        <childnode refid="1648" relation="include">
+        </childnode>
+        <childnode refid="1649" relation="include">
+        </childnode>
+        <childnode refid="1650" relation="include">
+        </childnode>
+        <childnode refid="1651" relation="include">
+        </childnode>
+        <childnode refid="1652" relation="include">
+        </childnode>
+        <childnode refid="1661" relation="include">
+        </childnode>
+        <childnode refid="1662" relation="include">
+        </childnode>
+      </node>
+      <node id="1654">
+        <label>src/opentld/main/Main.h</label>
+        <link refid="_main_8h"/>
+        <childnode refid="1655" relation="include">
+        </childnode>
+        <childnode refid="1656" relation="include">
+        </childnode>
+        <childnode refid="1660" relation="include">
+        </childnode>
+        <childnode refid="1657" relation="include">
+        </childnode>
+        <childnode refid="1658" relation="include">
+        </childnode>
+        <childnode refid="1659" relation="include">
+        </childnode>
+      </node>
+      <node id="1646">
+        <label>src/libopentld/tld/NNClassifier.h</label>
+        <link refid="NNClassifier.h"/>
+        <childnode refid="1647" relation="include">
+        </childnode>
+        <childnode refid="1651" relation="include">
+        </childnode>
+        <childnode refid="1653" relation="include">
+        </childnode>
+      </node>
+      <node id="1649">
+        <label>src/libopentld/tld/DetectorCascade.cpp</label>
+        <link refid="_detector_cascade_8cpp"/>
+      </node>
+      <node id="1662">
+        <label>src/libopentld/tld/VarianceFilter.cpp</label>
+        <link refid="_variance_filter_8cpp"/>
+      </node>
+      <node id="1655">
+        <label>src/opentld/main/Config.h</label>
+        <link refid="_config_8h"/>
+        <childnode refid="1656" relation="include">
+        </childnode>
+        <childnode refid="1657" relation="include">
+        </childnode>
+        <childnode refid="1658" relation="include">
+        </childnode>
+        <childnode refid="1659" relation="include">
+        </childnode>
+      </node>
+      <node id="1660">
+        <label>src/opentld/main/Gui.cpp</label>
+        <link refid="_gui_8cpp"/>
+      </node>
+      <node id="1661">
+        <label>src/libopentld/tld/TLDUtil.cpp</label>
+        <link refid="_t_l_d_util_8cpp"/>
+      </node>
+      <node id="1657">
+        <label>src/opentld/main/Main.cpp</label>
+        <link refid="_main_8cpp"/>
+      </node>
+      <node id="1658">
+        <label>src/opentld/OpenTLD.cpp</label>
+        <link refid="_open_t_l_d_8cpp"/>
+      </node>
+      <node id="1656">
+        <label>src/opentld/main/Config.cpp</label>
+        <link refid="_config_8cpp"/>
+      </node>
+      <node id="1651">
+        <label>src/libopentld/tld/NNClassifier.cpp</label>
+        <link refid="_n_n_classifier_8cpp"/>
+      </node>
+      <node id="1653">
+        <label>src/libopentld/tld/TLD.cpp</label>
+        <link refid="_t_l_d_8cpp"/>
+      </node>
+      <node id="1652">
+        <label>src/libopentld/tld/TLD.h</label>
+        <link refid="_t_l_d_8h"/>
+        <childnode refid="1653" relation="include">
+        </childnode>
+        <childnode refid="1654" relation="include">
+        </childnode>
+      </node>
+      <node id="1648">
+        <label>src/libopentld/tld/Clustering.cpp</label>
+        <link refid="_clustering_8cpp"/>
+      </node>
+      <node id="1659">
+        <label>src/opentld/QOpenTLD.cpp</label>
+        <link refid="_q_open_t_l_d_8cpp"/>
+      </node>
+      <node id="1650">
+        <label>src/libopentld/tld/EnsembleClassifier.cpp</label>
+        <link refid="_ensemble_classifier_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classtld_1_1_n_n_classifier" prot="public">tld::NNClassifier</innerclass>
+    <innernamespace refid="namespacetld">tld</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NNClassifier.h</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Nov<sp/>16,<sp/>2011</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>Georg<sp/>Nebehay</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>NNCLASSIFIER_H_</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>NNCLASSIFIER_H_</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cv.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_normalized_patch_8h" kindref="compound">NormalizedPatch.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_detection_result_8h" kindref="compound">DetectionResult.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">tld</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classtld_1_1_n_n_classifier" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtld_1_1_n_n_classifier" kindref="compound">NNClassifier</ref></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ncc(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*f1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*f2);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="43" refid="classtld_1_1_n_n_classifier_1a7a86c7c4d1bf5664540f476f455dad21" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_n_n_classifier_1a7a86c7c4d1bf5664540f476f455dad21" kindref="member">enabled</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classtld_1_1_n_n_classifier_1a6a4aab5ed014405c9dbd9162af1b1d7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="classtld_1_1_n_n_classifier_1a6a4aab5ed014405c9dbd9162af1b1d7c" kindref="member">windows</ref>;</highlight></codeline>
+<codeline lineno="46" refid="classtld_1_1_n_n_classifier_1a5cddbd7f4a38e95a7f00cb1013962b9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_n_n_classifier_1a5cddbd7f4a38e95a7f00cb1013962b9e" kindref="member">thetaFP</ref>;</highlight></codeline>
+<codeline lineno="47" refid="classtld_1_1_n_n_classifier_1aada6ca01c7b5224439e375444947cd16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_n_n_classifier_1aada6ca01c7b5224439e375444947cd16" kindref="member">thetaTP</ref>;</highlight></codeline>
+<codeline lineno="48" refid="classtld_1_1_n_n_classifier_1a5320e517bb5ad4ed524701df5cc200aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result" kindref="compound">DetectionResult</ref><sp/>*<ref refid="classtld_1_1_n_n_classifier_1a5320e517bb5ad4ed524701df5cc200aa" kindref="member">detectionResult</ref>;</highlight></codeline>
+<codeline lineno="49" refid="classtld_1_1_n_n_classifier_1abc088471e8f9e259cc07cbb9a704fb28" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;NormalizedPatch&gt;*<sp/><ref refid="classtld_1_1_n_n_classifier_1abc088471e8f9e259cc07cbb9a704fb28" kindref="member">falsePositives</ref>;</highlight></codeline>
+<codeline lineno="50" refid="classtld_1_1_n_n_classifier_1ac17849309a8aed1fdc3e3247f22b5fa2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;NormalizedPatch&gt;*<sp/><ref refid="classtld_1_1_n_n_classifier_1ac17849309a8aed1fdc3e3247f22b5fa2" kindref="member">truePositives</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_n_n_classifier_1a5a71057c2aacdd4935247976e6f49b46" kindref="member">NNClassifier</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_n_n_classifier_1a475f200dea8dc71cf0f273c57d837242" kindref="member">~NNClassifier</ref>();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_n_n_classifier_1aabb548e7b9535ad8040fe65d344b3142" kindref="member">release</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_n_n_classifier_1aa59628d72a448c3ee686d9fd78d3e62a" kindref="member">classifyPatch</ref>(<ref refid="classtld_1_1_normalized_patch" kindref="compound">NormalizedPatch</ref><sp/>*patch);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_n_n_classifier_1a4b926da10ab0ce0d05fdb19b7e90bf8b" kindref="member">classifyBB</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat<sp/>&amp;img,<sp/>cv::Rect<sp/>*bb);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_n_n_classifier_1a88fe1649014e887a12a5a57a552819f2" kindref="member">classifyWindow</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat<sp/>&amp;img,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>windowIdx);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_n_n_classifier_1aa6a34e43628807018da166897063ea02" kindref="member">learn</ref>(std::vector&lt;NormalizedPatch&gt;<sp/>patches);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_n_n_classifier_1a173e8f32e073d88c93203ff6ec3352ab" kindref="member">filter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat<sp/>&amp;img,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>windowIdx);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>tld<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>NNCLASSIFIER_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h"/>
+  </compounddef>
+</doxygen>

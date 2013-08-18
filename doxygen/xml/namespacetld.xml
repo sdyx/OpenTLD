@@ -1,0 +1,1255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="namespacetld" kind="namespace">
+    <compoundname>tld</compoundname>
+    <innerclass refid="classtld_1_1_clustering" prot="public">tld::Clustering</innerclass>
+    <innerclass refid="classtld_1_1_detection_result" prot="public">tld::DetectionResult</innerclass>
+    <innerclass refid="classtld_1_1_detector_cascade" prot="public">tld::DetectorCascade</innerclass>
+    <innerclass refid="classtld_1_1_ensemble_classifier" prot="public">tld::EnsembleClassifier</innerclass>
+    <innerclass refid="classtld_1_1_foreground_detector" prot="public">tld::ForegroundDetector</innerclass>
+    <innerclass refid="classtld_1_1_integral_image" prot="public">tld::IntegralImage</innerclass>
+    <innerclass refid="classtld_1_1_median_flow_tracker" prot="public">tld::MedianFlowTracker</innerclass>
+    <innerclass refid="classtld_1_1_n_n_classifier" prot="public">tld::NNClassifier</innerclass>
+    <innerclass refid="classtld_1_1_normalized_patch" prot="public">tld::NormalizedPatch</innerclass>
+    <innerclass refid="structtld_1_1_tld_export_entry" prot="public">tld::TldExportEntry</innerclass>
+    <innerclass refid="classtld_1_1_t_l_d" prot="public">tld::TLD</innerclass>
+    <innerclass refid="classtld_1_1_variance_filter" prot="public">tld::VarianceFilter</innerclass>
+    <innerclass refid="classtld_1_1_config" prot="public">tld::Config</innerclass>
+    <innerclass refid="classtld_1_1_gui" prot="public">tld::Gui</innerclass>
+    <innerclass refid="classtld_1_1_settings" prot="public">tld::Settings</innerclass>
+    <innerclass refid="classtld_1_1_trajectory" prot="public">tld::Trajectory</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacetld_1ad0458a97a7973a088840e7917515c6ae" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int tld::TLD_WINDOW_SIZE</definition>
+        <argsstring></argsstring>
+        <name>TLD_WINDOW_SIZE</name>
+        <initializer> 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="41" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetld_1a7a647c1eaeda30086f4519b611db4e71" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int tld::TLD_WINDOW_OFFSET_SIZE</definition>
+        <argsstring></argsstring>
+        <name>TLD_WINDOW_OFFSET_SIZE</name>
+        <initializer> 6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="42" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetld_1a17f0b1eb181c0395a541e031b203040a" prot="public" static="yes" mutable="no">
+        <type>char</type>
+        <definition>char tld::help_text[]</definition>
+        <argsstring>[]</argsstring>
+        <name>help_text</name>
+        <initializer>&quot;[&lt;path&gt;] &lt;path&gt; to the config file\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Config.cpp" line="54" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Config.cpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetld_1a6e180d5067af278cc277ae9c6f7507c1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::opterr</definition>
+        <argsstring></argsstring>
+        <name>opterr</name>
+        <initializer> 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Config.cpp" line="506" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Config.cpp" bodystart="506" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetld_1ab8c5a378ef03678c537edc84a15abc22" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::optind</definition>
+        <argsstring></argsstring>
+        <name>optind</name>
+        <initializer> 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Config.cpp" line="507" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Config.cpp" bodystart="507" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetld_1a6d6bd80732b9f396bc03e5f2c5cf30f8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::optopt</definition>
+        <argsstring></argsstring>
+        <name>optopt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Config.cpp" line="508" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Config.cpp" bodystart="508" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetld_1a1bbc7d3201a2ef41da5495e0e48cfd2e" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char * tld::optarg</definition>
+        <argsstring></argsstring>
+        <name>optarg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Config.cpp" line="509" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Config.cpp" bodystart="509" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetld_1ad1bfc03770cc333da8a972ab7d35c246" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string tld::window_name</definition>
+        <argsstring></argsstring>
+        <name>window_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp" line="70" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetld_1a16a44df30fb791b45dd103ba1541fb67" prot="public" static="yes" mutable="no">
+        <type>CvFont</type>
+        <definition>CvFont tld::font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp" line="71" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetld_1a32bc4295eda098201cd336e2d2f1e217" prot="public" static="yes" mutable="no">
+        <type>IplImage *</type>
+        <definition>IplImage* tld::img0</definition>
+        <argsstring></argsstring>
+        <name>img0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp" line="72" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetld_1ac832a3e8122e594c1c5321935cbc2639" prot="public" static="yes" mutable="no">
+        <type>IplImage *</type>
+        <definition>IplImage* tld::img1</definition>
+        <argsstring></argsstring>
+        <name>img1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp" line="73" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetld_1a680868c3e5a47352c5353897519636d4" prot="public" static="yes" mutable="no">
+        <type>CvPoint</type>
+        <definition>CvPoint tld::point</definition>
+        <argsstring></argsstring>
+        <name>point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp" line="74" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetld_1aa5e13bbb9a53d3e9103d430b6113b08b" prot="public" static="yes" mutable="no">
+        <type>CvRect *</type>
+        <definition>CvRect* tld::bb</definition>
+        <argsstring></argsstring>
+        <name>bb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp" line="75" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetld_1a7cfa165f34457693b8898cfa78e51945" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int tld::drag</definition>
+        <argsstring></argsstring>
+        <name>drag</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp" line="76" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacetld_1a87d078ec7492f2a2a4ef8856abaf6881" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::tldNormalizeImg</definition>
+        <argsstring>(const Mat &amp;img, float *output)</argsstring>
+        <name>tldNormalizeImg</name>
+        <param>
+          <type>const Mat &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" line="58" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" bodystart="57" bodyend="87"/>
+        <referencedby refid="namespacetld_1a1bf69e140ab91bdd7bfc794a93a1a096" compoundref="_t_l_d_util_8cpp" startline="104" endline="109">tldExtractNormalizedPatch</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1afd43d8a27c419d1f5da8718be917d4b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CvRect</type>
+        <definition>CvRect tld::tldBoundaryToRect</definition>
+        <argsstring>(int *boundary)</argsstring>
+        <name>tldBoundaryToRect</name>
+        <param>
+          <type>int *</type>
+          <declname>boundary</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" line="90" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" bodystart="89" bodyend="92"/>
+        <referencedby refid="namespacetld_1a4af40ddc19d189513b3f34f6625eb04f" compoundref="_t_l_d_util_8cpp" startline="99" endline="102">tldExtractSubImage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1a200bdf631ed45b6d0875996d2e4709f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::tldExtractSubImage</definition>
+        <argsstring>(const Mat &amp;img, Mat &amp;subImage, CvRect rect)</argsstring>
+        <name>tldExtractSubImage</name>
+        <param>
+          <type>const Mat &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>Mat &amp;</type>
+          <declname>subImage</declname>
+        </param>
+        <param>
+          <type>CvRect</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" line="95" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" bodystart="94" bodyend="97"/>
+        <referencedby refid="namespacetld_1a1bf69e140ab91bdd7bfc794a93a1a096" compoundref="_t_l_d_util_8cpp" startline="104" endline="109">tldExtractNormalizedPatch</referencedby>
+        <referencedby refid="namespacetld_1a4af40ddc19d189513b3f34f6625eb04f" compoundref="_t_l_d_util_8cpp" startline="99" endline="102">tldExtractSubImage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1a4af40ddc19d189513b3f34f6625eb04f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::tldExtractSubImage</definition>
+        <argsstring>(const Mat &amp;img, Mat &amp;subImage, int *boundary)</argsstring>
+        <name>tldExtractSubImage</name>
+        <param>
+          <type>const Mat &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>Mat &amp;</type>
+          <declname>subImage</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>boundary</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" line="100" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" bodystart="99" bodyend="102"/>
+        <references refid="namespacetld_1afd43d8a27c419d1f5da8718be917d4b5" compoundref="_t_l_d_util_8cpp" startline="89" endline="92">tldBoundaryToRect</references>
+        <references refid="namespacetld_1a200bdf631ed45b6d0875996d2e4709f2" compoundref="_t_l_d_util_8cpp" startline="94" endline="97">tldExtractSubImage</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1a1bf69e140ab91bdd7bfc794a93a1a096" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::tldExtractNormalizedPatch</definition>
+        <argsstring>(const Mat &amp;img, int x, int y, int w, int h, float *output)</argsstring>
+        <name>tldExtractNormalizedPatch</name>
+        <param>
+          <type>const Mat &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" line="105" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" bodystart="104" bodyend="109"/>
+        <references refid="namespacetld_1a200bdf631ed45b6d0875996d2e4709f2" compoundref="_t_l_d_util_8cpp" startline="94" endline="97">tldExtractSubImage</references>
+        <references refid="namespacetld_1a87d078ec7492f2a2a4ef8856abaf6881" compoundref="_t_l_d_util_8cpp" startline="57" endline="87">tldNormalizeImg</references>
+        <referencedby refid="namespacetld_1adf30e26ca7073712ac0eae4a1f1136ba" compoundref="_t_l_d_util_8cpp" startline="112" endline="117">tldExtractNormalizedPatchBB</referencedby>
+        <referencedby refid="namespacetld_1a7bbab27cff309fae59b25b37268c22d4" compoundref="_t_l_d_util_8cpp" startline="119" endline="122">tldExtractNormalizedPatchRect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1adf30e26ca7073712ac0eae4a1f1136ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::tldExtractNormalizedPatchBB</definition>
+        <argsstring>(const Mat &amp;img, int *boundary, float *output)</argsstring>
+        <name>tldExtractNormalizedPatchBB</name>
+        <param>
+          <type>const Mat &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>boundary</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" line="113" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" bodystart="112" bodyend="117"/>
+        <references refid="namespacetld_1aa675c63accc23d4c92133be7f5d93f1f" compoundref="_t_l_d_util_8h" startline="64" endline="70">tldExtractDimsFromArray</references>
+        <references refid="namespacetld_1a1bf69e140ab91bdd7bfc794a93a1a096" compoundref="_t_l_d_util_8cpp" startline="104" endline="109">tldExtractNormalizedPatch</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1a7bbab27cff309fae59b25b37268c22d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::tldExtractNormalizedPatchRect</definition>
+        <argsstring>(const Mat &amp;img, Rect *rect, float *output)</argsstring>
+        <name>tldExtractNormalizedPatchRect</name>
+        <param>
+          <type>const Mat &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>Rect *</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" line="120" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" bodystart="119" bodyend="122"/>
+        <references refid="namespacetld_1a1bf69e140ab91bdd7bfc794a93a1a096" compoundref="_t_l_d_util_8cpp" startline="104" endline="109">tldExtractNormalizedPatch</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1a34eeb46b85efa569359847443ee96eba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float tld::CalculateMean</definition>
+        <argsstring>(float *value, int n)</argsstring>
+        <name>CalculateMean</name>
+        <param>
+          <type>float *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" line="125" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" bodystart="124" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1a53d4a014fd3df2b3e8a3026a1c1768a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float tld::tldCalcVariance</definition>
+        <argsstring>(float *value, int n)</argsstring>
+        <name>tldCalcVariance</name>
+        <param>
+          <type>float *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" line="137"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1a19776566a098d3b1fb15030e945a8c14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float tld::tldBBOverlap</definition>
+        <argsstring>(int *bb1, int *bb2)</argsstring>
+        <name>tldBBOverlap</name>
+        <param>
+          <type>int *</type>
+          <declname>bb1</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>bb2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" line="153" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" bodystart="152" bodyend="182"/>
+        <referencedby refid="namespacetld_1a6db9360f372b596337a075a09b715ee4" compoundref="_t_l_d_util_8cpp" startline="184" endline="193">tldOverlapOne</referencedby>
+        <referencedby refid="namespacetld_1afe4210f75b17cb13bb95c8d4c08a543a" compoundref="_t_l_d_util_8cpp" startline="195" endline="203">tldOverlapRectRect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1a6db9360f372b596337a075a09b715ee4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::tldOverlapOne</definition>
+        <argsstring>(int *windows, int numWindows, int index, vector&lt; int &gt; *indices, float *overlap)</argsstring>
+        <name>tldOverlapOne</name>
+        <param>
+          <type>int *</type>
+          <declname>windows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numWindows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>vector&lt; int &gt; *</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>overlap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" line="185" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" bodystart="184" bodyend="193"/>
+        <references refid="namespacetld_1a19776566a098d3b1fb15030e945a8c14" compoundref="_t_l_d_util_8cpp" startline="152" endline="182">tldBBOverlap</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1afe4210f75b17cb13bb95c8d4c08a543a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float tld::tldOverlapRectRect</definition>
+        <argsstring>(Rect r1, Rect r2)</argsstring>
+        <name>tldOverlapRectRect</name>
+        <param>
+          <type>Rect</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>Rect</type>
+          <declname>r2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" line="196" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" bodystart="195" bodyend="203"/>
+        <references refid="namespacetld_1a19776566a098d3b1fb15030e945a8c14" compoundref="_t_l_d_util_8cpp" startline="152" endline="182">tldBBOverlap</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1a05ea18fc911b12873acd2211f83689f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Rect *</type>
+        <definition>Rect* tld::tldCopyRect</definition>
+        <argsstring>(Rect *r)</argsstring>
+        <name>tldCopyRect</name>
+        <param>
+          <type>Rect *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" line="206" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" bodystart="205" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1ab71405a293095380c793589e8d59d4c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::tldOverlapRect</definition>
+        <argsstring>(int *windows, int numWindows, Rect *boundary, float *overlap)</argsstring>
+        <name>tldOverlapRect</name>
+        <param>
+          <type>int *</type>
+          <declname>windows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numWindows</declname>
+        </param>
+        <param>
+          <type>Rect *</type>
+          <declname>boundary</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>overlap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" line="216" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" bodystart="215" bodyend="224"/>
+        <references refid="namespacetld_1aa9470de30170cb8b3f877dcae45df1b1">tldOverlap</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1aa9470de30170cb8b3f877dcae45df1b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::tldOverlap</definition>
+        <argsstring>(int *windows, int numWindows, int *boundary, float *overlap)</argsstring>
+        <name>tldOverlap</name>
+        <param>
+          <type>int *</type>
+          <declname>windows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numWindows</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>boundary</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>overlap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" line="227"/>
+        <referencedby refid="namespacetld_1ab71405a293095380c793589e8d59d4c7" compoundref="_t_l_d_util_8cpp" startline="215" endline="224">tldOverlapRect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1a1899d52f23a94a9042fb95249b4714ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tld::tldSortByOverlapDesc</definition>
+        <argsstring>(pair&lt; int, float &gt; bb1, pair&lt; int, float &gt; bb2)</argsstring>
+        <name>tldSortByOverlapDesc</name>
+        <param>
+          <type>pair&lt; int, float &gt;</type>
+          <declname>bb1</declname>
+        </param>
+        <param>
+          <type>pair&lt; int, float &gt;</type>
+          <declname>bb2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" line="241" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" bodystart="240" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1a8b28e6d4868ad30e826a6248dd2ae7a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tld::tldIsInside</definition>
+        <argsstring>(int *bb1, int *bb2)</argsstring>
+        <name>tldIsInside</name>
+        <param>
+          <type>int *</type>
+          <declname>bb1</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>bb2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.cpp" line="247"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1add9262bbbd3c30e3b3bf213e9db13eaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T1</type>
+          </param>
+          <param>
+            <type>class T2</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void tld::tldConvertBB</definition>
+        <argsstring>(T1 *src, T2 *dest)</argsstring>
+        <name>tldConvertBB</name>
+        <param>
+          <type>T1 *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>T2 *</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" line="41" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" bodystart="40" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1a30509a7fb73b21f5006046344ffab792" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void tld::tldCopyBB</definition>
+        <argsstring>(T *src, T *dest)</argsstring>
+        <name>tldCopyBB</name>
+        <param>
+          <type>T *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" line="50" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1a8ea4baf48c6ac8c9fc11d0aa36c612e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void tld::tldCopyBoundaryToArray</definition>
+        <argsstring>(T x, T y, T width, T height, T *array)</argsstring>
+        <name>tldCopyBoundaryToArray</name>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" line="56" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" bodystart="55" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1aa675c63accc23d4c92133be7f5d93f1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void tld::tldExtractDimsFromArray</definition>
+        <argsstring>(T *boundary, T *x, T *y, T *width, T *height)</argsstring>
+        <name>tldExtractDimsFromArray</name>
+        <param>
+          <type>T *</type>
+          <declname>boundary</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" line="65" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" bodystart="64" bodyend="70"/>
+        <referencedby refid="namespacetld_1adf30e26ca7073712ac0eae4a1f1136ba" compoundref="_t_l_d_util_8cpp" startline="112" endline="117">tldExtractNormalizedPatchBB</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1acca496d96df1e566f1a08bebb7e75f1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void tld::tldRectToArray</definition>
+        <argsstring>(cv::Rect rect, T *boundary)</argsstring>
+        <name>tldRectToArray</name>
+        <param>
+          <type>cv::Rect</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>boundary</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" line="74" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" bodystart="73" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1a8f2edbadab9bc04731c73571340969a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>cv::Rect</type>
+        <definition>cv::Rect tld::tldArrayToRect</definition>
+        <argsstring>(T *boundary)</argsstring>
+        <name>tldArrayToRect</name>
+        <param>
+          <type>T *</type>
+          <declname>boundary</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" line="83" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" bodystart="82" bodyend="91"/>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1a52701d320c58fc890fc8e6321aaae61c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::tldNormalizeImg</definition>
+        <argsstring>(const cv::Mat &amp;img, float *result, int size)</argsstring>
+        <name>tldNormalizeImg</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" line="99"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1ac965be65b1eae7ec666c3bfbe9da065e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::tldExtractNormalizedPatch</definition>
+        <argsstring>(const cv::Mat &amp;img, int x, int y, int w, int h, float *output)</argsstring>
+        <name>tldExtractNormalizedPatch</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" line="101"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1a44b5f4d4d087d3369129bdc92e2a555a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::tldExtractNormalizedPatchBB</definition>
+        <argsstring>(const cv::Mat &amp;img, int *boundary, float *output)</argsstring>
+        <name>tldExtractNormalizedPatchBB</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>boundary</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" line="102"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1aa6c803037b38609e1fceadbb2ad8a75c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::tldExtractNormalizedPatchRect</definition>
+        <argsstring>(const cv::Mat &amp;img, cv::Rect *rect, float *output)</argsstring>
+        <name>tldExtractNormalizedPatchRect</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>cv::Rect *</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" line="103"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1a16fe2b016494fa66be611f723ed7bebc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::tldExtractSubImage</definition>
+        <argsstring>(const cv::Mat &amp;img, cv::Mat &amp;subImage, int *boundary)</argsstring>
+        <name>tldExtractSubImage</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>subImage</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>boundary</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" line="104"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1a7699b7dc20502fc6d7c5c6c6cbd4be7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::tldExtractSubImage</definition>
+        <argsstring>(const cv::Mat &amp;img, cv::Mat &amp;subImage, int x, int y, int w, int h)</argsstring>
+        <name>tldExtractSubImage</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>subImage</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" line="105"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1ac0065f4088098aca6e1edd49b2b0f9d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float tld::tldCalcMean</definition>
+        <argsstring>(float *value, int n)</argsstring>
+        <name>tldCalcMean</name>
+        <param>
+          <type>float *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" line="107"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1acaf374df081816ecaf9079e200a8f5af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tld::tldSortByOverlapDesc</definition>
+        <argsstring>(std::pair&lt; int, float &gt; bb1, std::pair&lt; int, float &gt; bb2)</argsstring>
+        <name>tldSortByOverlapDesc</name>
+        <param>
+          <type>std::pair&lt; int, float &gt;</type>
+          <declname>bb1</declname>
+        </param>
+        <param>
+          <type>std::pair&lt; int, float &gt;</type>
+          <declname>bb2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" line="110"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1a41fd3532bec99e023ff75b4706632182" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>cv::Rect *</type>
+        <definition>cv::Rect* tld::tldCopyRect</definition>
+        <argsstring>(cv::Rect *r)</argsstring>
+        <name>tldCopyRect</name>
+        <param>
+          <type>cv::Rect *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" line="111"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1afdab54607fed863cdc408f72fd0f774b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float tld::tldOverlapRectRect</definition>
+        <argsstring>(cv::Rect r1, cv::Rect r2)</argsstring>
+        <name>tldOverlapRectRect</name>
+        <param>
+          <type>cv::Rect</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>cv::Rect</type>
+          <declname>r2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" line="114"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1a018caa7bf4a554814fe61a679a219489" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::tldOverlapOne</definition>
+        <argsstring>(int *windows, int numWindows, int index, std::vector&lt; int &gt; *indices, float *overlap)</argsstring>
+        <name>tldOverlapOne</name>
+        <param>
+          <type>int *</type>
+          <declname>windows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numWindows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt; *</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>overlap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" line="115"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1ae87c7dbe6b4da1e1923c42bec18caaf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::tldOverlapRect</definition>
+        <argsstring>(int *windows, int numWindows, cv::Rect *boundary, float *overlap)</argsstring>
+        <name>tldOverlapRect</name>
+        <param>
+          <type>int *</type>
+          <declname>windows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numWindows</declname>
+        </param>
+        <param>
+          <type>cv::Rect *</type>
+          <declname>boundary</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>overlap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h" line="117"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1a5b279570cd95fb0067a41b5a222e2642" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tld::getopt</definition>
+        <argsstring>(int argc, char **argv, char *opts)</argsstring>
+        <name>getopt</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Config.cpp" line="512"/>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1aed141e469725fa20f8828efbe29e57f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void tld::mouseHandler</definition>
+        <argsstring>(int event, int x, int y, int flags, void *param)</argsstring>
+        <name>mouseHandler</name>
+        <param>
+          <type>int</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp" line="79" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp" bodystart="78" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetld_1a75cd208f8053ece69d5d7de9c2ed33fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tld::getBBFromUser</definition>
+        <argsstring>(IplImage *img, CvRect &amp;rect, Gui *gui)</argsstring>
+        <name>getBBFromUser</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>CvRect &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type><ref refid="classtld_1_1_gui" kindref="compound">Gui</ref> *</type>
+          <declname>gui</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a bounding box from the user. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>img</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>image to display </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CvRect containing the coordinates of the bounding box </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gui</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initialized gui </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>PROGRAM_EXIT if &apos;q&apos; or &apos;Q&apos; pressed, SUCCESS if everything went right </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp" line="109"/>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Clemens Korner </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.cpp" line="35"/>
+  </compounddef>
+</doxygen>

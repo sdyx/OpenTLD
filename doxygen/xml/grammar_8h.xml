@@ -1,0 +1,749 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="grammar_8h" kind="file">
+    <compoundname>grammar.h</compoundname>
+    <includedby refid="libconfig_8c" local="yes">src/3rdparty/libconfig/libconfig.c</includedby>
+    <includedby refid="scanner_8c" local="yes">src/3rdparty/libconfig/scanner.c</includedby>
+    <invincdepgraph>
+      <node id="1180">
+        <label>src/3rdparty/libconfig/libconfig.c</label>
+        <link refid="libconfig_8c"/>
+      </node>
+      <node id="1179">
+        <label>src/3rdparty/libconfig/grammar.h</label>
+        <link refid="grammar.h"/>
+        <childnode refid="1180" relation="include">
+        </childnode>
+        <childnode refid="1181" relation="include">
+        </childnode>
+      </node>
+      <node id="1181">
+        <label>src/3rdparty/libconfig/scanner.c</label>
+        <link refid="scanner_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="union_y_y_s_t_y_p_e" prot="public">YYSTYPE</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="grammar_8h_1a57e5660f647aa60e11ca9782e158949d" prot="public" static="no">
+        <name>TOK_BOOLEAN</name>
+        <initializer>258</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="65" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grammar_8h_1afe8234318c40d23aa0ef8d7c6c3bb613" prot="public" static="no">
+        <name>TOK_INTEGER</name>
+        <initializer>259</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="66" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grammar_8h_1abbb8340fa8257a75865a060cb4f492d5" prot="public" static="no">
+        <name>TOK_HEX</name>
+        <initializer>260</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="67" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grammar_8h_1a88bad54911209df594dc18cf5a862d77" prot="public" static="no">
+        <name>TOK_INTEGER64</name>
+        <initializer>261</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="68" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grammar_8h_1ad9c1282beda9a0fcb200efcaf95a2702" prot="public" static="no">
+        <name>TOK_HEX64</name>
+        <initializer>262</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="69" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grammar_8h_1a3867e462c2d373a53251ca0b835aada5" prot="public" static="no">
+        <name>TOK_FLOAT</name>
+        <initializer>263</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="70" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grammar_8h_1a438ebcf2bfac5fd8af5356f3c0305839" prot="public" static="no">
+        <name>TOK_STRING</name>
+        <initializer>264</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="71" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grammar_8h_1ad988fa86b948db0ed4e4093dea41c9d4" prot="public" static="no">
+        <name>TOK_NAME</name>
+        <initializer>265</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="72" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grammar_8h_1a2aee9f170594b125ed4275759d0f01f6" prot="public" static="no">
+        <name>TOK_EQUALS</name>
+        <initializer>266</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="73" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grammar_8h_1a6d75325443212b60baee084ea24ccc62" prot="public" static="no">
+        <name>TOK_NEWLINE</name>
+        <initializer>267</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="74" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grammar_8h_1a937ba1cd996133cb5532011c310d8bdc" prot="public" static="no">
+        <name>TOK_ARRAY_START</name>
+        <initializer>268</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="75" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grammar_8h_1a2e7af18fe1642f5eb00831393339400b" prot="public" static="no">
+        <name>TOK_ARRAY_END</name>
+        <initializer>269</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="76" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grammar_8h_1a59dead6373ce8a009c37c2acc6bb03de" prot="public" static="no">
+        <name>TOK_LIST_START</name>
+        <initializer>270</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="77" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grammar_8h_1a8856a703899dd9d15e7e4eb179aa473f" prot="public" static="no">
+        <name>TOK_LIST_END</name>
+        <initializer>271</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="78" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grammar_8h_1ae83b5d27d87a650e964b21698da02fda" prot="public" static="no">
+        <name>TOK_COMMA</name>
+        <initializer>272</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="79" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grammar_8h_1a063013921856046cbea18e57736dc1e6" prot="public" static="no">
+        <name>TOK_GROUP_START</name>
+        <initializer>273</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="80" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grammar_8h_1a1a07150c25e16b69bc8b8f1a2dd4a068" prot="public" static="no">
+        <name>TOK_GROUP_END</name>
+        <initializer>274</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="81" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grammar_8h_1aeed3603d6bcfa2873994098d2bffe4be" prot="public" static="no">
+        <name>TOK_SEMICOLON</name>
+        <initializer>275</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="82" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grammar_8h_1aecad1fed21ec8638deecc2c2679b65e1" prot="public" static="no">
+        <name>TOK_GARBAGE</name>
+        <initializer>276</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="83" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grammar_8h_1a5d0d20b374e87f59d2aa1df79daf060b" prot="public" static="no">
+        <name>TOK_ERROR</name>
+        <initializer>277</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="84" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grammar_8h_1a2e3dbf169c5ee24cf6af37c61cf3995d" prot="public" static="no">
+        <name>YYSTYPE_IS_TRIVIAL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="106" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grammar_8h_1a4ccf5315e8f5c1cec48ec67ca1771e3a" prot="public" static="no">
+        <name>yystype</name>
+        <initializer><ref refid="union_y_y_s_t_y_p_e" kindref="compound">YYSTYPE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="107" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grammar_8h_1af0232d21120b2cfc5e5f82f0fbadab3c" prot="public" static="no">
+        <name>YYSTYPE_IS_DECLARED</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="108" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9" prot="public" static="no">
+        <name>yytokentype</name>
+        <enumvalue id="grammar_8c_1a15c9f7bd2f0e9686df5d9df4f3314aa9a86e6652aa292c8e978b68ace2b0f1300" prot="public">
+          <name>TOK_BOOLEAN</name>
+          <initializer> 258</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8c_1a15c9f7bd2f0e9686df5d9df4f3314aa9a7a97eb6460bcde5f66faca2e51730a82" prot="public">
+          <name>TOK_INTEGER</name>
+          <initializer> 259</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8c_1a15c9f7bd2f0e9686df5d9df4f3314aa9a1f511c1ba767bf05c44dacfa8eeefc2d" prot="public">
+          <name>TOK_HEX</name>
+          <initializer> 260</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8c_1a15c9f7bd2f0e9686df5d9df4f3314aa9a4c4ffb217c20c46d7d35faeac7b2ada2" prot="public">
+          <name>TOK_INTEGER64</name>
+          <initializer> 261</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8c_1a15c9f7bd2f0e9686df5d9df4f3314aa9a446a605af769360d9c5b511e02be998c" prot="public">
+          <name>TOK_HEX64</name>
+          <initializer> 262</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8c_1a15c9f7bd2f0e9686df5d9df4f3314aa9add470148bc49b9406cab8014f1a05e1a" prot="public">
+          <name>TOK_FLOAT</name>
+          <initializer> 263</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8c_1a15c9f7bd2f0e9686df5d9df4f3314aa9a6aed8afdbbec5110277334eba1c8d1ef" prot="public">
+          <name>TOK_STRING</name>
+          <initializer> 264</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8c_1a15c9f7bd2f0e9686df5d9df4f3314aa9a2521ed04c163bb1cbdd6af6a3674cb8f" prot="public">
+          <name>TOK_NAME</name>
+          <initializer> 265</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8c_1a15c9f7bd2f0e9686df5d9df4f3314aa9a738fab9f730a0fb766fa02328739b7c3" prot="public">
+          <name>TOK_EQUALS</name>
+          <initializer> 266</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8c_1a15c9f7bd2f0e9686df5d9df4f3314aa9af95d944540ec4759be1efca8422b1db7" prot="public">
+          <name>TOK_NEWLINE</name>
+          <initializer> 267</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8c_1a15c9f7bd2f0e9686df5d9df4f3314aa9a6b912e59d3b01ff97b3cdc99e34886e8" prot="public">
+          <name>TOK_ARRAY_START</name>
+          <initializer> 268</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8c_1a15c9f7bd2f0e9686df5d9df4f3314aa9a32d61fe2e7d849bcd1e50d909c26eb83" prot="public">
+          <name>TOK_ARRAY_END</name>
+          <initializer> 269</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8c_1a15c9f7bd2f0e9686df5d9df4f3314aa9ac508a95b48de48b3afb83ffc60156165" prot="public">
+          <name>TOK_LIST_START</name>
+          <initializer> 270</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8c_1a15c9f7bd2f0e9686df5d9df4f3314aa9a10da87e4de3f19460926990feb2b8eea" prot="public">
+          <name>TOK_LIST_END</name>
+          <initializer> 271</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8c_1a15c9f7bd2f0e9686df5d9df4f3314aa9a62cdeef3d4613afb658caae912e99272" prot="public">
+          <name>TOK_COMMA</name>
+          <initializer> 272</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8c_1a15c9f7bd2f0e9686df5d9df4f3314aa9a37a6f71fb6a5c296e1fb86c95216a317" prot="public">
+          <name>TOK_GROUP_START</name>
+          <initializer> 273</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8c_1a15c9f7bd2f0e9686df5d9df4f3314aa9a125079fe82e20957e1cab0f5eb29e655" prot="public">
+          <name>TOK_GROUP_END</name>
+          <initializer> 274</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8c_1a15c9f7bd2f0e9686df5d9df4f3314aa9aea2ea79171e8d0363830add7169ff88f" prot="public">
+          <name>TOK_SEMICOLON</name>
+          <initializer> 275</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8c_1a15c9f7bd2f0e9686df5d9df4f3314aa9a47ab3580bbebe6fe293dda08d328dec0" prot="public">
+          <name>TOK_GARBAGE</name>
+          <initializer> 276</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8c_1a15c9f7bd2f0e9686df5d9df4f3314aa9a1e45d4c51261381ea32625e93e1c6ea0" prot="public">
+          <name>TOK_ERROR</name>
+          <initializer> 277</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a86e6652aa292c8e978b68ace2b0f1300" prot="public">
+          <name>TOK_BOOLEAN</name>
+          <initializer> 258</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a7a97eb6460bcde5f66faca2e51730a82" prot="public">
+          <name>TOK_INTEGER</name>
+          <initializer> 259</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a1f511c1ba767bf05c44dacfa8eeefc2d" prot="public">
+          <name>TOK_HEX</name>
+          <initializer> 260</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a4c4ffb217c20c46d7d35faeac7b2ada2" prot="public">
+          <name>TOK_INTEGER64</name>
+          <initializer> 261</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a446a605af769360d9c5b511e02be998c" prot="public">
+          <name>TOK_HEX64</name>
+          <initializer> 262</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9add470148bc49b9406cab8014f1a05e1a" prot="public">
+          <name>TOK_FLOAT</name>
+          <initializer> 263</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a6aed8afdbbec5110277334eba1c8d1ef" prot="public">
+          <name>TOK_STRING</name>
+          <initializer> 264</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a2521ed04c163bb1cbdd6af6a3674cb8f" prot="public">
+          <name>TOK_NAME</name>
+          <initializer> 265</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a738fab9f730a0fb766fa02328739b7c3" prot="public">
+          <name>TOK_EQUALS</name>
+          <initializer> 266</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9af95d944540ec4759be1efca8422b1db7" prot="public">
+          <name>TOK_NEWLINE</name>
+          <initializer> 267</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a6b912e59d3b01ff97b3cdc99e34886e8" prot="public">
+          <name>TOK_ARRAY_START</name>
+          <initializer> 268</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a32d61fe2e7d849bcd1e50d909c26eb83" prot="public">
+          <name>TOK_ARRAY_END</name>
+          <initializer> 269</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9ac508a95b48de48b3afb83ffc60156165" prot="public">
+          <name>TOK_LIST_START</name>
+          <initializer> 270</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a10da87e4de3f19460926990feb2b8eea" prot="public">
+          <name>TOK_LIST_END</name>
+          <initializer> 271</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a62cdeef3d4613afb658caae912e99272" prot="public">
+          <name>TOK_COMMA</name>
+          <initializer> 272</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a37a6f71fb6a5c296e1fb86c95216a317" prot="public">
+          <name>TOK_GROUP_START</name>
+          <initializer> 273</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a125079fe82e20957e1cab0f5eb29e655" prot="public">
+          <name>TOK_GROUP_END</name>
+          <initializer> 274</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9aea2ea79171e8d0363830add7169ff88f" prot="public">
+          <name>TOK_SEMICOLON</name>
+          <initializer> 275</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a47ab3580bbebe6fe293dda08d328dec0" prot="public">
+          <name>TOK_GARBAGE</name>
+          <initializer> 276</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a1e45d4c51261381ea32625e93e1c6ea0" prot="public">
+          <name>TOK_ERROR</name>
+          <initializer> 277</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="41" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" bodystart="41" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="grammar_8h_1a09fb1f7c65e10ed0f0c1aa8ef7ce16b5" prot="public" static="no">
+        <type>union <ref refid="union_y_y_s_t_y_p_e" kindref="compound">YYSTYPE</ref></type>
+        <definition>typedef union YYSTYPE  YYSTYPE</definition>
+        <argsstring></argsstring>
+        <name>YYSTYPE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h" line="105"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>A<sp/>Bison<sp/>parser,<sp/>made<sp/>by<sp/>GNU<sp/>Bison<sp/>2.4.1.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Skeleton<sp/>interface<sp/>for<sp/>Bison&apos;s<sp/>Yacc-like<sp/>parsers<sp/>in<sp/>C</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>Copyright<sp/>(C)<sp/>1984,<sp/>1989,<sp/>1990,<sp/>2000,<sp/>2001,<sp/>2002,<sp/>2003,<sp/>2004,<sp/>2005,<sp/>2006</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>As<sp/>a<sp/>special<sp/>exception,<sp/>you<sp/>may<sp/>create<sp/>a<sp/>larger<sp/>work<sp/>that<sp/>contains</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/>part<sp/>or<sp/>all<sp/>of<sp/>the<sp/>Bison<sp/>parser<sp/>skeleton<sp/>and<sp/>distribute<sp/>that<sp/>work</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/>under<sp/>terms<sp/>of<sp/>your<sp/>choice,<sp/>so<sp/>long<sp/>as<sp/>that<sp/>work<sp/>isn&apos;t<sp/>itself<sp/>a</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/>parser<sp/>generator<sp/>using<sp/>the<sp/>skeleton<sp/>or<sp/>a<sp/>modified<sp/>version<sp/>thereof</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/>as<sp/>a<sp/>parser<sp/>skeleton.<sp/><sp/>Alternatively,<sp/>if<sp/>you<sp/>modify<sp/>or<sp/>redistribute</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/>the<sp/>parser<sp/>skeleton<sp/>itself,<sp/>you<sp/>may<sp/>(at<sp/>your<sp/>option)<sp/>remove<sp/>this</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/>special<sp/>exception,<sp/>which<sp/>will<sp/>cause<sp/>the<sp/>skeleton<sp/>and<sp/>the<sp/>resulting</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/>Bison<sp/>output<sp/>files<sp/>to<sp/>be<sp/>licensed<sp/>under<sp/>the<sp/>GNU<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/>License<sp/>without<sp/>this<sp/>special<sp/>exception.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/>This<sp/>special<sp/>exception<sp/>was<sp/>added<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation<sp/>in</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/>version<sp/>2.2<sp/>of<sp/>Bison.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Tokens.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>YYTOKENTYPE</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>YYTOKENTYPE</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Put<sp/>the<sp/>tokens<sp/>into<sp/>the<sp/>symbol<sp/>table,<sp/>so<sp/>that<sp/>GDB<sp/>and<sp/>other<sp/>debuggers</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>know<sp/>about<sp/>them.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9" refkind="member"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="grammar_8c_1a15c9f7bd2f0e9686df5d9df4f3314aa9" kindref="member">yytokentype</ref><sp/>{</highlight></codeline>
+<codeline lineno="42" refid="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a86e6652aa292c8e978b68ace2b0f1300" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="grammar_8c_1a57e5660f647aa60e11ca9782e158949d" kindref="member">TOK_BOOLEAN</ref><sp/>=<sp/>258,</highlight></codeline>
+<codeline lineno="43" refid="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a7a97eb6460bcde5f66faca2e51730a82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="grammar_8c_1afe8234318c40d23aa0ef8d7c6c3bb613" kindref="member">TOK_INTEGER</ref><sp/>=<sp/>259,</highlight></codeline>
+<codeline lineno="44" refid="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a1f511c1ba767bf05c44dacfa8eeefc2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="grammar_8c_1abbb8340fa8257a75865a060cb4f492d5" kindref="member">TOK_HEX</ref><sp/>=<sp/>260,</highlight></codeline>
+<codeline lineno="45" refid="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a4c4ffb217c20c46d7d35faeac7b2ada2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="grammar_8c_1a88bad54911209df594dc18cf5a862d77" kindref="member">TOK_INTEGER64</ref><sp/>=<sp/>261,</highlight></codeline>
+<codeline lineno="46" refid="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a446a605af769360d9c5b511e02be998c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="grammar_8c_1ad9c1282beda9a0fcb200efcaf95a2702" kindref="member">TOK_HEX64</ref><sp/>=<sp/>262,</highlight></codeline>
+<codeline lineno="47" refid="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9add470148bc49b9406cab8014f1a05e1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="grammar_8c_1a3867e462c2d373a53251ca0b835aada5" kindref="member">TOK_FLOAT</ref><sp/>=<sp/>263,</highlight></codeline>
+<codeline lineno="48" refid="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a6aed8afdbbec5110277334eba1c8d1ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="grammar_8c_1a438ebcf2bfac5fd8af5356f3c0305839" kindref="member">TOK_STRING</ref><sp/>=<sp/>264,</highlight></codeline>
+<codeline lineno="49" refid="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a2521ed04c163bb1cbdd6af6a3674cb8f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="grammar_8c_1ad988fa86b948db0ed4e4093dea41c9d4" kindref="member">TOK_NAME</ref><sp/>=<sp/>265,</highlight></codeline>
+<codeline lineno="50" refid="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a738fab9f730a0fb766fa02328739b7c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="grammar_8c_1a2aee9f170594b125ed4275759d0f01f6" kindref="member">TOK_EQUALS</ref><sp/>=<sp/>266,</highlight></codeline>
+<codeline lineno="51" refid="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9af95d944540ec4759be1efca8422b1db7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="grammar_8c_1a6d75325443212b60baee084ea24ccc62" kindref="member">TOK_NEWLINE</ref><sp/>=<sp/>267,</highlight></codeline>
+<codeline lineno="52" refid="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a6b912e59d3b01ff97b3cdc99e34886e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="grammar_8c_1a937ba1cd996133cb5532011c310d8bdc" kindref="member">TOK_ARRAY_START</ref><sp/>=<sp/>268,</highlight></codeline>
+<codeline lineno="53" refid="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a32d61fe2e7d849bcd1e50d909c26eb83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="grammar_8c_1a2e7af18fe1642f5eb00831393339400b" kindref="member">TOK_ARRAY_END</ref><sp/>=<sp/>269,</highlight></codeline>
+<codeline lineno="54" refid="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9ac508a95b48de48b3afb83ffc60156165" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="grammar_8c_1a59dead6373ce8a009c37c2acc6bb03de" kindref="member">TOK_LIST_START</ref><sp/>=<sp/>270,</highlight></codeline>
+<codeline lineno="55" refid="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a10da87e4de3f19460926990feb2b8eea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="grammar_8c_1a8856a703899dd9d15e7e4eb179aa473f" kindref="member">TOK_LIST_END</ref><sp/>=<sp/>271,</highlight></codeline>
+<codeline lineno="56" refid="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a62cdeef3d4613afb658caae912e99272" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="grammar_8c_1ae83b5d27d87a650e964b21698da02fda" kindref="member">TOK_COMMA</ref><sp/>=<sp/>272,</highlight></codeline>
+<codeline lineno="57" refid="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a37a6f71fb6a5c296e1fb86c95216a317" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="grammar_8c_1a063013921856046cbea18e57736dc1e6" kindref="member">TOK_GROUP_START</ref><sp/>=<sp/>273,</highlight></codeline>
+<codeline lineno="58" refid="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a125079fe82e20957e1cab0f5eb29e655" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="grammar_8c_1a1a07150c25e16b69bc8b8f1a2dd4a068" kindref="member">TOK_GROUP_END</ref><sp/>=<sp/>274,</highlight></codeline>
+<codeline lineno="59" refid="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9aea2ea79171e8d0363830add7169ff88f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="grammar_8c_1aeed3603d6bcfa2873994098d2bffe4be" kindref="member">TOK_SEMICOLON</ref><sp/>=<sp/>275,</highlight></codeline>
+<codeline lineno="60" refid="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a47ab3580bbebe6fe293dda08d328dec0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="grammar_8c_1aecad1fed21ec8638deecc2c2679b65e1" kindref="member">TOK_GARBAGE</ref><sp/>=<sp/>276,</highlight></codeline>
+<codeline lineno="61" refid="grammar_8h_1a15c9f7bd2f0e9686df5d9df4f3314aa9a1e45d4c51261381ea32625e93e1c6ea0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="grammar_8c_1a5d0d20b374e87f59d2aa1df79daf060b" kindref="member">TOK_ERROR</ref><sp/>=<sp/>277</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>Tokens.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="grammar_8h_1a57e5660f647aa60e11ca9782e158949d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOK_BOOLEAN<sp/>258</highlight></codeline>
+<codeline lineno="66" refid="grammar_8h_1afe8234318c40d23aa0ef8d7c6c3bb613" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TOK_INTEGER<sp/>259</highlight></codeline>
+<codeline lineno="67" refid="grammar_8h_1abbb8340fa8257a75865a060cb4f492d5" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TOK_HEX<sp/>260</highlight></codeline>
+<codeline lineno="68" refid="grammar_8h_1a88bad54911209df594dc18cf5a862d77" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TOK_INTEGER64<sp/>261</highlight></codeline>
+<codeline lineno="69" refid="grammar_8h_1ad9c1282beda9a0fcb200efcaf95a2702" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TOK_HEX64<sp/>262</highlight></codeline>
+<codeline lineno="70" refid="grammar_8h_1a3867e462c2d373a53251ca0b835aada5" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TOK_FLOAT<sp/>263</highlight></codeline>
+<codeline lineno="71" refid="grammar_8h_1a438ebcf2bfac5fd8af5356f3c0305839" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TOK_STRING<sp/>264</highlight></codeline>
+<codeline lineno="72" refid="grammar_8h_1ad988fa86b948db0ed4e4093dea41c9d4" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TOK_NAME<sp/>265</highlight></codeline>
+<codeline lineno="73" refid="grammar_8h_1a2aee9f170594b125ed4275759d0f01f6" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TOK_EQUALS<sp/>266</highlight></codeline>
+<codeline lineno="74" refid="grammar_8h_1a6d75325443212b60baee084ea24ccc62" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TOK_NEWLINE<sp/>267</highlight></codeline>
+<codeline lineno="75" refid="grammar_8h_1a937ba1cd996133cb5532011c310d8bdc" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TOK_ARRAY_START<sp/>268</highlight></codeline>
+<codeline lineno="76" refid="grammar_8h_1a2e7af18fe1642f5eb00831393339400b" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TOK_ARRAY_END<sp/>269</highlight></codeline>
+<codeline lineno="77" refid="grammar_8h_1a59dead6373ce8a009c37c2acc6bb03de" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TOK_LIST_START<sp/>270</highlight></codeline>
+<codeline lineno="78" refid="grammar_8h_1a8856a703899dd9d15e7e4eb179aa473f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TOK_LIST_END<sp/>271</highlight></codeline>
+<codeline lineno="79" refid="grammar_8h_1ae83b5d27d87a650e964b21698da02fda" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TOK_COMMA<sp/>272</highlight></codeline>
+<codeline lineno="80" refid="grammar_8h_1a063013921856046cbea18e57736dc1e6" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TOK_GROUP_START<sp/>273</highlight></codeline>
+<codeline lineno="81" refid="grammar_8h_1a1a07150c25e16b69bc8b8f1a2dd4a068" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TOK_GROUP_END<sp/>274</highlight></codeline>
+<codeline lineno="82" refid="grammar_8h_1aeed3603d6bcfa2873994098d2bffe4be" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TOK_SEMICOLON<sp/>275</highlight></codeline>
+<codeline lineno="83" refid="grammar_8h_1aecad1fed21ec8638deecc2c2679b65e1" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TOK_GARBAGE<sp/>276</highlight></codeline>
+<codeline lineno="84" refid="grammar_8h_1a5d0d20b374e87f59d2aa1df79daf060b" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TOK_ERROR<sp/>277</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!<sp/>defined<sp/>YYSTYPE<sp/>&amp;&amp;<sp/>!<sp/>defined<sp/>YYSTYPE_IS_DECLARED</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal"><ref refid="union_y_y_s_t_y_p_e" kindref="compound">YYSTYPE</ref></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Line<sp/>1676<sp/>of<sp/>yacc.c<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#line<sp/>85<sp/>&quot;grammar.y&quot;</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="union_y_y_s_t_y_p_e_1ae9d3f6cba410d8f367f34437acf8c9a2" kindref="member">ival</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="union_y_y_s_t_y_p_e_1a943fdbe79b7f976c66089ab5170dff54" kindref="member">llval</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="union_y_y_s_t_y_p_e_1a31eb6403902c1580af29230db1ecc872" kindref="member">fval</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="union_y_y_s_t_y_p_e_1a73a5074a72319891e5442106deeb667b" kindref="member">sval</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Line<sp/>1676<sp/>of<sp/>yacc.c<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#line<sp/>105<sp/>&quot;grammar.h&quot;</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"></highlight><highlight class="normal">}<sp/><ref refid="union_y_y_s_t_y_p_e" kindref="compound">YYSTYPE</ref>;</highlight></codeline>
+<codeline lineno="106" refid="grammar_8h_1a2e3dbf169c5ee24cf6af37c61cf3995d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>YYSTYPE_IS_TRIVIAL<sp/>1</highlight></codeline>
+<codeline lineno="107" refid="grammar_8h_1a4ccf5315e8f5c1cec48ec67ca1771e3a" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>yystype<sp/>YYSTYPE<sp/></highlight><highlight class="comment">/*<sp/>obsolescent;<sp/>will<sp/>be<sp/>withdrawn<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="grammar_8h_1af0232d21120b2cfc5e5f82f0fbadab3c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>YYSTYPE_IS_DECLARED<sp/>1</highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.h"/>
+  </compounddef>
+</doxygen>

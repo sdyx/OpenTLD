@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="unionyyalloc" kind="union" prot="public">
+    <compoundname>yyalloc</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionyyalloc_1a4800e0520a89a4789afa7b5d82197e65" prot="public" static="no" mutable="no">
+        <type><ref refid="grammar_8c_1ade5b97f0021a4f6c5922ead3744ab297" kindref="member">yytype_int16</ref></type>
+        <definition>yytype_int16 yyalloc::yyss_alloc</definition>
+        <argsstring></argsstring>
+        <name>yyss_alloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.c" line="397" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.c" bodystart="397" bodyend="-1"/>
+        <referencedby refid="grammar_8c_1aa95461e463ec8927a2b16e55683cfcaf" compoundref="grammar_8c" startline="1223" endline="1994">yyparse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="unionyyalloc_1a9326f4fdc6f737a929444427836d8928" prot="public" static="no" mutable="no">
+        <type><ref refid="union_y_y_s_t_y_p_e" kindref="compound">YYSTYPE</ref></type>
+        <definition>YYSTYPE yyalloc::yyvs_alloc</definition>
+        <argsstring></argsstring>
+        <name>yyvs_alloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.c" line="398" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.c" bodystart="398" bodyend="-1"/>
+        <referencedby refid="grammar_8c_1aa95461e463ec8927a2b16e55683cfcaf" compoundref="grammar_8c" startline="1223" endline="1994">yyparse</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="589">
+        <label>yyalloc</label>
+        <link refid="unionyyalloc"/>
+        <childnode refid="590" relation="usage">
+          <edgelabel>yyvs_alloc</edgelabel>
+        </childnode>
+      </node>
+      <node id="590">
+        <label>YYSTYPE</label>
+        <link refid="union_y_y_s_t_y_p_e"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.c" line="396" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/grammar.c" bodystart="395" bodyend="399"/>
+    <listofallmembers>
+      <member refid="unionyyalloc_1a4800e0520a89a4789afa7b5d82197e65" prot="public" virt="non-virtual"><scope>yyalloc</scope><name>yyss_alloc</name></member>
+      <member refid="unionyyalloc_1a9326f4fdc6f737a929444427836d8928" prot="public" virt="non-virtual"><scope>yyalloc</scope><name>yyvs_alloc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

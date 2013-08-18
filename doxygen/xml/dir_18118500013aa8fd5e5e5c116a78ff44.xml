@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="dir_18118500013aa8fd5e5e5c116a78ff44" kind="dir">
+    <compoundname>src/libopentld/tld/</compoundname>
+    <innerfile refid="_clustering_8cpp">Clustering.cpp</innerfile>
+    <innerfile refid="_clustering_8h">Clustering.h</innerfile>
+    <innerfile refid="_detection_result_8cpp">DetectionResult.cpp</innerfile>
+    <innerfile refid="_detection_result_8h">DetectionResult.h</innerfile>
+    <innerfile refid="_detector_cascade_8cpp">DetectorCascade.cpp</innerfile>
+    <innerfile refid="_detector_cascade_8h">DetectorCascade.h</innerfile>
+    <innerfile refid="_ensemble_classifier_8cpp">EnsembleClassifier.cpp</innerfile>
+    <innerfile refid="_ensemble_classifier_8h">EnsembleClassifier.h</innerfile>
+    <innerfile refid="_foreground_detector_8cpp">ForegroundDetector.cpp</innerfile>
+    <innerfile refid="_foreground_detector_8h">ForegroundDetector.h</innerfile>
+    <innerfile refid="_integral_image_8h">IntegralImage.h</innerfile>
+    <innerfile refid="_median_flow_tracker_8cpp">MedianFlowTracker.cpp</innerfile>
+    <innerfile refid="_median_flow_tracker_8h">MedianFlowTracker.h</innerfile>
+    <innerfile refid="_n_n_classifier_8cpp">NNClassifier.cpp</innerfile>
+    <innerfile refid="_n_n_classifier_8h">NNClassifier.h</innerfile>
+    <innerfile refid="_normalized_patch_8h">NormalizedPatch.h</innerfile>
+    <innerfile refid="_t_l_d_8cpp">TLD.cpp</innerfile>
+    <innerfile refid="_t_l_d_8h">TLD.h</innerfile>
+    <innerfile refid="_t_l_d_util_8cpp">TLDUtil.cpp</innerfile>
+    <innerfile refid="_t_l_d_util_8h">TLDUtil.h</innerfile>
+    <innerfile refid="_variance_filter_8cpp">VarianceFilter.cpp</innerfile>
+    <innerfile refid="_variance_filter_8h">VarianceFilter.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/"/>
+  </compounddef>
+</doxygen>

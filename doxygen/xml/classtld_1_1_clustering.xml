@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="classtld_1_1_clustering" kind="class" prot="public">
+    <compoundname>tld::Clustering</compoundname>
+    <includes refid="_clustering_8h" local="no">Clustering.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtld_1_1_clustering_1acd1251895c2999f2041b50142cf81dda" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* tld::Clustering::windows</definition>
+        <argsstring></argsstring>
+        <name>windows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.h" line="44" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_clustering_1ae900a3a513ddad5e5b2f5f49d25d8358" compoundref="_clustering_8cpp" startline="37" endline="43">Clustering</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">tld::DetectorCascade::propagateMembers</referencedby>
+        <referencedby refid="classtld_1_1_clustering_1a2dbde4a94a483e8befe4b710445941bf" compoundref="_clustering_8cpp" startline="49" endline="53">release</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_clustering_1a25b3b82795ea06758b6a321f856f004b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::Clustering::numWindows</definition>
+        <argsstring></argsstring>
+        <name>numWindows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.h" line="45" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_clustering_1ae900a3a513ddad5e5b2f5f49d25d8358" compoundref="_clustering_8cpp" startline="37" endline="43">Clustering</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">tld::DetectorCascade::propagateMembers</referencedby>
+        <referencedby refid="classtld_1_1_clustering_1a2dbde4a94a483e8befe4b710445941bf" compoundref="_clustering_8cpp" startline="49" endline="53">release</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_clustering_1abfc41de1f95b5c019676aa5f42d9e960" prot="public" static="no" mutable="no">
+        <type><ref refid="classtld_1_1_detection_result" kindref="compound">DetectionResult</ref> *</type>
+        <definition>DetectionResult* tld::Clustering::detectionResult</definition>
+        <argsstring></argsstring>
+        <name>detectionResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.h" line="47" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_clustering_1a772750b3a1183ef80a9b4cf202e4c203" compoundref="_clustering_8cpp" startline="110" endline="125">clusterConfidentIndices</referencedby>
+        <referencedby refid="classtld_1_1_clustering_1ae900a3a513ddad5e5b2f5f49d25d8358" compoundref="_clustering_8cpp" startline="37" endline="43">Clustering</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">tld::DetectorCascade::propagateMembers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_clustering_1ae5fcb2d589b404b081dad28977467707" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float tld::Clustering::cutoff</definition>
+        <argsstring></argsstring>
+        <name>cutoff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.h" line="50" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_clustering_1ae900a3a513ddad5e5b2f5f49d25d8358" compoundref="_clustering_8cpp" startline="37" endline="43">Clustering</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtld_1_1_clustering_1adb56b7e5381c8c87364f288f7093e7fc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::Clustering::calcMeanRect</definition>
+        <argsstring>(std::vector&lt; int &gt; *indices)</argsstring>
+        <name>calcMeanRect</name>
+        <param>
+          <type>std::vector&lt; int &gt; *</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.h" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_clustering_1a340b0bdad9f492f17a2bc10d720d587a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::Clustering::calcDistances</definition>
+        <argsstring>(float *distances)</argsstring>
+        <name>calcDistances</name>
+        <param>
+          <type>float *</type>
+          <declname>distances</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.h" line="41" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.cpp" bodystart="87" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_clustering_1a5c85305aa57a86b7eb890c723cfe4821" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::Clustering::cluster</definition>
+        <argsstring>(float *distances, int *clusterIndices)</argsstring>
+        <name>cluster</name>
+        <param>
+          <type>float *</type>
+          <declname>distances</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>clusterIndices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.h" line="42" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.cpp" bodystart="127" bodyend="263"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtld_1_1_clustering_1ae900a3a513ddad5e5b2f5f49d25d8358" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tld::Clustering::Clustering</definition>
+        <argsstring>()</argsstring>
+        <name>Clustering</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.h" line="54" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.cpp" bodystart="37" bodyend="43"/>
+        <references refid="classtld_1_1_clustering_1ae5fcb2d589b404b081dad28977467707" compoundref="_clustering_8h" startline="50">cutoff</references>
+        <references refid="classtld_1_1_clustering_1abfc41de1f95b5c019676aa5f42d9e960" compoundref="_clustering_8h" startline="47">detectionResult</references>
+        <references refid="classtld_1_1_clustering_1a25b3b82795ea06758b6a321f856f004b" compoundref="_clustering_8h" startline="45">numWindows</references>
+        <references refid="classtld_1_1_clustering_1acd1251895c2999f2041b50142cf81dda" compoundref="_clustering_8h" startline="44">windows</references>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_clustering_1a86532276b1db43fc44ff201b385c4967" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>tld::Clustering::~Clustering</definition>
+        <argsstring>()</argsstring>
+        <name>~Clustering</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.h" line="55" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.cpp" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_clustering_1a2dbde4a94a483e8befe4b710445941bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::Clustering::release</definition>
+        <argsstring>()</argsstring>
+        <name>release</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.h" line="56" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.cpp" bodystart="49" bodyend="53"/>
+        <references refid="classtld_1_1_clustering_1a25b3b82795ea06758b6a321f856f004b" compoundref="_clustering_8h" startline="45">numWindows</references>
+        <references refid="classtld_1_1_clustering_1acd1251895c2999f2041b50142cf81dda" compoundref="_clustering_8h" startline="44">windows</references>
+        <referencedby refid="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" compoundref="_detector_cascade_8cpp" startline="122" endline="151">tld::DetectorCascade::release</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_clustering_1a772750b3a1183ef80a9b4cf202e4c203" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::Clustering::clusterConfidentIndices</definition>
+        <argsstring>()</argsstring>
+        <name>clusterConfidentIndices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.h" line="57" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.cpp" bodystart="110" bodyend="125"/>
+        <references refid="classtld_1_1_detection_result_1aae986474ad532795e262e240a3ddb951" compoundref="_detection_result_8h" startline="43">tld::DetectionResult::confidentIndices</references>
+        <references refid="classtld_1_1_clustering_1abfc41de1f95b5c019676aa5f42d9e960" compoundref="_clustering_8h" startline="47">detectionResult</references>
+        <references refid="classtld_1_1_detection_result_1aebf70a6b9d27b4cb34248ac26e5876ab" compoundref="_detection_result_8h" startline="46">tld::DetectionResult::numClusters</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="369">
+        <label>tld::Clustering</label>
+        <link refid="classtld_1_1_clustering"/>
+        <childnode refid="370" relation="usage">
+          <edgelabel>detectionResult</edgelabel>
+        </childnode>
+      </node>
+      <node id="370">
+        <label>tld::DetectionResult</label>
+        <link refid="classtld_1_1_detection_result"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.h" line="39" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.h" bodystart="38" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classtld_1_1_clustering_1a340b0bdad9f492f17a2bc10d720d587a" prot="private" virt="non-virtual"><scope>tld::Clustering</scope><name>calcDistances</name></member>
+      <member refid="classtld_1_1_clustering_1adb56b7e5381c8c87364f288f7093e7fc" prot="private" virt="non-virtual"><scope>tld::Clustering</scope><name>calcMeanRect</name></member>
+      <member refid="classtld_1_1_clustering_1a5c85305aa57a86b7eb890c723cfe4821" prot="private" virt="non-virtual"><scope>tld::Clustering</scope><name>cluster</name></member>
+      <member refid="classtld_1_1_clustering_1a772750b3a1183ef80a9b4cf202e4c203" prot="public" virt="non-virtual"><scope>tld::Clustering</scope><name>clusterConfidentIndices</name></member>
+      <member refid="classtld_1_1_clustering_1ae900a3a513ddad5e5b2f5f49d25d8358" prot="public" virt="non-virtual"><scope>tld::Clustering</scope><name>Clustering</name></member>
+      <member refid="classtld_1_1_clustering_1ae5fcb2d589b404b081dad28977467707" prot="public" virt="non-virtual"><scope>tld::Clustering</scope><name>cutoff</name></member>
+      <member refid="classtld_1_1_clustering_1abfc41de1f95b5c019676aa5f42d9e960" prot="public" virt="non-virtual"><scope>tld::Clustering</scope><name>detectionResult</name></member>
+      <member refid="classtld_1_1_clustering_1a25b3b82795ea06758b6a321f856f004b" prot="public" virt="non-virtual"><scope>tld::Clustering</scope><name>numWindows</name></member>
+      <member refid="classtld_1_1_clustering_1a2dbde4a94a483e8befe4b710445941bf" prot="public" virt="non-virtual"><scope>tld::Clustering</scope><name>release</name></member>
+      <member refid="classtld_1_1_clustering_1acd1251895c2999f2041b50142cf81dda" prot="public" virt="non-virtual"><scope>tld::Clustering</scope><name>windows</name></member>
+      <member refid="classtld_1_1_clustering_1a86532276b1db43fc44ff201b385c4967" prot="public" virt="virtual"><scope>tld::Clustering</scope><name>~Clustering</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

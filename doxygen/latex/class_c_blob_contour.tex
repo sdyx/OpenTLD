@@ -1,0 +1,458 @@
+\hypertarget{class_c_blob_contour}{
+\section{CBlobContour Class Reference}
+\label{class_c_blob_contour}\index{CBlobContour@{CBlobContour}}
+}
+
+
+Blob contour class (in crack code).  
+
+
+
+
+{\ttfamily \#include $<$BlobContour.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_blob_contour_a4cfb475c4e55945fe13618768bef57c7}{CBlobContour} ()
+\begin{DoxyCompactList}\small\item\em Constructors. \item\end{DoxyCompactList}\item 
+\hyperlink{class_c_blob_contour_a66a78de7519f1e8ae7b92bdc30a726cc}{CBlobContour} (CvPoint startPoint, CvMemStorage $\ast$storage)
+\item 
+\hyperlink{class_c_blob_contour_a24b82910c8cfb9b0a31a3fb55fd29e28}{CBlobContour} (\hyperlink{class_c_blob_contour}{CBlobContour} $\ast$source)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{class_c_blob_contour_a24c825e7c0fab7e98237a2db60a7fc7a}{$\sim$CBlobContour} ()
+\item 
+\hyperlink{class_c_blob_contour}{CBlobContour} \& \hyperlink{class_c_blob_contour_a9ed6e0471a8d1b7d6c9a1465e539bbd4}{operator=} (const \hyperlink{class_c_blob_contour}{CBlobContour} \&source)
+\begin{DoxyCompactList}\small\item\em Assigment operator. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_c_blob_contour_a5a10813d71e48c52e099001e6581366c}{AddChainCode} (\hyperlink{_blob_contour_8h_a0ccb8765a7971147eaf6cafef4bd3c0e}{t\_\-chainCode} code)
+\begin{DoxyCompactList}\small\item\em Add chain code to contour. \item\end{DoxyCompactList}\item 
+\hyperlink{_blob_contour_8h_af4605a71deb8fb5bf67011c89418c970}{t\_\-chainCodeList} \hyperlink{class_c_blob_contour_ae783c063f2d89f4d06396b552c92f9a6}{GetChainCode} ()
+\begin{DoxyCompactList}\small\item\em Return freeman chain coded contour. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_c_blob_contour_af4e715a94924d5dc1a0e67cf75818bb5}{IsEmpty} ()
+\item 
+\hyperlink{_blob_contour_8h_af4605a71deb8fb5bf67011c89418c970}{t\_\-chainCodeList} \hyperlink{class_c_blob_contour_a245d5e59180619aa9ae4ec14acc18744}{GetContourPoints} ()
+\begin{DoxyCompactList}\small\item\em Return all contour points. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+CvPoint \hyperlink{class_c_blob_contour_ac8f0fbdce452ede583013e010ce0c8e3}{GetStartPoint} () const 
+\item 
+void \hyperlink{class_c_blob_contour_a9a9ea170c2100586ca7bdb4227589fe9}{ResetChainCode} ()
+\begin{DoxyCompactList}\small\item\em Clears chain code contour. \item\end{DoxyCompactList}\item 
+double \hyperlink{class_c_blob_contour_a2c68f462fc31a0e7add9a85b007fa42a}{GetArea} ()
+\begin{DoxyCompactList}\small\item\em Computes area from contour. \item\end{DoxyCompactList}\item 
+double \hyperlink{class_c_blob_contour_a893d57d625bb8f26f4a31ff0b66b8406}{GetPerimeter} ()
+\begin{DoxyCompactList}\small\item\em Computes perimeter from contour. \item\end{DoxyCompactList}\item 
+double \hyperlink{class_c_blob_contour_a301727633680b38714302593945b748f}{GetMoment} (int p, int q)
+\begin{DoxyCompactList}\small\item\em Get contour moment (p,q up to MAX\_\-CALCULATED\_\-MOMENTS). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_blob_contour_8h_af4605a71deb8fb5bf67011c89418c970}{t\_\-chainCodeList} \hyperlink{class_c_blob_contour_a98c36d7be8524da3976fad97b611123e}{m\_\-contour}
+\begin{DoxyCompactList}\small\item\em Crack code list. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_blob_contour_ae1a0519c97d58c87882ff9a1462ae464}{CBlob}
+\item 
+class \hyperlink{class_c_blob_contour_a107dcb6bc234839a49f6a53dde777713}{CBlobProperties}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Blob contour class (in crack code). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_blob_contour_a4cfb475c4e55945fe13618768bef57c7}{
+\index{CBlobContour@{CBlobContour}!CBlobContour@{CBlobContour}}
+\index{CBlobContour@{CBlobContour}!CBlobContour@{CBlobContour}}
+\subsubsection[{CBlobContour}]{\setlength{\rightskip}{0pt plus 5cm}CBlobContour::CBlobContour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_contour_a4cfb475c4e55945fe13618768bef57c7}
+
+
+Constructors. 
+
+\hypertarget{class_c_blob_contour_a66a78de7519f1e8ae7b92bdc30a726cc}{
+\index{CBlobContour@{CBlobContour}!CBlobContour@{CBlobContour}}
+\index{CBlobContour@{CBlobContour}!CBlobContour@{CBlobContour}}
+\subsubsection[{CBlobContour}]{\setlength{\rightskip}{0pt plus 5cm}CBlobContour::CBlobContour (
+\begin{DoxyParamCaption}
+\item[{CvPoint}]{ startPoint, }
+\item[{CvMemStorage $\ast$}]{ storage}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_contour_a66a78de7519f1e8ae7b92bdc30a726cc}
+\hypertarget{class_c_blob_contour_a24b82910c8cfb9b0a31a3fb55fd29e28}{
+\index{CBlobContour@{CBlobContour}!CBlobContour@{CBlobContour}}
+\index{CBlobContour@{CBlobContour}!CBlobContour@{CBlobContour}}
+\subsubsection[{CBlobContour}]{\setlength{\rightskip}{0pt plus 5cm}CBlobContour::CBlobContour (
+\begin{DoxyParamCaption}
+\item[{{\bf CBlobContour} $\ast$}]{ source}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_contour_a24b82910c8cfb9b0a31a3fb55fd29e28}
+
+
+Copy constructor. 
+
+\hypertarget{class_c_blob_contour_a24c825e7c0fab7e98237a2db60a7fc7a}{
+\index{CBlobContour@{CBlobContour}!$\sim$CBlobContour@{$\sim$CBlobContour}}
+\index{$\sim$CBlobContour@{$\sim$CBlobContour}!CBlobContour@{CBlobContour}}
+\subsubsection[{$\sim$CBlobContour}]{\setlength{\rightskip}{0pt plus 5cm}CBlobContour::$\sim$CBlobContour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_contour_a24c825e7c0fab7e98237a2db60a7fc7a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_blob_contour_a5a10813d71e48c52e099001e6581366c}{
+\index{CBlobContour@{CBlobContour}!AddChainCode@{AddChainCode}}
+\index{AddChainCode@{AddChainCode}!CBlobContour@{CBlobContour}}
+\subsubsection[{AddChainCode}]{\setlength{\rightskip}{0pt plus 5cm}void CBlobContour::AddChainCode (
+\begin{DoxyParamCaption}
+\item[{{\bf t\_\-chainCode}}]{ chaincode}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_contour_a5a10813d71e48c52e099001e6581366c}
+
+
+Add chain code to contour. 
+
+
+\begin{DoxyItemize}
+\item FUNCIÓ: AddChainCode
+\item FUNCIONALITAT: Add chain code to contour
+\item PARÀMETRES:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESULTAT:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESTRICCIONS:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item AUTOR: rborras
+\item DATA DE CREACIÓ: 2008/05/06
+\item MODIFICACIÓ: Data. Autor. Descripció. 
+\end{DoxyItemize}
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_contour_a5a10813d71e48c52e099001e6581366c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_contour_a2c68f462fc31a0e7add9a85b007fa42a}{
+\index{CBlobContour@{CBlobContour}!GetArea@{GetArea}}
+\index{GetArea@{GetArea}!CBlobContour@{CBlobContour}}
+\subsubsection[{GetArea}]{\setlength{\rightskip}{0pt plus 5cm}double CBlobContour::GetArea (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_c_blob_contour_a2c68f462fc31a0e7add9a85b007fa42a}
+
+
+Computes area from contour. 
+
+
+\begin{DoxyItemize}
+\item FUNCIÓ: GetArea
+\item FUNCIONALITAT: Computes area from chain code
+\item PARÀMETRES:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESULTAT:
+\begin{DoxyItemize}
+\item May give negative areas for clock wise contours
+\end{DoxyItemize}
+\item RESTRICCIONS:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item AUTOR: rborras
+\item DATA DE CREACIÓ: 2008/04/30
+\item MODIFICACIÓ: Data. Autor. Descripció.
+\item NOTA: Algorithm derived from \char`\"{}Properties of contour codes\char`\"{}, G.R. Wilson 
+\end{DoxyItemize}
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_contour_a2c68f462fc31a0e7add9a85b007fa42a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_contour_a2c68f462fc31a0e7add9a85b007fa42a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_contour_ae783c063f2d89f4d06396b552c92f9a6}{
+\index{CBlobContour@{CBlobContour}!GetChainCode@{GetChainCode}}
+\index{GetChainCode@{GetChainCode}!CBlobContour@{CBlobContour}}
+\subsubsection[{GetChainCode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\_\-chainCodeList} CBlobContour::GetChainCode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_blob_contour_ae783c063f2d89f4d06396b552c92f9a6}
+
+
+Return freeman chain coded contour. 
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=362pt]{class_c_blob_contour_ae783c063f2d89f4d06396b552c92f9a6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_contour_a245d5e59180619aa9ae4ec14acc18744}{
+\index{CBlobContour@{CBlobContour}!GetContourPoints@{GetContourPoints}}
+\index{GetContourPoints@{GetContourPoints}!CBlobContour@{CBlobContour}}
+\subsubsection[{GetContourPoints}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\_\-PointList} CBlobContour::GetContourPoints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_contour_a245d5e59180619aa9ae4ec14acc18744}
+
+
+Return all contour points. 
+
+Calculate contour points from crack codes. 
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_contour_a245d5e59180619aa9ae4ec14acc18744_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_contour_a301727633680b38714302593945b748f}{
+\index{CBlobContour@{CBlobContour}!GetMoment@{GetMoment}}
+\index{GetMoment@{GetMoment}!CBlobContour@{CBlobContour}}
+\subsubsection[{GetMoment}]{\setlength{\rightskip}{0pt plus 5cm}double CBlobContour::GetMoment (
+\begin{DoxyParamCaption}
+\item[{int}]{ p, }
+\item[{int}]{ q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_c_blob_contour_a301727633680b38714302593945b748f}
+
+
+Get contour moment (p,q up to MAX\_\-CALCULATED\_\-MOMENTS). 
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_contour_a301727633680b38714302593945b748f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_contour_a301727633680b38714302593945b748f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_contour_a893d57d625bb8f26f4a31ff0b66b8406}{
+\index{CBlobContour@{CBlobContour}!GetPerimeter@{GetPerimeter}}
+\index{GetPerimeter@{GetPerimeter}!CBlobContour@{CBlobContour}}
+\subsubsection[{GetPerimeter}]{\setlength{\rightskip}{0pt plus 5cm}double CBlobContour::GetPerimeter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_c_blob_contour_a893d57d625bb8f26f4a31ff0b66b8406}
+
+
+Computes perimeter from contour. 
+
+
+\begin{DoxyItemize}
+\item FUNCIÓ: GetPerimeter
+\item FUNCIONALITAT: Get perimeter from chain code. Diagonals sum sqrt(2) and horizontal and vertical codes 1
+\item PARÀMETRES:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESULTAT:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESTRICCIONS:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item AUTOR: rborras
+\item DATA DE CREACIÓ: 2008/04/30
+\item MODIFICACIÓ: Data. Autor. Descripció.
+\item NOTA: Algorithm derived from \char`\"{}Methods to estimate area and perimeters of blob-\/like objects: A comparison\char`\"{}, L.Yang 
+\end{DoxyItemize}
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_contour_a893d57d625bb8f26f4a31ff0b66b8406_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_contour_a893d57d625bb8f26f4a31ff0b66b8406_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_contour_ac8f0fbdce452ede583013e010ce0c8e3}{
+\index{CBlobContour@{CBlobContour}!GetStartPoint@{GetStartPoint}}
+\index{GetStartPoint@{GetStartPoint}!CBlobContour@{CBlobContour}}
+\subsubsection[{GetStartPoint}]{\setlength{\rightskip}{0pt plus 5cm}CvPoint CBlobContour::GetStartPoint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{class_c_blob_contour_ac8f0fbdce452ede583013e010ce0c8e3}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=370pt]{class_c_blob_contour_ac8f0fbdce452ede583013e010ce0c8e3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_contour_af4e715a94924d5dc1a0e67cf75818bb5}{
+\index{CBlobContour@{CBlobContour}!IsEmpty@{IsEmpty}}
+\index{IsEmpty@{IsEmpty}!CBlobContour@{CBlobContour}}
+\subsubsection[{IsEmpty}]{\setlength{\rightskip}{0pt plus 5cm}bool CBlobContour::IsEmpty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_blob_contour_af4e715a94924d5dc1a0e67cf75818bb5}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_contour_af4e715a94924d5dc1a0e67cf75818bb5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_contour_a9ed6e0471a8d1b7d6c9a1465e539bbd4}{
+\index{CBlobContour@{CBlobContour}!operator=@{operator=}}
+\index{operator=@{operator=}!CBlobContour@{CBlobContour}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CBlobContour} \& CBlobContour::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf CBlobContour} \&}]{ source}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_contour_a9ed6e0471a8d1b7d6c9a1465e539bbd4}
+
+
+Assigment operator. 
+
+Copy operator. \hypertarget{class_c_blob_contour_a9a9ea170c2100586ca7bdb4227589fe9}{
+\index{CBlobContour@{CBlobContour}!ResetChainCode@{ResetChainCode}}
+\index{ResetChainCode@{ResetChainCode}!CBlobContour@{CBlobContour}}
+\subsubsection[{ResetChainCode}]{\setlength{\rightskip}{0pt plus 5cm}void CBlobContour::ResetChainCode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_c_blob_contour_a9a9ea170c2100586ca7bdb4227589fe9}
+
+
+Clears chain code contour. 
+
+Clears chain code contour and points. 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_c_blob_contour_ae1a0519c97d58c87882ff9a1462ae464}{
+\index{CBlobContour@{CBlobContour}!CBlob@{CBlob}}
+\index{CBlob@{CBlob}!CBlobContour@{CBlobContour}}
+\subsubsection[{CBlob}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf CBlob}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_c_blob_contour_ae1a0519c97d58c87882ff9a1462ae464}
+\hypertarget{class_c_blob_contour_a107dcb6bc234839a49f6a53dde777713}{
+\index{CBlobContour@{CBlobContour}!CBlobProperties@{CBlobProperties}}
+\index{CBlobProperties@{CBlobProperties}!CBlobContour@{CBlobContour}}
+\subsubsection[{CBlobProperties}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf CBlobProperties}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_c_blob_contour_a107dcb6bc234839a49f6a53dde777713}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_blob_contour_a98c36d7be8524da3976fad97b611123e}{
+\index{CBlobContour@{CBlobContour}!m\_\-contour@{m\_\-contour}}
+\index{m\_\-contour@{m\_\-contour}!CBlobContour@{CBlobContour}}
+\subsubsection[{m\_\-contour}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\_\-chainCodeList} {\bf CBlobContour::m\_\-contour}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_c_blob_contour_a98c36d7be8524da3976fad97b611123e}
+
+
+Crack code list. 
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/3rdparty/cvblobs/\hyperlink{_blob_contour_8h}{BlobContour.h}\item 
+src/3rdparty/cvblobs/\hyperlink{_blob_contour_8cpp}{BlobContour.cpp}\end{DoxyCompactItemize}

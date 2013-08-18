@@ -1,0 +1,415 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="class_c_operador_blob" kind="class" prot="public">
+    <compoundname>COperadorBlob</compoundname>
+    <derivedcompoundref refid="class_c_blob_get_area" prot="public" virt="non-virtual">CBlobGetArea</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_area_elipse_ratio" prot="public" virt="non-virtual">CBlobGetAreaElipseRatio</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_axis_ratio" prot="public" virt="non-virtual">CBlobGetAxisRatio</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_breadth" prot="public" virt="non-virtual">CBlobGetBreadth</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_compactness" prot="public" virt="non-virtual">CBlobGetCompactness</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_diff_x" prot="public" virt="non-virtual">CBlobGetDiffX</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_diff_y" prot="public" virt="non-virtual">CBlobGetDiffY</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_distance_from_point" prot="public" virt="non-virtual">CBlobGetDistanceFromPoint</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_elongation" prot="public" virt="non-virtual">CBlobGetElongation</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_exterior" prot="public" virt="non-virtual">CBlobGetExterior</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_extern_hull_perimeter_ratio" prot="public" virt="non-virtual">CBlobGetExternHullPerimeterRatio</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_extern_perimeter" prot="public" virt="non-virtual">CBlobGetExternPerimeter</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_extern_perimeter_ratio" prot="public" virt="non-virtual">CBlobGetExternPerimeterRatio</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_hull_area" prot="public" virt="non-virtual">CBlobGetHullArea</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_hull_perimeter" prot="public" virt="non-virtual">CBlobGetHullPerimeter</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_i_d" prot="public" virt="non-virtual">CBlobGetID</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_length" prot="public" virt="non-virtual">CBlobGetLength</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_major_axis_length" prot="public" virt="non-virtual">CBlobGetMajorAxisLength</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_max_x" prot="public" virt="non-virtual">CBlobGetMaxX</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_max_xat_max_y" prot="public" virt="non-virtual">CBlobGetMaxXatMaxY</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_max_y" prot="public" virt="non-virtual">CBlobGetMaxY</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_max_yat_min_x" prot="public" virt="non-virtual">CBlobGetMaxYatMinX</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_mean" prot="public" virt="non-virtual">CBlobGetMean</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_minor_axis_length" prot="public" virt="non-virtual">CBlobGetMinorAxisLength</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_min_x" prot="public" virt="non-virtual">CBlobGetMinX</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_min_xat_min_y" prot="public" virt="non-virtual">CBlobGetMinXatMinY</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_min_y" prot="public" virt="non-virtual">CBlobGetMinY</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_min_yat_max_x" prot="public" virt="non-virtual">CBlobGetMinYatMaxX</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_moment" prot="public" virt="non-virtual">CBlobGetMoment</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_orientation" prot="public" virt="non-virtual">CBlobGetOrientation</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_orientation_cos" prot="public" virt="non-virtual">CBlobGetOrientationCos</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_perimeter" prot="public" virt="non-virtual">CBlobGetPerimeter</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_roughness" prot="public" virt="non-virtual">CBlobGetRoughness</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_std_dev" prot="public" virt="non-virtual">CBlobGetStdDev</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_x_center" prot="public" virt="non-virtual">CBlobGetXCenter</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_x_y_inside" prot="public" virt="non-virtual">CBlobGetXYInside</derivedcompoundref>
+    <derivedcompoundref refid="class_c_blob_get_y_center" prot="public" virt="non-virtual">CBlobGetYCenter</derivedcompoundref>
+    <includes refid="_blob_operators_8h" local="no">BlobOperators.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_operador_blob_1a25ccc652bfa55e7b0143c88f452729a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual COperadorBlob::~COperadorBlob</definition>
+        <argsstring>()</argsstring>
+        <name>~COperadorBlob</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="21" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_operador_blob_1a303c4189cc94cafbcbee116bf014e623" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double COperadorBlob::operator()</definition>
+        <argsstring>(CBlob &amp;blob)=0</argsstring>
+        <name>operator()</name>
+        <reimplementedby refid="class_c_blob_get_x_y_inside_1a5f816b668c59d6f782bea83076ccf96e">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_axis_ratio_1a8b9deb499fb1c850d92f73e34091469a">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_orientation_cos_1ae5701293031dde73229d7515ad41e3bb">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_orientation_1a083233587fed855654e580a355265be3">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_minor_axis_length_1a2269bfa1651667f020e27d9f1e8f8d98">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_area_elipse_ratio_1a24f9703155af6e963a1ae226cdb71125">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_major_axis_length_1a535c9a23d16bf020ed0c6aa9f36b884f">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_y_center_1a5cdb219c957adc1bf08c95e7823e407b">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_x_center_1aaaae40df5c1c031658100b16015896f0">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_extern_hull_perimeter_ratio_1a9b841221281e5efd45d4e3d8117369c4">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_extern_perimeter_ratio_1a28c984e9b6de7d6303704b34b76c1c5b">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_extern_perimeter_1a3c506f7355bab0299f1992dcda2e0a0a">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_distance_from_point_1a0a17d2d50bcadef8317932e7e1cb138a">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_roughness_1a7b63d1da4133b0abf4a4af9450c0526c">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_elongation_1a6811278c746413830d80ff21d979b5ab">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_max_y_1abd3fc708b60aa0716a1f335f4313e46e">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_min_y_1acf1b21431bc7cba83741b6ed8b3f1bd9">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_max_x_1a187bed7f1f1e467fc5170324f4434bc2">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_min_x_1a4930f236b5afa5c987ce0b5062b79b09">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_max_yat_min_x_1a107cc7896ca6af559e8410b3c452e80d">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_max_xat_max_y_1a45c075e8968d1078c6b49ea2acbb6d58">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_min_yat_max_x_1a41bc24b0214b58f979396208296d3dd6">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_min_xat_min_y_1ae2f3ba428e780a826de213726d2a8f35">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_hull_area_1a39fab727f23b9854011b6cbd00203a9b">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_hull_perimeter_1a9c59c9b9581ca9b8847fd98cb30087cc">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_moment_1aefebc825f026670fab8517bc0ea052ca">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_diff_y_1aab9f6a96902b89dd9b8283db51a1b6f3">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_diff_x_1a0bf92752dbffa496a2551ad9622836ac">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_breadth_1a753a100a61978c0f6817787a27db1a55">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_length_1a6c56ce1a327e5e7e6f5bddaab074db71">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_compactness_1a315844b8ce0ea4c05e8422016f70ea2d">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_std_dev_1a9a52512df47b9ff51ad0cb4cb48d3d1f">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_mean_1ad1aff39c601989402d096fb649b9703c">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_exterior_1ad272326f713272424a2b4763b27edeaa">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_perimeter_1a27d6922b9fb5ad220bd0e3876aef7f28">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_area_1a3c8268e93a2271bcd878dbf13d259afb">operator()</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_i_d_1a01557f50837f1e52f3b6c690c0af6592">operator()</reimplementedby>
+        <param>
+          <type><ref refid="class_c_blob" kindref="compound">CBlob</ref> &amp;</type>
+          <declname>blob</declname>
+        </param>
+        <briefdescription>
+<para>Aply operator to blob. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_operador_blob_1a717a19c163a26b45081a2231be24c008" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>const char *</type>
+        <definition>virtual const char* COperadorBlob::GetNom</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetNom</name>
+        <reimplementedby refid="class_c_blob_get_x_y_inside_1aace8ea2f96e16acafc3c85038760a7ae">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_axis_ratio_1a32387adba4826184cb5296c11973ca6e">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_orientation_cos_1a080073c288f37e86454cc51979db6534">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_orientation_1acc417f0effab6161ebbd3bc279b0bccd">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_minor_axis_length_1a2aad4f4a473864a2ce0409c7db35388d">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_area_elipse_ratio_1ad50ae738cd5ceff0b9a8af85e499c4b6">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_major_axis_length_1a15cc57a607e31d659b0cf72caba17ffd">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_y_center_1a20c0a7b0fe20ab1e43aaad7a8462f9e1">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_x_center_1a56bdbbabb49a6678cd2dd1c86f75f7b2">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_extern_hull_perimeter_ratio_1ae82b7fd47a5b269a6669cd92254d5633">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_extern_perimeter_ratio_1a02ed09eee429406e6064cf1264cdfaa9">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_extern_perimeter_1a0565de9fba118d0de191359934fb59d0">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_distance_from_point_1ac62cce7fd33668c79df66a9eeb957115">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_roughness_1a3acea138bb559faa976c9311a698b515">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_elongation_1ab722feb62c85c65f06291cee5fc6ef7b">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_max_y_1ab47575f475d0202a372ef23436ad5c26">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_min_y_1a4e7323181b4ac791a31ed2baab9c2a90">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_max_x_1af64d5492b98c3b8dec4d74880b39dfa9">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_min_x_1a97213bcb8b1cd6384c1f2252a8ea6047">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_max_yat_min_x_1a46dc3ec1afbf2460d2425063d19caa08">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_max_xat_max_y_1a563198e842a5eb22cedc80ef09d1970b">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_min_yat_max_x_1ab2543b060facf48cadb4beddddc8c81e">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_min_xat_min_y_1ae2e9e5ebdae13167e148979cdaaea3bf">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_hull_area_1a86d7f24b5e8f5ceaa8edf0b93b811000">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_hull_perimeter_1a941b3e608d94e99452ad6b2d24673b12">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_moment_1a44e020df4120067b870455a6fe6262e6">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_diff_y_1aff0f4b9d1b1c3700710b3ecb7d2feabf">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_diff_x_1a9d8db33eae0fb3f8cb5deee1e5b40f7e">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_breadth_1ab6a0594bd82954cf625aa5a165e58097">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_length_1a0e2c65bd97c146f51ab772e5ba8d62d5">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_compactness_1a93b67c8c8bd3389cb0cf06324f0583d1">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_std_dev_1ab98436c9d9211401634906334c59786b">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_mean_1a1992d893f77cf9be2fc6d3521fd51639">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_exterior_1a9f4f6f22567417da701e84a2eb44a984">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_perimeter_1a035bfb1a62dfc75747ac8c8a61eb3670">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_area_1a21824b9cf62da6e2dfacf8084a6992a9">GetNom</reimplementedby>
+        <reimplementedby refid="class_c_blob_get_i_d_1a2e8c1e291d6b13bb1ecbbf8964cb9d2f">GetNom</reimplementedby>
+        <briefdescription>
+<para>Get operator name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_operador_blob_1a477edfe687cf9ef41469bcf6ea636a75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>COperadorBlob::operator COperadorBlob *</definition>
+        <argsstring>()</argsstring>
+        <name>operator COperadorBlob *</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="29" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="28" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Classe d&apos;on derivarem totes les operacions sobre els blobs Interface to derive all blob operations </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="441">
+        <label>CBlobGetMean</label>
+        <link refid="class_c_blob_get_mean"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="423">
+        <label>CBlobGetCompactness</label>
+        <link refid="class_c_blob_get_compactness"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="455">
+        <label>CBlobGetYCenter</label>
+        <link refid="class_c_blob_get_y_center"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="430">
+        <label>CBlobGetExternPerimeter</label>
+        <link refid="class_c_blob_get_extern_perimeter"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="454">
+        <label>CBlobGetXYInside</label>
+        <link refid="class_c_blob_get_x_y_inside"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="424">
+        <label>CBlobGetDiffX</label>
+        <link refid="class_c_blob_get_diff_x"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="425">
+        <label>CBlobGetDiffY</label>
+        <link refid="class_c_blob_get_diff_y"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="420">
+        <label>CBlobGetAreaElipseRatio</label>
+        <link refid="class_c_blob_get_area_elipse_ratio"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="433">
+        <label>CBlobGetHullPerimeter</label>
+        <link refid="class_c_blob_get_hull_perimeter"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="428">
+        <label>CBlobGetExterior</label>
+        <link refid="class_c_blob_get_exterior"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="431">
+        <label>CBlobGetExternPerimeterRatio</label>
+        <link refid="class_c_blob_get_extern_perimeter_ratio"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="421">
+        <label>CBlobGetAxisRatio</label>
+        <link refid="class_c_blob_get_axis_ratio"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="443">
+        <label>CBlobGetMinX</label>
+        <link refid="class_c_blob_get_min_x"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="445">
+        <label>CBlobGetMinY</label>
+        <link refid="class_c_blob_get_min_y"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="436">
+        <label>CBlobGetMajorAxisLength</label>
+        <link refid="class_c_blob_get_major_axis_length"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="451">
+        <label>CBlobGetRoughness</label>
+        <link refid="class_c_blob_get_roughness"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="448">
+        <label>CBlobGetOrientation</label>
+        <link refid="class_c_blob_get_orientation"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="442">
+        <label>CBlobGetMinorAxisLength</label>
+        <link refid="class_c_blob_get_minor_axis_length"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="427">
+        <label>CBlobGetElongation</label>
+        <link refid="class_c_blob_get_elongation"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="435">
+        <label>CBlobGetLength</label>
+        <link refid="class_c_blob_get_length"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="449">
+        <label>CBlobGetOrientationCos</label>
+        <link refid="class_c_blob_get_orientation_cos"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="447">
+        <label>CBlobGetMoment</label>
+        <link refid="class_c_blob_get_moment"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="446">
+        <label>CBlobGetMinYatMaxX</label>
+        <link refid="class_c_blob_get_min_yat_max_x"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="440">
+        <label>CBlobGetMaxYatMinX</label>
+        <link refid="class_c_blob_get_max_yat_min_x"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="429">
+        <label>CBlobGetExternHullPerimeterRatio</label>
+        <link refid="class_c_blob_get_extern_hull_perimeter_ratio"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="444">
+        <label>CBlobGetMinXatMinY</label>
+        <link refid="class_c_blob_get_min_xat_min_y"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="438">
+        <label>CBlobGetMaxXatMaxY</label>
+        <link refid="class_c_blob_get_max_xat_max_y"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="453">
+        <label>CBlobGetXCenter</label>
+        <link refid="class_c_blob_get_x_center"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="419">
+        <label>CBlobGetArea</label>
+        <link refid="class_c_blob_get_area"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="450">
+        <label>CBlobGetPerimeter</label>
+        <link refid="class_c_blob_get_perimeter"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="432">
+        <label>CBlobGetHullArea</label>
+        <link refid="class_c_blob_get_hull_area"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="426">
+        <label>CBlobGetDistanceFromPoint</label>
+        <link refid="class_c_blob_get_distance_from_point"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="434">
+        <label>CBlobGetID</label>
+        <link refid="class_c_blob_get_i_d"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="418">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+      <node id="437">
+        <label>CBlobGetMaxX</label>
+        <link refid="class_c_blob_get_max_x"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="439">
+        <label>CBlobGetMaxY</label>
+        <link refid="class_c_blob_get_max_y"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="422">
+        <label>CBlobGetBreadth</label>
+        <link refid="class_c_blob_get_breadth"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="452">
+        <label>CBlobGetStdDev</label>
+        <link refid="class_c_blob_get_std_dev"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="19" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="18" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_c_operador_blob_1a717a19c163a26b45081a2231be24c008" prot="public" virt="pure-virtual"><scope>COperadorBlob</scope><name>GetNom</name></member>
+      <member refid="class_c_operador_blob_1a477edfe687cf9ef41469bcf6ea636a75" prot="public" virt="non-virtual"><scope>COperadorBlob</scope><name>operator COperadorBlob *</name></member>
+      <member refid="class_c_operador_blob_1a303c4189cc94cafbcbee116bf014e623" prot="public" virt="pure-virtual"><scope>COperadorBlob</scope><name>operator()</name></member>
+      <member refid="class_c_operador_blob_1a25ccc652bfa55e7b0143c88f452729a2" prot="public" virt="virtual"><scope>COperadorBlob</scope><name>~COperadorBlob</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

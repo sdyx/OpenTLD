@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="class_c_blob_get_hull_perimeter" kind="class" prot="public">
+    <compoundname>CBlobGetHullPerimeter</compoundname>
+    <basecompoundref refid="class_c_operador_blob" prot="public" virt="non-virtual">COperadorBlob</basecompoundref>
+    <includes refid="_blob_operators_8h" local="no">BlobOperators.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_blob_get_hull_perimeter_1a9c59c9b9581ca9b8847fd98cb30087cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double CBlobGetHullPerimeter::operator()</definition>
+        <argsstring>(CBlob &amp;blob)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="class_c_operador_blob_1a303c4189cc94cafbcbee116bf014e623">operator()</reimplements>
+        <param>
+          <type><ref refid="class_c_blob" kindref="compound">CBlob</ref> &amp;</type>
+          <declname>blob</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCIÓ: HullPerimeter</para></listitem><listitem><para>FUNCIONALITAT: Calcula la longitud del perimetre convex del blob. Fa servir la funció d&apos;OpenCV cvConvexHull2 per a calcular el perimetre convex.</para></listitem></itemizedlist>
+</para><para><itemizedlist>
+<listitem><para>PARÀMETRES:</para></listitem><listitem><para>RESULTAT:<itemizedlist>
+<listitem><para>retorna la longitud del perímetre convex del blob. Si el blob no té coordenades associades retorna el perímetre normal del blob.</para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICCIONS:</para></listitem><listitem><para>AUTOR: Ricard Borràs</para></listitem><listitem><para>DATA DE CREACIÓ: 20-07-2004.</para></listitem><listitem><para>MODIFICACIÓ: Data. Autor. Descripció.</para></listitem><listitem><para>FUNCTION: <ref refid="class_c_blob_get_hull_perimeter" kindref="compound">CBlobGetHullPerimeter</ref></para></listitem><listitem><para>FUNCTIONALITY: Calculates the convex hull perimeter of the blob</para></listitem><listitem><para>PARAMETERS:</para></listitem><listitem><para>RESULT:<itemizedlist>
+<listitem><para>returns the convex hull perimeter of the blob or the perimeter if the blob edges could not be retrieved</para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICTIONS:</para></listitem><listitem><para>AUTHOR: Ricard Borràs</para></listitem><listitem><para>CREATION DATE: 25-05-2005.</para></listitem><listitem><para>MODIFICATION: Date. Author. Description. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="285" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.cpp" bodystart="54" bodyend="69"/>
+        <references refid="class_c_blob_1aacc50d5d47e0543d4e0a569d05009006" compoundref="blob_8cpp" startline="667" endline="676">CBlob::GetConvexHull</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_hull_perimeter_1a941b3e608d94e99452ad6b2d24673b12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>const char* CBlobGetHullPerimeter::GetNom</definition>
+        <argsstring>()</argsstring>
+        <name>GetNom</name>
+        <reimplements refid="class_c_operador_blob_1a717a19c163a26b45081a2231be24c008">GetNom</reimplements>
+        <briefdescription>
+<para>Get operator name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="287" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="286" bodyend="289"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Classe per calcular el perimetre del poligon convex d&apos;un blob Class to calculate the convex hull perimeter of a blob </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="273">
+        <label>CBlobGetHullPerimeter</label>
+        <link refid="class_c_blob_get_hull_perimeter"/>
+        <childnode refid="274" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="274">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="275">
+        <label>CBlobGetHullPerimeter</label>
+        <link refid="class_c_blob_get_hull_perimeter"/>
+        <childnode refid="276" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="276">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="283" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="282" bodyend="290"/>
+    <listofallmembers>
+      <member refid="class_c_blob_get_hull_perimeter_1a941b3e608d94e99452ad6b2d24673b12" prot="public" virt="virtual"><scope>CBlobGetHullPerimeter</scope><name>GetNom</name></member>
+      <member refid="class_c_operador_blob_1a477edfe687cf9ef41469bcf6ea636a75" prot="public" virt="non-virtual"><scope>CBlobGetHullPerimeter</scope><name>operator COperadorBlob *</name></member>
+      <member refid="class_c_blob_get_hull_perimeter_1a9c59c9b9581ca9b8847fd98cb30087cc" prot="public" virt="virtual"><scope>CBlobGetHullPerimeter</scope><name>operator()</name></member>
+      <member refid="class_c_operador_blob_1a25ccc652bfa55e7b0143c88f452729a2" prot="public" virt="virtual"><scope>CBlobGetHullPerimeter</scope><name>~COperadorBlob</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,111 @@
+\hypertarget{class_c_blob_get_hull_perimeter}{
+\section{CBlobGetHullPerimeter Class Reference}
+\label{class_c_blob_get_hull_perimeter}\index{CBlobGetHullPerimeter@{CBlobGetHullPerimeter}}
+}
+
+
+{\ttfamily \#include $<$BlobOperators.h$>$}
+
+
+
+Inherits \hyperlink{class_c_operador_blob}{COperadorBlob}.
+
+
+
+Collaboration diagram for CBlobGetHullPerimeter:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_c_blob_get_hull_perimeter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_c_blob_get_hull_perimeter_a9c59c9b9581ca9b8847fd98cb30087cc}{operator()} (\hyperlink{class_c_blob}{CBlob} \&blob)
+\item 
+const char $\ast$ \hyperlink{class_c_blob_get_hull_perimeter_a941b3e608d94e99452ad6b2d24673b12}{GetNom} ()
+\begin{DoxyCompactList}\small\item\em Get operator name. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe per calcular el perimetre del poligon convex d'un blob Class to calculate the convex hull perimeter of a blob 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_blob_get_hull_perimeter_a941b3e608d94e99452ad6b2d24673b12}{
+\index{CBlobGetHullPerimeter@{CBlobGetHullPerimeter}!GetNom@{GetNom}}
+\index{GetNom@{GetNom}!CBlobGetHullPerimeter@{CBlobGetHullPerimeter}}
+\subsubsection[{GetNom}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ CBlobGetHullPerimeter::GetNom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_c_blob_get_hull_perimeter_a941b3e608d94e99452ad6b2d24673b12}
+
+
+Get operator name. 
+
+
+
+Implements \hyperlink{class_c_operador_blob_a717a19c163a26b45081a2231be24c008}{COperadorBlob}.
+
+\hypertarget{class_c_blob_get_hull_perimeter_a9c59c9b9581ca9b8847fd98cb30087cc}{
+\index{CBlobGetHullPerimeter@{CBlobGetHullPerimeter}!operator()@{operator()}}
+\index{operator()@{operator()}!CBlobGetHullPerimeter@{CBlobGetHullPerimeter}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}double CBlobGetHullPerimeter::operator() (
+\begin{DoxyParamCaption}
+\item[{{\bf CBlob} \&}]{ blob}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_c_blob_get_hull_perimeter_a9c59c9b9581ca9b8847fd98cb30087cc}
+
+\begin{DoxyItemize}
+\item FUNCIÓ: HullPerimeter
+\item FUNCIONALITAT: Calcula la longitud del perimetre convex del blob. Fa servir la funció d'OpenCV cvConvexHull2 per a calcular el perimetre convex.
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item PARÀMETRES:
+\item RESULTAT:
+\begin{DoxyItemize}
+\item retorna la longitud del perímetre convex del blob. Si el blob no té coordenades associades retorna el perímetre normal del blob.
+\end{DoxyItemize}
+\item RESTRICCIONS:
+\item AUTOR: Ricard Borràs
+\item DATA DE CREACIÓ: 20-\/07-\/2004.
+\item MODIFICACIÓ: Data. Autor. Descripció.
+\item FUNCTION: \hyperlink{class_c_blob_get_hull_perimeter}{CBlobGetHullPerimeter}
+\item FUNCTIONALITY: Calculates the convex hull perimeter of the blob
+\item PARAMETERS:
+\item RESULT:
+\begin{DoxyItemize}
+\item returns the convex hull perimeter of the blob or the perimeter if the blob edges could not be retrieved
+\end{DoxyItemize}
+\item RESTRICTIONS:
+\item AUTHOR: Ricard Borràs
+\item CREATION DATE: 25-\/05-\/2005.
+\item MODIFICATION: Date. Author. Description. 
+\end{DoxyItemize}
+
+Implements \hyperlink{class_c_operador_blob_a303c4189cc94cafbcbee116bf014e623}{COperadorBlob}.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_get_hull_perimeter_a9c59c9b9581ca9b8847fd98cb30087cc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/3rdparty/cvblobs/\hyperlink{_blob_operators_8h}{BlobOperators.h}\item 
+src/3rdparty/cvblobs/\hyperlink{_blob_operators_8cpp}{BlobOperators.cpp}\end{DoxyCompactItemize}

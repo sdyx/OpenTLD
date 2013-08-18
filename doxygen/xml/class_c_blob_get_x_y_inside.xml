@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="class_c_blob_get_x_y_inside" kind="class" prot="public">
+    <compoundname>CBlobGetXYInside</compoundname>
+    <basecompoundref refid="class_c_operador_blob" prot="public" virt="non-virtual">COperadorBlob</basecompoundref>
+    <includes refid="_blob_operators_8h" local="no">BlobOperators.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_blob_get_x_y_inside_1a9d724e7c54aa496d9f4ed7cd2a21f334" prot="private" static="no" mutable="no">
+        <type>CvPoint2D32f</type>
+        <definition>CvPoint2D32f CBlobGetXYInside::m_p</definition>
+        <argsstring></argsstring>
+        <name>m_p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>punt que considerem point to be considered </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="751" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="751" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_blob_get_x_y_inside_1ab231f5596c3a191d01d674b3fe99d0f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CBlobGetXYInside::CBlobGetXYInside</definition>
+        <argsstring>()</argsstring>
+        <name>CBlobGetXYInside</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor estàndard Standard constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="732" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="731" bodyend="735"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_x_y_inside_1a08d583499482fd37ec5a0efd4a1ada9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CBlobGetXYInside::CBlobGetXYInside</definition>
+        <argsstring>(CvPoint2D32f p)</argsstring>
+        <name>CBlobGetXYInside</name>
+        <param>
+          <type>CvPoint2D32f</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor: indiquem el punt Constructor: sets the point </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="739" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="738" bodyend="741"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_x_y_inside_1a5f816b668c59d6f782bea83076ccf96e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double CBlobGetXYInside::operator()</definition>
+        <argsstring>(CBlob &amp;blob)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="class_c_operador_blob_1a303c4189cc94cafbcbee116bf014e623">operator()</reimplements>
+        <param>
+          <type><ref refid="class_c_blob" kindref="compound">CBlob</ref> &amp;</type>
+          <declname>blob</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCTION: BlobGetXYInside</para></listitem><listitem><para>FUNCTIONALITY: Calculates whether a point is inside the rectangular bounding box of a blob</para></listitem><listitem><para>PARAMETERS:</para></listitem><listitem><para>RESULT:<itemizedlist>
+<listitem><para>returns 1 if it is inside; o if not</para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICTIONS:</para></listitem><listitem><para>AUTHOR: Francesc Pinyol Margalef</para></listitem><listitem><para>CREATION DATE: 16-01-2006.</para></listitem><listitem><para>MODIFICATION: Date. Author. Description. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="742" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.cpp" bodystart="418" bodyend="426"/>
+        <references refid="class_c_blob_contour_1a245d5e59180619aa9ae4ec14acc18744" compoundref="_blob_contour_8cpp" startline="203" endline="258">CBlobContour::GetContourPoints</references>
+        <references refid="class_c_blob_1ad136387165bd74c368cb4ecc7632e4cf" compoundref="blob_8h" startline="58" endline="61">CBlob::GetExternalContour</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_x_y_inside_1aace8ea2f96e16acafc3c85038760a7ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>const char* CBlobGetXYInside::GetNom</definition>
+        <argsstring>()</argsstring>
+        <name>GetNom</name>
+        <reimplements refid="class_c_operador_blob_1a717a19c163a26b45081a2231be24c008">GetNom</reimplements>
+        <briefdescription>
+<para>Get operator name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="744" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="743" bodyend="746"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Classe per calcular si un punt cau dins del blob Class to calculate whether a point is inside a blob </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="357">
+        <label>CBlobGetXYInside</label>
+        <link refid="class_c_blob_get_x_y_inside"/>
+        <childnode refid="358" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="358">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="359">
+        <label>CBlobGetXYInside</label>
+        <link refid="class_c_blob_get_x_y_inside"/>
+        <childnode refid="360" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="360">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="727" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="726" bodyend="752"/>
+    <listofallmembers>
+      <member refid="class_c_blob_get_x_y_inside_1ab231f5596c3a191d01d674b3fe99d0f6" prot="public" virt="non-virtual"><scope>CBlobGetXYInside</scope><name>CBlobGetXYInside</name></member>
+      <member refid="class_c_blob_get_x_y_inside_1a08d583499482fd37ec5a0efd4a1ada9b" prot="public" virt="non-virtual"><scope>CBlobGetXYInside</scope><name>CBlobGetXYInside</name></member>
+      <member refid="class_c_blob_get_x_y_inside_1aace8ea2f96e16acafc3c85038760a7ae" prot="public" virt="virtual"><scope>CBlobGetXYInside</scope><name>GetNom</name></member>
+      <member refid="class_c_blob_get_x_y_inside_1a9d724e7c54aa496d9f4ed7cd2a21f334" prot="private" virt="non-virtual"><scope>CBlobGetXYInside</scope><name>m_p</name></member>
+      <member refid="class_c_operador_blob_1a477edfe687cf9ef41469bcf6ea636a75" prot="public" virt="non-virtual"><scope>CBlobGetXYInside</scope><name>operator COperadorBlob *</name></member>
+      <member refid="class_c_blob_get_x_y_inside_1a5f816b668c59d6f782bea83076ccf96e" prot="public" virt="virtual"><scope>CBlobGetXYInside</scope><name>operator()</name></member>
+      <member refid="class_c_operador_blob_1a25ccc652bfa55e7b0143c88f452729a2" prot="public" virt="virtual"><scope>CBlobGetXYInside</scope><name>~COperadorBlob</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

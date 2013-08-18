@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_b_b_predict_8cpp" kind="file">
+    <compoundname>BBPredict.cpp</compoundname>
+    <includes refid="_b_b_predict_8h" local="yes">BBPredict.h</includes>
+    <includes local="no">cmath</includes>
+    <includes refid="_median_8h" local="yes">Median.h</includes>
+    <incdepgraph>
+      <node id="1356">
+        <label>src/libopentld/mftracker/BBPredict.cpp</label>
+        <link refid="BBPredict.cpp"/>
+        <childnode refid="1357" relation="include">
+        </childnode>
+        <childnode refid="1359" relation="include">
+        </childnode>
+        <childnode refid="1360" relation="include">
+        </childnode>
+      </node>
+      <node id="1359">
+        <label>cmath</label>
+      </node>
+      <node id="1357">
+        <label>BBPredict.h</label>
+        <link refid="_b_b_predict_8h"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+      </node>
+      <node id="1358">
+        <label>cv.h</label>
+      </node>
+      <node id="1360">
+        <label>Median.h</label>
+        <link refid="_median_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_b_b_predict_8cpp_1a4b3e30827072c6282b201b96074c2bc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float getBbWidth</definition>
+        <argsstring>(float *bb)</argsstring>
+        <name>getBbWidth</name>
+        <param>
+          <type>float *</type>
+          <declname>bb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns width of Boundingbox. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boundingbox </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/BBPredict.cpp" line="39" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/BBPredict.cpp" bodystart="38" bodyend="41"/>
+        <referencedby refid="_b_b_predict_8h_1a0181c4b3c3e424d149a8d89a05c98de7" compoundref="_b_b_predict_8cpp" startline="55" endline="119">predictbb</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_b_b_predict_8cpp_1afa8fbca51344161ecb831f11b5b2c70f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float getBbHeight</definition>
+        <argsstring>(float *bb)</argsstring>
+        <name>getBbHeight</name>
+        <param>
+          <type>float *</type>
+          <declname>bb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns hight of Boundingbox. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boundingbox </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/BBPredict.cpp" line="47" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/BBPredict.cpp" bodystart="46" bodyend="49"/>
+        <referencedby refid="_b_b_predict_8h_1a0181c4b3c3e424d149a8d89a05c98de7" compoundref="_b_b_predict_8cpp" startline="55" endline="119">predictbb</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_b_b_predict_8cpp_1a0181c4b3c3e424d149a8d89a05c98de7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int predictbb</definition>
+        <argsstring>(float *bb0, CvPoint2D32f *pt0, CvPoint2D32f *pt1, int nPts, float *bb1, float *shift)</argsstring>
+        <name>predictbb</name>
+        <param>
+          <type>float *</type>
+          <declname>bb0</declname>
+        </param>
+        <param>
+          <type>CvPoint2D32f *</type>
+          <declname>pt0</declname>
+        </param>
+        <param>
+          <type>CvPoint2D32f *</type>
+          <declname>pt1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nPts</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>bb1</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>shift</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculates the new (moved and resized) Bounding box. Calculation based on all relative distance changes of all points to every point. Then the Median of the relative Values is used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/BBPredict.cpp" line="57" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/BBPredict.cpp" bodystart="55" bodyend="119"/>
+        <references refid="_b_b_predict_8cpp_1afa8fbca51344161ecb831f11b5b2c70f" compoundref="_b_b_predict_8cpp" startline="46" endline="49">getBbHeight</references>
+        <references refid="_b_b_predict_8cpp_1a4b3e30827072c6282b201b96074c2bc8" compoundref="_b_b_predict_8cpp" startline="38" endline="41">getBbWidth</references>
+        <references refid="_median_8cpp_1a90a27fb293134af27d1615ff29dd1417" compoundref="_median_8cpp" startline="45" endline="116">getMedianUnmanaged</references>
+        <referencedby refid="_f_b_track_8h_1a2c818794e6fe6aa3f6efdc9c46ffd164" compoundref="_f_b_track_8cpp" startline="45" endline="150">fbtrack</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_b_b_predict_8h" kindref="compound">BBPredict.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_median_8h" kindref="compound">Median.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="_b_b_predict_8cpp_1a4b3e30827072c6282b201b96074c2bc8" refkind="member"><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="_b_b_predict_8cpp_1a4b3e30827072c6282b201b96074c2bc8" kindref="member">getBbWidth</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*bb)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>abs(bb[2]<sp/>-<sp/>bb[0]<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46" refid="_b_b_predict_8cpp_1afa8fbca51344161ecb831f11b5b2c70f" refkind="member"><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="_b_b_predict_8cpp_1afa8fbca51344161ecb831f11b5b2c70f" kindref="member">getBbHeight</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*bb)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>abs(bb[3]<sp/>-<sp/>bb[1]<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55" refid="_b_b_predict_8h_1a0181c4b3c3e424d149a8d89a05c98de7" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_b_b_predict_8cpp_1a0181c4b3c3e424d149a8d89a05c98de7" kindref="member">predictbb</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*bb0,<sp/>CvPoint2D32f<sp/>*pt0,<sp/>CvPoint2D32f<sp/>*pt1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nPts,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*bb1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*shift)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*ofx<sp/>=<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*)<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>*<sp/>nPts);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*ofy<sp/>=<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*)<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>*<sp/>nPts);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dx,<sp/>dy;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lenPdist;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*dist0;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*dist1;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s0,<sp/>s1;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>nPts;<sp/>i++)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ofx[i]<sp/>=<sp/>pt1[i].x<sp/>-<sp/>pt0[i].x;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ofy[i]<sp/>=<sp/>pt1[i].y<sp/>-<sp/>pt0[i].y;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>dx<sp/>=<sp/><ref refid="_median_8cpp_1a90a27fb293134af27d1615ff29dd1417" kindref="member">getMedianUnmanaged</ref>(ofx,<sp/>nPts);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>dy<sp/>=<sp/><ref refid="_median_8cpp_1a90a27fb293134af27d1615ff29dd1417" kindref="member">getMedianUnmanaged</ref>(ofy,<sp/>nPts);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>free(ofx);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>ofx<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>free(ofy);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>ofy<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//m(m-1)/2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>lenPdist<sp/>=<sp/>nPts<sp/>*<sp/>(nPts<sp/>-<sp/>1)<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>dist0<sp/>=<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*)<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>*<sp/>lenPdist);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>dist1<sp/>=<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*)<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>*<sp/>lenPdist);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>nPts;<sp/>i++)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(j<sp/>=<sp/>i<sp/>+<sp/>1;<sp/>j<sp/>&lt;<sp/>nPts;<sp/>j++,<sp/>d++)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dist0[d]</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>sqrt(pow(pt0[i].x<sp/>-<sp/>pt0[j].x,<sp/>2)<sp/>+<sp/>pow(pt0[i].y<sp/>-<sp/>pt0[j].y,<sp/>2));</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dist1[d]</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>sqrt(pow(pt1[i].x<sp/>-<sp/>pt1[j].x,<sp/>2)<sp/>+<sp/>pow(pt1[i].y<sp/>-<sp/>pt1[j].y,<sp/>2));</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dist0[d]<sp/>=<sp/>dist1[d]<sp/>/<sp/>dist0[d];</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//The<sp/>scale<sp/>change<sp/>is<sp/>the<sp/>median<sp/>of<sp/>all<sp/>changes<sp/>of<sp/>distance.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//same<sp/>as<sp/>s<sp/>=<sp/>median(d2./d1)<sp/>with<sp/>above</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>*shift<sp/>=<sp/><ref refid="_median_8cpp_1a90a27fb293134af27d1615ff29dd1417" kindref="member">getMedianUnmanaged</ref>(dist0,<sp/>lenPdist);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>free(dist0);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>dist0<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>free(dist1);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>dist1<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>s0<sp/>=<sp/>0.5<sp/>*<sp/>(*shift<sp/>-<sp/>1)<sp/>*<sp/><ref refid="_b_b_predict_8cpp_1a4b3e30827072c6282b201b96074c2bc8" kindref="member">getBbWidth</ref>(bb0);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>s1<sp/>=<sp/>0.5<sp/>*<sp/>(*shift<sp/>-<sp/>1)<sp/>*<sp/><ref refid="_b_b_predict_8cpp_1afa8fbca51344161ecb831f11b5b2c70f" kindref="member">getBbHeight</ref>(bb0);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Apply<sp/>transformations<sp/>(translation&amp;<sp/>scale)<sp/>to<sp/>old<sp/>Bounding<sp/>Box</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>bb1[0]<sp/>=<sp/>bb0[0]<sp/>-<sp/>s0<sp/>+<sp/>dx;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>bb1[1]<sp/>=<sp/>bb0[1]<sp/>-<sp/>s1<sp/>+<sp/>dy;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>bb1[2]<sp/>=<sp/>bb0[2]<sp/>+<sp/>s0<sp/>+<sp/>dx;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>bb1[3]<sp/>=<sp/>bb0[3]<sp/>+<sp/>s1<sp/>+<sp/>dy;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>absolute<sp/>scale<sp/>change</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>shift[0]<sp/>=<sp/>s0;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>shift[1]<sp/>=<sp/>s1;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/BBPredict.cpp"/>
+  </compounddef>
+</doxygen>

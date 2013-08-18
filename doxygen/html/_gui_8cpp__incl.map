@@ -1,0 +1,16 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_gui_8h.html" title="Gui.h" alt="" coords="448,161,501,189"/>
+<area shape="rect" id="node9" href="$_main_8h.html" title="Main.h" alt="" coords="521,83,585,111"/>
+<area shape="rect" id="node11" href="$_t_l_d_8h.html" title="TLD.h" alt="" coords="847,161,905,189"/>
+<area shape="rect" id="node52" href="$_im_acq_8h.html" title="ImAcq.h" alt="" coords="525,161,600,189"/>
+<area shape="rect" id="node15" href="$_median_flow_tracker_8h.html" title="MedianFlowTracker.h" alt="" coords="1056,393,1205,421"/>
+<area shape="rect" id="node18" href="$_detector_cascade_8h.html" title="DetectorCascade.h" alt="" coords="568,238,712,266"/>
+<area shape="rect" id="node20" href="$_detection_result_8h.html" title="DetectionResult.h" alt="" coords="373,393,507,421"/>
+<area shape="rect" id="node25" href="$_foreground_detector_8h.html" title="ForegroundDetector.h" alt="" coords="477,315,640,343"/>
+<area shape="rect" id="node30" href="$_variance_filter_8h.html" title="VarianceFilter.h" alt="" coords="664,315,781,343"/>
+<area shape="rect" id="node37" href="$_ensemble_classifier_8h.html" title="EnsembleClassifier.h" alt="" coords="829,393,981,421"/>
+<area shape="rect" id="node40" href="$_clustering_8h.html" title="Clustering.h" alt="" coords="304,315,403,343"/>
+<area shape="rect" id="node45" href="$_n_n_classifier_8h.html" title="NNClassifier.h" alt="" coords="171,315,280,343"/>
+<area shape="rect" id="node33" href="$_integral_image_8h.html" title="IntegralImage.h" alt="" coords="632,393,755,421"/>
+<area shape="rect" id="node49" href="$_normalized_patch_8h.html" title="NormalizedPatch.h" alt="" coords="5,393,147,421"/>
+</map>

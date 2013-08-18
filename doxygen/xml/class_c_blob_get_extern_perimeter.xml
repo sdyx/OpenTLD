@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="class_c_blob_get_extern_perimeter" kind="class" prot="public">
+    <compoundname>CBlobGetExternPerimeter</compoundname>
+    <basecompoundref refid="class_c_operador_blob" prot="public" virt="non-virtual">COperadorBlob</basecompoundref>
+    <includes refid="_blob_operators_8h" local="no">BlobOperators.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_blob_get_extern_perimeter_1afa64b04d0a3cd605dcfb9117361d7252" prot="private" static="no" mutable="no">
+        <type>IplImage *</type>
+        <definition>IplImage* CBlobGetExternPerimeter::m_mask</definition>
+        <argsstring></argsstring>
+        <name>m_mask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="491" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="491" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_get_extern_perimeter_1a9f735fab175aaf26a169bf404df5202c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CBlobGetExternPerimeter::m_xBorder</definition>
+        <argsstring></argsstring>
+        <name>m_xBorder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="492" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="492" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_get_extern_perimeter_1ad33c70e8fa890433930151b39bf77d49" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CBlobGetExternPerimeter::m_yBorder</definition>
+        <argsstring></argsstring>
+        <name>m_yBorder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="492" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="492" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_blob_get_extern_perimeter_1ab3118e7b8f6b8601dd119b3e4f089b7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CBlobGetExternPerimeter::CBlobGetExternPerimeter</definition>
+        <argsstring>()</argsstring>
+        <name>CBlobGetExternPerimeter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="471" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="470" bodyend="475"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_extern_perimeter_1ad4251d3c3231b4ef304796395d27d7fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CBlobGetExternPerimeter::CBlobGetExternPerimeter</definition>
+        <argsstring>(IplImage *mask, bool xBorder=true, bool yBorder=true)</argsstring>
+        <name>CBlobGetExternPerimeter</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>xBorder</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>yBorder</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="477" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="476" bodyend="481"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_extern_perimeter_1a3c506f7355bab0299f1992dcda2e0a0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double CBlobGetExternPerimeter::operator()</definition>
+        <argsstring>(CBlob &amp;blob)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="class_c_operador_blob_1a303c4189cc94cafbcbee116bf014e623">operator()</reimplements>
+        <param>
+          <type><ref refid="class_c_blob" kindref="compound">CBlob</ref> &amp;</type>
+          <declname>blob</declname>
+        </param>
+        <briefdescription>
+<para>Aply operator to blob. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="483" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="482" bodyend="485"/>
+        <references refid="class_c_blob_1ab1501b07a2c5ee23843bac66d20974e2" compoundref="blob_8cpp" startline="246" endline="376">CBlob::ExternPerimeter</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_extern_perimeter_1a0565de9fba118d0de191359934fb59d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>const char* CBlobGetExternPerimeter::GetNom</definition>
+        <argsstring>()</argsstring>
+        <name>GetNom</name>
+        <reimplements refid="class_c_operador_blob_1a717a19c163a26b45081a2231be24c008">GetNom</reimplements>
+        <briefdescription>
+<para>Get operator name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="487" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="486" bodyend="489"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Classe per calcular el nombre de pixels externs d&apos;un blob Class to get the number of extern pixels of a blob </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="261">
+        <label>CBlobGetExternPerimeter</label>
+        <link refid="class_c_blob_get_extern_perimeter"/>
+        <childnode refid="262" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="262">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="263">
+        <label>CBlobGetExternPerimeter</label>
+        <link refid="class_c_blob_get_extern_perimeter"/>
+        <childnode refid="264" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="264">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="468" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="467" bodyend="493"/>
+    <listofallmembers>
+      <member refid="class_c_blob_get_extern_perimeter_1ab3118e7b8f6b8601dd119b3e4f089b7d" prot="public" virt="non-virtual"><scope>CBlobGetExternPerimeter</scope><name>CBlobGetExternPerimeter</name></member>
+      <member refid="class_c_blob_get_extern_perimeter_1ad4251d3c3231b4ef304796395d27d7fc" prot="public" virt="non-virtual"><scope>CBlobGetExternPerimeter</scope><name>CBlobGetExternPerimeter</name></member>
+      <member refid="class_c_blob_get_extern_perimeter_1a0565de9fba118d0de191359934fb59d0" prot="public" virt="virtual"><scope>CBlobGetExternPerimeter</scope><name>GetNom</name></member>
+      <member refid="class_c_blob_get_extern_perimeter_1afa64b04d0a3cd605dcfb9117361d7252" prot="private" virt="non-virtual"><scope>CBlobGetExternPerimeter</scope><name>m_mask</name></member>
+      <member refid="class_c_blob_get_extern_perimeter_1a9f735fab175aaf26a169bf404df5202c" prot="private" virt="non-virtual"><scope>CBlobGetExternPerimeter</scope><name>m_xBorder</name></member>
+      <member refid="class_c_blob_get_extern_perimeter_1ad33c70e8fa890433930151b39bf77d49" prot="private" virt="non-virtual"><scope>CBlobGetExternPerimeter</scope><name>m_yBorder</name></member>
+      <member refid="class_c_operador_blob_1a477edfe687cf9ef41469bcf6ea636a75" prot="public" virt="non-virtual"><scope>CBlobGetExternPerimeter</scope><name>operator COperadorBlob *</name></member>
+      <member refid="class_c_blob_get_extern_perimeter_1a3c506f7355bab0299f1992dcda2e0a0a" prot="public" virt="virtual"><scope>CBlobGetExternPerimeter</scope><name>operator()</name></member>
+      <member refid="class_c_operador_blob_1a25ccc652bfa55e7b0143c88f452729a2" prot="public" virt="virtual"><scope>CBlobGetExternPerimeter</scope><name>~COperadorBlob</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

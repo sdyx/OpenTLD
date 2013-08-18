@@ -1,0 +1,121 @@
+\hypertarget{class_c_blob_get_x_y_inside}{
+\section{CBlobGetXYInside Class Reference}
+\label{class_c_blob_get_x_y_inside}\index{CBlobGetXYInside@{CBlobGetXYInside}}
+}
+
+
+{\ttfamily \#include $<$BlobOperators.h$>$}
+
+
+
+Inherits \hyperlink{class_c_operador_blob}{COperadorBlob}.
+
+
+
+Collaboration diagram for CBlobGetXYInside:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{class_c_blob_get_x_y_inside__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_blob_get_x_y_inside_ab231f5596c3a191d01d674b3fe99d0f6}{CBlobGetXYInside} ()
+\item 
+\hyperlink{class_c_blob_get_x_y_inside_a08d583499482fd37ec5a0efd4a1ada9b}{CBlobGetXYInside} (CvPoint2D32f p)
+\item 
+double \hyperlink{class_c_blob_get_x_y_inside_a5f816b668c59d6f782bea83076ccf96e}{operator()} (\hyperlink{class_c_blob}{CBlob} \&blob)
+\item 
+const char $\ast$ \hyperlink{class_c_blob_get_x_y_inside_aace8ea2f96e16acafc3c85038760a7ae}{GetNom} ()
+\begin{DoxyCompactList}\small\item\em Get operator name. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe per calcular si un punt cau dins del blob Class to calculate whether a point is inside a blob 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_blob_get_x_y_inside_ab231f5596c3a191d01d674b3fe99d0f6}{
+\index{CBlobGetXYInside@{CBlobGetXYInside}!CBlobGetXYInside@{CBlobGetXYInside}}
+\index{CBlobGetXYInside@{CBlobGetXYInside}!CBlobGetXYInside@{CBlobGetXYInside}}
+\subsubsection[{CBlobGetXYInside}]{\setlength{\rightskip}{0pt plus 5cm}CBlobGetXYInside::CBlobGetXYInside (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_blob_get_x_y_inside_ab231f5596c3a191d01d674b3fe99d0f6}
+Constructor estàndard Standard constructor \hypertarget{class_c_blob_get_x_y_inside_a08d583499482fd37ec5a0efd4a1ada9b}{
+\index{CBlobGetXYInside@{CBlobGetXYInside}!CBlobGetXYInside@{CBlobGetXYInside}}
+\index{CBlobGetXYInside@{CBlobGetXYInside}!CBlobGetXYInside@{CBlobGetXYInside}}
+\subsubsection[{CBlobGetXYInside}]{\setlength{\rightskip}{0pt plus 5cm}CBlobGetXYInside::CBlobGetXYInside (
+\begin{DoxyParamCaption}
+\item[{CvPoint2D32f}]{ p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_blob_get_x_y_inside_a08d583499482fd37ec5a0efd4a1ada9b}
+Constructor: indiquem el punt Constructor: sets the point 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_blob_get_x_y_inside_aace8ea2f96e16acafc3c85038760a7ae}{
+\index{CBlobGetXYInside@{CBlobGetXYInside}!GetNom@{GetNom}}
+\index{GetNom@{GetNom}!CBlobGetXYInside@{CBlobGetXYInside}}
+\subsubsection[{GetNom}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ CBlobGetXYInside::GetNom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_c_blob_get_x_y_inside_aace8ea2f96e16acafc3c85038760a7ae}
+
+
+Get operator name. 
+
+
+
+Implements \hyperlink{class_c_operador_blob_a717a19c163a26b45081a2231be24c008}{COperadorBlob}.
+
+\hypertarget{class_c_blob_get_x_y_inside_a5f816b668c59d6f782bea83076ccf96e}{
+\index{CBlobGetXYInside@{CBlobGetXYInside}!operator()@{operator()}}
+\index{operator()@{operator()}!CBlobGetXYInside@{CBlobGetXYInside}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}double CBlobGetXYInside::operator() (
+\begin{DoxyParamCaption}
+\item[{{\bf CBlob} \&}]{ blob}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_c_blob_get_x_y_inside_a5f816b668c59d6f782bea83076ccf96e}
+
+\begin{DoxyItemize}
+\item FUNCTION: BlobGetXYInside
+\item FUNCTIONALITY: Calculates whether a point is inside the rectangular bounding box of a blob
+\item PARAMETERS:
+\item RESULT:
+\begin{DoxyItemize}
+\item returns 1 if it is inside; o if not
+\end{DoxyItemize}
+\item RESTRICTIONS:
+\item AUTHOR: Francesc Pinyol Margalef
+\item CREATION DATE: 16-\/01-\/2006.
+\item MODIFICATION: Date. Author. Description. 
+\end{DoxyItemize}
+
+Implements \hyperlink{class_c_operador_blob_a303c4189cc94cafbcbee116bf014e623}{COperadorBlob}.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_get_x_y_inside_a5f816b668c59d6f782bea83076ccf96e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/3rdparty/cvblobs/\hyperlink{_blob_operators_8h}{BlobOperators.h}\item 
+src/3rdparty/cvblobs/\hyperlink{_blob_operators_8cpp}{BlobOperators.cpp}\end{DoxyCompactItemize}

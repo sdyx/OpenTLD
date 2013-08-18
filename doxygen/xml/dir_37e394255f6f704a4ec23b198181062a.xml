@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="dir_37e394255f6f704a4ec23b198181062a" kind="dir">
+    <compoundname>src/3rdparty/libconfig/</compoundname>
+    <innerfile refid="grammar_8c">grammar.c</innerfile>
+    <innerfile refid="grammar_8h">grammar.h</innerfile>
+    <innerfile refid="libconfig_8c">libconfig.c</innerfile>
+    <innerfile refid="libconfig_8h">libconfig.h</innerfile>
+    <innerfile refid="libconfig_8h_09_09">libconfig.h++</innerfile>
+    <innerfile refid="libconfig_8hh">libconfig.hh</innerfile>
+    <innerfile refid="libconfigcpp_8c_09_09">libconfigcpp.c++</innerfile>
+    <innerfile refid="libconfigcpp_8cc">libconfigcpp.cc</innerfile>
+    <innerfile refid="parsectx_8h">parsectx.h</innerfile>
+    <innerfile refid="scanctx_8c">scanctx.c</innerfile>
+    <innerfile refid="scanctx_8h">scanctx.h</innerfile>
+    <innerfile refid="scanner_8c">scanner.c</innerfile>
+    <innerfile refid="scanner_8h">scanner.h</innerfile>
+    <innerfile refid="strbuf_8c">strbuf.c</innerfile>
+    <innerfile refid="strbuf_8h">strbuf.h</innerfile>
+    <innerfile refid="wincompat_8h">wincompat.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/"/>
+  </compounddef>
+</doxygen>

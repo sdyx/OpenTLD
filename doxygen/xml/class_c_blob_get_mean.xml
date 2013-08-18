@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="class_c_blob_get_mean" kind="class" prot="public">
+    <compoundname>CBlobGetMean</compoundname>
+    <basecompoundref refid="class_c_operador_blob" prot="public" virt="non-virtual">COperadorBlob</basecompoundref>
+    <includes refid="_blob_operators_8h" local="no">BlobOperators.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_blob_get_mean_1a94dac875f2005e26879b3550bb13749f" prot="private" static="no" mutable="no">
+        <type>IplImage *</type>
+        <definition>IplImage* CBlobGetMean::m_image</definition>
+        <argsstring></argsstring>
+        <name>m_image</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="157" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_blob_get_mean_1ac79368faad6b088d11fe864e473bc00a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CBlobGetMean::CBlobGetMean</definition>
+        <argsstring>()</argsstring>
+        <name>CBlobGetMean</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="139" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="138" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_mean_1ae77b75cea8c5c87b7ed1eb17544e8775" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CBlobGetMean::CBlobGetMean</definition>
+        <argsstring>(IplImage *image)</argsstring>
+        <name>CBlobGetMean</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="143" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="142" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_mean_1ad1aff39c601989402d096fb649b9703c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double CBlobGetMean::operator()</definition>
+        <argsstring>(CBlob &amp;blob)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="class_c_operador_blob_1a303c4189cc94cafbcbee116bf014e623">operator()</reimplements>
+        <param>
+          <type><ref refid="class_c_blob" kindref="compound">CBlob</ref> &amp;</type>
+          <declname>blob</declname>
+        </param>
+        <briefdescription>
+<para>Aply operator to blob. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="148" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="147" bodyend="150"/>
+        <references refid="class_c_blob_1a1b12d25f8e470fdd808ac2e3bfe9bad4" compoundref="blob_8cpp" startline="409" endline="460">CBlob::Mean</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_mean_1a1992d893f77cf9be2fc6d3521fd51639" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>const char* CBlobGetMean::GetNom</definition>
+        <argsstring>()</argsstring>
+        <name>GetNom</name>
+        <reimplements refid="class_c_operador_blob_1a717a19c163a26b45081a2231be24c008">GetNom</reimplements>
+        <briefdescription>
+<para>Get operator name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="152" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="151" bodyend="154"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Classe per calcular la mitjana de nivells de gris d&apos;un blob Class to get the mean grey level of a blob </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="305">
+        <label>CBlobGetMean</label>
+        <link refid="class_c_blob_get_mean"/>
+        <childnode refid="306" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="306">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="307">
+        <label>CBlobGetMean</label>
+        <link refid="class_c_blob_get_mean"/>
+        <childnode refid="308" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="308">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="136" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="135" bodyend="158"/>
+    <listofallmembers>
+      <member refid="class_c_blob_get_mean_1ac79368faad6b088d11fe864e473bc00a" prot="public" virt="non-virtual"><scope>CBlobGetMean</scope><name>CBlobGetMean</name></member>
+      <member refid="class_c_blob_get_mean_1ae77b75cea8c5c87b7ed1eb17544e8775" prot="public" virt="non-virtual"><scope>CBlobGetMean</scope><name>CBlobGetMean</name></member>
+      <member refid="class_c_blob_get_mean_1a1992d893f77cf9be2fc6d3521fd51639" prot="public" virt="virtual"><scope>CBlobGetMean</scope><name>GetNom</name></member>
+      <member refid="class_c_blob_get_mean_1a94dac875f2005e26879b3550bb13749f" prot="private" virt="non-virtual"><scope>CBlobGetMean</scope><name>m_image</name></member>
+      <member refid="class_c_operador_blob_1a477edfe687cf9ef41469bcf6ea636a75" prot="public" virt="non-virtual"><scope>CBlobGetMean</scope><name>operator COperadorBlob *</name></member>
+      <member refid="class_c_blob_get_mean_1ad1aff39c601989402d096fb649b9703c" prot="public" virt="virtual"><scope>CBlobGetMean</scope><name>operator()</name></member>
+      <member refid="class_c_operador_blob_1a25ccc652bfa55e7b0143c88f452729a2" prot="public" virt="virtual"><scope>CBlobGetMean</scope><name>~COperadorBlob</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,970 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="classlibconfig_1_1_config" kind="class" prot="public">
+    <compoundname>libconfig::Config</compoundname>
+    <includes refid="libconfig_8h_09_09" local="no">libconfig.h++</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlibconfig_1_1_config_1ac8440fe53e4bd0f1f9663d99e5c63322" prot="private" static="no" mutable="no">
+        <type><ref refid="structconfig__t" kindref="compound">config_t</ref> *</type>
+        <definition>config_t* libconfig::Config::_config</definition>
+        <argsstring></argsstring>
+        <name>_config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="358" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlibconfig_1_1_config_1a6fdc2ad386a58b7d8715db0453658bb6" prot="private" static="no" mutable="no">
+        <type><ref refid="classlibconfig_1_1_setting_1a35034c3fd8c1b2e8e590b6f53083106e" kindref="member">Setting::Format</ref></type>
+        <definition>Setting::Format libconfig::Config::_defaultFormat</definition>
+        <argsstring></argsstring>
+        <name>_defaultFormat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="452" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classlibconfig_1_1_config_1a98c0d6314e24643057eea62e3ae407de" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig::Config::ConfigDestructor</definition>
+        <argsstring>(void *arg)</argsstring>
+        <name>ConfigDestructor</name>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="360" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="284" bodyend="287"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classlibconfig_1_1_config_1a7e2e4843b6561585c3e311b4496d06db" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>libconfig::Config::Config</definition>
+        <argsstring>(const Config &amp;other)</argsstring>
+        <name>Config</name>
+        <param>
+          <type>const <ref refid="classlibconfig_1_1_config" kindref="compound">Config</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="361"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1ae32db24df7cb17580291a97490714b95" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classlibconfig_1_1_config" kindref="compound">Config</ref> &amp;</type>
+        <definition>Config&amp; libconfig::Config::operator=</definition>
+        <argsstring>(const Config &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classlibconfig_1_1_config" kindref="compound">Config</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="362"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1a1f6fe8feb7183108cf4914b3b428e7d7" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig::Config::handleError</definition>
+        <argsstring>() const </argsstring>
+        <name>handleError</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="454" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="363" bodyend="380"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlibconfig_1_1_config_1ae4e8fa08259da2a1a222e9d04eb42fb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>libconfig::Config::Config</definition>
+        <argsstring>()</argsstring>
+        <name>Config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="366" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="291" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1a5d94e935833746061f33d58261365f55" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>libconfig::Config::~Config</definition>
+        <argsstring>()</argsstring>
+        <name>~Config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="367" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="301" bodyend="305"/>
+        <references refid="libconfig_8c_1af8f0d0a9416fadc92a39cb3703c3c642" compoundref="libconfig_8c" startline="723" endline="731">config_init</references>
+        <references refid="libconfig_8c_1a280861e940c38916d08df6ef5f3020a2" compoundref="libconfig_8c" startline="1484" endline="1487">config_set_destructor</references>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1aa021f72ce9742f27bf7b5d62c9cb57b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig::Config::setAutoConvert</definition>
+        <argsstring>(bool flag)</argsstring>
+        <name>setAutoConvert</name>
+        <param>
+          <type>bool</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="369" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="309" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1a4986e712dd553c3b9f511a98ada42817" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool libconfig::Config::getAutoConvert</definition>
+        <argsstring>() const </argsstring>
+        <name>getAutoConvert</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="370" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="316" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1ad821267b5bd7e4642040a5fe234dcf15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig::Config::setDefaultFormat</definition>
+        <argsstring>(Setting::Format format)</argsstring>
+        <name>setDefaultFormat</name>
+        <param>
+          <type><ref refid="classlibconfig_1_1_setting_1a35034c3fd8c1b2e8e590b6f53083106e" kindref="member">Setting::Format</ref></type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="372" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="323" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1affc4cebbf4922d05e0bab5a9e3c25c26" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlibconfig_1_1_setting_1a35034c3fd8c1b2e8e590b6f53083106e" kindref="member">Setting::Format</ref></type>
+        <definition>Setting::Format libconfig::Config::getDefaultFormat</definition>
+        <argsstring>() const </argsstring>
+        <name>getDefaultFormat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="374" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="373" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1aefc250cedb4d03740e43e734913a05ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig::Config::setTabWidth</definition>
+        <argsstring>(unsigned short width)</argsstring>
+        <name>setTabWidth</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>width</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="376" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="335" bodyend="338"/>
+        <references refid="classlibconfig_1_1_setting_1a35034c3fd8c1b2e8e590b6f53083106ea14a4aa723839cc4c033b93802cfa1a3c" compoundref="libconfig_8h_09_09" startline="189">libconfig::Setting::FormatHex</references>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1a49af806089ff70317745e660ac1d5ad4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned short</type>
+        <definition>unsigned short libconfig::Config::getTabWidth</definition>
+        <argsstring>() const </argsstring>
+        <name>getTabWidth</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="377" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="342" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1aa5a069b2d79157f53fde553295ffff37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig::Config::setIncludeDir</definition>
+        <argsstring>(const char *includeDir)</argsstring>
+        <name>setIncludeDir</name>
+        <param>
+          <type>const char *</type>
+          <declname>includeDir</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="379" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="349" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1ae4b7acff869245197eed53f800f3fe4f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * libconfig::Config::getIncludeDir</definition>
+        <argsstring>() const </argsstring>
+        <name>getIncludeDir</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="380" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="356" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1a468e6ef4c2e36bdd57fc23708dee69a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig::Config::read</definition>
+        <argsstring>(FILE *stream)</argsstring>
+        <name>read</name>
+        <param>
+          <type>FILE *</type>
+          <declname>stream</declname>
+        </param>
+        <exceptions> throw (<ref refid="classlibconfig_1_1_parse_exception" kindref="compound">ParseException</ref>)</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="382" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="384" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1a015b1433153ab1a8c5bb05b4bb96dc46" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig::Config::write</definition>
+        <argsstring>(FILE *stream) const </argsstring>
+        <name>write</name>
+        <param>
+          <type>FILE *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="383" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="400" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1af3076c6839fa256bef1ad3fc33e17f98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig::Config::readString</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>readString</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <exceptions> throw (<ref refid="classlibconfig_1_1_parse_exception" kindref="compound">ParseException</ref>)</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="385" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="392" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1a19da31ba3ee31992a6ddbd6e079d629a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig::Config::readString</definition>
+        <argsstring>(const std::string &amp;str)</argsstring>
+        <name>readString</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>str</declname>
+        </param>
+        <exceptions> throw (<ref refid="classlibconfig_1_1_parse_exception" kindref="compound">ParseException</ref>)</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="387" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="386" bodyend="387"/>
+        <references refid="classlibconfig_1_1_config_1a19da31ba3ee31992a6ddbd6e079d629a" compoundref="libconfig_8h_09_09" startline="386" endline="387">readString</references>
+        <referencedby refid="classlibconfig_1_1_config_1a19da31ba3ee31992a6ddbd6e079d629a" compoundref="libconfig_8h_09_09" startline="386" endline="387">readString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1a31bc78ca36d4081560de025cbb08c022" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig::Config::readFile</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>readFile</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <exceptions> throw (<ref refid="classlibconfig_1_1_file_i_o_exception" kindref="compound">FileIOException</ref>, <ref refid="classlibconfig_1_1_parse_exception" kindref="compound">ParseException</ref>)</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="389" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="407" bodyend="412"/>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1a9ee45e1ab444c2865bf076fbf4219326" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig::Config::writeFile</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>writeFile</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <exceptions> throw (<ref refid="classlibconfig_1_1_file_i_o_exception" kindref="compound">FileIOException</ref>)</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="390" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="416" bodyend="420"/>
+        <references refid="libconfig_8c_1ab917f502ada6094c4e37e0255b073970" compoundref="libconfig_8c" startline="668" endline="683">config_read_file</references>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1a0e7f37e3f8a08f35a77778de99515c6e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlibconfig_1_1_setting" kindref="compound">Setting</ref> &amp;</type>
+        <definition>Setting&amp; libconfig::Config::lookup</definition>
+        <argsstring>(const std::string &amp;path) const </argsstring>
+        <name>lookup</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <exceptions> throw (<ref refid="classlibconfig_1_1_setting_not_found_exception" kindref="compound">SettingNotFoundException</ref>)</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="394" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="392" bodyend="394"/>
+        <references refid="classlibconfig_1_1_config_1a0e7f37e3f8a08f35a77778de99515c6e" compoundref="libconfig_8h_09_09" startline="392" endline="394">lookup</references>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+        <referencedby refid="classlibconfig_1_1_config_1a0e7f37e3f8a08f35a77778de99515c6e" compoundref="libconfig_8h_09_09" startline="392" endline="394">lookup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1adcfc1c6a6c7e43e5ac79d1e534fa0744" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classlibconfig_1_1_setting" kindref="compound">Setting</ref> &amp;</type>
+        <definition>Setting &amp; libconfig::Config::lookup</definition>
+        <argsstring>(const char *path) const </argsstring>
+        <name>lookup</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <exceptions> throw (<ref refid="classlibconfig_1_1_setting_not_found_exception" kindref="compound">SettingNotFoundException</ref>)</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="396" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="424" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1a1fa3eb517f8a6722b170322b5abdad15" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool libconfig::Config::exists</definition>
+        <argsstring>(const std::string &amp;path) const </argsstring>
+        <name>exists</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="399" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="398" bodyend="399"/>
+        <references refid="classlibconfig_1_1_config_1a1fa3eb517f8a6722b170322b5abdad15" compoundref="libconfig_8h_09_09" startline="398" endline="399">exists</references>
+        <referencedby refid="classlibconfig_1_1_config_1a1fa3eb517f8a6722b170322b5abdad15" compoundref="libconfig_8h_09_09" startline="398" endline="399">exists</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1a548166ff5b36227a295489a86c5024c8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool libconfig::Config::exists</definition>
+        <argsstring>(const char *path) const </argsstring>
+        <name>exists</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="401" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="436" bodyend="441"/>
+        <references refid="libconfig_8c_1ad5a5c51a4df796b9875fcab458aded96" compoundref="libconfig_8c" startline="1172" endline="1175">config_lookup</references>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1abbf777fd9ef13502f049c3cbd8e1742e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool libconfig::Config::lookupValue</definition>
+        <argsstring>(const char *path, bool &amp;value) const </argsstring>
+        <name>lookupValue</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>value</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="403" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="459" bodyend="462"/>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1ae82a77068c32d45ac0a006343f6cbec8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool libconfig::Config::lookupValue</definition>
+        <argsstring>(const char *path, int &amp;value) const </argsstring>
+        <name>lookupValue</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>value</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="404" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="466" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1a1021af7dfe97eb838d9a9892bd5b8339" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool libconfig::Config::lookupValue</definition>
+        <argsstring>(const char *path, unsigned int &amp;value) const </argsstring>
+        <name>lookupValue</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>unsigned int &amp;</type>
+          <declname>value</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="405" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="473" bodyend="476"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1a50124b872c6412045dca2c89a4a71cca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool libconfig::Config::lookupValue</definition>
+        <argsstring>(const char *path, long long &amp;value) const </argsstring>
+        <name>lookupValue</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>long long &amp;</type>
+          <declname>value</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="406" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="480" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1a9b6cda1b3a631f7f9c912405f96a3601" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool libconfig::Config::lookupValue</definition>
+        <argsstring>(const char *path, unsigned long long &amp;value) const </argsstring>
+        <name>lookupValue</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>unsigned long long &amp;</type>
+          <declname>value</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="408" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="487" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1ac1d8313aba68010ec75a52e1f19cdd90" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool libconfig::Config::lookupValue</definition>
+        <argsstring>(const char *path, double &amp;value) const </argsstring>
+        <name>lookupValue</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="409" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="495" bodyend="498"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1a493217a12b64307ed2917c7ea286e24e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool libconfig::Config::lookupValue</definition>
+        <argsstring>(const char *path, float &amp;value) const </argsstring>
+        <name>lookupValue</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>value</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="410" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="502" bodyend="505"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1a0934a631059747bd570ced12f9d19ba7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool libconfig::Config::lookupValue</definition>
+        <argsstring>(const char *path, const char *&amp;value) const </argsstring>
+        <name>lookupValue</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const char *&amp;</type>
+          <declname>value</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="411" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="509" bodyend="512"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1a09f19c13ff6e85b86479e43b3d269e36" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool libconfig::Config::lookupValue</definition>
+        <argsstring>(const char *path, std::string &amp;value) const </argsstring>
+        <name>lookupValue</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="412" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="516" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1aefdd467e6bfc1caf66337155e762fa59" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool libconfig::Config::lookupValue</definition>
+        <argsstring>(const std::string &amp;path, bool &amp;value) const </argsstring>
+        <name>lookupValue</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>value</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="415" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="414" bodyend="415"/>
+        <references refid="classlibconfig_1_1_config_1aefdd467e6bfc1caf66337155e762fa59" compoundref="libconfig_8h_09_09" startline="414" endline="415">lookupValue</references>
+        <referencedby refid="classlibconfig_1_1_config_1aefdd467e6bfc1caf66337155e762fa59" compoundref="libconfig_8h_09_09" startline="414" endline="415">lookupValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1ae081df5d2ecb0c67b02dd0e72464a159" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool libconfig::Config::lookupValue</definition>
+        <argsstring>(const std::string &amp;path, int &amp;value) const </argsstring>
+        <name>lookupValue</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>value</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="418" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="417" bodyend="418"/>
+        <references refid="classlibconfig_1_1_config_1ae081df5d2ecb0c67b02dd0e72464a159" compoundref="libconfig_8h_09_09" startline="417" endline="418">lookupValue</references>
+        <referencedby refid="classlibconfig_1_1_config_1ae081df5d2ecb0c67b02dd0e72464a159" compoundref="libconfig_8h_09_09" startline="417" endline="418">lookupValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1aeb906407ffb13dc17abc75284bf625e0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool libconfig::Config::lookupValue</definition>
+        <argsstring>(const std::string &amp;path, unsigned int &amp;value) const </argsstring>
+        <name>lookupValue</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>unsigned int &amp;</type>
+          <declname>value</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="422" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="420" bodyend="422"/>
+        <references refid="classlibconfig_1_1_config_1aeb906407ffb13dc17abc75284bf625e0" compoundref="libconfig_8h_09_09" startline="420" endline="422">lookupValue</references>
+        <referencedby refid="classlibconfig_1_1_config_1aeb906407ffb13dc17abc75284bf625e0" compoundref="libconfig_8h_09_09" startline="420" endline="422">lookupValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1abac0ebba041f793bd7f0fdf4b118b22f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool libconfig::Config::lookupValue</definition>
+        <argsstring>(const std::string &amp;path, long long &amp;value) const </argsstring>
+        <name>lookupValue</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>long long &amp;</type>
+          <declname>value</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="426" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="424" bodyend="426"/>
+        <references refid="classlibconfig_1_1_config_1abac0ebba041f793bd7f0fdf4b118b22f" compoundref="libconfig_8h_09_09" startline="424" endline="426">lookupValue</references>
+        <referencedby refid="classlibconfig_1_1_config_1abac0ebba041f793bd7f0fdf4b118b22f" compoundref="libconfig_8h_09_09" startline="424" endline="426">lookupValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1a891a38318bcdea1ea8f17c68e1c928a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool libconfig::Config::lookupValue</definition>
+        <argsstring>(const std::string &amp;path, unsigned long long &amp;value) const </argsstring>
+        <name>lookupValue</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>unsigned long long &amp;</type>
+          <declname>value</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="430" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="428" bodyend="430"/>
+        <references refid="classlibconfig_1_1_config_1a891a38318bcdea1ea8f17c68e1c928a0" compoundref="libconfig_8h_09_09" startline="428" endline="430">lookupValue</references>
+        <referencedby refid="classlibconfig_1_1_config_1a891a38318bcdea1ea8f17c68e1c928a0" compoundref="libconfig_8h_09_09" startline="428" endline="430">lookupValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1ac4d63696452375134a8a33aa9137e8ad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool libconfig::Config::lookupValue</definition>
+        <argsstring>(const std::string &amp;path, double &amp;value) const </argsstring>
+        <name>lookupValue</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="434" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="432" bodyend="434"/>
+        <references refid="classlibconfig_1_1_config_1ac4d63696452375134a8a33aa9137e8ad" compoundref="libconfig_8h_09_09" startline="432" endline="434">lookupValue</references>
+        <referencedby refid="classlibconfig_1_1_config_1ac4d63696452375134a8a33aa9137e8ad" compoundref="libconfig_8h_09_09" startline="432" endline="434">lookupValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1abd86ae4d09edafb2d79a4656b99c9433" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool libconfig::Config::lookupValue</definition>
+        <argsstring>(const std::string &amp;path, float &amp;value) const </argsstring>
+        <name>lookupValue</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>value</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="438" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="436" bodyend="438"/>
+        <references refid="classlibconfig_1_1_config_1abd86ae4d09edafb2d79a4656b99c9433" compoundref="libconfig_8h_09_09" startline="436" endline="438">lookupValue</references>
+        <referencedby refid="classlibconfig_1_1_config_1abd86ae4d09edafb2d79a4656b99c9433" compoundref="libconfig_8h_09_09" startline="436" endline="438">lookupValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1a5087522213b6c2b2b658c6d1fdbe21dd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool libconfig::Config::lookupValue</definition>
+        <argsstring>(const std::string &amp;path, const char *&amp;value) const </argsstring>
+        <name>lookupValue</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const char *&amp;</type>
+          <declname>value</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="442" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="440" bodyend="442"/>
+        <references refid="classlibconfig_1_1_config_1a5087522213b6c2b2b658c6d1fdbe21dd" compoundref="libconfig_8h_09_09" startline="440" endline="442">lookupValue</references>
+        <referencedby refid="classlibconfig_1_1_config_1a5087522213b6c2b2b658c6d1fdbe21dd" compoundref="libconfig_8h_09_09" startline="440" endline="442">lookupValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1acbe75986295275d5beb1b6e54bd80554" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool libconfig::Config::lookupValue</definition>
+        <argsstring>(const std::string &amp;path, std::string &amp;value) const </argsstring>
+        <name>lookupValue</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="446" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="444" bodyend="446"/>
+        <references refid="classlibconfig_1_1_config_1acbe75986295275d5beb1b6e54bd80554" compoundref="libconfig_8h_09_09" startline="444" endline="446">lookupValue</references>
+        <referencedby refid="classlibconfig_1_1_config_1acbe75986295275d5beb1b6e54bd80554" compoundref="libconfig_8h_09_09" startline="444" endline="446">lookupValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_config_1a10e517e0d174ce21141b9d24b1b2c5db" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classlibconfig_1_1_setting" kindref="compound">Setting</ref> &amp;</type>
+        <definition>Setting &amp; libconfig::Config::getRoot</definition>
+        <argsstring>() const </argsstring>
+        <name>getRoot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="448" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="523" bodyend="526"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="376">
+        <label>config_list_t</label>
+        <link refid="structconfig__list__t"/>
+        <childnode refid="374" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="372">
+        <label>libconfig::Config</label>
+        <link refid="classlibconfig_1_1_config"/>
+        <childnode refid="373" relation="usage">
+          <edgelabel>_config</edgelabel>
+        </childnode>
+      </node>
+      <node id="374">
+        <label>config_setting_t</label>
+        <link refid="structconfig__setting__t"/>
+        <childnode refid="373" relation="usage">
+          <edgelabel>config</edgelabel>
+        </childnode>
+        <childnode refid="374" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="375" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="373">
+        <label>config_t</label>
+        <link refid="structconfig__t"/>
+        <childnode refid="374" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="375">
+        <label>config_value_t</label>
+        <link refid="unionconfig__value__t"/>
+        <childnode refid="376" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="355" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="354" bodyend="455"/>
+    <listofallmembers>
+      <member refid="classlibconfig_1_1_config_1ac8440fe53e4bd0f1f9663d99e5c63322" prot="private" virt="non-virtual"><scope>libconfig::Config</scope><name>_config</name></member>
+      <member refid="classlibconfig_1_1_config_1a6fdc2ad386a58b7d8715db0453658bb6" prot="private" virt="non-virtual"><scope>libconfig::Config</scope><name>_defaultFormat</name></member>
+      <member refid="classlibconfig_1_1_config_1a7e2e4843b6561585c3e311b4496d06db" prot="private" virt="non-virtual"><scope>libconfig::Config</scope><name>Config</name></member>
+      <member refid="classlibconfig_1_1_config_1ae4e8fa08259da2a1a222e9d04eb42fb1" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>Config</name></member>
+      <member refid="classlibconfig_1_1_config_1a98c0d6314e24643057eea62e3ae407de" prot="private" virt="non-virtual"><scope>libconfig::Config</scope><name>ConfigDestructor</name></member>
+      <member refid="classlibconfig_1_1_config_1a1fa3eb517f8a6722b170322b5abdad15" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>exists</name></member>
+      <member refid="classlibconfig_1_1_config_1a548166ff5b36227a295489a86c5024c8" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>exists</name></member>
+      <member refid="classlibconfig_1_1_config_1a4986e712dd553c3b9f511a98ada42817" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>getAutoConvert</name></member>
+      <member refid="classlibconfig_1_1_config_1affc4cebbf4922d05e0bab5a9e3c25c26" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>getDefaultFormat</name></member>
+      <member refid="classlibconfig_1_1_config_1ae4b7acff869245197eed53f800f3fe4f" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>getIncludeDir</name></member>
+      <member refid="classlibconfig_1_1_config_1a10e517e0d174ce21141b9d24b1b2c5db" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>getRoot</name></member>
+      <member refid="classlibconfig_1_1_config_1a49af806089ff70317745e660ac1d5ad4" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>getTabWidth</name></member>
+      <member refid="classlibconfig_1_1_config_1a1f6fe8feb7183108cf4914b3b428e7d7" prot="private" virt="non-virtual"><scope>libconfig::Config</scope><name>handleError</name></member>
+      <member refid="classlibconfig_1_1_config_1a0e7f37e3f8a08f35a77778de99515c6e" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>lookup</name></member>
+      <member refid="classlibconfig_1_1_config_1adcfc1c6a6c7e43e5ac79d1e534fa0744" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>lookup</name></member>
+      <member refid="classlibconfig_1_1_config_1abbf777fd9ef13502f049c3cbd8e1742e" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>lookupValue</name></member>
+      <member refid="classlibconfig_1_1_config_1ae82a77068c32d45ac0a006343f6cbec8" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>lookupValue</name></member>
+      <member refid="classlibconfig_1_1_config_1a1021af7dfe97eb838d9a9892bd5b8339" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>lookupValue</name></member>
+      <member refid="classlibconfig_1_1_config_1a50124b872c6412045dca2c89a4a71cca" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>lookupValue</name></member>
+      <member refid="classlibconfig_1_1_config_1a9b6cda1b3a631f7f9c912405f96a3601" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>lookupValue</name></member>
+      <member refid="classlibconfig_1_1_config_1ac1d8313aba68010ec75a52e1f19cdd90" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>lookupValue</name></member>
+      <member refid="classlibconfig_1_1_config_1a493217a12b64307ed2917c7ea286e24e" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>lookupValue</name></member>
+      <member refid="classlibconfig_1_1_config_1a0934a631059747bd570ced12f9d19ba7" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>lookupValue</name></member>
+      <member refid="classlibconfig_1_1_config_1a09f19c13ff6e85b86479e43b3d269e36" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>lookupValue</name></member>
+      <member refid="classlibconfig_1_1_config_1aefdd467e6bfc1caf66337155e762fa59" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>lookupValue</name></member>
+      <member refid="classlibconfig_1_1_config_1ae081df5d2ecb0c67b02dd0e72464a159" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>lookupValue</name></member>
+      <member refid="classlibconfig_1_1_config_1aeb906407ffb13dc17abc75284bf625e0" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>lookupValue</name></member>
+      <member refid="classlibconfig_1_1_config_1abac0ebba041f793bd7f0fdf4b118b22f" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>lookupValue</name></member>
+      <member refid="classlibconfig_1_1_config_1a891a38318bcdea1ea8f17c68e1c928a0" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>lookupValue</name></member>
+      <member refid="classlibconfig_1_1_config_1ac4d63696452375134a8a33aa9137e8ad" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>lookupValue</name></member>
+      <member refid="classlibconfig_1_1_config_1abd86ae4d09edafb2d79a4656b99c9433" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>lookupValue</name></member>
+      <member refid="classlibconfig_1_1_config_1a5087522213b6c2b2b658c6d1fdbe21dd" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>lookupValue</name></member>
+      <member refid="classlibconfig_1_1_config_1acbe75986295275d5beb1b6e54bd80554" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>lookupValue</name></member>
+      <member refid="classlibconfig_1_1_config_1ae32db24df7cb17580291a97490714b95" prot="private" virt="non-virtual"><scope>libconfig::Config</scope><name>operator=</name></member>
+      <member refid="classlibconfig_1_1_config_1a468e6ef4c2e36bdd57fc23708dee69a1" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>read</name></member>
+      <member refid="classlibconfig_1_1_config_1a31bc78ca36d4081560de025cbb08c022" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>readFile</name></member>
+      <member refid="classlibconfig_1_1_config_1af3076c6839fa256bef1ad3fc33e17f98" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>readString</name></member>
+      <member refid="classlibconfig_1_1_config_1a19da31ba3ee31992a6ddbd6e079d629a" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>readString</name></member>
+      <member refid="classlibconfig_1_1_config_1aa021f72ce9742f27bf7b5d62c9cb57b5" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>setAutoConvert</name></member>
+      <member refid="classlibconfig_1_1_config_1ad821267b5bd7e4642040a5fe234dcf15" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>setDefaultFormat</name></member>
+      <member refid="classlibconfig_1_1_config_1aa5a069b2d79157f53fde553295ffff37" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>setIncludeDir</name></member>
+      <member refid="classlibconfig_1_1_config_1aefc250cedb4d03740e43e734913a05ee" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>setTabWidth</name></member>
+      <member refid="classlibconfig_1_1_config_1a015b1433153ab1a8c5bb05b4bb96dc46" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>write</name></member>
+      <member refid="classlibconfig_1_1_config_1a9ee45e1ab444c2865bf076fbf4219326" prot="public" virt="non-virtual"><scope>libconfig::Config</scope><name>writeFile</name></member>
+      <member refid="classlibconfig_1_1_config_1a5d94e935833746061f33d58261365f55" prot="public" virt="virtual"><scope>libconfig::Config</scope><name>~Config</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

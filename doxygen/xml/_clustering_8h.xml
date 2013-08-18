@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_clustering_8h" kind="file">
+    <compoundname>Clustering.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">cv.h</includes>
+    <includes refid="_detection_result_8h" local="yes">DetectionResult.h</includes>
+    <includedby refid="_clustering_8cpp" local="yes">src/libopentld/tld/Clustering.cpp</includedby>
+    <includedby refid="_detector_cascade_8h" local="yes">src/libopentld/tld/DetectorCascade.h</includedby>
+    <incdepgraph>
+      <node id="1418">
+        <label>src/libopentld/tld/Clustering.h</label>
+        <link refid="Clustering.h"/>
+        <childnode refid="1419" relation="include">
+        </childnode>
+        <childnode refid="1420" relation="include">
+        </childnode>
+        <childnode refid="1421" relation="include">
+        </childnode>
+      </node>
+      <node id="1419">
+        <label>vector</label>
+      </node>
+      <node id="1420">
+        <label>cv.h</label>
+      </node>
+      <node id="1421">
+        <label>DetectionResult.h</label>
+        <link refid="_detection_result_8h"/>
+        <childnode refid="1419" relation="include">
+        </childnode>
+        <childnode refid="1420" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1424">
+        <label>src/libopentld/tld/DetectorCascade.h</label>
+        <link refid="_detector_cascade_8h"/>
+        <childnode refid="1423" relation="include">
+        </childnode>
+        <childnode refid="1425" relation="include">
+        </childnode>
+        <childnode refid="1426" relation="include">
+        </childnode>
+        <childnode refid="1427" relation="include">
+        </childnode>
+        <childnode refid="1428" relation="include">
+        </childnode>
+        <childnode refid="1437" relation="include">
+        </childnode>
+        <childnode refid="1438" relation="include">
+        </childnode>
+      </node>
+      <node id="1430">
+        <label>src/opentld/main/Main.h</label>
+        <link refid="_main_8h"/>
+        <childnode refid="1431" relation="include">
+        </childnode>
+        <childnode refid="1432" relation="include">
+        </childnode>
+        <childnode refid="1436" relation="include">
+        </childnode>
+        <childnode refid="1433" relation="include">
+        </childnode>
+        <childnode refid="1434" relation="include">
+        </childnode>
+        <childnode refid="1435" relation="include">
+        </childnode>
+      </node>
+      <node id="1425">
+        <label>src/libopentld/tld/DetectorCascade.cpp</label>
+        <link refid="_detector_cascade_8cpp"/>
+      </node>
+      <node id="1438">
+        <label>src/libopentld/tld/VarianceFilter.cpp</label>
+        <link refid="_variance_filter_8cpp"/>
+      </node>
+      <node id="1431">
+        <label>src/opentld/main/Config.h</label>
+        <link refid="_config_8h"/>
+        <childnode refid="1432" relation="include">
+        </childnode>
+        <childnode refid="1433" relation="include">
+        </childnode>
+        <childnode refid="1434" relation="include">
+        </childnode>
+        <childnode refid="1435" relation="include">
+        </childnode>
+      </node>
+      <node id="1436">
+        <label>src/opentld/main/Gui.cpp</label>
+        <link refid="_gui_8cpp"/>
+      </node>
+      <node id="1437">
+        <label>src/libopentld/tld/TLDUtil.cpp</label>
+        <link refid="_t_l_d_util_8cpp"/>
+      </node>
+      <node id="1433">
+        <label>src/opentld/main/Main.cpp</label>
+        <link refid="_main_8cpp"/>
+      </node>
+      <node id="1422">
+        <label>src/libopentld/tld/Clustering.h</label>
+        <link refid="Clustering.h"/>
+        <childnode refid="1423" relation="include">
+        </childnode>
+        <childnode refid="1424" relation="include">
+        </childnode>
+      </node>
+      <node id="1434">
+        <label>src/opentld/OpenTLD.cpp</label>
+        <link refid="_open_t_l_d_8cpp"/>
+      </node>
+      <node id="1432">
+        <label>src/opentld/main/Config.cpp</label>
+        <link refid="_config_8cpp"/>
+      </node>
+      <node id="1427">
+        <label>src/libopentld/tld/NNClassifier.cpp</label>
+        <link refid="_n_n_classifier_8cpp"/>
+      </node>
+      <node id="1429">
+        <label>src/libopentld/tld/TLD.cpp</label>
+        <link refid="_t_l_d_8cpp"/>
+      </node>
+      <node id="1428">
+        <label>src/libopentld/tld/TLD.h</label>
+        <link refid="_t_l_d_8h"/>
+        <childnode refid="1429" relation="include">
+        </childnode>
+        <childnode refid="1430" relation="include">
+        </childnode>
+      </node>
+      <node id="1423">
+        <label>src/libopentld/tld/Clustering.cpp</label>
+        <link refid="_clustering_8cpp"/>
+      </node>
+      <node id="1435">
+        <label>src/opentld/QOpenTLD.cpp</label>
+        <link refid="_q_open_t_l_d_8cpp"/>
+      </node>
+      <node id="1426">
+        <label>src/libopentld/tld/EnsembleClassifier.cpp</label>
+        <link refid="_ensemble_classifier_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classtld_1_1_clustering" prot="public">tld::Clustering</innerclass>
+    <innernamespace refid="namespacetld">tld</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>Clustering.h</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Nov<sp/>16,<sp/>2011</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>Georg<sp/>Nebehay</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CLUSTERING_H_</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CLUSTERING_H_</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cv.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_detection_result_8h" kindref="compound">DetectionResult.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">tld</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classtld_1_1_clustering" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtld_1_1_clustering" kindref="compound">Clustering</ref></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calcMeanRect(std::vector&lt;int&gt;<sp/>*<sp/>indices);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calcDistances(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*distances);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cluster(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*distances,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*clusterIndices);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44" refid="classtld_1_1_clustering_1acd1251895c2999f2041b50142cf81dda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="classtld_1_1_clustering_1acd1251895c2999f2041b50142cf81dda" kindref="member">windows</ref>;</highlight></codeline>
+<codeline lineno="45" refid="classtld_1_1_clustering_1a25b3b82795ea06758b6a321f856f004b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_clustering_1a25b3b82795ea06758b6a321f856f004b" kindref="member">numWindows</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classtld_1_1_clustering_1abfc41de1f95b5c019676aa5f42d9e960" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result" kindref="compound">DetectionResult</ref><sp/>*<ref refid="classtld_1_1_clustering_1abfc41de1f95b5c019676aa5f42d9e960" kindref="member">detectionResult</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Configurable<sp/>members</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classtld_1_1_clustering_1ae5fcb2d589b404b081dad28977467707" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_clustering_1ae5fcb2d589b404b081dad28977467707" kindref="member">cutoff</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_clustering_1ae900a3a513ddad5e5b2f5f49d25d8358" kindref="member">Clustering</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_clustering_1a86532276b1db43fc44ff201b385c4967" kindref="member">~Clustering</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_clustering_1a2dbde4a94a483e8befe4b710445941bf" kindref="member">release</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_clustering_1a772750b3a1183ef80a9b4cf202e4c203" kindref="member">clusterConfidentIndices</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>tld<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CLUSTERING_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/Clustering.h"/>
+  </compounddef>
+</doxygen>

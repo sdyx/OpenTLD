@@ -1,0 +1,400 @@
+\hypertarget{classtld_1_1_detector_cascade}{
+\section{tld::DetectorCascade Class Reference}
+\label{classtld_1_1_detector_cascade}\index{tld::DetectorCascade@{tld::DetectorCascade}}
+}
+
+
+{\ttfamily \#include $<$DetectorCascade.h$>$}
+
+
+
+Collaboration diagram for tld::DetectorCascade:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_detector_cascade__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtld_1_1_detector_cascade_a809e13a6c7fbc1c13dcb9b4bf9d22964}{propagateMembers} ()
+\item 
+\hyperlink{classtld_1_1_detector_cascade_a709b4d4802e4f8391fad8fd1b6f892eb}{DetectorCascade} ()
+\item 
+\hyperlink{classtld_1_1_detector_cascade_a1154ee7d1fd731055af1f6b5b697d8ba}{$\sim$DetectorCascade} ()
+\item 
+void \hyperlink{classtld_1_1_detector_cascade_a98d5393088a53188dcde7d530101534a}{init} ()
+\item 
+void \hyperlink{classtld_1_1_detector_cascade_a39760d6c54ddb41785ffd05a7b881d8d}{initWindowOffsets} ()
+\item 
+void \hyperlink{classtld_1_1_detector_cascade_a0515043558291c0bfbd5d403315c0334}{initWindowsAndScales} ()
+\item 
+void \hyperlink{classtld_1_1_detector_cascade_a4658f60cc03595d55920b4949ff26a69}{release} ()
+\item 
+void \hyperlink{classtld_1_1_detector_cascade_a56b148b63e2c592624c90bc7f7f50d68}{cleanPreviousData} ()
+\item 
+void \hyperlink{classtld_1_1_detector_cascade_a4ec511b5488bd1a1dc241e6dac191165}{detect} (const cv::Mat \&img)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classtld_1_1_detector_cascade_a24aed44c48fe4616465a556bd6642d5e}{minScale}
+\item 
+int \hyperlink{classtld_1_1_detector_cascade_aac2cd4b31c290d1eeba69591cbb65ce4}{maxScale}
+\item 
+bool \hyperlink{classtld_1_1_detector_cascade_a2549b35ac099860f20a13ef830081bbb}{useShift}
+\item 
+float \hyperlink{classtld_1_1_detector_cascade_a18b12b643d662cc9c8850c963079233c}{shift}
+\item 
+int \hyperlink{classtld_1_1_detector_cascade_add27e1ff17e2fda214d08f74d0c164e9}{minSize}
+\item 
+int \hyperlink{classtld_1_1_detector_cascade_a63af0a8c55ac292b25f2f72b6e734280}{numFeatures}
+\item 
+int \hyperlink{classtld_1_1_detector_cascade_a2d41ea56f304562878151ae09c34aa8f}{numTrees}
+\item 
+int \hyperlink{classtld_1_1_detector_cascade_a593db7c6ab225f17ac02cd9ef5faebd2}{imgWidth}
+\item 
+int \hyperlink{classtld_1_1_detector_cascade_a4e9b954d0b95f6e91d479bba9ec6beac}{imgHeight}
+\item 
+int \hyperlink{classtld_1_1_detector_cascade_aa47c6463f1ae23868551a4c82c555f24}{imgWidthStep}
+\item 
+int \hyperlink{classtld_1_1_detector_cascade_a1c7a7fddb085fca4577779110637c5c8}{objWidth}
+\item 
+int \hyperlink{classtld_1_1_detector_cascade_a1186ed695cf6e9f00d180ec92e4aa1ea}{objHeight}
+\item 
+int \hyperlink{classtld_1_1_detector_cascade_a700932efdadfdd218697b56aa7703b4b}{numWindows}
+\item 
+int $\ast$ \hyperlink{classtld_1_1_detector_cascade_a0acc3bf212228a7b3d47b2d795f1a5a4}{windows}
+\item 
+int $\ast$ \hyperlink{classtld_1_1_detector_cascade_a259b095591f3d09904277ff844d94b0b}{windowOffsets}
+\item 
+bool \hyperlink{classtld_1_1_detector_cascade_a4a61cd265a92bce6f8f148db532a1789}{initialised}
+\item 
+\hyperlink{classtld_1_1_foreground_detector}{ForegroundDetector} $\ast$ \hyperlink{classtld_1_1_detector_cascade_ad03faad5b05805f5edba330cccfee1f1}{foregroundDetector}
+\item 
+\hyperlink{classtld_1_1_variance_filter}{VarianceFilter} $\ast$ \hyperlink{classtld_1_1_detector_cascade_a5d2600fc22f6cc39ef1940457324c5eb}{varianceFilter}
+\item 
+\hyperlink{classtld_1_1_ensemble_classifier}{EnsembleClassifier} $\ast$ \hyperlink{classtld_1_1_detector_cascade_a818a0be0ff9f76fb42534a056761c163}{ensembleClassifier}
+\item 
+\hyperlink{classtld_1_1_clustering}{Clustering} $\ast$ \hyperlink{classtld_1_1_detector_cascade_a5a5c292573778fa38a462921c1928e40}{clustering}
+\item 
+\hyperlink{classtld_1_1_n_n_classifier}{NNClassifier} $\ast$ \hyperlink{classtld_1_1_detector_cascade_abc9da459b6d66e5a2f2658f52b4dfdc6}{nnClassifier}
+\item 
+\hyperlink{classtld_1_1_detection_result}{DetectionResult} $\ast$ \hyperlink{classtld_1_1_detector_cascade_a14544e4e2e7ca365e49969a6937aec51}{detectionResult}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtld_1_1_detector_cascade_a709b4d4802e4f8391fad8fd1b6f892eb}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!DetectorCascade@{DetectorCascade}}
+\index{DetectorCascade@{DetectorCascade}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{DetectorCascade}]{\setlength{\rightskip}{0pt plus 5cm}tld::DetectorCascade::DetectorCascade (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_detector_cascade_a709b4d4802e4f8391fad8fd1b6f892eb}
+\hypertarget{classtld_1_1_detector_cascade_a1154ee7d1fd731055af1f6b5b697d8ba}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!$\sim$DetectorCascade@{$\sim$DetectorCascade}}
+\index{$\sim$DetectorCascade@{$\sim$DetectorCascade}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{$\sim$DetectorCascade}]{\setlength{\rightskip}{0pt plus 5cm}tld::DetectorCascade::$\sim$DetectorCascade (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_detector_cascade_a1154ee7d1fd731055af1f6b5b697d8ba}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_detector_cascade_a1154ee7d1fd731055af1f6b5b697d8ba_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtld_1_1_detector_cascade_a56b148b63e2c592624c90bc7f7f50d68}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!cleanPreviousData@{cleanPreviousData}}
+\index{cleanPreviousData@{cleanPreviousData}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{cleanPreviousData}]{\setlength{\rightskip}{0pt plus 5cm}void tld::DetectorCascade::cleanPreviousData (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_detector_cascade_a56b148b63e2c592624c90bc7f7f50d68}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_detector_cascade_a56b148b63e2c592624c90bc7f7f50d68_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1_detector_cascade_a4ec511b5488bd1a1dc241e6dac191165}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!detect@{detect}}
+\index{detect@{detect}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{detect}]{\setlength{\rightskip}{0pt plus 5cm}void tld::DetectorCascade::detect (
+\begin{DoxyParamCaption}
+\item[{const cv::Mat \&}]{ img}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_detector_cascade_a4ec511b5488bd1a1dc241e6dac191165}
+\hypertarget{classtld_1_1_detector_cascade_a98d5393088a53188dcde7d530101534a}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!init@{init}}
+\index{init@{init}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void tld::DetectorCascade::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_detector_cascade_a98d5393088a53188dcde7d530101534a}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_detector_cascade_a98d5393088a53188dcde7d530101534a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1_detector_cascade_a39760d6c54ddb41785ffd05a7b881d8d}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!initWindowOffsets@{initWindowOffsets}}
+\index{initWindowOffsets@{initWindowOffsets}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{initWindowOffsets}]{\setlength{\rightskip}{0pt plus 5cm}void tld::DetectorCascade::initWindowOffsets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_detector_cascade_a39760d6c54ddb41785ffd05a7b881d8d}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_detector_cascade_a39760d6c54ddb41785ffd05a7b881d8d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1_detector_cascade_a0515043558291c0bfbd5d403315c0334}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!initWindowsAndScales@{initWindowsAndScales}}
+\index{initWindowsAndScales@{initWindowsAndScales}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{initWindowsAndScales}]{\setlength{\rightskip}{0pt plus 5cm}void tld::DetectorCascade::initWindowsAndScales (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_detector_cascade_a0515043558291c0bfbd5d403315c0334}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_detector_cascade_a0515043558291c0bfbd5d403315c0334_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1_detector_cascade_a809e13a6c7fbc1c13dcb9b4bf9d22964}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!propagateMembers@{propagateMembers}}
+\index{propagateMembers@{propagateMembers}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{propagateMembers}]{\setlength{\rightskip}{0pt plus 5cm}void tld::DetectorCascade::propagateMembers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_detector_cascade_a809e13a6c7fbc1c13dcb9b4bf9d22964}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_detector_cascade_a809e13a6c7fbc1c13dcb9b4bf9d22964_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_detector_cascade_a809e13a6c7fbc1c13dcb9b4bf9d22964_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1_detector_cascade_a4658f60cc03595d55920b4949ff26a69}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!release@{release}}
+\index{release@{release}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}void tld::DetectorCascade::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_detector_cascade_a4658f60cc03595d55920b4949ff26a69}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_detector_cascade_a4658f60cc03595d55920b4949ff26a69_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_detector_cascade_a4658f60cc03595d55920b4949ff26a69_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classtld_1_1_detector_cascade_a5a5c292573778fa38a462921c1928e40}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!clustering@{clustering}}
+\index{clustering@{clustering}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{clustering}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Clustering}$\ast$ {\bf tld::DetectorCascade::clustering}}}
+\label{classtld_1_1_detector_cascade_a5a5c292573778fa38a462921c1928e40}
+\hypertarget{classtld_1_1_detector_cascade_a14544e4e2e7ca365e49969a6937aec51}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!detectionResult@{detectionResult}}
+\index{detectionResult@{detectionResult}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{detectionResult}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DetectionResult}$\ast$ {\bf tld::DetectorCascade::detectionResult}}}
+\label{classtld_1_1_detector_cascade_a14544e4e2e7ca365e49969a6937aec51}
+\hypertarget{classtld_1_1_detector_cascade_a818a0be0ff9f76fb42534a056761c163}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!ensembleClassifier@{ensembleClassifier}}
+\index{ensembleClassifier@{ensembleClassifier}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{ensembleClassifier}]{\setlength{\rightskip}{0pt plus 5cm}{\bf EnsembleClassifier}$\ast$ {\bf tld::DetectorCascade::ensembleClassifier}}}
+\label{classtld_1_1_detector_cascade_a818a0be0ff9f76fb42534a056761c163}
+\hypertarget{classtld_1_1_detector_cascade_ad03faad5b05805f5edba330cccfee1f1}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!foregroundDetector@{foregroundDetector}}
+\index{foregroundDetector@{foregroundDetector}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{foregroundDetector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ForegroundDetector}$\ast$ {\bf tld::DetectorCascade::foregroundDetector}}}
+\label{classtld_1_1_detector_cascade_ad03faad5b05805f5edba330cccfee1f1}
+\hypertarget{classtld_1_1_detector_cascade_a4e9b954d0b95f6e91d479bba9ec6beac}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!imgHeight@{imgHeight}}
+\index{imgHeight@{imgHeight}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{imgHeight}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::DetectorCascade::imgHeight}}}
+\label{classtld_1_1_detector_cascade_a4e9b954d0b95f6e91d479bba9ec6beac}
+\hypertarget{classtld_1_1_detector_cascade_a593db7c6ab225f17ac02cd9ef5faebd2}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!imgWidth@{imgWidth}}
+\index{imgWidth@{imgWidth}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{imgWidth}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::DetectorCascade::imgWidth}}}
+\label{classtld_1_1_detector_cascade_a593db7c6ab225f17ac02cd9ef5faebd2}
+\hypertarget{classtld_1_1_detector_cascade_aa47c6463f1ae23868551a4c82c555f24}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!imgWidthStep@{imgWidthStep}}
+\index{imgWidthStep@{imgWidthStep}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{imgWidthStep}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::DetectorCascade::imgWidthStep}}}
+\label{classtld_1_1_detector_cascade_aa47c6463f1ae23868551a4c82c555f24}
+\hypertarget{classtld_1_1_detector_cascade_a4a61cd265a92bce6f8f148db532a1789}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!initialised@{initialised}}
+\index{initialised@{initialised}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{initialised}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf tld::DetectorCascade::initialised}}}
+\label{classtld_1_1_detector_cascade_a4a61cd265a92bce6f8f148db532a1789}
+\hypertarget{classtld_1_1_detector_cascade_aac2cd4b31c290d1eeba69591cbb65ce4}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!maxScale@{maxScale}}
+\index{maxScale@{maxScale}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{maxScale}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::DetectorCascade::maxScale}}}
+\label{classtld_1_1_detector_cascade_aac2cd4b31c290d1eeba69591cbb65ce4}
+\hypertarget{classtld_1_1_detector_cascade_a24aed44c48fe4616465a556bd6642d5e}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!minScale@{minScale}}
+\index{minScale@{minScale}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{minScale}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::DetectorCascade::minScale}}}
+\label{classtld_1_1_detector_cascade_a24aed44c48fe4616465a556bd6642d5e}
+\hypertarget{classtld_1_1_detector_cascade_add27e1ff17e2fda214d08f74d0c164e9}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!minSize@{minSize}}
+\index{minSize@{minSize}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{minSize}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::DetectorCascade::minSize}}}
+\label{classtld_1_1_detector_cascade_add27e1ff17e2fda214d08f74d0c164e9}
+\hypertarget{classtld_1_1_detector_cascade_abc9da459b6d66e5a2f2658f52b4dfdc6}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!nnClassifier@{nnClassifier}}
+\index{nnClassifier@{nnClassifier}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{nnClassifier}]{\setlength{\rightskip}{0pt plus 5cm}{\bf NNClassifier}$\ast$ {\bf tld::DetectorCascade::nnClassifier}}}
+\label{classtld_1_1_detector_cascade_abc9da459b6d66e5a2f2658f52b4dfdc6}
+\hypertarget{classtld_1_1_detector_cascade_a63af0a8c55ac292b25f2f72b6e734280}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!numFeatures@{numFeatures}}
+\index{numFeatures@{numFeatures}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{numFeatures}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::DetectorCascade::numFeatures}}}
+\label{classtld_1_1_detector_cascade_a63af0a8c55ac292b25f2f72b6e734280}
+\hypertarget{classtld_1_1_detector_cascade_a2d41ea56f304562878151ae09c34aa8f}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!numTrees@{numTrees}}
+\index{numTrees@{numTrees}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{numTrees}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::DetectorCascade::numTrees}}}
+\label{classtld_1_1_detector_cascade_a2d41ea56f304562878151ae09c34aa8f}
+\hypertarget{classtld_1_1_detector_cascade_a700932efdadfdd218697b56aa7703b4b}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!numWindows@{numWindows}}
+\index{numWindows@{numWindows}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{numWindows}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::DetectorCascade::numWindows}}}
+\label{classtld_1_1_detector_cascade_a700932efdadfdd218697b56aa7703b4b}
+\hypertarget{classtld_1_1_detector_cascade_a1186ed695cf6e9f00d180ec92e4aa1ea}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!objHeight@{objHeight}}
+\index{objHeight@{objHeight}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{objHeight}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::DetectorCascade::objHeight}}}
+\label{classtld_1_1_detector_cascade_a1186ed695cf6e9f00d180ec92e4aa1ea}
+\hypertarget{classtld_1_1_detector_cascade_a1c7a7fddb085fca4577779110637c5c8}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!objWidth@{objWidth}}
+\index{objWidth@{objWidth}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{objWidth}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::DetectorCascade::objWidth}}}
+\label{classtld_1_1_detector_cascade_a1c7a7fddb085fca4577779110637c5c8}
+\hypertarget{classtld_1_1_detector_cascade_a18b12b643d662cc9c8850c963079233c}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!shift@{shift}}
+\index{shift@{shift}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{shift}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf tld::DetectorCascade::shift}}}
+\label{classtld_1_1_detector_cascade_a18b12b643d662cc9c8850c963079233c}
+\hypertarget{classtld_1_1_detector_cascade_a2549b35ac099860f20a13ef830081bbb}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!useShift@{useShift}}
+\index{useShift@{useShift}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{useShift}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf tld::DetectorCascade::useShift}}}
+\label{classtld_1_1_detector_cascade_a2549b35ac099860f20a13ef830081bbb}
+\hypertarget{classtld_1_1_detector_cascade_a5d2600fc22f6cc39ef1940457324c5eb}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!varianceFilter@{varianceFilter}}
+\index{varianceFilter@{varianceFilter}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{varianceFilter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VarianceFilter}$\ast$ {\bf tld::DetectorCascade::varianceFilter}}}
+\label{classtld_1_1_detector_cascade_a5d2600fc22f6cc39ef1940457324c5eb}
+\hypertarget{classtld_1_1_detector_cascade_a259b095591f3d09904277ff844d94b0b}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!windowOffsets@{windowOffsets}}
+\index{windowOffsets@{windowOffsets}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{windowOffsets}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf tld::DetectorCascade::windowOffsets}}}
+\label{classtld_1_1_detector_cascade_a259b095591f3d09904277ff844d94b0b}
+\hypertarget{classtld_1_1_detector_cascade_a0acc3bf212228a7b3d47b2d795f1a5a4}{
+\index{tld::DetectorCascade@{tld::DetectorCascade}!windows@{windows}}
+\index{windows@{windows}!tld::DetectorCascade@{tld::DetectorCascade}}
+\subsubsection[{windows}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf tld::DetectorCascade::windows}}}
+\label{classtld_1_1_detector_cascade_a0acc3bf212228a7b3d47b2d795f1a5a4}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/libopentld/tld/\hyperlink{_detector_cascade_8h}{DetectorCascade.h}\item 
+src/libopentld/tld/\hyperlink{_detector_cascade_8cpp}{DetectorCascade.cpp}\end{DoxyCompactItemize}

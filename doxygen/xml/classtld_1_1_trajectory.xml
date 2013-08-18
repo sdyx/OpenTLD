@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="classtld_1_1_trajectory" kind="class" prot="public">
+    <compoundname>tld::Trajectory</compoundname>
+    <includes refid="_trajectory_8h" local="no">Trajectory.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtld_1_1_trajectory_1a116616c9feae2932359a858cf4f947a0" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t tld::Trajectory::m_length</definition>
+        <argsstring></argsstring>
+        <name>m_length</name>
+        <briefdescription>
+<para>number of the last frames which are considered by the trajectory </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Trajectory.h" line="72" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Trajectory.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_trajectory_1aa9090109c11c57313b8fa7853e0d98fa" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; CvPoint &gt;</type>
+        <definition>std::vector&lt;CvPoint&gt; tld::Trajectory::m_track_positions</definition>
+        <argsstring></argsstring>
+        <name>m_track_positions</name>
+        <briefdescription>
+<para>vector containing the locations of the points </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Trajectory.h" line="73" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Trajectory.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_trajectory_1a16024c5a1a5853ad73d5ea5626578561" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; CvScalar &gt;</type>
+        <definition>std::vector&lt;CvScalar&gt; tld::Trajectory::m_track_colors</definition>
+        <argsstring></argsstring>
+        <name>m_track_colors</name>
+        <briefdescription>
+<para>vector containing the colors of the points </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Trajectory.h" line="74" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Trajectory.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtld_1_1_trajectory_1ab6baa664e2ea39e5ec0075f525a466ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tld::Trajectory::Trajectory</definition>
+        <argsstring>()</argsstring>
+        <name>Trajectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor; don&apos;t forget to call init(length) afterwards </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Trajectory.h" line="43" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Trajectory.cpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_trajectory_1add295e2524012793dd3040fe098ddf65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tld::Trajectory::~Trajectory</definition>
+        <argsstring>()</argsstring>
+        <name>~Trajectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Trajectory.h" line="48" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Trajectory.cpp" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_trajectory_1a635927cb2bca22f884ddc00a0e18b6d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::Trajectory::init</definition>
+        <argsstring>(std::size_t length)</argsstring>
+        <name>init</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the trajectory. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the number of the last frames which are considered by the trajectory </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Trajectory.h" line="55" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Trajectory.cpp" bodystart="41" bodyend="46"/>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_trajectory_1a28a92000e31f71ce0831d72b068ae97b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::Trajectory::addPoint</definition>
+        <argsstring>(CvPoint point, CvScalar color)</argsstring>
+        <name>addPoint</name>
+        <param>
+          <type>CvPoint</type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type>CvScalar</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds a new point to the trajectory. If you want to add a &quot;place holder&quot; point just add a cvPoint(-1, -1) and cvScalar(-1 , -1, -1) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point which specifies the location of the point </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>defines the color (confidence) of the point </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Trajectory.h" line="64" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Trajectory.cpp" bodystart="48" bodyend="68"/>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_trajectory_1af8a0ffc5eb86050e0d26c766e4b2098d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::Trajectory::drawTrajectory</definition>
+        <argsstring>(IplImage *image)</argsstring>
+        <name>drawTrajectory</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draws the trajectory into an image. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>image to draw </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Trajectory.h" line="70" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Trajectory.cpp" bodystart="70" bodyend="89"/>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Detection trajectory; a line which associates the last detections. The data is stored in 2 &quot;shift registers&quot; </para>    </detaileddescription>
+    <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Trajectory.h" line="38" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Trajectory.h" bodystart="37" bodyend="75"/>
+    <listofallmembers>
+      <member refid="classtld_1_1_trajectory_1a28a92000e31f71ce0831d72b068ae97b" prot="public" virt="non-virtual"><scope>tld::Trajectory</scope><name>addPoint</name></member>
+      <member refid="classtld_1_1_trajectory_1af8a0ffc5eb86050e0d26c766e4b2098d" prot="public" virt="non-virtual"><scope>tld::Trajectory</scope><name>drawTrajectory</name></member>
+      <member refid="classtld_1_1_trajectory_1a635927cb2bca22f884ddc00a0e18b6d7" prot="public" virt="non-virtual"><scope>tld::Trajectory</scope><name>init</name></member>
+      <member refid="classtld_1_1_trajectory_1a116616c9feae2932359a858cf4f947a0" prot="private" virt="non-virtual"><scope>tld::Trajectory</scope><name>m_length</name></member>
+      <member refid="classtld_1_1_trajectory_1a16024c5a1a5853ad73d5ea5626578561" prot="private" virt="non-virtual"><scope>tld::Trajectory</scope><name>m_track_colors</name></member>
+      <member refid="classtld_1_1_trajectory_1aa9090109c11c57313b8fa7853e0d98fa" prot="private" virt="non-virtual"><scope>tld::Trajectory</scope><name>m_track_positions</name></member>
+      <member refid="classtld_1_1_trajectory_1ab6baa664e2ea39e5ec0075f525a466ba" prot="public" virt="non-virtual"><scope>tld::Trajectory</scope><name>Trajectory</name></member>
+      <member refid="classtld_1_1_trajectory_1add295e2524012793dd3040fe098ddf65" prot="public" virt="non-virtual"><scope>tld::Trajectory</scope><name>~Trajectory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

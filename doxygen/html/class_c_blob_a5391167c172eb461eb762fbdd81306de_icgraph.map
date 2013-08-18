@@ -1,0 +1,22 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_c_blob.html#ab26a757fffc581df39620425de008cbc" title="Maximun X." alt="" coords="271,182,372,210"/>
+<area shape="rect" id="node11" href="$class_c_blob.html#a740a37afcd841bf719587d2f0128c555" title="Maximun Y." alt="" coords="272,398,371,426"/>
+<area shape="rect" id="node19" href="$class_c_blob.html#a1b12d25f8e470fdd808ac2e3bfe9bad4" title="Get mean grey color." alt="" coords="271,449,372,477"/>
+<area shape="rect" id="node27" href="$class_c_blob.html#aa3313af22e7f28d65ba245bc3b8a30bc" title="Minimun X." alt="" coords="273,81,369,109"/>
+<area shape="rect" id="node34" href="$class_c_blob.html#a44e2caf6c7fc6e8360d2576c18c9bc2b" title="Minimun Y." alt="" coords="273,322,369,350"/>
+<area shape="rect" id="node41" href="$class_c_blob_get_diff_y.html#aab9f6a96902b89dd9b8283db51a1b6f3" title="Aply operator to blob." alt="" coords="231,499,412,527"/>
+<area shape="rect" id="node43" href="$class_c_blob_get_diff_x.html#a0bf92752dbffa496a2551ad9622836ac" title="Aply operator to blob." alt="" coords="229,550,413,578"/>
+<area shape="rect" id="node5" href="$class_c_blob_get_x_center.html#aaaae40df5c1c031658100b16015896f0" title="Aply operator to blob." alt="" coords="476,106,681,134"/>
+<area shape="rect" id="node7" href="$class_c_blob_get_max_x.html#a187bed7f1f1e467fc5170324f4434bc2" title="Aply operator to blob." alt="" coords="484,157,673,185"/>
+<area shape="rect" id="node9" href="$class_c_blob_get_min_yat_max_x.html#a41bc24b0214b58f979396208296d3dd6" title="CBlobGetMinYatMaxX::operator()" alt="" coords="464,207,693,235"/>
+<area shape="rect" id="node13" href="$class_c_blob_get_y_center.html#a5cdb219c957adc1bf08c95e7823e407b" title="Aply operator to blob." alt="" coords="477,359,680,387"/>
+<area shape="rect" id="node15" href="$class_c_blob_get_max_y.html#abd3fc708b60aa0716a1f335f4313e46e" title="Aply operator to blob." alt="" coords="485,410,672,438"/>
+<area shape="rect" id="node17" href="$class_c_blob_get_max_xat_max_y.html#a45c075e8968d1078c6b49ea2acbb6d58" title="CBlobGetMaxXatMaxY::operator()" alt="" coords="463,461,695,489"/>
+<area shape="rect" id="node21" href="$class_c_blob_get_mean.html#ad1aff39c601989402d096fb649b9703c" title="Aply operator to blob." alt="" coords="484,511,673,539"/>
+<area shape="rect" id="node23" href="$class_c_blob.html#a014b670bb748e6767ef070e1bc25be7a" title="Get standard deviation grey color." alt="" coords="521,562,636,590"/>
+<area shape="rect" id="node25" href="$class_c_blob_get_std_dev.html#a9a52512df47b9ff51ad0cb4cb48d3d1f" title="Aply operator to blob." alt="" coords="745,562,945,590"/>
+<area shape="rect" id="node30" href="$class_c_blob_get_min_x.html#a4930f236b5afa5c987ce0b5062b79b09" title="Aply operator to blob." alt="" coords="487,5,671,33"/>
+<area shape="rect" id="node32" href="$class_c_blob_get_max_yat_min_x.html#a107cc7896ca6af559e8410b3c452e80d" title="CBlobGetMaxYatMinX::operator()" alt="" coords="464,55,693,83"/>
+<area shape="rect" id="node37" href="$class_c_blob_get_min_y.html#acf1b21431bc7cba83741b6ed8b3f1bd9" title="Aply operator to blob." alt="" coords="488,258,669,286"/>
+<area shape="rect" id="node39" href="$class_c_blob_get_min_xat_min_y.html#ae2f3ba428e780a826de213726d2a8f35" title="CBlobGetMinXatMinY::operator()" alt="" coords="467,309,691,337"/>
+</map>

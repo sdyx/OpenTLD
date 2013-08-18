@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="classlibconfig_1_1_parse_exception" kind="class" prot="public">
+    <compoundname>libconfig::ParseException</compoundname>
+    <basecompoundref refid="classlibconfig_1_1_config_exception" prot="public" virt="non-virtual">libconfig::ConfigException</basecompoundref>
+    <includes refid="libconfig_8h_09_09" local="no">libconfig.h++</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classlibconfig_1_1_parse_exception_1ac3da7e21a05bf8852638db7e4dd1b81a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Config</definition>
+        <argsstring></argsstring>
+        <name>Config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="137" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlibconfig_1_1_parse_exception_1aa9b51ef81102559a811ae7371b38617f" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* libconfig::ParseException::_file</definition>
+        <argsstring></argsstring>
+        <name>_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="160" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlibconfig_1_1_parse_exception_1a4e478e6b2177c927c71f40387e5ed867" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int libconfig::ParseException::_line</definition>
+        <argsstring></argsstring>
+        <name>_line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="161" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlibconfig_1_1_parse_exception_1a4611bdffd67b8c4934bf43b7802bdc73" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* libconfig::ParseException::_error</definition>
+        <argsstring></argsstring>
+        <name>_error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="162" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlibconfig_1_1_parse_exception_1af4ca2a2b778b7b25e96620a816ac1122" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>libconfig::ParseException::ParseException</definition>
+        <argsstring>(const ParseException &amp;other)</argsstring>
+        <name>ParseException</name>
+        <param>
+          <type>const <ref refid="classlibconfig_1_1_parse_exception" kindref="compound">ParseException</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="141" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="35" bodyend="40"/>
+        <references refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="_config_8cpp" startline="497">NULL</references>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_parse_exception_1a5bf6aa3e7294e7d07bfd04b384fb4949" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>libconfig::ParseException::~ParseException</definition>
+        <argsstring>()</argsstring>
+        <name>~ParseException</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="143" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_parse_exception_1a948a2d4211dd6f579ac55cf91c7b7e64" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* libconfig::ParseException::getFile</definition>
+        <argsstring>() const </argsstring>
+        <name>getFile</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="146" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="145" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_parse_exception_1ac63b7930920082fcbfe48124fe1705a4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int libconfig::ParseException::getLine</definition>
+        <argsstring>() const </argsstring>
+        <name>getLine</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="149" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="148" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_parse_exception_1a9ff389ad37d4208f5d29a3b1b26fff58" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* libconfig::ParseException::getError</definition>
+        <argsstring>() const </argsstring>
+        <name>getError</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="152" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="151" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_parse_exception_1ab2f096f652382ceacd418c5d8104f0c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * libconfig::ParseException::what</definition>
+        <argsstring>() const </argsstring>
+        <name>what</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="154" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="51" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classlibconfig_1_1_parse_exception_1a6aad54b715c39de28a0ff8c1b1209de7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>libconfig::ParseException::ParseException</definition>
+        <argsstring>(const char *file, int line, const char *error)</argsstring>
+        <name>ParseException</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="158" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="28" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="517">
+        <label>libconfig::ConfigException</label>
+        <link refid="classlibconfig_1_1_config_exception"/>
+      </node>
+      <node id="516">
+        <label>libconfig::ParseException</label>
+        <link refid="classlibconfig_1_1_parse_exception"/>
+        <childnode refid="517" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="519">
+        <label>libconfig::ConfigException</label>
+        <link refid="classlibconfig_1_1_config_exception"/>
+      </node>
+      <node id="518">
+        <label>libconfig::ParseException</label>
+        <link refid="classlibconfig_1_1_parse_exception"/>
+        <childnode refid="519" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="136" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="135" bodyend="163"/>
+    <listofallmembers>
+      <member refid="classlibconfig_1_1_parse_exception_1a4611bdffd67b8c4934bf43b7802bdc73" prot="private" virt="non-virtual"><scope>libconfig::ParseException</scope><name>_error</name></member>
+      <member refid="classlibconfig_1_1_parse_exception_1aa9b51ef81102559a811ae7371b38617f" prot="private" virt="non-virtual"><scope>libconfig::ParseException</scope><name>_file</name></member>
+      <member refid="classlibconfig_1_1_parse_exception_1a4e478e6b2177c927c71f40387e5ed867" prot="private" virt="non-virtual"><scope>libconfig::ParseException</scope><name>_line</name></member>
+      <member refid="classlibconfig_1_1_parse_exception_1ac3da7e21a05bf8852638db7e4dd1b81a" prot="private" virt="non-virtual"><scope>libconfig::ParseException</scope><name>Config</name></member>
+      <member refid="classlibconfig_1_1_parse_exception_1a9ff389ad37d4208f5d29a3b1b26fff58" prot="public" virt="non-virtual"><scope>libconfig::ParseException</scope><name>getError</name></member>
+      <member refid="classlibconfig_1_1_parse_exception_1a948a2d4211dd6f579ac55cf91c7b7e64" prot="public" virt="non-virtual"><scope>libconfig::ParseException</scope><name>getFile</name></member>
+      <member refid="classlibconfig_1_1_parse_exception_1ac63b7930920082fcbfe48124fe1705a4" prot="public" virt="non-virtual"><scope>libconfig::ParseException</scope><name>getLine</name></member>
+      <member refid="classlibconfig_1_1_parse_exception_1af4ca2a2b778b7b25e96620a816ac1122" prot="public" virt="non-virtual"><scope>libconfig::ParseException</scope><name>ParseException</name></member>
+      <member refid="classlibconfig_1_1_parse_exception_1a6aad54b715c39de28a0ff8c1b1209de7" prot="private" virt="non-virtual"><scope>libconfig::ParseException</scope><name>ParseException</name></member>
+      <member refid="classlibconfig_1_1_parse_exception_1ab2f096f652382ceacd418c5d8104f0c5" prot="public" virt="non-virtual"><scope>libconfig::ParseException</scope><name>what</name></member>
+      <member refid="classlibconfig_1_1_parse_exception_1a5bf6aa3e7294e7d07bfd04b384fb4949" prot="public" virt="virtual"><scope>libconfig::ParseException</scope><name>~ParseException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

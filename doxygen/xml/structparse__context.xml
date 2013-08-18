@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="structparse__context" kind="struct" prot="public">
+    <compoundname>parse_context</compoundname>
+    <includes refid="parsectx_8h" local="no">parsectx.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structparse__context_1aa200e722cbeaa2486da5c03113a630de" prot="public" static="no" mutable="no">
+        <type><ref refid="structconfig__t" kindref="compound">config_t</ref> *</type>
+        <definition>config_t* parse_context::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/parsectx.h" line="31" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/parsectx.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="grammar_8c_1aed5cee83fa537a585f1bd2a1799db48f" compoundref="grammar_8c" startline="122" endline="128">libconfig_yyerror</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structparse__context_1a79ae4fb7bb22de08f7f99c8478187e22" prot="public" static="no" mutable="no">
+        <type><ref refid="structconfig__setting__t" kindref="compound">config_setting_t</ref> *</type>
+        <definition>config_setting_t* parse_context::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/parsectx.h" line="32" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/parsectx.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="grammar_8c_1aa95461e463ec8927a2b16e55683cfcaf" compoundref="grammar_8c" startline="1223" endline="1994">yyparse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structparse__context_1ab305aaa8de50d2803f062652b350d0e1" prot="public" static="no" mutable="no">
+        <type><ref refid="structconfig__setting__t" kindref="compound">config_setting_t</ref> *</type>
+        <definition>config_setting_t* parse_context::setting</definition>
+        <argsstring></argsstring>
+        <name>setting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/parsectx.h" line="33" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/parsectx.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="grammar_8c_1aa95461e463ec8927a2b16e55683cfcaf" compoundref="grammar_8c" startline="1223" endline="1994">yyparse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structparse__context_1a011e6f556f380ddb7ea6443310638d19" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* parse_context::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/parsectx.h" line="34" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/parsectx.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structparse__context_1aa69b91bd3127bb918700074992130b4a" prot="public" static="no" mutable="no">
+        <type><ref refid="structstrbuf__t" kindref="compound">strbuf_t</ref></type>
+        <definition>strbuf_t parse_context::string</definition>
+        <argsstring></argsstring>
+        <name>string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/parsectx.h" line="35" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/parsectx.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="514">
+        <label>config_list_t</label>
+        <link refid="structconfig__list__t"/>
+        <childnode refid="512" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="512">
+        <label>config_setting_t</label>
+        <link refid="structconfig__setting__t"/>
+        <childnode refid="511" relation="usage">
+          <edgelabel>config</edgelabel>
+        </childnode>
+        <childnode refid="512" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="513" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="511">
+        <label>config_t</label>
+        <link refid="structconfig__t"/>
+        <childnode refid="512" relation="usage">
+          <edgelabel>root</edgelabel>
+        </childnode>
+      </node>
+      <node id="510">
+        <label>parse_context</label>
+        <link refid="structparse__context"/>
+        <childnode refid="511" relation="usage">
+          <edgelabel>config</edgelabel>
+        </childnode>
+        <childnode refid="515" relation="usage">
+          <edgelabel>string</edgelabel>
+        </childnode>
+        <childnode refid="512" relation="usage">
+          <edgelabel>setting</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="515">
+        <label>strbuf_t</label>
+        <link refid="structstrbuf__t"/>
+      </node>
+      <node id="513">
+        <label>config_value_t</label>
+        <link refid="unionconfig__value__t"/>
+        <childnode refid="514" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/parsectx.h" line="30" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/parsectx.h" bodystart="29" bodyend="36"/>
+    <listofallmembers>
+      <member refid="structparse__context_1aa200e722cbeaa2486da5c03113a630de" prot="public" virt="non-virtual"><scope>parse_context</scope><name>config</name></member>
+      <member refid="structparse__context_1a011e6f556f380ddb7ea6443310638d19" prot="public" virt="non-virtual"><scope>parse_context</scope><name>name</name></member>
+      <member refid="structparse__context_1a79ae4fb7bb22de08f7f99c8478187e22" prot="public" virt="non-virtual"><scope>parse_context</scope><name>parent</name></member>
+      <member refid="structparse__context_1ab305aaa8de50d2803f062652b350d0e1" prot="public" virt="non-virtual"><scope>parse_context</scope><name>setting</name></member>
+      <member refid="structparse__context_1aa69b91bd3127bb918700074992130b4a" prot="public" virt="non-virtual"><scope>parse_context</scope><name>string</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

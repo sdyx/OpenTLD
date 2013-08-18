@@ -1,0 +1,324 @@
+\hypertarget{_im_acq_8cpp}{
+\section{src/libopentld/imacq/ImAcq.cpp File Reference}
+\label{_im_acq_8cpp}\index{src/libopentld/imacq/ImAcq.cpp@{src/libopentld/imacq/ImAcq.cpp}}
+}
+{\ttfamily \#include \char`\"{}ImAcq.h\char`\"{}}\par
+{\ttfamily \#include $<$cstdio$>$}\par
+{\ttfamily \#include $<$cv.h$>$}\par
+{\ttfamily \#include $<$highgui.h$>$}\par
+Include dependency graph for ImAcq.cpp:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{_im_acq_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_im_acq}{ImAcq} $\ast$ \hyperlink{_im_acq_8cpp_a92fb66a856dbc776d02d3f39e2373679}{imAcqAlloc} ()
+\item 
+void \hyperlink{_im_acq_8cpp_a9d45e2a76bf8d7db08e938dd16383f10}{imAcqInit} (\hyperlink{struct_im_acq}{ImAcq} $\ast$imAcq)
+\item 
+void \hyperlink{_im_acq_8cpp_af22c593106dca7c35449ce54805f533a}{imAcqFree} (\hyperlink{struct_im_acq}{ImAcq} $\ast$imAcq)
+\item 
+IplImage $\ast$ \hyperlink{_im_acq_8cpp_ad7a472fe90064b4c9292c879ecea82fe}{imAcqLoadFrame} (\hyperlink{struct_im_acq}{ImAcq} $\ast$imAcq, int fNo)
+\item 
+IplImage $\ast$ \hyperlink{_im_acq_8cpp_a302e2a11dfe69f3925807ae0ff9cb2ec}{imAcqLoadCurrentFrame} (\hyperlink{struct_im_acq}{ImAcq} $\ast$imAcq)
+\item 
+IplImage $\ast$ \hyperlink{_im_acq_8cpp_adad11684c86a1fcdbb6f736878bba8cc}{imAcqGetImgByCurrentTime} (\hyperlink{struct_im_acq}{ImAcq} $\ast$imAcq)
+\item 
+IplImage $\ast$ \hyperlink{_im_acq_8cpp_aa2d578629cc485cf191adede101d032f}{imAcqGetImg} (\hyperlink{struct_im_acq}{ImAcq} $\ast$imAcq)
+\item 
+IplImage $\ast$ \hyperlink{_im_acq_8cpp_affd4242000946f8dcf68beed336cb540}{imAcqGrab} (CvCapture $\ast$capture)
+\item 
+void \hyperlink{_im_acq_8cpp_a8f0d4ea2207021c8b2f9884edcb50fee}{imAcqAdvance} (\hyperlink{struct_im_acq}{ImAcq} $\ast$imAcq)
+\item 
+int \hyperlink{_im_acq_8cpp_a864124578948857087e2ba9021351e80}{imAcqHasMoreFrames} (\hyperlink{struct_im_acq}{ImAcq} $\ast$imAcq)
+\item 
+int \hyperlink{_im_acq_8cpp_a443b3a926d4435ab46a37f483138681b}{imAcqVidGetNumberOfFrames} (\hyperlink{struct_im_acq}{ImAcq} $\ast$imAcq)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_im_acq_8cpp_a8f0d4ea2207021c8b2f9884edcb50fee}{
+\index{ImAcq.cpp@{ImAcq.cpp}!imAcqAdvance@{imAcqAdvance}}
+\index{imAcqAdvance@{imAcqAdvance}!ImAcq.cpp@{ImAcq.cpp}}
+\subsubsection[{imAcqAdvance}]{\setlength{\rightskip}{0pt plus 5cm}void imAcqAdvance (
+\begin{DoxyParamCaption}
+\item[{{\bf ImAcq} $\ast$}]{ imAcq}
+\end{DoxyParamCaption}
+)}}
+\label{_im_acq_8cpp_a8f0d4ea2207021c8b2f9884edcb50fee}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_im_acq_8cpp_a8f0d4ea2207021c8b2f9884edcb50fee_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_im_acq_8cpp_a92fb66a856dbc776d02d3f39e2373679}{
+\index{ImAcq.cpp@{ImAcq.cpp}!imAcqAlloc@{imAcqAlloc}}
+\index{imAcqAlloc@{imAcqAlloc}!ImAcq.cpp@{ImAcq.cpp}}
+\subsubsection[{imAcqAlloc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ImAcq}$\ast$ imAcqAlloc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{_im_acq_8cpp_a92fb66a856dbc776d02d3f39e2373679}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{_im_acq_8cpp_a92fb66a856dbc776d02d3f39e2373679_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_im_acq_8cpp_af22c593106dca7c35449ce54805f533a}{
+\index{ImAcq.cpp@{ImAcq.cpp}!imAcqFree@{imAcqFree}}
+\index{imAcqFree@{imAcqFree}!ImAcq.cpp@{ImAcq.cpp}}
+\subsubsection[{imAcqFree}]{\setlength{\rightskip}{0pt plus 5cm}void imAcqFree (
+\begin{DoxyParamCaption}
+\item[{{\bf ImAcq} $\ast$}]{ imAcq}
+\end{DoxyParamCaption}
+)}}
+\label{_im_acq_8cpp_af22c593106dca7c35449ce54805f533a}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{_im_acq_8cpp_af22c593106dca7c35449ce54805f533a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_im_acq_8cpp_aa2d578629cc485cf191adede101d032f}{
+\index{ImAcq.cpp@{ImAcq.cpp}!imAcqGetImg@{imAcqGetImg}}
+\index{imAcqGetImg@{imAcqGetImg}!ImAcq.cpp@{ImAcq.cpp}}
+\subsubsection[{imAcqGetImg}]{\setlength{\rightskip}{0pt plus 5cm}IplImage$\ast$ imAcqGetImg (
+\begin{DoxyParamCaption}
+\item[{{\bf ImAcq} $\ast$}]{ imAcq}
+\end{DoxyParamCaption}
+)}}
+\label{_im_acq_8cpp_aa2d578629cc485cf191adede101d032f}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_im_acq_8cpp_aa2d578629cc485cf191adede101d032f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_im_acq_8cpp_aa2d578629cc485cf191adede101d032f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_im_acq_8cpp_adad11684c86a1fcdbb6f736878bba8cc}{
+\index{ImAcq.cpp@{ImAcq.cpp}!imAcqGetImgByCurrentTime@{imAcqGetImgByCurrentTime}}
+\index{imAcqGetImgByCurrentTime@{imAcqGetImgByCurrentTime}!ImAcq.cpp@{ImAcq.cpp}}
+\subsubsection[{imAcqGetImgByCurrentTime}]{\setlength{\rightskip}{0pt plus 5cm}IplImage$\ast$ imAcqGetImgByCurrentTime (
+\begin{DoxyParamCaption}
+\item[{{\bf ImAcq} $\ast$}]{ imAcq}
+\end{DoxyParamCaption}
+)}}
+\label{_im_acq_8cpp_adad11684c86a1fcdbb6f736878bba8cc}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=370pt]{_im_acq_8cpp_adad11684c86a1fcdbb6f736878bba8cc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_im_acq_8cpp_adad11684c86a1fcdbb6f736878bba8cc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_im_acq_8cpp_affd4242000946f8dcf68beed336cb540}{
+\index{ImAcq.cpp@{ImAcq.cpp}!imAcqGrab@{imAcqGrab}}
+\index{imAcqGrab@{imAcqGrab}!ImAcq.cpp@{ImAcq.cpp}}
+\subsubsection[{imAcqGrab}]{\setlength{\rightskip}{0pt plus 5cm}IplImage$\ast$ imAcqGrab (
+\begin{DoxyParamCaption}
+\item[{CvCapture $\ast$}]{ capture}
+\end{DoxyParamCaption}
+)}}
+\label{_im_acq_8cpp_affd4242000946f8dcf68beed336cb540}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_im_acq_8cpp_affd4242000946f8dcf68beed336cb540_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_im_acq_8cpp_a864124578948857087e2ba9021351e80}{
+\index{ImAcq.cpp@{ImAcq.cpp}!imAcqHasMoreFrames@{imAcqHasMoreFrames}}
+\index{imAcqHasMoreFrames@{imAcqHasMoreFrames}!ImAcq.cpp@{ImAcq.cpp}}
+\subsubsection[{imAcqHasMoreFrames}]{\setlength{\rightskip}{0pt plus 5cm}int imAcqHasMoreFrames (
+\begin{DoxyParamCaption}
+\item[{{\bf ImAcq} $\ast$}]{ imAcq}
+\end{DoxyParamCaption}
+)}}
+\label{_im_acq_8cpp_a864124578948857087e2ba9021351e80}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_im_acq_8cpp_a864124578948857087e2ba9021351e80_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_im_acq_8cpp_a9d45e2a76bf8d7db08e938dd16383f10}{
+\index{ImAcq.cpp@{ImAcq.cpp}!imAcqInit@{imAcqInit}}
+\index{imAcqInit@{imAcqInit}!ImAcq.cpp@{ImAcq.cpp}}
+\subsubsection[{imAcqInit}]{\setlength{\rightskip}{0pt plus 5cm}void imAcqInit (
+\begin{DoxyParamCaption}
+\item[{{\bf ImAcq} $\ast$}]{ imAcq}
+\end{DoxyParamCaption}
+)}}
+\label{_im_acq_8cpp_a9d45e2a76bf8d7db08e938dd16383f10}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{_im_acq_8cpp_a9d45e2a76bf8d7db08e938dd16383f10_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{_im_acq_8cpp_a9d45e2a76bf8d7db08e938dd16383f10_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_im_acq_8cpp_a302e2a11dfe69f3925807ae0ff9cb2ec}{
+\index{ImAcq.cpp@{ImAcq.cpp}!imAcqLoadCurrentFrame@{imAcqLoadCurrentFrame}}
+\index{imAcqLoadCurrentFrame@{imAcqLoadCurrentFrame}!ImAcq.cpp@{ImAcq.cpp}}
+\subsubsection[{imAcqLoadCurrentFrame}]{\setlength{\rightskip}{0pt plus 5cm}IplImage$\ast$ imAcqLoadCurrentFrame (
+\begin{DoxyParamCaption}
+\item[{{\bf ImAcq} $\ast$}]{ imAcq}
+\end{DoxyParamCaption}
+)}}
+\label{_im_acq_8cpp_a302e2a11dfe69f3925807ae0ff9cb2ec}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=352pt]{_im_acq_8cpp_a302e2a11dfe69f3925807ae0ff9cb2ec_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_im_acq_8cpp_a302e2a11dfe69f3925807ae0ff9cb2ec_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_im_acq_8cpp_ad7a472fe90064b4c9292c879ecea82fe}{
+\index{ImAcq.cpp@{ImAcq.cpp}!imAcqLoadFrame@{imAcqLoadFrame}}
+\index{imAcqLoadFrame@{imAcqLoadFrame}!ImAcq.cpp@{ImAcq.cpp}}
+\subsubsection[{imAcqLoadFrame}]{\setlength{\rightskip}{0pt plus 5cm}IplImage$\ast$ imAcqLoadFrame (
+\begin{DoxyParamCaption}
+\item[{{\bf ImAcq} $\ast$}]{ imAcq, }
+\item[{int}]{ fNo}
+\end{DoxyParamCaption}
+)}}
+\label{_im_acq_8cpp_ad7a472fe90064b4c9292c879ecea82fe}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_im_acq_8cpp_ad7a472fe90064b4c9292c879ecea82fe_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_im_acq_8cpp_a443b3a926d4435ab46a37f483138681b}{
+\index{ImAcq.cpp@{ImAcq.cpp}!imAcqVidGetNumberOfFrames@{imAcqVidGetNumberOfFrames}}
+\index{imAcqVidGetNumberOfFrames@{imAcqVidGetNumberOfFrames}!ImAcq.cpp@{ImAcq.cpp}}
+\subsubsection[{imAcqVidGetNumberOfFrames}]{\setlength{\rightskip}{0pt plus 5cm}int imAcqVidGetNumberOfFrames (
+\begin{DoxyParamCaption}
+\item[{{\bf ImAcq} $\ast$}]{ imAcq}
+\end{DoxyParamCaption}
+)}}
+\label{_im_acq_8cpp_a443b3a926d4435ab46a37f483138681b}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_im_acq_8cpp_a443b3a926d4435ab46a37f483138681b_icgraph}
+\end{center}
+\end{figure}
+
+

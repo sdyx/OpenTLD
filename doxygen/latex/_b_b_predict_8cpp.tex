@@ -1,0 +1,113 @@
+\hypertarget{_b_b_predict_8cpp}{
+\section{src/libopentld/mftracker/BBPredict.cpp File Reference}
+\label{_b_b_predict_8cpp}\index{src/libopentld/mftracker/BBPredict.cpp@{src/libopentld/mftracker/BBPredict.cpp}}
+}
+{\ttfamily \#include \char`\"{}BBPredict.h\char`\"{}}\par
+{\ttfamily \#include $<$cmath$>$}\par
+{\ttfamily \#include \char`\"{}Median.h\char`\"{}}\par
+Include dependency graph for BBPredict.cpp:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{_b_b_predict_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{_b_b_predict_8cpp_a4b3e30827072c6282b201b96074c2bc8}{getBbWidth} (float $\ast$bb)
+\item 
+float \hyperlink{_b_b_predict_8cpp_afa8fbca51344161ecb831f11b5b2c70f}{getBbHeight} (float $\ast$bb)
+\item 
+int \hyperlink{_b_b_predict_8cpp_a0181c4b3c3e424d149a8d89a05c98de7}{predictbb} (float $\ast$bb0, CvPoint2D32f $\ast$pt0, CvPoint2D32f $\ast$pt1, int nPts, float $\ast$bb1, float $\ast$shift)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_b_b_predict_8cpp_afa8fbca51344161ecb831f11b5b2c70f}{
+\index{BBPredict.cpp@{BBPredict.cpp}!getBbHeight@{getBbHeight}}
+\index{getBbHeight@{getBbHeight}!BBPredict.cpp@{BBPredict.cpp}}
+\subsubsection[{getBbHeight}]{\setlength{\rightskip}{0pt plus 5cm}float getBbHeight (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{ bb}
+\end{DoxyParamCaption}
+)}}
+\label{_b_b_predict_8cpp_afa8fbca51344161ecb831f11b5b2c70f}
+Returns hight of Boundingbox. 
+\begin{DoxyParams}{Parameters}
+\item[{\em bb}]Boundingbox \end{DoxyParams}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{_b_b_predict_8cpp_afa8fbca51344161ecb831f11b5b2c70f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_b_b_predict_8cpp_a4b3e30827072c6282b201b96074c2bc8}{
+\index{BBPredict.cpp@{BBPredict.cpp}!getBbWidth@{getBbWidth}}
+\index{getBbWidth@{getBbWidth}!BBPredict.cpp@{BBPredict.cpp}}
+\subsubsection[{getBbWidth}]{\setlength{\rightskip}{0pt plus 5cm}float getBbWidth (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{ bb}
+\end{DoxyParamCaption}
+)}}
+\label{_b_b_predict_8cpp_a4b3e30827072c6282b201b96074c2bc8}
+Returns width of Boundingbox. 
+\begin{DoxyParams}{Parameters}
+\item[{\em bb}]Boundingbox \end{DoxyParams}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{_b_b_predict_8cpp_a4b3e30827072c6282b201b96074c2bc8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_b_b_predict_8cpp_a0181c4b3c3e424d149a8d89a05c98de7}{
+\index{BBPredict.cpp@{BBPredict.cpp}!predictbb@{predictbb}}
+\index{predictbb@{predictbb}!BBPredict.cpp@{BBPredict.cpp}}
+\subsubsection[{predictbb}]{\setlength{\rightskip}{0pt plus 5cm}int predictbb (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{ bb0, }
+\item[{CvPoint2D32f $\ast$}]{ pt0, }
+\item[{CvPoint2D32f $\ast$}]{ pt1, }
+\item[{int}]{ nPts, }
+\item[{float $\ast$}]{ bb1, }
+\item[{float $\ast$}]{ shift}
+\end{DoxyParamCaption}
+)}}
+\label{_b_b_predict_8cpp_a0181c4b3c3e424d149a8d89a05c98de7}
+Calculates the new (moved and resized) Bounding box. Calculation based on all relative distance changes of all points to every point. Then the Median of the relative Values is used. 
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{_b_b_predict_8cpp_a0181c4b3c3e424d149a8d89a05c98de7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{_b_b_predict_8cpp_a0181c4b3c3e424d149a8d89a05c98de7_icgraph}
+\end{center}
+\end{figure}
+
+

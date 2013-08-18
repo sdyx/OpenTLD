@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="classtld_1_1_integral_image" kind="class" prot="public">
+    <compoundname>tld::IntegralImage</compoundname>
+    <includes refid="_integral_image_8h" local="no">IntegralImage.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtld_1_1_integral_image_1a671be18d2f3a30aa1aea12d63a787e48" prot="public" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* tld::IntegralImage&lt; T &gt;::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/IntegralImage.h" line="39" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/IntegralImage.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_integral_image_1a13d92babc3fa76029ffcec494b916070" compoundref="_integral_image_8h" startline="54" endline="77">tld::IntegralImage&lt; long long &gt;::calcIntImg</referencedby>
+        <referencedby refid="classtld_1_1_variance_filter_1a3afefcc863a70e718a022731f7256d91" compoundref="_variance_filter_8cpp" startline="61" endline="69">tld::VarianceFilter::calcVariance</referencedby>
+        <referencedby refid="classtld_1_1_integral_image_1abc8beb4ec0dcfb6f28645648f5849250" compoundref="_integral_image_8h" startline="44" endline="47">tld::IntegralImage&lt; long long &gt;::IntegralImage</referencedby>
+        <referencedby refid="classtld_1_1_integral_image_1a79213d3f8187e10f1dc49f0b7e499caa" compoundref="_integral_image_8h" startline="49" endline="52">tld::IntegralImage&lt; long long &gt;::~IntegralImage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_integral_image_1af8ea5fee24e9726087c0e9f6159141e8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::IntegralImage&lt; T &gt;::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/IntegralImage.h" line="41" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/IntegralImage.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_integral_image_1ad5f65eee66dc3ba0d8f0462f858c1e99" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::IntegralImage&lt; T &gt;::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/IntegralImage.h" line="42" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/IntegralImage.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtld_1_1_integral_image_1abc8beb4ec0dcfb6f28645648f5849250" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tld::IntegralImage&lt; T &gt;::IntegralImage</definition>
+        <argsstring>(cv::Size size)</argsstring>
+        <name>IntegralImage</name>
+        <param>
+          <type>cv::Size</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/IntegralImage.h" line="45" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/IntegralImage.h" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_integral_image_1a79213d3f8187e10f1dc49f0b7e499caa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual tld::IntegralImage&lt; T &gt;::~IntegralImage</definition>
+        <argsstring>()</argsstring>
+        <name>~IntegralImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/IntegralImage.h" line="50" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/IntegralImage.h" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_integral_image_1a13d92babc3fa76029ffcec494b916070" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const void</type>
+        <definition>const void tld::IntegralImage&lt; T &gt;::calcIntImg</definition>
+        <argsstring>(const cv::Mat &amp;img, bool squared=false)</argsstring>
+        <name>calcIntImg</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>squared</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/IntegralImage.h" line="55" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/IntegralImage.h" bodystart="54" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/IntegralImage.h" line="37" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/IntegralImage.h" bodystart="36" bodyend="78"/>
+    <listofallmembers>
+      <member refid="classtld_1_1_integral_image_1a13d92babc3fa76029ffcec494b916070" prot="public" virt="non-virtual"><scope>tld::IntegralImage</scope><name>calcIntImg</name></member>
+      <member refid="classtld_1_1_integral_image_1a671be18d2f3a30aa1aea12d63a787e48" prot="public" virt="non-virtual"><scope>tld::IntegralImage</scope><name>data</name></member>
+      <member refid="classtld_1_1_integral_image_1ad5f65eee66dc3ba0d8f0462f858c1e99" prot="public" virt="non-virtual"><scope>tld::IntegralImage</scope><name>height</name></member>
+      <member refid="classtld_1_1_integral_image_1abc8beb4ec0dcfb6f28645648f5849250" prot="public" virt="non-virtual"><scope>tld::IntegralImage</scope><name>IntegralImage</name></member>
+      <member refid="classtld_1_1_integral_image_1af8ea5fee24e9726087c0e9f6159141e8" prot="public" virt="non-virtual"><scope>tld::IntegralImage</scope><name>width</name></member>
+      <member refid="classtld_1_1_integral_image_1a79213d3f8187e10f1dc49f0b7e499caa" prot="public" virt="virtual"><scope>tld::IntegralImage</scope><name>~IntegralImage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

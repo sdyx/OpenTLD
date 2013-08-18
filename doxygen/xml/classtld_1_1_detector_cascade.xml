@@ -1,0 +1,778 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="classtld_1_1_detector_cascade" kind="class" prot="public">
+    <compoundname>tld::DetectorCascade</compoundname>
+    <includes refid="_detector_cascade_8h" local="no">DetectorCascade.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1a340c7a6c9aadf1d08af297c77e2ee857" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::DetectorCascade::numScales</definition>
+        <argsstring></argsstring>
+        <name>numScales</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="47" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1a5a155eb168c826b143e8619e05a4e90d" prot="private" static="no" mutable="no">
+        <type>cv::Size *</type>
+        <definition>cv::Size* tld::DetectorCascade::scales</definition>
+        <argsstring></argsstring>
+        <name>scales</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="48" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1a24aed44c48fe4616465a556bd6642d5e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::DetectorCascade::minScale</definition>
+        <argsstring></argsstring>
+        <name>minScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="51" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a709b4d4802e4f8391fad8fd1b6f892eb" compoundref="_detector_cascade_8cpp" startline="41" endline="67">DetectorCascade</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a0515043558291c0bfbd5d403315c0334" compoundref="_detector_cascade_8cpp" startline="163" endline="244">initWindowsAndScales</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1aac2cd4b31c290d1eeba69591cbb65ce4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::DetectorCascade::maxScale</definition>
+        <argsstring></argsstring>
+        <name>maxScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="52" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a709b4d4802e4f8391fad8fd1b6f892eb" compoundref="_detector_cascade_8cpp" startline="41" endline="67">DetectorCascade</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a0515043558291c0bfbd5d403315c0334" compoundref="_detector_cascade_8cpp" startline="163" endline="244">initWindowsAndScales</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1a2549b35ac099860f20a13ef830081bbb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::DetectorCascade::useShift</definition>
+        <argsstring></argsstring>
+        <name>useShift</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="53" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a709b4d4802e4f8391fad8fd1b6f892eb" compoundref="_detector_cascade_8cpp" startline="41" endline="67">DetectorCascade</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a0515043558291c0bfbd5d403315c0334" compoundref="_detector_cascade_8cpp" startline="163" endline="244">initWindowsAndScales</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1a18b12b643d662cc9c8850c963079233c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float tld::DetectorCascade::shift</definition>
+        <argsstring></argsstring>
+        <name>shift</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="54" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a709b4d4802e4f8391fad8fd1b6f892eb" compoundref="_detector_cascade_8cpp" startline="41" endline="67">DetectorCascade</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a0515043558291c0bfbd5d403315c0334" compoundref="_detector_cascade_8cpp" startline="163" endline="244">initWindowsAndScales</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1add27e1ff17e2fda214d08f74d0c164e9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::DetectorCascade::minSize</definition>
+        <argsstring></argsstring>
+        <name>minSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="55" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a709b4d4802e4f8391fad8fd1b6f892eb" compoundref="_detector_cascade_8cpp" startline="41" endline="67">DetectorCascade</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a0515043558291c0bfbd5d403315c0334" compoundref="_detector_cascade_8cpp" startline="163" endline="244">initWindowsAndScales</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">propagateMembers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1a63af0a8c55ac292b25f2f72b6e734280" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::DetectorCascade::numFeatures</definition>
+        <argsstring></argsstring>
+        <name>numFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="56" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a709b4d4802e4f8391fad8fd1b6f892eb" compoundref="_detector_cascade_8cpp" startline="41" endline="67">DetectorCascade</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a39760d6c54ddb41785ffd05a7b881d8d" compoundref="_detector_cascade_8cpp" startline="249" endline="268">initWindowOffsets</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">propagateMembers</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" compoundref="_t_l_d_8cpp" startline="374" endline="463">tld::TLD::writeToFile</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1a2d41ea56f304562878151ae09c34aa8f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::DetectorCascade::numTrees</definition>
+        <argsstring></argsstring>
+        <name>numTrees</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="57" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a709b4d4802e4f8391fad8fd1b6f892eb" compoundref="_detector_cascade_8cpp" startline="41" endline="67">DetectorCascade</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a39760d6c54ddb41785ffd05a7b881d8d" compoundref="_detector_cascade_8cpp" startline="249" endline="268">initWindowOffsets</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">propagateMembers</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" compoundref="_t_l_d_8cpp" startline="374" endline="463">tld::TLD::writeToFile</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1a593db7c6ab225f17ac02cd9ef5faebd2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::DetectorCascade::imgWidth</definition>
+        <argsstring></argsstring>
+        <name>imgWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="60" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_detector_cascade_1a709b4d4802e4f8391fad8fd1b6f892eb" compoundref="_detector_cascade_8cpp" startline="41" endline="67">DetectorCascade</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a98d5393088a53188dcde7d530101534a" compoundref="_detector_cascade_8cpp" startline="80" endline="95">init</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a0515043558291c0bfbd5d403315c0334" compoundref="_detector_cascade_8cpp" startline="163" endline="244">initWindowsAndScales</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1a4e9b954d0b95f6e91d479bba9ec6beac" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::DetectorCascade::imgHeight</definition>
+        <argsstring></argsstring>
+        <name>imgHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="61" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_detector_cascade_1a709b4d4802e4f8391fad8fd1b6f892eb" compoundref="_detector_cascade_8cpp" startline="41" endline="67">DetectorCascade</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a98d5393088a53188dcde7d530101534a" compoundref="_detector_cascade_8cpp" startline="80" endline="95">init</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a0515043558291c0bfbd5d403315c0334" compoundref="_detector_cascade_8cpp" startline="163" endline="244">initWindowsAndScales</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1aa47c6463f1ae23868551a4c82c555f24" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::DetectorCascade::imgWidthStep</definition>
+        <argsstring></argsstring>
+        <name>imgWidthStep</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="62" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="62" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_detector_cascade_1a709b4d4802e4f8391fad8fd1b6f892eb" compoundref="_detector_cascade_8cpp" startline="41" endline="67">DetectorCascade</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a98d5393088a53188dcde7d530101534a" compoundref="_detector_cascade_8cpp" startline="80" endline="95">init</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a39760d6c54ddb41785ffd05a7b881d8d" compoundref="_detector_cascade_8cpp" startline="249" endline="268">initWindowOffsets</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">propagateMembers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1a1c7a7fddb085fca4577779110637c5c8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::DetectorCascade::objWidth</definition>
+        <argsstring></argsstring>
+        <name>objWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="63" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_detector_cascade_1a709b4d4802e4f8391fad8fd1b6f892eb" compoundref="_detector_cascade_8cpp" startline="41" endline="67">DetectorCascade</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a98d5393088a53188dcde7d530101534a" compoundref="_detector_cascade_8cpp" startline="80" endline="95">init</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a0515043558291c0bfbd5d403315c0334" compoundref="_detector_cascade_8cpp" startline="163" endline="244">initWindowsAndScales</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" compoundref="_detector_cascade_8cpp" startline="122" endline="151">release</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" compoundref="_t_l_d_8cpp" startline="374" endline="463">tld::TLD::writeToFile</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1a1186ed695cf6e9f00d180ec92e4aa1ea" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::DetectorCascade::objHeight</definition>
+        <argsstring></argsstring>
+        <name>objHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="64" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="64" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_detector_cascade_1a709b4d4802e4f8391fad8fd1b6f892eb" compoundref="_detector_cascade_8cpp" startline="41" endline="67">DetectorCascade</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a98d5393088a53188dcde7d530101534a" compoundref="_detector_cascade_8cpp" startline="80" endline="95">init</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a0515043558291c0bfbd5d403315c0334" compoundref="_detector_cascade_8cpp" startline="163" endline="244">initWindowsAndScales</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" compoundref="_detector_cascade_8cpp" startline="122" endline="151">release</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" compoundref="_t_l_d_8cpp" startline="374" endline="463">tld::TLD::writeToFile</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1a700932efdadfdd218697b56aa7703b4b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::DetectorCascade::numWindows</definition>
+        <argsstring></argsstring>
+        <name>numWindows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="66" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="66" bodyend="-1"/>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a39760d6c54ddb41785ffd05a7b881d8d" compoundref="_detector_cascade_8cpp" startline="249" endline="268">initWindowOffsets</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a0515043558291c0bfbd5d403315c0334" compoundref="_detector_cascade_8cpp" startline="163" endline="244">initWindowsAndScales</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">propagateMembers</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" compoundref="_detector_cascade_8cpp" startline="122" endline="151">release</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1a0acc3bf212228a7b3d47b2d795f1a5a4" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* tld::DetectorCascade::windows</definition>
+        <argsstring></argsstring>
+        <name>windows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="67" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="67" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_detector_cascade_1a39760d6c54ddb41785ffd05a7b881d8d" compoundref="_detector_cascade_8cpp" startline="249" endline="268">initWindowOffsets</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a0515043558291c0bfbd5d403315c0334" compoundref="_detector_cascade_8cpp" startline="163" endline="244">initWindowsAndScales</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">propagateMembers</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" compoundref="_detector_cascade_8cpp" startline="122" endline="151">release</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1a259b095591f3d09904277ff844d94b0b" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* tld::DetectorCascade::windowOffsets</definition>
+        <argsstring></argsstring>
+        <name>windowOffsets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="68" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="68" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_detector_cascade_1a39760d6c54ddb41785ffd05a7b881d8d" compoundref="_detector_cascade_8cpp" startline="249" endline="268">initWindowOffsets</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">propagateMembers</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" compoundref="_detector_cascade_8cpp" startline="122" endline="151">release</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1a4a61cd265a92bce6f8f148db532a1789" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::DetectorCascade::initialised</definition>
+        <argsstring></argsstring>
+        <name>initialised</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="71" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="71" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_detector_cascade_1a709b4d4802e4f8391fad8fd1b6f892eb" compoundref="_detector_cascade_8cpp" startline="41" endline="67">DetectorCascade</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a98d5393088a53188dcde7d530101534a" compoundref="_detector_cascade_8cpp" startline="80" endline="95">init</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" compoundref="_detector_cascade_8cpp" startline="122" endline="151">release</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1ad03faad5b05805f5edba330cccfee1f1" prot="public" static="no" mutable="no">
+        <type><ref refid="classtld_1_1_foreground_detector" kindref="compound">ForegroundDetector</ref> *</type>
+        <definition>ForegroundDetector* tld::DetectorCascade::foregroundDetector</definition>
+        <argsstring></argsstring>
+        <name>foregroundDetector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="74" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="74" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_detector_cascade_1a709b4d4802e4f8391fad8fd1b6f892eb" compoundref="_detector_cascade_8cpp" startline="41" endline="67">DetectorCascade</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">propagateMembers</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" compoundref="_detector_cascade_8cpp" startline="122" endline="151">release</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a1154ee7d1fd731055af1f6b5b697d8ba" compoundref="_detector_cascade_8cpp" startline="69" endline="78">~DetectorCascade</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1a5d2600fc22f6cc39ef1940457324c5eb" prot="public" static="no" mutable="no">
+        <type><ref refid="classtld_1_1_variance_filter" kindref="compound">VarianceFilter</ref> *</type>
+        <definition>VarianceFilter* tld::DetectorCascade::varianceFilter</definition>
+        <argsstring></argsstring>
+        <name>varianceFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="75" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="75" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a709b4d4802e4f8391fad8fd1b6f892eb" compoundref="_detector_cascade_8cpp" startline="41" endline="67">DetectorCascade</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">propagateMembers</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" compoundref="_t_l_d_8cpp" startline="374" endline="463">tld::TLD::writeToFile</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a1154ee7d1fd731055af1f6b5b697d8ba" compoundref="_detector_cascade_8cpp" startline="69" endline="78">~DetectorCascade</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" prot="public" static="no" mutable="no">
+        <type><ref refid="classtld_1_1_ensemble_classifier" kindref="compound">EnsembleClassifier</ref> *</type>
+        <definition>EnsembleClassifier* tld::DetectorCascade::ensembleClassifier</definition>
+        <argsstring></argsstring>
+        <name>ensembleClassifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="76" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="76" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a709b4d4802e4f8391fad8fd1b6f892eb" compoundref="_detector_cascade_8cpp" startline="41" endline="67">DetectorCascade</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a98d5393088a53188dcde7d530101534a" compoundref="_detector_cascade_8cpp" startline="80" endline="95">init</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">propagateMembers</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" compoundref="_detector_cascade_8cpp" startline="122" endline="151">release</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" compoundref="_t_l_d_8cpp" startline="374" endline="463">tld::TLD::writeToFile</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a1154ee7d1fd731055af1f6b5b697d8ba" compoundref="_detector_cascade_8cpp" startline="69" endline="78">~DetectorCascade</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1a5a5c292573778fa38a462921c1928e40" prot="public" static="no" mutable="no">
+        <type><ref refid="classtld_1_1_clustering" kindref="compound">Clustering</ref> *</type>
+        <definition>Clustering* tld::DetectorCascade::clustering</definition>
+        <argsstring></argsstring>
+        <name>clustering</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="77" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="77" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_detector_cascade_1a709b4d4802e4f8391fad8fd1b6f892eb" compoundref="_detector_cascade_8cpp" startline="41" endline="67">DetectorCascade</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">propagateMembers</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" compoundref="_detector_cascade_8cpp" startline="122" endline="151">release</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1abc9da459b6d66e5a2f2658f52b4dfdc6" prot="public" static="no" mutable="no">
+        <type><ref refid="classtld_1_1_n_n_classifier" kindref="compound">NNClassifier</ref> *</type>
+        <definition>NNClassifier* tld::DetectorCascade::nnClassifier</definition>
+        <argsstring></argsstring>
+        <name>nnClassifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="78" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="78" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a709b4d4802e4f8391fad8fd1b6f892eb" compoundref="_detector_cascade_8cpp" startline="41" endline="67">DetectorCascade</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">propagateMembers</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" compoundref="_detector_cascade_8cpp" startline="122" endline="151">release</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a7dd24a107de7e84f9b0459c3bfa078aa" compoundref="_t_l_d_8cpp" startline="39" endline="54">tld::TLD::TLD</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" compoundref="_t_l_d_8cpp" startline="374" endline="463">tld::TLD::writeToFile</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a1154ee7d1fd731055af1f6b5b697d8ba" compoundref="_detector_cascade_8cpp" startline="69" endline="78">~DetectorCascade</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" prot="public" static="no" mutable="no">
+        <type><ref refid="classtld_1_1_detection_result" kindref="compound">DetectionResult</ref> *</type>
+        <definition>DetectionResult* tld::DetectorCascade::detectionResult</definition>
+        <argsstring></argsstring>
+        <name>detectionResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="80" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="80" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_detector_cascade_1a56b148b63e2c592624c90bc7f7f50d68" compoundref="_detector_cascade_8cpp" startline="153" endline="156">cleanPreviousData</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a709b4d4802e4f8391fad8fd1b6f892eb" compoundref="_detector_cascade_8cpp" startline="41" endline="67">DetectorCascade</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">propagateMembers</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" compoundref="_detector_cascade_8cpp" startline="122" endline="151">release</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a1154ee7d1fd731055af1f6b5b697d8ba" compoundref="_detector_cascade_8cpp" startline="69" endline="78">~DetectorCascade</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::DetectorCascade::propagateMembers</definition>
+        <argsstring>()</argsstring>
+        <name>propagateMembers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="82" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.cpp" bodystart="98" bodyend="120"/>
+        <references refid="classtld_1_1_detector_cascade_1a5a5c292573778fa38a462921c1928e40" compoundref="_detector_cascade_8h" startline="77">clustering</references>
+        <references refid="classtld_1_1_clustering_1abfc41de1f95b5c019676aa5f42d9e960" compoundref="_clustering_8h" startline="47">tld::Clustering::detectionResult</references>
+        <references refid="classtld_1_1_n_n_classifier_1a5320e517bb5ad4ed524701df5cc200aa" compoundref="_n_n_classifier_8h" startline="48">tld::NNClassifier::detectionResult</references>
+        <references refid="classtld_1_1_ensemble_classifier_1af57e5de2c583e7f1cf39e6de03159323" compoundref="_ensemble_classifier_8h" startline="63">tld::EnsembleClassifier::detectionResult</references>
+        <references refid="classtld_1_1_variance_filter_1a21c300c5f491726705f82429e919ccd9" compoundref="_variance_filter_8h" startline="46">tld::VarianceFilter::detectionResult</references>
+        <references refid="classtld_1_1_foreground_detector_1a01d0c37f4019847febbea0f9a121b49b" compoundref="_foreground_detector_8h" startline="45">tld::ForegroundDetector::detectionResult</references>
+        <references refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" compoundref="_detector_cascade_8h" startline="80">detectionResult</references>
+        <references refid="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" compoundref="_detector_cascade_8h" startline="76">ensembleClassifier</references>
+        <references refid="classtld_1_1_detector_cascade_1ad03faad5b05805f5edba330cccfee1f1" compoundref="_detector_cascade_8h" startline="74">foregroundDetector</references>
+        <references refid="classtld_1_1_detector_cascade_1aa47c6463f1ae23868551a4c82c555f24" compoundref="_detector_cascade_8h" startline="62">imgWidthStep</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a149e36a3d0d287ee804ec7cf92dc6569" compoundref="_ensemble_classifier_8h" startline="49">tld::EnsembleClassifier::imgWidthStep</references>
+        <references refid="classtld_1_1_detection_result_1a20c6fc21a478b99cf88b6e955931e530" compoundref="_detection_result_8cpp" startline="55" endline="61">tld::DetectionResult::init</references>
+        <references refid="classtld_1_1_foreground_detector_1ac274f17680c4551c9b3198e88b5bcd42" compoundref="_foreground_detector_8h" startline="43">tld::ForegroundDetector::minBlobSize</references>
+        <references refid="classtld_1_1_detector_cascade_1add27e1ff17e2fda214d08f74d0c164e9" compoundref="_detector_cascade_8h" startline="55">minSize</references>
+        <references refid="classtld_1_1_detector_cascade_1abc9da459b6d66e5a2f2658f52b4dfdc6" compoundref="_detector_cascade_8h" startline="78">nnClassifier</references>
+        <references refid="classtld_1_1_detector_cascade_1a63af0a8c55ac292b25f2f72b6e734280" compoundref="_detector_cascade_8h" startline="56">numFeatures</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a176aba4e90f0b9373d8aedd7c25fa262" compoundref="_ensemble_classifier_8h" startline="47">tld::EnsembleClassifier::numFeatures</references>
+        <references refid="classtld_1_1_ensemble_classifier_1ae10dcd7614a39f9b29b3fbe957889fb9" compoundref="_ensemble_classifier_8h" startline="50">tld::EnsembleClassifier::numScales</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a60e802769e79c833d1484d96bb345b7c" compoundref="_ensemble_classifier_8h" startline="46">tld::EnsembleClassifier::numTrees</references>
+        <references refid="classtld_1_1_detector_cascade_1a2d41ea56f304562878151ae09c34aa8f" compoundref="_detector_cascade_8h" startline="57">numTrees</references>
+        <references refid="classtld_1_1_clustering_1a25b3b82795ea06758b6a321f856f004b" compoundref="_clustering_8h" startline="45">tld::Clustering::numWindows</references>
+        <references refid="classtld_1_1_detector_cascade_1a700932efdadfdd218697b56aa7703b4b" compoundref="_detector_cascade_8h" startline="66">numWindows</references>
+        <references refid="classtld_1_1_ensemble_classifier_1ae2ea00a933d9c96498ba756a2b4ec6b5" compoundref="_ensemble_classifier_8h" startline="51">tld::EnsembleClassifier::scales</references>
+        <references refid="classtld_1_1_detector_cascade_1a5d2600fc22f6cc39ef1940457324c5eb" compoundref="_detector_cascade_8h" startline="75">varianceFilter</references>
+        <references refid="classtld_1_1_ensemble_classifier_1abc6ed3b991a724b07dfcc25108769e92" compoundref="_ensemble_classifier_8h" startline="53">tld::EnsembleClassifier::windowOffsets</references>
+        <references refid="classtld_1_1_detector_cascade_1a259b095591f3d09904277ff844d94b0b" compoundref="_detector_cascade_8h" startline="68">windowOffsets</references>
+        <references refid="classtld_1_1_variance_filter_1a2c8913adc5862adf9eb3034b81c1f02b" compoundref="_variance_filter_8h" startline="44">tld::VarianceFilter::windowOffsets</references>
+        <references refid="classtld_1_1_clustering_1acd1251895c2999f2041b50142cf81dda" compoundref="_clustering_8h" startline="44">tld::Clustering::windows</references>
+        <references refid="classtld_1_1_detector_cascade_1a0acc3bf212228a7b3d47b2d795f1a5a4" compoundref="_detector_cascade_8h" startline="67">windows</references>
+        <references refid="classtld_1_1_n_n_classifier_1a6a4aab5ed014405c9dbd9162af1b1d7c" compoundref="_n_n_classifier_8h" startline="45">tld::NNClassifier::windows</references>
+        <referencedby refid="classtld_1_1_detector_cascade_1a98d5393088a53188dcde7d530101534a" compoundref="_detector_cascade_8cpp" startline="80" endline="95">init</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_detector_cascade_1a709b4d4802e4f8391fad8fd1b6f892eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tld::DetectorCascade::DetectorCascade</definition>
+        <argsstring>()</argsstring>
+        <name>DetectorCascade</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="84" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.cpp" bodystart="41" bodyend="67"/>
+        <references refid="classtld_1_1_detector_cascade_1a5a5c292573778fa38a462921c1928e40" compoundref="_detector_cascade_8h" startline="77">clustering</references>
+        <references refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" compoundref="_detector_cascade_8h" startline="80">detectionResult</references>
+        <references refid="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" compoundref="_detector_cascade_8h" startline="76">ensembleClassifier</references>
+        <references refid="classtld_1_1_detector_cascade_1ad03faad5b05805f5edba330cccfee1f1" compoundref="_detector_cascade_8h" startline="74">foregroundDetector</references>
+        <references refid="classtld_1_1_detector_cascade_1a4e9b954d0b95f6e91d479bba9ec6beac" compoundref="_detector_cascade_8h" startline="61">imgHeight</references>
+        <references refid="classtld_1_1_detector_cascade_1a593db7c6ab225f17ac02cd9ef5faebd2" compoundref="_detector_cascade_8h" startline="60">imgWidth</references>
+        <references refid="classtld_1_1_detector_cascade_1aa47c6463f1ae23868551a4c82c555f24" compoundref="_detector_cascade_8h" startline="62">imgWidthStep</references>
+        <references refid="classtld_1_1_detector_cascade_1a4a61cd265a92bce6f8f148db532a1789" compoundref="_detector_cascade_8h" startline="71">initialised</references>
+        <references refid="classtld_1_1_detector_cascade_1aac2cd4b31c290d1eeba69591cbb65ce4" compoundref="_detector_cascade_8h" startline="52">maxScale</references>
+        <references refid="classtld_1_1_detector_cascade_1a24aed44c48fe4616465a556bd6642d5e" compoundref="_detector_cascade_8h" startline="51">minScale</references>
+        <references refid="classtld_1_1_detector_cascade_1add27e1ff17e2fda214d08f74d0c164e9" compoundref="_detector_cascade_8h" startline="55">minSize</references>
+        <references refid="classtld_1_1_detector_cascade_1abc9da459b6d66e5a2f2658f52b4dfdc6" compoundref="_detector_cascade_8h" startline="78">nnClassifier</references>
+        <references refid="classtld_1_1_detector_cascade_1a63af0a8c55ac292b25f2f72b6e734280" compoundref="_detector_cascade_8h" startline="56">numFeatures</references>
+        <references refid="classtld_1_1_detector_cascade_1a2d41ea56f304562878151ae09c34aa8f" compoundref="_detector_cascade_8h" startline="57">numTrees</references>
+        <references refid="classtld_1_1_detector_cascade_1a1186ed695cf6e9f00d180ec92e4aa1ea" compoundref="_detector_cascade_8h" startline="64">objHeight</references>
+        <references refid="classtld_1_1_detector_cascade_1a1c7a7fddb085fca4577779110637c5c8" compoundref="_detector_cascade_8h" startline="63">objWidth</references>
+        <references refid="classtld_1_1_detector_cascade_1a18b12b643d662cc9c8850c963079233c" compoundref="_detector_cascade_8h" startline="54">shift</references>
+        <references refid="classtld_1_1_detector_cascade_1a2549b35ac099860f20a13ef830081bbb" compoundref="_detector_cascade_8h" startline="53">useShift</references>
+        <references refid="classtld_1_1_detector_cascade_1a5d2600fc22f6cc39ef1940457324c5eb" compoundref="_detector_cascade_8h" startline="75">varianceFilter</references>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_detector_cascade_1a1154ee7d1fd731055af1f6b5b697d8ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tld::DetectorCascade::~DetectorCascade</definition>
+        <argsstring>()</argsstring>
+        <name>~DetectorCascade</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="85" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.cpp" bodystart="69" bodyend="78"/>
+        <references refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" compoundref="_detector_cascade_8h" startline="80">detectionResult</references>
+        <references refid="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" compoundref="_detector_cascade_8h" startline="76">ensembleClassifier</references>
+        <references refid="classtld_1_1_detector_cascade_1ad03faad5b05805f5edba330cccfee1f1" compoundref="_detector_cascade_8h" startline="74">foregroundDetector</references>
+        <references refid="classtld_1_1_detector_cascade_1abc9da459b6d66e5a2f2658f52b4dfdc6" compoundref="_detector_cascade_8h" startline="78">nnClassifier</references>
+        <references refid="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" compoundref="_detector_cascade_8cpp" startline="122" endline="151">release</references>
+        <references refid="classtld_1_1_detector_cascade_1a5d2600fc22f6cc39ef1940457324c5eb" compoundref="_detector_cascade_8h" startline="75">varianceFilter</references>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_detector_cascade_1a98d5393088a53188dcde7d530101534a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::DetectorCascade::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="87" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.cpp" bodystart="80" bodyend="95"/>
+        <references refid="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" compoundref="_detector_cascade_8h" startline="76">ensembleClassifier</references>
+        <references refid="classtld_1_1_detector_cascade_1a4e9b954d0b95f6e91d479bba9ec6beac" compoundref="_detector_cascade_8h" startline="61">imgHeight</references>
+        <references refid="classtld_1_1_detector_cascade_1a593db7c6ab225f17ac02cd9ef5faebd2" compoundref="_detector_cascade_8h" startline="60">imgWidth</references>
+        <references refid="classtld_1_1_detector_cascade_1aa47c6463f1ae23868551a4c82c555f24" compoundref="_detector_cascade_8h" startline="62">imgWidthStep</references>
+        <references refid="classtld_1_1_ensemble_classifier_1afb0e8ed03adef91257801bf0e3ca73f7" compoundref="_ensemble_classifier_8cpp" startline="63" endline="70">tld::EnsembleClassifier::init</references>
+        <references refid="classtld_1_1_detector_cascade_1a4a61cd265a92bce6f8f148db532a1789" compoundref="_detector_cascade_8h" startline="71">initialised</references>
+        <references refid="classtld_1_1_detector_cascade_1a39760d6c54ddb41785ffd05a7b881d8d" compoundref="_detector_cascade_8cpp" startline="249" endline="268">initWindowOffsets</references>
+        <references refid="classtld_1_1_detector_cascade_1a0515043558291c0bfbd5d403315c0334" compoundref="_detector_cascade_8cpp" startline="163" endline="244">initWindowsAndScales</references>
+        <references refid="classtld_1_1_detector_cascade_1a1186ed695cf6e9f00d180ec92e4aa1ea" compoundref="_detector_cascade_8h" startline="64">objHeight</references>
+        <references refid="classtld_1_1_detector_cascade_1a1c7a7fddb085fca4577779110637c5c8" compoundref="_detector_cascade_8h" startline="63">objWidth</references>
+        <references refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">propagateMembers</references>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_detector_cascade_1a39760d6c54ddb41785ffd05a7b881d8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::DetectorCascade::initWindowOffsets</definition>
+        <argsstring>()</argsstring>
+        <name>initWindowOffsets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="89" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.cpp" bodystart="249" bodyend="268"/>
+        <references refid="classtld_1_1_detector_cascade_1aa47c6463f1ae23868551a4c82c555f24" compoundref="_detector_cascade_8h" startline="62">imgWidthStep</references>
+        <references refid="classtld_1_1_detector_cascade_1a63af0a8c55ac292b25f2f72b6e734280" compoundref="_detector_cascade_8h" startline="56">numFeatures</references>
+        <references refid="classtld_1_1_detector_cascade_1a2d41ea56f304562878151ae09c34aa8f" compoundref="_detector_cascade_8h" startline="57">numTrees</references>
+        <references refid="classtld_1_1_detector_cascade_1a700932efdadfdd218697b56aa7703b4b" compoundref="_detector_cascade_8h" startline="66">numWindows</references>
+        <references refid="_detector_cascade_8cpp_1a46b6d61644f123e9f367092cf5ac4de7" compoundref="_detector_cascade_8cpp" startline="39">sub2idx</references>
+        <references refid="classtld_1_1_detector_cascade_1a259b095591f3d09904277ff844d94b0b" compoundref="_detector_cascade_8h" startline="68">windowOffsets</references>
+        <references refid="classtld_1_1_detector_cascade_1a0acc3bf212228a7b3d47b2d795f1a5a4" compoundref="_detector_cascade_8h" startline="67">windows</references>
+        <referencedby refid="classtld_1_1_detector_cascade_1a98d5393088a53188dcde7d530101534a" compoundref="_detector_cascade_8cpp" startline="80" endline="95">init</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_detector_cascade_1a0515043558291c0bfbd5d403315c0334" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::DetectorCascade::initWindowsAndScales</definition>
+        <argsstring>()</argsstring>
+        <name>initWindowsAndScales</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="90" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.cpp" bodystart="163" bodyend="244"/>
+        <references refid="classtld_1_1_detector_cascade_1a4e9b954d0b95f6e91d479bba9ec6beac" compoundref="_detector_cascade_8h" startline="61">imgHeight</references>
+        <references refid="classtld_1_1_detector_cascade_1a593db7c6ab225f17ac02cd9ef5faebd2" compoundref="_detector_cascade_8h" startline="60">imgWidth</references>
+        <references refid="classtld_1_1_detector_cascade_1aac2cd4b31c290d1eeba69591cbb65ce4" compoundref="_detector_cascade_8h" startline="52">maxScale</references>
+        <references refid="classtld_1_1_detector_cascade_1a24aed44c48fe4616465a556bd6642d5e" compoundref="_detector_cascade_8h" startline="51">minScale</references>
+        <references refid="classtld_1_1_detector_cascade_1add27e1ff17e2fda214d08f74d0c164e9" compoundref="_detector_cascade_8h" startline="55">minSize</references>
+        <references refid="classtld_1_1_detector_cascade_1a700932efdadfdd218697b56aa7703b4b" compoundref="_detector_cascade_8h" startline="66">numWindows</references>
+        <references refid="classtld_1_1_detector_cascade_1a1186ed695cf6e9f00d180ec92e4aa1ea" compoundref="_detector_cascade_8h" startline="64">objHeight</references>
+        <references refid="classtld_1_1_detector_cascade_1a1c7a7fddb085fca4577779110637c5c8" compoundref="_detector_cascade_8h" startline="63">objWidth</references>
+        <references refid="classtld_1_1_detector_cascade_1a18b12b643d662cc9c8850c963079233c" compoundref="_detector_cascade_8h" startline="54">shift</references>
+        <references refid="classtld_1_1_detector_cascade_1a2549b35ac099860f20a13ef830081bbb" compoundref="_detector_cascade_8h" startline="53">useShift</references>
+        <references refid="classtld_1_1_detector_cascade_1a0acc3bf212228a7b3d47b2d795f1a5a4" compoundref="_detector_cascade_8h" startline="67">windows</references>
+        <referencedby refid="classtld_1_1_detector_cascade_1a98d5393088a53188dcde7d530101534a" compoundref="_detector_cascade_8cpp" startline="80" endline="95">init</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::DetectorCascade::release</definition>
+        <argsstring>()</argsstring>
+        <name>release</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="92" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.cpp" bodystart="122" bodyend="151"/>
+        <references refid="classtld_1_1_detector_cascade_1a5a5c292573778fa38a462921c1928e40" compoundref="_detector_cascade_8h" startline="77">clustering</references>
+        <references refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" compoundref="_detector_cascade_8h" startline="80">detectionResult</references>
+        <references refid="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" compoundref="_detector_cascade_8h" startline="76">ensembleClassifier</references>
+        <references refid="classtld_1_1_detector_cascade_1ad03faad5b05805f5edba330cccfee1f1" compoundref="_detector_cascade_8h" startline="74">foregroundDetector</references>
+        <references refid="classtld_1_1_detector_cascade_1a4a61cd265a92bce6f8f148db532a1789" compoundref="_detector_cascade_8h" startline="71">initialised</references>
+        <references refid="classtld_1_1_detector_cascade_1abc9da459b6d66e5a2f2658f52b4dfdc6" compoundref="_detector_cascade_8h" startline="78">nnClassifier</references>
+        <references refid="classtld_1_1_detector_cascade_1a700932efdadfdd218697b56aa7703b4b" compoundref="_detector_cascade_8h" startline="66">numWindows</references>
+        <references refid="classtld_1_1_detector_cascade_1a1186ed695cf6e9f00d180ec92e4aa1ea" compoundref="_detector_cascade_8h" startline="64">objHeight</references>
+        <references refid="classtld_1_1_detector_cascade_1a1c7a7fddb085fca4577779110637c5c8" compoundref="_detector_cascade_8h" startline="63">objWidth</references>
+        <references refid="classtld_1_1_detection_result_1a23dc924e308f7a2d8f3795fb48fb6648" compoundref="_detection_result_8cpp" startline="76" endline="90">tld::DetectionResult::release</references>
+        <references refid="classtld_1_1_clustering_1a2dbde4a94a483e8befe4b710445941bf" compoundref="_clustering_8cpp" startline="49" endline="53">tld::Clustering::release</references>
+        <references refid="classtld_1_1_n_n_classifier_1aabb548e7b9535ad8040fe65d344b3142" compoundref="_n_n_classifier_8cpp" startline="55" endline="59">tld::NNClassifier::release</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a3fd93c80d37f7f115443c2e147ec9967" compoundref="_ensemble_classifier_8cpp" startline="72" endline="84">tld::EnsembleClassifier::release</references>
+        <references refid="classtld_1_1_foreground_detector_1a0bf609b2ba46774804a929253c225aac" compoundref="_foreground_detector_8cpp" startline="45" endline="47">tld::ForegroundDetector::release</references>
+        <references refid="classtld_1_1_detector_cascade_1a259b095591f3d09904277ff844d94b0b" compoundref="_detector_cascade_8h" startline="68">windowOffsets</references>
+        <references refid="classtld_1_1_detector_cascade_1a0acc3bf212228a7b3d47b2d795f1a5a4" compoundref="_detector_cascade_8h" startline="67">windows</references>
+        <referencedby refid="classtld_1_1_t_l_d_1a42636c4a6fef7de9b71af987151a7f9e" compoundref="_t_l_d_8cpp" startline="64" endline="69">tld::TLD::release</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a1154ee7d1fd731055af1f6b5b697d8ba" compoundref="_detector_cascade_8cpp" startline="69" endline="78">~DetectorCascade</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_detector_cascade_1a56b148b63e2c592624c90bc7f7f50d68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::DetectorCascade::cleanPreviousData</definition>
+        <argsstring>()</argsstring>
+        <name>cleanPreviousData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="93" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.cpp" bodystart="153" bodyend="156"/>
+        <references refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" compoundref="_detector_cascade_8h" startline="80">detectionResult</references>
+        <references refid="classtld_1_1_detection_result_1afeda3b61ba3d7ba3304b96baf65d184b" compoundref="_detection_result_8cpp" startline="63" endline="74">tld::DetectionResult::reset</references>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_detector_cascade_1a4ec511b5488bd1a1dc241e6dac191165" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::DetectorCascade::detect</definition>
+        <argsstring>(const cv::Mat &amp;img)</argsstring>
+        <name>detect</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>img</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="94"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="464">
+        <label>tld::EnsembleClassifier</label>
+        <link refid="classtld_1_1_ensemble_classifier"/>
+        <childnode refid="461" relation="usage">
+          <edgelabel>detectionResult</edgelabel>
+        </childnode>
+      </node>
+      <node id="463">
+        <label>tld::Clustering</label>
+        <link refid="classtld_1_1_clustering"/>
+        <childnode refid="461" relation="usage">
+          <edgelabel>detectionResult</edgelabel>
+        </childnode>
+      </node>
+      <node id="466">
+        <label>tld::IntegralImage&lt; int &gt;</label>
+        <link refid="classtld_1_1_integral_image"/>
+      </node>
+      <node id="468">
+        <label>tld::NNClassifier</label>
+        <link refid="classtld_1_1_n_n_classifier"/>
+        <childnode refid="461" relation="usage">
+          <edgelabel>detectionResult</edgelabel>
+        </childnode>
+      </node>
+      <node id="465">
+        <label>tld::VarianceFilter</label>
+        <link refid="classtld_1_1_variance_filter"/>
+        <childnode refid="461" relation="usage">
+          <edgelabel>detectionResult</edgelabel>
+        </childnode>
+        <childnode refid="466" relation="usage">
+          <edgelabel>integralImg</edgelabel>
+        </childnode>
+        <childnode refid="467" relation="usage">
+          <edgelabel>integralImg_squared</edgelabel>
+        </childnode>
+      </node>
+      <node id="467">
+        <label>tld::IntegralImage&lt; long long &gt;</label>
+        <link refid="classtld_1_1_integral_image"/>
+      </node>
+      <node id="460">
+        <label>tld::DetectorCascade</label>
+        <link refid="classtld_1_1_detector_cascade"/>
+        <childnode refid="461" relation="usage">
+          <edgelabel>detectionResult</edgelabel>
+        </childnode>
+        <childnode refid="462" relation="usage">
+          <edgelabel>foregroundDetector</edgelabel>
+        </childnode>
+        <childnode refid="463" relation="usage">
+          <edgelabel>clustering</edgelabel>
+        </childnode>
+        <childnode refid="464" relation="usage">
+          <edgelabel>ensembleClassifier</edgelabel>
+        </childnode>
+        <childnode refid="465" relation="usage">
+          <edgelabel>varianceFilter</edgelabel>
+        </childnode>
+        <childnode refid="468" relation="usage">
+          <edgelabel>nnClassifier</edgelabel>
+        </childnode>
+      </node>
+      <node id="461">
+        <label>tld::DetectionResult</label>
+        <link refid="classtld_1_1_detection_result"/>
+      </node>
+      <node id="462">
+        <label>tld::ForegroundDetector</label>
+        <link refid="classtld_1_1_foreground_detector"/>
+        <childnode refid="461" relation="usage">
+          <edgelabel>detectionResult</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" line="45" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h" bodystart="44" bodyend="95"/>
+    <listofallmembers>
+      <member refid="classtld_1_1_detector_cascade_1a56b148b63e2c592624c90bc7f7f50d68" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>cleanPreviousData</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a5a5c292573778fa38a462921c1928e40" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>clustering</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a4ec511b5488bd1a1dc241e6dac191165" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>detect</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>detectionResult</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a709b4d4802e4f8391fad8fd1b6f892eb" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>DetectorCascade</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>ensembleClassifier</name></member>
+      <member refid="classtld_1_1_detector_cascade_1ad03faad5b05805f5edba330cccfee1f1" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>foregroundDetector</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a4e9b954d0b95f6e91d479bba9ec6beac" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>imgHeight</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a593db7c6ab225f17ac02cd9ef5faebd2" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>imgWidth</name></member>
+      <member refid="classtld_1_1_detector_cascade_1aa47c6463f1ae23868551a4c82c555f24" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>imgWidthStep</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a98d5393088a53188dcde7d530101534a" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>init</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a4a61cd265a92bce6f8f148db532a1789" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>initialised</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a39760d6c54ddb41785ffd05a7b881d8d" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>initWindowOffsets</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a0515043558291c0bfbd5d403315c0334" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>initWindowsAndScales</name></member>
+      <member refid="classtld_1_1_detector_cascade_1aac2cd4b31c290d1eeba69591cbb65ce4" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>maxScale</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a24aed44c48fe4616465a556bd6642d5e" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>minScale</name></member>
+      <member refid="classtld_1_1_detector_cascade_1add27e1ff17e2fda214d08f74d0c164e9" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>minSize</name></member>
+      <member refid="classtld_1_1_detector_cascade_1abc9da459b6d66e5a2f2658f52b4dfdc6" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>nnClassifier</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a63af0a8c55ac292b25f2f72b6e734280" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>numFeatures</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a340c7a6c9aadf1d08af297c77e2ee857" prot="private" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>numScales</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a2d41ea56f304562878151ae09c34aa8f" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>numTrees</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a700932efdadfdd218697b56aa7703b4b" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>numWindows</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a1186ed695cf6e9f00d180ec92e4aa1ea" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>objHeight</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a1c7a7fddb085fca4577779110637c5c8" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>objWidth</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>propagateMembers</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>release</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a5a155eb168c826b143e8619e05a4e90d" prot="private" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>scales</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a18b12b643d662cc9c8850c963079233c" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>shift</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a2549b35ac099860f20a13ef830081bbb" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>useShift</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a5d2600fc22f6cc39ef1940457324c5eb" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>varianceFilter</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a259b095591f3d09904277ff844d94b0b" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>windowOffsets</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a0acc3bf212228a7b3d47b2d795f1a5a4" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>windows</name></member>
+      <member refid="classtld_1_1_detector_cascade_1a1154ee7d1fd731055af1f6b5b697d8ba" prot="public" virt="non-virtual"><scope>tld::DetectorCascade</scope><name>~DetectorCascade</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

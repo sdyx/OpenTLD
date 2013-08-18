@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_main_8h" kind="file">
+    <compoundname>Main.h</compoundname>
+    <includes refid="_t_l_d_8h" local="yes">TLD.h</includes>
+    <includes refid="_im_acq_8h" local="yes">ImAcq.h</includes>
+    <includes refid="_gui_8h" local="yes">Gui.h</includes>
+    <includedby refid="_config_8h" local="yes">src/opentld/main/Config.h</includedby>
+    <includedby refid="_config_8cpp" local="yes">src/opentld/main/Config.cpp</includedby>
+    <includedby refid="_gui_8cpp" local="yes">src/opentld/main/Gui.cpp</includedby>
+    <includedby refid="_main_8cpp" local="yes">src/opentld/main/Main.cpp</includedby>
+    <includedby refid="_open_t_l_d_8cpp" local="yes">src/opentld/OpenTLD.cpp</includedby>
+    <includedby refid="_q_open_t_l_d_8cpp" local="yes">src/opentld/QOpenTLD.cpp</includedby>
+    <incdepgraph>
+      <node id="1903">
+        <label>DetectorCascade.h</label>
+        <link refid="_detector_cascade_8h"/>
+        <childnode refid="1904" relation="include">
+        </childnode>
+        <childnode refid="1906" relation="include">
+        </childnode>
+        <childnode refid="1907" relation="include">
+        </childnode>
+        <childnode refid="1909" relation="include">
+        </childnode>
+        <childnode refid="1910" relation="include">
+        </childnode>
+        <childnode refid="1911" relation="include">
+        </childnode>
+      </node>
+      <node id="1899">
+        <label>src/opentld/main/Main.h</label>
+        <link refid="Main.h"/>
+        <childnode refid="1900" relation="include">
+        </childnode>
+        <childnode refid="1913" relation="include">
+        </childnode>
+        <childnode refid="1915" relation="include">
+        </childnode>
+      </node>
+      <node id="1909">
+        <label>EnsembleClassifier.h</label>
+        <link refid="_ensemble_classifier_8h"/>
+        <childnode refid="1901" relation="include">
+        </childnode>
+      </node>
+      <node id="1911">
+        <label>NNClassifier.h</label>
+        <link refid="_n_n_classifier_8h"/>
+        <childnode refid="1905" relation="include">
+        </childnode>
+        <childnode refid="1901" relation="include">
+        </childnode>
+        <childnode refid="1912" relation="include">
+        </childnode>
+        <childnode refid="1904" relation="include">
+        </childnode>
+      </node>
+      <node id="1907">
+        <label>VarianceFilter.h</label>
+        <link refid="_variance_filter_8h"/>
+        <childnode refid="1901" relation="include">
+        </childnode>
+        <childnode refid="1908" relation="include">
+        </childnode>
+        <childnode refid="1904" relation="include">
+        </childnode>
+      </node>
+      <node id="1916">
+        <label>string</label>
+      </node>
+      <node id="1914">
+        <label>highgui.h</label>
+      </node>
+      <node id="1912">
+        <label>NormalizedPatch.h</label>
+        <link refid="_normalized_patch_8h"/>
+      </node>
+      <node id="1908">
+        <label>IntegralImage.h</label>
+        <link refid="_integral_image_8h"/>
+        <childnode refid="1901" relation="include">
+        </childnode>
+      </node>
+      <node id="1910">
+        <label>Clustering.h</label>
+        <link refid="_clustering_8h"/>
+        <childnode refid="1905" relation="include">
+        </childnode>
+        <childnode refid="1901" relation="include">
+        </childnode>
+        <childnode refid="1904" relation="include">
+        </childnode>
+      </node>
+      <node id="1906">
+        <label>ForegroundDetector.h</label>
+        <link refid="_foreground_detector_8h"/>
+        <childnode refid="1905" relation="include">
+        </childnode>
+        <childnode refid="1901" relation="include">
+        </childnode>
+        <childnode refid="1904" relation="include">
+        </childnode>
+      </node>
+      <node id="1915">
+        <label>Gui.h</label>
+        <link refid="_gui_8h"/>
+        <childnode refid="1916" relation="include">
+        </childnode>
+        <childnode refid="1914" relation="include">
+        </childnode>
+      </node>
+      <node id="1905">
+        <label>vector</label>
+      </node>
+      <node id="1913">
+        <label>ImAcq.h</label>
+        <link refid="_im_acq_8h"/>
+        <childnode refid="1914" relation="include">
+        </childnode>
+      </node>
+      <node id="1901">
+        <label>cv.h</label>
+      </node>
+      <node id="1900">
+        <label>TLD.h</label>
+        <link refid="_t_l_d_8h"/>
+        <childnode refid="1901" relation="include">
+        </childnode>
+        <childnode refid="1902" relation="include">
+        </childnode>
+        <childnode refid="1903" relation="include">
+        </childnode>
+      </node>
+      <node id="1902">
+        <label>MedianFlowTracker.h</label>
+        <link refid="_median_flow_tracker_8h"/>
+        <childnode refid="1901" relation="include">
+        </childnode>
+      </node>
+      <node id="1904">
+        <label>DetectionResult.h</label>
+        <link refid="_detection_result_8h"/>
+        <childnode refid="1905" relation="include">
+        </childnode>
+        <childnode refid="1901" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1917">
+        <label>src/opentld/main/Main.h</label>
+        <link refid="Main.h"/>
+        <childnode refid="1918" relation="include">
+        </childnode>
+        <childnode refid="1919" relation="include">
+        </childnode>
+        <childnode refid="1923" relation="include">
+        </childnode>
+        <childnode refid="1920" relation="include">
+        </childnode>
+        <childnode refid="1921" relation="include">
+        </childnode>
+        <childnode refid="1922" relation="include">
+        </childnode>
+      </node>
+      <node id="1918">
+        <label>src/opentld/main/Config.h</label>
+        <link refid="_config_8h"/>
+        <childnode refid="1919" relation="include">
+        </childnode>
+        <childnode refid="1920" relation="include">
+        </childnode>
+        <childnode refid="1921" relation="include">
+        </childnode>
+        <childnode refid="1922" relation="include">
+        </childnode>
+      </node>
+      <node id="1923">
+        <label>src/opentld/main/Gui.cpp</label>
+        <link refid="_gui_8cpp"/>
+      </node>
+      <node id="1920">
+        <label>src/opentld/main/Main.cpp</label>
+        <link refid="_main_8cpp"/>
+      </node>
+      <node id="1921">
+        <label>src/opentld/OpenTLD.cpp</label>
+        <link refid="_open_t_l_d_8cpp"/>
+      </node>
+      <node id="1919">
+        <label>src/opentld/main/Config.cpp</label>
+        <link refid="_config_8cpp"/>
+      </node>
+      <node id="1922">
+        <label>src/opentld/QOpenTLD.cpp</label>
+        <link refid="_q_open_t_l_d_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_main" prot="public">Main</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_main_8h_1ab3e78f68ae045f494fe808fce5f08c03" prot="public" static="no">
+        <name>Retval</name>
+        <enumvalue id="_main_8h_1ab3e78f68ae045f494fe808fce5f08c03a4acdc426f0743e2c7ed5faf1eb513411" prot="public">
+          <name>PROGRAM_EXIT</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_main_8h_1ab3e78f68ae045f494fe808fce5f08c03ac7f69f7c9e5aea9b8f54cf02870e2bf8" prot="public">
+          <name>SUCCESS</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="35" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" bodystart="34" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>main.h</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Nov<sp/>18,<sp/>2011</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>Georg<sp/>Nebehay</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MAIN_H_</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MAIN_H_</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_t_l_d_8h" kindref="compound">TLD.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_im_acq_8h" kindref="compound">ImAcq.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_gui_8h" kindref="compound">Gui.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="_main_8h_1ab3e78f68ae045f494fe808fce5f08c03" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_main_8h_1ab3e78f68ae045f494fe808fce5f08c03" kindref="member">Retval</ref></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36" refid="_main_8h_1ab3e78f68ae045f494fe808fce5f08c03a4acdc426f0743e2c7ed5faf1eb513411" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_main_8h_1ab3e78f68ae045f494fe808fce5f08c03a4acdc426f0743e2c7ed5faf1eb513411" kindref="member">PROGRAM_EXIT</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="37" refid="_main_8h_1ab3e78f68ae045f494fe808fce5f08c03ac7f69f7c9e5aea9b8f54cf02870e2bf8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_main_8h_1ab3e78f68ae045f494fe808fce5f08c03ac7f69f7c9e5aea9b8f54cf02870e2bf8" kindref="member">SUCCESS</ref><sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="class_main" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_main" kindref="compound">Main</ref></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="43" refid="class_main_1acd79fe4086a18124923606aabb982fec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_t_l_d" kindref="compound">tld::TLD</ref><sp/>*<ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>;</highlight></codeline>
+<codeline lineno="44" refid="class_main_1a37f97b28ea0f64421b5a0bb590059321" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_im_acq" kindref="compound">ImAcq</ref><sp/>*<ref refid="class_main_1a37f97b28ea0f64421b5a0bb590059321" kindref="member">imAcq</ref>;</highlight></codeline>
+<codeline lineno="45" refid="class_main_1a56afdbd63fd6e0f92ed2113ad53cc8df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_gui" kindref="compound">tld::Gui</ref><sp/>*<ref refid="class_main_1a56afdbd63fd6e0f92ed2113ad53cc8df" kindref="member">gui</ref>;</highlight></codeline>
+<codeline lineno="46" refid="class_main_1ae687ebbff0ebf899894316a3db89fdb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_main_1ae687ebbff0ebf899894316a3db89fdb5" kindref="member">showOutput</ref>;</highlight></codeline>
+<codeline lineno="47" refid="class_main_1a1e3ed8eee4f7fe8633419512caa544c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_main_1a1e3ed8eee4f7fe8633419512caa544c2" kindref="member">showTrajectory</ref>;</highlight></codeline>
+<codeline lineno="48" refid="class_main_1a9d46f95b41276d2beeb9b98db1267e98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_main_1a9d46f95b41276d2beeb9b98db1267e98" kindref="member">trajectoryLength</ref>;</highlight></codeline>
+<codeline lineno="49" refid="class_main_1af1797c9bbb3ff136bba623ced62b8454" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="class_main_1af1797c9bbb3ff136bba623ced62b8454" kindref="member">printResults</ref>;</highlight></codeline>
+<codeline lineno="50" refid="class_main_1a4bc0c744bd9bb33aa9bbc92666819330" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="class_main_1a4bc0c744bd9bb33aa9bbc92666819330" kindref="member">saveDir</ref>;</highlight></codeline>
+<codeline lineno="51" refid="class_main_1a635e9bb74aaa1960aafcd75d21a8784f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_main_1a635e9bb74aaa1960aafcd75d21a8784f" kindref="member">threshold</ref>;</highlight></codeline>
+<codeline lineno="52" refid="class_main_1a9d083ec93a40eae468d5133fa7dc28ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_main_1a9d083ec93a40eae468d5133fa7dc28ac" kindref="member">showForeground</ref>;</highlight></codeline>
+<codeline lineno="53" refid="class_main_1abeddae348e1825fbbe33d41457954aeb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_main_1abeddae348e1825fbbe33d41457954aeb" kindref="member">showNotConfident</ref>;</highlight></codeline>
+<codeline lineno="54" refid="class_main_1a4fbe69e8eb79528ea332fb35bd4e2575" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_main_1a4fbe69e8eb79528ea332fb35bd4e2575" kindref="member">selectManually</ref>;</highlight></codeline>
+<codeline lineno="55" refid="class_main_1a0f8b49ea51db0779192fb254c5e31e22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="class_main_1a0f8b49ea51db0779192fb254c5e31e22" kindref="member">initialBB</ref>;</highlight></codeline>
+<codeline lineno="56" refid="class_main_1aedcd2167cc4b32d974742b745e51c8fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_main_1aedcd2167cc4b32d974742b745e51c8fb" kindref="member">reinit</ref>;</highlight></codeline>
+<codeline lineno="57" refid="class_main_1a9a760d7b7e2dc8dc9bdaa027a86da734" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_main_1a9a760d7b7e2dc8dc9bdaa027a86da734" kindref="member">exportModelAfterRun</ref>;</highlight></codeline>
+<codeline lineno="58" refid="class_main_1ad0301eff91ba4a68e41e28f238f5a743" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_main_1ad0301eff91ba4a68e41e28f238f5a743" kindref="member">loadModel</ref>;</highlight></codeline>
+<codeline lineno="59" refid="class_main_1a47ef2693d73c1e51a329a50040e20892" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="class_main_1a47ef2693d73c1e51a329a50040e20892" kindref="member">modelPath</ref>;</highlight></codeline>
+<codeline lineno="60" refid="class_main_1a3003ab9835173ebf15939e4b97143615" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="class_main_1a3003ab9835173ebf15939e4b97143615" kindref="member">modelExportFile</ref>;</highlight></codeline>
+<codeline lineno="61" refid="class_main_1a886ff721bab62f931d37b4a0a7ce4b2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_main_1a886ff721bab62f931d37b4a0a7ce4b2d" kindref="member">seed</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="class_main_1a50d4361a1b613205467a441b5c40c199" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_1a50d4361a1b613205467a441b5c40c199" kindref="member">Main</ref>()</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_t_l_d" kindref="compound">tld::TLD</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1ae687ebbff0ebf899894316a3db89fdb5" kindref="member">showOutput</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1af1797c9bbb3ff136bba623ced62b8454" kindref="member">printResults</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1a4bc0c744bd9bb33aa9bbc92666819330" kindref="member">saveDir</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1a635e9bb74aaa1960aafcd75d21a8784f" kindref="member">threshold</ref><sp/>=<sp/>0.5;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1a9d083ec93a40eae468d5133fa7dc28ac" kindref="member">showForeground</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1a1e3ed8eee4f7fe8633419512caa544c2" kindref="member">showTrajectory</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1a9d46f95b41276d2beeb9b98db1267e98" kindref="member">trajectoryLength</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1a4fbe69e8eb79528ea332fb35bd4e2575" kindref="member">selectManually</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1a0f8b49ea51db0779192fb254c5e31e22" kindref="member">initialBB</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1abeddae348e1825fbbe33d41457954aeb" kindref="member">showNotConfident</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1aedcd2167cc4b32d974742b745e51c8fb" kindref="member">reinit</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1ad0301eff91ba4a68e41e28f238f5a743" kindref="member">loadModel</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1a9a760d7b7e2dc8dc9bdaa027a86da734" kindref="member">exportModelAfterRun</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1a3003ab9835173ebf15939e4b97143615" kindref="member">modelExportFile</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;model&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1a886ff721bab62f931d37b4a0a7ce4b2d" kindref="member">seed</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="class_main_1a58d9c0798f0d2114e736d04d780a080f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_1a58d9c0798f0d2114e736d04d780a080f" kindref="member">~Main</ref>()</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_im_acq_8cpp_1af22c593106dca7c35449ce54805f533a" kindref="member">imAcqFree</ref>(<ref refid="class_main_1a37f97b28ea0f64421b5a0bb590059321" kindref="member">imAcq</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" kindref="member">doWork</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>MAIN_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h"/>
+  </compounddef>
+</doxygen>

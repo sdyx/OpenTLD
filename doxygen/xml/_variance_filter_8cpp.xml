@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_variance_filter_8cpp" kind="file">
+    <compoundname>VarianceFilter.cpp</compoundname>
+    <includes refid="_variance_filter_8h" local="yes">VarianceFilter.h</includes>
+    <includes refid="_integral_image_8h" local="yes">IntegralImage.h</includes>
+    <includes refid="_detector_cascade_8h" local="yes">DetectorCascade.h</includes>
+    <incdepgraph>
+      <node id="1755">
+        <label>DetectorCascade.h</label>
+        <link refid="_detector_cascade_8h"/>
+        <childnode refid="1753" relation="include">
+        </childnode>
+        <childnode refid="1756" relation="include">
+        </childnode>
+        <childnode refid="1750" relation="include">
+        </childnode>
+        <childnode refid="1757" relation="include">
+        </childnode>
+        <childnode refid="1758" relation="include">
+        </childnode>
+        <childnode refid="1759" relation="include">
+        </childnode>
+      </node>
+      <node id="1757">
+        <label>EnsembleClassifier.h</label>
+        <link refid="_ensemble_classifier_8h"/>
+        <childnode refid="1751" relation="include">
+        </childnode>
+      </node>
+      <node id="1759">
+        <label>NNClassifier.h</label>
+        <link refid="_n_n_classifier_8h"/>
+        <childnode refid="1754" relation="include">
+        </childnode>
+        <childnode refid="1751" relation="include">
+        </childnode>
+        <childnode refid="1760" relation="include">
+        </childnode>
+        <childnode refid="1753" relation="include">
+        </childnode>
+      </node>
+      <node id="1750">
+        <label>VarianceFilter.h</label>
+        <link refid="_variance_filter_8h"/>
+        <childnode refid="1751" relation="include">
+        </childnode>
+        <childnode refid="1752" relation="include">
+        </childnode>
+        <childnode refid="1753" relation="include">
+        </childnode>
+      </node>
+      <node id="1760">
+        <label>NormalizedPatch.h</label>
+        <link refid="_normalized_patch_8h"/>
+      </node>
+      <node id="1749">
+        <label>src/libopentld/tld/VarianceFilter.cpp</label>
+        <link refid="VarianceFilter.cpp"/>
+        <childnode refid="1750" relation="include">
+        </childnode>
+        <childnode refid="1752" relation="include">
+        </childnode>
+        <childnode refid="1755" relation="include">
+        </childnode>
+      </node>
+      <node id="1752">
+        <label>IntegralImage.h</label>
+        <link refid="_integral_image_8h"/>
+        <childnode refid="1751" relation="include">
+        </childnode>
+      </node>
+      <node id="1758">
+        <label>Clustering.h</label>
+        <link refid="_clustering_8h"/>
+        <childnode refid="1754" relation="include">
+        </childnode>
+        <childnode refid="1751" relation="include">
+        </childnode>
+        <childnode refid="1753" relation="include">
+        </childnode>
+      </node>
+      <node id="1756">
+        <label>ForegroundDetector.h</label>
+        <link refid="_foreground_detector_8h"/>
+        <childnode refid="1754" relation="include">
+        </childnode>
+        <childnode refid="1751" relation="include">
+        </childnode>
+        <childnode refid="1753" relation="include">
+        </childnode>
+      </node>
+      <node id="1754">
+        <label>vector</label>
+      </node>
+      <node id="1751">
+        <label>cv.h</label>
+      </node>
+      <node id="1753">
+        <label>DetectionResult.h</label>
+        <link refid="_detection_result_8h"/>
+        <childnode refid="1754" relation="include">
+        </childnode>
+        <childnode refid="1751" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacetld">tld</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>VarianceFilter.cpp</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Nov<sp/>16,<sp/>2011</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>Georg<sp/>Nebehay</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_variance_filter_8h" kindref="compound">VarianceFilter.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_integral_image_8h" kindref="compound">IntegralImage.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_detector_cascade_8h" kindref="compound">DetectorCascade.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">cv;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">tld</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classtld_1_1_variance_filter_1a0b8e9189907c3c5e9729b63d9beb8c04" refkind="member"><highlight class="normal">VarianceFilter::VarianceFilter()</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_variance_filter_1a07f3cd680554508eb6effc4c4b92c322" kindref="member">enabled</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_variance_filter_1ad5fd1b805c1cb461a31f61dd6fdb8f07" kindref="member">minVar</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>integralImg<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>integralImg_squared<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classtld_1_1_variance_filter_1a8dfeb485fdad9b19ab1e37a91b7736f9" refkind="member"><highlight class="normal"><ref refid="classtld_1_1_variance_filter_1a8dfeb485fdad9b19ab1e37a91b7736f9" kindref="member">VarianceFilter::~VarianceFilter</ref>()</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_variance_filter_1aa5ec15d4b3670db357b1c7372f5ba25a" kindref="member">release</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classtld_1_1_variance_filter_1aa5ec15d4b3670db357b1c7372f5ba25a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_variance_filter_1aa5ec15d4b3670db357b1c7372f5ba25a" kindref="member">VarianceFilter::release</ref>()</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(integralImg<sp/>!=<sp/><ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>integralImg;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>integralImg<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(integralImg_squared<sp/>!=<sp/><ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>integralImg_squared;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>integralImg_squared<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classtld_1_1_variance_filter_1a3afefcc863a70e718a022731f7256d91" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_variance_filter_1a3afefcc863a70e718a022731f7256d91" kindref="member">VarianceFilter::calcVariance</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*off)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*ii1<sp/>=<sp/>integralImg-&gt;<ref refid="classtld_1_1_integral_image_1a671be18d2f3a30aa1aea12d63a787e48" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>*ii2<sp/>=<sp/>integralImg_squared-&gt;<ref refid="classtld_1_1_integral_image_1a671be18d2f3a30aa1aea12d63a787e48" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>mX<sp/><sp/>=<sp/>(ii1[off[3]]<sp/>-<sp/>ii1[off[2]]<sp/>-<sp/>ii1[off[1]]<sp/>+<sp/>ii1[off[0]])<sp/>/<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>off[5];<sp/></highlight><highlight class="comment">//Sum<sp/>of<sp/>Area<sp/>divided<sp/>by<sp/>area</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>mX2<sp/>=<sp/>(ii2[off[3]]<sp/>-<sp/>ii2[off[2]]<sp/>-<sp/>ii2[off[1]]<sp/>+<sp/>ii2[off[0]])<sp/>/<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>off[5];</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mX2<sp/>-<sp/>mX<sp/>*<sp/>mX;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_variance_filter_1acd8b8eb452eed28f5a10d830a057eaa7" kindref="member">VarianceFilter::nextIteration</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mat<sp/>&amp;img)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classtld_1_1_variance_filter_1a07f3cd680554508eb6effc4c4b92c322" kindref="member">enabled</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_variance_filter_1aa5ec15d4b3670db357b1c7372f5ba25a" kindref="member">release</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>integralImg<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_integral_image" kindref="compound">IntegralImage&lt;int&gt;</ref>(img.size());</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>integralImg-&gt;<ref refid="classtld_1_1_integral_image_1a13d92babc3fa76029ffcec494b916070" kindref="member">calcIntImg</ref>(img);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>integralImg_squared<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_integral_image" kindref="compound">IntegralImage&lt;long long&gt;</ref>(img.size());</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>integralImg_squared-&gt;<ref refid="classtld_1_1_integral_image_1a13d92babc3fa76029ffcec494b916070" kindref="member">calcIntImg</ref>(img,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="classtld_1_1_variance_filter_1af1c369cc5338fae5cea4ad997fb1b642" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_variance_filter_1af1c369cc5338fae5cea4ad997fb1b642" kindref="member">VarianceFilter::filter</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classtld_1_1_variance_filter_1a07f3cd680554508eb6effc4c4b92c322" kindref="member">enabled</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>bboxvar<sp/>=<sp/><ref refid="classtld_1_1_variance_filter_1a3afefcc863a70e718a022731f7256d91" kindref="member">calcVariance</ref>(<ref refid="classtld_1_1_variance_filter_1a2c8913adc5862adf9eb3034b81c1f02b" kindref="member">windowOffsets</ref><sp/>+<sp/>TLD_WINDOW_OFFSET_SIZE<sp/>*<sp/>i);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_variance_filter_1a21c300c5f491726705f82429e919ccd9" kindref="member">detectionResult</ref>-&gt;<ref refid="classtld_1_1_detection_result_1ae0725362fbe07964e4ac6861fa1d32fb" kindref="member">variances</ref>[i]<sp/>=<sp/>bboxvar;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(bboxvar<sp/>&lt;<sp/><ref refid="classtld_1_1_variance_filter_1ad5fd1b805c1cb461a31f61dd6fdb8f07" kindref="member">minVar</ref>)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>tld<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/VarianceFilter.cpp"/>
+  </compounddef>
+</doxygen>

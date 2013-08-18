@@ -1,0 +1,189 @@
+\hypertarget{classtld_1_1_detection_result}{
+\section{tld::DetectionResult Class Reference}
+\label{classtld_1_1_detection_result}\index{tld::DetectionResult@{tld::DetectionResult}}
+}
+
+
+{\ttfamily \#include $<$DetectionResult.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtld_1_1_detection_result_a603fdd04a64eb7e6c60ee7e9bb27d747}{DetectionResult} ()
+\item 
+virtual \hyperlink{classtld_1_1_detection_result_a6e76739d206edcdbbac3d2da474fa5ff}{$\sim$DetectionResult} ()
+\item 
+void \hyperlink{classtld_1_1_detection_result_a20c6fc21a478b99cf88b6e955931e530}{init} (int numWindows, int numTrees)
+\item 
+void \hyperlink{classtld_1_1_detection_result_afeda3b61ba3d7ba3304b96baf65d184b}{reset} ()
+\item 
+void \hyperlink{classtld_1_1_detection_result_a23dc924e308f7a2d8f3795fb48fb6648}{release} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classtld_1_1_detection_result_af5202404b0b269bd5f8c6b483356c517}{containsValidData}
+\item 
+std::vector$<$ cv::Rect $>$ $\ast$ \hyperlink{classtld_1_1_detection_result_ac640285c436ff5166d0ea34116d4dc69}{fgList}
+\item 
+float $\ast$ \hyperlink{classtld_1_1_detection_result_abe6b7a8cc4478cce6351207939e96333}{posteriors}
+\item 
+std::vector$<$ int $>$ $\ast$ \hyperlink{classtld_1_1_detection_result_aae986474ad532795e262e240a3ddb951}{confidentIndices}
+\item 
+int $\ast$ \hyperlink{classtld_1_1_detection_result_a2650bfbdb106c7dd9b774cfccf5fdb25}{featureVectors}
+\item 
+float $\ast$ \hyperlink{classtld_1_1_detection_result_ae0725362fbe07964e4ac6861fa1d32fb}{variances}
+\item 
+int \hyperlink{classtld_1_1_detection_result_aebf70a6b9d27b4cb34248ac26e5876ab}{numClusters}
+\item 
+cv::Rect $\ast$ \hyperlink{classtld_1_1_detection_result_ab3cade119a99e868902e6bca2e6271df}{detectorBB}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtld_1_1_detection_result_a603fdd04a64eb7e6c60ee7e9bb27d747}{
+\index{tld::DetectionResult@{tld::DetectionResult}!DetectionResult@{DetectionResult}}
+\index{DetectionResult@{DetectionResult}!tld::DetectionResult@{tld::DetectionResult}}
+\subsubsection[{DetectionResult}]{\setlength{\rightskip}{0pt plus 5cm}tld::DetectionResult::DetectionResult (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_detection_result_a603fdd04a64eb7e6c60ee7e9bb27d747}
+\hypertarget{classtld_1_1_detection_result_a6e76739d206edcdbbac3d2da474fa5ff}{
+\index{tld::DetectionResult@{tld::DetectionResult}!$\sim$DetectionResult@{$\sim$DetectionResult}}
+\index{$\sim$DetectionResult@{$\sim$DetectionResult}!tld::DetectionResult@{tld::DetectionResult}}
+\subsubsection[{$\sim$DetectionResult}]{\setlength{\rightskip}{0pt plus 5cm}tld::DetectionResult::$\sim$DetectionResult (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classtld_1_1_detection_result_a6e76739d206edcdbbac3d2da474fa5ff}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_detection_result_a6e76739d206edcdbbac3d2da474fa5ff_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtld_1_1_detection_result_a20c6fc21a478b99cf88b6e955931e530}{
+\index{tld::DetectionResult@{tld::DetectionResult}!init@{init}}
+\index{init@{init}!tld::DetectionResult@{tld::DetectionResult}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void tld::DetectionResult::init (
+\begin{DoxyParamCaption}
+\item[{int}]{ numWindows, }
+\item[{int}]{ numTrees}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_detection_result_a20c6fc21a478b99cf88b6e955931e530}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_detection_result_a20c6fc21a478b99cf88b6e955931e530_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1_detection_result_a23dc924e308f7a2d8f3795fb48fb6648}{
+\index{tld::DetectionResult@{tld::DetectionResult}!release@{release}}
+\index{release@{release}!tld::DetectionResult@{tld::DetectionResult}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}void tld::DetectionResult::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_detection_result_a23dc924e308f7a2d8f3795fb48fb6648}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_detection_result_a23dc924e308f7a2d8f3795fb48fb6648_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1_detection_result_afeda3b61ba3d7ba3304b96baf65d184b}{
+\index{tld::DetectionResult@{tld::DetectionResult}!reset@{reset}}
+\index{reset@{reset}!tld::DetectionResult@{tld::DetectionResult}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void tld::DetectionResult::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_detection_result_afeda3b61ba3d7ba3304b96baf65d184b}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_detection_result_afeda3b61ba3d7ba3304b96baf65d184b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classtld_1_1_detection_result_aae986474ad532795e262e240a3ddb951}{
+\index{tld::DetectionResult@{tld::DetectionResult}!confidentIndices@{confidentIndices}}
+\index{confidentIndices@{confidentIndices}!tld::DetectionResult@{tld::DetectionResult}}
+\subsubsection[{confidentIndices}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$int$>$$\ast$ {\bf tld::DetectionResult::confidentIndices}}}
+\label{classtld_1_1_detection_result_aae986474ad532795e262e240a3ddb951}
+\hypertarget{classtld_1_1_detection_result_af5202404b0b269bd5f8c6b483356c517}{
+\index{tld::DetectionResult@{tld::DetectionResult}!containsValidData@{containsValidData}}
+\index{containsValidData@{containsValidData}!tld::DetectionResult@{tld::DetectionResult}}
+\subsubsection[{containsValidData}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf tld::DetectionResult::containsValidData}}}
+\label{classtld_1_1_detection_result_af5202404b0b269bd5f8c6b483356c517}
+\hypertarget{classtld_1_1_detection_result_ab3cade119a99e868902e6bca2e6271df}{
+\index{tld::DetectionResult@{tld::DetectionResult}!detectorBB@{detectorBB}}
+\index{detectorBB@{detectorBB}!tld::DetectionResult@{tld::DetectionResult}}
+\subsubsection[{detectorBB}]{\setlength{\rightskip}{0pt plus 5cm}cv::Rect$\ast$ {\bf tld::DetectionResult::detectorBB}}}
+\label{classtld_1_1_detection_result_ab3cade119a99e868902e6bca2e6271df}
+\hypertarget{classtld_1_1_detection_result_a2650bfbdb106c7dd9b774cfccf5fdb25}{
+\index{tld::DetectionResult@{tld::DetectionResult}!featureVectors@{featureVectors}}
+\index{featureVectors@{featureVectors}!tld::DetectionResult@{tld::DetectionResult}}
+\subsubsection[{featureVectors}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf tld::DetectionResult::featureVectors}}}
+\label{classtld_1_1_detection_result_a2650bfbdb106c7dd9b774cfccf5fdb25}
+\hypertarget{classtld_1_1_detection_result_ac640285c436ff5166d0ea34116d4dc69}{
+\index{tld::DetectionResult@{tld::DetectionResult}!fgList@{fgList}}
+\index{fgList@{fgList}!tld::DetectionResult@{tld::DetectionResult}}
+\subsubsection[{fgList}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$cv::Rect$>$$\ast$ {\bf tld::DetectionResult::fgList}}}
+\label{classtld_1_1_detection_result_ac640285c436ff5166d0ea34116d4dc69}
+\hypertarget{classtld_1_1_detection_result_aebf70a6b9d27b4cb34248ac26e5876ab}{
+\index{tld::DetectionResult@{tld::DetectionResult}!numClusters@{numClusters}}
+\index{numClusters@{numClusters}!tld::DetectionResult@{tld::DetectionResult}}
+\subsubsection[{numClusters}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::DetectionResult::numClusters}}}
+\label{classtld_1_1_detection_result_aebf70a6b9d27b4cb34248ac26e5876ab}
+\hypertarget{classtld_1_1_detection_result_abe6b7a8cc4478cce6351207939e96333}{
+\index{tld::DetectionResult@{tld::DetectionResult}!posteriors@{posteriors}}
+\index{posteriors@{posteriors}!tld::DetectionResult@{tld::DetectionResult}}
+\subsubsection[{posteriors}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ {\bf tld::DetectionResult::posteriors}}}
+\label{classtld_1_1_detection_result_abe6b7a8cc4478cce6351207939e96333}
+\hypertarget{classtld_1_1_detection_result_ae0725362fbe07964e4ac6861fa1d32fb}{
+\index{tld::DetectionResult@{tld::DetectionResult}!variances@{variances}}
+\index{variances@{variances}!tld::DetectionResult@{tld::DetectionResult}}
+\subsubsection[{variances}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ {\bf tld::DetectionResult::variances}}}
+\label{classtld_1_1_detection_result_ae0725362fbe07964e4ac6861fa1d32fb}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/libopentld/tld/\hyperlink{_detection_result_8h}{DetectionResult.h}\item 
+src/libopentld/tld/\hyperlink{_detection_result_8cpp}{DetectionResult.cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,758 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_component_labeling_8cpp" kind="file">
+    <compoundname>ComponentLabeling.cpp</compoundname>
+    <includes refid="_component_labeling_8h" local="yes">ComponentLabeling.h</includes>
+    <incdepgraph>
+      <node id="1149">
+        <label>list</label>
+      </node>
+      <node id="1151">
+        <label>cxcore.h</label>
+      </node>
+      <node id="1153">
+        <label>BlobLibraryConfiguration.h</label>
+        <link refid="_blob_library_configuration_8h"/>
+      </node>
+      <node id="1146">
+        <label>ComponentLabeling.h</label>
+        <link refid="_component_labeling_8h"/>
+        <childnode refid="1147" relation="include">
+        </childnode>
+        <childnode refid="1148" relation="include">
+        </childnode>
+        <childnode refid="1152" relation="include">
+        </childnode>
+      </node>
+      <node id="1145">
+        <label>src/3rdparty/cvblobs/ComponentLabeling.cpp</label>
+        <link refid="ComponentLabeling.cpp"/>
+        <childnode refid="1146" relation="include">
+        </childnode>
+      </node>
+      <node id="1148">
+        <label>BlobContour.h</label>
+        <link refid="_blob_contour_8h"/>
+        <childnode refid="1149" relation="include">
+        </childnode>
+        <childnode refid="1150" relation="include">
+        </childnode>
+        <childnode refid="1151" relation="include">
+        </childnode>
+      </node>
+      <node id="1147">
+        <label>vector</label>
+      </node>
+      <node id="1150">
+        <label>cv.h</label>
+      </node>
+      <node id="1152">
+        <label>blob.h</label>
+        <link refid="blob_8h"/>
+        <childnode refid="1151" relation="include">
+        </childnode>
+        <childnode refid="1153" relation="include">
+        </childnode>
+        <childnode refid="1148" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_component_labeling_8cpp_1a33a14323597d0c85dc6d29810b9f312a" prot="public" static="yes" mutable="no">
+        <type>const CvPoint</type>
+        <definition>const CvPoint freemanCodeIncrement[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>freemanCodeIncrement</name>
+        <initializer>
+    { {1, 0}, {1, -1}, {0, -1}, {-1, -1}, {-1, 0}, {-1, 1}, {0, 1}, {1, 1} }</initializer>
+        <briefdescription>
+<para>Conversion from freeman code to coordinate increments (counterclockwise). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" line="6" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_component_labeling_8cpp_1ad8321f7b7a9d8b1a2c8b20a5bcefa164" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char GET_ABOVE_IMAGEPIXEL</definition>
+        <argsstring>(unsigned char *currentPixel, IplImage *image)</argsstring>
+        <name>GET_ABOVE_IMAGEPIXEL</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>currentPixel</declname>
+        </param>
+        <param>
+          <type>IplImage *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCIÓ:</para></listitem><listitem><para>FUNCIONALITAT:</para></listitem><listitem><para>PARÀMETRES:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULTAT:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICCIONS:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>AUTOR: rborras</para></listitem><listitem><para>DATA DE CREACIÓ: 2008/04/29</para></listitem><listitem><para>MODIFICACIÓ: Data. Autor. Descripció. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" line="24" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="_component_labeling_8cpp_1ae716ac630740753ca934744210736ee2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char GET_BELOW_IMAGEPIXEL</definition>
+        <argsstring>(unsigned char *currentPixel, IplImage *image)</argsstring>
+        <name>GET_BELOW_IMAGEPIXEL</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>currentPixel</declname>
+        </param>
+        <param>
+          <type>IplImage *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" line="28" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="_component_labeling_8cpp_1a2bcdcae4cc36c0060f85f904cc6c826e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char GET_IMAGE_PIXEL</definition>
+        <argsstring>(IplImage *image, CvPoint p)</argsstring>
+        <name>GET_IMAGE_PIXEL</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>CvPoint</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" line="35" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" bodystart="34" bodyend="37"/>
+        <referencedby refid="_component_labeling_8h_1aa08fde94b6ebc2330039f5ed1709c3c3" compoundref="_component_labeling_8cpp" startline="364" endline="404">tracer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_component_labeling_8cpp_1ae2b92da1ce3ca327bddd6b4a5c39cfc5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GET_IMAGEMASK_PIXEL</definition>
+        <argsstring>(IplImage *mask, CvPoint p)</argsstring>
+        <name>GET_IMAGEMASK_PIXEL</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>CvPoint</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" line="40" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" bodystart="39" bodyend="45"/>
+        <references refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="_config_8cpp" startline="497">NULL</references>
+        <referencedby refid="_component_labeling_8h_1aa08fde94b6ebc2330039f5ed1709c3c3" compoundref="_component_labeling_8cpp" startline="364" endline="404">tracer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_component_labeling_8cpp_1ae950b1a18f9c56ae84e9338f2b87aa84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GET_BELOW_VISITEDPIXEL</definition>
+        <argsstring>(bool *currentPixel, int imageWidth)</argsstring>
+        <name>GET_BELOW_VISITEDPIXEL</name>
+        <param>
+          <type>bool *</type>
+          <declname>currentPixel</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>imageWidth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" line="47" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" bodystart="46" bodyend="49"/>
+        <referencedby refid="_component_labeling_8h_1a05b80d9c559310ac95461bd523d888f6" compoundref="_component_labeling_8cpp" startline="93" endline="269">ComponentLabeling</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_component_labeling_8cpp_1a509d4ac5415f87f32ac7a8b088bf3d68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASSIGN_LABEL</definition>
+        <argsstring>(CvPoint p, t_labelType *labels, int imageWidth, int newLabel)</argsstring>
+        <name>ASSIGN_LABEL</name>
+        <param>
+          <type>CvPoint</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="blob_8h_1ae21ba61a4f023a2f91fc5feaad495073" kindref="member">t_labelType</ref> *</type>
+          <declname>labels</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>imageWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>newLabel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCIÓ: ASSIGN_LABEL</para></listitem><listitem><para>FUNCIONALITAT: Assigns label value to label image</para></listitem><listitem><para>PARÀMETRES:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULTAT:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICCIONS:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>AUTOR: rborras</para></listitem><listitem><para>DATA DE CREACIÓ: 2008/04/29</para></listitem><listitem><para>MODIFICACIÓ: Data. Autor. Descripció. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" line="65" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" bodystart="64" bodyend="67"/>
+        <referencedby refid="_component_labeling_8h_1aae4e0baf3210d155e7b07f46212b4031" compoundref="_component_labeling_8cpp" startline="286" endline="349">contourTracing</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_component_labeling_8cpp_1a60f487d43bfd39b64f320c5487926a23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASSIGN_VISITED</definition>
+        <argsstring>(CvPoint p, bool *visitedPoints, int imageWidth)</argsstring>
+        <name>ASSIGN_VISITED</name>
+        <param>
+          <type>CvPoint</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>visitedPoints</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>imageWidth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" line="71" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" bodystart="70" bodyend="73"/>
+        <referencedby refid="_component_labeling_8h_1aa08fde94b6ebc2330039f5ed1709c3c3" compoundref="_component_labeling_8cpp" startline="364" endline="404">tracer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_component_labeling_8cpp_1a05b80d9c559310ac95461bd523d888f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ComponentLabeling</definition>
+        <argsstring>(IplImage *inputImage, IplImage *maskImage, unsigned char backgroundColor, Blob_vector &amp;blobs)</argsstring>
+        <name>ComponentLabeling</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>inputImage</declname>
+        </param>
+        <param>
+          <type>IplImage *</type>
+          <declname>maskImage</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>backgroundColor</declname>
+        </param>
+        <param>
+          <type><ref refid="_component_labeling_8h_1a9b2ee33d26a482072b82620e6709e66e" kindref="member">Blob_vector</ref> &amp;</type>
+          <declname>blobs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCIÓ: ComponentLabeling</para></listitem><listitem><para>FUNCIONALITAT: Calcula els components binaris (blobs) d&apos;una imatge amb connectivitat a 8</para></listitem><listitem><para>PARÀMETRES:<itemizedlist>
+<listitem><para>inputImage: image to segment (pixel values different than blobColor are treated as background)</para></listitem><listitem><para>maskImage: if not NULL, all the pixels equal to 0 in mask are skipped in input image</para></listitem><listitem><para>backgroundColor: color of background (ignored pixels)</para></listitem><listitem><para>blobs: blob vector destination</para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULTAT:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICCIONS:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>AUTOR: rborras</para></listitem><listitem><para>DATA DE CREACIÓ: 2008/04/21</para></listitem><listitem><para>MODIFICACIÓ: Data. Autor. Descripció.</para></listitem><listitem><para>NOTA: Algorithm based on &quot;A linear-time component labeling algorithm using contour tracing technique&quot;, F.Chang et al </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>current blob pointer </para>        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" line="97" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" bodystart="93" bodyend="269"/>
+        <references refid="class_c_blob_1ad26a1bc4e31809c3bd76424b05824e90" compoundref="blob_8cpp" startline="132" endline="135">CBlob::AddInternalContour</references>
+        <references refid="_component_labeling_8cpp_1a36ce253ae4e842675730bfc013e6485a" compoundref="_component_labeling_8cpp" startline="286" endline="349">contourTracing</references>
+        <references refid="_component_labeling_8cpp_1ae950b1a18f9c56ae84e9338f2b87aa84" compoundref="_component_labeling_8cpp" startline="46" endline="49">GET_BELOW_VISITEDPIXEL</references>
+        <references refid="class_c_blob_1ad136387165bd74c368cb4ecc7632e4cf" compoundref="blob_8h" startline="58" endline="61">CBlob::GetExternalContour</references>
+        <references refid="class_c_blob_1a1eeee72a4369dc9485c6ae6573631a02" compoundref="blob_8h" startline="64" endline="67">CBlob::GetStorage</references>
+      </memberdef>
+      <memberdef kind="function" id="_component_labeling_8cpp_1a36ce253ae4e842675730bfc013e6485a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void contourTracing</definition>
+        <argsstring>(IplImage *image, IplImage *maskImage, CvPoint contourStart, t_labelType *labels, bool *visitedPoints, t_labelType label, bool internalContour, unsigned char backgroundColor, CBlobContour *currentBlobcontour)</argsstring>
+        <name>contourTracing</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>IplImage *</type>
+          <declname>maskImage</declname>
+        </param>
+        <param>
+          <type>CvPoint</type>
+          <declname>contourStart</declname>
+        </param>
+        <param>
+          <type><ref refid="blob_8h_1ae21ba61a4f023a2f91fc5feaad495073" kindref="member">t_labelType</ref> *</type>
+          <declname>labels</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>visitedPoints</declname>
+        </param>
+        <param>
+          <type><ref refid="blob_8h_1ae21ba61a4f023a2f91fc5feaad495073" kindref="member">t_labelType</ref></type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>internalContour</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>backgroundColor</declname>
+        </param>
+        <param>
+          <type><ref refid="class_c_blob_contour" kindref="compound">CBlobContour</ref> *</type>
+          <declname>currentBlobcontour</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCIÓ:</para></listitem><listitem><para>FUNCIONALITAT:</para></listitem><listitem><para>PARÀMETRES:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULTAT:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICCIONS:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>AUTOR: rborras</para></listitem><listitem><para>DATA DE CREACIÓ: 2008/04/29</para></listitem><listitem><para>MODIFICACIÓ: Data. Autor. Descripció. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" line="290" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" bodystart="286" bodyend="349"/>
+        <references refid="class_c_blob_contour_1a5a10813d71e48c52e099001e6581366c" compoundref="_blob_contour_8cpp" startline="99" endline="102">CBlobContour::AddChainCode</references>
+        <references refid="_component_labeling_8cpp_1a509d4ac5415f87f32ac7a8b088bf3d68" compoundref="_component_labeling_8cpp" startline="64" endline="67">ASSIGN_LABEL</references>
+        <references refid="_component_labeling_8cpp_1ae0881dec50a29351bda94e482ce3cb28" compoundref="_component_labeling_8cpp" startline="364" endline="404">tracer</references>
+        <referencedby refid="_component_labeling_8h_1a05b80d9c559310ac95461bd523d888f6" compoundref="_component_labeling_8cpp" startline="93" endline="269">ComponentLabeling</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_component_labeling_8cpp_1ae0881dec50a29351bda94e482ce3cb28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CvPoint</type>
+        <definition>CvPoint tracer</definition>
+        <argsstring>(IplImage *image, IplImage *maskImage, CvPoint P, bool *visitedPoints, short initialMovement, unsigned char backgroundColor, short &amp;movement)</argsstring>
+        <name>tracer</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>IplImage *</type>
+          <declname>maskImage</declname>
+        </param>
+        <param>
+          <type>CvPoint</type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>visitedPoints</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>initialMovement</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>backgroundColor</declname>
+        </param>
+        <param>
+          <type>short &amp;</type>
+          <declname>movement</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCIÓ: tracer</para></listitem><listitem><para>FUNCIONALITAT: Searches for next point of a contour</para></listitem><listitem><para>PARÀMETRES:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULTAT:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICCIONS:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>AUTOR: rborras</para></listitem><listitem><para>DATA DE CREACIÓ: 2008/04/30</para></listitem><listitem><para>MODIFICACIÓ: Data. Autor. Descripció. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" line="367" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp" bodystart="364" bodyend="404"/>
+        <references refid="_component_labeling_8cpp_1a60f487d43bfd39b64f320c5487926a23" compoundref="_component_labeling_8cpp" startline="70" endline="73">ASSIGN_VISITED</references>
+        <references refid="_component_labeling_8cpp_1a2bcdcae4cc36c0060f85f904cc6c826e" compoundref="_component_labeling_8cpp" startline="34" endline="37">GET_IMAGE_PIXEL</references>
+        <references refid="_component_labeling_8cpp_1ae2b92da1ce3ca327bddd6b4a5c39cfc5" compoundref="_component_labeling_8cpp" startline="39" endline="45">GET_IMAGEMASK_PIXEL</references>
+        <referencedby refid="_component_labeling_8h_1aae4e0baf3210d155e7b07f46212b4031" compoundref="_component_labeling_8cpp" startline="286" endline="349">contourTracing</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_component_labeling_8h" kindref="compound">ComponentLabeling.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CvPoint<sp/>freemanCodeIncrement[8]<sp/>=</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>{1,<sp/>0},<sp/>{1,<sp/>-1},<sp/>{0,<sp/>-1},<sp/>{-1,<sp/>-1},<sp/>{-1,<sp/>0},<sp/>{-1,<sp/>1},<sp/>{0,<sp/>1},<sp/>{1,<sp/>1}<sp/>};</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="_component_labeling_8cpp_1ad8321f7b7a9d8b1a2c8b20a5bcefa164" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_component_labeling_8cpp_1ad8321f7b7a9d8b1a2c8b20a5bcefa164" kindref="member">GET_ABOVE_IMAGEPIXEL</ref>(<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*currentPixel,<sp/>IplImage<sp/>*image<sp/>)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*(currentPixel<sp/>-<sp/>image-&gt;widthStep);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27" refid="_component_labeling_8cpp_1ae716ac630740753ca934744210736ee2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_component_labeling_8cpp_1ae716ac630740753ca934744210736ee2" kindref="member">GET_BELOW_IMAGEPIXEL</ref>(<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*currentPixel,<sp/>IplImage<sp/>*image<sp/>)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*(currentPixel<sp/>+<sp/>image-&gt;widthStep);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="_component_labeling_8cpp_1a2bcdcae4cc36c0060f85f904cc6c826e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_component_labeling_8cpp_1a2bcdcae4cc36c0060f85f904cc6c826e" kindref="member">GET_IMAGE_PIXEL</ref>(<sp/>IplImage<sp/>*image,<sp/>CvPoint<sp/>p<sp/>)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*(image-&gt;imageData<sp/>+<sp/>p.x<sp/>+<sp/>p.y<sp/>*image-&gt;widthStep);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="_component_labeling_8cpp_1ae2b92da1ce3ca327bddd6b4a5c39cfc5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_component_labeling_8cpp_1ae2b92da1ce3ca327bddd6b4a5c39cfc5" kindref="member">GET_IMAGEMASK_PIXEL</ref>(<sp/>IplImage<sp/>*mask,<sp/>CvPoint<sp/>p<sp/>)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>mask<sp/>!=<sp/><ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref><sp/>)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">)*(mask-&gt;imageData<sp/>+<sp/>p.x<sp/>+<sp/>p.y<sp/>*mask-&gt;widthStep))<sp/>&gt;<sp/>0;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46" refid="_component_labeling_8cpp_1ae950b1a18f9c56ae84e9338f2b87aa84" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_component_labeling_8cpp_1ae950b1a18f9c56ae84e9338f2b87aa84" kindref="member">GET_BELOW_VISITEDPIXEL</ref>(<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*currentPixel,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imageWidth<sp/>)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*(<sp/>currentPixel<sp/>+<sp/>imageWidth<sp/>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="_component_labeling_8cpp_1a509d4ac5415f87f32ac7a8b088bf3d68" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_component_labeling_8cpp_1a509d4ac5415f87f32ac7a8b088bf3d68" kindref="member">ASSIGN_LABEL</ref>(<sp/>CvPoint<sp/>p,<sp/><ref refid="blob_8h_1ae21ba61a4f023a2f91fc5feaad495073" kindref="member" tooltip="Disable warnings referred to 255 character truncation for the std:map.">t_labelType</ref><sp/>*labels,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imageWidth,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>newLabel<sp/>)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*(labels<sp/>+<sp/>p.y<sp/>*<sp/>imageWidth<sp/>+<sp/>p.x)<sp/>=<sp/>newLabel;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="_component_labeling_8cpp_1a60f487d43bfd39b64f320c5487926a23" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_component_labeling_8cpp_1a60f487d43bfd39b64f320c5487926a23" kindref="member">ASSIGN_VISITED</ref>(<sp/>CvPoint<sp/>p,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*visitedPoints,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imageWidth<sp/><sp/>)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*(visitedPoints<sp/>+<sp/>p.y<sp/>*<sp/>imageWidth<sp/>+<sp/>p.x)<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="_component_labeling_8h_1a05b80d9c559310ac95461bd523d888f6" refkind="member"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_component_labeling_8cpp_1a05b80d9c559310ac95461bd523d888f6" kindref="member">ComponentLabeling</ref>(<sp/>IplImage*<sp/>inputImage,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IplImage*<sp/>maskImage,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>backgroundColor,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_component_labeling_8h_1a9b2ee33d26a482072b82620e6709e66e" kindref="member" tooltip="definició de que es un vector de blobs">Blob_vector</ref><sp/>&amp;blobs<sp/>)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,j;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>row<sp/>major<sp/>vector<sp/>with<sp/>visited<sp/>points<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*visitedPoints,<sp/>*pVisitedPoints,<sp/>internalContour,<sp/>externalContour;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pInputImage,<sp/>*pMask,<sp/>*pAboveInputImage,<sp/>*pBelowInputImage,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*pAboveMask,<sp/>*pBelowMask;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imageWidth,<sp/>imageHeight,<sp/>currentLabel,<sp/>contourLabel;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>row<sp/>major<sp/>vector<sp/>with<sp/>labelled<sp/>image<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="blob_8h_1ae21ba61a4f023a2f91fc5feaad495073" kindref="member" tooltip="Disable warnings referred to 255 character truncation for the std:map.">t_labelType</ref><sp/>*labelledImage,<sp/>*pLabels;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref><sp/>*currentBlob;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvSize<sp/>imageSizes;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvPoint<sp/>currentPoint;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>verify<sp/>input<sp/>image</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!CV_IS_IMAGE(<sp/>inputImage<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>verify<sp/>that<sp/>input<sp/>image<sp/>and<sp/>mask<sp/>image<sp/>has<sp/>same<sp/>size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>maskImage<sp/>)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!CV_IS_IMAGE(maskImage)<sp/>||<sp/></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maskImage-&gt;width<sp/>!=<sp/>inputImage-&gt;width<sp/>||<sp/></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maskImage-&gt;height<sp/>!=<sp/>inputImage-&gt;height<sp/>)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pMask<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pAboveMask<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pBelowMask<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imageSizes<sp/>=<sp/>cvSize(inputImage-&gt;width,inputImage-&gt;height);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imageWidth<sp/>=<sp/>inputImage-&gt;width;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imageHeight<sp/>=<sp/>inputImage-&gt;height;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>auxiliary<sp/>buffers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>labelledImage<sp/>=<sp/>(<ref refid="blob_8h_1ae21ba61a4f023a2f91fc5feaad495073" kindref="member" tooltip="Disable warnings referred to 255 character truncation for the std:map.">t_labelType</ref>*)<sp/>malloc(<sp/>inputImage-&gt;width<sp/>*<sp/>inputImage-&gt;height<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="blob_8h_1ae21ba61a4f023a2f91fc5feaad495073" kindref="member" tooltip="Disable warnings referred to 255 character truncation for the std:map.">t_labelType</ref>)<sp/>);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>visitedPoints<sp/>=<sp/>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*)<sp/>malloc(<sp/>inputImage-&gt;width<sp/>*<sp/>inputImage-&gt;height<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)<sp/>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>initialize<sp/>it<sp/>to<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memset(labelledImage,<sp/>0,<sp/>inputImage-&gt;width<sp/>*<sp/>inputImage-&gt;height<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="blob_8h_1ae21ba61a4f023a2f91fc5feaad495073" kindref="member" tooltip="Disable warnings referred to 255 character truncation for the std:map.">t_labelType</ref>)<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memset(visitedPoints,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>inputImage-&gt;width<sp/>*<sp/>inputImage-&gt;height<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>initialize<sp/>pointers<sp/>and<sp/>label<sp/>counter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pLabels<sp/>=<sp/>labelledImage;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pVisitedPoints<sp/>=<sp/>visitedPoints;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>currentLabel<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>imageHeight;<sp/>j++<sp/>)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>don&apos;t<sp/>verify<sp/>if<sp/>we<sp/>area<sp/>on<sp/>first<sp/>or<sp/>last<sp/>row,<sp/>it<sp/>will<sp/>verified<sp/>on<sp/>pointer<sp/>access</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pAboveInputImage<sp/>=<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<sp/>inputImage-&gt;imageData<sp/>+<sp/>(j-1)<sp/>*<sp/>inputImage-&gt;widthStep;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pBelowInputImage<sp/>=<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<sp/>inputImage-&gt;imageData<sp/>+<sp/>(j+1)<sp/>*<sp/>inputImage-&gt;widthStep;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pInputImage<sp/>=<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<sp/>inputImage-&gt;imageData<sp/>+<sp/>j<sp/>*<sp/>inputImage-&gt;widthStep;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>maskImage<sp/>)</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pMask<sp/>=<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<sp/>maskImage-&gt;imageData<sp/>+<sp/>j<sp/>*<sp/>maskImage-&gt;widthStep;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>don&apos;t<sp/>verify<sp/>if<sp/>we<sp/>area<sp/>on<sp/>first<sp/>or<sp/>last<sp/>row,<sp/>it<sp/>will<sp/>verified<sp/>on<sp/>pointer<sp/>access</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pAboveMask<sp/>=<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<sp/>maskImage-&gt;imageData<sp/>+<sp/>(j-1)<sp/>*<sp/>maskImage-&gt;widthStep;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pBelowMask<sp/>=<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<sp/>maskImage-&gt;imageData<sp/>+<sp/>(j+1)<sp/>*<sp/>maskImage-&gt;widthStep;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>imageWidth;<sp/>i++,<sp/>pInputImage++,<sp/>pMask++,<sp/>pAboveInputImage++,<sp/>pBelowInputImage++,</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pAboveMask++,<sp/>pBelowMask++<sp/>)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ignore<sp/>background<sp/>pixels<sp/>or<sp/>0<sp/>pixels<sp/>in<sp/>mask</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(*pInputImage<sp/>==<sp/>backgroundColor)<sp/>||<sp/>(maskImage<sp/>&amp;&amp;<sp/>*pMask<sp/>==<sp/>0<sp/>))</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pLabels++;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pVisitedPoints++;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>new<sp/>external<sp/>contour:<sp/>current<sp/>label<sp/>==<sp/>0<sp/>and<sp/>above<sp/>pixel<sp/>is<sp/>background</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>j<sp/>&gt;<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>externalContour<sp/>=<sp/>((*pAboveInputImage<sp/>==<sp/>backgroundColor)<sp/>||<sp/></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(maskImage<sp/>&amp;&amp;<sp/>*pAboveMask<sp/>==<sp/>0))<sp/>&amp;&amp;<sp/></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*pLabels<sp/>==<sp/>0);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>externalContour<sp/>=<sp/>(*pLabels<sp/>==<sp/>0);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>new<sp/>internal<sp/>contour:<sp/>below<sp/>pixel<sp/>is<sp/>background<sp/>and<sp/>not<sp/>visited</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!externalContour<sp/>&amp;&amp;<sp/>j<sp/>&lt;<sp/>imageHeight<sp/>-<sp/>1<sp/>)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>internalContour<sp/>=<sp/>*pBelowInputImage<sp/>==<sp/>backgroundColor<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>!<ref refid="_component_labeling_8cpp_1ae950b1a18f9c56ae84e9338f2b87aa84" kindref="member">GET_BELOW_VISITEDPIXEL</ref>(<sp/>pVisitedPoints,<sp/>imageWidth);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>internalContour<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>externalContour<sp/>)</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>currentPoint<sp/>=<sp/>cvPoint(i,j);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>assign<sp/>label<sp/>to<sp/>labelled<sp/>image</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*pLabels<sp/>=<sp/>currentLabel;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>new<sp/>blob</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>currentBlob<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref>(currentLabel,<sp/>currentPoint,<sp/>imageSizes<sp/>);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>contour<sp/>tracing<sp/>with<sp/>currentLabel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_component_labeling_8cpp_1a36ce253ae4e842675730bfc013e6485a" kindref="member">contourTracing</ref>(<sp/>inputImage,<sp/>maskImage,<sp/>currentPoint,<sp/></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>labelledImage,<sp/>visitedPoints,<sp/></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>currentLabel,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>backgroundColor,<sp/>currentBlob-&gt;<ref refid="class_c_blob_1ad136387165bd74c368cb4ecc7632e4cf" kindref="member" tooltip="Retrieves contour in Freeman&amp;#39;s chain code.">GetExternalContour</ref>()<sp/>);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>add<sp/>new<sp/>created<sp/>blob</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blobs.push_back(currentBlob);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>currentLabel++;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>internalContour<sp/>)</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>currentPoint<sp/>=<sp/>cvPoint(i,j);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>*pLabels<sp/>==<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>take<sp/>left<sp/>neightbour<sp/>value<sp/>as<sp/>current</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>i<sp/>&gt;<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>contourLabel<sp/>=<sp/>*(pLabels<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>contourLabel<sp/>=<sp/>*pLabels;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(contourLabel&gt;0)</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>currentBlob<sp/>=<sp/>blobs[contourLabel-1];</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_blob_contour" kindref="compound" tooltip="Blob contour class (in crack code).">CBlobContour</ref><sp/>newContour(currentPoint,<sp/>currentBlob-&gt;<ref refid="class_c_blob_1a1eeee72a4369dc9485c6ae6573631a02" kindref="member" tooltip="Retrieves blob storage.">GetStorage</ref>());</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>contour<sp/>tracing<sp/>with<sp/>contourLabel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_component_labeling_8cpp_1a36ce253ae4e842675730bfc013e6485a" kindref="member">contourTracing</ref>(<sp/>inputImage,<sp/>maskImage,<sp/>currentPoint,<sp/>labelledImage,<sp/>visitedPoints,</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>contourLabel,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>backgroundColor,<sp/>&amp;newContour<sp/>);<sp/></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>currentBlob-&gt;<ref refid="class_c_blob_1ad26a1bc4e31809c3bd76424b05824e90" kindref="member" tooltip="Adds a new internal contour to the blob.">AddInternalContour</ref>(<sp/>newContour<sp/>);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>neither<sp/>internal<sp/>nor<sp/>external<sp/>contour</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>take<sp/>left<sp/>neightbour<sp/>value<sp/>as<sp/>current<sp/>if<sp/>it<sp/>is<sp/>not<sp/>labelled</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>i<sp/>&gt;<sp/>0<sp/>&amp;&amp;<sp/>*pLabels<sp/>==<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*pLabels<sp/>=<sp/>*(pLabels<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pLabels++;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pVisitedPoints++;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>free<sp/>auxiliary<sp/>buffers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(<sp/>labelledImage<sp/>);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(<sp/>visitedPoints<sp/>);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286" refid="_component_labeling_8h_1aae4e0baf3210d155e7b07f46212b4031" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_component_labeling_8cpp_1a36ce253ae4e842675730bfc013e6485a" kindref="member">contourTracing</ref>(<sp/>IplImage<sp/>*image,<sp/></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IplImage<sp/>*maskImage,</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvPoint<sp/>contourStart,<sp/><ref refid="blob_8h_1ae21ba61a4f023a2f91fc5feaad495073" kindref="member" tooltip="Disable warnings referred to 255 character truncation for the std:map.">t_labelType</ref><sp/>*labels,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*visitedPoints,<sp/><ref refid="blob_8h_1ae21ba61a4f023a2f91fc5feaad495073" kindref="member" tooltip="Disable warnings referred to 255 character truncation for the std:map.">t_labelType</ref><sp/>label,</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>internalContour,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>backgroundColor,<sp/><ref refid="class_c_blob_contour" kindref="compound" tooltip="Blob contour class (in crack code).">CBlobContour</ref><sp/>*currentBlobcontour<sp/>)</highlight></codeline>
+<codeline lineno="290"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvPoint<sp/>t,<sp/>tnext,<sp/>tsecond;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>initialMovement,<sp/>movement;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>internalContour<sp/>)</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>initialMovement<sp/>=<sp/>7;</highlight><highlight class="comment">//3;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>initialMovement<sp/>=<sp/>3;</highlight><highlight class="comment">//7;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tsecond<sp/>=<sp/><ref refid="_component_labeling_8cpp_1ae0881dec50a29351bda94e482ce3cb28" kindref="member">tracer</ref>(<sp/>image,<sp/>maskImage,<sp/>contourStart,<sp/>visitedPoints,<sp/>initialMovement,<sp/></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>backgroundColor,<sp/>movement<sp/>);</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>assign<sp/>current<sp/>label<sp/>to<sp/>tnext</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_component_labeling_8cpp_1a509d4ac5415f87f32ac7a8b088bf3d68" kindref="member">ASSIGN_LABEL</ref>(<sp/>contourStart,<sp/>labels,<sp/>image-&gt;width,<sp/>label<sp/>);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>contour<sp/>corresponds<sp/>to<sp/>isolated<sp/>pixel?<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>tsecond.x<sp/>==<sp/>contourStart.x<sp/>&amp;&amp;<sp/>tsecond.y<sp/>==<sp/>contourStart.y<sp/>)</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>are<sp/>finished<sp/>with<sp/>the<sp/>contour</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>add<sp/>chain<sp/>code<sp/>to<sp/>current<sp/>contour</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>currentBlobcontour-&gt;<ref refid="class_c_blob_contour_1a5a10813d71e48c52e099001e6581366c" kindref="member" tooltip="Add chain code to contour.">AddChainCode</ref>(movement);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>assign<sp/>label<sp/>to<sp/>next<sp/>point<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_component_labeling_8cpp_1a509d4ac5415f87f32ac7a8b088bf3d68" kindref="member">ASSIGN_LABEL</ref>(<sp/>tsecond,<sp/>labels,<sp/>image-&gt;width,<sp/>label<sp/>);</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tnext.x<sp/>=<sp/>tsecond.x;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tnext.y<sp/>=<sp/>tsecond.y;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t.x<sp/>=<sp/>tnext.x;</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t.y<sp/>=<sp/>tnext.y;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>while<sp/>T<sp/>is<sp/>different<sp/>than<sp/>contourStart<sp/>and<sp/>Tnext<sp/>is<sp/>different<sp/>than<sp/>T</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>follow<sp/>contour<sp/>until<sp/>start<sp/>point<sp/>is<sp/>reached<sp/>again</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<sp/>t.x<sp/>!=<sp/>contourStart.x<sp/>||<sp/>t.y<sp/>!=<sp/>contourStart.y<sp/>||<sp/></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tsecond.x<sp/>!=<sp/>tnext.x<sp/>||<sp/>tsecond.y<sp/>!=<sp/>tnext.y<sp/>)</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t.x<sp/>=<sp/>tnext.x;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t.y<sp/>=<sp/>tnext.y;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>initialMovement<sp/>=<sp/>(movement<sp/>+<sp/>5)<sp/>%<sp/>8;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>search<sp/>for<sp/>next<sp/>contour<sp/>point</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tnext<sp/>=<sp/><ref refid="_component_labeling_8cpp_1ae0881dec50a29351bda94e482ce3cb28" kindref="member">tracer</ref>(<sp/>image,<sp/>maskImage,<sp/>t,<sp/>visitedPoints,<sp/>initialMovement,<sp/></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>backgroundColor,<sp/>movement<sp/>);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>assign<sp/>label<sp/>to<sp/>contour<sp/>point</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_component_labeling_8cpp_1a509d4ac5415f87f32ac7a8b088bf3d68" kindref="member">ASSIGN_LABEL</ref>(<sp/>tnext,<sp/>labels,<sp/>image-&gt;width,<sp/>label<sp/>);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>add<sp/>chain<sp/>code<sp/>to<sp/>current<sp/>contour</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>currentBlobcontour-&gt;<ref refid="class_c_blob_contour_1a5a10813d71e48c52e099001e6581366c" kindref="member" tooltip="Add chain code to contour.">AddChainCode</ref>(movement);</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="364" refid="_component_labeling_8h_1aa08fde94b6ebc2330039f5ed1709c3c3" refkind="member"><highlight class="normal">CvPoint<sp/><ref refid="_component_labeling_8cpp_1ae0881dec50a29351bda94e482ce3cb28" kindref="member">tracer</ref>(<sp/>IplImage<sp/>*image,<sp/>IplImage<sp/>*maskImage,<sp/>CvPoint<sp/>P,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*visitedPoints,</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>initialMovement,</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>backgroundColor,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>&amp;movement<sp/>)</highlight></codeline>
+<codeline lineno="367"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d;</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvPoint<sp/>pNext;</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(d<sp/>=<sp/>0;<sp/>d<sp/>&lt;=<sp/>7;<sp/>d++<sp/>)</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>movement<sp/>=<sp/>(initialMovement<sp/>+<sp/>d)<sp/>%<sp/>8;</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pNext.x<sp/>=<sp/>P.x<sp/>+<sp/>freemanCodeIncrement[movement].x;</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pNext.y<sp/>=<sp/>P.y<sp/>+<sp/>freemanCodeIncrement[movement].y;</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>point<sp/>is<sp/>inside<sp/>image<sp/>?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>pNext.x<sp/>&lt;<sp/>0<sp/>||<sp/>pNext.x<sp/>&gt;=<sp/>image-&gt;width<sp/>||<sp/></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pNext.y<sp/>&lt;<sp/>0<sp/>||<sp/>pNext.y<sp/>&gt;=<sp/>image-&gt;height<sp/>)</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>try<sp/>other<sp/>movement</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>image<sp/>has<sp/>blobColor<sp/>value<sp/>in<sp/>the<sp/>new<sp/>point?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(<ref refid="_component_labeling_8cpp_1a2bcdcae4cc36c0060f85f904cc6c826e" kindref="member">GET_IMAGE_PIXEL</ref>(<sp/>image,<sp/>pNext<sp/>)<sp/>!=<sp/>backgroundColor<sp/>)<sp/>&amp;&amp;<sp/><ref refid="_component_labeling_8cpp_1ae2b92da1ce3ca327bddd6b4a5c39cfc5" kindref="member">GET_IMAGEMASK_PIXEL</ref>(maskImage,<sp/>pNext<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pNext;</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>mark<sp/>point<sp/>as<sp/>visited</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_component_labeling_8cpp_1a60f487d43bfd39b64f320c5487926a23" kindref="member">ASSIGN_VISITED</ref>(<sp/>pNext,<sp/>visitedPoints,<sp/>image-&gt;width<sp/>);</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>no<sp/>possible<sp/>movement<sp/>was<sp/>found</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>movement<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pNext.x<sp/>=<sp/>P.x;</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pNext.y<sp/>=<sp/>P.y;</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pNext;</highlight></codeline>
+<codeline lineno="404"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"></highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/ComponentLabeling.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classtld_1_1_detector_cascade.html" title="tld::DetectorCascade" alt="" coords="767,125,924,153"/>
+<area shape="rect" id="node4" href="$classtld_1_1_detection_result.html" title="tld::DetectionResult" alt="" coords="44,135,191,163"/>
+<area shape="rect" id="node6" href="$classtld_1_1_foreground_detector.html" title="tld::ForegroundDetector" alt="" coords="412,125,585,153"/>
+<area shape="rect" id="node9" href="$classtld_1_1_clustering.html" title="tld::Clustering" alt="" coords="444,175,553,203"/>
+<area shape="rect" id="node12" href="$classtld_1_1_ensemble_classifier.html" title="tld::EnsembleClassifier" alt="" coords="416,226,581,254"/>
+<area shape="rect" id="node15" href="$classtld_1_1_variance_filter.html" title="tld::VarianceFilter" alt="" coords="433,295,564,323"/>
+<area shape="rect" id="node22" href="$classtld_1_1_n_n_classifier.html" title="tld::NNClassifier" alt="" coords="437,10,560,38"/>
+<area shape="rect" id="node18" href="$classtld_1_1_integral_image.html" title="tld::IntegralImage\&lt; int \&gt;" alt="" coords="28,298,207,326"/>
+<area shape="rect" id="node20" href="$classtld_1_1_integral_image.html" title="tld::IntegralImage\&lt; long long \&gt;" alt="" coords="7,349,228,377"/>
+<area shape="rect" id="node25" href="$classtld_1_1_median_flow_tracker.html" title="tld::MedianFlowTracker" alt="" coords="764,175,927,203"/>
+</map>

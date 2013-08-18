@@ -1,0 +1,569 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="class_main" kind="class" prot="public">
+    <compoundname>Main</compoundname>
+    <includes refid="_main_8h" local="no">Main.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_main_1acd79fe4086a18124923606aabb982fec" prot="public" static="no" mutable="no">
+        <type><ref refid="classtld_1_1_t_l_d" kindref="compound">tld::TLD</ref> *</type>
+        <definition>tld::TLD* Main::tld</definition>
+        <argsstring></argsstring>
+        <name>tld</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="43" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">doWork</referencedby>
+        <referencedby refid="class_main_1a50d4361a1b613205467a441b5c40c199" compoundref="_main_8h" startline="63" endline="87">Main</referencedby>
+        <referencedby refid="class_main_1a58d9c0798f0d2114e736d04d780a080f" compoundref="_main_8h" startline="89" endline="93">~Main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a37f97b28ea0f64421b5a0bb590059321" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_acq" kindref="compound">ImAcq</ref> *</type>
+        <definition>ImAcq* Main::imAcq</definition>
+        <argsstring></argsstring>
+        <name>imAcq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="44" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">doWork</referencedby>
+        <referencedby refid="_open_t_l_d_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="_open_t_l_d_8cpp" startline="33" endline="65">main</referencedby>
+        <referencedby refid="class_main_1a58d9c0798f0d2114e736d04d780a080f" compoundref="_main_8h" startline="89" endline="93">~Main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a56afdbd63fd6e0f92ed2113ad53cc8df" prot="public" static="no" mutable="no">
+        <type><ref refid="classtld_1_1_gui" kindref="compound">tld::Gui</ref> *</type>
+        <definition>tld::Gui* Main::gui</definition>
+        <argsstring></argsstring>
+        <name>gui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="45" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">doWork</referencedby>
+        <referencedby refid="_open_t_l_d_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="_open_t_l_d_8cpp" startline="33" endline="65">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1ae687ebbff0ebf899894316a3db89fdb5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Main::showOutput</definition>
+        <argsstring></argsstring>
+        <name>showOutput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="46" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">doWork</referencedby>
+        <referencedby refid="_open_t_l_d_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="_open_t_l_d_8cpp" startline="33" endline="65">main</referencedby>
+        <referencedby refid="class_main_1a50d4361a1b613205467a441b5c40c199" compoundref="_main_8h" startline="63" endline="87">Main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a1e3ed8eee4f7fe8633419512caa544c2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Main::showTrajectory</definition>
+        <argsstring></argsstring>
+        <name>showTrajectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="47" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">doWork</referencedby>
+        <referencedby refid="class_main_1a50d4361a1b613205467a441b5c40c199" compoundref="_main_8h" startline="63" endline="87">Main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a9d46f95b41276d2beeb9b98db1267e98" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Main::trajectoryLength</definition>
+        <argsstring></argsstring>
+        <name>trajectoryLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="48" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">doWork</referencedby>
+        <referencedby refid="class_main_1a50d4361a1b613205467a441b5c40c199" compoundref="_main_8h" startline="63" endline="87">Main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1af1797c9bbb3ff136bba623ced62b8454" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* Main::printResults</definition>
+        <argsstring></argsstring>
+        <name>printResults</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="49" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">doWork</referencedby>
+        <referencedby refid="class_main_1a50d4361a1b613205467a441b5c40c199" compoundref="_main_8h" startline="63" endline="87">Main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a4bc0c744bd9bb33aa9bbc92666819330" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* Main::saveDir</definition>
+        <argsstring></argsstring>
+        <name>saveDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="50" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">doWork</referencedby>
+        <referencedby refid="class_main_1a50d4361a1b613205467a441b5c40c199" compoundref="_main_8h" startline="63" endline="87">Main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a635e9bb74aaa1960aafcd75d21a8784f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Main::threshold</definition>
+        <argsstring></argsstring>
+        <name>threshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="51" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">doWork</referencedby>
+        <referencedby refid="class_main_1a50d4361a1b613205467a441b5c40c199" compoundref="_main_8h" startline="63" endline="87">Main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a9d083ec93a40eae468d5133fa7dc28ac" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Main::showForeground</definition>
+        <argsstring></argsstring>
+        <name>showForeground</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="52" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">doWork</referencedby>
+        <referencedby refid="class_main_1a50d4361a1b613205467a441b5c40c199" compoundref="_main_8h" startline="63" endline="87">Main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1abeddae348e1825fbbe33d41457954aeb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Main::showNotConfident</definition>
+        <argsstring></argsstring>
+        <name>showNotConfident</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="53" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="class_main_1a50d4361a1b613205467a441b5c40c199" compoundref="_main_8h" startline="63" endline="87">Main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a4fbe69e8eb79528ea332fb35bd4e2575" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Main::selectManually</definition>
+        <argsstring></argsstring>
+        <name>selectManually</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="54" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">doWork</referencedby>
+        <referencedby refid="class_main_1a50d4361a1b613205467a441b5c40c199" compoundref="_main_8h" startline="63" endline="87">Main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a0f8b49ea51db0779192fb254c5e31e22" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* Main::initialBB</definition>
+        <argsstring></argsstring>
+        <name>initialBB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="55" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">doWork</referencedby>
+        <referencedby refid="class_main_1a50d4361a1b613205467a441b5c40c199" compoundref="_main_8h" startline="63" endline="87">Main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1aedcd2167cc4b32d974742b745e51c8fb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Main::reinit</definition>
+        <argsstring></argsstring>
+        <name>reinit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="56" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="class_main_1a50d4361a1b613205467a441b5c40c199" compoundref="_main_8h" startline="63" endline="87">Main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a9a760d7b7e2dc8dc9bdaa027a86da734" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Main::exportModelAfterRun</definition>
+        <argsstring></argsstring>
+        <name>exportModelAfterRun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="57" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">doWork</referencedby>
+        <referencedby refid="class_main_1a50d4361a1b613205467a441b5c40c199" compoundref="_main_8h" startline="63" endline="87">Main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1ad0301eff91ba4a68e41e28f238f5a743" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Main::loadModel</definition>
+        <argsstring></argsstring>
+        <name>loadModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="58" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">doWork</referencedby>
+        <referencedby refid="class_main_1a50d4361a1b613205467a441b5c40c199" compoundref="_main_8h" startline="63" endline="87">Main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a47ef2693d73c1e51a329a50040e20892" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* Main::modelPath</definition>
+        <argsstring></argsstring>
+        <name>modelPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="59" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">doWork</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a3003ab9835173ebf15939e4b97143615" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* Main::modelExportFile</definition>
+        <argsstring></argsstring>
+        <name>modelExportFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="60" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">doWork</referencedby>
+        <referencedby refid="class_main_1a50d4361a1b613205467a441b5c40c199" compoundref="_main_8h" startline="63" endline="87">Main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_1a886ff721bab62f931d37b4a0a7ce4b2d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Main::seed</definition>
+        <argsstring></argsstring>
+        <name>seed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="61" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="_open_t_l_d_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="_open_t_l_d_8cpp" startline="33" endline="65">main</referencedby>
+        <referencedby refid="class_main_1a50d4361a1b613205467a441b5c40c199" compoundref="_main_8h" startline="63" endline="87">Main</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_main_1a50d4361a1b613205467a441b5c40c199" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Main::Main</definition>
+        <argsstring>()</argsstring>
+        <name>Main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="64" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" bodystart="63" bodyend="87"/>
+        <references refid="class_main_1a9a760d7b7e2dc8dc9bdaa027a86da734" compoundref="_main_8h" startline="57">exportModelAfterRun</references>
+        <references refid="class_main_1a0f8b49ea51db0779192fb254c5e31e22" compoundref="_main_8h" startline="55">initialBB</references>
+        <references refid="class_main_1ad0301eff91ba4a68e41e28f238f5a743" compoundref="_main_8h" startline="58">loadModel</references>
+        <references refid="class_main_1a3003ab9835173ebf15939e4b97143615" compoundref="_main_8h" startline="60">modelExportFile</references>
+        <references refid="class_main_1af1797c9bbb3ff136bba623ced62b8454" compoundref="_main_8h" startline="49">printResults</references>
+        <references refid="class_main_1aedcd2167cc4b32d974742b745e51c8fb" compoundref="_main_8h" startline="56">reinit</references>
+        <references refid="class_main_1a4bc0c744bd9bb33aa9bbc92666819330" compoundref="_main_8h" startline="50">saveDir</references>
+        <references refid="class_main_1a886ff721bab62f931d37b4a0a7ce4b2d" compoundref="_main_8h" startline="61">seed</references>
+        <references refid="class_main_1a4fbe69e8eb79528ea332fb35bd4e2575" compoundref="_main_8h" startline="54">selectManually</references>
+        <references refid="class_main_1a9d083ec93a40eae468d5133fa7dc28ac" compoundref="_main_8h" startline="52">showForeground</references>
+        <references refid="class_main_1abeddae348e1825fbbe33d41457954aeb" compoundref="_main_8h" startline="53">showNotConfident</references>
+        <references refid="class_main_1ae687ebbff0ebf899894316a3db89fdb5" compoundref="_main_8h" startline="46">showOutput</references>
+        <references refid="class_main_1a1e3ed8eee4f7fe8633419512caa544c2" compoundref="_main_8h" startline="47">showTrajectory</references>
+        <references refid="class_main_1a635e9bb74aaa1960aafcd75d21a8784f" compoundref="_main_8h" startline="51">threshold</references>
+        <references refid="class_main_1acd79fe4086a18124923606aabb982fec" compoundref="_main_8h" startline="43">tld</references>
+        <references refid="class_main_1a9d46f95b41276d2beeb9b98db1267e98" compoundref="_main_8h" startline="48">trajectoryLength</references>
+      </memberdef>
+      <memberdef kind="function" id="class_main_1a58d9c0798f0d2114e736d04d780a080f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Main::~Main</definition>
+        <argsstring>()</argsstring>
+        <name>~Main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="90" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" bodystart="89" bodyend="93"/>
+        <references refid="class_main_1a37f97b28ea0f64421b5a0bb590059321" compoundref="_main_8h" startline="44">imAcq</references>
+        <references refid="_im_acq_8cpp_1af22c593106dca7c35449ce54805f533a" compoundref="_im_acq_8cpp" startline="100" endline="108">imAcqFree</references>
+        <references refid="class_main_1acd79fe4086a18124923606aabb982fec" compoundref="_main_8h" startline="43">tld</references>
+      </memberdef>
+      <memberdef kind="function" id="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Main::doWork</definition>
+        <argsstring>()</argsstring>
+        <name>doWork</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="95" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.cpp" bodystart="37" bodyend="298"/>
+        <references refid="classtld_1_1_trajectory_1a28a92000e31f71ce0831d72b068ae97b" compoundref="_trajectory_8cpp" startline="48" endline="68">tld::Trajectory::addPoint</references>
+        <references refid="classtld_1_1_t_l_d_1a873bb61492173098b134d94239ef0ba4" compoundref="_t_l_d_8h" startline="48">tld::TLD::alternating</references>
+        <references refid="classtld_1_1_foreground_detector_1a03accab9e786b8dcb6c332424ed5dee0" compoundref="_foreground_detector_8h" startline="44">tld::ForegroundDetector::bgImg</references>
+        <references refid="classtld_1_1_t_l_d_1a5af4bc9d8fa64c4423b294f727c4ba55" compoundref="_t_l_d_8h" startline="58">tld::TLD::currBB</references>
+        <references refid="classtld_1_1_t_l_d_1ab2e815db72cb2f40a7864c4d4457eb34" compoundref="_t_l_d_8h" startline="59">tld::TLD::currConf</references>
+        <references refid="struct_im_acq_1a0be9cca3c7dbda6da3ce2752717ce885" compoundref="_im_acq_8h" startline="54">ImAcq::currentFrame</references>
+        <references refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" compoundref="_detector_cascade_8h" startline="80">tld::DetectorCascade::detectionResult</references>
+        <references refid="classtld_1_1_t_l_d_1abe59bf99d46b55f6ef402cb48f9d290b" compoundref="_t_l_d_8h" startline="51">tld::TLD::detectorCascade</references>
+        <references refid="classtld_1_1_trajectory_1af8a0ffc5eb86050e0d26c766e4b2098d" compoundref="_trajectory_8cpp" startline="70" endline="89">tld::Trajectory::drawTrajectory</references>
+        <references refid="class_main_1a9a760d7b7e2dc8dc9bdaa027a86da734" compoundref="_main_8h" startline="57">exportModelAfterRun</references>
+        <references refid="classtld_1_1_detection_result_1ac640285c436ff5166d0ea34116d4dc69" compoundref="_detection_result_8h" startline="41">tld::DetectionResult::fgList</references>
+        <references refid="classtld_1_1_detector_cascade_1ad03faad5b05805f5edba330cccfee1f1" compoundref="_detector_cascade_8h" startline="74">tld::DetectorCascade::foregroundDetector</references>
+        <references refid="namespacetld_1a75cd208f8053ece69d5d7de9c2ed33fd">tld::getBBFromUser</references>
+        <references refid="classtld_1_1_gui_1a08a00ca08170f5707937aa133c12c415" compoundref="_gui_8cpp" startline="60" endline="63">tld::Gui::getKey</references>
+        <references refid="class_main_1a56afdbd63fd6e0f92ed2113ad53cc8df" compoundref="_main_8h" startline="45">gui</references>
+        <references refid="class_main_1a37f97b28ea0f64421b5a0bb590059321" compoundref="_main_8h" startline="44">imAcq</references>
+        <references refid="_im_acq_8cpp_1aa2d578629cc485cf191adede101d032f" compoundref="_im_acq_8cpp" startline="162" endline="185">imAcqGetImg</references>
+        <references refid="_im_acq_8cpp_1a864124578948857087e2ba9021351e80" compoundref="_im_acq_8cpp" startline="231" endline="243">imAcqHasMoreFrames</references>
+        <references refid="classtld_1_1_detector_cascade_1a4e9b954d0b95f6e91d479bba9ec6beac" compoundref="_detector_cascade_8h" startline="61">tld::DetectorCascade::imgHeight</references>
+        <references refid="classtld_1_1_detector_cascade_1a593db7c6ab225f17ac02cd9ef5faebd2" compoundref="_detector_cascade_8h" startline="60">tld::DetectorCascade::imgWidth</references>
+        <references refid="classtld_1_1_detector_cascade_1aa47c6463f1ae23868551a4c82c555f24" compoundref="_detector_cascade_8h" startline="62">tld::DetectorCascade::imgWidthStep</references>
+        <references refid="classtld_1_1_trajectory_1a635927cb2bca22f884ddc00a0e18b6d7" compoundref="_trajectory_8cpp" startline="41" endline="46">tld::Trajectory::init</references>
+        <references refid="class_main_1a0f8b49ea51db0779192fb254c5e31e22" compoundref="_main_8h" startline="55">initialBB</references>
+        <references refid="classtld_1_1_t_l_d_1a0f108af012bc9b7d004bed33cf8e4d90" compoundref="_t_l_d_8h" startline="60">tld::TLD::learning</references>
+        <references refid="classtld_1_1_t_l_d_1a86422799478881dd711d0a78444be245" compoundref="_t_l_d_8h" startline="47">tld::TLD::learningEnabled</references>
+        <references refid="class_main_1ad0301eff91ba4a68e41e28f238f5a743" compoundref="_main_8h" startline="58">loadModel</references>
+        <references refid="class_main_1a3003ab9835173ebf15939e4b97143615" compoundref="_main_8h" startline="60">modelExportFile</references>
+        <references refid="class_main_1a47ef2693d73c1e51a329a50040e20892" compoundref="_main_8h" startline="59">modelPath</references>
+        <references refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="_config_8cpp" startline="497">NULL</references>
+        <references refid="classtld_1_1_detector_cascade_1a700932efdadfdd218697b56aa7703b4b" compoundref="_detector_cascade_8h" startline="66">tld::DetectorCascade::numWindows</references>
+        <references refid="class_main_1af1797c9bbb3ff136bba623ced62b8454" compoundref="_main_8h" startline="49">printResults</references>
+        <references refid="classtld_1_1_t_l_d_1a8161e09603dc40c43d314cfec9e0746b">tld::TLD::processImage</references>
+        <references refid="_main_8h_1ab3e78f68ae045f494fe808fce5f08c03a4acdc426f0743e2c7ed5faf1eb513411" compoundref="_main_8h" startline="36">PROGRAM_EXIT</references>
+        <references refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</references>
+        <references refid="classtld_1_1_t_l_d_1a42636c4a6fef7de9b71af987151a7f9e" compoundref="_t_l_d_8cpp" startline="64" endline="69">tld::TLD::release</references>
+        <references refid="class_main_1a4bc0c744bd9bb33aa9bbc92666819330" compoundref="_main_8h" startline="50">saveDir</references>
+        <references refid="class_main_1a4fbe69e8eb79528ea332fb35bd4e2575" compoundref="_main_8h" startline="54">selectManually</references>
+        <references refid="classtld_1_1_t_l_d_1a6a1b9edb0ae0f79d4447c2ff7ab983be">tld::TLD::selectObject</references>
+        <references refid="class_main_1a9d083ec93a40eae468d5133fa7dc28ac" compoundref="_main_8h" startline="52">showForeground</references>
+        <references refid="classtld_1_1_gui_1a639a48143e702f183fc4dd626b7900ae" compoundref="_gui_8cpp" startline="55" endline="58">tld::Gui::showImage</references>
+        <references refid="class_main_1ae687ebbff0ebf899894316a3db89fdb5" compoundref="_main_8h" startline="46">showOutput</references>
+        <references refid="class_main_1a1e3ed8eee4f7fe8633419512caa544c2" compoundref="_main_8h" startline="47">showTrajectory</references>
+        <references refid="class_main_1a635e9bb74aaa1960aafcd75d21a8784f" compoundref="_main_8h" startline="51">threshold</references>
+        <references refid="class_main_1acd79fe4086a18124923606aabb982fec" compoundref="_main_8h" startline="43">tld</references>
+        <references refid="namespacetld_1a8f2edbadab9bc04731c73571340969a9" compoundref="_t_l_d_util_8h" startline="82" endline="91">tld::tldArrayToRect</references>
+        <references refid="class_main_1a9d46f95b41276d2beeb9b98db1267e98" compoundref="_main_8h" startline="48">trajectoryLength</references>
+        <references refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" compoundref="_t_l_d_8cpp" startline="374" endline="463">tld::TLD::writeToFile</references>
+        <referencedby refid="_open_t_l_d_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="_open_t_l_d_8cpp" startline="33" endline="65">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="498">
+        <label>tld::MedianFlowTracker</label>
+        <link refid="classtld_1_1_median_flow_tracker"/>
+      </node>
+      <node id="499">
+        <label>ImAcq</label>
+        <link refid="struct_im_acq"/>
+      </node>
+      <node id="500">
+        <label>tld::Gui</label>
+        <link refid="classtld_1_1_gui"/>
+        <childnode refid="501" relation="usage">
+          <edgelabel>m_window_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="488">
+        <label>tld::TLD</label>
+        <link refid="classtld_1_1_t_l_d"/>
+        <childnode refid="489" relation="usage">
+          <edgelabel>detectorCascade</edgelabel>
+        </childnode>
+        <childnode refid="498" relation="usage">
+          <edgelabel>medianFlowTracker</edgelabel>
+        </childnode>
+        <childnode refid="497" relation="usage">
+          <edgelabel>nnClassifier</edgelabel>
+        </childnode>
+      </node>
+      <node id="501">
+        <label>string</label>
+      </node>
+      <node id="493">
+        <label>tld::EnsembleClassifier</label>
+        <link refid="classtld_1_1_ensemble_classifier"/>
+        <childnode refid="490" relation="usage">
+          <edgelabel>detectionResult</edgelabel>
+        </childnode>
+      </node>
+      <node id="492">
+        <label>tld::Clustering</label>
+        <link refid="classtld_1_1_clustering"/>
+        <childnode refid="490" relation="usage">
+          <edgelabel>detectionResult</edgelabel>
+        </childnode>
+      </node>
+      <node id="495">
+        <label>tld::IntegralImage&lt; int &gt;</label>
+        <link refid="classtld_1_1_integral_image"/>
+      </node>
+      <node id="497">
+        <label>tld::NNClassifier</label>
+        <link refid="classtld_1_1_n_n_classifier"/>
+        <childnode refid="490" relation="usage">
+          <edgelabel>detectionResult</edgelabel>
+        </childnode>
+      </node>
+      <node id="494">
+        <label>tld::VarianceFilter</label>
+        <link refid="classtld_1_1_variance_filter"/>
+        <childnode refid="490" relation="usage">
+          <edgelabel>detectionResult</edgelabel>
+        </childnode>
+        <childnode refid="495" relation="usage">
+          <edgelabel>integralImg</edgelabel>
+        </childnode>
+        <childnode refid="496" relation="usage">
+          <edgelabel>integralImg_squared</edgelabel>
+        </childnode>
+      </node>
+      <node id="496">
+        <label>tld::IntegralImage&lt; long long &gt;</label>
+        <link refid="classtld_1_1_integral_image"/>
+      </node>
+      <node id="489">
+        <label>tld::DetectorCascade</label>
+        <link refid="classtld_1_1_detector_cascade"/>
+        <childnode refid="490" relation="usage">
+          <edgelabel>detectionResult</edgelabel>
+        </childnode>
+        <childnode refid="491" relation="usage">
+          <edgelabel>foregroundDetector</edgelabel>
+        </childnode>
+        <childnode refid="492" relation="usage">
+          <edgelabel>clustering</edgelabel>
+        </childnode>
+        <childnode refid="493" relation="usage">
+          <edgelabel>ensembleClassifier</edgelabel>
+        </childnode>
+        <childnode refid="494" relation="usage">
+          <edgelabel>varianceFilter</edgelabel>
+        </childnode>
+        <childnode refid="497" relation="usage">
+          <edgelabel>nnClassifier</edgelabel>
+        </childnode>
+      </node>
+      <node id="490">
+        <label>tld::DetectionResult</label>
+        <link refid="classtld_1_1_detection_result"/>
+      </node>
+      <node id="491">
+        <label>tld::ForegroundDetector</label>
+        <link refid="classtld_1_1_foreground_detector"/>
+        <childnode refid="490" relation="usage">
+          <edgelabel>detectionResult</edgelabel>
+        </childnode>
+      </node>
+      <node id="487">
+        <label>Main</label>
+        <link refid="class_main"/>
+        <childnode refid="488" relation="usage">
+          <edgelabel>tld</edgelabel>
+        </childnode>
+        <childnode refid="499" relation="usage">
+          <edgelabel>imAcq</edgelabel>
+        </childnode>
+        <childnode refid="500" relation="usage">
+          <edgelabel>gui</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" line="41" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.h" bodystart="40" bodyend="96"/>
+    <listofallmembers>
+      <member refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" prot="public" virt="non-virtual"><scope>Main</scope><name>doWork</name></member>
+      <member refid="class_main_1a9a760d7b7e2dc8dc9bdaa027a86da734" prot="public" virt="non-virtual"><scope>Main</scope><name>exportModelAfterRun</name></member>
+      <member refid="class_main_1a56afdbd63fd6e0f92ed2113ad53cc8df" prot="public" virt="non-virtual"><scope>Main</scope><name>gui</name></member>
+      <member refid="class_main_1a37f97b28ea0f64421b5a0bb590059321" prot="public" virt="non-virtual"><scope>Main</scope><name>imAcq</name></member>
+      <member refid="class_main_1a0f8b49ea51db0779192fb254c5e31e22" prot="public" virt="non-virtual"><scope>Main</scope><name>initialBB</name></member>
+      <member refid="class_main_1ad0301eff91ba4a68e41e28f238f5a743" prot="public" virt="non-virtual"><scope>Main</scope><name>loadModel</name></member>
+      <member refid="class_main_1a50d4361a1b613205467a441b5c40c199" prot="public" virt="non-virtual"><scope>Main</scope><name>Main</name></member>
+      <member refid="class_main_1a3003ab9835173ebf15939e4b97143615" prot="public" virt="non-virtual"><scope>Main</scope><name>modelExportFile</name></member>
+      <member refid="class_main_1a47ef2693d73c1e51a329a50040e20892" prot="public" virt="non-virtual"><scope>Main</scope><name>modelPath</name></member>
+      <member refid="class_main_1af1797c9bbb3ff136bba623ced62b8454" prot="public" virt="non-virtual"><scope>Main</scope><name>printResults</name></member>
+      <member refid="class_main_1aedcd2167cc4b32d974742b745e51c8fb" prot="public" virt="non-virtual"><scope>Main</scope><name>reinit</name></member>
+      <member refid="class_main_1a4bc0c744bd9bb33aa9bbc92666819330" prot="public" virt="non-virtual"><scope>Main</scope><name>saveDir</name></member>
+      <member refid="class_main_1a886ff721bab62f931d37b4a0a7ce4b2d" prot="public" virt="non-virtual"><scope>Main</scope><name>seed</name></member>
+      <member refid="class_main_1a4fbe69e8eb79528ea332fb35bd4e2575" prot="public" virt="non-virtual"><scope>Main</scope><name>selectManually</name></member>
+      <member refid="class_main_1a9d083ec93a40eae468d5133fa7dc28ac" prot="public" virt="non-virtual"><scope>Main</scope><name>showForeground</name></member>
+      <member refid="class_main_1abeddae348e1825fbbe33d41457954aeb" prot="public" virt="non-virtual"><scope>Main</scope><name>showNotConfident</name></member>
+      <member refid="class_main_1ae687ebbff0ebf899894316a3db89fdb5" prot="public" virt="non-virtual"><scope>Main</scope><name>showOutput</name></member>
+      <member refid="class_main_1a1e3ed8eee4f7fe8633419512caa544c2" prot="public" virt="non-virtual"><scope>Main</scope><name>showTrajectory</name></member>
+      <member refid="class_main_1a635e9bb74aaa1960aafcd75d21a8784f" prot="public" virt="non-virtual"><scope>Main</scope><name>threshold</name></member>
+      <member refid="class_main_1acd79fe4086a18124923606aabb982fec" prot="public" virt="non-virtual"><scope>Main</scope><name>tld</name></member>
+      <member refid="class_main_1a9d46f95b41276d2beeb9b98db1267e98" prot="public" virt="non-virtual"><scope>Main</scope><name>trajectoryLength</name></member>
+      <member refid="class_main_1a58d9c0798f0d2114e736d04d780a080f" prot="public" virt="non-virtual"><scope>Main</scope><name>~Main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

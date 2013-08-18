@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="dir_46d581e813f95d133537014cce45e351" kind="dir">
+    <compoundname>src/3rdparty/cvblobs/</compoundname>
+    <innerfile refid="blob_8cpp">blob.cpp</innerfile>
+    <innerfile refid="blob_8h">blob.h</innerfile>
+    <innerfile refid="_blob_contour_8cpp">BlobContour.cpp</innerfile>
+    <innerfile refid="_blob_contour_8h">BlobContour.h</innerfile>
+    <innerfile refid="_blob_library_configuration_8h">BlobLibraryConfiguration.h</innerfile>
+    <innerfile refid="_blob_operators_8cpp">BlobOperators.cpp</innerfile>
+    <innerfile refid="_blob_operators_8h">BlobOperators.h</innerfile>
+    <innerfile refid="_blob_properties_8cpp">BlobProperties.cpp</innerfile>
+    <innerfile refid="_blob_properties_8h">BlobProperties.h</innerfile>
+    <innerfile refid="_blob_result_8cpp">BlobResult.cpp</innerfile>
+    <innerfile refid="_blob_result_8h">BlobResult.h</innerfile>
+    <innerfile refid="_component_labeling_8cpp">ComponentLabeling.cpp</innerfile>
+    <innerfile refid="_component_labeling_8h">ComponentLabeling.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/"/>
+  </compounddef>
+</doxygen>

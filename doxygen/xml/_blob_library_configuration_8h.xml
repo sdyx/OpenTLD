@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_blob_library_configuration_8h" kind="file">
+    <compoundname>BlobLibraryConfiguration.h</compoundname>
+    <includedby refid="blob_8h" local="yes">src/3rdparty/cvblobs/blob.h</includedby>
+    <includedby refid="_blob_properties_8h" local="yes">src/3rdparty/cvblobs/BlobProperties.h</includedby>
+    <includedby refid="_blob_result_8h" local="yes">src/3rdparty/cvblobs/BlobResult.h</includedby>
+    <invincdepgraph>
+      <node id="1066">
+        <label>src/3rdparty/cvblobs/BlobOperators.h</label>
+        <link refid="_blob_operators_8h"/>
+        <childnode refid="1067" relation="include">
+        </childnode>
+        <childnode refid="1068" relation="include">
+        </childnode>
+      </node>
+      <node id="1070">
+        <label>src/libopentld/tld/ForegroundDetector.cpp</label>
+        <link refid="_foreground_detector_8cpp"/>
+      </node>
+      <node id="1074">
+        <label>src/3rdparty/cvblobs/BlobProperties.cpp</label>
+        <link refid="_blob_properties_8cpp"/>
+      </node>
+      <node id="1063">
+        <label>src/3rdparty/cvblobs/BlobLibraryConfiguration.h</label>
+        <link refid="BlobLibraryConfiguration.h"/>
+        <childnode refid="1064" relation="include">
+        </childnode>
+        <childnode refid="1073" relation="include">
+        </childnode>
+        <childnode refid="1068" relation="include">
+        </childnode>
+      </node>
+      <node id="1065">
+        <label>src/3rdparty/cvblobs/blob.cpp</label>
+        <link refid="blob_8cpp"/>
+      </node>
+      <node id="1071">
+        <label>src/3rdparty/cvblobs/ComponentLabeling.h</label>
+        <link refid="_component_labeling_8h"/>
+        <childnode refid="1068" relation="include">
+        </childnode>
+        <childnode refid="1072" relation="include">
+        </childnode>
+      </node>
+      <node id="1069">
+        <label>src/3rdparty/cvblobs/BlobResult.cpp</label>
+        <link refid="_blob_result_8cpp"/>
+      </node>
+      <node id="1072">
+        <label>src/3rdparty/cvblobs/ComponentLabeling.cpp</label>
+        <link refid="_component_labeling_8cpp"/>
+      </node>
+      <node id="1067">
+        <label>src/3rdparty/cvblobs/BlobOperators.cpp</label>
+        <link refid="_blob_operators_8cpp"/>
+      </node>
+      <node id="1068">
+        <label>src/3rdparty/cvblobs/BlobResult.h</label>
+        <link refid="_blob_result_8h"/>
+        <childnode refid="1069" relation="include">
+        </childnode>
+        <childnode refid="1070" relation="include">
+        </childnode>
+      </node>
+      <node id="1073">
+        <label>src/3rdparty/cvblobs/BlobProperties.h</label>
+        <link refid="_blob_properties_8h"/>
+        <childnode refid="1074" relation="include">
+        </childnode>
+      </node>
+      <node id="1064">
+        <label>src/3rdparty/cvblobs/blob.h</label>
+        <link refid="blob_8h"/>
+        <childnode refid="1065" relation="include">
+        </childnode>
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1068" relation="include">
+        </childnode>
+        <childnode refid="1071" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BlobLibraryConfiguration.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">FUNCIONALITAT:<sp/>Configuració<sp/>del<sp/>comportament<sp/>global<sp/>de<sp/>la<sp/>llibreria</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">AUTOR:<sp/>Inspecta<sp/>S.L.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">MODIFICACIONS<sp/>(Modificació,<sp/>Autor,<sp/>Data):</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">FUNCTIONALITY:<sp/>Global<sp/>configuration<sp/>of<sp/>the<sp/>library</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">AUTHOR:<sp/>Inspecta<sp/>S.L.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">MODIFICATIONS<sp/>(Modification,<sp/>Author,<sp/>Date):</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment">**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment">//#define<sp/>MATRIXCV_ACTIU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="comment">//#define<sp/>BLOB_OBJECT_FACTORY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="comment">//#define<sp/>_SHOW_ERRORS<sp/><sp/>//AO:<sp/>Only<sp/>works<sp/>for<sp/>WIN.</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobLibraryConfiguration.h"/>
+  </compounddef>
+</doxygen>

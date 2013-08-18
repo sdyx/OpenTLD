@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="class_c_blob_get_orientation" kind="class" prot="public">
+    <compoundname>CBlobGetOrientation</compoundname>
+    <basecompoundref refid="class_c_operador_blob" prot="public" virt="non-virtual">COperadorBlob</basecompoundref>
+    <includes refid="_blob_operators_8h" local="no">BlobOperators.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_blob_get_orientation_1a083233587fed855654e580a355265be3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double CBlobGetOrientation::operator()</definition>
+        <argsstring>(CBlob &amp;blob)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="class_c_operador_blob_1a303c4189cc94cafbcbee116bf014e623">operator()</reimplements>
+        <param>
+          <type><ref refid="class_c_blob" kindref="compound">CBlob</ref> &amp;</type>
+          <declname>blob</declname>
+        </param>
+        <briefdescription>
+<para>Aply operator to blob. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="665" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="664" bodyend="674"/>
+        <references refid="class_c_blob_1ad0bb95f395084ee89ca35cf11f203342" compoundref="blob_8cpp" startline="555" endline="633">CBlob::GetEllipse</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_orientation_1acc417f0effab6161ebbd3bc279b0bccd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>const char* CBlobGetOrientation::GetNom</definition>
+        <argsstring>()</argsstring>
+        <name>GetNom</name>
+        <reimplements refid="class_c_operador_blob_1a717a19c163a26b45081a2231be24c008">GetNom</reimplements>
+        <briefdescription>
+<para>Get operator name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="676" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="675" bodyend="678"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Classe per calcular l&apos;orientació de l&apos;ellipse del blob en radians Class to calculate the orientation of the ellipse that fits the blob edges in radians </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="333">
+        <label>CBlobGetOrientation</label>
+        <link refid="class_c_blob_get_orientation"/>
+        <childnode refid="334" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="334">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="335">
+        <label>CBlobGetOrientation</label>
+        <link refid="class_c_blob_get_orientation"/>
+        <childnode refid="336" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="336">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="662" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="661" bodyend="679"/>
+    <listofallmembers>
+      <member refid="class_c_blob_get_orientation_1acc417f0effab6161ebbd3bc279b0bccd" prot="public" virt="virtual"><scope>CBlobGetOrientation</scope><name>GetNom</name></member>
+      <member refid="class_c_operador_blob_1a477edfe687cf9ef41469bcf6ea636a75" prot="public" virt="non-virtual"><scope>CBlobGetOrientation</scope><name>operator COperadorBlob *</name></member>
+      <member refid="class_c_blob_get_orientation_1a083233587fed855654e580a355265be3" prot="public" virt="virtual"><scope>CBlobGetOrientation</scope><name>operator()</name></member>
+      <member refid="class_c_operador_blob_1a25ccc652bfa55e7b0143c88f452729a2" prot="public" virt="virtual"><scope>CBlobGetOrientation</scope><name>~COperadorBlob</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

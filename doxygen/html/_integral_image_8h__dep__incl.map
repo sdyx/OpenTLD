@@ -1,0 +1,19 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_variance_filter_8h.html" title="src/libopentld/tld/VarianceFilter.h" alt="" coords="1377,83,1604,111"/>
+<area shape="rect" id="node39" href="$_variance_filter_8cpp.html" title="src/libopentld/tld/VarianceFilter.cpp" alt="" coords="1520,238,1763,266"/>
+<area shape="rect" id="node5" href="$_detector_cascade_8h.html" title="src/libopentld/tld/DetectorCascade.h" alt="" coords="948,161,1201,189"/>
+<area shape="rect" id="node7" href="$_clustering_8cpp.html" title="src/libopentld/tld/Clustering.cpp" alt="" coords="5,238,227,266"/>
+<area shape="rect" id="node9" href="$_detector_cascade_8cpp.html" title="src/libopentld/tld/DetectorCascade.cpp" alt="" coords="251,238,520,266"/>
+<area shape="rect" id="node11" href="$_ensemble_classifier_8cpp.html" title="src/libopentld/tld/EnsembleClassifier.cpp" alt="" coords="544,238,821,266"/>
+<area shape="rect" id="node13" href="$_n_n_classifier_8cpp.html" title="src/libopentld/tld/NNClassifier.cpp" alt="" coords="845,238,1080,266"/>
+<area shape="rect" id="node15" href="$_t_l_d_8h.html" title="src/libopentld/tld/TLD.h" alt="" coords="1104,238,1269,266"/>
+<area shape="rect" id="node37" href="$_t_l_d_util_8cpp.html" title="src/libopentld/tld/TLDUtil.cpp" alt="" coords="1293,238,1496,266"/>
+<area shape="rect" id="node17" href="$_t_l_d_8cpp.html" title="src/libopentld/tld/TLD.cpp" alt="" coords="995,315,1176,343"/>
+<area shape="rect" id="node19" href="$_main_8h.html" title="src/opentld/main/Main.h" alt="" coords="1200,315,1373,343"/>
+<area shape="rect" id="node21" href="$_config_8h.html" title="src/opentld/main/Config.h" alt="" coords="1131,393,1315,421"/>
+<area shape="rect" id="node23" href="$_config_8cpp.html" title="src/opentld/main/Config.cpp" alt="" coords="800,470,1000,498"/>
+<area shape="rect" id="node25" href="$_main_8cpp.html" title="src/opentld/main/Main.cpp" alt="" coords="1024,470,1213,498"/>
+<area shape="rect" id="node27" href="$_open_t_l_d_8cpp.html" title="src/opentld/OpenTLD.cpp" alt="" coords="1237,470,1419,498"/>
+<area shape="rect" id="node29" href="$_q_open_t_l_d_8cpp.html" title="src/opentld/QOpenTLD.cpp" alt="" coords="1443,470,1635,498"/>
+<area shape="rect" id="node32" href="$_gui_8cpp.html" title="src/opentld/main/Gui.cpp" alt="" coords="1440,393,1621,421"/>
+</map>

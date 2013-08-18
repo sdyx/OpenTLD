@@ -1,0 +1,775 @@
+\hypertarget{namespacetld}{
+\section{tld Namespace Reference}
+\label{namespacetld}\index{tld@{tld}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtld_1_1_clustering}{Clustering}
+\item 
+class \hyperlink{classtld_1_1_detection_result}{DetectionResult}
+\item 
+class \hyperlink{classtld_1_1_detector_cascade}{DetectorCascade}
+\item 
+class \hyperlink{classtld_1_1_ensemble_classifier}{EnsembleClassifier}
+\item 
+class \hyperlink{classtld_1_1_foreground_detector}{ForegroundDetector}
+\item 
+class \hyperlink{classtld_1_1_integral_image}{IntegralImage}
+\item 
+class \hyperlink{classtld_1_1_median_flow_tracker}{MedianFlowTracker}
+\item 
+class \hyperlink{classtld_1_1_n_n_classifier}{NNClassifier}
+\item 
+class \hyperlink{classtld_1_1_normalized_patch}{NormalizedPatch}
+\item 
+struct \hyperlink{structtld_1_1_tld_export_entry}{TldExportEntry}
+\item 
+class \hyperlink{classtld_1_1_t_l_d}{TLD}
+\item 
+class \hyperlink{classtld_1_1_variance_filter}{VarianceFilter}
+\item 
+class \hyperlink{classtld_1_1_config}{Config}
+\item 
+class \hyperlink{classtld_1_1_gui}{Gui}
+\item 
+class \hyperlink{classtld_1_1_settings}{Settings}
+\item 
+class \hyperlink{classtld_1_1_trajectory}{Trajectory}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespacetld_a87d078ec7492f2a2a4ef8856abaf6881}{tldNormalizeImg} (const Mat \&img, float $\ast$output)
+\item 
+CvRect \hyperlink{namespacetld_afd43d8a27c419d1f5da8718be917d4b5}{tldBoundaryToRect} (int $\ast$boundary)
+\item 
+void \hyperlink{namespacetld_a200bdf631ed45b6d0875996d2e4709f2}{tldExtractSubImage} (const Mat \&img, Mat \&subImage, CvRect rect)
+\item 
+void \hyperlink{namespacetld_a4af40ddc19d189513b3f34f6625eb04f}{tldExtractSubImage} (const Mat \&img, Mat \&subImage, int $\ast$boundary)
+\item 
+void \hyperlink{namespacetld_a1bf69e140ab91bdd7bfc794a93a1a096}{tldExtractNormalizedPatch} (const Mat \&img, int x, int y, int w, int h, float $\ast$output)
+\item 
+void \hyperlink{namespacetld_adf30e26ca7073712ac0eae4a1f1136ba}{tldExtractNormalizedPatchBB} (const Mat \&img, int $\ast$boundary, float $\ast$output)
+\item 
+void \hyperlink{namespacetld_a7bbab27cff309fae59b25b37268c22d4}{tldExtractNormalizedPatchRect} (const Mat \&img, Rect $\ast$rect, float $\ast$output)
+\item 
+float \hyperlink{namespacetld_a34eeb46b85efa569359847443ee96eba}{CalculateMean} (float $\ast$value, int n)
+\item 
+float \hyperlink{namespacetld_a53d4a014fd3df2b3e8a3026a1c1768a7}{tldCalcVariance} (float $\ast$value, int n)
+\item 
+float \hyperlink{namespacetld_a19776566a098d3b1fb15030e945a8c14}{tldBBOverlap} (int $\ast$bb1, int $\ast$bb2)
+\item 
+void \hyperlink{namespacetld_a6db9360f372b596337a075a09b715ee4}{tldOverlapOne} (int $\ast$windows, int numWindows, int index, vector$<$ int $>$ $\ast$indices, float $\ast$overlap)
+\item 
+float \hyperlink{namespacetld_afe4210f75b17cb13bb95c8d4c08a543a}{tldOverlapRectRect} (Rect r1, Rect r2)
+\item 
+Rect $\ast$ \hyperlink{namespacetld_a05ea18fc911b12873acd2211f83689f7}{tldCopyRect} (Rect $\ast$r)
+\item 
+void \hyperlink{namespacetld_ab71405a293095380c793589e8d59d4c7}{tldOverlapRect} (int $\ast$windows, int numWindows, Rect $\ast$boundary, float $\ast$overlap)
+\item 
+void \hyperlink{namespacetld_aa9470de30170cb8b3f877dcae45df1b1}{tldOverlap} (int $\ast$windows, int numWindows, int $\ast$boundary, float $\ast$overlap)
+\item 
+bool \hyperlink{namespacetld_a1899d52f23a94a9042fb95249b4714ba}{tldSortByOverlapDesc} (pair$<$ int, float $>$ bb1, pair$<$ int, float $>$ bb2)
+\item 
+int \hyperlink{namespacetld_a8b28e6d4868ad30e826a6248dd2ae7a0}{tldIsInside} (int $\ast$bb1, int $\ast$bb2)
+\item 
+{\footnotesize template$<$class T1 , class T2 $>$ }\\void \hyperlink{namespacetld_add9262bbbd3c30e3b3bf213e9db13eaf}{tldConvertBB} (T1 $\ast$src, T2 $\ast$dest)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacetld_a30509a7fb73b21f5006046344ffab792}{tldCopyBB} (T $\ast$src, T $\ast$dest)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacetld_a8ea4baf48c6ac8c9fc11d0aa36c612e3}{tldCopyBoundaryToArray} (T x, T y, T width, T height, T $\ast$array)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacetld_aa675c63accc23d4c92133be7f5d93f1f}{tldExtractDimsFromArray} (T $\ast$boundary, T $\ast$x, T $\ast$y, T $\ast$width, T $\ast$height)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacetld_acca496d96df1e566f1a08bebb7e75f1c}{tldRectToArray} (cv::Rect rect, T $\ast$boundary)
+\item 
+{\footnotesize template$<$class T $>$ }\\cv::Rect \hyperlink{namespacetld_a8f2edbadab9bc04731c73571340969a9}{tldArrayToRect} (T $\ast$boundary)
+\item 
+void \hyperlink{namespacetld_a52701d320c58fc890fc8e6321aaae61c}{tldNormalizeImg} (const cv::Mat \&img, float $\ast$result, int size)
+\item 
+void \hyperlink{namespacetld_ac965be65b1eae7ec666c3bfbe9da065e}{tldExtractNormalizedPatch} (const cv::Mat \&img, int x, int y, int w, int h, float $\ast$output)
+\item 
+void \hyperlink{namespacetld_a44b5f4d4d087d3369129bdc92e2a555a}{tldExtractNormalizedPatchBB} (const cv::Mat \&img, int $\ast$boundary, float $\ast$output)
+\item 
+void \hyperlink{namespacetld_aa6c803037b38609e1fceadbb2ad8a75c}{tldExtractNormalizedPatchRect} (const cv::Mat \&img, cv::Rect $\ast$rect, float $\ast$output)
+\item 
+void \hyperlink{namespacetld_a16fe2b016494fa66be611f723ed7bebc}{tldExtractSubImage} (const cv::Mat \&img, cv::Mat \&subImage, int $\ast$boundary)
+\item 
+void \hyperlink{namespacetld_a7699b7dc20502fc6d7c5c6c6cbd4be7b}{tldExtractSubImage} (const cv::Mat \&img, cv::Mat \&subImage, int x, int y, int w, int h)
+\item 
+float \hyperlink{namespacetld_ac0065f4088098aca6e1edd49b2b0f9d3}{tldCalcMean} (float $\ast$value, int n)
+\item 
+bool \hyperlink{namespacetld_acaf374df081816ecaf9079e200a8f5af}{tldSortByOverlapDesc} (std::pair$<$ int, float $>$ bb1, std::pair$<$ int, float $>$ bb2)
+\item 
+cv::Rect $\ast$ \hyperlink{namespacetld_a41fd3532bec99e023ff75b4706632182}{tldCopyRect} (cv::Rect $\ast$r)
+\item 
+float \hyperlink{namespacetld_afdab54607fed863cdc408f72fd0f774b}{tldOverlapRectRect} (cv::Rect r1, cv::Rect r2)
+\item 
+void \hyperlink{namespacetld_a018caa7bf4a554814fe61a679a219489}{tldOverlapOne} (int $\ast$windows, int numWindows, int index, std::vector$<$ int $>$ $\ast$indices, float $\ast$overlap)
+\item 
+void \hyperlink{namespacetld_ae87c7dbe6b4da1e1923c42bec18caaf6}{tldOverlapRect} (int $\ast$windows, int numWindows, cv::Rect $\ast$boundary, float $\ast$overlap)
+\item 
+int \hyperlink{namespacetld_a5b279570cd95fb0067a41b5a222e2642}{getopt} (int argc, char $\ast$$\ast$argv, char $\ast$opts)
+\item 
+int \hyperlink{namespacetld_a75cd208f8053ece69d5d7de9c2ed33fd}{getBBFromUser} (IplImage $\ast$img, CvRect \&rect, \hyperlink{classtld_1_1_gui}{Gui} $\ast$gui)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{namespacetld_a6e180d5067af278cc277ae9c6f7507c1}{opterr} = 1
+\item 
+int \hyperlink{namespacetld_ab8c5a378ef03678c537edc84a15abc22}{optind} = 1
+\item 
+int \hyperlink{namespacetld_a6d6bd80732b9f396bc03e5f2c5cf30f8}{optopt}
+\item 
+char $\ast$ \hyperlink{namespacetld_a1bbc7d3201a2ef41da5495e0e48cfd2e}{optarg}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Clemens Korner 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacetld_a34eeb46b85efa569359847443ee96eba}{
+\index{tld@{tld}!CalculateMean@{CalculateMean}}
+\index{CalculateMean@{CalculateMean}!tld@{tld}}
+\subsubsection[{CalculateMean}]{\setlength{\rightskip}{0pt plus 5cm}float tld::CalculateMean (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{ value, }
+\item[{int}]{ n}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_a34eeb46b85efa569359847443ee96eba}
+\hypertarget{namespacetld_a75cd208f8053ece69d5d7de9c2ed33fd}{
+\index{tld@{tld}!getBBFromUser@{getBBFromUser}}
+\index{getBBFromUser@{getBBFromUser}!tld@{tld}}
+\subsubsection[{getBBFromUser}]{\setlength{\rightskip}{0pt plus 5cm}int tld::getBBFromUser (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ img, }
+\item[{CvRect \&}]{ rect, }
+\item[{Gui $\ast$}]{ gui}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_a75cd208f8053ece69d5d7de9c2ed33fd}
+Get a bounding box from the user. 
+\begin{DoxyParams}{Parameters}
+\item[{\em img}]image to display \item[{\em rect}]CvRect containing the coordinates of the bounding box \item[{\em gui}]initialized gui \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+PROGRAM\_\-EXIT if 'q' or 'Q' pressed, SUCCESS if everything went right 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{namespacetld_a75cd208f8053ece69d5d7de9c2ed33fd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_a5b279570cd95fb0067a41b5a222e2642}{
+\index{tld@{tld}!getopt@{getopt}}
+\index{getopt@{getopt}!tld@{tld}}
+\subsubsection[{getopt}]{\setlength{\rightskip}{0pt plus 5cm}int tld::getopt (
+\begin{DoxyParamCaption}
+\item[{int}]{ argc, }
+\item[{char $\ast$$\ast$}]{ argv, }
+\item[{char $\ast$}]{ opts}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_a5b279570cd95fb0067a41b5a222e2642}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{namespacetld_a5b279570cd95fb0067a41b5a222e2642_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_a8f2edbadab9bc04731c73571340969a9}{
+\index{tld@{tld}!tldArrayToRect@{tldArrayToRect}}
+\index{tldArrayToRect@{tldArrayToRect}!tld@{tld}}
+\subsubsection[{tldArrayToRect}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ cv::Rect tld::tldArrayToRect (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{ boundary}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_a8f2edbadab9bc04731c73571340969a9}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{namespacetld_a8f2edbadab9bc04731c73571340969a9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_a19776566a098d3b1fb15030e945a8c14}{
+\index{tld@{tld}!tldBBOverlap@{tldBBOverlap}}
+\index{tldBBOverlap@{tldBBOverlap}!tld@{tld}}
+\subsubsection[{tldBBOverlap}]{\setlength{\rightskip}{0pt plus 5cm}float tld::tldBBOverlap (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{ bb1, }
+\item[{int $\ast$}]{ bb2}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_a19776566a098d3b1fb15030e945a8c14}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{namespacetld_a19776566a098d3b1fb15030e945a8c14_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_afd43d8a27c419d1f5da8718be917d4b5}{
+\index{tld@{tld}!tldBoundaryToRect@{tldBoundaryToRect}}
+\index{tldBoundaryToRect@{tldBoundaryToRect}!tld@{tld}}
+\subsubsection[{tldBoundaryToRect}]{\setlength{\rightskip}{0pt plus 5cm}CvRect tld::tldBoundaryToRect (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{ boundary}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_afd43d8a27c419d1f5da8718be917d4b5}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=368pt]{namespacetld_afd43d8a27c419d1f5da8718be917d4b5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_ac0065f4088098aca6e1edd49b2b0f9d3}{
+\index{tld@{tld}!tldCalcMean@{tldCalcMean}}
+\index{tldCalcMean@{tldCalcMean}!tld@{tld}}
+\subsubsection[{tldCalcMean}]{\setlength{\rightskip}{0pt plus 5cm}float tld::tldCalcMean (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{ value, }
+\item[{int}]{ n}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_ac0065f4088098aca6e1edd49b2b0f9d3}
+\hypertarget{namespacetld_a53d4a014fd3df2b3e8a3026a1c1768a7}{
+\index{tld@{tld}!tldCalcVariance@{tldCalcVariance}}
+\index{tldCalcVariance@{tldCalcVariance}!tld@{tld}}
+\subsubsection[{tldCalcVariance}]{\setlength{\rightskip}{0pt plus 5cm}float tld::tldCalcVariance (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{ value, }
+\item[{int}]{ n}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_a53d4a014fd3df2b3e8a3026a1c1768a7}
+\hypertarget{namespacetld_add9262bbbd3c30e3b3bf213e9db13eaf}{
+\index{tld@{tld}!tldConvertBB@{tldConvertBB}}
+\index{tldConvertBB@{tldConvertBB}!tld@{tld}}
+\subsubsection[{tldConvertBB}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T1 , class T2 $>$ void tld::tldConvertBB (
+\begin{DoxyParamCaption}
+\item[{T1 $\ast$}]{ src, }
+\item[{T2 $\ast$}]{ dest}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_add9262bbbd3c30e3b3bf213e9db13eaf}
+\hypertarget{namespacetld_a30509a7fb73b21f5006046344ffab792}{
+\index{tld@{tld}!tldCopyBB@{tldCopyBB}}
+\index{tldCopyBB@{tldCopyBB}!tld@{tld}}
+\subsubsection[{tldCopyBB}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void tld::tldCopyBB (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{ src, }
+\item[{T $\ast$}]{ dest}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_a30509a7fb73b21f5006046344ffab792}
+\hypertarget{namespacetld_a8ea4baf48c6ac8c9fc11d0aa36c612e3}{
+\index{tld@{tld}!tldCopyBoundaryToArray@{tldCopyBoundaryToArray}}
+\index{tldCopyBoundaryToArray@{tldCopyBoundaryToArray}!tld@{tld}}
+\subsubsection[{tldCopyBoundaryToArray}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void tld::tldCopyBoundaryToArray (
+\begin{DoxyParamCaption}
+\item[{T}]{ x, }
+\item[{T}]{ y, }
+\item[{T}]{ width, }
+\item[{T}]{ height, }
+\item[{T $\ast$}]{ array}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_a8ea4baf48c6ac8c9fc11d0aa36c612e3}
+\hypertarget{namespacetld_a41fd3532bec99e023ff75b4706632182}{
+\index{tld@{tld}!tldCopyRect@{tldCopyRect}}
+\index{tldCopyRect@{tldCopyRect}!tld@{tld}}
+\subsubsection[{tldCopyRect}]{\setlength{\rightskip}{0pt plus 5cm}cv::Rect$\ast$ tld::tldCopyRect (
+\begin{DoxyParamCaption}
+\item[{cv::Rect $\ast$}]{ r}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_a41fd3532bec99e023ff75b4706632182}
+\hypertarget{namespacetld_a05ea18fc911b12873acd2211f83689f7}{
+\index{tld@{tld}!tldCopyRect@{tldCopyRect}}
+\index{tldCopyRect@{tldCopyRect}!tld@{tld}}
+\subsubsection[{tldCopyRect}]{\setlength{\rightskip}{0pt plus 5cm}Rect$\ast$ tld::tldCopyRect (
+\begin{DoxyParamCaption}
+\item[{Rect $\ast$}]{ r}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_a05ea18fc911b12873acd2211f83689f7}
+\hypertarget{namespacetld_aa675c63accc23d4c92133be7f5d93f1f}{
+\index{tld@{tld}!tldExtractDimsFromArray@{tldExtractDimsFromArray}}
+\index{tldExtractDimsFromArray@{tldExtractDimsFromArray}!tld@{tld}}
+\subsubsection[{tldExtractDimsFromArray}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void tld::tldExtractDimsFromArray (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{ boundary, }
+\item[{T $\ast$}]{ x, }
+\item[{T $\ast$}]{ y, }
+\item[{T $\ast$}]{ width, }
+\item[{T $\ast$}]{ height}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_aa675c63accc23d4c92133be7f5d93f1f}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{namespacetld_aa675c63accc23d4c92133be7f5d93f1f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_a1bf69e140ab91bdd7bfc794a93a1a096}{
+\index{tld@{tld}!tldExtractNormalizedPatch@{tldExtractNormalizedPatch}}
+\index{tldExtractNormalizedPatch@{tldExtractNormalizedPatch}!tld@{tld}}
+\subsubsection[{tldExtractNormalizedPatch}]{\setlength{\rightskip}{0pt plus 5cm}void tld::tldExtractNormalizedPatch (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{ img, }
+\item[{int}]{ x, }
+\item[{int}]{ y, }
+\item[{int}]{ w, }
+\item[{int}]{ h, }
+\item[{float $\ast$}]{ output}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_a1bf69e140ab91bdd7bfc794a93a1a096}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{namespacetld_a1bf69e140ab91bdd7bfc794a93a1a096_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{namespacetld_a1bf69e140ab91bdd7bfc794a93a1a096_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_ac965be65b1eae7ec666c3bfbe9da065e}{
+\index{tld@{tld}!tldExtractNormalizedPatch@{tldExtractNormalizedPatch}}
+\index{tldExtractNormalizedPatch@{tldExtractNormalizedPatch}!tld@{tld}}
+\subsubsection[{tldExtractNormalizedPatch}]{\setlength{\rightskip}{0pt plus 5cm}void tld::tldExtractNormalizedPatch (
+\begin{DoxyParamCaption}
+\item[{const cv::Mat \&}]{ img, }
+\item[{int}]{ x, }
+\item[{int}]{ y, }
+\item[{int}]{ w, }
+\item[{int}]{ h, }
+\item[{float $\ast$}]{ output}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_ac965be65b1eae7ec666c3bfbe9da065e}
+\hypertarget{namespacetld_adf30e26ca7073712ac0eae4a1f1136ba}{
+\index{tld@{tld}!tldExtractNormalizedPatchBB@{tldExtractNormalizedPatchBB}}
+\index{tldExtractNormalizedPatchBB@{tldExtractNormalizedPatchBB}!tld@{tld}}
+\subsubsection[{tldExtractNormalizedPatchBB}]{\setlength{\rightskip}{0pt plus 5cm}void tld::tldExtractNormalizedPatchBB (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{ img, }
+\item[{int $\ast$}]{ boundary, }
+\item[{float $\ast$}]{ output}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_adf30e26ca7073712ac0eae4a1f1136ba}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{namespacetld_adf30e26ca7073712ac0eae4a1f1136ba_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_a44b5f4d4d087d3369129bdc92e2a555a}{
+\index{tld@{tld}!tldExtractNormalizedPatchBB@{tldExtractNormalizedPatchBB}}
+\index{tldExtractNormalizedPatchBB@{tldExtractNormalizedPatchBB}!tld@{tld}}
+\subsubsection[{tldExtractNormalizedPatchBB}]{\setlength{\rightskip}{0pt plus 5cm}void tld::tldExtractNormalizedPatchBB (
+\begin{DoxyParamCaption}
+\item[{const cv::Mat \&}]{ img, }
+\item[{int $\ast$}]{ boundary, }
+\item[{float $\ast$}]{ output}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_a44b5f4d4d087d3369129bdc92e2a555a}
+\hypertarget{namespacetld_aa6c803037b38609e1fceadbb2ad8a75c}{
+\index{tld@{tld}!tldExtractNormalizedPatchRect@{tldExtractNormalizedPatchRect}}
+\index{tldExtractNormalizedPatchRect@{tldExtractNormalizedPatchRect}!tld@{tld}}
+\subsubsection[{tldExtractNormalizedPatchRect}]{\setlength{\rightskip}{0pt plus 5cm}void tld::tldExtractNormalizedPatchRect (
+\begin{DoxyParamCaption}
+\item[{const cv::Mat \&}]{ img, }
+\item[{cv::Rect $\ast$}]{ rect, }
+\item[{float $\ast$}]{ output}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_aa6c803037b38609e1fceadbb2ad8a75c}
+\hypertarget{namespacetld_a7bbab27cff309fae59b25b37268c22d4}{
+\index{tld@{tld}!tldExtractNormalizedPatchRect@{tldExtractNormalizedPatchRect}}
+\index{tldExtractNormalizedPatchRect@{tldExtractNormalizedPatchRect}!tld@{tld}}
+\subsubsection[{tldExtractNormalizedPatchRect}]{\setlength{\rightskip}{0pt plus 5cm}void tld::tldExtractNormalizedPatchRect (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{ img, }
+\item[{Rect $\ast$}]{ rect, }
+\item[{float $\ast$}]{ output}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_a7bbab27cff309fae59b25b37268c22d4}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{namespacetld_a7bbab27cff309fae59b25b37268c22d4_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_a7699b7dc20502fc6d7c5c6c6cbd4be7b}{
+\index{tld@{tld}!tldExtractSubImage@{tldExtractSubImage}}
+\index{tldExtractSubImage@{tldExtractSubImage}!tld@{tld}}
+\subsubsection[{tldExtractSubImage}]{\setlength{\rightskip}{0pt plus 5cm}void tld::tldExtractSubImage (
+\begin{DoxyParamCaption}
+\item[{const cv::Mat \&}]{ img, }
+\item[{cv::Mat \&}]{ subImage, }
+\item[{int}]{ x, }
+\item[{int}]{ y, }
+\item[{int}]{ w, }
+\item[{int}]{ h}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_a7699b7dc20502fc6d7c5c6c6cbd4be7b}
+\hypertarget{namespacetld_a4af40ddc19d189513b3f34f6625eb04f}{
+\index{tld@{tld}!tldExtractSubImage@{tldExtractSubImage}}
+\index{tldExtractSubImage@{tldExtractSubImage}!tld@{tld}}
+\subsubsection[{tldExtractSubImage}]{\setlength{\rightskip}{0pt plus 5cm}void tld::tldExtractSubImage (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{ img, }
+\item[{Mat \&}]{ subImage, }
+\item[{int $\ast$}]{ boundary}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_a4af40ddc19d189513b3f34f6625eb04f}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=376pt]{namespacetld_a4af40ddc19d189513b3f34f6625eb04f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_a200bdf631ed45b6d0875996d2e4709f2}{
+\index{tld@{tld}!tldExtractSubImage@{tldExtractSubImage}}
+\index{tldExtractSubImage@{tldExtractSubImage}!tld@{tld}}
+\subsubsection[{tldExtractSubImage}]{\setlength{\rightskip}{0pt plus 5cm}void tld::tldExtractSubImage (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{ img, }
+\item[{Mat \&}]{ subImage, }
+\item[{CvRect}]{ rect}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_a200bdf631ed45b6d0875996d2e4709f2}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{namespacetld_a200bdf631ed45b6d0875996d2e4709f2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_a16fe2b016494fa66be611f723ed7bebc}{
+\index{tld@{tld}!tldExtractSubImage@{tldExtractSubImage}}
+\index{tldExtractSubImage@{tldExtractSubImage}!tld@{tld}}
+\subsubsection[{tldExtractSubImage}]{\setlength{\rightskip}{0pt plus 5cm}void tld::tldExtractSubImage (
+\begin{DoxyParamCaption}
+\item[{const cv::Mat \&}]{ img, }
+\item[{cv::Mat \&}]{ subImage, }
+\item[{int $\ast$}]{ boundary}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_a16fe2b016494fa66be611f723ed7bebc}
+\hypertarget{namespacetld_a8b28e6d4868ad30e826a6248dd2ae7a0}{
+\index{tld@{tld}!tldIsInside@{tldIsInside}}
+\index{tldIsInside@{tldIsInside}!tld@{tld}}
+\subsubsection[{tldIsInside}]{\setlength{\rightskip}{0pt plus 5cm}int tld::tldIsInside (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{ bb1, }
+\item[{int $\ast$}]{ bb2}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_a8b28e6d4868ad30e826a6248dd2ae7a0}
+\hypertarget{namespacetld_a87d078ec7492f2a2a4ef8856abaf6881}{
+\index{tld@{tld}!tldNormalizeImg@{tldNormalizeImg}}
+\index{tldNormalizeImg@{tldNormalizeImg}!tld@{tld}}
+\subsubsection[{tldNormalizeImg}]{\setlength{\rightskip}{0pt plus 5cm}void tld::tldNormalizeImg (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{ img, }
+\item[{float $\ast$}]{ output}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_a87d078ec7492f2a2a4ef8856abaf6881}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{namespacetld_a87d078ec7492f2a2a4ef8856abaf6881_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_a52701d320c58fc890fc8e6321aaae61c}{
+\index{tld@{tld}!tldNormalizeImg@{tldNormalizeImg}}
+\index{tldNormalizeImg@{tldNormalizeImg}!tld@{tld}}
+\subsubsection[{tldNormalizeImg}]{\setlength{\rightskip}{0pt plus 5cm}void tld::tldNormalizeImg (
+\begin{DoxyParamCaption}
+\item[{const cv::Mat \&}]{ img, }
+\item[{float $\ast$}]{ result, }
+\item[{int}]{ size}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_a52701d320c58fc890fc8e6321aaae61c}
+\hypertarget{namespacetld_aa9470de30170cb8b3f877dcae45df1b1}{
+\index{tld@{tld}!tldOverlap@{tldOverlap}}
+\index{tldOverlap@{tldOverlap}!tld@{tld}}
+\subsubsection[{tldOverlap}]{\setlength{\rightskip}{0pt plus 5cm}void tld::tldOverlap (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{ windows, }
+\item[{int}]{ numWindows, }
+\item[{int $\ast$}]{ boundary, }
+\item[{float $\ast$}]{ overlap}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_aa9470de30170cb8b3f877dcae45df1b1}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{namespacetld_aa9470de30170cb8b3f877dcae45df1b1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_a6db9360f372b596337a075a09b715ee4}{
+\index{tld@{tld}!tldOverlapOne@{tldOverlapOne}}
+\index{tldOverlapOne@{tldOverlapOne}!tld@{tld}}
+\subsubsection[{tldOverlapOne}]{\setlength{\rightskip}{0pt plus 5cm}void tld::tldOverlapOne (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{ windows, }
+\item[{int}]{ numWindows, }
+\item[{int}]{ index, }
+\item[{vector$<$ int $>$ $\ast$}]{ indices, }
+\item[{float $\ast$}]{ overlap}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_a6db9360f372b596337a075a09b715ee4}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{namespacetld_a6db9360f372b596337a075a09b715ee4_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_a018caa7bf4a554814fe61a679a219489}{
+\index{tld@{tld}!tldOverlapOne@{tldOverlapOne}}
+\index{tldOverlapOne@{tldOverlapOne}!tld@{tld}}
+\subsubsection[{tldOverlapOne}]{\setlength{\rightskip}{0pt plus 5cm}void tld::tldOverlapOne (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{ windows, }
+\item[{int}]{ numWindows, }
+\item[{int}]{ index, }
+\item[{std::vector$<$ int $>$ $\ast$}]{ indices, }
+\item[{float $\ast$}]{ overlap}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_a018caa7bf4a554814fe61a679a219489}
+\hypertarget{namespacetld_ab71405a293095380c793589e8d59d4c7}{
+\index{tld@{tld}!tldOverlapRect@{tldOverlapRect}}
+\index{tldOverlapRect@{tldOverlapRect}!tld@{tld}}
+\subsubsection[{tldOverlapRect}]{\setlength{\rightskip}{0pt plus 5cm}void tld::tldOverlapRect (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{ windows, }
+\item[{int}]{ numWindows, }
+\item[{Rect $\ast$}]{ boundary, }
+\item[{float $\ast$}]{ overlap}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_ab71405a293095380c793589e8d59d4c7}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{namespacetld_ab71405a293095380c793589e8d59d4c7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_ae87c7dbe6b4da1e1923c42bec18caaf6}{
+\index{tld@{tld}!tldOverlapRect@{tldOverlapRect}}
+\index{tldOverlapRect@{tldOverlapRect}!tld@{tld}}
+\subsubsection[{tldOverlapRect}]{\setlength{\rightskip}{0pt plus 5cm}void tld::tldOverlapRect (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{ windows, }
+\item[{int}]{ numWindows, }
+\item[{cv::Rect $\ast$}]{ boundary, }
+\item[{float $\ast$}]{ overlap}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_ae87c7dbe6b4da1e1923c42bec18caaf6}
+\hypertarget{namespacetld_afdab54607fed863cdc408f72fd0f774b}{
+\index{tld@{tld}!tldOverlapRectRect@{tldOverlapRectRect}}
+\index{tldOverlapRectRect@{tldOverlapRectRect}!tld@{tld}}
+\subsubsection[{tldOverlapRectRect}]{\setlength{\rightskip}{0pt plus 5cm}float tld::tldOverlapRectRect (
+\begin{DoxyParamCaption}
+\item[{cv::Rect}]{ r1, }
+\item[{cv::Rect}]{ r2}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_afdab54607fed863cdc408f72fd0f774b}
+\hypertarget{namespacetld_afe4210f75b17cb13bb95c8d4c08a543a}{
+\index{tld@{tld}!tldOverlapRectRect@{tldOverlapRectRect}}
+\index{tldOverlapRectRect@{tldOverlapRectRect}!tld@{tld}}
+\subsubsection[{tldOverlapRectRect}]{\setlength{\rightskip}{0pt plus 5cm}float tld::tldOverlapRectRect (
+\begin{DoxyParamCaption}
+\item[{Rect}]{ r1, }
+\item[{Rect}]{ r2}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_afe4210f75b17cb13bb95c8d4c08a543a}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{namespacetld_afe4210f75b17cb13bb95c8d4c08a543a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_acca496d96df1e566f1a08bebb7e75f1c}{
+\index{tld@{tld}!tldRectToArray@{tldRectToArray}}
+\index{tldRectToArray@{tldRectToArray}!tld@{tld}}
+\subsubsection[{tldRectToArray}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void tld::tldRectToArray (
+\begin{DoxyParamCaption}
+\item[{cv::Rect}]{ rect, }
+\item[{T $\ast$}]{ boundary}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_acca496d96df1e566f1a08bebb7e75f1c}
+\hypertarget{namespacetld_a1899d52f23a94a9042fb95249b4714ba}{
+\index{tld@{tld}!tldSortByOverlapDesc@{tldSortByOverlapDesc}}
+\index{tldSortByOverlapDesc@{tldSortByOverlapDesc}!tld@{tld}}
+\subsubsection[{tldSortByOverlapDesc}]{\setlength{\rightskip}{0pt plus 5cm}bool tld::tldSortByOverlapDesc (
+\begin{DoxyParamCaption}
+\item[{pair$<$ int, float $>$}]{ bb1, }
+\item[{pair$<$ int, float $>$}]{ bb2}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_a1899d52f23a94a9042fb95249b4714ba}
+\hypertarget{namespacetld_acaf374df081816ecaf9079e200a8f5af}{
+\index{tld@{tld}!tldSortByOverlapDesc@{tldSortByOverlapDesc}}
+\index{tldSortByOverlapDesc@{tldSortByOverlapDesc}!tld@{tld}}
+\subsubsection[{tldSortByOverlapDesc}]{\setlength{\rightskip}{0pt plus 5cm}bool tld::tldSortByOverlapDesc (
+\begin{DoxyParamCaption}
+\item[{std::pair$<$ int, float $>$}]{ bb1, }
+\item[{std::pair$<$ int, float $>$}]{ bb2}
+\end{DoxyParamCaption}
+)}}
+\label{namespacetld_acaf374df081816ecaf9079e200a8f5af}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacetld_a1bbc7d3201a2ef41da5495e0e48cfd2e}{
+\index{tld@{tld}!optarg@{optarg}}
+\index{optarg@{optarg}!tld@{tld}}
+\subsubsection[{optarg}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ {\bf tld::optarg}}}
+\label{namespacetld_a1bbc7d3201a2ef41da5495e0e48cfd2e}
+\hypertarget{namespacetld_a6e180d5067af278cc277ae9c6f7507c1}{
+\index{tld@{tld}!opterr@{opterr}}
+\index{opterr@{opterr}!tld@{tld}}
+\subsubsection[{opterr}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::opterr} = 1}}
+\label{namespacetld_a6e180d5067af278cc277ae9c6f7507c1}
+\hypertarget{namespacetld_ab8c5a378ef03678c537edc84a15abc22}{
+\index{tld@{tld}!optind@{optind}}
+\index{optind@{optind}!tld@{tld}}
+\subsubsection[{optind}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::optind} = 1}}
+\label{namespacetld_ab8c5a378ef03678c537edc84a15abc22}
+\hypertarget{namespacetld_a6d6bd80732b9f396bc03e5f2c5cf30f8}{
+\index{tld@{tld}!optopt@{optopt}}
+\index{optopt@{optopt}!tld@{tld}}
+\subsubsection[{optopt}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::optopt}}}
+\label{namespacetld_a6d6bd80732b9f396bc03e5f2c5cf30f8}

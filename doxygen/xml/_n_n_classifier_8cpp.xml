@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_n_n_classifier_8cpp" kind="file">
+    <compoundname>NNClassifier.cpp</compoundname>
+    <includes refid="_n_n_classifier_8h" local="yes">NNClassifier.h</includes>
+    <includes refid="_detector_cascade_8h" local="yes">DetectorCascade.h</includes>
+    <includes refid="_t_l_d_util_8h" local="yes">TLDUtil.h</includes>
+    <incdepgraph>
+      <node id="1632">
+        <label>DetectorCascade.h</label>
+        <link refid="_detector_cascade_8h"/>
+        <childnode refid="1631" relation="include">
+        </childnode>
+        <childnode refid="1633" relation="include">
+        </childnode>
+        <childnode refid="1634" relation="include">
+        </childnode>
+        <childnode refid="1636" relation="include">
+        </childnode>
+        <childnode refid="1637" relation="include">
+        </childnode>
+        <childnode refid="1627" relation="include">
+        </childnode>
+      </node>
+      <node id="1636">
+        <label>EnsembleClassifier.h</label>
+        <link refid="_ensemble_classifier_8h"/>
+        <childnode refid="1629" relation="include">
+        </childnode>
+      </node>
+      <node id="1627">
+        <label>NNClassifier.h</label>
+        <link refid="_n_n_classifier_8h"/>
+        <childnode refid="1628" relation="include">
+        </childnode>
+        <childnode refid="1629" relation="include">
+        </childnode>
+        <childnode refid="1630" relation="include">
+        </childnode>
+        <childnode refid="1631" relation="include">
+        </childnode>
+      </node>
+      <node id="1634">
+        <label>VarianceFilter.h</label>
+        <link refid="_variance_filter_8h"/>
+        <childnode refid="1629" relation="include">
+        </childnode>
+        <childnode refid="1635" relation="include">
+        </childnode>
+        <childnode refid="1631" relation="include">
+        </childnode>
+      </node>
+      <node id="1630">
+        <label>NormalizedPatch.h</label>
+        <link refid="_normalized_patch_8h"/>
+      </node>
+      <node id="1638">
+        <label>TLDUtil.h</label>
+        <link refid="_t_l_d_util_8h"/>
+        <childnode refid="1639" relation="include">
+        </childnode>
+        <childnode refid="1629" relation="include">
+        </childnode>
+      </node>
+      <node id="1635">
+        <label>IntegralImage.h</label>
+        <link refid="_integral_image_8h"/>
+        <childnode refid="1629" relation="include">
+        </childnode>
+      </node>
+      <node id="1637">
+        <label>Clustering.h</label>
+        <link refid="_clustering_8h"/>
+        <childnode refid="1628" relation="include">
+        </childnode>
+        <childnode refid="1629" relation="include">
+        </childnode>
+        <childnode refid="1631" relation="include">
+        </childnode>
+      </node>
+      <node id="1633">
+        <label>ForegroundDetector.h</label>
+        <link refid="_foreground_detector_8h"/>
+        <childnode refid="1628" relation="include">
+        </childnode>
+        <childnode refid="1629" relation="include">
+        </childnode>
+        <childnode refid="1631" relation="include">
+        </childnode>
+      </node>
+      <node id="1626">
+        <label>src/libopentld/tld/NNClassifier.cpp</label>
+        <link refid="NNClassifier.cpp"/>
+        <childnode refid="1627" relation="include">
+        </childnode>
+        <childnode refid="1632" relation="include">
+        </childnode>
+        <childnode refid="1638" relation="include">
+        </childnode>
+      </node>
+      <node id="1628">
+        <label>vector</label>
+      </node>
+      <node id="1639">
+        <label>utility</label>
+      </node>
+      <node id="1629">
+        <label>cv.h</label>
+      </node>
+      <node id="1631">
+        <label>DetectionResult.h</label>
+        <link refid="_detection_result_8h"/>
+        <childnode refid="1628" relation="include">
+        </childnode>
+        <childnode refid="1629" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacetld">tld</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NNClassifier.cpp</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Nov<sp/>16,<sp/>2011</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>Georg<sp/>Nebehay</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_n_n_classifier_8h" kindref="compound">NNClassifier.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_detector_cascade_8h" kindref="compound">DetectorCascade.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_t_l_d_util_8h" kindref="compound">TLDUtil.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">cv;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">tld</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classtld_1_1_n_n_classifier_1a5a71057c2aacdd4935247976e6f49b46" refkind="member"><highlight class="normal">NNClassifier::NNClassifier()</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_n_n_classifier_1a5cddbd7f4a38e95a7f00cb1013962b9e" kindref="member">thetaFP</ref><sp/>=<sp/>.5;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_n_n_classifier_1aada6ca01c7b5224439e375444947cd16" kindref="member">thetaTP</ref><sp/>=<sp/>.65;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_n_n_classifier_1ac17849309a8aed1fdc3e3247f22b5fa2" kindref="member">truePositives</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>vector&lt;NormalizedPatch&gt;();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_n_n_classifier_1abc088471e8f9e259cc07cbb9a704fb28" kindref="member">falsePositives</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>vector&lt;NormalizedPatch&gt;();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classtld_1_1_n_n_classifier_1a475f200dea8dc71cf0f273c57d837242" refkind="member"><highlight class="normal"><ref refid="classtld_1_1_n_n_classifier_1a475f200dea8dc71cf0f273c57d837242" kindref="member">NNClassifier::~NNClassifier</ref>()</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_n_n_classifier_1aabb548e7b9535ad8040fe65d344b3142" kindref="member">release</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_n_n_classifier_1ac17849309a8aed1fdc3e3247f22b5fa2" kindref="member">truePositives</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_n_n_classifier_1abc088471e8f9e259cc07cbb9a704fb28" kindref="member">falsePositives</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classtld_1_1_n_n_classifier_1aabb548e7b9535ad8040fe65d344b3142" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_n_n_classifier_1aabb548e7b9535ad8040fe65d344b3142" kindref="member">NNClassifier::release</ref>()</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_n_n_classifier_1abc088471e8f9e259cc07cbb9a704fb28" kindref="member">falsePositives</ref>-&gt;clear();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_n_n_classifier_1ac17849309a8aed1fdc3e3247f22b5fa2" kindref="member">truePositives</ref>-&gt;clear();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>NNClassifier::ncc(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*f1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*f2)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>corr<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>norm1<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>norm2<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size<sp/>=<sp/><ref refid="_normalized_patch_8h_1af7b481162876c5821cbfe7cb11f3a7d0" kindref="member">TLD_PATCH_SIZE</ref><sp/>*<sp/>TLD_PATCH_SIZE;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>size;<sp/>i++)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>corr<sp/>+=<sp/>f1[i]<sp/>*<sp/>f2[i];</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>norm1<sp/>+=<sp/>f1[i]<sp/>*<sp/>f1[i];</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>norm2<sp/>+=<sp/>f2[i]<sp/>*<sp/>f2[i];</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>normalization<sp/>to<sp/>&lt;0,1&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(corr<sp/>/<sp/>sqrt(norm1<sp/>*<sp/>norm2)<sp/>+<sp/>1)<sp/>/<sp/>2.0;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classtld_1_1_n_n_classifier_1aa59628d72a448c3ee686d9fd78d3e62a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_n_n_classifier_1aa59628d72a448c3ee686d9fd78d3e62a" kindref="member">NNClassifier::classifyPatch</ref>(<ref refid="classtld_1_1_normalized_patch" kindref="compound">NormalizedPatch</ref><sp/>*patch)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classtld_1_1_n_n_classifier_1ac17849309a8aed1fdc3e3247f22b5fa2" kindref="member">truePositives</ref>-&gt;empty())</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classtld_1_1_n_n_classifier_1abc088471e8f9e259cc07cbb9a704fb28" kindref="member">falsePositives</ref>-&gt;empty())</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ccorr_max_p<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Compare<sp/>patch<sp/>to<sp/>positive<sp/>patches</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classtld_1_1_n_n_classifier_1ac17849309a8aed1fdc3e3247f22b5fa2" kindref="member">truePositives</ref>-&gt;size();<sp/>i++)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ccorr<sp/>=<sp/>ncc(<ref refid="classtld_1_1_n_n_classifier_1ac17849309a8aed1fdc3e3247f22b5fa2" kindref="member">truePositives</ref>-&gt;at(i).values,<sp/>patch-&gt;<ref refid="classtld_1_1_normalized_patch_1ae76afafa7dd50901d7c468b92d1c1df5" kindref="member">values</ref>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ccorr<sp/>&gt;<sp/>ccorr_max_p)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ccorr_max_p<sp/>=<sp/>ccorr;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ccorr_max_n<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Compare<sp/>patch<sp/>to<sp/>positive<sp/>patches</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classtld_1_1_n_n_classifier_1abc088471e8f9e259cc07cbb9a704fb28" kindref="member">falsePositives</ref>-&gt;size();<sp/>i++)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ccorr<sp/>=<sp/>ncc(<ref refid="classtld_1_1_n_n_classifier_1abc088471e8f9e259cc07cbb9a704fb28" kindref="member">falsePositives</ref>-&gt;at(i).values,<sp/>patch-&gt;<ref refid="classtld_1_1_normalized_patch_1ae76afafa7dd50901d7c468b92d1c1df5" kindref="member">values</ref>);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ccorr<sp/>&gt;<sp/>ccorr_max_n)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ccorr_max_n<sp/>=<sp/>ccorr;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dN<sp/>=<sp/>1<sp/>-<sp/>ccorr_max_n;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dP<sp/>=<sp/>1<sp/>-<sp/>ccorr_max_p;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>distance<sp/>=<sp/>dN<sp/>/<sp/>(dN<sp/>+<sp/>dP);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>distance;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_n_n_classifier_1a4b926da10ab0ce0d05fdb19b7e90bf8b" kindref="member">NNClassifier::classifyBB</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mat<sp/>&amp;img,<sp/>Rect<sp/>*bb)</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_normalized_patch" kindref="compound">NormalizedPatch</ref><sp/>patch;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetld_1a7bbab27cff309fae59b25b37268c22d4" kindref="member">tldExtractNormalizedPatchRect</ref>(img,<sp/>bb,<sp/>patch.<ref refid="classtld_1_1_normalized_patch_1ae76afafa7dd50901d7c468b92d1c1df5" kindref="member">values</ref>);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_n_n_classifier_1aa59628d72a448c3ee686d9fd78d3e62a" kindref="member">classifyPatch</ref>(&amp;patch);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_n_n_classifier_1a88fe1649014e887a12a5a57a552819f2" kindref="member">NNClassifier::classifyWindow</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mat<sp/>&amp;img,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>windowIdx)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>NormalizedPatch<sp/>patch;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*bbox<sp/>=<sp/>&amp;<ref refid="classtld_1_1_n_n_classifier_1a6a4aab5ed014405c9dbd9162af1b1d7c" kindref="member">windows</ref>[TLD_WINDOW_SIZE<sp/>*<sp/>windowIdx];</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetld_1adf30e26ca7073712ac0eae4a1f1136ba" kindref="member">tldExtractNormalizedPatchBB</ref>(img,<sp/>bbox,<sp/>patch.values);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_n_n_classifier_1aa59628d72a448c3ee686d9fd78d3e62a" kindref="member">classifyPatch</ref>(&amp;patch);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_n_n_classifier_1a173e8f32e073d88c93203ff6ec3352ab" kindref="member">NNClassifier::filter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mat<sp/>&amp;img,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>windowIdx)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classtld_1_1_n_n_classifier_1a7a86c7c4d1bf5664540f476f455dad21" kindref="member">enabled</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>conf<sp/>=<sp/><ref refid="classtld_1_1_n_n_classifier_1a88fe1649014e887a12a5a57a552819f2" kindref="member">classifyWindow</ref>(img,<sp/>windowIdx);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(conf<sp/>&lt;<sp/><ref refid="classtld_1_1_n_n_classifier_1aada6ca01c7b5224439e375444947cd16" kindref="member">thetaTP</ref>)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_n_n_classifier_1aa6a34e43628807018da166897063ea02" kindref="member">NNClassifier::learn</ref>(vector&lt;NormalizedPatch&gt;<sp/>patches)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO:<sp/>Randomization<sp/>might<sp/>be<sp/>a<sp/>good<sp/>idea<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>patches.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NormalizedPatch<sp/>patch<sp/>=<sp/>patches[i];</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>conf<sp/>=<sp/><ref refid="classtld_1_1_n_n_classifier_1aa59628d72a448c3ee686d9fd78d3e62a" kindref="member">classifyPatch</ref>(&amp;patch);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(patch.positive<sp/>&amp;&amp;<sp/>conf<sp/>&lt;=<sp/><ref refid="classtld_1_1_n_n_classifier_1aada6ca01c7b5224439e375444947cd16" kindref="member">thetaTP</ref>)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_n_n_classifier_1ac17849309a8aed1fdc3e3247f22b5fa2" kindref="member">truePositives</ref>-&gt;push_back(patch);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!patch.positive<sp/>&amp;&amp;<sp/>conf<sp/>&gt;=<sp/><ref refid="classtld_1_1_n_n_classifier_1a5cddbd7f4a38e95a7f00cb1013962b9e" kindref="member">thetaFP</ref>)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_n_n_classifier_1abc088471e8f9e259cc07cbb9a704fb28" kindref="member">falsePositives</ref>-&gt;push_back(patch);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>tld<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.cpp"/>
+  </compounddef>
+</doxygen>

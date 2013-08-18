@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_blob_properties_8cpp" kind="file">
+    <compoundname>BlobProperties.cpp</compoundname>
+    <includes refid="_blob_properties_8h" local="yes">BlobProperties.h</includes>
+    <incdepgraph>
+      <node id="1102">
+        <label>list</label>
+      </node>
+      <node id="1099">
+        <label>cxcore.h</label>
+      </node>
+      <node id="1097">
+        <label>src/3rdparty/cvblobs/BlobProperties.cpp</label>
+        <link refid="BlobProperties.cpp"/>
+        <childnode refid="1098" relation="include">
+        </childnode>
+      </node>
+      <node id="1100">
+        <label>BlobLibraryConfiguration.h</label>
+        <link refid="_blob_library_configuration_8h"/>
+      </node>
+      <node id="1101">
+        <label>BlobContour.h</label>
+        <link refid="_blob_contour_8h"/>
+        <childnode refid="1102" relation="include">
+        </childnode>
+        <childnode refid="1103" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1103">
+        <label>cv.h</label>
+      </node>
+      <node id="1098">
+        <label>BlobProperties.h</label>
+        <link refid="_blob_properties_8h"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+        <childnode refid="1100" relation="include">
+        </childnode>
+        <childnode refid="1101" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_blob_properties_8cpp_1a514396dd60fa0621c83072091fb2a0cd" prot="public" static="no">
+        <name>SQRT2</name>
+        <initializer>1.414213562</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCIÓ: GetPerimeter</para></listitem><listitem><para>FUNCIONALITAT: Get perimeter from chain code. Diagonals sum sqrt(2) and horizontal and vertical codes 1</para></listitem><listitem><para>PARÀMETRES:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULTAT:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICCIONS:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>AUTOR: rborras</para></listitem><listitem><para>DATA DE CREACIÓ: 2008/04/30</para></listitem><listitem><para>MODIFICACIÓ: Data. Autor. Descripció.</para></listitem><listitem><para>NOTA: Algorithm derived from &quot;Methods to estimate area and perimeters of blob-like objects: A comparison&quot;, L.Yang </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.cpp" line="18" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.cpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_blob_properties_8h" kindref="compound">BlobProperties.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="_blob_properties_8cpp_1a514396dd60fa0621c83072091fb2a0cd" refkind="member"><highlight class="preprocessor">#define<sp/>SQRT2<sp/>1.414213562</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="34" refid="class_c_blob_properties_1abfae07a81bcc204d18c790fc365ad53c" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_properties_1abfae07a81bcc204d18c790fc365ad53c" kindref="member" tooltip="Get blob area.">CBlobProperties::GetArea</ref>()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>area;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t_contourList::iterator<sp/>itContour;<sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>area<sp/>=<sp/><ref refid="class_c_blob_properties_1af48f14bb97d9998f4eb94e4044dc9701" kindref="member" tooltip="External contour of the blob (crack codes).">m_externalContour</ref>.<ref refid="class_c_blob_contour_1a2c68f462fc31a0e7add9a85b007fa42a" kindref="member" tooltip="Computes area from contour.">GetArea</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>itContour<sp/>=<sp/><ref refid="class_c_blob_properties_1a49ba625a9099d39c1472d838ab21130e" kindref="member" tooltip="Internal contours (crack codes).">m_internalContours</ref>.begin();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(itContour<sp/>!=<sp/><ref refid="class_c_blob_properties_1a49ba625a9099d39c1472d838ab21130e" kindref="member" tooltip="Internal contours (crack codes).">m_internalContours</ref>.end()<sp/>)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>area<sp/>+=<sp/>(*itContour).GetArea();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>itContour++;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>area;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="class_c_blob_properties_1a46a968d4567e6aefd9451f4468595f0a" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_properties_1a46a968d4567e6aefd9451f4468595f0a" kindref="member" tooltip="Get blob perimeter.">CBlobProperties::GetPerimeter</ref>()</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>perimeter;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t_contourList::iterator<sp/>itContour;<sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>perimeter<sp/>=<sp/><ref refid="class_c_blob_properties_1af48f14bb97d9998f4eb94e4044dc9701" kindref="member" tooltip="External contour of the blob (crack codes).">m_externalContour</ref>.<ref refid="class_c_blob_contour_1a893d57d625bb8f26f4a31ff0b66b8406" kindref="member" tooltip="Computes perimeter from contour.">GetPerimeter</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>itContour<sp/>=<sp/><ref refid="class_c_blob_properties_1a49ba625a9099d39c1472d838ab21130e" kindref="member" tooltip="Internal contours (crack codes).">m_internalContours</ref>.begin();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(itContour<sp/>!=<sp/><ref refid="class_c_blob_properties_1a49ba625a9099d39c1472d838ab21130e" kindref="member" tooltip="Internal contours (crack codes).">m_internalContours</ref>.end()<sp/>)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>perimeter<sp/>+=<sp/>(*itContour).GetPerimeter();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>itContour++;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>perimeter;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_component_labeling_8h.html#a05b80d9c559310ac95461bd523d888f6" title="ComponentLabeling" alt="" coords="291,5,440,33"/>
+<area shape="rect" id="node5" href="$class_c_blob.html#ac97e73d3040530de09a187d02632deb1" title="CBlob::IsEmpty" alt="" coords="307,55,424,83"/>
+<area shape="rect" id="node7" href="$class_c_blob.html#a006463cc42ef0e4b8986fa5020cb6f90" title="Join a blob to current one (add&#39;s contour." alt="" coords="307,106,424,134"/>
+<area shape="rect" id="node9" href="$class_c_blob_get_x_y_inside.html#a5f816b668c59d6f782bea83076ccf96e" title="CBlobGetXYInside::operator()" alt="" coords="263,157,468,185"/>
+<area shape="rect" id="node11" href="$class_c_blob_get_max_yat_min_x.html#a107cc7896ca6af559e8410b3c452e80d" title="CBlobGetMaxYatMinX::operator()" alt="" coords="251,207,480,235"/>
+<area shape="rect" id="node13" href="$class_c_blob_get_max_xat_max_y.html#a45c075e8968d1078c6b49ea2acbb6d58" title="CBlobGetMaxXatMaxY::operator()" alt="" coords="249,258,481,286"/>
+<area shape="rect" id="node15" href="$class_c_blob_get_min_yat_max_x.html#a41bc24b0214b58f979396208296d3dd6" title="CBlobGetMinYatMaxX::operator()" alt="" coords="251,309,480,337"/>
+<area shape="rect" id="node17" href="$class_c_blob_get_min_xat_min_y.html#ae2f3ba428e780a826de213726d2a8f35" title="CBlobGetMinXatMinY::operator()" alt="" coords="253,359,477,387"/>
+</map>

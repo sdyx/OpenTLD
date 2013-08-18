@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="dir_83c0e8c49fcc3a7bf51a0b28e4f121e7" kind="dir">
+    <compoundname>src/libopentld/mftracker/</compoundname>
+    <innerfile refid="_b_b_8cpp">BB.cpp</innerfile>
+    <innerfile refid="_b_b_8h">BB.h</innerfile>
+    <innerfile refid="_b_b_predict_8cpp">BBPredict.cpp</innerfile>
+    <innerfile refid="_b_b_predict_8h">BBPredict.h</innerfile>
+    <innerfile refid="_f_b_track_8cpp">FBTrack.cpp</innerfile>
+    <innerfile refid="_f_b_track_8h">FBTrack.h</innerfile>
+    <innerfile refid="_lk_8cpp">Lk.cpp</innerfile>
+    <innerfile refid="_lk_8h">Lk.h</innerfile>
+    <innerfile refid="_median_8cpp">Median.cpp</innerfile>
+    <innerfile refid="_median_8h">Median.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/"/>
+  </compounddef>
+</doxygen>

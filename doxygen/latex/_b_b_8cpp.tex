@@ -1,0 +1,97 @@
+\hypertarget{_b_b_8cpp}{
+\section{src/libopentld/mftracker/BB.cpp File Reference}
+\label{_b_b_8cpp}\index{src/libopentld/mftracker/BB.cpp@{src/libopentld/mftracker/BB.cpp}}
+}
+{\ttfamily \#include \char`\"{}BB.h\char`\"{}}\par
+Include dependency graph for BB.cpp:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{_b_b_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_b_b_8cpp_acf54357bbf511d049e50a99f0ee28121}{calculateBBCenter} (float bb\mbox{[}4\mbox{]}, float center\mbox{[}2\mbox{]})
+\item 
+int \hyperlink{_b_b_8cpp_a2ef4a63d6f593c4477ece315fe7d1ae4}{getFilledBBPoints} (float $\ast$bb, int numM, int numN, int margin, float $\ast$pts)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_b_b_8cpp_acf54357bbf511d049e50a99f0ee28121}{
+\index{BB.cpp@{BB.cpp}!calculateBBCenter@{calculateBBCenter}}
+\index{calculateBBCenter@{calculateBBCenter}!BB.cpp@{BB.cpp}}
+\subsubsection[{calculateBBCenter}]{\setlength{\rightskip}{0pt plus 5cm}int calculateBBCenter (
+\begin{DoxyParamCaption}
+\item[{float}]{ bb\mbox{[}4\mbox{]}, }
+\item[{float}]{ center\mbox{[}2\mbox{]}}
+\end{DoxyParamCaption}
+)}}
+\label{_b_b_8cpp_acf54357bbf511d049e50a99f0ee28121}
+Calculates center of a Rectangle/Boundingbox. 
+\begin{DoxyParams}{Parameters}
+\item[{\em bb}]defined with 2 points x,y,x1,y1 \item[{\em center}]Output. point center\mbox{[}0\mbox{]}=x,center\mbox{[}1\mbox{]}=y \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if bb is NULL and the center couldn't be computed, 1 on success. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_b_b_8cpp_acf54357bbf511d049e50a99f0ee28121_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_b_b_8cpp_a2ef4a63d6f593c4477ece315fe7d1ae4}{
+\index{BB.cpp@{BB.cpp}!getFilledBBPoints@{getFilledBBPoints}}
+\index{getFilledBBPoints@{getFilledBBPoints}!BB.cpp@{BB.cpp}}
+\subsubsection[{getFilledBBPoints}]{\setlength{\rightskip}{0pt plus 5cm}int getFilledBBPoints (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{ bb, }
+\item[{int}]{ numM, }
+\item[{int}]{ numN, }
+\item[{int}]{ margin, }
+\item[{float $\ast$}]{ pts}
+\end{DoxyParamCaption}
+)}}
+\label{_b_b_8cpp_a2ef4a63d6f593c4477ece315fe7d1ae4}
+Creates numM x numN points grid on BBox. Points ordered in 1 dimensional array (x1, y1, x2, y2). 
+\begin{DoxyParams}{Parameters}
+\item[{\em bb}]Bounding box represented through 2 points(x1,y1,x2,y2) \item[{\em numM}]Number of points in height direction. \item[{\em numN}]Number of points in width direction. \item[{\em margin}]margin (in pixel) \item[{\em pts}]Contains the calculated points in the form (x1, y1, x2, y2). Size of the array must be numM $\ast$ numN $\ast$ 2. \end{DoxyParams}
+
+
+gap between points in width direction FB: set to 1.0 in order to avoid division by 0 if none of the numN \&\& numM checks are hit.
+
+gap between points in height direction FB: set to 1.0 in order to avoid division by 0 if none of the numN \&\& numM checks are hit.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{_b_b_8cpp_a2ef4a63d6f593c4477ece315fe7d1ae4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{_b_b_8cpp_a2ef4a63d6f593c4477ece315fe7d1ae4_icgraph}
+\end{center}
+\end{figure}
+
+

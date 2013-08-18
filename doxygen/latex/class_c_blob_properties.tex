@@ -1,0 +1,210 @@
+\hypertarget{class_c_blob_properties}{
+\section{CBlobProperties Class Reference}
+\label{class_c_blob_properties}\index{CBlobProperties@{CBlobProperties}}
+}
+
+
+Blob class.  
+
+
+
+
+{\ttfamily \#include $<$BlobProperties.h$>$}
+
+
+
+Collaboration diagram for CBlobProperties:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{class_c_blob_properties__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_blob_properties_ab680b9906868e1d388d565e377e6e85f}{CBlobProperties} ()
+\item 
+virtual \hyperlink{class_c_blob_properties_a9653537e440c88247ad6493f66d9ba3d}{$\sim$CBlobProperties} ()
+\item 
+double \hyperlink{class_c_blob_properties_abfae07a81bcc204d18c790fc365ad53c}{GetArea} ()
+\begin{DoxyCompactList}\small\item\em Get blob area. \item\end{DoxyCompactList}\item 
+double \hyperlink{class_c_blob_properties_a46a968d4567e6aefd9451f4468595f0a}{GetPerimeter} ()
+\begin{DoxyCompactList}\small\item\em Get blob perimeter. \item\end{DoxyCompactList}\item 
+double \hyperlink{class_c_blob_properties_a09dd8fd159ab2adf65e2f03456c0a3b6}{GetMoment} (int p, int q)
+\begin{DoxyCompactList}\small\item\em Get contour moment (p,q up to MAX\_\-CALCULATED\_\-MOMENTS). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+CvMemStorage $\ast$ \hyperlink{class_c_blob_properties_a5ad248fa47d9ee6c10a706800defb897}{m\_\-storage}
+\begin{DoxyCompactList}\small\item\em Contour storage memory. \item\end{DoxyCompactList}\item 
+\hyperlink{class_c_blob_contour}{CBlobContour} \hyperlink{class_c_blob_properties_af48f14bb97d9998f4eb94e4044dc9701}{m\_\-externalContour}
+\begin{DoxyCompactList}\small\item\em External contour of the blob (crack codes). \item\end{DoxyCompactList}\item 
+t\_\-contourList \hyperlink{class_c_blob_properties_a49ba625a9099d39c1472d838ab21130e}{m\_\-internalContours}
+\begin{DoxyCompactList}\small\item\em Internal contours (crack codes). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Blob class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_blob_properties_ab680b9906868e1d388d565e377e6e85f}{
+\index{CBlobProperties@{CBlobProperties}!CBlobProperties@{CBlobProperties}}
+\index{CBlobProperties@{CBlobProperties}!CBlobProperties@{CBlobProperties}}
+\subsubsection[{CBlobProperties}]{\setlength{\rightskip}{0pt plus 5cm}CBlobProperties::CBlobProperties (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_properties_ab680b9906868e1d388d565e377e6e85f}
+\hypertarget{class_c_blob_properties_a9653537e440c88247ad6493f66d9ba3d}{
+\index{CBlobProperties@{CBlobProperties}!$\sim$CBlobProperties@{$\sim$CBlobProperties}}
+\index{$\sim$CBlobProperties@{$\sim$CBlobProperties}!CBlobProperties@{CBlobProperties}}
+\subsubsection[{$\sim$CBlobProperties}]{\setlength{\rightskip}{0pt plus 5cm}virtual CBlobProperties::$\sim$CBlobProperties (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_c_blob_properties_a9653537e440c88247ad6493f66d9ba3d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_blob_properties_abfae07a81bcc204d18c790fc365ad53c}{
+\index{CBlobProperties@{CBlobProperties}!GetArea@{GetArea}}
+\index{GetArea@{GetArea}!CBlobProperties@{CBlobProperties}}
+\subsubsection[{GetArea}]{\setlength{\rightskip}{0pt plus 5cm}double CBlobProperties::GetArea (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_properties_abfae07a81bcc204d18c790fc365ad53c}
+
+
+Get blob area. 
+
+
+\begin{DoxyItemize}
+\item FUNCIÓ: GetPerimeter
+\item FUNCIONALITAT: Get blob area, ie. external contour area minus internal contours area
+\item PARÀMETRES:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESULTAT:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESTRICCIONS:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item AUTOR: rborras
+\item DATA DE CREACIÓ: 2008/04/30
+\item MODIFICACIÓ: Data. Autor. Descripció. 
+\end{DoxyItemize}
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_properties_abfae07a81bcc204d18c790fc365ad53c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_properties_a09dd8fd159ab2adf65e2f03456c0a3b6}{
+\index{CBlobProperties@{CBlobProperties}!GetMoment@{GetMoment}}
+\index{GetMoment@{GetMoment}!CBlobProperties@{CBlobProperties}}
+\subsubsection[{GetMoment}]{\setlength{\rightskip}{0pt plus 5cm}double CBlobProperties::GetMoment (
+\begin{DoxyParamCaption}
+\item[{int}]{ p, }
+\item[{int}]{ q}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_properties_a09dd8fd159ab2adf65e2f03456c0a3b6}
+
+
+Get contour moment (p,q up to MAX\_\-CALCULATED\_\-MOMENTS). 
+
+\hypertarget{class_c_blob_properties_a46a968d4567e6aefd9451f4468595f0a}{
+\index{CBlobProperties@{CBlobProperties}!GetPerimeter@{GetPerimeter}}
+\index{GetPerimeter@{GetPerimeter}!CBlobProperties@{CBlobProperties}}
+\subsubsection[{GetPerimeter}]{\setlength{\rightskip}{0pt plus 5cm}double CBlobProperties::GetPerimeter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_properties_a46a968d4567e6aefd9451f4468595f0a}
+
+
+Get blob perimeter. 
+
+
+\begin{DoxyItemize}
+\item FUNCIÓ: GetPerimeter
+\item FUNCIONALITAT: Get blob perimeter, ie. sum of the lenght of all the contours
+\item PARÀMETRES:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESULTAT:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESTRICCIONS:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item AUTOR: rborras
+\item DATA DE CREACIÓ: 2008/04/30
+\item MODIFICACIÓ: Data. Autor. Descripció. 
+\end{DoxyItemize}
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_properties_a46a968d4567e6aefd9451f4468595f0a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_blob_properties_af48f14bb97d9998f4eb94e4044dc9701}{
+\index{CBlobProperties@{CBlobProperties}!m\_\-externalContour@{m\_\-externalContour}}
+\index{m\_\-externalContour@{m\_\-externalContour}!CBlobProperties@{CBlobProperties}}
+\subsubsection[{m\_\-externalContour}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CBlobContour} {\bf CBlobProperties::m\_\-externalContour}}}
+\label{class_c_blob_properties_af48f14bb97d9998f4eb94e4044dc9701}
+
+
+External contour of the blob (crack codes). 
+
+\hypertarget{class_c_blob_properties_a49ba625a9099d39c1472d838ab21130e}{
+\index{CBlobProperties@{CBlobProperties}!m\_\-internalContours@{m\_\-internalContours}}
+\index{m\_\-internalContours@{m\_\-internalContours}!CBlobProperties@{CBlobProperties}}
+\subsubsection[{m\_\-internalContours}]{\setlength{\rightskip}{0pt plus 5cm}t\_\-contourList {\bf CBlobProperties::m\_\-internalContours}}}
+\label{class_c_blob_properties_a49ba625a9099d39c1472d838ab21130e}
+
+
+Internal contours (crack codes). 
+
+\hypertarget{class_c_blob_properties_a5ad248fa47d9ee6c10a706800defb897}{
+\index{CBlobProperties@{CBlobProperties}!m\_\-storage@{m\_\-storage}}
+\index{m\_\-storage@{m\_\-storage}!CBlobProperties@{CBlobProperties}}
+\subsubsection[{m\_\-storage}]{\setlength{\rightskip}{0pt plus 5cm}CvMemStorage$\ast$ {\bf CBlobProperties::m\_\-storage}}}
+\label{class_c_blob_properties_a5ad248fa47d9ee6c10a706800defb897}
+
+
+Contour storage memory. 
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/3rdparty/cvblobs/\hyperlink{_blob_properties_8h}{BlobProperties.h}\item 
+src/3rdparty/cvblobs/\hyperlink{_blob_properties_8cpp}{BlobProperties.cpp}\end{DoxyCompactItemize}

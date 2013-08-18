@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="classtld_1_1_foreground_detector" kind="class" prot="public">
+    <compoundname>tld::ForegroundDetector</compoundname>
+    <includes refid="_foreground_detector_8h" local="no">ForegroundDetector.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtld_1_1_foreground_detector_1a317e60e1eb84270f60e818c0cb896416" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::ForegroundDetector::fgThreshold</definition>
+        <argsstring></argsstring>
+        <name>fgThreshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/ForegroundDetector.h" line="42" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/ForegroundDetector.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_foreground_detector_1afb086f8195e7358d8afb7c24194fc131" compoundref="_foreground_detector_8cpp" startline="35" endline="39">ForegroundDetector</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_foreground_detector_1ac274f17680c4551c9b3198e88b5bcd42" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::ForegroundDetector::minBlobSize</definition>
+        <argsstring></argsstring>
+        <name>minBlobSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/ForegroundDetector.h" line="43" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/ForegroundDetector.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_foreground_detector_1afb086f8195e7358d8afb7c24194fc131" compoundref="_foreground_detector_8cpp" startline="35" endline="39">ForegroundDetector</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">tld::DetectorCascade::propagateMembers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_foreground_detector_1a03accab9e786b8dcb6c332424ed5dee0" prot="public" static="no" mutable="no">
+        <type>cv::Mat</type>
+        <definition>cv::Mat tld::ForegroundDetector::bgImg</definition>
+        <argsstring></argsstring>
+        <name>bgImg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/ForegroundDetector.h" line="44" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/ForegroundDetector.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+        <referencedby refid="classtld_1_1_foreground_detector_1abe107144cdd28271253a431cc6a22392" compoundref="_foreground_detector_8cpp" startline="79" endline="82">isActive</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_foreground_detector_1a01d0c37f4019847febbea0f9a121b49b" prot="public" static="no" mutable="no">
+        <type><ref refid="classtld_1_1_detection_result" kindref="compound">DetectionResult</ref> *</type>
+        <definition>DetectionResult* tld::ForegroundDetector::detectionResult</definition>
+        <argsstring></argsstring>
+        <name>detectionResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/ForegroundDetector.h" line="45" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/ForegroundDetector.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">tld::DetectorCascade::propagateMembers</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtld_1_1_foreground_detector_1afb086f8195e7358d8afb7c24194fc131" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tld::ForegroundDetector::ForegroundDetector</definition>
+        <argsstring>()</argsstring>
+        <name>ForegroundDetector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/ForegroundDetector.h" line="47" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/ForegroundDetector.cpp" bodystart="35" bodyend="39"/>
+        <references refid="classtld_1_1_foreground_detector_1a317e60e1eb84270f60e818c0cb896416" compoundref="_foreground_detector_8h" startline="42">fgThreshold</references>
+        <references refid="classtld_1_1_foreground_detector_1ac274f17680c4551c9b3198e88b5bcd42" compoundref="_foreground_detector_8h" startline="43">minBlobSize</references>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_foreground_detector_1ade0fb08c42a39ce8a2482b2bacea8c02" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>tld::ForegroundDetector::~ForegroundDetector</definition>
+        <argsstring>()</argsstring>
+        <name>~ForegroundDetector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/ForegroundDetector.h" line="48" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/ForegroundDetector.cpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_foreground_detector_1a0bf609b2ba46774804a929253c225aac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::ForegroundDetector::release</definition>
+        <argsstring>()</argsstring>
+        <name>release</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/ForegroundDetector.h" line="49" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/ForegroundDetector.cpp" bodystart="45" bodyend="47"/>
+        <referencedby refid="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" compoundref="_detector_cascade_8cpp" startline="122" endline="151">tld::DetectorCascade::release</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_foreground_detector_1a4f34509fa3a36529a39b911ed7693623" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::ForegroundDetector::nextIteration</definition>
+        <argsstring>(const cv::Mat &amp;img)</argsstring>
+        <name>nextIteration</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>img</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/ForegroundDetector.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_foreground_detector_1abe107144cdd28271253a431cc6a22392" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tld::ForegroundDetector::isActive</definition>
+        <argsstring>()</argsstring>
+        <name>isActive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/ForegroundDetector.h" line="51" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/ForegroundDetector.cpp" bodystart="79" bodyend="82"/>
+        <references refid="classtld_1_1_foreground_detector_1a03accab9e786b8dcb6c332424ed5dee0" compoundref="_foreground_detector_8h" startline="44">bgImg</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="478">
+        <label>tld::DetectionResult</label>
+        <link refid="classtld_1_1_detection_result"/>
+      </node>
+      <node id="477">
+        <label>tld::ForegroundDetector</label>
+        <link refid="classtld_1_1_foreground_detector"/>
+        <childnode refid="478" relation="usage">
+          <edgelabel>detectionResult</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/ForegroundDetector.h" line="40" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/ForegroundDetector.h" bodystart="39" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classtld_1_1_foreground_detector_1a03accab9e786b8dcb6c332424ed5dee0" prot="public" virt="non-virtual"><scope>tld::ForegroundDetector</scope><name>bgImg</name></member>
+      <member refid="classtld_1_1_foreground_detector_1a01d0c37f4019847febbea0f9a121b49b" prot="public" virt="non-virtual"><scope>tld::ForegroundDetector</scope><name>detectionResult</name></member>
+      <member refid="classtld_1_1_foreground_detector_1a317e60e1eb84270f60e818c0cb896416" prot="public" virt="non-virtual"><scope>tld::ForegroundDetector</scope><name>fgThreshold</name></member>
+      <member refid="classtld_1_1_foreground_detector_1afb086f8195e7358d8afb7c24194fc131" prot="public" virt="non-virtual"><scope>tld::ForegroundDetector</scope><name>ForegroundDetector</name></member>
+      <member refid="classtld_1_1_foreground_detector_1abe107144cdd28271253a431cc6a22392" prot="public" virt="non-virtual"><scope>tld::ForegroundDetector</scope><name>isActive</name></member>
+      <member refid="classtld_1_1_foreground_detector_1ac274f17680c4551c9b3198e88b5bcd42" prot="public" virt="non-virtual"><scope>tld::ForegroundDetector</scope><name>minBlobSize</name></member>
+      <member refid="classtld_1_1_foreground_detector_1a4f34509fa3a36529a39b911ed7693623" prot="public" virt="non-virtual"><scope>tld::ForegroundDetector</scope><name>nextIteration</name></member>
+      <member refid="classtld_1_1_foreground_detector_1a0bf609b2ba46774804a929253c225aac" prot="public" virt="non-virtual"><scope>tld::ForegroundDetector</scope><name>release</name></member>
+      <member refid="classtld_1_1_foreground_detector_1ade0fb08c42a39ce8a2482b2bacea8c02" prot="public" virt="virtual"><scope>tld::ForegroundDetector</scope><name>~ForegroundDetector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

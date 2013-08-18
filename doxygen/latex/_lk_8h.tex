@@ -1,0 +1,101 @@
+\hypertarget{_lk_8h}{
+\section{src/libopentld/mftracker/Lk.h File Reference}
+\label{_lk_8h}\index{src/libopentld/mftracker/Lk.h@{src/libopentld/mftracker/Lk.h}}
+}
+{\ttfamily \#include $<$cv.h$>$}\par
+Include dependency graph for Lk.h:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{_lk_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_lk_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_lk_8h_a72f8af92e33c2f2c05d9d0b1ecbbc3c6}{initImgs} ()
+\item 
+int \hyperlink{_lk_8h_aeb798560b2c1eda165af271062b840ab}{trackLK} (IplImage $\ast$imgI, IplImage $\ast$imgJ, float ptsI\mbox{[}$\,$\mbox{]}, int nPtsI, float ptsJ\mbox{[}$\,$\mbox{]}, int nPtsJ, int level, float $\ast$fbOut, float $\ast$nccOut, char $\ast$statusOut)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_lk_8h_a72f8af92e33c2f2c05d9d0b1ecbbc3c6}{
+\index{Lk.h@{Lk.h}!initImgs@{initImgs}}
+\index{initImgs@{initImgs}!Lk.h@{Lk.h}}
+\subsubsection[{initImgs}]{\setlength{\rightskip}{0pt plus 5cm}void initImgs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{_lk_8h_a72f8af92e33c2f2c05d9d0b1ecbbc3c6}
+Need before start of trackLK and at the end of the program for cleanup.
+
+Needed before start of trackLK and at the end of the program for cleanup. Handles PYR(Pyramid cache) variable. 
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{_lk_8h_a72f8af92e33c2f2c05d9d0b1ecbbc3c6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_lk_8h_aeb798560b2c1eda165af271062b840ab}{
+\index{Lk.h@{Lk.h}!trackLK@{trackLK}}
+\index{trackLK@{trackLK}!Lk.h@{Lk.h}}
+\subsubsection[{trackLK}]{\setlength{\rightskip}{0pt plus 5cm}int trackLK (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ imgI, }
+\item[{IplImage $\ast$}]{ imgJ, }
+\item[{float}]{ ptsI\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{ nPtsI, }
+\item[{float}]{ ptsJ\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{ nPtsJ, }
+\item[{int}]{ level, }
+\item[{float $\ast$}]{ fb, }
+\item[{float $\ast$}]{ ncc, }
+\item[{char $\ast$}]{ status}
+\end{DoxyParamCaption}
+)}}
+\label{_lk_8h_aeb798560b2c1eda165af271062b840ab}
+Tracks Points from 1.Image to 2.Image. Need initImgs before start and at the end of the program for cleanup.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em imgI}]previous Image source. (isn't changed) \item[{\em imgJ}]actual Image target. (isn't changed) \item[{\em ptsI}]points to track from first Image. Format \mbox{[}0\mbox{]} = x1, \mbox{[}1\mbox{]} = y1, \mbox{[}2\mbox{]} = x2 ... \item[{\em nPtsI}]number of Points to track from first Image \item[{\em ptsJ}]container for calculated points of second Image. Must have the length of nPtsI. \item[{\em nPtsJ}]number of Points \item[{\em level}]Pyramidlevel, default 5 \item[{\em fb}]forward-\/backward confidence value. (corresponds to euclidean distance between). Must have the length of nPtsI: nPtsI $\ast$ sizeof(float). \item[{\em ncc}]normCrossCorrelation values. needs as inputlength nPtsI $\ast$ sizeof(float) \item[{\em status}]Indicates positive tracks. 1 = PosTrack 0 = NegTrack needs as inputlength nPtsI $\ast$ sizeof(char)\end{DoxyParams}
+Based Matlab function: lk(2,imgI,imgJ,ptsI,ptsJ,Level) (Level is optional) 
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{_lk_8h_aeb798560b2c1eda165af271062b840ab_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{_lk_8h_aeb798560b2c1eda165af271062b840ab_icgraph}
+\end{center}
+\end{figure}
+
+

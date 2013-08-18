@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_c_blob.html#ab26a757fffc581df39620425de008cbc" title="Maximun X." alt="" coords="259,5,360,33"/>
+<area shape="rect" id="node9" href="$class_c_blob.html#aa3313af22e7f28d65ba245bc3b8a30bc" title="Minimun X." alt="" coords="261,55,357,83"/>
+<area shape="rect" id="node5" href="$class_c_blob.html#a5391167c172eb461eb762fbdd81306de" title="Get bounding box." alt="" coords="409,30,583,58"/>
+<area shape="rect" id="node7" href="$class_c_blob_contour.html#a245d5e59180619aa9ae4ec14acc18744" title="Return all contour points." alt="" coords="633,30,863,58"/>
+</map>

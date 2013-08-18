@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classtld_1_1_ensemble_classifier.html#afb0e8ed03adef91257801bf0e3ca73f7" title="tld::EnsembleClassifier::init" alt="" coords="295,55,487,83"/>
+<area shape="rect" id="node11" href="$classtld_1_1_detector_cascade.html#a39760d6c54ddb41785ffd05a7b881d8d" title="tld::DetectorCascade::initWindowOffsets" alt="" coords="253,106,528,134"/>
+<area shape="rect" id="node13" href="$classtld_1_1_detector_cascade.html#a0515043558291c0bfbd5d403315c0334" title="tld::DetectorCascade::initWindowsAndScales" alt="" coords="239,157,543,185"/>
+<area shape="rect" id="node15" href="$classtld_1_1_detector_cascade.html#a809e13a6c7fbc1c13dcb9b4bf9d22964" title="tld::DetectorCascade::propagateMembers" alt="" coords="245,207,536,235"/>
+<area shape="rect" id="node5" href="$classtld_1_1_ensemble_classifier.html#a3fc444f59e0f23a97f9889e58adaba73" title="tld::EnsembleClassifier::initFeatureLocations" alt="" coords="593,5,895,33"/>
+<area shape="rect" id="node7" href="$classtld_1_1_ensemble_classifier.html#a92ddef7701b1062b1f4a53e5cfcd79a2" title="tld::EnsembleClassifier::initFeatureOffsets" alt="" coords="601,55,887,83"/>
+<area shape="rect" id="node9" href="$classtld_1_1_ensemble_classifier.html#ab342db231d14bbaa892b2664d210e152" title="tld::EnsembleClassifier::initPosteriors" alt="" coords="616,106,872,134"/>
+<area shape="rect" id="node17" href="$classtld_1_1_detection_result.html#a20c6fc21a478b99cf88b6e955931e530" title="tld::DetectionResult::init" alt="" coords="657,207,831,235"/>
+</map>

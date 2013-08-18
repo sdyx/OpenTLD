@@ -1,0 +1,166 @@
+\hypertarget{classlibconfig_1_1_setting_exception}{
+\section{libconfig::SettingException Class Reference}
+\label{classlibconfig_1_1_setting_exception}\index{libconfig::SettingException@{libconfig::SettingException}}
+}
+
+
+{\ttfamily \#include $<$libconfig.h++$>$}
+
+
+
+Inherits \hyperlink{classlibconfig_1_1_config_exception}{libconfig::ConfigException}.
+
+
+
+Inherited by \hyperlink{classlibconfig_1_1_setting_name_exception}{libconfig::SettingNameException}, \hyperlink{classlibconfig_1_1_setting_not_found_exception}{libconfig::SettingNotFoundException}, and \hyperlink{classlibconfig_1_1_setting_type_exception}{libconfig::SettingTypeException}.
+
+
+
+Collaboration diagram for libconfig::SettingException:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classlibconfig_1_1_setting_exception__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlibconfig_1_1_setting_exception_a22ad32bab261aa1a6a17e4e1783240e4}{SettingException} (const \hyperlink{classlibconfig_1_1_setting_exception}{SettingException} \&other)
+\item 
+\hyperlink{classlibconfig_1_1_setting_exception}{SettingException} \& \hyperlink{classlibconfig_1_1_setting_exception_aec6caeb252c238bde272e5050c6b881f}{operator=} (const \hyperlink{classlibconfig_1_1_setting_exception}{SettingException} \&other)
+\item 
+virtual \hyperlink{classlibconfig_1_1_setting_exception_a430c62b735c729be8b1478dae91b59cd}{$\sim$SettingException} ()  throw ()
+\item 
+const char $\ast$ \hyperlink{classlibconfig_1_1_setting_exception_a3aa229dde3459dbd18d9598f8d1bede4}{getPath} () const 
+\item 
+virtual const char $\ast$ \hyperlink{classlibconfig_1_1_setting_exception_aead416e6b1f46683804fff8f4649df05}{what} () const   throw ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlibconfig_1_1_setting_exception_a8e64e378f22317a3daa5824071c38e89}{SettingException} (const \hyperlink{classlibconfig_1_1_setting}{Setting} \&setting)
+\item 
+\hyperlink{classlibconfig_1_1_setting_exception_a6ed0f32d95fe0730c8a10b2a12a12d7a}{SettingException} (const \hyperlink{classlibconfig_1_1_setting}{Setting} \&setting, int idx)
+\item 
+\hyperlink{classlibconfig_1_1_setting_exception_adfd98e2d09b2689884b9349968ea3477}{SettingException} (const \hyperlink{classlibconfig_1_1_setting}{Setting} \&setting, const char $\ast$name)
+\item 
+\hyperlink{classlibconfig_1_1_setting_exception_a9e695af9dc4098bed2091f2753b79cf1}{SettingException} (const char $\ast$path)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classlibconfig_1_1_setting_exception_ac3da7e21a05bf8852638db7e4dd1b81a}{Config}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlibconfig_1_1_setting_exception_a22ad32bab261aa1a6a17e4e1783240e4}{
+\index{libconfig::SettingException@{libconfig::SettingException}!SettingException@{SettingException}}
+\index{SettingException@{SettingException}!libconfig::SettingException@{libconfig::SettingException}}
+\subsubsection[{SettingException}]{\setlength{\rightskip}{0pt plus 5cm}libconfig::SettingException::SettingException (
+\begin{DoxyParamCaption}
+\item[{const {\bf SettingException} \&}]{ other}
+\end{DoxyParamCaption}
+)}}
+\label{classlibconfig_1_1_setting_exception_a22ad32bab261aa1a6a17e4e1783240e4}
+\hypertarget{classlibconfig_1_1_setting_exception_a430c62b735c729be8b1478dae91b59cd}{
+\index{libconfig::SettingException@{libconfig::SettingException}!$\sim$SettingException@{$\sim$SettingException}}
+\index{$\sim$SettingException@{$\sim$SettingException}!libconfig::SettingException@{libconfig::SettingException}}
+\subsubsection[{$\sim$SettingException}]{\setlength{\rightskip}{0pt plus 5cm}libconfig::SettingException::$\sim$SettingException (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throw ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classlibconfig_1_1_setting_exception_a430c62b735c729be8b1478dae91b59cd}
+\hypertarget{classlibconfig_1_1_setting_exception_a8e64e378f22317a3daa5824071c38e89}{
+\index{libconfig::SettingException@{libconfig::SettingException}!SettingException@{SettingException}}
+\index{SettingException@{SettingException}!libconfig::SettingException@{libconfig::SettingException}}
+\subsubsection[{SettingException}]{\setlength{\rightskip}{0pt plus 5cm}libconfig::SettingException::SettingException (
+\begin{DoxyParamCaption}
+\item[{const {\bf Setting} \&}]{ setting}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classlibconfig_1_1_setting_exception_a8e64e378f22317a3daa5824071c38e89}
+\hypertarget{classlibconfig_1_1_setting_exception_a6ed0f32d95fe0730c8a10b2a12a12d7a}{
+\index{libconfig::SettingException@{libconfig::SettingException}!SettingException@{SettingException}}
+\index{SettingException@{SettingException}!libconfig::SettingException@{libconfig::SettingException}}
+\subsubsection[{SettingException}]{\setlength{\rightskip}{0pt plus 5cm}libconfig::SettingException::SettingException (
+\begin{DoxyParamCaption}
+\item[{const {\bf Setting} \&}]{ setting, }
+\item[{int}]{ idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classlibconfig_1_1_setting_exception_a6ed0f32d95fe0730c8a10b2a12a12d7a}
+\hypertarget{classlibconfig_1_1_setting_exception_adfd98e2d09b2689884b9349968ea3477}{
+\index{libconfig::SettingException@{libconfig::SettingException}!SettingException@{SettingException}}
+\index{SettingException@{SettingException}!libconfig::SettingException@{libconfig::SettingException}}
+\subsubsection[{SettingException}]{\setlength{\rightskip}{0pt plus 5cm}libconfig::SettingException::SettingException (
+\begin{DoxyParamCaption}
+\item[{const {\bf Setting} \&}]{ setting, }
+\item[{const char $\ast$}]{ name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classlibconfig_1_1_setting_exception_adfd98e2d09b2689884b9349968ea3477}
+\hypertarget{classlibconfig_1_1_setting_exception_a9e695af9dc4098bed2091f2753b79cf1}{
+\index{libconfig::SettingException@{libconfig::SettingException}!SettingException@{SettingException}}
+\index{SettingException@{SettingException}!libconfig::SettingException@{libconfig::SettingException}}
+\subsubsection[{SettingException}]{\setlength{\rightskip}{0pt plus 5cm}libconfig::SettingException::SettingException (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classlibconfig_1_1_setting_exception_a9e695af9dc4098bed2091f2753b79cf1}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classlibconfig_1_1_setting_exception_a3aa229dde3459dbd18d9598f8d1bede4}{
+\index{libconfig::SettingException@{libconfig::SettingException}!getPath@{getPath}}
+\index{getPath@{getPath}!libconfig::SettingException@{libconfig::SettingException}}
+\subsubsection[{getPath}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ libconfig::SettingException::getPath (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classlibconfig_1_1_setting_exception_a3aa229dde3459dbd18d9598f8d1bede4}
+\hypertarget{classlibconfig_1_1_setting_exception_aec6caeb252c238bde272e5050c6b881f}{
+\index{libconfig::SettingException@{libconfig::SettingException}!operator=@{operator=}}
+\index{operator=@{operator=}!libconfig::SettingException@{libconfig::SettingException}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf SettingException} \& libconfig::SettingException::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf SettingException} \&}]{ other}
+\end{DoxyParamCaption}
+)}}
+\label{classlibconfig_1_1_setting_exception_aec6caeb252c238bde272e5050c6b881f}
+\hypertarget{classlibconfig_1_1_setting_exception_aead416e6b1f46683804fff8f4649df05}{
+\index{libconfig::SettingException@{libconfig::SettingException}!what@{what}}
+\index{what@{what}!libconfig::SettingException@{libconfig::SettingException}}
+\subsubsection[{what}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ libconfig::SettingException::what (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const  throw ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classlibconfig_1_1_setting_exception_aead416e6b1f46683804fff8f4649df05}
+
+
+Reimplemented in \hyperlink{classlibconfig_1_1_setting_type_exception_a50c015f8011c3ffa3dce6a4a25072ec7}{libconfig::SettingTypeException}, \hyperlink{classlibconfig_1_1_setting_not_found_exception_a10ddbf9dfba0e1d43e84ad9f746f4dc3}{libconfig::SettingNotFoundException}, and \hyperlink{classlibconfig_1_1_setting_name_exception_a6a65369f3eb5c02ee92fc71a31c99ebc}{libconfig::SettingNameException}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classlibconfig_1_1_setting_exception_ac3da7e21a05bf8852638db7e4dd1b81a}{
+\index{libconfig::SettingException@{libconfig::SettingException}!Config@{Config}}
+\index{Config@{Config}!libconfig::SettingException@{libconfig::SettingException}}
+\subsubsection[{Config}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Config}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classlibconfig_1_1_setting_exception_ac3da7e21a05bf8852638db7e4dd1b81a}
+
+
+Reimplemented in \hyperlink{classlibconfig_1_1_setting_type_exception_ac3da7e21a05bf8852638db7e4dd1b81a}{libconfig::SettingTypeException}, \hyperlink{classlibconfig_1_1_setting_not_found_exception_ac3da7e21a05bf8852638db7e4dd1b81a}{libconfig::SettingNotFoundException}, and \hyperlink{classlibconfig_1_1_setting_name_exception_ac3da7e21a05bf8852638db7e4dd1b81a}{libconfig::SettingNameException}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/3rdparty/libconfig/\hyperlink{libconfig_8h_09_09}{libconfig.h++}\item 
+src/3rdparty/libconfig/\hyperlink{libconfigcpp_8c_09_09}{libconfigcpp.c++}\end{DoxyCompactItemize}

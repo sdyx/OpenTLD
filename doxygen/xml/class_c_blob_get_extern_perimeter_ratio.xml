@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="class_c_blob_get_extern_perimeter_ratio" kind="class" prot="public">
+    <compoundname>CBlobGetExternPerimeterRatio</compoundname>
+    <basecompoundref refid="class_c_operador_blob" prot="public" virt="non-virtual">COperadorBlob</basecompoundref>
+    <includes refid="_blob_operators_8h" local="no">BlobOperators.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_blob_get_extern_perimeter_ratio_1ae5914a0de989b2be3aa80936ac4d8a82" prot="private" static="no" mutable="no">
+        <type>IplImage *</type>
+        <definition>IplImage* CBlobGetExternPerimeterRatio::m_mask</definition>
+        <argsstring></argsstring>
+        <name>m_mask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="526" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="526" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_get_extern_perimeter_ratio_1a1d306f3aa046fbe9ac1f20c2f811f7b7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CBlobGetExternPerimeterRatio::m_xBorder</definition>
+        <argsstring></argsstring>
+        <name>m_xBorder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="527" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="527" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_get_extern_perimeter_ratio_1a84f5b3321f5f63b99430ee1d8a137976" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CBlobGetExternPerimeterRatio::m_yBorder</definition>
+        <argsstring></argsstring>
+        <name>m_yBorder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="527" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="527" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_blob_get_extern_perimeter_ratio_1ad1494605392bd7bb85b33a9886eb2c07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CBlobGetExternPerimeterRatio::CBlobGetExternPerimeterRatio</definition>
+        <argsstring>()</argsstring>
+        <name>CBlobGetExternPerimeterRatio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="503" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="502" bodyend="507"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_extern_perimeter_ratio_1a6a22493725b68f8f6aab2f5e87e22a2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CBlobGetExternPerimeterRatio::CBlobGetExternPerimeterRatio</definition>
+        <argsstring>(IplImage *mask, bool xBorder=true, bool yBorder=true)</argsstring>
+        <name>CBlobGetExternPerimeterRatio</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>xBorder</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>yBorder</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="509" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="508" bodyend="513"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_extern_perimeter_ratio_1a28c984e9b6de7d6303704b34b76c1c5b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double CBlobGetExternPerimeterRatio::operator()</definition>
+        <argsstring>(CBlob &amp;blob)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="class_c_operador_blob_1a303c4189cc94cafbcbee116bf014e623">operator()</reimplements>
+        <param>
+          <type><ref refid="class_c_blob" kindref="compound">CBlob</ref> &amp;</type>
+          <declname>blob</declname>
+        </param>
+        <briefdescription>
+<para>Aply operator to blob. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="515" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="514" bodyend="520"/>
+        <references refid="class_c_blob_1ab1501b07a2c5ee23843bac66d20974e2" compoundref="blob_8cpp" startline="246" endline="376">CBlob::ExternPerimeter</references>
+        <references refid="class_c_blob_1af63853ea55dbebbee5b013189e765b51" compoundref="blob_8cpp" startline="187" endline="203">CBlob::Perimeter</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_extern_perimeter_ratio_1a02ed09eee429406e6064cf1264cdfaa9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>const char* CBlobGetExternPerimeterRatio::GetNom</definition>
+        <argsstring>()</argsstring>
+        <name>GetNom</name>
+        <reimplements refid="class_c_operador_blob_1a717a19c163a26b45081a2231be24c008">GetNom</reimplements>
+        <briefdescription>
+<para>Get operator name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="522" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="521" bodyend="524"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Classe per calcular el ratio entre el perimetre i nombre pixels externs valors propers a 0 indiquen que la majoria del blob és intern valors propers a 1 indiquen que la majoria del blob és extern Class to calculate the ratio between the perimeter and the number of extern pixels </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="265">
+        <label>CBlobGetExternPerimeterRatio</label>
+        <link refid="class_c_blob_get_extern_perimeter_ratio"/>
+        <childnode refid="266" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="266">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="267">
+        <label>CBlobGetExternPerimeterRatio</label>
+        <link refid="class_c_blob_get_extern_perimeter_ratio"/>
+        <childnode refid="268" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="268">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="500" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="499" bodyend="528"/>
+    <listofallmembers>
+      <member refid="class_c_blob_get_extern_perimeter_ratio_1ad1494605392bd7bb85b33a9886eb2c07" prot="public" virt="non-virtual"><scope>CBlobGetExternPerimeterRatio</scope><name>CBlobGetExternPerimeterRatio</name></member>
+      <member refid="class_c_blob_get_extern_perimeter_ratio_1a6a22493725b68f8f6aab2f5e87e22a2b" prot="public" virt="non-virtual"><scope>CBlobGetExternPerimeterRatio</scope><name>CBlobGetExternPerimeterRatio</name></member>
+      <member refid="class_c_blob_get_extern_perimeter_ratio_1a02ed09eee429406e6064cf1264cdfaa9" prot="public" virt="virtual"><scope>CBlobGetExternPerimeterRatio</scope><name>GetNom</name></member>
+      <member refid="class_c_blob_get_extern_perimeter_ratio_1ae5914a0de989b2be3aa80936ac4d8a82" prot="private" virt="non-virtual"><scope>CBlobGetExternPerimeterRatio</scope><name>m_mask</name></member>
+      <member refid="class_c_blob_get_extern_perimeter_ratio_1a1d306f3aa046fbe9ac1f20c2f811f7b7" prot="private" virt="non-virtual"><scope>CBlobGetExternPerimeterRatio</scope><name>m_xBorder</name></member>
+      <member refid="class_c_blob_get_extern_perimeter_ratio_1a84f5b3321f5f63b99430ee1d8a137976" prot="private" virt="non-virtual"><scope>CBlobGetExternPerimeterRatio</scope><name>m_yBorder</name></member>
+      <member refid="class_c_operador_blob_1a477edfe687cf9ef41469bcf6ea636a75" prot="public" virt="non-virtual"><scope>CBlobGetExternPerimeterRatio</scope><name>operator COperadorBlob *</name></member>
+      <member refid="class_c_blob_get_extern_perimeter_ratio_1a28c984e9b6de7d6303704b34b76c1c5b" prot="public" virt="virtual"><scope>CBlobGetExternPerimeterRatio</scope><name>operator()</name></member>
+      <member refid="class_c_operador_blob_1a25ccc652bfa55e7b0143c88f452729a2" prot="public" virt="virtual"><scope>CBlobGetExternPerimeterRatio</scope><name>~COperadorBlob</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

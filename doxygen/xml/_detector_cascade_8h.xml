@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_detector_cascade_8h" kind="file">
+    <compoundname>DetectorCascade.h</compoundname>
+    <includes refid="_detection_result_8h" local="yes">DetectionResult.h</includes>
+    <includes refid="_foreground_detector_8h" local="yes">ForegroundDetector.h</includes>
+    <includes refid="_variance_filter_8h" local="yes">VarianceFilter.h</includes>
+    <includes refid="_ensemble_classifier_8h" local="yes">EnsembleClassifier.h</includes>
+    <includes refid="_clustering_8h" local="yes">Clustering.h</includes>
+    <includes refid="_n_n_classifier_8h" local="yes">NNClassifier.h</includes>
+    <includedby refid="_clustering_8cpp" local="yes">src/libopentld/tld/Clustering.cpp</includedby>
+    <includedby refid="_detector_cascade_8cpp" local="yes">src/libopentld/tld/DetectorCascade.cpp</includedby>
+    <includedby refid="_ensemble_classifier_8cpp" local="yes">src/libopentld/tld/EnsembleClassifier.cpp</includedby>
+    <includedby refid="_n_n_classifier_8cpp" local="yes">src/libopentld/tld/NNClassifier.cpp</includedby>
+    <includedby refid="_t_l_d_8h" local="yes">src/libopentld/tld/TLD.h</includedby>
+    <includedby refid="_t_l_d_util_8cpp" local="yes">src/libopentld/tld/TLDUtil.cpp</includedby>
+    <includedby refid="_variance_filter_8cpp" local="yes">src/libopentld/tld/VarianceFilter.cpp</includedby>
+    <incdepgraph>
+      <node id="1488">
+        <label>src/libopentld/tld/DetectorCascade.h</label>
+        <link refid="DetectorCascade.h"/>
+        <childnode refid="1489" relation="include">
+        </childnode>
+        <childnode refid="1492" relation="include">
+        </childnode>
+        <childnode refid="1493" relation="include">
+        </childnode>
+        <childnode refid="1495" relation="include">
+        </childnode>
+        <childnode refid="1496" relation="include">
+        </childnode>
+        <childnode refid="1497" relation="include">
+        </childnode>
+      </node>
+      <node id="1495">
+        <label>EnsembleClassifier.h</label>
+        <link refid="_ensemble_classifier_8h"/>
+        <childnode refid="1491" relation="include">
+        </childnode>
+      </node>
+      <node id="1497">
+        <label>NNClassifier.h</label>
+        <link refid="_n_n_classifier_8h"/>
+        <childnode refid="1490" relation="include">
+        </childnode>
+        <childnode refid="1491" relation="include">
+        </childnode>
+        <childnode refid="1498" relation="include">
+        </childnode>
+        <childnode refid="1489" relation="include">
+        </childnode>
+      </node>
+      <node id="1493">
+        <label>VarianceFilter.h</label>
+        <link refid="_variance_filter_8h"/>
+        <childnode refid="1491" relation="include">
+        </childnode>
+        <childnode refid="1494" relation="include">
+        </childnode>
+        <childnode refid="1489" relation="include">
+        </childnode>
+      </node>
+      <node id="1498">
+        <label>NormalizedPatch.h</label>
+        <link refid="_normalized_patch_8h"/>
+      </node>
+      <node id="1494">
+        <label>IntegralImage.h</label>
+        <link refid="_integral_image_8h"/>
+        <childnode refid="1491" relation="include">
+        </childnode>
+      </node>
+      <node id="1496">
+        <label>Clustering.h</label>
+        <link refid="_clustering_8h"/>
+        <childnode refid="1490" relation="include">
+        </childnode>
+        <childnode refid="1491" relation="include">
+        </childnode>
+        <childnode refid="1489" relation="include">
+        </childnode>
+      </node>
+      <node id="1492">
+        <label>ForegroundDetector.h</label>
+        <link refid="_foreground_detector_8h"/>
+        <childnode refid="1490" relation="include">
+        </childnode>
+        <childnode refid="1491" relation="include">
+        </childnode>
+        <childnode refid="1489" relation="include">
+        </childnode>
+      </node>
+      <node id="1490">
+        <label>vector</label>
+      </node>
+      <node id="1491">
+        <label>cv.h</label>
+      </node>
+      <node id="1489">
+        <label>DetectionResult.h</label>
+        <link refid="_detection_result_8h"/>
+        <childnode refid="1490" relation="include">
+        </childnode>
+        <childnode refid="1491" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1499">
+        <label>src/libopentld/tld/DetectorCascade.h</label>
+        <link refid="DetectorCascade.h"/>
+        <childnode refid="1500" relation="include">
+        </childnode>
+        <childnode refid="1501" relation="include">
+        </childnode>
+        <childnode refid="1502" relation="include">
+        </childnode>
+        <childnode refid="1503" relation="include">
+        </childnode>
+        <childnode refid="1504" relation="include">
+        </childnode>
+        <childnode refid="1513" relation="include">
+        </childnode>
+        <childnode refid="1514" relation="include">
+        </childnode>
+      </node>
+      <node id="1506">
+        <label>src/opentld/main/Main.h</label>
+        <link refid="_main_8h"/>
+        <childnode refid="1507" relation="include">
+        </childnode>
+        <childnode refid="1508" relation="include">
+        </childnode>
+        <childnode refid="1512" relation="include">
+        </childnode>
+        <childnode refid="1509" relation="include">
+        </childnode>
+        <childnode refid="1510" relation="include">
+        </childnode>
+        <childnode refid="1511" relation="include">
+        </childnode>
+      </node>
+      <node id="1501">
+        <label>src/libopentld/tld/DetectorCascade.cpp</label>
+        <link refid="_detector_cascade_8cpp"/>
+      </node>
+      <node id="1514">
+        <label>src/libopentld/tld/VarianceFilter.cpp</label>
+        <link refid="_variance_filter_8cpp"/>
+      </node>
+      <node id="1507">
+        <label>src/opentld/main/Config.h</label>
+        <link refid="_config_8h"/>
+        <childnode refid="1508" relation="include">
+        </childnode>
+        <childnode refid="1509" relation="include">
+        </childnode>
+        <childnode refid="1510" relation="include">
+        </childnode>
+        <childnode refid="1511" relation="include">
+        </childnode>
+      </node>
+      <node id="1512">
+        <label>src/opentld/main/Gui.cpp</label>
+        <link refid="_gui_8cpp"/>
+      </node>
+      <node id="1513">
+        <label>src/libopentld/tld/TLDUtil.cpp</label>
+        <link refid="_t_l_d_util_8cpp"/>
+      </node>
+      <node id="1509">
+        <label>src/opentld/main/Main.cpp</label>
+        <link refid="_main_8cpp"/>
+      </node>
+      <node id="1510">
+        <label>src/opentld/OpenTLD.cpp</label>
+        <link refid="_open_t_l_d_8cpp"/>
+      </node>
+      <node id="1508">
+        <label>src/opentld/main/Config.cpp</label>
+        <link refid="_config_8cpp"/>
+      </node>
+      <node id="1503">
+        <label>src/libopentld/tld/NNClassifier.cpp</label>
+        <link refid="_n_n_classifier_8cpp"/>
+      </node>
+      <node id="1505">
+        <label>src/libopentld/tld/TLD.cpp</label>
+        <link refid="_t_l_d_8cpp"/>
+      </node>
+      <node id="1504">
+        <label>src/libopentld/tld/TLD.h</label>
+        <link refid="_t_l_d_8h"/>
+        <childnode refid="1505" relation="include">
+        </childnode>
+        <childnode refid="1506" relation="include">
+        </childnode>
+      </node>
+      <node id="1500">
+        <label>src/libopentld/tld/Clustering.cpp</label>
+        <link refid="_clustering_8cpp"/>
+      </node>
+      <node id="1511">
+        <label>src/opentld/QOpenTLD.cpp</label>
+        <link refid="_q_open_t_l_d_8cpp"/>
+      </node>
+      <node id="1502">
+        <label>src/libopentld/tld/EnsembleClassifier.cpp</label>
+        <link refid="_ensemble_classifier_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classtld_1_1_detector_cascade" prot="public">tld::DetectorCascade</innerclass>
+    <innernamespace refid="namespacetld">tld</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>DetectorCascade.h</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Nov<sp/>16,<sp/>2011</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>Georg<sp/>Nebehay</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DETECTORCASCADE_H_</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DETECTORCASCADE_H_</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_detection_result_8h" kindref="compound">DetectionResult.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_foreground_detector_8h" kindref="compound">ForegroundDetector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_variance_filter_8h" kindref="compound">VarianceFilter.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_ensemble_classifier_8h" kindref="compound">EnsembleClassifier.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_clustering_8h" kindref="compound">Clustering.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_n_n_classifier_8h" kindref="compound">NNClassifier.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">tld</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//Constants</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>TLD_WINDOW_SIZE<sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>TLD_WINDOW_OFFSET_SIZE<sp/>=<sp/>6;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classtld_1_1_detector_cascade" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtld_1_1_detector_cascade" kindref="compound">DetectorCascade</ref></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Working<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numScales;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::Size<sp/>*scales;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Configurable<sp/>members</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="classtld_1_1_detector_cascade_1a24aed44c48fe4616465a556bd6642d5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a24aed44c48fe4616465a556bd6642d5e" kindref="member">minScale</ref>;</highlight></codeline>
+<codeline lineno="52" refid="classtld_1_1_detector_cascade_1aac2cd4b31c290d1eeba69591cbb65ce4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1aac2cd4b31c290d1eeba69591cbb65ce4" kindref="member">maxScale</ref>;</highlight></codeline>
+<codeline lineno="53" refid="classtld_1_1_detector_cascade_1a2549b35ac099860f20a13ef830081bbb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a2549b35ac099860f20a13ef830081bbb" kindref="member">useShift</ref>;</highlight></codeline>
+<codeline lineno="54" refid="classtld_1_1_detector_cascade_1a18b12b643d662cc9c8850c963079233c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a18b12b643d662cc9c8850c963079233c" kindref="member">shift</ref>;</highlight></codeline>
+<codeline lineno="55" refid="classtld_1_1_detector_cascade_1add27e1ff17e2fda214d08f74d0c164e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1add27e1ff17e2fda214d08f74d0c164e9" kindref="member">minSize</ref>;</highlight></codeline>
+<codeline lineno="56" refid="classtld_1_1_detector_cascade_1a63af0a8c55ac292b25f2f72b6e734280" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a63af0a8c55ac292b25f2f72b6e734280" kindref="member">numFeatures</ref>;</highlight></codeline>
+<codeline lineno="57" refid="classtld_1_1_detector_cascade_1a2d41ea56f304562878151ae09c34aa8f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a2d41ea56f304562878151ae09c34aa8f" kindref="member">numTrees</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Needed<sp/>for<sp/>init</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="classtld_1_1_detector_cascade_1a593db7c6ab225f17ac02cd9ef5faebd2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a593db7c6ab225f17ac02cd9ef5faebd2" kindref="member">imgWidth</ref>;</highlight></codeline>
+<codeline lineno="61" refid="classtld_1_1_detector_cascade_1a4e9b954d0b95f6e91d479bba9ec6beac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a4e9b954d0b95f6e91d479bba9ec6beac" kindref="member">imgHeight</ref>;</highlight></codeline>
+<codeline lineno="62" refid="classtld_1_1_detector_cascade_1aa47c6463f1ae23868551a4c82c555f24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1aa47c6463f1ae23868551a4c82c555f24" kindref="member">imgWidthStep</ref>;</highlight></codeline>
+<codeline lineno="63" refid="classtld_1_1_detector_cascade_1a1c7a7fddb085fca4577779110637c5c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a1c7a7fddb085fca4577779110637c5c8" kindref="member">objWidth</ref>;</highlight></codeline>
+<codeline lineno="64" refid="classtld_1_1_detector_cascade_1a1186ed695cf6e9f00d180ec92e4aa1ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a1186ed695cf6e9f00d180ec92e4aa1ea" kindref="member">objHeight</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="classtld_1_1_detector_cascade_1a700932efdadfdd218697b56aa7703b4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a700932efdadfdd218697b56aa7703b4b" kindref="member">numWindows</ref>;</highlight></codeline>
+<codeline lineno="67" refid="classtld_1_1_detector_cascade_1a0acc3bf212228a7b3d47b2d795f1a5a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="classtld_1_1_detector_cascade_1a0acc3bf212228a7b3d47b2d795f1a5a4" kindref="member">windows</ref>;</highlight></codeline>
+<codeline lineno="68" refid="classtld_1_1_detector_cascade_1a259b095591f3d09904277ff844d94b0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="classtld_1_1_detector_cascade_1a259b095591f3d09904277ff844d94b0b" kindref="member">windowOffsets</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//State<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="classtld_1_1_detector_cascade_1a4a61cd265a92bce6f8f148db532a1789" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a4a61cd265a92bce6f8f148db532a1789" kindref="member">initialised</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Components<sp/>of<sp/>Detector<sp/>Cascade</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classtld_1_1_detector_cascade_1ad03faad5b05805f5edba330cccfee1f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_foreground_detector" kindref="compound">ForegroundDetector</ref><sp/>*<ref refid="classtld_1_1_detector_cascade_1ad03faad5b05805f5edba330cccfee1f1" kindref="member">foregroundDetector</ref>;</highlight></codeline>
+<codeline lineno="75" refid="classtld_1_1_detector_cascade_1a5d2600fc22f6cc39ef1940457324c5eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_variance_filter" kindref="compound">VarianceFilter</ref><sp/>*<ref refid="classtld_1_1_detector_cascade_1a5d2600fc22f6cc39ef1940457324c5eb" kindref="member">varianceFilter</ref>;</highlight></codeline>
+<codeline lineno="76" refid="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier" kindref="compound">EnsembleClassifier</ref><sp/>*<ref refid="classtld_1_1_detector_cascade_1a818a0be0ff9f76fb42534a056761c163" kindref="member">ensembleClassifier</ref>;</highlight></codeline>
+<codeline lineno="77" refid="classtld_1_1_detector_cascade_1a5a5c292573778fa38a462921c1928e40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_clustering" kindref="compound">Clustering</ref><sp/>*<ref refid="classtld_1_1_detector_cascade_1a5a5c292573778fa38a462921c1928e40" kindref="member">clustering</ref>;</highlight></codeline>
+<codeline lineno="78" refid="classtld_1_1_detector_cascade_1abc9da459b6d66e5a2f2658f52b4dfdc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_n_n_classifier" kindref="compound">NNClassifier</ref><sp/>*<ref refid="classtld_1_1_detector_cascade_1abc9da459b6d66e5a2f2658f52b4dfdc6" kindref="member">nnClassifier</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result" kindref="compound">DetectionResult</ref><sp/>*<ref refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" kindref="member">detectionResult</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" kindref="member">propagateMembers</ref>();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a709b4d4802e4f8391fad8fd1b6f892eb" kindref="member">DetectorCascade</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade_1a1154ee7d1fd731055af1f6b5b697d8ba" kindref="member">~DetectorCascade</ref>();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a98d5393088a53188dcde7d530101534a" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a39760d6c54ddb41785ffd05a7b881d8d" kindref="member">initWindowOffsets</ref>();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a0515043558291c0bfbd5d403315c0334" kindref="member">initWindowsAndScales</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" kindref="member">release</ref>();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a56b148b63e2c592624c90bc7f7f50d68" kindref="member">cleanPreviousData</ref>();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detector_cascade_1a4ec511b5488bd1a1dc241e6dac191165" kindref="member">detect</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat<sp/>&amp;img);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>tld<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DETECTORCASCADE_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectorCascade.h"/>
+  </compounddef>
+</doxygen>

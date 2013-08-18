@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_b_b_predict_8h" kind="file">
+    <compoundname>BBPredict.h</compoundname>
+    <includes local="no">cv.h</includes>
+    <includedby refid="_b_b_predict_8cpp" local="yes">src/libopentld/mftracker/BBPredict.cpp</includedby>
+    <includedby refid="_f_b_track_8cpp" local="yes">src/libopentld/mftracker/FBTrack.cpp</includedby>
+    <incdepgraph>
+      <node id="1362">
+        <label>src/libopentld/mftracker/BBPredict.h</label>
+        <link refid="BBPredict.h"/>
+        <childnode refid="1363" relation="include">
+        </childnode>
+      </node>
+      <node id="1363">
+        <label>cv.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1365">
+        <label>src/libopentld/mftracker/BBPredict.cpp</label>
+        <link refid="_b_b_predict_8cpp"/>
+      </node>
+      <node id="1366">
+        <label>src/libopentld/mftracker/FBTrack.cpp</label>
+        <link refid="_f_b_track_8cpp"/>
+      </node>
+      <node id="1364">
+        <label>src/libopentld/mftracker/BBPredict.h</label>
+        <link refid="BBPredict.h"/>
+        <childnode refid="1365" relation="include">
+        </childnode>
+        <childnode refid="1366" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_b_b_predict_8h_1a0181c4b3c3e424d149a8d89a05c98de7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int predictbb</definition>
+        <argsstring>(float *bb0, CvPoint2D32f *pt0, CvPoint2D32f *pt1, int nPts, float *bb1, float *shift)</argsstring>
+        <name>predictbb</name>
+        <param>
+          <type>float *</type>
+          <declname>bb0</declname>
+        </param>
+        <param>
+          <type>CvPoint2D32f *</type>
+          <declname>pt0</declname>
+        </param>
+        <param>
+          <type>CvPoint2D32f *</type>
+          <declname>pt1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nPts</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>bb1</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>shift</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bb0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The previous BoundingBox. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pt0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Feature points in the previous BoundingBox. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pt1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Feature points of the new BoundingBox. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nPts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of pt0/pt1. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bb1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output, contains predicted BoundingBox. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>shift</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output, contains relative scale change. 1 == no scalechange, experience: if shift == 0 BoundingBox moved completely out of picture (not validated)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Calculates the new (moved and resized) Bounding box. Calculation based on all relative distance changes of all points to every point. Then the Median of the relative Values is used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/BBPredict.h" line="45" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/BBPredict.cpp" bodystart="55" bodyend="119"/>
+        <references refid="_b_b_predict_8cpp_1afa8fbca51344161ecb831f11b5b2c70f" compoundref="_b_b_predict_8cpp" startline="46" endline="49">getBbHeight</references>
+        <references refid="_b_b_predict_8cpp_1a4b3e30827072c6282b201b96074c2bc8" compoundref="_b_b_predict_8cpp" startline="38" endline="41">getBbWidth</references>
+        <references refid="_median_8cpp_1a90a27fb293134af27d1615ff29dd1417" compoundref="_median_8cpp" startline="45" endline="116">getMedianUnmanaged</references>
+        <referencedby refid="_f_b_track_8h_1a2c818794e6fe6aa3f6efdc9c46ffd164" compoundref="_f_b_track_8cpp" startline="45" endline="150">fbtrack</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor">#ifndef<sp/>BBPREDICT_H_</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BBPREDICT_H_</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cv.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_b_b_predict_8cpp_1a0181c4b3c3e424d149a8d89a05c98de7" kindref="member">predictbb</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*bb0,<sp/>CvPoint2D32f<sp/>*pt0,<sp/>CvPoint2D32f<sp/>*pt1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nPts,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*bb1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*shift);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>BBPREDICT_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/BBPredict.h"/>
+  </compounddef>
+</doxygen>

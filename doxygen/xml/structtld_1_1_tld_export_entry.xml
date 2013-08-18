@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="structtld_1_1_tld_export_entry" kind="struct" prot="public">
+    <compoundname>tld::TldExportEntry</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtld_1_1_tld_export_entry_1a8b67c3367255beab5b728d8803c7cb78" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::TldExportEntry::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.cpp" line="369" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.cpp" bodystart="369" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" compoundref="_t_l_d_8cpp" startline="374" endline="463">tld::TLD::writeToFile</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structtld_1_1_tld_export_entry_1aa7f1939c611aeff5ef09cebad2fdea79" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::TldExportEntry::P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.cpp" line="370" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.cpp" bodystart="370" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" compoundref="_t_l_d_8cpp" startline="374" endline="463">tld::TLD::writeToFile</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structtld_1_1_tld_export_entry_1a22f1125d40eecedb725e0f15aa07b01e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::TldExportEntry::N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.cpp" line="371" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.cpp" bodystart="371" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" compoundref="_t_l_d_8cpp" startline="374" endline="463">tld::TLD::writeToFile</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.cpp" line="368" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.cpp" bodystart="367" bodyend="372"/>
+    <listofallmembers>
+      <member refid="structtld_1_1_tld_export_entry_1a8b67c3367255beab5b728d8803c7cb78" prot="public" virt="non-virtual"><scope>tld::TldExportEntry</scope><name>index</name></member>
+      <member refid="structtld_1_1_tld_export_entry_1a22f1125d40eecedb725e0f15aa07b01e" prot="public" virt="non-virtual"><scope>tld::TldExportEntry</scope><name>N</name></member>
+      <member refid="structtld_1_1_tld_export_entry_1aa7f1939c611aeff5ef09cebad2fdea79" prot="public" virt="non-virtual"><scope>tld::TldExportEntry</scope><name>P</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

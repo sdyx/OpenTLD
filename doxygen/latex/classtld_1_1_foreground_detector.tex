@@ -1,0 +1,134 @@
+\hypertarget{classtld_1_1_foreground_detector}{
+\section{tld::ForegroundDetector Class Reference}
+\label{classtld_1_1_foreground_detector}\index{tld::ForegroundDetector@{tld::ForegroundDetector}}
+}
+
+
+{\ttfamily \#include $<$ForegroundDetector.h$>$}
+
+
+
+Collaboration diagram for tld::ForegroundDetector:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{classtld_1_1_foreground_detector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtld_1_1_foreground_detector_afb086f8195e7358d8afb7c24194fc131}{ForegroundDetector} ()
+\item 
+virtual \hyperlink{classtld_1_1_foreground_detector_ade0fb08c42a39ce8a2482b2bacea8c02}{$\sim$ForegroundDetector} ()
+\item 
+void \hyperlink{classtld_1_1_foreground_detector_a0bf609b2ba46774804a929253c225aac}{release} ()
+\item 
+void \hyperlink{classtld_1_1_foreground_detector_a4f34509fa3a36529a39b911ed7693623}{nextIteration} (const cv::Mat \&img)
+\item 
+bool \hyperlink{classtld_1_1_foreground_detector_abe107144cdd28271253a431cc6a22392}{isActive} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classtld_1_1_foreground_detector_a317e60e1eb84270f60e818c0cb896416}{fgThreshold}
+\item 
+int \hyperlink{classtld_1_1_foreground_detector_ac274f17680c4551c9b3198e88b5bcd42}{minBlobSize}
+\item 
+cv::Mat \hyperlink{classtld_1_1_foreground_detector_a03accab9e786b8dcb6c332424ed5dee0}{bgImg}
+\item 
+\hyperlink{classtld_1_1_detection_result}{DetectionResult} $\ast$ \hyperlink{classtld_1_1_foreground_detector_a01d0c37f4019847febbea0f9a121b49b}{detectionResult}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtld_1_1_foreground_detector_afb086f8195e7358d8afb7c24194fc131}{
+\index{tld::ForegroundDetector@{tld::ForegroundDetector}!ForegroundDetector@{ForegroundDetector}}
+\index{ForegroundDetector@{ForegroundDetector}!tld::ForegroundDetector@{tld::ForegroundDetector}}
+\subsubsection[{ForegroundDetector}]{\setlength{\rightskip}{0pt plus 5cm}tld::ForegroundDetector::ForegroundDetector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_foreground_detector_afb086f8195e7358d8afb7c24194fc131}
+\hypertarget{classtld_1_1_foreground_detector_ade0fb08c42a39ce8a2482b2bacea8c02}{
+\index{tld::ForegroundDetector@{tld::ForegroundDetector}!$\sim$ForegroundDetector@{$\sim$ForegroundDetector}}
+\index{$\sim$ForegroundDetector@{$\sim$ForegroundDetector}!tld::ForegroundDetector@{tld::ForegroundDetector}}
+\subsubsection[{$\sim$ForegroundDetector}]{\setlength{\rightskip}{0pt plus 5cm}tld::ForegroundDetector::$\sim$ForegroundDetector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classtld_1_1_foreground_detector_ade0fb08c42a39ce8a2482b2bacea8c02}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtld_1_1_foreground_detector_abe107144cdd28271253a431cc6a22392}{
+\index{tld::ForegroundDetector@{tld::ForegroundDetector}!isActive@{isActive}}
+\index{isActive@{isActive}!tld::ForegroundDetector@{tld::ForegroundDetector}}
+\subsubsection[{isActive}]{\setlength{\rightskip}{0pt plus 5cm}bool tld::ForegroundDetector::isActive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_foreground_detector_abe107144cdd28271253a431cc6a22392}
+\hypertarget{classtld_1_1_foreground_detector_a4f34509fa3a36529a39b911ed7693623}{
+\index{tld::ForegroundDetector@{tld::ForegroundDetector}!nextIteration@{nextIteration}}
+\index{nextIteration@{nextIteration}!tld::ForegroundDetector@{tld::ForegroundDetector}}
+\subsubsection[{nextIteration}]{\setlength{\rightskip}{0pt plus 5cm}void tld::ForegroundDetector::nextIteration (
+\begin{DoxyParamCaption}
+\item[{const cv::Mat \&}]{ img}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_foreground_detector_a4f34509fa3a36529a39b911ed7693623}
+\hypertarget{classtld_1_1_foreground_detector_a0bf609b2ba46774804a929253c225aac}{
+\index{tld::ForegroundDetector@{tld::ForegroundDetector}!release@{release}}
+\index{release@{release}!tld::ForegroundDetector@{tld::ForegroundDetector}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}void tld::ForegroundDetector::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_foreground_detector_a0bf609b2ba46774804a929253c225aac}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_foreground_detector_a0bf609b2ba46774804a929253c225aac_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classtld_1_1_foreground_detector_a03accab9e786b8dcb6c332424ed5dee0}{
+\index{tld::ForegroundDetector@{tld::ForegroundDetector}!bgImg@{bgImg}}
+\index{bgImg@{bgImg}!tld::ForegroundDetector@{tld::ForegroundDetector}}
+\subsubsection[{bgImg}]{\setlength{\rightskip}{0pt plus 5cm}cv::Mat {\bf tld::ForegroundDetector::bgImg}}}
+\label{classtld_1_1_foreground_detector_a03accab9e786b8dcb6c332424ed5dee0}
+\hypertarget{classtld_1_1_foreground_detector_a01d0c37f4019847febbea0f9a121b49b}{
+\index{tld::ForegroundDetector@{tld::ForegroundDetector}!detectionResult@{detectionResult}}
+\index{detectionResult@{detectionResult}!tld::ForegroundDetector@{tld::ForegroundDetector}}
+\subsubsection[{detectionResult}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DetectionResult}$\ast$ {\bf tld::ForegroundDetector::detectionResult}}}
+\label{classtld_1_1_foreground_detector_a01d0c37f4019847febbea0f9a121b49b}
+\hypertarget{classtld_1_1_foreground_detector_a317e60e1eb84270f60e818c0cb896416}{
+\index{tld::ForegroundDetector@{tld::ForegroundDetector}!fgThreshold@{fgThreshold}}
+\index{fgThreshold@{fgThreshold}!tld::ForegroundDetector@{tld::ForegroundDetector}}
+\subsubsection[{fgThreshold}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::ForegroundDetector::fgThreshold}}}
+\label{classtld_1_1_foreground_detector_a317e60e1eb84270f60e818c0cb896416}
+\hypertarget{classtld_1_1_foreground_detector_ac274f17680c4551c9b3198e88b5bcd42}{
+\index{tld::ForegroundDetector@{tld::ForegroundDetector}!minBlobSize@{minBlobSize}}
+\index{minBlobSize@{minBlobSize}!tld::ForegroundDetector@{tld::ForegroundDetector}}
+\subsubsection[{minBlobSize}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::ForegroundDetector::minBlobSize}}}
+\label{classtld_1_1_foreground_detector_ac274f17680c4551c9b3198e88b5bcd42}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/libopentld/tld/\hyperlink{_foreground_detector_8h}{ForegroundDetector.h}\item 
+src/libopentld/tld/\hyperlink{_foreground_detector_8cpp}{ForegroundDetector.cpp}\end{DoxyCompactItemize}

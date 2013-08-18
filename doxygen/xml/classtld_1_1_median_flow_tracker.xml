@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="classtld_1_1_median_flow_tracker" kind="class" prot="public">
+    <compoundname>tld::MedianFlowTracker</compoundname>
+    <includes refid="_median_flow_tracker_8h" local="no">MedianFlowTracker.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtld_1_1_median_flow_tracker_1a254c6f56a5b4567357321acc5a36b844" prot="public" static="no" mutable="no">
+        <type>cv::Rect *</type>
+        <definition>cv::Rect* tld::MedianFlowTracker::trackerBB</definition>
+        <argsstring></argsstring>
+        <name>trackerBB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/MedianFlowTracker.h" line="38" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/MedianFlowTracker.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_median_flow_tracker_1ad5c1599acad1607c20c7d2ca8aacf56c" compoundref="_median_flow_tracker_8cpp" startline="48" endline="52">cleanPreviousData</referencedby>
+        <referencedby refid="classtld_1_1_median_flow_tracker_1a10af34f4759e504cce93662c11714d7e" compoundref="_median_flow_tracker_8cpp" startline="38" endline="41">MedianFlowTracker</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtld_1_1_median_flow_tracker_1a10af34f4759e504cce93662c11714d7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tld::MedianFlowTracker::MedianFlowTracker</definition>
+        <argsstring>()</argsstring>
+        <name>MedianFlowTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/MedianFlowTracker.h" line="40" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/MedianFlowTracker.cpp" bodystart="38" bodyend="41"/>
+        <references refid="classtld_1_1_median_flow_tracker_1a254c6f56a5b4567357321acc5a36b844" compoundref="_median_flow_tracker_8h" startline="38">trackerBB</references>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_median_flow_tracker_1a604feb65f62399c68b84ec5a981e528a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>tld::MedianFlowTracker::~MedianFlowTracker</definition>
+        <argsstring>()</argsstring>
+        <name>~MedianFlowTracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/MedianFlowTracker.h" line="41" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/MedianFlowTracker.cpp" bodystart="43" bodyend="46"/>
+        <references refid="classtld_1_1_median_flow_tracker_1ad5c1599acad1607c20c7d2ca8aacf56c" compoundref="_median_flow_tracker_8cpp" startline="48" endline="52">cleanPreviousData</references>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_median_flow_tracker_1ad5c1599acad1607c20c7d2ca8aacf56c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::MedianFlowTracker::cleanPreviousData</definition>
+        <argsstring>()</argsstring>
+        <name>cleanPreviousData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/MedianFlowTracker.h" line="42" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/MedianFlowTracker.cpp" bodystart="48" bodyend="52"/>
+        <references refid="classtld_1_1_median_flow_tracker_1a254c6f56a5b4567357321acc5a36b844" compoundref="_median_flow_tracker_8h" startline="38">trackerBB</references>
+        <referencedby refid="classtld_1_1_t_l_d_1a42636c4a6fef7de9b71af987151a7f9e" compoundref="_t_l_d_8cpp" startline="64" endline="69">tld::TLD::release</referencedby>
+        <referencedby refid="classtld_1_1_median_flow_tracker_1a604feb65f62399c68b84ec5a981e528a" compoundref="_median_flow_tracker_8cpp" startline="43" endline="46">~MedianFlowTracker</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_median_flow_tracker_1addcc103122a93f098583b8f9cf72e8ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::MedianFlowTracker::track</definition>
+        <argsstring>(const cv::Mat &amp;prevImg, const cv::Mat &amp;currImg, cv::Rect *prevBB)</argsstring>
+        <name>track</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>prevImg</declname>
+        </param>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>currImg</declname>
+        </param>
+        <param>
+          <type>cv::Rect *</type>
+          <declname>prevBB</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/MedianFlowTracker.h" line="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/MedianFlowTracker.h" line="36" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/MedianFlowTracker.h" bodystart="35" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classtld_1_1_median_flow_tracker_1ad5c1599acad1607c20c7d2ca8aacf56c" prot="public" virt="non-virtual"><scope>tld::MedianFlowTracker</scope><name>cleanPreviousData</name></member>
+      <member refid="classtld_1_1_median_flow_tracker_1a10af34f4759e504cce93662c11714d7e" prot="public" virt="non-virtual"><scope>tld::MedianFlowTracker</scope><name>MedianFlowTracker</name></member>
+      <member refid="classtld_1_1_median_flow_tracker_1addcc103122a93f098583b8f9cf72e8ff" prot="public" virt="non-virtual"><scope>tld::MedianFlowTracker</scope><name>track</name></member>
+      <member refid="classtld_1_1_median_flow_tracker_1a254c6f56a5b4567357321acc5a36b844" prot="public" virt="non-virtual"><scope>tld::MedianFlowTracker</scope><name>trackerBB</name></member>
+      <member refid="classtld_1_1_median_flow_tracker_1a604feb65f62399c68b84ec5a981e528a" prot="public" virt="virtual"><scope>tld::MedianFlowTracker</scope><name>~MedianFlowTracker</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

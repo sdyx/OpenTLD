@@ -1,0 +1,125 @@
+\hypertarget{class_c_blob_get_moment}{
+\section{CBlobGetMoment Class Reference}
+\label{class_c_blob_get_moment}\index{CBlobGetMoment@{CBlobGetMoment}}
+}
+
+
+{\ttfamily \#include $<$BlobOperators.h$>$}
+
+
+
+Inherits \hyperlink{class_c_operador_blob}{COperadorBlob}.
+
+
+
+Collaboration diagram for CBlobGetMoment:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{class_c_blob_get_moment__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_blob_get_moment_aca11a36f54e0e9a81937e8aa708d5b35}{CBlobGetMoment} ()
+\item 
+\hyperlink{class_c_blob_get_moment_ac37d370c0a3f1a8190e4a3221df1ae7c}{CBlobGetMoment} (int p, int q)
+\item 
+double \hyperlink{class_c_blob_get_moment_aefebc825f026670fab8517bc0ea052ca}{operator()} (\hyperlink{class_c_blob}{CBlob} \&blob)
+\item 
+const char $\ast$ \hyperlink{class_c_blob_get_moment_a44e020df4120067b870455a6fe6262e6}{GetNom} ()
+\begin{DoxyCompactList}\small\item\em Get operator name. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe per calcular el moment PQ del blob Class to calculate the P,Q moment of a blob 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_blob_get_moment_aca11a36f54e0e9a81937e8aa708d5b35}{
+\index{CBlobGetMoment@{CBlobGetMoment}!CBlobGetMoment@{CBlobGetMoment}}
+\index{CBlobGetMoment@{CBlobGetMoment}!CBlobGetMoment@{CBlobGetMoment}}
+\subsubsection[{CBlobGetMoment}]{\setlength{\rightskip}{0pt plus 5cm}CBlobGetMoment::CBlobGetMoment (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_blob_get_moment_aca11a36f54e0e9a81937e8aa708d5b35}
+Constructor estàndard Standard constructor (gets the 00 moment) \hypertarget{class_c_blob_get_moment_ac37d370c0a3f1a8190e4a3221df1ae7c}{
+\index{CBlobGetMoment@{CBlobGetMoment}!CBlobGetMoment@{CBlobGetMoment}}
+\index{CBlobGetMoment@{CBlobGetMoment}!CBlobGetMoment@{CBlobGetMoment}}
+\subsubsection[{CBlobGetMoment}]{\setlength{\rightskip}{0pt plus 5cm}CBlobGetMoment::CBlobGetMoment (
+\begin{DoxyParamCaption}
+\item[{int}]{ p, }
+\item[{int}]{ q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_blob_get_moment_ac37d370c0a3f1a8190e4a3221df1ae7c}
+Constructor: indiquem el moment p,q a calcular Constructor: gets the PQ moment 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_blob_get_moment_a44e020df4120067b870455a6fe6262e6}{
+\index{CBlobGetMoment@{CBlobGetMoment}!GetNom@{GetNom}}
+\index{GetNom@{GetNom}!CBlobGetMoment@{CBlobGetMoment}}
+\subsubsection[{GetNom}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ CBlobGetMoment::GetNom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_c_blob_get_moment_a44e020df4120067b870455a6fe6262e6}
+
+
+Get operator name. 
+
+
+
+Implements \hyperlink{class_c_operador_blob_a717a19c163a26b45081a2231be24c008}{COperadorBlob}.
+
+\hypertarget{class_c_blob_get_moment_aefebc825f026670fab8517bc0ea052ca}{
+\index{CBlobGetMoment@{CBlobGetMoment}!operator()@{operator()}}
+\index{operator()@{operator()}!CBlobGetMoment@{CBlobGetMoment}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}double CBlobGetMoment::operator() (
+\begin{DoxyParamCaption}
+\item[{{\bf CBlob} \&}]{ blob}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_c_blob_get_moment_aefebc825f026670fab8517bc0ea052ca}
+
+\begin{DoxyItemize}
+\item FUNCTION: Moment
+\item FUNCTIONALITY: Calculates the pq moment of the blob
+\item PARAMETERS:
+\item RESULT:
+\begin{DoxyItemize}
+\item returns the pq moment or 0 if the moment it is not implemented
+\end{DoxyItemize}
+\item RESTRICTIONS:
+\begin{DoxyItemize}
+\item Currently, implemented moments up to 3
+\end{DoxyItemize}
+\item AUTHOR: Ricard Borràs
+\item CREATION DATE: 20-\/07-\/2004.
+\item MODIFICATION: Date. Author. Description. 
+\end{DoxyItemize}
+
+Implements \hyperlink{class_c_operador_blob_a303c4189cc94cafbcbee116bf014e623}{COperadorBlob}.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_get_moment_aefebc825f026670fab8517bc0ea052ca_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/3rdparty/cvblobs/\hyperlink{_blob_operators_8h}{BlobOperators.h}\item 
+src/3rdparty/cvblobs/\hyperlink{_blob_operators_8cpp}{BlobOperators.cpp}\end{DoxyCompactItemize}

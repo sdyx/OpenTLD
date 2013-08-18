@@ -1,0 +1,646 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="classtld_1_1_ensemble_classifier" kind="class" prot="public">
+    <compoundname>tld::EnsembleClassifier</compoundname>
+    <includes refid="_ensemble_classifier_8h" local="no">EnsembleClassifier.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtld_1_1_ensemble_classifier_1a0894da7012fdd72a562dbf78f719bfe9" prot="private" static="no" mutable="no">
+        <type>const unsigned char *</type>
+        <definition>const unsigned char* tld::EnsembleClassifier::img</definition>
+        <argsstring></argsstring>
+        <name>img</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="36" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtld_1_1_ensemble_classifier_1a539d429a773ec9b2b86946fddb39ac52" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::EnsembleClassifier::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="43" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a7ce76942175fecdf2b44be726f1f7a89" compoundref="_ensemble_classifier_8cpp" startline="45" endline="55">EnsembleClassifier</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a42f1f3606d14a7d274f5bb9f4fa5030f" compoundref="_ensemble_classifier_8cpp" startline="206" endline="215">filter</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1ad088404fdea039b774c2eb088e4cfc04" compoundref="_ensemble_classifier_8cpp" startline="236" endline="248">learn</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_ensemble_classifier_1a60e802769e79c833d1484d96bb345b7c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::EnsembleClassifier::numTrees</definition>
+        <argsstring></argsstring>
+        <name>numTrees</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="46" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1abf7e915ff675720293502be0452cb6c2" compoundref="_ensemble_classifier_8cpp" startline="198" endline="204">classifyWindow</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a7ce76942175fecdf2b44be726f1f7a89" compoundref="_ensemble_classifier_8cpp" startline="45" endline="55">EnsembleClassifier</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a3fc444f59e0f23a97f9889e58adaba73" compoundref="_ensemble_classifier_8cpp" startline="89" endline="100">initFeatureLocations</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a92ddef7701b1062b1f4a53e5cfcd79a2" compoundref="_ensemble_classifier_8cpp" startline="105" endline="126">initFeatureOffsets</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1ab342db231d14bbaa892b2664d210e152" compoundref="_ensemble_classifier_8cpp" startline="128" endline="143">initPosteriors</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">tld::DetectorCascade::propagateMembers</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" compoundref="_t_l_d_8cpp" startline="374" endline="463">tld::TLD::writeToFile</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_ensemble_classifier_1a176aba4e90f0b9373d8aedd7c25fa262" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::EnsembleClassifier::numFeatures</definition>
+        <argsstring></argsstring>
+        <name>numFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="47" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a7ce76942175fecdf2b44be726f1f7a89" compoundref="_ensemble_classifier_8cpp" startline="45" endline="55">EnsembleClassifier</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1afb0e8ed03adef91257801bf0e3ca73f7" compoundref="_ensemble_classifier_8cpp" startline="63" endline="70">init</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a3fc444f59e0f23a97f9889e58adaba73" compoundref="_ensemble_classifier_8cpp" startline="89" endline="100">initFeatureLocations</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a92ddef7701b1062b1f4a53e5cfcd79a2" compoundref="_ensemble_classifier_8cpp" startline="105" endline="126">initFeatureOffsets</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">tld::DetectorCascade::propagateMembers</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" compoundref="_t_l_d_8cpp" startline="374" endline="463">tld::TLD::writeToFile</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_ensemble_classifier_1a149e36a3d0d287ee804ec7cf92dc6569" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::EnsembleClassifier::imgWidthStep</definition>
+        <argsstring></argsstring>
+        <name>imgWidthStep</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="49" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a92ddef7701b1062b1f4a53e5cfcd79a2" compoundref="_ensemble_classifier_8cpp" startline="105" endline="126">initFeatureOffsets</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">tld::DetectorCascade::propagateMembers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_ensemble_classifier_1ae10dcd7614a39f9b29b3fbe957889fb9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::EnsembleClassifier::numScales</definition>
+        <argsstring></argsstring>
+        <name>numScales</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="50" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a92ddef7701b1062b1f4a53e5cfcd79a2" compoundref="_ensemble_classifier_8cpp" startline="105" endline="126">initFeatureOffsets</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">tld::DetectorCascade::propagateMembers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_ensemble_classifier_1ae2ea00a933d9c96498ba756a2b4ec6b5" prot="public" static="no" mutable="no">
+        <type>cv::Size *</type>
+        <definition>cv::Size* tld::EnsembleClassifier::scales</definition>
+        <argsstring></argsstring>
+        <name>scales</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="51" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a92ddef7701b1062b1f4a53e5cfcd79a2" compoundref="_ensemble_classifier_8cpp" startline="105" endline="126">initFeatureOffsets</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">tld::DetectorCascade::propagateMembers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_ensemble_classifier_1abc6ed3b991a724b07dfcc25108769e92" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* tld::EnsembleClassifier::windowOffsets</definition>
+        <argsstring></argsstring>
+        <name>windowOffsets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="53" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">tld::DetectorCascade::propagateMembers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_ensemble_classifier_1acf42e105ca1cb616aaf2d8e4d8755c41" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* tld::EnsembleClassifier::featureOffsets</definition>
+        <argsstring></argsstring>
+        <name>featureOffsets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="54" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a92ddef7701b1062b1f4a53e5cfcd79a2" compoundref="_ensemble_classifier_8cpp" startline="105" endline="126">initFeatureOffsets</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a3fd93c80d37f7f115443c2e147ec9967" compoundref="_ensemble_classifier_8cpp" startline="72" endline="84">release</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_ensemble_classifier_1a02deffee640b4106051024d1ae8a55aa" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* tld::EnsembleClassifier::features</definition>
+        <argsstring></argsstring>
+        <name>features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="55" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a3fc444f59e0f23a97f9889e58adaba73" compoundref="_ensemble_classifier_8cpp" startline="89" endline="100">initFeatureLocations</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a92ddef7701b1062b1f4a53e5cfcd79a2" compoundref="_ensemble_classifier_8cpp" startline="105" endline="126">initFeatureOffsets</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a3fd93c80d37f7f115443c2e147ec9967" compoundref="_ensemble_classifier_8cpp" startline="72" endline="84">release</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" compoundref="_t_l_d_8cpp" startline="374" endline="463">tld::TLD::writeToFile</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_ensemble_classifier_1afbfbda1b693525895467fba88a8debe3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::EnsembleClassifier::numIndices</definition>
+        <argsstring></argsstring>
+        <name>numIndices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="57" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1afb0e8ed03adef91257801bf0e3ca73f7" compoundref="_ensemble_classifier_8cpp" startline="63" endline="70">init</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1ab342db231d14bbaa892b2664d210e152" compoundref="_ensemble_classifier_8cpp" startline="128" endline="143">initPosteriors</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1acfc0c9d71c16dfed9750b6aa409afb0c" compoundref="_ensemble_classifier_8cpp" startline="217" endline="222">updatePosterior</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" compoundref="_t_l_d_8cpp" startline="374" endline="463">tld::TLD::writeToFile</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_ensemble_classifier_1a34092918268be97eb1e1f2f0fc7d4254" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* tld::EnsembleClassifier::posteriors</definition>
+        <argsstring></argsstring>
+        <name>posteriors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="59" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1ab342db231d14bbaa892b2664d210e152" compoundref="_ensemble_classifier_8cpp" startline="128" endline="143">initPosteriors</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a3fd93c80d37f7f115443c2e147ec9967" compoundref="_ensemble_classifier_8cpp" startline="72" endline="84">release</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1acfc0c9d71c16dfed9750b6aa409afb0c" compoundref="_ensemble_classifier_8cpp" startline="217" endline="222">updatePosterior</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_ensemble_classifier_1a572549e31f9bfc34c7b464e02aa41397" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* tld::EnsembleClassifier::positives</definition>
+        <argsstring></argsstring>
+        <name>positives</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="60" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1ab342db231d14bbaa892b2664d210e152" compoundref="_ensemble_classifier_8cpp" startline="128" endline="143">initPosteriors</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a3fd93c80d37f7f115443c2e147ec9967" compoundref="_ensemble_classifier_8cpp" startline="72" endline="84">release</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1acfc0c9d71c16dfed9750b6aa409afb0c" compoundref="_ensemble_classifier_8cpp" startline="217" endline="222">updatePosterior</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" compoundref="_t_l_d_8cpp" startline="374" endline="463">tld::TLD::writeToFile</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_ensemble_classifier_1a2de7561eb20a0f0a1b4909d6dfd89d0b" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* tld::EnsembleClassifier::negatives</definition>
+        <argsstring></argsstring>
+        <name>negatives</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="61" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1ab342db231d14bbaa892b2664d210e152" compoundref="_ensemble_classifier_8cpp" startline="128" endline="143">initPosteriors</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a3fd93c80d37f7f115443c2e147ec9967" compoundref="_ensemble_classifier_8cpp" startline="72" endline="84">release</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1acfc0c9d71c16dfed9750b6aa409afb0c" compoundref="_ensemble_classifier_8cpp" startline="217" endline="222">updatePosterior</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" compoundref="_t_l_d_8cpp" startline="374" endline="463">tld::TLD::writeToFile</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_ensemble_classifier_1af57e5de2c583e7f1cf39e6de03159323" prot="public" static="no" mutable="no">
+        <type><ref refid="classtld_1_1_detection_result" kindref="compound">DetectionResult</ref> *</type>
+        <definition>DetectionResult* tld::EnsembleClassifier::detectionResult</definition>
+        <argsstring></argsstring>
+        <name>detectionResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="63" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1abf7e915ff675720293502be0452cb6c2" compoundref="_ensemble_classifier_8cpp" startline="198" endline="204">classifyWindow</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a42f1f3606d14a7d274f5bb9f4fa5030f" compoundref="_ensemble_classifier_8cpp" startline="206" endline="215">filter</referencedby>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">tld::DetectorCascade::propagateMembers</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtld_1_1_ensemble_classifier_1a61bfb5ac45a8ab7f3c36c9c30dc7f927" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float tld::EnsembleClassifier::calcConfidence</definition>
+        <argsstring>(int *featureVector)</argsstring>
+        <name>calcConfidence</name>
+        <param>
+          <type>int *</type>
+          <declname>featureVector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="38" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.cpp" bodystart="186" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_ensemble_classifier_1aae503fd99be0b876d9a5ca75460c2f27" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tld::EnsembleClassifier::calcFernFeature</definition>
+        <argsstring>(int windowIdx, int treeIdx)</argsstring>
+        <name>calcFernFeature</name>
+        <param>
+          <type>int</type>
+          <declname>windowIdx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>treeIdx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="39" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.cpp" bodystart="153" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_ensemble_classifier_1abb535a84ebd8b15aa401a11d94e0a641" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::EnsembleClassifier::calcFeatureVector</definition>
+        <argsstring>(int windowIdx, int *featureVector)</argsstring>
+        <name>calcFeatureVector</name>
+        <param>
+          <type>int</type>
+          <declname>windowIdx</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>featureVector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="40" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.cpp" bodystart="178" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_ensemble_classifier_1a0d7853e4cee2e0220c218f43ae78b5a9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::EnsembleClassifier::updatePosteriors</definition>
+        <argsstring>(int *featureVector, int positive, int amount)</argsstring>
+        <name>updatePosteriors</name>
+        <param>
+          <type>int *</type>
+          <declname>featureVector</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>positive</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="41" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.cpp" bodystart="224" bodyend="234"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtld_1_1_ensemble_classifier_1a7ce76942175fecdf2b44be726f1f7a89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tld::EnsembleClassifier::EnsembleClassifier</definition>
+        <argsstring>()</argsstring>
+        <name>EnsembleClassifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="65" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.cpp" bodystart="45" bodyend="55"/>
+        <references refid="classtld_1_1_ensemble_classifier_1a539d429a773ec9b2b86946fddb39ac52" compoundref="_ensemble_classifier_8h" startline="43">enabled</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a176aba4e90f0b9373d8aedd7c25fa262" compoundref="_ensemble_classifier_8h" startline="47">numFeatures</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a60e802769e79c833d1484d96bb345b7c" compoundref="_ensemble_classifier_8h" startline="46">numTrees</references>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_ensemble_classifier_1a71a3976d9dccf15dcdd6a14826d5ec5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>tld::EnsembleClassifier::~EnsembleClassifier</definition>
+        <argsstring>()</argsstring>
+        <name>~EnsembleClassifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="66" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.cpp" bodystart="57" bodyend="60"/>
+        <references refid="classtld_1_1_ensemble_classifier_1a3fd93c80d37f7f115443c2e147ec9967" compoundref="_ensemble_classifier_8cpp" startline="72" endline="84">release</references>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_ensemble_classifier_1afb0e8ed03adef91257801bf0e3ca73f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::EnsembleClassifier::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="67" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.cpp" bodystart="63" bodyend="70"/>
+        <references refid="classtld_1_1_ensemble_classifier_1a3fc444f59e0f23a97f9889e58adaba73" compoundref="_ensemble_classifier_8cpp" startline="89" endline="100">initFeatureLocations</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a92ddef7701b1062b1f4a53e5cfcd79a2" compoundref="_ensemble_classifier_8cpp" startline="105" endline="126">initFeatureOffsets</references>
+        <references refid="classtld_1_1_ensemble_classifier_1ab342db231d14bbaa892b2664d210e152" compoundref="_ensemble_classifier_8cpp" startline="128" endline="143">initPosteriors</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a176aba4e90f0b9373d8aedd7c25fa262" compoundref="_ensemble_classifier_8h" startline="47">numFeatures</references>
+        <references refid="classtld_1_1_ensemble_classifier_1afbfbda1b693525895467fba88a8debe3" compoundref="_ensemble_classifier_8h" startline="57">numIndices</references>
+        <referencedby refid="classtld_1_1_detector_cascade_1a98d5393088a53188dcde7d530101534a" compoundref="_detector_cascade_8cpp" startline="80" endline="95">tld::DetectorCascade::init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_ensemble_classifier_1a3fc444f59e0f23a97f9889e58adaba73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::EnsembleClassifier::initFeatureLocations</definition>
+        <argsstring>()</argsstring>
+        <name>initFeatureLocations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="68" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.cpp" bodystart="89" bodyend="100"/>
+        <references refid="classtld_1_1_ensemble_classifier_1a02deffee640b4106051024d1ae8a55aa" compoundref="_ensemble_classifier_8h" startline="55">features</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a176aba4e90f0b9373d8aedd7c25fa262" compoundref="_ensemble_classifier_8h" startline="47">numFeatures</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a60e802769e79c833d1484d96bb345b7c" compoundref="_ensemble_classifier_8h" startline="46">numTrees</references>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1afb0e8ed03adef91257801bf0e3ca73f7" compoundref="_ensemble_classifier_8cpp" startline="63" endline="70">init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_ensemble_classifier_1a92ddef7701b1062b1f4a53e5cfcd79a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::EnsembleClassifier::initFeatureOffsets</definition>
+        <argsstring>()</argsstring>
+        <name>initFeatureOffsets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="69" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.cpp" bodystart="105" bodyend="126"/>
+        <references refid="classtld_1_1_ensemble_classifier_1acf42e105ca1cb616aaf2d8e4d8755c41" compoundref="_ensemble_classifier_8h" startline="54">featureOffsets</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a02deffee640b4106051024d1ae8a55aa" compoundref="_ensemble_classifier_8h" startline="55">features</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a149e36a3d0d287ee804ec7cf92dc6569" compoundref="_ensemble_classifier_8h" startline="49">imgWidthStep</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a176aba4e90f0b9373d8aedd7c25fa262" compoundref="_ensemble_classifier_8h" startline="47">numFeatures</references>
+        <references refid="classtld_1_1_ensemble_classifier_1ae10dcd7614a39f9b29b3fbe957889fb9" compoundref="_ensemble_classifier_8h" startline="50">numScales</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a60e802769e79c833d1484d96bb345b7c" compoundref="_ensemble_classifier_8h" startline="46">numTrees</references>
+        <references refid="classtld_1_1_ensemble_classifier_1ae2ea00a933d9c96498ba756a2b4ec6b5" compoundref="_ensemble_classifier_8h" startline="51">scales</references>
+        <references refid="_ensemble_classifier_8cpp_1ae5effd9bd728422d5e50bf875a609421" compoundref="_ensemble_classifier_8cpp" startline="43">sub2idx</references>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1afb0e8ed03adef91257801bf0e3ca73f7" compoundref="_ensemble_classifier_8cpp" startline="63" endline="70">init</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_ensemble_classifier_1ab342db231d14bbaa892b2664d210e152" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::EnsembleClassifier::initPosteriors</definition>
+        <argsstring>()</argsstring>
+        <name>initPosteriors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="70" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.cpp" bodystart="128" bodyend="143"/>
+        <references refid="classtld_1_1_ensemble_classifier_1a2de7561eb20a0f0a1b4909d6dfd89d0b" compoundref="_ensemble_classifier_8h" startline="61">negatives</references>
+        <references refid="classtld_1_1_ensemble_classifier_1afbfbda1b693525895467fba88a8debe3" compoundref="_ensemble_classifier_8h" startline="57">numIndices</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a60e802769e79c833d1484d96bb345b7c" compoundref="_ensemble_classifier_8h" startline="46">numTrees</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a572549e31f9bfc34c7b464e02aa41397" compoundref="_ensemble_classifier_8h" startline="60">positives</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a34092918268be97eb1e1f2f0fc7d4254" compoundref="_ensemble_classifier_8h" startline="59">posteriors</references>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1afb0e8ed03adef91257801bf0e3ca73f7" compoundref="_ensemble_classifier_8cpp" startline="63" endline="70">init</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_ensemble_classifier_1a3fd93c80d37f7f115443c2e147ec9967" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::EnsembleClassifier::release</definition>
+        <argsstring>()</argsstring>
+        <name>release</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="71" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.cpp" bodystart="72" bodyend="84"/>
+        <references refid="classtld_1_1_ensemble_classifier_1acf42e105ca1cb616aaf2d8e4d8755c41" compoundref="_ensemble_classifier_8h" startline="54">featureOffsets</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a02deffee640b4106051024d1ae8a55aa" compoundref="_ensemble_classifier_8h" startline="55">features</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a2de7561eb20a0f0a1b4909d6dfd89d0b" compoundref="_ensemble_classifier_8h" startline="61">negatives</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a572549e31f9bfc34c7b464e02aa41397" compoundref="_ensemble_classifier_8h" startline="60">positives</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a34092918268be97eb1e1f2f0fc7d4254" compoundref="_ensemble_classifier_8h" startline="59">posteriors</references>
+        <referencedby refid="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" compoundref="_detector_cascade_8cpp" startline="122" endline="151">tld::DetectorCascade::release</referencedby>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a71a3976d9dccf15dcdd6a14826d5ec5a" compoundref="_ensemble_classifier_8cpp" startline="57" endline="60">~EnsembleClassifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_ensemble_classifier_1a7871296c03de06293ebd3dc29ecab5de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::EnsembleClassifier::nextIteration</definition>
+        <argsstring>(const cv::Mat &amp;img)</argsstring>
+        <name>nextIteration</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>img</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_ensemble_classifier_1abf7e915ff675720293502be0452cb6c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::EnsembleClassifier::classifyWindow</definition>
+        <argsstring>(int windowIdx)</argsstring>
+        <name>classifyWindow</name>
+        <param>
+          <type>int</type>
+          <declname>windowIdx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="73" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.cpp" bodystart="198" bodyend="204"/>
+        <references refid="classtld_1_1_ensemble_classifier_1af57e5de2c583e7f1cf39e6de03159323" compoundref="_ensemble_classifier_8h" startline="63">detectionResult</references>
+        <references refid="classtld_1_1_detection_result_1a2650bfbdb106c7dd9b774cfccf5fdb25" compoundref="_detection_result_8h" startline="44">tld::DetectionResult::featureVectors</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a60e802769e79c833d1484d96bb345b7c" compoundref="_ensemble_classifier_8h" startline="46">numTrees</references>
+        <references refid="classtld_1_1_detection_result_1abe6b7a8cc4478cce6351207939e96333" compoundref="_detection_result_8h" startline="42">tld::DetectionResult::posteriors</references>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a42f1f3606d14a7d274f5bb9f4fa5030f" compoundref="_ensemble_classifier_8cpp" startline="206" endline="215">filter</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_ensemble_classifier_1acfc0c9d71c16dfed9750b6aa409afb0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::EnsembleClassifier::updatePosterior</definition>
+        <argsstring>(int treeIdx, int idx, int positive, int amount)</argsstring>
+        <name>updatePosterior</name>
+        <param>
+          <type>int</type>
+          <declname>treeIdx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>positive</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="74" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.cpp" bodystart="217" bodyend="222"/>
+        <references refid="classtld_1_1_ensemble_classifier_1a2de7561eb20a0f0a1b4909d6dfd89d0b" compoundref="_ensemble_classifier_8h" startline="61">negatives</references>
+        <references refid="classtld_1_1_ensemble_classifier_1afbfbda1b693525895467fba88a8debe3" compoundref="_ensemble_classifier_8h" startline="57">numIndices</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a572549e31f9bfc34c7b464e02aa41397" compoundref="_ensemble_classifier_8h" startline="60">positives</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a34092918268be97eb1e1f2f0fc7d4254" compoundref="_ensemble_classifier_8h" startline="59">posteriors</references>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_ensemble_classifier_1ad088404fdea039b774c2eb088e4cfc04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::EnsembleClassifier::learn</definition>
+        <argsstring>(int *boundary, int positive, int *featureVector)</argsstring>
+        <name>learn</name>
+        <param>
+          <type>int *</type>
+          <declname>boundary</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>positive</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>featureVector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="75" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.cpp" bodystart="236" bodyend="248"/>
+        <references refid="classtld_1_1_ensemble_classifier_1a539d429a773ec9b2b86946fddb39ac52" compoundref="_ensemble_classifier_8h" startline="43">enabled</references>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_ensemble_classifier_1a42f1f3606d14a7d274f5bb9f4fa5030f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tld::EnsembleClassifier::filter</definition>
+        <argsstring>(int i)</argsstring>
+        <name>filter</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="76" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.cpp" bodystart="206" bodyend="215"/>
+        <references refid="classtld_1_1_ensemble_classifier_1abf7e915ff675720293502be0452cb6c2" compoundref="_ensemble_classifier_8cpp" startline="198" endline="204">classifyWindow</references>
+        <references refid="classtld_1_1_ensemble_classifier_1af57e5de2c583e7f1cf39e6de03159323" compoundref="_ensemble_classifier_8h" startline="63">detectionResult</references>
+        <references refid="classtld_1_1_ensemble_classifier_1a539d429a773ec9b2b86946fddb39ac52" compoundref="_ensemble_classifier_8h" startline="43">enabled</references>
+        <references refid="classtld_1_1_detection_result_1abe6b7a8cc4478cce6351207939e96333" compoundref="_detection_result_8h" startline="42">tld::DetectionResult::posteriors</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="470">
+        <label>tld::EnsembleClassifier</label>
+        <link refid="classtld_1_1_ensemble_classifier"/>
+        <childnode refid="471" relation="usage">
+          <edgelabel>detectionResult</edgelabel>
+        </childnode>
+      </node>
+      <node id="471">
+        <label>tld::DetectionResult</label>
+        <link refid="classtld_1_1_detection_result"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" line="35" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.h" bodystart="34" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classtld_1_1_ensemble_classifier_1a61bfb5ac45a8ab7f3c36c9c30dc7f927" prot="private" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>calcConfidence</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1abb535a84ebd8b15aa401a11d94e0a641" prot="private" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>calcFeatureVector</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1aae503fd99be0b876d9a5ca75460c2f27" prot="private" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>calcFernFeature</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1abf7e915ff675720293502be0452cb6c2" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>classifyWindow</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1af57e5de2c583e7f1cf39e6de03159323" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>detectionResult</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1a539d429a773ec9b2b86946fddb39ac52" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>enabled</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1a7ce76942175fecdf2b44be726f1f7a89" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>EnsembleClassifier</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1acf42e105ca1cb616aaf2d8e4d8755c41" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>featureOffsets</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1a02deffee640b4106051024d1ae8a55aa" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>features</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1a42f1f3606d14a7d274f5bb9f4fa5030f" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>filter</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1a0894da7012fdd72a562dbf78f719bfe9" prot="private" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>img</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1a149e36a3d0d287ee804ec7cf92dc6569" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>imgWidthStep</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1afb0e8ed03adef91257801bf0e3ca73f7" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>init</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1a3fc444f59e0f23a97f9889e58adaba73" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>initFeatureLocations</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1a92ddef7701b1062b1f4a53e5cfcd79a2" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>initFeatureOffsets</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1ab342db231d14bbaa892b2664d210e152" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>initPosteriors</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1ad088404fdea039b774c2eb088e4cfc04" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>learn</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1a2de7561eb20a0f0a1b4909d6dfd89d0b" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>negatives</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1a7871296c03de06293ebd3dc29ecab5de" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>nextIteration</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1a176aba4e90f0b9373d8aedd7c25fa262" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>numFeatures</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1afbfbda1b693525895467fba88a8debe3" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>numIndices</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1ae10dcd7614a39f9b29b3fbe957889fb9" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>numScales</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1a60e802769e79c833d1484d96bb345b7c" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>numTrees</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1a572549e31f9bfc34c7b464e02aa41397" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>positives</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1a34092918268be97eb1e1f2f0fc7d4254" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>posteriors</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1a3fd93c80d37f7f115443c2e147ec9967" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>release</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1ae2ea00a933d9c96498ba756a2b4ec6b5" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>scales</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1acfc0c9d71c16dfed9750b6aa409afb0c" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>updatePosterior</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1a0d7853e4cee2e0220c218f43ae78b5a9" prot="private" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>updatePosteriors</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1abc6ed3b991a724b07dfcc25108769e92" prot="public" virt="non-virtual"><scope>tld::EnsembleClassifier</scope><name>windowOffsets</name></member>
+      <member refid="classtld_1_1_ensemble_classifier_1a71a3976d9dccf15dcdd6a14826d5ec5a" prot="public" virt="virtual"><scope>tld::EnsembleClassifier</scope><name>~EnsembleClassifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

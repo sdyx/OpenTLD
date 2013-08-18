@@ -1,0 +1,93 @@
+\hypertarget{class_c_blob_get_roughness}{
+\section{CBlobGetRoughness Class Reference}
+\label{class_c_blob_get_roughness}\index{CBlobGetRoughness@{CBlobGetRoughness}}
+}
+
+
+{\ttfamily \#include $<$BlobOperators.h$>$}
+
+
+
+Inherits \hyperlink{class_c_operador_blob}{COperadorBlob}.
+
+
+
+Collaboration diagram for CBlobGetRoughness:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{class_c_blob_get_roughness__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_c_blob_get_roughness_a7b63d1da4133b0abf4a4af9450c0526c}{operator()} (\hyperlink{class_c_blob}{CBlob} \&blob)
+\item 
+const char $\ast$ \hyperlink{class_c_blob_get_roughness_a3acea138bb559faa976c9311a698b515}{GetNom} ()
+\begin{DoxyCompactList}\small\item\em Get operator name. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe per calcular la rugositat d'un blob Class to calculate the roughness of the blob 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_blob_get_roughness_a3acea138bb559faa976c9311a698b515}{
+\index{CBlobGetRoughness@{CBlobGetRoughness}!GetNom@{GetNom}}
+\index{GetNom@{GetNom}!CBlobGetRoughness@{CBlobGetRoughness}}
+\subsubsection[{GetNom}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ CBlobGetRoughness::GetNom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_c_blob_get_roughness_a3acea138bb559faa976c9311a698b515}
+
+
+Get operator name. 
+
+
+
+Implements \hyperlink{class_c_operador_blob_a717a19c163a26b45081a2231be24c008}{COperadorBlob}.
+
+\hypertarget{class_c_blob_get_roughness_a7b63d1da4133b0abf4a4af9450c0526c}{
+\index{CBlobGetRoughness@{CBlobGetRoughness}!operator()@{operator()}}
+\index{operator()@{operator()}!CBlobGetRoughness@{CBlobGetRoughness}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}double CBlobGetRoughness::operator() (
+\begin{DoxyParamCaption}
+\item[{{\bf CBlob} \&}]{ blob}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_c_blob_get_roughness_a7b63d1da4133b0abf4a4af9450c0526c}
+Retorna la rugositat del blob
+\begin{DoxyItemize}
+\item FUNCTION: \hyperlink{class_c_blob_get_roughness}{CBlobGetRoughness}
+\item FUNCTIONALITY: Calculates the roughness of the blob ( ratio between perimeter and convex hull perimeter)
+\item PARAMETERS:
+\item RESULT:
+\item RESTRICTIONS:
+\item AUTHOR: Ricard Borràs
+\item CREATION DATE: 25-\/05-\/2005.
+\item MODIFICATION: Date. Author. Description. 
+\end{DoxyItemize}
+
+Implements \hyperlink{class_c_operador_blob_a303c4189cc94cafbcbee116bf014e623}{COperadorBlob}.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_get_roughness_a7b63d1da4133b0abf4a4af9450c0526c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/3rdparty/cvblobs/\hyperlink{_blob_operators_8h}{BlobOperators.h}\item 
+src/3rdparty/cvblobs/\hyperlink{_blob_operators_8cpp}{BlobOperators.cpp}\end{DoxyCompactItemize}

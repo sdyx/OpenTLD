@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_f_b_track_8cpp" kind="file">
+    <compoundname>FBTrack.cpp</compoundname>
+    <includes refid="_f_b_track_8h" local="yes">FBTrack.h</includes>
+    <includes local="no">cstdio</includes>
+    <includes refid="_b_b_8h" local="yes">BB.h</includes>
+    <includes refid="_b_b_predict_8h" local="yes">BBPredict.h</includes>
+    <includes refid="_median_8h" local="yes">Median.h</includes>
+    <includes refid="_lk_8h" local="yes">Lk.h</includes>
+    <incdepgraph>
+      <node id="1367">
+        <label>src/libopentld/mftracker/FBTrack.cpp</label>
+        <link refid="FBTrack.cpp"/>
+        <childnode refid="1368" relation="include">
+        </childnode>
+        <childnode refid="1370" relation="include">
+        </childnode>
+        <childnode refid="1371" relation="include">
+        </childnode>
+        <childnode refid="1372" relation="include">
+        </childnode>
+        <childnode refid="1373" relation="include">
+        </childnode>
+        <childnode refid="1374" relation="include">
+        </childnode>
+      </node>
+      <node id="1374">
+        <label>Lk.h</label>
+        <link refid="_lk_8h"/>
+        <childnode refid="1369" relation="include">
+        </childnode>
+      </node>
+      <node id="1371">
+        <label>BB.h</label>
+        <link refid="_b_b_8h"/>
+      </node>
+      <node id="1372">
+        <label>BBPredict.h</label>
+        <link refid="_b_b_predict_8h"/>
+        <childnode refid="1369" relation="include">
+        </childnode>
+      </node>
+      <node id="1370">
+        <label>cstdio</label>
+      </node>
+      <node id="1368">
+        <label>FBTrack.h</label>
+        <link refid="_f_b_track_8h"/>
+        <childnode refid="1369" relation="include">
+        </childnode>
+      </node>
+      <node id="1369">
+        <label>cv.h</label>
+      </node>
+      <node id="1373">
+        <label>Median.h</label>
+        <link refid="_median_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_f_b_track_8cpp_1a2c818794e6fe6aa3f6efdc9c46ffd164" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int fbtrack</definition>
+        <argsstring>(IplImage *imgI, IplImage *imgJ, float *bb, float *bbnew, float *scaleshift)</argsstring>
+        <name>fbtrack</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>imgI</declname>
+        </param>
+        <param>
+          <type>IplImage *</type>
+          <declname>imgJ</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>bb</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>bbnew</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>scaleshift</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the bounding box of an Object in a following Image. Imgs aren&apos;t changed. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>imgI</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Image contain Object with known BoundingBox </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>imgJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Following Image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bounding box of object to track in imgI. Format x1,y1,x2,y2 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scaleshift</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>returns relative scale change of bb </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/FBTrack.cpp" line="47" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/FBTrack.cpp" bodystart="45" bodyend="150"/>
+        <references refid="_b_b_8cpp_1a2ef4a63d6f593c4477ece315fe7d1ae4" compoundref="_b_b_8cpp" startline="42" endline="142">getFilledBBPoints</references>
+        <references refid="_median_8cpp_1a6c78c19fafa7ef19523fb62d09086f30" compoundref="_median_8cpp" startline="123" endline="136">getMedian</references>
+        <references refid="_lk_8cpp_1a72f8af92e33c2f2c05d9d0b1ecbbc3c6" compoundref="_lk_8cpp" startline="116" endline="135">initImgs</references>
+        <references refid="_b_b_predict_8cpp_1a0181c4b3c3e424d149a8d89a05c98de7" compoundref="_b_b_predict_8cpp" startline="55" endline="119">predictbb</references>
+        <references refid="_lk_8cpp_1acaf626622b93b98f39c91967ccc26588" compoundref="_lk_8cpp" startline="162" endline="265">trackLK</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_f_b_track_8h" kindref="compound">FBTrack.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdio&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_b_b_8h" kindref="compound">BB.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_b_b_predict_8h" kindref="compound">BBPredict.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_median_8h" kindref="compound">Median.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_lk_8h" kindref="compound">Lk.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="_f_b_track_8h_1a2c818794e6fe6aa3f6efdc9c46ffd164" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_f_b_track_8cpp_1a2c818794e6fe6aa3f6efdc9c46ffd164" kindref="member">fbtrack</ref>(IplImage<sp/>*imgI,<sp/>IplImage<sp/>*imgJ,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*bb,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*bbnew,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*scaleshift)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>level<sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numM<sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numN<sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nPoints<sp/>=<sp/>numM<sp/>*<sp/>numN;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sizePointsArray<sp/>=<sp/>nPoints<sp/>*<sp/>2;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>fb[nPoints];</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ncc[nPoints];</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>status[nPoints];</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>pt[sizePointsArray];</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ptTracked[sizePointsArray];</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nlkPoints;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>CvPoint2D32f<sp/>*startPoints;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>CvPoint2D32f<sp/>*targetPoints;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*fbLkCleaned;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*nccLkCleaned;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>M;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nRealPoints;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>medFb;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>medNcc;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nAfterFbUsage;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_b_b_8cpp_1a2ef4a63d6f593c4477ece315fe7d1ae4" kindref="member">getFilledBBPoints</ref>(bb,<sp/>numM,<sp/>numN,<sp/>5,<sp/>pt);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//getFilledBBPoints(bb,<sp/>numM,<sp/>numN,<sp/>5,<sp/>&amp;ptTracked);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(ptTracked,<sp/>pt,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>*<sp/>sizePointsArray);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_lk_8cpp_1a72f8af92e33c2f2c05d9d0b1ecbbc3c6" kindref="member">initImgs</ref>();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_lk_8cpp_1acaf626622b93b98f39c91967ccc26588" kindref="member">trackLK</ref>(imgI,<sp/>imgJ,<sp/>pt,<sp/>nPoints,<sp/>ptTracked,<sp/>nPoints,<sp/>level,<sp/>fb,<sp/>ncc,<sp/>status);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_lk_8cpp_1a72f8af92e33c2f2c05d9d0b1ecbbc3c6" kindref="member">initImgs</ref>();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>char*<sp/>status<sp/>=<sp/>*statusP;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>nlkPoints<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>nPoints;<sp/>i++)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nlkPoints<sp/>+=<sp/>status[i];</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>startPoints<sp/>=<sp/>(CvPoint2D32f<sp/>*)<sp/>malloc(nlkPoints<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(CvPoint2D32f));</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>targetPoints<sp/>=<sp/>(CvPoint2D32f<sp/>*)<sp/>malloc(nlkPoints<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(CvPoint2D32f));</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>fbLkCleaned<sp/>=<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*)<sp/>malloc(nlkPoints<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>nccLkCleaned<sp/>=<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*)<sp/>malloc(nlkPoints<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>M<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>nRealPoints<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>nPoints;<sp/>i++)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO:handle<sp/>Missing<sp/>Points</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//or<sp/>status[i]==0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ptTracked[M<sp/>*<sp/>i]<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>startPoints[nRealPoints].x<sp/>=<sp/>pt[2<sp/>*<sp/>i];</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>startPoints[nRealPoints].y<sp/>=<sp/>pt[2<sp/>*<sp/>i<sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>targetPoints[nRealPoints].x<sp/>=<sp/>ptTracked[2<sp/>*<sp/>i];</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>targetPoints[nRealPoints].y<sp/>=<sp/>ptTracked[2<sp/>*<sp/>i<sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fbLkCleaned[nRealPoints]<sp/>=<sp/>fb[i];</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nccLkCleaned[nRealPoints]<sp/>=<sp/>ncc[i];</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nRealPoints++;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//assert<sp/>nRealPoints==nlkPoints</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>medFb<sp/>=<sp/><ref refid="_median_8cpp_1a6c78c19fafa7ef19523fb62d09086f30" kindref="member">getMedian</ref>(fbLkCleaned,<sp/>nlkPoints);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>medNcc<sp/>=<sp/><ref refid="_median_8cpp_1a6c78c19fafa7ef19523fb62d09086f30" kindref="member">getMedian</ref>(nccLkCleaned,<sp/>nlkPoints);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>printf(&quot;medianfb:<sp/>%f\nmedianncc:<sp/>%f\n&quot;,<sp/>medFb,<sp/>medNcc);</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>printf(&quot;Number<sp/>of<sp/>points<sp/>after<sp/>lk:<sp/>%d\n&quot;,<sp/>nlkPoints);*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>nAfterFbUsage<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>nlkPoints;<sp/>i++)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((fbLkCleaned[i]<sp/>&lt;=<sp/>medFb)<sp/>&amp;<sp/>(nccLkCleaned[i]<sp/>&gt;=<sp/>medNcc))</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>startPoints[nAfterFbUsage]<sp/>=<sp/>startPoints[i];</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>targetPoints[nAfterFbUsage]<sp/>=<sp/>targetPoints[i];</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nAfterFbUsage++;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*printf(&quot;Number<sp/>of<sp/>points<sp/>after<sp/>fb<sp/>correction:<sp/>%d\n&quot;,<sp/>nAfterFbUsage);*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>showIplImage(IMGS[1]);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>show<sp/>&quot;OpticalFlow&quot;<sp/>fb<sp/>filtered.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>drawLinesCvPoint2D32f(imgI,<sp/>startPoints,<sp/>nRealPoints,<sp/>targetPoints,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>nRealPoints);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>showIplImage(imgI);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_b_b_predict_8cpp_1a0181c4b3c3e424d149a8d89a05c98de7" kindref="member">predictbb</ref>(bb,<sp/>startPoints,<sp/>targetPoints,<sp/>nAfterFbUsage,<sp/>bbnew,<sp/>scaleshift);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*printf(&quot;bbnew:<sp/>%f,%f,%f,%f\n&quot;,<sp/>bbnew[0],<sp/>bbnew[1],<sp/>bbnew[2],<sp/>bbnew[3]);</highlight></codeline>
+<codeline lineno="138"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>printf(&quot;relative<sp/>scale:<sp/>%f<sp/>\n&quot;,<sp/>scaleshift[0]);*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//show<sp/>picture<sp/>with<sp/>tracked<sp/>bb</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>drawRectFromBB(imgJ,<sp/>bbnew);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>showIplImage(imgJ);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>free(startPoints);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>free(targetPoints);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>free(fbLkCleaned);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>free(nccLkCleaned);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(medFb<sp/>&gt;<sp/>10)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/mftracker/FBTrack.cpp"/>
+  </compounddef>
+</doxygen>

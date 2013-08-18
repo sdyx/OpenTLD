@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="structstrbuf__t" kind="struct" prot="public">
+    <compoundname>strbuf_t</compoundname>
+    <includes refid="strbuf_8h" local="no">strbuf.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structstrbuf__t_1ac33d87e4a1e65b81c34728c08c58e225" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* strbuf_t::string</definition>
+        <argsstring></argsstring>
+        <name>string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/strbuf.h" line="31" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/strbuf.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="strbuf_8h_1a7a0ae92a51caf3d76c4e0bbd15b764f9" compoundref="strbuf_8c" startline="41" endline="55">strbuf_append</referencedby>
+        <referencedby refid="strbuf_8h_1afd2cb5519e41bc819733aae836c7a0f3" compoundref="strbuf_8c" startline="32" endline="37">strbuf_release</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structstrbuf__t_1ae6fc3758286e761d9c7873b489786a89" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t strbuf_t::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/strbuf.h" line="32" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/strbuf.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="strbuf_8h_1a7a0ae92a51caf3d76c4e0bbd15b764f9" compoundref="strbuf_8c" startline="41" endline="55">strbuf_append</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structstrbuf__t_1af532e798544a7dab19767406c6504649" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t strbuf_t::capacity</definition>
+        <argsstring></argsstring>
+        <name>capacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/strbuf.h" line="33" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/strbuf.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="strbuf_8h_1a7a0ae92a51caf3d76c4e0bbd15b764f9" compoundref="strbuf_8c" startline="41" endline="55">strbuf_append</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/strbuf.h" line="30" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/strbuf.h" bodystart="29" bodyend="34"/>
+    <listofallmembers>
+      <member refid="structstrbuf__t_1af532e798544a7dab19767406c6504649" prot="public" virt="non-virtual"><scope>strbuf_t</scope><name>capacity</name></member>
+      <member refid="structstrbuf__t_1ae6fc3758286e761d9c7873b489786a89" prot="public" virt="non-virtual"><scope>strbuf_t</scope><name>length</name></member>
+      <member refid="structstrbuf__t_1ac33d87e4a1e65b81c34728c08c58e225" prot="public" virt="non-virtual"><scope>strbuf_t</scope><name>string</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

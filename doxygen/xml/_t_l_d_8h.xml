@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_t_l_d_8h" kind="file">
+    <compoundname>TLD.h</compoundname>
+    <includes local="no">cv.h</includes>
+    <includes refid="_median_flow_tracker_8h" local="yes">MedianFlowTracker.h</includes>
+    <includes refid="_detector_cascade_8h" local="yes">DetectorCascade.h</includes>
+    <includedby refid="_t_l_d_8cpp" local="yes">src/libopentld/tld/TLD.cpp</includedby>
+    <includedby refid="_main_8h" local="yes">src/opentld/main/Main.h</includedby>
+    <incdepgraph>
+      <node id="1704">
+        <label>DetectorCascade.h</label>
+        <link refid="_detector_cascade_8h"/>
+        <childnode refid="1705" relation="include">
+        </childnode>
+        <childnode refid="1707" relation="include">
+        </childnode>
+        <childnode refid="1708" relation="include">
+        </childnode>
+        <childnode refid="1710" relation="include">
+        </childnode>
+        <childnode refid="1711" relation="include">
+        </childnode>
+        <childnode refid="1712" relation="include">
+        </childnode>
+      </node>
+      <node id="1710">
+        <label>EnsembleClassifier.h</label>
+        <link refid="_ensemble_classifier_8h"/>
+        <childnode refid="1702" relation="include">
+        </childnode>
+      </node>
+      <node id="1712">
+        <label>NNClassifier.h</label>
+        <link refid="_n_n_classifier_8h"/>
+        <childnode refid="1706" relation="include">
+        </childnode>
+        <childnode refid="1702" relation="include">
+        </childnode>
+        <childnode refid="1713" relation="include">
+        </childnode>
+        <childnode refid="1705" relation="include">
+        </childnode>
+      </node>
+      <node id="1708">
+        <label>VarianceFilter.h</label>
+        <link refid="_variance_filter_8h"/>
+        <childnode refid="1702" relation="include">
+        </childnode>
+        <childnode refid="1709" relation="include">
+        </childnode>
+        <childnode refid="1705" relation="include">
+        </childnode>
+      </node>
+      <node id="1713">
+        <label>NormalizedPatch.h</label>
+        <link refid="_normalized_patch_8h"/>
+      </node>
+      <node id="1709">
+        <label>IntegralImage.h</label>
+        <link refid="_integral_image_8h"/>
+        <childnode refid="1702" relation="include">
+        </childnode>
+      </node>
+      <node id="1711">
+        <label>Clustering.h</label>
+        <link refid="_clustering_8h"/>
+        <childnode refid="1706" relation="include">
+        </childnode>
+        <childnode refid="1702" relation="include">
+        </childnode>
+        <childnode refid="1705" relation="include">
+        </childnode>
+      </node>
+      <node id="1707">
+        <label>ForegroundDetector.h</label>
+        <link refid="_foreground_detector_8h"/>
+        <childnode refid="1706" relation="include">
+        </childnode>
+        <childnode refid="1702" relation="include">
+        </childnode>
+        <childnode refid="1705" relation="include">
+        </childnode>
+      </node>
+      <node id="1706">
+        <label>vector</label>
+      </node>
+      <node id="1702">
+        <label>cv.h</label>
+      </node>
+      <node id="1701">
+        <label>src/libopentld/tld/TLD.h</label>
+        <link refid="TLD.h"/>
+        <childnode refid="1702" relation="include">
+        </childnode>
+        <childnode refid="1703" relation="include">
+        </childnode>
+        <childnode refid="1704" relation="include">
+        </childnode>
+      </node>
+      <node id="1703">
+        <label>MedianFlowTracker.h</label>
+        <link refid="_median_flow_tracker_8h"/>
+        <childnode refid="1702" relation="include">
+        </childnode>
+      </node>
+      <node id="1705">
+        <label>DetectionResult.h</label>
+        <link refid="_detection_result_8h"/>
+        <childnode refid="1706" relation="include">
+        </childnode>
+        <childnode refid="1702" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1716">
+        <label>src/opentld/main/Main.h</label>
+        <link refid="_main_8h"/>
+        <childnode refid="1717" relation="include">
+        </childnode>
+        <childnode refid="1718" relation="include">
+        </childnode>
+        <childnode refid="1722" relation="include">
+        </childnode>
+        <childnode refid="1719" relation="include">
+        </childnode>
+        <childnode refid="1720" relation="include">
+        </childnode>
+        <childnode refid="1721" relation="include">
+        </childnode>
+      </node>
+      <node id="1717">
+        <label>src/opentld/main/Config.h</label>
+        <link refid="_config_8h"/>
+        <childnode refid="1718" relation="include">
+        </childnode>
+        <childnode refid="1719" relation="include">
+        </childnode>
+        <childnode refid="1720" relation="include">
+        </childnode>
+        <childnode refid="1721" relation="include">
+        </childnode>
+      </node>
+      <node id="1722">
+        <label>src/opentld/main/Gui.cpp</label>
+        <link refid="_gui_8cpp"/>
+      </node>
+      <node id="1719">
+        <label>src/opentld/main/Main.cpp</label>
+        <link refid="_main_8cpp"/>
+      </node>
+      <node id="1720">
+        <label>src/opentld/OpenTLD.cpp</label>
+        <link refid="_open_t_l_d_8cpp"/>
+      </node>
+      <node id="1718">
+        <label>src/opentld/main/Config.cpp</label>
+        <link refid="_config_8cpp"/>
+      </node>
+      <node id="1715">
+        <label>src/libopentld/tld/TLD.cpp</label>
+        <link refid="_t_l_d_8cpp"/>
+      </node>
+      <node id="1714">
+        <label>src/libopentld/tld/TLD.h</label>
+        <link refid="TLD.h"/>
+        <childnode refid="1715" relation="include">
+        </childnode>
+        <childnode refid="1716" relation="include">
+        </childnode>
+      </node>
+      <node id="1721">
+        <label>src/opentld/QOpenTLD.cpp</label>
+        <link refid="_q_open_t_l_d_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classtld_1_1_t_l_d" prot="public">tld::TLD</innerclass>
+    <innernamespace refid="namespacetld">tld</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>TLD.h</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Nov<sp/>17,<sp/>2011</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>Georg<sp/>Nebehay</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TLD_H_</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TLD_H_</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cv.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_median_flow_tracker_8h" kindref="compound">MedianFlowTracker.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_detector_cascade_8h" kindref="compound">DetectorCascade.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">tld</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classtld_1_1_t_l_d" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtld_1_1_t_l_d" kindref="compound">TLD</ref></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>storeCurrentData();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fuseHypotheses();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>learn();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initialLearning();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45" refid="classtld_1_1_t_l_d_1ab94fab1f55f6ef122c9e3fcf4747ac50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_t_l_d_1ab94fab1f55f6ef122c9e3fcf4747ac50" kindref="member">trackerEnabled</ref>;</highlight></codeline>
+<codeline lineno="46" refid="classtld_1_1_t_l_d_1a925a0be8c0b83bcb8c2c91a046c7db1b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_t_l_d_1a925a0be8c0b83bcb8c2c91a046c7db1b" kindref="member">detectorEnabled</ref>;</highlight></codeline>
+<codeline lineno="47" refid="classtld_1_1_t_l_d_1a86422799478881dd711d0a78444be245" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_t_l_d_1a86422799478881dd711d0a78444be245" kindref="member">learningEnabled</ref>;</highlight></codeline>
+<codeline lineno="48" refid="classtld_1_1_t_l_d_1a873bb61492173098b134d94239ef0ba4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_t_l_d_1a873bb61492173098b134d94239ef0ba4" kindref="member">alternating</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classtld_1_1_t_l_d_1a8b523afaefa5fbd9bc86fd656b87e1c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_median_flow_tracker" kindref="compound">MedianFlowTracker</ref><sp/>*<ref refid="classtld_1_1_t_l_d_1a8b523afaefa5fbd9bc86fd656b87e1c0" kindref="member">medianFlowTracker</ref>;</highlight></codeline>
+<codeline lineno="51" refid="classtld_1_1_t_l_d_1abe59bf99d46b55f6ef402cb48f9d290b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detector_cascade" kindref="compound">DetectorCascade</ref><sp/>*<ref refid="classtld_1_1_t_l_d_1abe59bf99d46b55f6ef402cb48f9d290b" kindref="member">detectorCascade</ref>;</highlight></codeline>
+<codeline lineno="52" refid="classtld_1_1_t_l_d_1a98a1be08a4b630d85e5e60dc4bb78b13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_n_n_classifier" kindref="compound">NNClassifier</ref><sp/>*<ref refid="classtld_1_1_t_l_d_1a98a1be08a4b630d85e5e60dc4bb78b13" kindref="member">nnClassifier</ref>;</highlight></codeline>
+<codeline lineno="53" refid="classtld_1_1_t_l_d_1a2a238338a62dac450b2759f99d5ae304" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_t_l_d_1a2a238338a62dac450b2759f99d5ae304" kindref="member">valid</ref>;</highlight></codeline>
+<codeline lineno="54" refid="classtld_1_1_t_l_d_1a26e0c624178eb37a57cd0146efa6d262" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_t_l_d_1a26e0c624178eb37a57cd0146efa6d262" kindref="member">wasValid</ref>;</highlight></codeline>
+<codeline lineno="55" refid="classtld_1_1_t_l_d_1a7b402ff7a0260f00b8d3dbcea5c87efa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::Mat<sp/><ref refid="classtld_1_1_t_l_d_1a7b402ff7a0260f00b8d3dbcea5c87efa" kindref="member">prevImg</ref>;</highlight></codeline>
+<codeline lineno="56" refid="classtld_1_1_t_l_d_1a7bb2c3271567719afb2f97e5953c31d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::Mat<sp/><ref refid="classtld_1_1_t_l_d_1a7bb2c3271567719afb2f97e5953c31d5" kindref="member">currImg</ref>;</highlight></codeline>
+<codeline lineno="57" refid="classtld_1_1_t_l_d_1adc7a217f04d600daffe8d025f424677f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::Rect<sp/>*<ref refid="classtld_1_1_t_l_d_1adc7a217f04d600daffe8d025f424677f" kindref="member">prevBB</ref>;</highlight></codeline>
+<codeline lineno="58" refid="classtld_1_1_t_l_d_1a5af4bc9d8fa64c4423b294f727c4ba55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::Rect<sp/>*<ref refid="classtld_1_1_t_l_d_1a5af4bc9d8fa64c4423b294f727c4ba55" kindref="member">currBB</ref>;</highlight></codeline>
+<codeline lineno="59" refid="classtld_1_1_t_l_d_1ab2e815db72cb2f40a7864c4d4457eb34" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_t_l_d_1ab2e815db72cb2f40a7864c4d4457eb34" kindref="member">currConf</ref>;</highlight></codeline>
+<codeline lineno="60" refid="classtld_1_1_t_l_d_1a0f108af012bc9b7d004bed33cf8e4d90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_t_l_d_1a0f108af012bc9b7d004bed33cf8e4d90" kindref="member">learning</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_t_l_d_1a7dd24a107de7e84f9b0459c3bfa078aa" kindref="member">TLD</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_t_l_d_1a0bd3497a3d97108b74a107ead3b716f5" kindref="member">~TLD</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_t_l_d_1a42636c4a6fef7de9b71af987151a7f9e" kindref="member">release</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_t_l_d_1a6a1b9edb0ae0f79d4447c2ff7ab983be" kindref="member">selectObject</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat<sp/>&amp;img,<sp/>cv::Rect<sp/>*bb);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_t_l_d_1a8161e09603dc40c43d314cfec9e0746b" kindref="member">processImage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat<sp/>&amp;img);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" kindref="member">writeToFile</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" kindref="member">readFromFile</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>tld<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TLD_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLD.h"/>
+  </compounddef>
+</doxygen>

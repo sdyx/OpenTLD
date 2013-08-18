@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="parsectx_8h" kind="file">
+    <compoundname>parsectx.h</compoundname>
+    <includes refid="libconfig_8h" local="yes">libconfig.h</includes>
+    <includes refid="strbuf_8h" local="yes">strbuf.h</includes>
+    <includedby refid="grammar_8c" local="yes">src/3rdparty/libconfig/grammar.c</includedby>
+    <includedby refid="libconfig_8c" local="yes">src/3rdparty/libconfig/libconfig.c</includedby>
+    <includedby refid="scanner_8c" local="yes">src/3rdparty/libconfig/scanner.c</includedby>
+    <incdepgraph>
+      <node id="1253">
+        <label>libconfig.h</label>
+        <link refid="libconfig_8h"/>
+        <childnode refid="1254" relation="include">
+        </childnode>
+      </node>
+      <node id="1257">
+        <label>sys/types.h</label>
+      </node>
+      <node id="1256">
+        <label>string.h</label>
+      </node>
+      <node id="1255">
+        <label>strbuf.h</label>
+        <link refid="strbuf_8h"/>
+        <childnode refid="1256" relation="include">
+        </childnode>
+        <childnode refid="1257" relation="include">
+        </childnode>
+      </node>
+      <node id="1252">
+        <label>src/3rdparty/libconfig/parsectx.h</label>
+        <link refid="parsectx.h"/>
+        <childnode refid="1253" relation="include">
+        </childnode>
+        <childnode refid="1255" relation="include">
+        </childnode>
+      </node>
+      <node id="1254">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1260">
+        <label>src/3rdparty/libconfig/libconfig.c</label>
+        <link refid="libconfig_8c"/>
+      </node>
+      <node id="1259">
+        <label>src/3rdparty/libconfig/grammar.c</label>
+        <link refid="grammar_8c"/>
+      </node>
+      <node id="1261">
+        <label>src/3rdparty/libconfig/scanner.c</label>
+        <link refid="scanner_8c"/>
+      </node>
+      <node id="1258">
+        <label>src/3rdparty/libconfig/parsectx.h</label>
+        <link refid="parsectx.h"/>
+        <childnode refid="1259" relation="include">
+        </childnode>
+        <childnode refid="1260" relation="include">
+        </childnode>
+        <childnode refid="1261" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structparse__context" prot="public">parse_context</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="parsectx_8h_1aef833c188a39409f420bd7c42fcac28b" prot="public" static="no">
+        <name>parsectx_init</name>
+        <param><defname>C</defname></param>
+        <initializer>memset((C), 0, sizeof(struct <ref refid="structparse__context" kindref="compound">parse_context</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/parsectx.h" line="39" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/parsectx.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="parsectx_8h_1a6b425cd29c1ffed36ab410829ba1e80d" prot="public" static="no">
+        <name>parsectx_cleanup</name>
+        <param><defname>C</defname></param>
+        <initializer>free((void *)(strbuf_release(&amp;((C)-&gt;string))))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/parsectx.h" line="41" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/parsectx.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="parsectx_8h_1a72f375662e32ee3949db87110b1497c0" prot="public" static="no">
+        <name>parsectx_append_string</name>
+        <param><defname>C</defname></param>
+        <param><defname>S</defname></param>
+        <initializer>strbuf_append(&amp;((C)-&gt;string), (S))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/parsectx.h" line="44" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/parsectx.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="grammar_8c_1aa95461e463ec8927a2b16e55683cfcaf" compoundref="grammar_8c" startline="1223" endline="1994">yyparse</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="parsectx_8h_1a3afa9b8362d647a4cc7b64bf9bea9a9f" prot="public" static="no">
+        <name>parsectx_take_string</name>
+        <param><defname>C</defname></param>
+        <initializer>strbuf_release(&amp;((C)-&gt;string))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/parsectx.h" line="46" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/parsectx.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="grammar_8c_1aa95461e463ec8927a2b16e55683cfcaf" compoundref="grammar_8c" startline="1223" endline="1994">yyparse</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/>libconfig<sp/>-<sp/>A<sp/>library<sp/>for<sp/>processing<sp/>structured<sp/>configuration<sp/>files</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2005-2010<sp/><sp/>Mark<sp/>A<sp/>Lindner</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>libconfig.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/>This<sp/>library<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2.1<sp/>of</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/>This<sp/>library<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Library<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/>License<sp/>along<sp/>with<sp/>this<sp/>library;<sp/>if<sp/>not,<sp/>see</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/>----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__libconfig_parsectx_h</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__libconfig_parsectx_h</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libconfig_8h" kindref="compound">libconfig.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="strbuf_8h" kindref="compound">strbuf.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="structparse__context" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structparse__context" kindref="compound">parse_context</ref></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31" refid="structparse__context_1aa200e722cbeaa2486da5c03113a630de" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structconfig__t" kindref="compound">config_t</ref><sp/>*<ref refid="structparse__context_1aa200e722cbeaa2486da5c03113a630de" kindref="member">config</ref>;</highlight></codeline>
+<codeline lineno="32" refid="structparse__context_1a79ae4fb7bb22de08f7f99c8478187e22" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structconfig__setting__t" kindref="compound">config_setting_t</ref><sp/>*<ref refid="structparse__context_1a79ae4fb7bb22de08f7f99c8478187e22" kindref="member">parent</ref>;</highlight></codeline>
+<codeline lineno="33" refid="structparse__context_1ab305aaa8de50d2803f062652b350d0e1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structconfig__setting__t" kindref="compound">config_setting_t</ref><sp/>*<ref refid="structparse__context_1ab305aaa8de50d2803f062652b350d0e1" kindref="member">setting</ref>;</highlight></codeline>
+<codeline lineno="34" refid="structparse__context_1a011e6f556f380ddb7ea6443310638d19" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structparse__context_1a011e6f556f380ddb7ea6443310638d19" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="35" refid="structparse__context_1aa69b91bd3127bb918700074992130b4a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structstrbuf__t" kindref="compound">strbuf_t</ref><sp/><ref refid="structparse__context_1aa69b91bd3127bb918700074992130b4a" kindref="member">string</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="parsectx_8h_1aef833c188a39409f420bd7c42fcac28b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>parsectx_init(C)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"><sp/><sp/>memset((C),<sp/>0,<sp/>sizeof(struct<sp/>parse_context))</highlight></codeline>
+<codeline lineno="40" refid="parsectx_8h_1a6b425cd29c1ffed36ab410829ba1e80d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>parsectx_cleanup(C)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"><sp/><sp/>free((void<sp/>*)(strbuf_release(&amp;((C)-&gt;string))))</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="parsectx_8h_1a72f375662e32ee3949db87110b1497c0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>parsectx_append_string(C,<sp/>S)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"><sp/><sp/>strbuf_append(&amp;((C)-&gt;string),<sp/>(S))</highlight></codeline>
+<codeline lineno="45" refid="parsectx_8h_1a3afa9b8362d647a4cc7b64bf9bea9a9f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>parsectx_take_string(C)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"><sp/><sp/>strbuf_release(&amp;((C)-&gt;string))</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__libconfig_parsectx_h<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/parsectx.h"/>
+  </compounddef>
+</doxygen>

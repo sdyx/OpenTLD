@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="strbuf_8h" kind="file">
+    <compoundname>strbuf.h</compoundname>
+    <includes local="no">string.h</includes>
+    <includes local="no">sys/types.h</includes>
+    <includedby refid="parsectx_8h" local="yes">src/3rdparty/libconfig/parsectx.h</includedby>
+    <includedby refid="scanctx_8h" local="yes">src/3rdparty/libconfig/scanctx.h</includedby>
+    <includedby refid="strbuf_8c" local="yes">src/3rdparty/libconfig/strbuf.c</includedby>
+    <incdepgraph>
+      <node id="1313">
+        <label>sys/types.h</label>
+      </node>
+      <node id="1312">
+        <label>string.h</label>
+      </node>
+      <node id="1311">
+        <label>src/3rdparty/libconfig/strbuf.h</label>
+        <link refid="strbuf.h"/>
+        <childnode refid="1312" relation="include">
+        </childnode>
+        <childnode refid="1313" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1317">
+        <label>src/3rdparty/libconfig/libconfig.c</label>
+        <link refid="libconfig_8c"/>
+      </node>
+      <node id="1316">
+        <label>src/3rdparty/libconfig/grammar.c</label>
+        <link refid="grammar_8c"/>
+      </node>
+      <node id="1320">
+        <label>src/3rdparty/libconfig/scanctx.c</label>
+        <link refid="scanctx_8c"/>
+      </node>
+      <node id="1319">
+        <label>src/3rdparty/libconfig/scanctx.h</label>
+        <link refid="scanctx_8h"/>
+        <childnode refid="1316" relation="include">
+        </childnode>
+        <childnode refid="1317" relation="include">
+        </childnode>
+        <childnode refid="1320" relation="include">
+        </childnode>
+        <childnode refid="1318" relation="include">
+        </childnode>
+      </node>
+      <node id="1318">
+        <label>src/3rdparty/libconfig/scanner.c</label>
+        <link refid="scanner_8c"/>
+      </node>
+      <node id="1321">
+        <label>src/3rdparty/libconfig/strbuf.c</label>
+        <link refid="strbuf_8c"/>
+      </node>
+      <node id="1314">
+        <label>src/3rdparty/libconfig/strbuf.h</label>
+        <link refid="strbuf.h"/>
+        <childnode refid="1315" relation="include">
+        </childnode>
+        <childnode refid="1319" relation="include">
+        </childnode>
+        <childnode refid="1321" relation="include">
+        </childnode>
+      </node>
+      <node id="1315">
+        <label>src/3rdparty/libconfig/parsectx.h</label>
+        <link refid="parsectx_8h"/>
+        <childnode refid="1316" relation="include">
+        </childnode>
+        <childnode refid="1317" relation="include">
+        </childnode>
+        <childnode refid="1318" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structstrbuf__t" prot="public">strbuf_t</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="strbuf_8h_1afd2cb5519e41bc819733aae836c7a0f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* strbuf_release</definition>
+        <argsstring>(strbuf_t *buf)</argsstring>
+        <name>strbuf_release</name>
+        <param>
+          <type><ref refid="structstrbuf__t" kindref="compound">strbuf_t</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/strbuf.h" line="36" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/strbuf.c" bodystart="32" bodyend="37"/>
+        <references refid="structstrbuf__t_1ac33d87e4a1e65b81c34728c08c58e225" compoundref="strbuf_8h" startline="31">strbuf_t::string</references>
+        <referencedby refid="scanctx_8h_1a14a602e9acf5d8b5b1bb527082a84f19" compoundref="scanctx_8c" startline="78" endline="90">scanctx_cleanup</referencedby>
+        <referencedby refid="scanctx_8h_1a8865cbf5960e1a551474e363f459083b" compoundref="scanctx_8c" startline="156" endline="161">scanctx_take_string</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="strbuf_8h_1a7a0ae92a51caf3d76c4e0bbd15b764f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void strbuf_append</definition>
+        <argsstring>(strbuf_t *buf, const char *text)</argsstring>
+        <name>strbuf_append</name>
+        <param>
+          <type><ref refid="structstrbuf__t" kindref="compound">strbuf_t</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/strbuf.h" line="38" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/strbuf.c" bodystart="41" bodyend="55"/>
+        <references refid="structstrbuf__t_1af532e798544a7dab19767406c6504649" compoundref="strbuf_8h" startline="33">strbuf_t::capacity</references>
+        <references refid="structstrbuf__t_1ae6fc3758286e761d9c7873b489786a89" compoundref="strbuf_8h" startline="32">strbuf_t::length</references>
+        <references refid="structstrbuf__t_1ac33d87e4a1e65b81c34728c08c58e225" compoundref="strbuf_8h" startline="31">strbuf_t::string</references>
+        <references refid="strbuf_8c_1ad58e8dedb18e631dc57a9f8f623effb9" compoundref="strbuf_8c" startline="28">STRING_BLOCK_SIZE</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/>libconfig<sp/>-<sp/>A<sp/>library<sp/>for<sp/>processing<sp/>structured<sp/>configuration<sp/>files</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2005-2010<sp/><sp/>Mark<sp/>A<sp/>Lindner</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>libconfig.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/>This<sp/>library<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2.1<sp/>of</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/>This<sp/>library<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Library<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/>License<sp/>along<sp/>with<sp/>this<sp/>library;<sp/>if<sp/>not,<sp/>see</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/>----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__libconfig_strbuf_h</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__libconfig_strbuf_h</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="structstrbuf__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31" refid="structstrbuf__t_1ac33d87e4a1e65b81c34728c08c58e225" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*string;</highlight></codeline>
+<codeline lineno="32" refid="structstrbuf__t_1ae6fc3758286e761d9c7873b489786a89" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length;</highlight></codeline>
+<codeline lineno="33" refid="structstrbuf__t_1af532e798544a7dab19767406c6504649" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>capacity;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}<sp/><ref refid="structstrbuf__t" kindref="compound">strbuf_t</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="strbuf_8c_1afd2cb5519e41bc819733aae836c7a0f3" kindref="member">strbuf_release</ref>(<ref refid="structstrbuf__t" kindref="compound">strbuf_t</ref><sp/>*buf);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="strbuf_8c_1a7a0ae92a51caf3d76c4e0bbd15b764f9" kindref="member">strbuf_append</ref>(<ref refid="structstrbuf__t" kindref="compound">strbuf_t</ref><sp/>*buf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*text);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__libconfig_strbuf_h<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/strbuf.h"/>
+  </compounddef>
+</doxygen>

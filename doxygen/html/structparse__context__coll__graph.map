@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structconfig__t.html" title="config_t" alt="" coords="127,6,199,34"/>
+<area shape="rect" id="node4" href="$structconfig__setting__t.html" title="config_setting_t" alt="" coords="159,99,281,127"/>
+<area shape="rect" id="node10" href="$structconfig__list__t.html" title="config_list_t" alt="" coords="285,209,381,237"/>
+<area shape="rect" id="node8" href="$unionconfig__value__t.html" title="config_value_t" alt="" coords="208,302,320,330"/>
+<area shape="rect" id="node13" href="$structstrbuf__t.html" title="strbuf_t" alt="" coords="63,99,132,127"/>
+</map>

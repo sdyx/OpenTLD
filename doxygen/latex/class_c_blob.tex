@@ -1,0 +1,1050 @@
+\hypertarget{class_c_blob}{
+\section{CBlob Class Reference}
+\label{class_c_blob}\index{CBlob@{CBlob}}
+}
+
+
+Blob class.  
+
+
+
+
+{\ttfamily \#include $<$blob.h$>$}
+
+
+
+Collaboration diagram for CBlob:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_c_blob__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_blob_acd24304c1bc98128b24914f3e4bfea7c}{CBlob} ()
+\item 
+\hyperlink{class_c_blob_a45d7bbe67ef246fe180e16f5a7116c6f}{CBlob} (\hyperlink{blob_8h_ae21ba61a4f023a2f91fc5feaad495073}{t\_\-labelType} id, CvPoint startPoint, CvSize originalImageSize)
+\item 
+\hyperlink{class_c_blob_a593ffb9ba17290432d04c383f2f104e2}{$\sim$CBlob} ()
+\item 
+\hyperlink{class_c_blob_af87156ca1ac7f64a860b7cf8c07fd1fa}{CBlob} (const \hyperlink{class_c_blob}{CBlob} \&src)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{class_c_blob_a61719b6e5ebff6d3e383b98bce4137dc}{CBlob} (const \hyperlink{class_c_blob}{CBlob} $\ast$src)
+\item 
+\hyperlink{class_c_blob}{CBlob} \& \hyperlink{class_c_blob_a724e55442a030bf94da856310e324a40}{operator=} (const \hyperlink{class_c_blob}{CBlob} \&src)
+\item 
+void \hyperlink{class_c_blob_ad26a1bc4e31809c3bd76424b05824e90}{AddInternalContour} (const \hyperlink{class_c_blob_contour}{CBlobContour} \&newContour)
+\begin{DoxyCompactList}\small\item\em Adds a new internal contour to the blob. \item\end{DoxyCompactList}\item 
+\hyperlink{class_c_blob_contour}{CBlobContour} $\ast$ \hyperlink{class_c_blob_ad136387165bd74c368cb4ecc7632e4cf}{GetExternalContour} ()
+\begin{DoxyCompactList}\small\item\em Retrieves contour in Freeman's chain code. \item\end{DoxyCompactList}\item 
+CvMemStorage $\ast$ \hyperlink{class_c_blob_a1eeee72a4369dc9485c6ae6573631a02}{GetStorage} ()
+\begin{DoxyCompactList}\small\item\em Retrieves blob storage. \item\end{DoxyCompactList}\item 
+\hyperlink{blob_8h_ae21ba61a4f023a2f91fc5feaad495073}{t\_\-labelType} \hyperlink{class_c_blob_a1d3fd90bc98f6d845babb18a3f058bc2}{GetID} ()
+\begin{DoxyCompactList}\small\item\em Get label ID. \item\end{DoxyCompactList}\item 
+int \hyperlink{class_c_blob_a2d56a7dee1cbeb3178ff083630ee31b0}{Exterior} (IplImage $\ast$mask, bool xBorder=true, bool yBorder=true)
+\begin{DoxyCompactList}\small\item\em $>$ 0 for extern blobs, 0 if not \item\end{DoxyCompactList}\item 
+double \hyperlink{class_c_blob_a6f1db9fcb42c0a3ea003aaeb0ec65a8d}{Area} ()
+\begin{DoxyCompactList}\small\item\em Compute blob's area. \item\end{DoxyCompactList}\item 
+double \hyperlink{class_c_blob_af63853ea55dbebbee5b013189e765b51}{Perimeter} ()
+\begin{DoxyCompactList}\small\item\em Compute blob's perimeter. \item\end{DoxyCompactList}\item 
+double \hyperlink{class_c_blob_a4f5dfca1ee933e07a39965375f9f07c5}{Moment} (int p, int q)
+\begin{DoxyCompactList}\small\item\em Compute blob's moment (p,q up to MAX\_\-CALCULATED\_\-MOMENTS). \item\end{DoxyCompactList}\item 
+double \hyperlink{class_c_blob_ab1501b07a2c5ee23843bac66d20974e2}{ExternPerimeter} (IplImage $\ast$mask, bool xBorder=true, bool yBorder=true)
+\begin{DoxyCompactList}\small\item\em Compute extern perimeter. \item\end{DoxyCompactList}\item 
+double \hyperlink{class_c_blob_a1b12d25f8e470fdd808ac2e3bfe9bad4}{Mean} (IplImage $\ast$image)
+\begin{DoxyCompactList}\small\item\em Get mean grey color. \item\end{DoxyCompactList}\item 
+double \hyperlink{class_c_blob_a014b670bb748e6767ef070e1bc25be7a}{StdDev} (IplImage $\ast$image)
+\begin{DoxyCompactList}\small\item\em Get standard deviation grey color. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_c_blob_ac97e73d3040530de09a187d02632deb1}{IsEmpty} ()
+\item 
+\hyperlink{_blob_contour_8h_abf72b29b2c653dd623e9b39a447809c0}{t\_\-PointList} \hyperlink{class_c_blob_aacc50d5d47e0543d4e0a569d05009006}{GetConvexHull} ()
+\item 
+void \hyperlink{class_c_blob_a1a12b6dee61d2db86cd3a60c0671382e}{FillBlob} (IplImage $\ast$imatge, CvScalar color, int offsetX=0, int offsetY=0)
+\item 
+void \hyperlink{class_c_blob_a006463cc42ef0e4b8986fa5020cb6f90}{JoinBlob} (\hyperlink{class_c_blob}{CBlob} $\ast$blob)
+\begin{DoxyCompactList}\small\item\em Join a blob to current one (add's contour. \item\end{DoxyCompactList}\item 
+CvRect \hyperlink{class_c_blob_a5391167c172eb461eb762fbdd81306de}{GetBoundingBox} ()
+\begin{DoxyCompactList}\small\item\em Get bounding box. \item\end{DoxyCompactList}\item 
+CvBox2D \hyperlink{class_c_blob_ad0bb95f395084ee89ca35cf11f203342}{GetEllipse} ()
+\begin{DoxyCompactList}\small\item\em Get bounding ellipse. \item\end{DoxyCompactList}\item 
+double \hyperlink{class_c_blob_aa3313af22e7f28d65ba245bc3b8a30bc}{MinX} ()
+\begin{DoxyCompactList}\small\item\em Minimun X. \item\end{DoxyCompactList}\item 
+double \hyperlink{class_c_blob_a44e2caf6c7fc6e8360d2576c18c9bc2b}{MinY} ()
+\begin{DoxyCompactList}\small\item\em Minimun Y. \item\end{DoxyCompactList}\item 
+double \hyperlink{class_c_blob_ab26a757fffc581df39620425de008cbc}{MaxX} ()
+\begin{DoxyCompactList}\small\item\em Maximun X. \item\end{DoxyCompactList}\item 
+double \hyperlink{class_c_blob_a740a37afcd841bf719587d2f0128c555}{MaxY} ()
+\begin{DoxyCompactList}\small\item\em Maximun Y. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Blob class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_blob_acd24304c1bc98128b24914f3e4bfea7c}{
+\index{CBlob@{CBlob}!CBlob@{CBlob}}
+\index{CBlob@{CBlob}!CBlob@{CBlob}}
+\subsubsection[{CBlob}]{\setlength{\rightskip}{0pt plus 5cm}CBlob::CBlob (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_acd24304c1bc98128b24914f3e4bfea7c}
+\hypertarget{class_c_blob_a45d7bbe67ef246fe180e16f5a7116c6f}{
+\index{CBlob@{CBlob}!CBlob@{CBlob}}
+\index{CBlob@{CBlob}!CBlob@{CBlob}}
+\subsubsection[{CBlob}]{\setlength{\rightskip}{0pt plus 5cm}CBlob::CBlob (
+\begin{DoxyParamCaption}
+\item[{{\bf t\_\-labelType}}]{ id, }
+\item[{CvPoint}]{ startPoint, }
+\item[{CvSize}]{ originalImageSize}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_a45d7bbe67ef246fe180e16f5a7116c6f}
+\hypertarget{class_c_blob_a593ffb9ba17290432d04c383f2f104e2}{
+\index{CBlob@{CBlob}!$\sim$CBlob@{$\sim$CBlob}}
+\index{$\sim$CBlob@{$\sim$CBlob}!CBlob@{CBlob}}
+\subsubsection[{$\sim$CBlob}]{\setlength{\rightskip}{0pt plus 5cm}CBlob::$\sim$CBlob (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_a593ffb9ba17290432d04c383f2f104e2}
+\hypertarget{class_c_blob_af87156ca1ac7f64a860b7cf8c07fd1fa}{
+\index{CBlob@{CBlob}!CBlob@{CBlob}}
+\index{CBlob@{CBlob}!CBlob@{CBlob}}
+\subsubsection[{CBlob}]{\setlength{\rightskip}{0pt plus 5cm}CBlob::CBlob (
+\begin{DoxyParamCaption}
+\item[{const {\bf CBlob} \&}]{ src}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_af87156ca1ac7f64a860b7cf8c07fd1fa}
+
+
+Copy constructor. 
+
+\hypertarget{class_c_blob_a61719b6e5ebff6d3e383b98bce4137dc}{
+\index{CBlob@{CBlob}!CBlob@{CBlob}}
+\index{CBlob@{CBlob}!CBlob@{CBlob}}
+\subsubsection[{CBlob}]{\setlength{\rightskip}{0pt plus 5cm}CBlob::CBlob (
+\begin{DoxyParamCaption}
+\item[{const {\bf CBlob} $\ast$}]{ src}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_a61719b6e5ebff6d3e383b98bce4137dc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_blob_ad26a1bc4e31809c3bd76424b05824e90}{
+\index{CBlob@{CBlob}!AddInternalContour@{AddInternalContour}}
+\index{AddInternalContour@{AddInternalContour}!CBlob@{CBlob}}
+\subsubsection[{AddInternalContour}]{\setlength{\rightskip}{0pt plus 5cm}void CBlob::AddInternalContour (
+\begin{DoxyParamCaption}
+\item[{const {\bf CBlobContour} \&}]{ newContour}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_ad26a1bc4e31809c3bd76424b05824e90}
+
+
+Adds a new internal contour to the blob. 
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=374pt]{class_c_blob_ad26a1bc4e31809c3bd76424b05824e90_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_a6f1db9fcb42c0a3ea003aaeb0ec65a8d}{
+\index{CBlob@{CBlob}!Area@{Area}}
+\index{Area@{Area}!CBlob@{CBlob}}
+\subsubsection[{Area}]{\setlength{\rightskip}{0pt plus 5cm}double CBlob::Area (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_a6f1db9fcb42c0a3ea003aaeb0ec65a8d}
+
+
+Compute blob's area. 
+
+
+\begin{DoxyItemize}
+\item FUNCIÓ: Area
+\item FUNCIONALITAT: Get blob area, ie. external contour area minus internal contours area
+\item PARÀMETRES:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESULTAT:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESTRICCIONS:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item AUTOR: rborras
+\item DATA DE CREACIÓ: 2008/04/30
+\item MODIFICACIÓ: Data. Autor. Descripció. 
+\end{DoxyItemize}
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_a6f1db9fcb42c0a3ea003aaeb0ec65a8d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=382pt]{class_c_blob_a6f1db9fcb42c0a3ea003aaeb0ec65a8d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_a2d56a7dee1cbeb3178ff083630ee31b0}{
+\index{CBlob@{CBlob}!Exterior@{Exterior}}
+\index{Exterior@{Exterior}!CBlob@{CBlob}}
+\subsubsection[{Exterior}]{\setlength{\rightskip}{0pt plus 5cm}int CBlob::Exterior (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ mask, }
+\item[{bool}]{ xBorder = {\ttfamily true}, }
+\item[{bool}]{ yBorder = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_a2d56a7dee1cbeb3178ff083630ee31b0}
+
+
+$>$ 0 for extern blobs, 0 if not 
+
+
+\begin{DoxyItemize}
+\item FUNCIÓ: Exterior
+\item FUNCIONALITAT: Return true for extern blobs
+\item PARÀMETRES:
+\begin{DoxyItemize}
+\item xBorder: true to consider blobs touching horizontal borders as extern
+\item yBorder: true to consider blobs touching vertical borders as extern
+\end{DoxyItemize}
+\item RESULTAT:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESTRICCIONS:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item AUTOR: rborras
+\item DATA DE CREACIÓ: 2008/05/06
+\item MODIFICACIÓ: Data. Autor. Descripció. 
+\end{DoxyItemize}
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_a2d56a7dee1cbeb3178ff083630ee31b0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=358pt]{class_c_blob_a2d56a7dee1cbeb3178ff083630ee31b0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_ab1501b07a2c5ee23843bac66d20974e2}{
+\index{CBlob@{CBlob}!ExternPerimeter@{ExternPerimeter}}
+\index{ExternPerimeter@{ExternPerimeter}!CBlob@{CBlob}}
+\subsubsection[{ExternPerimeter}]{\setlength{\rightskip}{0pt plus 5cm}double CBlob::ExternPerimeter (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ maskImage, }
+\item[{bool}]{ xBorder = {\ttfamily true}, }
+\item[{bool}]{ yBorder = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_ab1501b07a2c5ee23843bac66d20974e2}
+
+
+Compute extern perimeter. 
+
+
+\begin{DoxyItemize}
+\item FUNCIÓ: ExternPerimeter
+\item FUNCIONALITAT: Get extern perimeter (perimeter touching image borders)
+\item PARÀMETRES:
+\begin{DoxyItemize}
+\item maskImage: if != NULL, counts maskImage black pixels as external pixels and contour points touching them are counted as external contour points.
+\item xBorder: true to consider blobs touching horizontal borders as extern
+\item yBorder: true to consider blobs touching vertical borders as extern
+\end{DoxyItemize}
+\item RESULTAT:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESTRICCIONS:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item AUTOR: rborras
+\item DATA DE CREACIÓ: 2008/05/05
+\item MODIFICACIÓ: Data. Autor. Descripció.
+\item NOTA: If \hyperlink{class_c_blob_contour_a245d5e59180619aa9ae4ec14acc18744}{CBlobContour::GetContourPoints} aproximates contours with a method different that NONE, this function will not give correct results 
+\end{DoxyItemize}
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_ab1501b07a2c5ee23843bac66d20974e2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_ab1501b07a2c5ee23843bac66d20974e2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_a1a12b6dee61d2db86cd3a60c0671382e}{
+\index{CBlob@{CBlob}!FillBlob@{FillBlob}}
+\index{FillBlob@{FillBlob}!CBlob@{CBlob}}
+\subsubsection[{FillBlob}]{\setlength{\rightskip}{0pt plus 5cm}void CBlob::FillBlob (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ imatge, }
+\item[{CvScalar}]{ color, }
+\item[{int}]{ offsetX = {\ttfamily 0}, }
+\item[{int}]{ offsetY = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_a1a12b6dee61d2db86cd3a60c0671382e}
+Pinta l'interior d'un blob d'un color determinat Paints the blob in an image
+
+
+\begin{DoxyItemize}
+\item FUNCTION: FillBlob
+\item FUNCTIONALITY:
+\begin{DoxyItemize}
+\item Fills the blob with a specified colour
+\end{DoxyItemize}
+\item PARAMETERS:
+\begin{DoxyItemize}
+\item imatge: where to paint
+\item color: colour to paint the blob
+\end{DoxyItemize}
+\item RESULT:
+\begin{DoxyItemize}
+\item modifies input image and returns the seed point used to fill the blob
+\end{DoxyItemize}
+\item RESTRICTIONS:
+\item AUTHOR: Ricard Borràs
+\item CREATION DATE: 25-\/05-\/2005.
+\item MODIFICATION: Date. Author. Description. 
+\end{DoxyItemize}
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=374pt]{class_c_blob_a1a12b6dee61d2db86cd3a60c0671382e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_a5391167c172eb461eb762fbdd81306de}{
+\index{CBlob@{CBlob}!GetBoundingBox@{GetBoundingBox}}
+\index{GetBoundingBox@{GetBoundingBox}!CBlob@{CBlob}}
+\subsubsection[{GetBoundingBox}]{\setlength{\rightskip}{0pt plus 5cm}CvRect CBlob::GetBoundingBox (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_a5391167c172eb461eb762fbdd81306de}
+
+
+Get bounding box. 
+
+
+\begin{DoxyItemize}
+\item FUNCIÓ: GetBoundingBox
+\item FUNCIONALITAT: Get bounding box (without rotation) of a blob
+\item PARÀMETRES:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESULTAT:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESTRICCIONS:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item AUTOR: rborras
+\item DATA DE CREACIÓ: 2008/05/06
+\item MODIFICACIÓ: Data. Autor. Descripció. 
+\end{DoxyItemize}
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_a5391167c172eb461eb762fbdd81306de_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_a5391167c172eb461eb762fbdd81306de_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_aacc50d5d47e0543d4e0a569d05009006}{
+\index{CBlob@{CBlob}!GetConvexHull@{GetConvexHull}}
+\index{GetConvexHull@{GetConvexHull}!CBlob@{CBlob}}
+\subsubsection[{GetConvexHull}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\_\-PointList} CBlob::GetConvexHull (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_aacc50d5d47e0543d4e0a569d05009006}
+Retorna el poligon convex del blob Calculates the convex hull of the blob
+
+
+\begin{DoxyItemize}
+\item FUNCTION: GetConvexHull
+\item FUNCTIONALITY: Calculates the convex hull polygon of the blob
+\item PARAMETERS:
+\begin{DoxyItemize}
+\item dst: where to store the result
+\end{DoxyItemize}
+\item RESULT:
+\begin{DoxyItemize}
+\item true if no error ocurred
+\end{DoxyItemize}
+\item RESTRICTIONS:
+\item AUTHOR: Ricard Borràs
+\item CREATION DATE: 25-\/05-\/2005.
+\item MODIFICATION: Date. Author. Description. 
+\end{DoxyItemize}
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_aacc50d5d47e0543d4e0a569d05009006_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_aacc50d5d47e0543d4e0a569d05009006_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_ad0bb95f395084ee89ca35cf11f203342}{
+\index{CBlob@{CBlob}!GetEllipse@{GetEllipse}}
+\index{GetEllipse@{GetEllipse}!CBlob@{CBlob}}
+\subsubsection[{GetEllipse}]{\setlength{\rightskip}{0pt plus 5cm}CvBox2D CBlob::GetEllipse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_ad0bb95f395084ee89ca35cf11f203342}
+
+
+Get bounding ellipse. 
+
+
+\begin{DoxyItemize}
+\item FUNCIÓ: GetEllipse
+\item FUNCIONALITAT: Calculates bounding ellipse of external contour points
+\item PARÀMETRES:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESULTAT:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESTRICCIONS:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item AUTOR: rborras
+\item DATA DE CREACIÓ: 2008/05/06
+\item MODIFICACIÓ: Data. Autor. Descripció.
+\item NOTA: Calculation is made using second order moment aproximation 
+\end{DoxyItemize}
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_ad0bb95f395084ee89ca35cf11f203342_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_ad0bb95f395084ee89ca35cf11f203342_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_ad136387165bd74c368cb4ecc7632e4cf}{
+\index{CBlob@{CBlob}!GetExternalContour@{GetExternalContour}}
+\index{GetExternalContour@{GetExternalContour}!CBlob@{CBlob}}
+\subsubsection[{GetExternalContour}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CBlobContour}$\ast$ CBlob::GetExternalContour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_blob_ad136387165bd74c368cb4ecc7632e4cf}
+
+
+Retrieves contour in Freeman's chain code. 
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_ad136387165bd74c368cb4ecc7632e4cf_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_a1d3fd90bc98f6d845babb18a3f058bc2}{
+\index{CBlob@{CBlob}!GetID@{GetID}}
+\index{GetID@{GetID}!CBlob@{CBlob}}
+\subsubsection[{GetID}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\_\-labelType} CBlob::GetID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_blob_a1d3fd90bc98f6d845babb18a3f058bc2}
+
+
+Get label ID. 
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_c_blob_a1d3fd90bc98f6d845babb18a3f058bc2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_a1eeee72a4369dc9485c6ae6573631a02}{
+\index{CBlob@{CBlob}!GetStorage@{GetStorage}}
+\index{GetStorage@{GetStorage}!CBlob@{CBlob}}
+\subsubsection[{GetStorage}]{\setlength{\rightskip}{0pt plus 5cm}CvMemStorage$\ast$ CBlob::GetStorage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_blob_a1eeee72a4369dc9485c6ae6573631a02}
+
+
+Retrieves blob storage. 
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_c_blob_a1eeee72a4369dc9485c6ae6573631a02_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_ac97e73d3040530de09a187d02632deb1}{
+\index{CBlob@{CBlob}!IsEmpty@{IsEmpty}}
+\index{IsEmpty@{IsEmpty}!CBlob@{CBlob}}
+\subsubsection[{IsEmpty}]{\setlength{\rightskip}{0pt plus 5cm}bool CBlob::IsEmpty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_ac97e73d3040530de09a187d02632deb1}
+Indica si el blob està buit ( no té cap info associada ) Shows if the blob has associated information 
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=352pt]{class_c_blob_ac97e73d3040530de09a187d02632deb1_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_a006463cc42ef0e4b8986fa5020cb6f90}{
+\index{CBlob@{CBlob}!JoinBlob@{JoinBlob}}
+\index{JoinBlob@{JoinBlob}!CBlob@{CBlob}}
+\subsubsection[{JoinBlob}]{\setlength{\rightskip}{0pt plus 5cm}void CBlob::JoinBlob (
+\begin{DoxyParamCaption}
+\item[{{\bf CBlob} $\ast$}]{ blob}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_a006463cc42ef0e4b8986fa5020cb6f90}
+
+
+Join a blob to current one (add's contour. 
+
+
+\begin{DoxyItemize}
+\item FUNCTION: JoinBlob
+\item FUNCTIONALITY: Add's external contour to current external contour
+\item PARAMETERS:
+\begin{DoxyItemize}
+\item blob: blob from which extract the added external contour
+\end{DoxyItemize}
+\item RESULT:
+\begin{DoxyItemize}
+\item true if no error ocurred
+\end{DoxyItemize}
+\item RESTRICTIONS: Only external contours are added
+\item AUTHOR: Ricard Borràs
+\item CREATION DATE: 25-\/05-\/2005.
+\item MODIFICATION: Date. Author. Description. 
+\end{DoxyItemize}
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=362pt]{class_c_blob_a006463cc42ef0e4b8986fa5020cb6f90_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_ab26a757fffc581df39620425de008cbc}{
+\index{CBlob@{CBlob}!MaxX@{MaxX}}
+\index{MaxX@{MaxX}!CBlob@{CBlob}}
+\subsubsection[{MaxX}]{\setlength{\rightskip}{0pt plus 5cm}double CBlob::MaxX (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_blob_ab26a757fffc581df39620425de008cbc}
+
+
+Maximun X. 
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_ab26a757fffc581df39620425de008cbc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=364pt]{class_c_blob_ab26a757fffc581df39620425de008cbc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_a740a37afcd841bf719587d2f0128c555}{
+\index{CBlob@{CBlob}!MaxY@{MaxY}}
+\index{MaxY@{MaxY}!CBlob@{CBlob}}
+\subsubsection[{MaxY}]{\setlength{\rightskip}{0pt plus 5cm}double CBlob::MaxY (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_blob_a740a37afcd841bf719587d2f0128c555}
+
+
+Maximun Y. 
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_a740a37afcd841bf719587d2f0128c555_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=368pt]{class_c_blob_a740a37afcd841bf719587d2f0128c555_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_a1b12d25f8e470fdd808ac2e3bfe9bad4}{
+\index{CBlob@{CBlob}!Mean@{Mean}}
+\index{Mean@{Mean}!CBlob@{CBlob}}
+\subsubsection[{Mean}]{\setlength{\rightskip}{0pt plus 5cm}double CBlob::Mean (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ image}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_a1b12d25f8e470fdd808ac2e3bfe9bad4}
+
+
+Get mean grey color. 
+
+
+\begin{DoxyItemize}
+\item FUNCIÓ: Mean
+\item FUNCIONALITAT: Get blob mean color in input image
+\item PARÀMETRES:
+\begin{DoxyItemize}
+\item image: image from gray color are extracted
+\end{DoxyItemize}
+\item RESULTAT:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESTRICCIONS:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item AUTOR: rborras
+\item DATA DE CREACIÓ: 2008/05/06
+\item MODIFICACIÓ: Data. Autor. Descripció. 
+\end{DoxyItemize}
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_a1b12d25f8e470fdd808ac2e3bfe9bad4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_a1b12d25f8e470fdd808ac2e3bfe9bad4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_aa3313af22e7f28d65ba245bc3b8a30bc}{
+\index{CBlob@{CBlob}!MinX@{MinX}}
+\index{MinX@{MinX}!CBlob@{CBlob}}
+\subsubsection[{MinX}]{\setlength{\rightskip}{0pt plus 5cm}double CBlob::MinX (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_blob_aa3313af22e7f28d65ba245bc3b8a30bc}
+
+
+Minimun X. 
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_aa3313af22e7f28d65ba245bc3b8a30bc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=362pt]{class_c_blob_aa3313af22e7f28d65ba245bc3b8a30bc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_a44e2caf6c7fc6e8360d2576c18c9bc2b}{
+\index{CBlob@{CBlob}!MinY@{MinY}}
+\index{MinY@{MinY}!CBlob@{CBlob}}
+\subsubsection[{MinY}]{\setlength{\rightskip}{0pt plus 5cm}double CBlob::MinY (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_blob_a44e2caf6c7fc6e8360d2576c18c9bc2b}
+
+
+Minimun Y. 
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_a44e2caf6c7fc6e8360d2576c18c9bc2b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=358pt]{class_c_blob_a44e2caf6c7fc6e8360d2576c18c9bc2b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_a4f5dfca1ee933e07a39965375f9f07c5}{
+\index{CBlob@{CBlob}!Moment@{Moment}}
+\index{Moment@{Moment}!CBlob@{CBlob}}
+\subsubsection[{Moment}]{\setlength{\rightskip}{0pt plus 5cm}double CBlob::Moment (
+\begin{DoxyParamCaption}
+\item[{int}]{ p, }
+\item[{int}]{ q}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_a4f5dfca1ee933e07a39965375f9f07c5}
+
+
+Compute blob's moment (p,q up to MAX\_\-CALCULATED\_\-MOMENTS). 
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_a4f5dfca1ee933e07a39965375f9f07c5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_a4f5dfca1ee933e07a39965375f9f07c5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_a724e55442a030bf94da856310e324a40}{
+\index{CBlob@{CBlob}!operator=@{operator=}}
+\index{operator=@{operator=}!CBlob@{CBlob}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CBlob} \& CBlob::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf CBlob} \&}]{ src}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_a724e55442a030bf94da856310e324a40}
+Operador d'assignació Assigment operator 
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=370pt]{class_c_blob_a724e55442a030bf94da856310e324a40_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_af63853ea55dbebbee5b013189e765b51}{
+\index{CBlob@{CBlob}!Perimeter@{Perimeter}}
+\index{Perimeter@{Perimeter}!CBlob@{CBlob}}
+\subsubsection[{Perimeter}]{\setlength{\rightskip}{0pt plus 5cm}double CBlob::Perimeter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_af63853ea55dbebbee5b013189e765b51}
+
+
+Compute blob's perimeter. 
+
+
+\begin{DoxyItemize}
+\item FUNCIÓ: Perimeter
+\item FUNCIONALITAT: Get blob perimeter, ie. sum of the lenght of all the contours
+\item PARÀMETRES:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESULTAT:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESTRICCIONS:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item AUTOR: rborras
+\item DATA DE CREACIÓ: 2008/04/30
+\item MODIFICACIÓ: Data. Autor. Descripció. 
+\end{DoxyItemize}
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_af63853ea55dbebbee5b013189e765b51_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_af63853ea55dbebbee5b013189e765b51_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_blob_a014b670bb748e6767ef070e1bc25be7a}{
+\index{CBlob@{CBlob}!StdDev@{StdDev}}
+\index{StdDev@{StdDev}!CBlob@{CBlob}}
+\subsubsection[{StdDev}]{\setlength{\rightskip}{0pt plus 5cm}double CBlob::StdDev (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ image}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_blob_a014b670bb748e6767ef070e1bc25be7a}
+
+
+Get standard deviation grey color. 
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_a014b670bb748e6767ef070e1bc25be7a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=354pt]{class_c_blob_a014b670bb748e6767ef070e1bc25be7a_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/3rdparty/cvblobs/\hyperlink{blob_8h}{blob.h}\item 
+src/3rdparty/cvblobs/\hyperlink{blob_8cpp}{blob.cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="class_c_blob_get_std_dev" kind="class" prot="public">
+    <compoundname>CBlobGetStdDev</compoundname>
+    <basecompoundref refid="class_c_operador_blob" prot="public" virt="non-virtual">COperadorBlob</basecompoundref>
+    <includes refid="_blob_operators_8h" local="no">BlobOperators.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_blob_get_std_dev_1a1dd541b4a6b0d2dffce1e8db8318cb08" prot="private" static="no" mutable="no">
+        <type>IplImage *</type>
+        <definition>IplImage* CBlobGetStdDev::m_image</definition>
+        <argsstring></argsstring>
+        <name>m_image</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="183" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_blob_get_std_dev_1aecbd340c3384fff0bd7b891ec4e71523" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CBlobGetStdDev::CBlobGetStdDev</definition>
+        <argsstring>()</argsstring>
+        <name>CBlobGetStdDev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="166" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="165" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_std_dev_1ab5677e561b1229e78fb3e232315aa043" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CBlobGetStdDev::CBlobGetStdDev</definition>
+        <argsstring>(IplImage *image)</argsstring>
+        <name>CBlobGetStdDev</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="170" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="169" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_std_dev_1a9a52512df47b9ff51ad0cb4cb48d3d1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double CBlobGetStdDev::operator()</definition>
+        <argsstring>(CBlob &amp;blob)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="class_c_operador_blob_1a303c4189cc94cafbcbee116bf014e623">operator()</reimplements>
+        <param>
+          <type><ref refid="class_c_blob" kindref="compound">CBlob</ref> &amp;</type>
+          <declname>blob</declname>
+        </param>
+        <briefdescription>
+<para>Aply operator to blob. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="174" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="173" bodyend="176"/>
+        <references refid="class_c_blob_1a014b670bb748e6767ef070e1bc25be7a" compoundref="blob_8cpp" startline="462" endline="474">CBlob::StdDev</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_std_dev_1ab98436c9d9211401634906334c59786b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>const char* CBlobGetStdDev::GetNom</definition>
+        <argsstring>()</argsstring>
+        <name>GetNom</name>
+        <reimplements refid="class_c_operador_blob_1a717a19c163a26b45081a2231be24c008">GetNom</reimplements>
+        <briefdescription>
+<para>Get operator name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="178" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="177" bodyend="180"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Classe per calcular la desviació estàndard dels nivells de gris d&apos;un blob Class to get the standard deviation of the grey level values of a blob </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="350">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+      <node id="349">
+        <label>CBlobGetStdDev</label>
+        <link refid="class_c_blob_get_std_dev"/>
+        <childnode refid="350" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="352">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+      <node id="351">
+        <label>CBlobGetStdDev</label>
+        <link refid="class_c_blob_get_std_dev"/>
+        <childnode refid="352" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="163" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="162" bodyend="185"/>
+    <listofallmembers>
+      <member refid="class_c_blob_get_std_dev_1aecbd340c3384fff0bd7b891ec4e71523" prot="public" virt="non-virtual"><scope>CBlobGetStdDev</scope><name>CBlobGetStdDev</name></member>
+      <member refid="class_c_blob_get_std_dev_1ab5677e561b1229e78fb3e232315aa043" prot="public" virt="non-virtual"><scope>CBlobGetStdDev</scope><name>CBlobGetStdDev</name></member>
+      <member refid="class_c_blob_get_std_dev_1ab98436c9d9211401634906334c59786b" prot="public" virt="virtual"><scope>CBlobGetStdDev</scope><name>GetNom</name></member>
+      <member refid="class_c_blob_get_std_dev_1a1dd541b4a6b0d2dffce1e8db8318cb08" prot="private" virt="non-virtual"><scope>CBlobGetStdDev</scope><name>m_image</name></member>
+      <member refid="class_c_operador_blob_1a477edfe687cf9ef41469bcf6ea636a75" prot="public" virt="non-virtual"><scope>CBlobGetStdDev</scope><name>operator COperadorBlob *</name></member>
+      <member refid="class_c_blob_get_std_dev_1a9a52512df47b9ff51ad0cb4cb48d3d1f" prot="public" virt="virtual"><scope>CBlobGetStdDev</scope><name>operator()</name></member>
+      <member refid="class_c_operador_blob_1a25ccc652bfa55e7b0143c88f452729a2" prot="public" virt="virtual"><scope>CBlobGetStdDev</scope><name>~COperadorBlob</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

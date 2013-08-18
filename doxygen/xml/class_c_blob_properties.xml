@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="class_c_blob_properties" kind="class" prot="public">
+    <compoundname>CBlobProperties</compoundname>
+    <includes refid="_blob_properties_8h" local="no">BlobProperties.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_c_blob_properties_1a3dbe31fe76c14529127e5510e4c99f3a" prot="private" static="no">
+        <type>std::list&lt; <ref refid="class_c_blob_contour" kindref="compound">CBlobContour</ref> &gt;</type>
+        <definition>typedef std::list&lt;CBlobContour&gt; CBlobProperties::t_contourList</definition>
+        <argsstring></argsstring>
+        <name>t_contourList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.h" line="29" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_c_blob_properties_1a5ad248fa47d9ee6c10a706800defb897" prot="public" static="no" mutable="no">
+        <type>CvMemStorage *</type>
+        <definition>CvMemStorage* CBlobProperties::m_storage</definition>
+        <argsstring></argsstring>
+        <name>m_storage</name>
+        <briefdescription>
+<para>Contour storage memory. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.h" line="52" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_properties_1af48f14bb97d9998f4eb94e4044dc9701" prot="public" static="no" mutable="no">
+        <type><ref refid="class_c_blob_contour" kindref="compound">CBlobContour</ref></type>
+        <definition>CBlobContour CBlobProperties::m_externalContour</definition>
+        <argsstring></argsstring>
+        <name>m_externalContour</name>
+        <briefdescription>
+<para>External contour of the blob (crack codes). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.h" line="54" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="class_c_blob_properties_1abfae07a81bcc204d18c790fc365ad53c" compoundref="_blob_properties_8cpp" startline="34" endline="49">GetArea</referencedby>
+        <referencedby refid="class_c_blob_properties_1a46a968d4567e6aefd9451f4468595f0a" compoundref="_blob_properties_8cpp" startline="64" endline="79">GetPerimeter</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_properties_1a49ba625a9099d39c1472d838ab21130e" prot="public" static="no" mutable="no">
+        <type>t_contourList</type>
+        <definition>t_contourList CBlobProperties::m_internalContours</definition>
+        <argsstring></argsstring>
+        <name>m_internalContours</name>
+        <briefdescription>
+<para>Internal contours (crack codes). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.h" line="56" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="class_c_blob_properties_1abfae07a81bcc204d18c790fc365ad53c" compoundref="_blob_properties_8cpp" startline="34" endline="49">GetArea</referencedby>
+        <referencedby refid="class_c_blob_properties_1a46a968d4567e6aefd9451f4468595f0a" compoundref="_blob_properties_8cpp" startline="64" endline="79">GetPerimeter</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_blob_properties_1a64493e9d3f6c1df49888f60ed324d9e7" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CBlobProperties::m_area</definition>
+        <argsstring></argsstring>
+        <name>m_area</name>
+        <briefdescription>
+<para>Computed area from blob. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.h" line="61" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_properties_1a1d38f30b6af5098a82f75a8730312615" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CBlobProperties::m_perimeter</definition>
+        <argsstring></argsstring>
+        <name>m_perimeter</name>
+        <briefdescription>
+<para>Computed perimeter from blob. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.h" line="63" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_properties_1a108af6c721198cfab8062c29b9e29b3d" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CBlobProperties::m_moment[MAX_MOMENTS_ORDER *MAX_MOMENTS_ORDER]</definition>
+        <argsstring>[MAX_MOMENTS_ORDER *MAX_MOMENTS_ORDER]</argsstring>
+        <name>m_moment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.h" line="65" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_blob_properties_1ab680b9906868e1d388d565e377e6e85f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CBlobProperties::CBlobProperties</definition>
+        <argsstring>()</argsstring>
+        <name>CBlobProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.h" line="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_properties_1a9653537e440c88247ad6493f66d9ba3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual CBlobProperties::~CBlobProperties</definition>
+        <argsstring>()</argsstring>
+        <name>~CBlobProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.h" line="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_properties_1abfae07a81bcc204d18c790fc365ad53c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double CBlobProperties::GetArea</definition>
+        <argsstring>()</argsstring>
+        <name>GetArea</name>
+        <briefdescription>
+<para>Get blob area. </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCIÓ: GetPerimeter</para></listitem><listitem><para>FUNCIONALITAT: Get blob area, ie. external contour area minus internal contours area</para></listitem><listitem><para>PARÀMETRES:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULTAT:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICCIONS:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>AUTOR: rborras</para></listitem><listitem><para>DATA DE CREACIÓ: 2008/04/30</para></listitem><listitem><para>MODIFICACIÓ: Data. Autor. Descripció. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.h" line="37" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.cpp" bodystart="34" bodyend="49"/>
+        <references refid="class_c_blob_contour_1a2c68f462fc31a0e7add9a85b007fa42a" compoundref="_blob_contour_8cpp" startline="163" endline="177">CBlobContour::GetArea</references>
+        <references refid="class_c_blob_properties_1af48f14bb97d9998f4eb94e4044dc9701" compoundref="_blob_properties_8h" startline="54">m_externalContour</references>
+        <references refid="class_c_blob_properties_1a49ba625a9099d39c1472d838ab21130e" compoundref="_blob_properties_8h" startline="56">m_internalContours</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_properties_1a46a968d4567e6aefd9451f4468595f0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double CBlobProperties::GetPerimeter</definition>
+        <argsstring>()</argsstring>
+        <name>GetPerimeter</name>
+        <briefdescription>
+<para>Get blob perimeter. </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCIÓ: GetPerimeter</para></listitem><listitem><para>FUNCIONALITAT: Get blob perimeter, ie. sum of the lenght of all the contours</para></listitem><listitem><para>PARÀMETRES:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULTAT:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICCIONS:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>AUTOR: rborras</para></listitem><listitem><para>DATA DE CREACIÓ: 2008/04/30</para></listitem><listitem><para>MODIFICACIÓ: Data. Autor. Descripció. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.h" line="40" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.cpp" bodystart="64" bodyend="79"/>
+        <references refid="class_c_blob_contour_1a893d57d625bb8f26f4a31ff0b66b8406" compoundref="_blob_contour_8cpp" startline="133" endline="147">CBlobContour::GetPerimeter</references>
+        <references refid="class_c_blob_properties_1af48f14bb97d9998f4eb94e4044dc9701" compoundref="_blob_properties_8h" startline="54">m_externalContour</references>
+        <references refid="class_c_blob_properties_1a49ba625a9099d39c1472d838ab21130e" compoundref="_blob_properties_8h" startline="56">m_internalContours</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_properties_1a09dd8fd159ab2adf65e2f03456c0a3b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double CBlobProperties::GetMoment</definition>
+        <argsstring>(int p, int q)</argsstring>
+        <name>GetMoment</name>
+        <param>
+          <type>int</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+<para>Get contour moment (p,q up to MAX_CALCULATED_MOMENTS). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.h" line="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Blob class. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="367">
+        <label>CBlobContour</label>
+        <link refid="class_c_blob_contour"/>
+      </node>
+      <node id="366">
+        <label>CBlobProperties</label>
+        <link refid="class_c_blob_properties"/>
+        <childnode refid="367" relation="usage">
+          <edgelabel>m_externalContour</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.h" line="28" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobProperties.h" bodystart="27" bodyend="67"/>
+    <listofallmembers>
+      <member refid="class_c_blob_properties_1ab680b9906868e1d388d565e377e6e85f" prot="public" virt="non-virtual"><scope>CBlobProperties</scope><name>CBlobProperties</name></member>
+      <member refid="class_c_blob_properties_1abfae07a81bcc204d18c790fc365ad53c" prot="public" virt="non-virtual"><scope>CBlobProperties</scope><name>GetArea</name></member>
+      <member refid="class_c_blob_properties_1a09dd8fd159ab2adf65e2f03456c0a3b6" prot="public" virt="non-virtual"><scope>CBlobProperties</scope><name>GetMoment</name></member>
+      <member refid="class_c_blob_properties_1a46a968d4567e6aefd9451f4468595f0a" prot="public" virt="non-virtual"><scope>CBlobProperties</scope><name>GetPerimeter</name></member>
+      <member refid="class_c_blob_properties_1a64493e9d3f6c1df49888f60ed324d9e7" prot="private" virt="non-virtual"><scope>CBlobProperties</scope><name>m_area</name></member>
+      <member refid="class_c_blob_properties_1af48f14bb97d9998f4eb94e4044dc9701" prot="public" virt="non-virtual"><scope>CBlobProperties</scope><name>m_externalContour</name></member>
+      <member refid="class_c_blob_properties_1a49ba625a9099d39c1472d838ab21130e" prot="public" virt="non-virtual"><scope>CBlobProperties</scope><name>m_internalContours</name></member>
+      <member refid="class_c_blob_properties_1a108af6c721198cfab8062c29b9e29b3d" prot="private" virt="non-virtual"><scope>CBlobProperties</scope><name>m_moment</name></member>
+      <member refid="class_c_blob_properties_1a1d38f30b6af5098a82f75a8730312615" prot="private" virt="non-virtual"><scope>CBlobProperties</scope><name>m_perimeter</name></member>
+      <member refid="class_c_blob_properties_1a5ad248fa47d9ee6c10a706800defb897" prot="public" virt="non-virtual"><scope>CBlobProperties</scope><name>m_storage</name></member>
+      <member refid="class_c_blob_properties_1a3dbe31fe76c14529127e5510e4c99f3a" prot="private" virt="non-virtual"><scope>CBlobProperties</scope><name>t_contourList</name></member>
+      <member refid="class_c_blob_properties_1a9653537e440c88247ad6493f66d9ba3d" prot="public" virt="virtual"><scope>CBlobProperties</scope><name>~CBlobProperties</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

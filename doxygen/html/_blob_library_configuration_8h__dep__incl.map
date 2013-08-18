@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$blob_8h.html" title="src/3rdparty/cvblobs/blob.h" alt="" coords="418,83,613,111"/>
+<area shape="rect" id="node11" href="$_blob_result_8h.html" title="src/3rdparty/cvblobs/BlobResult.h" alt="" coords="354,238,586,266"/>
+<area shape="rect" id="node23" href="$_blob_properties_8h.html" title="src/3rdparty/cvblobs/BlobProperties.h" alt="" coords="810,83,1069,111"/>
+<area shape="rect" id="node5" href="$blob_8cpp.html" title="src/3rdparty/cvblobs/blob.cpp" alt="" coords="341,161,549,189"/>
+<area shape="rect" id="node7" href="$_blob_operators_8h.html" title="src/3rdparty/cvblobs/BlobOperators.h" alt="" coords="624,161,882,189"/>
+<area shape="rect" id="node18" href="$_component_labeling_8h.html" title="src/3rdparty/cvblobs/ComponentLabeling.h" alt="" coords="24,161,317,189"/>
+<area shape="rect" id="node9" href="$_blob_operators_8cpp.html" title="src/3rdparty/cvblobs/BlobOperators.cpp" alt="" coords="616,238,890,266"/>
+<area shape="rect" id="node13" href="$_blob_result_8cpp.html" title="src/3rdparty/cvblobs/BlobResult.cpp" alt="" coords="201,315,449,343"/>
+<area shape="rect" id="node15" href="$_foreground_detector_8cpp.html" title="src/libopentld/tld/ForegroundDetector.cpp" alt="" coords="473,315,758,343"/>
+<area shape="rect" id="node21" href="$_component_labeling_8cpp.html" title="src/3rdparty/cvblobs/ComponentLabeling.cpp" alt="" coords="16,238,325,266"/>
+<area shape="rect" id="node25" href="$_blob_properties_8cpp.html" title="src/3rdparty/cvblobs/BlobProperties.cpp" alt="" coords="906,161,1181,189"/>
+</map>

@@ -1,0 +1,140 @@
+\hypertarget{classtld_1_1_config}{
+\section{tld::Config Class Reference}
+\label{classtld_1_1_config}\index{tld::Config@{tld::Config}}
+}
+
+
+{\ttfamily \#include $<$Config.h$>$}
+
+
+
+Collaboration diagram for tld::Config:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_config__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtld_1_1_config_a41ed67defe7392fe1ecc3233ad2a7a62}{Config} ()
+\item 
+\hyperlink{classtld_1_1_config_ade40e6027fbdc054bd5772a5baa898ae}{Config} (\hyperlink{classtld_1_1_settings}{Settings} \&settings)
+\item 
+\hyperlink{classtld_1_1_config_a794ffe6627a441e41f22d368a279f2e5}{$\sim$Config} ()
+\item 
+int \hyperlink{classtld_1_1_config_ab2f2fb863b08832e2b877e6f09073333}{init} (int argc, char $\ast$$\ast$argv)
+\item 
+int \hyperlink{classtld_1_1_config_a920f1659e8823a127eca60b228da416a}{configure} (\hyperlink{class_main}{Main} $\ast$main)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classtld_1_1_config}{Config} is used to configure the program by cli and/or by a config file 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtld_1_1_config_a41ed67defe7392fe1ecc3233ad2a7a62}{
+\index{tld::Config@{tld::Config}!Config@{Config}}
+\index{Config@{Config}!tld::Config@{tld::Config}}
+\subsubsection[{Config}]{\setlength{\rightskip}{0pt plus 5cm}tld::Config::Config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_config_a41ed67defe7392fe1ecc3233ad2a7a62}
+Constructor \hypertarget{classtld_1_1_config_ade40e6027fbdc054bd5772a5baa898ae}{
+\index{tld::Config@{tld::Config}!Config@{Config}}
+\index{Config@{Config}!tld::Config@{tld::Config}}
+\subsubsection[{Config}]{\setlength{\rightskip}{0pt plus 5cm}tld::Config::Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Settings} \&}]{ settings}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_config_ade40e6027fbdc054bd5772a5baa898ae}
+\hypertarget{classtld_1_1_config_a794ffe6627a441e41f22d368a279f2e5}{
+\index{tld::Config@{tld::Config}!$\sim$Config@{$\sim$Config}}
+\index{$\sim$Config@{$\sim$Config}!tld::Config@{tld::Config}}
+\subsubsection[{$\sim$Config}]{\setlength{\rightskip}{0pt plus 5cm}tld::Config::$\sim$Config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_config_a794ffe6627a441e41f22d368a279f2e5}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classtld_1_1_config_a920f1659e8823a127eca60b228da416a}{
+\index{tld::Config@{tld::Config}!configure@{configure}}
+\index{configure@{configure}!tld::Config@{tld::Config}}
+\subsubsection[{configure}]{\setlength{\rightskip}{0pt plus 5cm}int tld::Config::configure (
+\begin{DoxyParamCaption}
+\item[{{\bf Main} $\ast$}]{ main}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_config_a920f1659e8823a127eca60b228da416a}
+Configures the CamNode, \hyperlink{struct_im_acq}{ImAcq} and TldClassifier. 
+\begin{DoxyParams}{Parameters}
+\item[{\em node}]\item[{\em imAcq}]\item[{\em classifier}]\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+SUCCESS 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=352pt]{classtld_1_1_config_a920f1659e8823a127eca60b228da416a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1_config_ab2f2fb863b08832e2b877e6f09073333}{
+\index{tld::Config@{tld::Config}!init@{init}}
+\index{init@{init}!tld::Config@{tld::Config}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}int tld::Config::init (
+\begin{DoxyParamCaption}
+\item[{int}]{ argc, }
+\item[{char $\ast$$\ast$}]{ argv}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_config_ab2f2fb863b08832e2b877e6f09073333}
+Initializes the \hyperlink{classtld_1_1_config}{Config}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em argc}]number of command line arguments \item[{\em argv}]command line arguments \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+PROGRAM\_\-EXIT when an error occurred, SUCCESS if not 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=358pt]{classtld_1_1_config_ab2f2fb863b08832e2b877e6f09073333_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classtld_1_1_config_ab2f2fb863b08832e2b877e6f09073333_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/opentld/main/\hyperlink{_config_8h}{Config.h}\item 
+src/opentld/main/\hyperlink{_config_8cpp}{Config.cpp}\end{DoxyCompactItemize}

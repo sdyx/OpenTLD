@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="dir_f92b12c9b85e3eafe8753724e6303639" kind="dir">
+    <compoundname>src/libopentld/imacq/</compoundname>
+    <innerfile refid="_im_acq_8cpp">ImAcq.cpp</innerfile>
+    <innerfile refid="_im_acq_8h">ImAcq.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/imacq/"/>
+  </compounddef>
+</doxygen>

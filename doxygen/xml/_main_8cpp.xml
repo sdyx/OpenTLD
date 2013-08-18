@@ -1,0 +1,531 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_main_8cpp" kind="file">
+    <compoundname>Main.cpp</compoundname>
+    <includes refid="_main_8h" local="yes">Main.h</includes>
+    <includes refid="_config_8h" local="yes">Config.h</includes>
+    <includes refid="_im_acq_8h" local="yes">ImAcq.h</includes>
+    <includes refid="_gui_8h" local="yes">Gui.h</includes>
+    <includes refid="_t_l_d_util_8h" local="yes">TLDUtil.h</includes>
+    <includes refid="_trajectory_8h" local="yes">Trajectory.h</includes>
+    <incdepgraph>
+      <node id="1894">
+        <label>Settings.h</label>
+        <link refid="_settings_8h"/>
+        <childnode refid="1877" relation="include">
+        </childnode>
+        <childnode refid="1885" relation="include">
+        </childnode>
+      </node>
+      <node id="1875">
+        <label>DetectorCascade.h</label>
+        <link refid="_detector_cascade_8h"/>
+        <childnode refid="1876" relation="include">
+        </childnode>
+        <childnode refid="1878" relation="include">
+        </childnode>
+        <childnode refid="1879" relation="include">
+        </childnode>
+        <childnode refid="1881" relation="include">
+        </childnode>
+        <childnode refid="1882" relation="include">
+        </childnode>
+        <childnode refid="1883" relation="include">
+        </childnode>
+      </node>
+      <node id="1871">
+        <label>Main.h</label>
+        <link refid="_main_8h"/>
+        <childnode refid="1872" relation="include">
+        </childnode>
+        <childnode refid="1885" relation="include">
+        </childnode>
+        <childnode refid="1887" relation="include">
+        </childnode>
+      </node>
+      <node id="1881">
+        <label>EnsembleClassifier.h</label>
+        <link refid="_ensemble_classifier_8h"/>
+        <childnode refid="1873" relation="include">
+        </childnode>
+      </node>
+      <node id="1883">
+        <label>NNClassifier.h</label>
+        <link refid="_n_n_classifier_8h"/>
+        <childnode refid="1877" relation="include">
+        </childnode>
+        <childnode refid="1873" relation="include">
+        </childnode>
+        <childnode refid="1884" relation="include">
+        </childnode>
+        <childnode refid="1876" relation="include">
+        </childnode>
+      </node>
+      <node id="1879">
+        <label>VarianceFilter.h</label>
+        <link refid="_variance_filter_8h"/>
+        <childnode refid="1873" relation="include">
+        </childnode>
+        <childnode refid="1880" relation="include">
+        </childnode>
+        <childnode refid="1876" relation="include">
+        </childnode>
+      </node>
+      <node id="1888">
+        <label>string</label>
+      </node>
+      <node id="1886">
+        <label>highgui.h</label>
+      </node>
+      <node id="1884">
+        <label>NormalizedPatch.h</label>
+        <link refid="_normalized_patch_8h"/>
+      </node>
+      <node id="1897">
+        <label>Trajectory.h</label>
+        <link refid="_trajectory_8h"/>
+        <childnode refid="1877" relation="include">
+        </childnode>
+        <childnode refid="1873" relation="include">
+        </childnode>
+      </node>
+      <node id="1893">
+        <label>exception</label>
+      </node>
+      <node id="1889">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+        <childnode refid="1890" relation="include">
+        </childnode>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1891" relation="include">
+        </childnode>
+        <childnode refid="1885" relation="include">
+        </childnode>
+        <childnode refid="1894" relation="include">
+        </childnode>
+        <childnode refid="1871" relation="include">
+        </childnode>
+      </node>
+      <node id="1891">
+        <label>libconfig.h++</label>
+        <link refid="libconfig_8h_09_09"/>
+        <childnode refid="1892" relation="include">
+        </childnode>
+        <childnode refid="1893" relation="include">
+        </childnode>
+        <childnode refid="1888" relation="include">
+        </childnode>
+      </node>
+      <node id="1895">
+        <label>TLDUtil.h</label>
+        <link refid="_t_l_d_util_8h"/>
+        <childnode refid="1896" relation="include">
+        </childnode>
+        <childnode refid="1873" relation="include">
+        </childnode>
+      </node>
+      <node id="1880">
+        <label>IntegralImage.h</label>
+        <link refid="_integral_image_8h"/>
+        <childnode refid="1873" relation="include">
+        </childnode>
+      </node>
+      <node id="1870">
+        <label>src/opentld/main/Main.cpp</label>
+        <link refid="Main.cpp"/>
+        <childnode refid="1871" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+        <childnode refid="1885" relation="include">
+        </childnode>
+        <childnode refid="1887" relation="include">
+        </childnode>
+        <childnode refid="1895" relation="include">
+        </childnode>
+        <childnode refid="1897" relation="include">
+        </childnode>
+      </node>
+      <node id="1882">
+        <label>Clustering.h</label>
+        <link refid="_clustering_8h"/>
+        <childnode refid="1877" relation="include">
+        </childnode>
+        <childnode refid="1873" relation="include">
+        </childnode>
+        <childnode refid="1876" relation="include">
+        </childnode>
+      </node>
+      <node id="1878">
+        <label>ForegroundDetector.h</label>
+        <link refid="_foreground_detector_8h"/>
+        <childnode refid="1877" relation="include">
+        </childnode>
+        <childnode refid="1873" relation="include">
+        </childnode>
+        <childnode refid="1876" relation="include">
+        </childnode>
+      </node>
+      <node id="1887">
+        <label>Gui.h</label>
+        <link refid="_gui_8h"/>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1886" relation="include">
+        </childnode>
+      </node>
+      <node id="1877">
+        <label>vector</label>
+      </node>
+      <node id="1885">
+        <label>ImAcq.h</label>
+        <link refid="_im_acq_8h"/>
+        <childnode refid="1886" relation="include">
+        </childnode>
+      </node>
+      <node id="1896">
+        <label>utility</label>
+      </node>
+      <node id="1873">
+        <label>cv.h</label>
+      </node>
+      <node id="1890">
+        <label>iostream</label>
+      </node>
+      <node id="1872">
+        <label>TLD.h</label>
+        <link refid="_t_l_d_8h"/>
+        <childnode refid="1873" relation="include">
+        </childnode>
+        <childnode refid="1874" relation="include">
+        </childnode>
+        <childnode refid="1875" relation="include">
+        </childnode>
+      </node>
+      <node id="1874">
+        <label>MedianFlowTracker.h</label>
+        <link refid="_median_flow_tracker_8h"/>
+        <childnode refid="1873" relation="include">
+        </childnode>
+      </node>
+      <node id="1876">
+        <label>DetectionResult.h</label>
+        <link refid="_detection_result_8h"/>
+        <childnode refid="1877" relation="include">
+        </childnode>
+        <childnode refid="1873" relation="include">
+        </childnode>
+      </node>
+      <node id="1892">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>MainX.cpp</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Nov<sp/>17,<sp/>2011</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>Georg<sp/>Nebehay</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_main_8h" kindref="compound">Main.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_config_8h" kindref="compound">Config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_im_acq_8h" kindref="compound">ImAcq.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_gui_8h" kindref="compound">Gui.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_t_l_d_util_8h" kindref="compound">TLDUtil.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_trajectory_8h" kindref="compound">Trajectory.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">tld;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">cv;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" kindref="member">Main::doWork</ref>()</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_trajectory" kindref="compound">Trajectory</ref><sp/>trajectory;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>IplImage<sp/>*img<sp/>=<sp/><ref refid="_im_acq_8cpp_1aa2d578629cc485cf191adede101d032f" kindref="member">imAcqGetImg</ref>(<ref refid="class_main_1a37f97b28ea0f64421b5a0bb590059321" kindref="member">imAcq</ref>);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>Mat<sp/>grey(img-&gt;height,<sp/>img-&gt;width,<sp/>CV_8UC1);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>cvtColor(cv::Mat(img),<sp/>grey,<sp/>CV_BGR2GRAY);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1abe59bf99d46b55f6ef402cb48f9d290b" kindref="member">detectorCascade</ref>-&gt;<ref refid="classtld_1_1_detector_cascade_1a593db7c6ab225f17ac02cd9ef5faebd2" kindref="member">imgWidth</ref><sp/>=<sp/>grey.cols;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1abe59bf99d46b55f6ef402cb48f9d290b" kindref="member">detectorCascade</ref>-&gt;<ref refid="classtld_1_1_detector_cascade_1a4e9b954d0b95f6e91d479bba9ec6beac" kindref="member">imgHeight</ref><sp/>=<sp/>grey.rows;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1abe59bf99d46b55f6ef402cb48f9d290b" kindref="member">detectorCascade</ref>-&gt;<ref refid="classtld_1_1_detector_cascade_1aa47c6463f1ae23868551a4c82c555f24" kindref="member">imgWidthStep</ref><sp/>=<sp/>grey.step;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_1a1e3ed8eee4f7fe8633419512caa544c2" kindref="member">showTrajectory</ref>)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trajectory.<ref refid="classtld_1_1_trajectory_1a635927cb2bca22f884ddc00a0e18b6d7" kindref="member">init</ref>(<ref refid="class_main_1a9d46f95b41276d2beeb9b98db1267e98" kindref="member">trajectoryLength</ref>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_1a4fbe69e8eb79528ea332fb35bd4e2575" kindref="member">selectManually</ref>)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvRect<sp/>box;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespacetld_1a75cd208f8053ece69d5d7de9c2ed33fd" kindref="member">getBBFromUser</ref>(img,<sp/>box,<sp/><ref refid="class_main_1a56afdbd63fd6e0f92ed2113ad53cc8df" kindref="member">gui</ref>)<sp/>==<sp/><ref refid="_main_8h_1ab3e78f68ae045f494fe808fce5f08c03a4acdc426f0743e2c7ed5faf1eb513411" kindref="member">PROGRAM_EXIT</ref>)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_1a0f8b49ea51db0779192fb254c5e31e22" kindref="member">initialBB</ref><sp/>==<sp/><ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1a0f8b49ea51db0779192fb254c5e31e22" kindref="member">initialBB</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">[4];</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1a0f8b49ea51db0779192fb254c5e31e22" kindref="member">initialBB</ref>[0]<sp/>=<sp/>box.x;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1a0f8b49ea51db0779192fb254c5e31e22" kindref="member">initialBB</ref>[1]<sp/>=<sp/>box.y;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1a0f8b49ea51db0779192fb254c5e31e22" kindref="member">initialBB</ref>[2]<sp/>=<sp/>box.width;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1a0f8b49ea51db0779192fb254c5e31e22" kindref="member">initialBB</ref>[3]<sp/>=<sp/>box.height;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>FILE<sp/>*resultsFile<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_1af1797c9bbb3ff136bba623ced62b8454" kindref="member">printResults</ref><sp/>!=<sp/><ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resultsFile<sp/>=<sp/>fopen(<ref refid="class_main_1af1797c9bbb3ff136bba623ced62b8454" kindref="member">printResults</ref>,<sp/></highlight><highlight class="stringliteral">&quot;w&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>reuseFrameOnce<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>skipProcessingOnce<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_1ad0301eff91ba4a68e41e28f238f5a743" kindref="member">loadModel</ref><sp/>&amp;&amp;<sp/><ref refid="class_main_1a47ef2693d73c1e51a329a50040e20892" kindref="member">modelPath</ref><sp/>!=<sp/><ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" kindref="member">readFromFile</ref>(<ref refid="class_main_1a47ef2693d73c1e51a329a50040e20892" kindref="member">modelPath</ref>);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reuseFrameOnce<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_1a0f8b49ea51db0779192fb254c5e31e22" kindref="member">initialBB</ref><sp/>!=<sp/><ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Rect<sp/>bb<sp/>=<sp/><ref refid="namespacetld_1a8f2edbadab9bc04731c73571340969a9" kindref="member">tldArrayToRect</ref>(<ref refid="class_main_1a0f8b49ea51db0779192fb254c5e31e22" kindref="member">initialBB</ref>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Starting<sp/>at<sp/>%d<sp/>%d<sp/>%d<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>bb.x,<sp/>bb.y,<sp/>bb.width,<sp/>bb.height);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a6a1b9edb0ae0f79d4447c2ff7ab983be" kindref="member">selectObject</ref>(grey,<sp/>&amp;bb);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>skipProcessingOnce<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reuseFrameOnce<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>deleting<sp/>initialBB<sp/>to<sp/>avoid<sp/>memLeaks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="class_main_1a0f8b49ea51db0779192fb254c5e31e22" kindref="member">initialBB</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<ref refid="_im_acq_8cpp_1a864124578948857087e2ba9021351e80" kindref="member">imAcqHasMoreFrames</ref>(<ref refid="class_main_1a37f97b28ea0f64421b5a0bb590059321" kindref="member">imAcq</ref>))</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tic<sp/>=<sp/>cvGetTickCount();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!reuseFrameOnce)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>img<sp/>=<sp/><ref refid="_im_acq_8cpp_1aa2d578629cc485cf191adede101d032f" kindref="member">imAcqGetImg</ref>(<ref refid="class_main_1a37f97b28ea0f64421b5a0bb590059321" kindref="member">imAcq</ref>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(img<sp/>==<sp/><ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;current<sp/>image<sp/>is<sp/>NULL,<sp/>assuming<sp/>end<sp/>of<sp/>input.\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvtColor(cv::Mat(img),<sp/>grey,<sp/>CV_BGR2GRAY);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!skipProcessingOnce)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a8161e09603dc40c43d314cfec9e0746b" kindref="member">processImage</ref>(img);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>skipProcessingOnce<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_1af1797c9bbb3ff136bba623ced62b8454" kindref="member">printResults</ref><sp/>!=<sp/><ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a5af4bc9d8fa64c4423b294f727c4ba55" kindref="member">currBB</ref><sp/>!=<sp/><ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(resultsFile,<sp/></highlight><highlight class="stringliteral">&quot;%d<sp/>%.2d<sp/>%.2d<sp/>%.2d<sp/>%.2d<sp/>%f\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_main_1a37f97b28ea0f64421b5a0bb590059321" kindref="member">imAcq</ref>-&gt;<ref refid="struct_im_acq_1a0be9cca3c7dbda6da3ce2752717ce885" kindref="member">currentFrame</ref><sp/>-<sp/>1,<sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a5af4bc9d8fa64c4423b294f727c4ba55" kindref="member">currBB</ref>-&gt;x,<sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a5af4bc9d8fa64c4423b294f727c4ba55" kindref="member">currBB</ref>-&gt;y,<sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a5af4bc9d8fa64c4423b294f727c4ba55" kindref="member">currBB</ref>-&gt;width,<sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a5af4bc9d8fa64c4423b294f727c4ba55" kindref="member">currBB</ref>-&gt;height,<sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1ab2e815db72cb2f40a7864c4d4457eb34" kindref="member">currConf</ref>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(resultsFile,<sp/></highlight><highlight class="stringliteral">&quot;%d<sp/>NaN<sp/>NaN<sp/>NaN<sp/>NaN<sp/>NaN\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_main_1a37f97b28ea0f64421b5a0bb590059321" kindref="member">imAcq</ref>-&gt;<ref refid="struct_im_acq_1a0be9cca3c7dbda6da3ce2752717ce885" kindref="member">currentFrame</ref><sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>toc<sp/>=<sp/>(cvGetTickCount()<sp/>-<sp/>tic)<sp/>/<sp/>cvGetTickFrequency();</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>toc<sp/>=<sp/>toc<sp/>/<sp/>1000000;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>fps<sp/>=<sp/>1<sp/>/<sp/>toc;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>confident<sp/>=<sp/>(<ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1ab2e815db72cb2f40a7864c4d4457eb34" kindref="member">currConf</ref><sp/>&gt;=<sp/><ref refid="class_main_1a635e9bb74aaa1960aafcd75d21a8784f" kindref="member">threshold</ref>)<sp/>?<sp/>1<sp/>:<sp/>0;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_1ae687ebbff0ebf899894316a3db89fdb5" kindref="member">showOutput</ref><sp/>||<sp/><ref refid="class_main_1a4bc0c744bd9bb33aa9bbc92666819330" kindref="member">saveDir</ref><sp/>!=<sp/><ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">[128];</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>learningString[10]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a0f108af012bc9b7d004bed33cf8e4d90" kindref="member">learning</ref>)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy(learningString,<sp/></highlight><highlight class="stringliteral">&quot;Learning&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;#%d,Posterior<sp/>%.2f;<sp/>fps:<sp/>%.2f,<sp/>#numwindows:%d,<sp/>%s&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_main_1a37f97b28ea0f64421b5a0bb590059321" kindref="member">imAcq</ref>-&gt;<ref refid="struct_im_acq_1a0be9cca3c7dbda6da3ce2752717ce885" kindref="member">currentFrame</ref><sp/>-<sp/>1,<sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1ab2e815db72cb2f40a7864c4d4457eb34" kindref="member">currConf</ref>,<sp/>fps,<sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1abe59bf99d46b55f6ef402cb48f9d290b" kindref="member">detectorCascade</ref>-&gt;<ref refid="classtld_1_1_detector_cascade_1a700932efdadfdd218697b56aa7703b4b" kindref="member">numWindows</ref>,<sp/>learningString);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvScalar<sp/>yellow<sp/>=<sp/>CV_RGB(255,<sp/>255,<sp/>0);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvScalar<sp/>blue<sp/>=<sp/>CV_RGB(0,<sp/>0,<sp/>255);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvScalar<sp/>black<sp/>=<sp/>CV_RGB(0,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvScalar<sp/>white<sp/>=<sp/>CV_RGB(255,<sp/>255,<sp/>255);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a5af4bc9d8fa64c4423b294f727c4ba55" kindref="member">currBB</ref><sp/>!=<sp/><ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvScalar<sp/>rectangleColor<sp/>=<sp/>(confident)<sp/>?<sp/>blue<sp/>:<sp/>yellow;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvRectangle(img,<sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a5af4bc9d8fa64c4423b294f727c4ba55" kindref="member">currBB</ref>-&gt;tl(),<sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a5af4bc9d8fa64c4423b294f727c4ba55" kindref="member">currBB</ref>-&gt;br(),<sp/>rectangleColor,<sp/>8,<sp/>8,<sp/>0);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_1a1e3ed8eee4f7fe8633419512caa544c2" kindref="member">showTrajectory</ref>)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvPoint<sp/>center<sp/>=<sp/>cvPoint(<ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a5af4bc9d8fa64c4423b294f727c4ba55" kindref="member">currBB</ref>-&gt;x+<ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a5af4bc9d8fa64c4423b294f727c4ba55" kindref="member">currBB</ref>-&gt;width/2,<sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a5af4bc9d8fa64c4423b294f727c4ba55" kindref="member">currBB</ref>-&gt;y+<ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a5af4bc9d8fa64c4423b294f727c4ba55" kindref="member">currBB</ref>-&gt;height/2);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvLine(img,<sp/>cvPoint(center.x-2,<sp/>center.y-2),<sp/>cvPoint(center.x+2,<sp/>center.y+2),<sp/>rectangleColor,<sp/>2);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvLine(img,<sp/>cvPoint(center.x-2,<sp/>center.y+2),<sp/>cvPoint(center.x+2,<sp/>center.y-2),<sp/>rectangleColor,<sp/>2);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trajectory.<ref refid="classtld_1_1_trajectory_1a28a92000e31f71ce0831d72b068ae97b" kindref="member">addPoint</ref>(center,<sp/>rectangleColor);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_1a1e3ed8eee4f7fe8633419512caa544c2" kindref="member">showTrajectory</ref>)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trajectory.<ref refid="classtld_1_1_trajectory_1a28a92000e31f71ce0831d72b068ae97b" kindref="member">addPoint</ref>(cvPoint(-1,<sp/>-1),<sp/>cvScalar(-1,<sp/>-1,<sp/>-1));</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_1a1e3ed8eee4f7fe8633419512caa544c2" kindref="member">showTrajectory</ref>)</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trajectory.<ref refid="classtld_1_1_trajectory_1af8a0ffc5eb86050e0d26c766e4b2098d" kindref="member">drawTrajectory</ref>(img);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvFont<sp/>font;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvInitFont(&amp;font,<sp/>CV_FONT_HERSHEY_SIMPLEX,<sp/>.5,<sp/>.5,<sp/>0,<sp/>1,<sp/>8);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvRectangle(img,<sp/>cvPoint(0,<sp/>0),<sp/>cvPoint(img-&gt;width,<sp/>50),<sp/>black,<sp/>CV_FILLED,<sp/>8,<sp/>0);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvPutText(img,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/>cvPoint(25,<sp/>25),<sp/>&amp;font,<sp/>white);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_1a9d083ec93a40eae468d5133fa7dc28ac" kindref="member">showForeground</ref>)</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1abe59bf99d46b55f6ef402cb48f9d290b" kindref="member">detectorCascade</ref>-&gt;<ref refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" kindref="member">detectionResult</ref>-&gt;<ref refid="classtld_1_1_detection_result_1ac640285c436ff5166d0ea34116d4dc69" kindref="member">fgList</ref>-&gt;size();<sp/>i++)</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Rect<sp/>r<sp/>=<sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1abe59bf99d46b55f6ef402cb48f9d290b" kindref="member">detectorCascade</ref>-&gt;<ref refid="classtld_1_1_detector_cascade_1a14544e4e2e7ca365e49969a6937aec51" kindref="member">detectionResult</ref>-&gt;<ref refid="classtld_1_1_detection_result_1ac640285c436ff5166d0ea34116d4dc69" kindref="member">fgList</ref>-&gt;at(i);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvRectangle(img,<sp/>r.tl(),<sp/>r.br(),<sp/>white,<sp/>1);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_1ae687ebbff0ebf899894316a3db89fdb5" kindref="member">showOutput</ref>)</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1a56afdbd63fd6e0f92ed2113ad53cc8df" kindref="member">gui</ref>-&gt;<ref refid="classtld_1_1_gui_1a639a48143e702f183fc4dd626b7900ae" kindref="member">showImage</ref>(img);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>key<sp/>=<sp/><ref refid="class_main_1a56afdbd63fd6e0f92ed2113ad53cc8df" kindref="member">gui</ref>-&gt;<ref refid="classtld_1_1_gui_1a08a00ca08170f5707937aa133c12c415" kindref="member">getKey</ref>();</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(key<sp/>==<sp/></highlight><highlight class="charliteral">&apos;q&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(key<sp/>==<sp/></highlight><highlight class="charliteral">&apos;b&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_foreground_detector" kindref="compound">ForegroundDetector</ref><sp/>*fg<sp/>=<sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1abe59bf99d46b55f6ef402cb48f9d290b" kindref="member">detectorCascade</ref>-&gt;<ref refid="classtld_1_1_detector_cascade_1ad03faad5b05805f5edba330cccfee1f1" kindref="member">foregroundDetector</ref>;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(fg-&gt;<ref refid="classtld_1_1_foreground_detector_1a03accab9e786b8dcb6c332424ed5dee0" kindref="member">bgImg</ref>.empty())</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fg-&gt;<ref refid="classtld_1_1_foreground_detector_1a03accab9e786b8dcb6c332424ed5dee0" kindref="member">bgImg</ref><sp/>=<sp/>grey.clone();</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fg-&gt;<ref refid="classtld_1_1_foreground_detector_1a03accab9e786b8dcb6c332424ed5dee0" kindref="member">bgImg</ref>.release();</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(key<sp/>==<sp/></highlight><highlight class="charliteral">&apos;c&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//clear<sp/>everything</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a42636c4a6fef7de9b71af987151a7f9e" kindref="member">release</ref>();</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(key<sp/>==<sp/></highlight><highlight class="charliteral">&apos;l&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a86422799478881dd711d0a78444be245" kindref="member">learningEnabled</ref><sp/>=<sp/>!<ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a86422799478881dd711d0a78444be245" kindref="member">learningEnabled</ref>;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;LearningEnabled:<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a86422799478881dd711d0a78444be245" kindref="member">learningEnabled</ref>);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(key<sp/>==<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a873bb61492173098b134d94239ef0ba4" kindref="member">alternating</ref><sp/>=<sp/>!<ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a873bb61492173098b134d94239ef0ba4" kindref="member">alternating</ref>;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;alternating:<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a873bb61492173098b134d94239ef0ba4" kindref="member">alternating</ref>);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(key<sp/>==<sp/></highlight><highlight class="charliteral">&apos;e&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" kindref="member">writeToFile</ref>(<ref refid="class_main_1a3003ab9835173ebf15939e4b97143615" kindref="member">modelExportFile</ref>);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(key<sp/>==<sp/></highlight><highlight class="charliteral">&apos;i&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" kindref="member">readFromFile</ref>(<ref refid="class_main_1a47ef2693d73c1e51a329a50040e20892" kindref="member">modelPath</ref>);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(key<sp/>==<sp/></highlight><highlight class="charliteral">&apos;r&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvRect<sp/>box;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespacetld_1a75cd208f8053ece69d5d7de9c2ed33fd" kindref="member">getBBFromUser</ref>(img,<sp/>box,<sp/><ref refid="class_main_1a56afdbd63fd6e0f92ed2113ad53cc8df" kindref="member">gui</ref>)<sp/>==<sp/><ref refid="_main_8h_1ab3e78f68ae045f494fe808fce5f08c03a4acdc426f0743e2c7ed5faf1eb513411" kindref="member">PROGRAM_EXIT</ref>)</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Rect<sp/>r<sp/>=<sp/>Rect(box);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1a6a1b9edb0ae0f79d4447c2ff7ab983be" kindref="member">selectObject</ref>(grey,<sp/>&amp;r);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_1a4bc0c744bd9bb33aa9bbc92666819330" kindref="member">saveDir</ref><sp/>!=<sp/><ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>fileName[256];</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(fileName,<sp/></highlight><highlight class="stringliteral">&quot;%s/%.5d.png&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_main_1a4bc0c744bd9bb33aa9bbc92666819330" kindref="member">saveDir</ref>,<sp/><ref refid="class_main_1a37f97b28ea0f64421b5a0bb590059321" kindref="member">imAcq</ref>-&gt;<ref refid="struct_im_acq_1a0be9cca3c7dbda6da3ce2752717ce885" kindref="member">currentFrame</ref><sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvSaveImage(fileName,<sp/>img);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!reuseFrameOnce)</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvReleaseImage(&amp;img);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reuseFrameOnce<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_1a9a760d7b7e2dc8dc9bdaa027a86da734" kindref="member">exportModelAfterRun</ref>)</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_1acd79fe4086a18124923606aabb982fec" kindref="member">tld</ref>-&gt;<ref refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" kindref="member">writeToFile</ref>(<ref refid="class_main_1a3003ab9835173ebf15939e4b97143615" kindref="member">modelExportFile</ref>);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//FB:<sp/>Avoiding<sp/>leakage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_1af1797c9bbb3ff136bba623ced62b8454" kindref="member">printResults</ref><sp/>!=<sp/><ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fclose(<sp/>resultsFile<sp/>);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Main.cpp"/>
+  </compounddef>
+</doxygen>

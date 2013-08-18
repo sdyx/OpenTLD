@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="dir_0a4c62acf34b52903b941e5b8a7b7759" kind="dir">
+    <compoundname>src/libopentld/</compoundname>
+    <innerdir refid="dir_f92b12c9b85e3eafe8753724e6303639">src/libopentld/imacq/</innerdir>
+    <innerdir refid="dir_83c0e8c49fcc3a7bf51a0b28e4f121e7">src/libopentld/mftracker/</innerdir>
+    <innerdir refid="dir_18118500013aa8fd5e5e5c116a78ff44">src/libopentld/tld/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/"/>
+  </compounddef>
+</doxygen>

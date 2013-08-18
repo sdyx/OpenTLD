@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="classlibconfig_1_1_file_i_o_exception" kind="class" prot="public">
+    <compoundname>libconfig::FileIOException</compoundname>
+    <basecompoundref refid="classlibconfig_1_1_config_exception" prot="public" virt="non-virtual">libconfig::ConfigException</basecompoundref>
+    <includes refid="libconfig_8h_09_09" local="no">libconfig.h++</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlibconfig_1_1_file_i_o_exception_1a84b70cf651b243d10ecaf16fadea22a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * libconfig::FileIOException::what</definition>
+        <argsstring>() const </argsstring>
+        <name>what</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="132" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="277" bodyend="280"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="473">
+        <label>libconfig::ConfigException</label>
+        <link refid="classlibconfig_1_1_config_exception"/>
+      </node>
+      <node id="472">
+        <label>libconfig::FileIOException</label>
+        <link refid="classlibconfig_1_1_file_i_o_exception"/>
+        <childnode refid="473" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="475">
+        <label>libconfig::ConfigException</label>
+        <link refid="classlibconfig_1_1_config_exception"/>
+      </node>
+      <node id="474">
+        <label>libconfig::FileIOException</label>
+        <link refid="classlibconfig_1_1_file_i_o_exception"/>
+        <childnode refid="475" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="129" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="128" bodyend="133"/>
+    <listofallmembers>
+      <member refid="classlibconfig_1_1_file_i_o_exception_1a84b70cf651b243d10ecaf16fadea22a3" prot="public" virt="non-virtual"><scope>libconfig::FileIOException</scope><name>what</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

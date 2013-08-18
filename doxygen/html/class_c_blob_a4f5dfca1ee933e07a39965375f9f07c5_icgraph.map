@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_c_blob.html#ad0bb95f395084ee89ca35cf11f203342" title="Get bounding ellipse." alt="" coords="212,81,343,109"/>
+<area shape="rect" id="node13" href="$class_c_blob_get_moment.html#aefebc825f026670fab8517bc0ea052ca" title="CBlobGetMoment::operator()" alt="" coords="173,131,381,159"/>
+<area shape="rect" id="node5" href="$class_c_blob_get_orientation.html#a083233587fed855654e580a355265be3" title="Aply operator to blob." alt="" coords="447,5,673,33"/>
+<area shape="rect" id="node7" href="$class_c_blob_get_minor_axis_length.html#a2269bfa1651667f020e27d9f1e8f8d98" title="Aply operator to blob." alt="" coords="431,55,689,83"/>
+<area shape="rect" id="node9" href="$class_c_blob_get_area_elipse_ratio.html#a24f9703155af6e963a1ae226cdb71125" title="Aply operator to blob." alt="" coords="433,106,687,134"/>
+<area shape="rect" id="node11" href="$class_c_blob_get_major_axis_length.html#a535c9a23d16bf020ed0c6aa9f36b884f" title="Aply operator to blob." alt="" coords="431,157,689,185"/>
+</map>

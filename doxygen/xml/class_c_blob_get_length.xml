@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="class_c_blob_get_length" kind="class" prot="public">
+    <compoundname>CBlobGetLength</compoundname>
+    <basecompoundref refid="class_c_operador_blob" prot="public" virt="non-virtual">COperadorBlob</basecompoundref>
+    <includes refid="_blob_operators_8h" local="no">BlobOperators.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_blob_get_length_1a6c56ce1a327e5e7e6f5bddaab074db71" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double CBlobGetLength::operator()</definition>
+        <argsstring>(CBlob &amp;blob)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="class_c_operador_blob_1a303c4189cc94cafbcbee116bf014e623">operator()</reimplements>
+        <param>
+          <type><ref refid="class_c_blob" kindref="compound">CBlob</ref> &amp;</type>
+          <declname>blob</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retorna la longitud del blob<itemizedlist>
+<listitem><para>FUNCTION: <ref refid="class_c_blob_get_length" kindref="compound">CBlobGetLength</ref></para></listitem><listitem><para>FUNCTIONALITY: Calculates the lenght of the blob (the biggest axis of the blob)</para></listitem><listitem><para>PARAMETERS:</para></listitem><listitem><para>RESULT:</para></listitem><listitem><para>RESTRICTIONS:<itemizedlist>
+<listitem><para>The lenght is an aproximation to the real lenght</para></listitem></itemizedlist>
+</para></listitem><listitem><para>AUTHOR: Ricard Borràs</para></listitem><listitem><para>CREATION DATE: 25-05-2005.</para></listitem><listitem><para>MODIFICATION: Date. Author. Description. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="204" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.cpp" bodystart="328" bodyend="345"/>
+        <references refid="class_c_blob_1a6f1db9fcb42c0a3ea003aaeb0ec65a8d" compoundref="blob_8cpp" startline="157" endline="172">CBlob::Area</references>
+        <references refid="class_c_blob_1af63853ea55dbebbee5b013189e765b51" compoundref="blob_8cpp" startline="187" endline="203">CBlob::Perimeter</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_length_1a0e2c65bd97c146f51ab772e5ba8d62d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>const char* CBlobGetLength::GetNom</definition>
+        <argsstring>()</argsstring>
+        <name>GetNom</name>
+        <reimplements refid="class_c_operador_blob_1a717a19c163a26b45081a2231be24c008">GetNom</reimplements>
+        <briefdescription>
+<para>Get operator name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="206" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="205" bodyend="208"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Classe per calcular la longitud d&apos;un blob Class to calculate the length of a blob </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="281">
+        <label>CBlobGetLength</label>
+        <link refid="class_c_blob_get_length"/>
+        <childnode refid="282" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="282">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="283">
+        <label>CBlobGetLength</label>
+        <link refid="class_c_blob_get_length"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="284">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="202" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="201" bodyend="209"/>
+    <listofallmembers>
+      <member refid="class_c_blob_get_length_1a0e2c65bd97c146f51ab772e5ba8d62d5" prot="public" virt="virtual"><scope>CBlobGetLength</scope><name>GetNom</name></member>
+      <member refid="class_c_operador_blob_1a477edfe687cf9ef41469bcf6ea636a75" prot="public" virt="non-virtual"><scope>CBlobGetLength</scope><name>operator COperadorBlob *</name></member>
+      <member refid="class_c_blob_get_length_1a6c56ce1a327e5e7e6f5bddaab074db71" prot="public" virt="virtual"><scope>CBlobGetLength</scope><name>operator()</name></member>
+      <member refid="class_c_operador_blob_1a25ccc652bfa55e7b0143c88f452729a2" prot="public" virt="virtual"><scope>CBlobGetLength</scope><name>~COperadorBlob</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

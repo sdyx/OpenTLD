@@ -1,0 +1,69 @@
+\hypertarget{_b_b_8h}{
+\section{src/libopentld/mftracker/BB.h File Reference}
+\label{_b_b_8h}\index{src/libopentld/mftracker/BB.h@{src/libopentld/mftracker/BB.h}}
+}
+This graph shows which files directly or indirectly include this file:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_b_b_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_b_b_8h_a2ef4a63d6f593c4477ece315fe7d1ae4}{getFilledBBPoints} (float $\ast$bb, int numM, int numN, int margin, float $\ast$pts)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_b_b_8h_a2ef4a63d6f593c4477ece315fe7d1ae4}{
+\index{BB.h@{BB.h}!getFilledBBPoints@{getFilledBBPoints}}
+\index{getFilledBBPoints@{getFilledBBPoints}!BB.h@{BB.h}}
+\subsubsection[{getFilledBBPoints}]{\setlength{\rightskip}{0pt plus 5cm}int getFilledBBPoints (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{ bb, }
+\item[{int}]{ numM, }
+\item[{int}]{ numN, }
+\item[{int}]{ margin, }
+\item[{float $\ast$}]{ pts}
+\end{DoxyParamCaption}
+)}}
+\label{_b_b_8h_a2ef4a63d6f593c4477ece315fe7d1ae4}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em bb}]Bounding box represented through 2 points(x1,y1,x2,y2) \item[{\em numM}]Number of points in height direction. \item[{\em numN}]Number of points in width direction. \item[{\em margin}]margin (in pixel) \item[{\em pts}]Contains the calculated points in the form (x1, y1, x2, y2). Size of the array must be numM $\ast$ numN $\ast$ 2.\end{DoxyParams}
+Creates numM x numN points grid on BBox. Points ordered in 1 dimensional array (x1, y1, x2, y2). 
+\begin{DoxyParams}{Parameters}
+\item[{\em bb}]Bounding box represented through 2 points(x1,y1,x2,y2) \item[{\em numM}]Number of points in height direction. \item[{\em numN}]Number of points in width direction. \item[{\em margin}]margin (in pixel) \item[{\em pts}]Contains the calculated points in the form (x1, y1, x2, y2). Size of the array must be numM $\ast$ numN $\ast$ 2. \end{DoxyParams}
+
+
+gap between points in width direction FB: set to 1.0 in order to avoid division by 0 if none of the numN \&\& numM checks are hit.
+
+gap between points in height direction FB: set to 1.0 in order to avoid division by 0 if none of the numN \&\& numM checks are hit.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{_b_b_8h_a2ef4a63d6f593c4477ece315fe7d1ae4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{_b_b_8h_a2ef4a63d6f593c4477ece315fe7d1ae4_icgraph}
+\end{center}
+\end{figure}
+
+

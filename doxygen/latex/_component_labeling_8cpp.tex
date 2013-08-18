@@ -1,0 +1,379 @@
+\hypertarget{_component_labeling_8cpp}{
+\section{src/3rdparty/cvblobs/ComponentLabeling.cpp File Reference}
+\label{_component_labeling_8cpp}\index{src/3rdparty/cvblobs/ComponentLabeling.cpp@{src/3rdparty/cvblobs/ComponentLabeling.cpp}}
+}
+{\ttfamily \#include \char`\"{}ComponentLabeling.h\char`\"{}}\par
+Include dependency graph for ComponentLabeling.cpp:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_component_labeling_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{_component_labeling_8cpp_ad8321f7b7a9d8b1a2c8b20a5bcefa164}{GET\_\-ABOVE\_\-IMAGEPIXEL} (unsigned char $\ast$currentPixel, IplImage $\ast$image)
+\item 
+unsigned char \hyperlink{_component_labeling_8cpp_ae716ac630740753ca934744210736ee2}{GET\_\-BELOW\_\-IMAGEPIXEL} (unsigned char $\ast$currentPixel, IplImage $\ast$image)
+\item 
+unsigned char \hyperlink{_component_labeling_8cpp_a2bcdcae4cc36c0060f85f904cc6c826e}{GET\_\-IMAGE\_\-PIXEL} (IplImage $\ast$image, CvPoint p)
+\item 
+bool \hyperlink{_component_labeling_8cpp_ae2b92da1ce3ca327bddd6b4a5c39cfc5}{GET\_\-IMAGEMASK\_\-PIXEL} (IplImage $\ast$mask, CvPoint p)
+\item 
+bool \hyperlink{_component_labeling_8cpp_ae950b1a18f9c56ae84e9338f2b87aa84}{GET\_\-BELOW\_\-VISITEDPIXEL} (bool $\ast$currentPixel, int imageWidth)
+\item 
+void \hyperlink{_component_labeling_8cpp_a509d4ac5415f87f32ac7a8b088bf3d68}{ASSIGN\_\-LABEL} (CvPoint p, \hyperlink{blob_8h_ae21ba61a4f023a2f91fc5feaad495073}{t\_\-labelType} $\ast$labels, int imageWidth, int newLabel)
+\item 
+void \hyperlink{_component_labeling_8cpp_a60f487d43bfd39b64f320c5487926a23}{ASSIGN\_\-VISITED} (CvPoint p, bool $\ast$visitedPoints, int imageWidth)
+\item 
+bool \hyperlink{_component_labeling_8cpp_a05b80d9c559310ac95461bd523d888f6}{ComponentLabeling} (IplImage $\ast$inputImage, IplImage $\ast$maskImage, unsigned char backgroundColor, \hyperlink{_component_labeling_8h_a9b2ee33d26a482072b82620e6709e66e}{Blob\_\-vector} \&blobs)
+\item 
+void \hyperlink{_component_labeling_8cpp_a36ce253ae4e842675730bfc013e6485a}{contourTracing} (IplImage $\ast$image, IplImage $\ast$maskImage, CvPoint contourStart, \hyperlink{blob_8h_ae21ba61a4f023a2f91fc5feaad495073}{t\_\-labelType} $\ast$labels, bool $\ast$visitedPoints, \hyperlink{blob_8h_ae21ba61a4f023a2f91fc5feaad495073}{t\_\-labelType} label, bool internalContour, unsigned char backgroundColor, \hyperlink{class_c_blob_contour}{CBlobContour} $\ast$currentBlobcontour)
+\item 
+CvPoint \hyperlink{_component_labeling_8cpp_ae0881dec50a29351bda94e482ce3cb28}{tracer} (IplImage $\ast$image, IplImage $\ast$maskImage, CvPoint P, bool $\ast$visitedPoints, short initialMovement, unsigned char backgroundColor, short \&movement)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_component_labeling_8cpp_a509d4ac5415f87f32ac7a8b088bf3d68}{
+\index{ComponentLabeling.cpp@{ComponentLabeling.cpp}!ASSIGN\_\-LABEL@{ASSIGN\_\-LABEL}}
+\index{ASSIGN\_\-LABEL@{ASSIGN\_\-LABEL}!ComponentLabeling.cpp@{ComponentLabeling.cpp}}
+\subsubsection[{ASSIGN\_\-LABEL}]{\setlength{\rightskip}{0pt plus 5cm}void ASSIGN\_\-LABEL (
+\begin{DoxyParamCaption}
+\item[{CvPoint}]{ p, }
+\item[{{\bf t\_\-labelType} $\ast$}]{ labels, }
+\item[{int}]{ imageWidth, }
+\item[{int}]{ newLabel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_component_labeling_8cpp_a509d4ac5415f87f32ac7a8b088bf3d68}
+
+\begin{DoxyItemize}
+\item FUNCIÓ: ASSIGN\_\-LABEL
+\item FUNCIONALITAT: Assigns label value to label image
+\item PARÀMETRES:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESULTAT:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESTRICCIONS:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item AUTOR: rborras
+\item DATA DE CREACIÓ: 2008/04/29
+\item MODIFICACIÓ: Data. Autor. Descripció. 
+\end{DoxyItemize}
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_component_labeling_8cpp_a509d4ac5415f87f32ac7a8b088bf3d68_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_component_labeling_8cpp_a60f487d43bfd39b64f320c5487926a23}{
+\index{ComponentLabeling.cpp@{ComponentLabeling.cpp}!ASSIGN\_\-VISITED@{ASSIGN\_\-VISITED}}
+\index{ASSIGN\_\-VISITED@{ASSIGN\_\-VISITED}!ComponentLabeling.cpp@{ComponentLabeling.cpp}}
+\subsubsection[{ASSIGN\_\-VISITED}]{\setlength{\rightskip}{0pt plus 5cm}void ASSIGN\_\-VISITED (
+\begin{DoxyParamCaption}
+\item[{CvPoint}]{ p, }
+\item[{bool $\ast$}]{ visitedPoints, }
+\item[{int}]{ imageWidth}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_component_labeling_8cpp_a60f487d43bfd39b64f320c5487926a23}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_component_labeling_8cpp_a60f487d43bfd39b64f320c5487926a23_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_component_labeling_8cpp_a05b80d9c559310ac95461bd523d888f6}{
+\index{ComponentLabeling.cpp@{ComponentLabeling.cpp}!ComponentLabeling@{ComponentLabeling}}
+\index{ComponentLabeling@{ComponentLabeling}!ComponentLabeling.cpp@{ComponentLabeling.cpp}}
+\subsubsection[{ComponentLabeling}]{\setlength{\rightskip}{0pt plus 5cm}bool ComponentLabeling (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ inputImage, }
+\item[{IplImage $\ast$}]{ maskImage, }
+\item[{unsigned char}]{ backgroundColor, }
+\item[{{\bf Blob\_\-vector} \&}]{ blobs}
+\end{DoxyParamCaption}
+)}}
+\label{_component_labeling_8cpp_a05b80d9c559310ac95461bd523d888f6}
+
+\begin{DoxyItemize}
+\item FUNCIÓ: ComponentLabeling
+\item FUNCIONALITAT: Calcula els components binaris (blobs) d'una imatge amb connectivitat a 8
+\item PARÀMETRES:
+\begin{DoxyItemize}
+\item inputImage: image to segment (pixel values different than blobColor are treated as background)
+\item maskImage: if not NULL, all the pixels equal to 0 in mask are skipped in input image
+\item backgroundColor: color of background (ignored pixels)
+\item blobs: blob vector destination
+\end{DoxyItemize}
+\item RESULTAT:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESTRICCIONS:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item AUTOR: rborras
+\item DATA DE CREACIÓ: 2008/04/21
+\item MODIFICACIÓ: Data. Autor. Descripció.
+\item NOTA: Algorithm based on \char`\"{}A linear-\/time component labeling algorithm using contour tracing technique\char`\"{}, F.Chang et al 
+\end{DoxyItemize}
+
+current blob pointer 
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_component_labeling_8cpp_a05b80d9c559310ac95461bd523d888f6_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_component_labeling_8cpp_a36ce253ae4e842675730bfc013e6485a}{
+\index{ComponentLabeling.cpp@{ComponentLabeling.cpp}!contourTracing@{contourTracing}}
+\index{contourTracing@{contourTracing}!ComponentLabeling.cpp@{ComponentLabeling.cpp}}
+\subsubsection[{contourTracing}]{\setlength{\rightskip}{0pt plus 5cm}void contourTracing (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ image, }
+\item[{IplImage $\ast$}]{ maskImage, }
+\item[{CvPoint}]{ contourStart, }
+\item[{{\bf t\_\-labelType} $\ast$}]{ labels, }
+\item[{bool $\ast$}]{ visitedPoints, }
+\item[{{\bf t\_\-labelType}}]{ label, }
+\item[{bool}]{ internalContour, }
+\item[{unsigned char}]{ backgroundColor, }
+\item[{{\bf CBlobContour} $\ast$}]{ currentBlobcontour}
+\end{DoxyParamCaption}
+)}}
+\label{_component_labeling_8cpp_a36ce253ae4e842675730bfc013e6485a}
+
+\begin{DoxyItemize}
+\item FUNCIÓ:
+\item FUNCIONALITAT:
+\item PARÀMETRES:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESULTAT:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESTRICCIONS:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item AUTOR: rborras
+\item DATA DE CREACIÓ: 2008/04/29
+\item MODIFICACIÓ: Data. Autor. Descripció. 
+\end{DoxyItemize}
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_component_labeling_8cpp_a36ce253ae4e842675730bfc013e6485a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{_component_labeling_8cpp_a36ce253ae4e842675730bfc013e6485a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_component_labeling_8cpp_ad8321f7b7a9d8b1a2c8b20a5bcefa164}{
+\index{ComponentLabeling.cpp@{ComponentLabeling.cpp}!GET\_\-ABOVE\_\-IMAGEPIXEL@{GET\_\-ABOVE\_\-IMAGEPIXEL}}
+\index{GET\_\-ABOVE\_\-IMAGEPIXEL@{GET\_\-ABOVE\_\-IMAGEPIXEL}!ComponentLabeling.cpp@{ComponentLabeling.cpp}}
+\subsubsection[{GET\_\-ABOVE\_\-IMAGEPIXEL}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char GET\_\-ABOVE\_\-IMAGEPIXEL (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{ currentPixel, }
+\item[{IplImage $\ast$}]{ image}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_component_labeling_8cpp_ad8321f7b7a9d8b1a2c8b20a5bcefa164}
+
+\begin{DoxyItemize}
+\item FUNCIÓ:
+\item FUNCIONALITAT:
+\item PARÀMETRES:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESULTAT:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESTRICCIONS:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item AUTOR: rborras
+\item DATA DE CREACIÓ: 2008/04/29
+\item MODIFICACIÓ: Data. Autor. Descripció. 
+\end{DoxyItemize}\hypertarget{_component_labeling_8cpp_ae716ac630740753ca934744210736ee2}{
+\index{ComponentLabeling.cpp@{ComponentLabeling.cpp}!GET\_\-BELOW\_\-IMAGEPIXEL@{GET\_\-BELOW\_\-IMAGEPIXEL}}
+\index{GET\_\-BELOW\_\-IMAGEPIXEL@{GET\_\-BELOW\_\-IMAGEPIXEL}!ComponentLabeling.cpp@{ComponentLabeling.cpp}}
+\subsubsection[{GET\_\-BELOW\_\-IMAGEPIXEL}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char GET\_\-BELOW\_\-IMAGEPIXEL (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{ currentPixel, }
+\item[{IplImage $\ast$}]{ image}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_component_labeling_8cpp_ae716ac630740753ca934744210736ee2}
+\hypertarget{_component_labeling_8cpp_ae950b1a18f9c56ae84e9338f2b87aa84}{
+\index{ComponentLabeling.cpp@{ComponentLabeling.cpp}!GET\_\-BELOW\_\-VISITEDPIXEL@{GET\_\-BELOW\_\-VISITEDPIXEL}}
+\index{GET\_\-BELOW\_\-VISITEDPIXEL@{GET\_\-BELOW\_\-VISITEDPIXEL}!ComponentLabeling.cpp@{ComponentLabeling.cpp}}
+\subsubsection[{GET\_\-BELOW\_\-VISITEDPIXEL}]{\setlength{\rightskip}{0pt plus 5cm}bool GET\_\-BELOW\_\-VISITEDPIXEL (
+\begin{DoxyParamCaption}
+\item[{bool $\ast$}]{ currentPixel, }
+\item[{int}]{ imageWidth}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_component_labeling_8cpp_ae950b1a18f9c56ae84e9338f2b87aa84}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=372pt]{_component_labeling_8cpp_ae950b1a18f9c56ae84e9338f2b87aa84_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_component_labeling_8cpp_a2bcdcae4cc36c0060f85f904cc6c826e}{
+\index{ComponentLabeling.cpp@{ComponentLabeling.cpp}!GET\_\-IMAGE\_\-PIXEL@{GET\_\-IMAGE\_\-PIXEL}}
+\index{GET\_\-IMAGE\_\-PIXEL@{GET\_\-IMAGE\_\-PIXEL}!ComponentLabeling.cpp@{ComponentLabeling.cpp}}
+\subsubsection[{GET\_\-IMAGE\_\-PIXEL}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char GET\_\-IMAGE\_\-PIXEL (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ image, }
+\item[{CvPoint}]{ p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_component_labeling_8cpp_a2bcdcae4cc36c0060f85f904cc6c826e}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_component_labeling_8cpp_a2bcdcae4cc36c0060f85f904cc6c826e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_component_labeling_8cpp_ae2b92da1ce3ca327bddd6b4a5c39cfc5}{
+\index{ComponentLabeling.cpp@{ComponentLabeling.cpp}!GET\_\-IMAGEMASK\_\-PIXEL@{GET\_\-IMAGEMASK\_\-PIXEL}}
+\index{GET\_\-IMAGEMASK\_\-PIXEL@{GET\_\-IMAGEMASK\_\-PIXEL}!ComponentLabeling.cpp@{ComponentLabeling.cpp}}
+\subsubsection[{GET\_\-IMAGEMASK\_\-PIXEL}]{\setlength{\rightskip}{0pt plus 5cm}bool GET\_\-IMAGEMASK\_\-PIXEL (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ mask, }
+\item[{CvPoint}]{ p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{_component_labeling_8cpp_ae2b92da1ce3ca327bddd6b4a5c39cfc5}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_component_labeling_8cpp_ae2b92da1ce3ca327bddd6b4a5c39cfc5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_component_labeling_8cpp_ae0881dec50a29351bda94e482ce3cb28}{
+\index{ComponentLabeling.cpp@{ComponentLabeling.cpp}!tracer@{tracer}}
+\index{tracer@{tracer}!ComponentLabeling.cpp@{ComponentLabeling.cpp}}
+\subsubsection[{tracer}]{\setlength{\rightskip}{0pt plus 5cm}CvPoint tracer (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ image, }
+\item[{IplImage $\ast$}]{ maskImage, }
+\item[{CvPoint}]{ P, }
+\item[{bool $\ast$}]{ visitedPoints, }
+\item[{short}]{ initialMovement, }
+\item[{unsigned char}]{ backgroundColor, }
+\item[{short \&}]{ movement}
+\end{DoxyParamCaption}
+)}}
+\label{_component_labeling_8cpp_ae0881dec50a29351bda94e482ce3cb28}
+
+\begin{DoxyItemize}
+\item FUNCIÓ: tracer
+\item FUNCIONALITAT: Searches for next point of a contour
+\item PARÀMETRES:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESULTAT:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item RESTRICCIONS:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item AUTOR: rborras
+\item DATA DE CREACIÓ: 2008/04/30
+\item MODIFICACIÓ: Data. Autor. Descripció. 
+\end{DoxyItemize}
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{_component_labeling_8cpp_ae0881dec50a29351bda94e482ce3cb28_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=398pt]{_component_labeling_8cpp_ae0881dec50a29351bda94e482ce3cb28_icgraph}
+\end{center}
+\end{figure}
+
+

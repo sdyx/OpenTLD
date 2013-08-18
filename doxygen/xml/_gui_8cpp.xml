@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_gui_8cpp" kind="file">
+    <compoundname>Gui.cpp</compoundname>
+    <includes refid="_gui_8h" local="yes">Gui.h</includes>
+    <includes refid="_main_8h" local="yes">Main.h</includes>
+    <includes local="no">string</includes>
+    <incdepgraph>
+      <node id="1847">
+        <label>DetectorCascade.h</label>
+        <link refid="_detector_cascade_8h"/>
+        <childnode refid="1848" relation="include">
+        </childnode>
+        <childnode refid="1850" relation="include">
+        </childnode>
+        <childnode refid="1851" relation="include">
+        </childnode>
+        <childnode refid="1853" relation="include">
+        </childnode>
+        <childnode refid="1854" relation="include">
+        </childnode>
+        <childnode refid="1855" relation="include">
+        </childnode>
+      </node>
+      <node id="1843">
+        <label>Main.h</label>
+        <link refid="_main_8h"/>
+        <childnode refid="1844" relation="include">
+        </childnode>
+        <childnode refid="1857" relation="include">
+        </childnode>
+        <childnode refid="1840" relation="include">
+        </childnode>
+      </node>
+      <node id="1853">
+        <label>EnsembleClassifier.h</label>
+        <link refid="_ensemble_classifier_8h"/>
+        <childnode refid="1845" relation="include">
+        </childnode>
+      </node>
+      <node id="1855">
+        <label>NNClassifier.h</label>
+        <link refid="_n_n_classifier_8h"/>
+        <childnode refid="1849" relation="include">
+        </childnode>
+        <childnode refid="1845" relation="include">
+        </childnode>
+        <childnode refid="1856" relation="include">
+        </childnode>
+        <childnode refid="1848" relation="include">
+        </childnode>
+      </node>
+      <node id="1851">
+        <label>VarianceFilter.h</label>
+        <link refid="_variance_filter_8h"/>
+        <childnode refid="1845" relation="include">
+        </childnode>
+        <childnode refid="1852" relation="include">
+        </childnode>
+        <childnode refid="1848" relation="include">
+        </childnode>
+      </node>
+      <node id="1841">
+        <label>string</label>
+      </node>
+      <node id="1842">
+        <label>highgui.h</label>
+      </node>
+      <node id="1856">
+        <label>NormalizedPatch.h</label>
+        <link refid="_normalized_patch_8h"/>
+      </node>
+      <node id="1839">
+        <label>src/opentld/main/Gui.cpp</label>
+        <link refid="Gui.cpp"/>
+        <childnode refid="1840" relation="include">
+        </childnode>
+        <childnode refid="1843" relation="include">
+        </childnode>
+        <childnode refid="1841" relation="include">
+        </childnode>
+      </node>
+      <node id="1852">
+        <label>IntegralImage.h</label>
+        <link refid="_integral_image_8h"/>
+        <childnode refid="1845" relation="include">
+        </childnode>
+      </node>
+      <node id="1854">
+        <label>Clustering.h</label>
+        <link refid="_clustering_8h"/>
+        <childnode refid="1849" relation="include">
+        </childnode>
+        <childnode refid="1845" relation="include">
+        </childnode>
+        <childnode refid="1848" relation="include">
+        </childnode>
+      </node>
+      <node id="1850">
+        <label>ForegroundDetector.h</label>
+        <link refid="_foreground_detector_8h"/>
+        <childnode refid="1849" relation="include">
+        </childnode>
+        <childnode refid="1845" relation="include">
+        </childnode>
+        <childnode refid="1848" relation="include">
+        </childnode>
+      </node>
+      <node id="1840">
+        <label>Gui.h</label>
+        <link refid="_gui_8h"/>
+        <childnode refid="1841" relation="include">
+        </childnode>
+        <childnode refid="1842" relation="include">
+        </childnode>
+      </node>
+      <node id="1849">
+        <label>vector</label>
+      </node>
+      <node id="1857">
+        <label>ImAcq.h</label>
+        <link refid="_im_acq_8h"/>
+        <childnode refid="1842" relation="include">
+        </childnode>
+      </node>
+      <node id="1845">
+        <label>cv.h</label>
+      </node>
+      <node id="1844">
+        <label>TLD.h</label>
+        <link refid="_t_l_d_8h"/>
+        <childnode refid="1845" relation="include">
+        </childnode>
+        <childnode refid="1846" relation="include">
+        </childnode>
+        <childnode refid="1847" relation="include">
+        </childnode>
+      </node>
+      <node id="1846">
+        <label>MedianFlowTracker.h</label>
+        <link refid="_median_flow_tracker_8h"/>
+        <childnode refid="1845" relation="include">
+        </childnode>
+      </node>
+      <node id="1848">
+        <label>DetectionResult.h</label>
+        <link refid="_detection_result_8h"/>
+        <childnode refid="1849" relation="include">
+        </childnode>
+        <childnode refid="1845" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacetld">tld</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>gui.cpp</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Oct<sp/>18,<sp/>2011</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>clemensk<sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Modified<sp/>on:<sp/>8th<sp/>August<sp/>2013</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>By:<sp/>Felix<sp/>Baumann</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_gui_8h" kindref="compound">Gui.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_main_8h" kindref="compound">Main.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::string;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">tld</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classtld_1_1_gui_1a3d8f787eff005a186184741e86de65b2" refkind="member"><highlight class="normal"><ref refid="classtld_1_1_gui_1a3d8f787eff005a186184741e86de65b2" kindref="member">Gui::Gui</ref>()<sp/>:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>m_window_name(</highlight><highlight class="stringliteral">&quot;tld&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classtld_1_1_gui_1ab918b39ef1ff13e7e6be76d521f9357f" refkind="member"><highlight class="normal"><ref refid="classtld_1_1_gui_1ab918b39ef1ff13e7e6be76d521f9357f" kindref="member">Gui::~Gui</ref>()</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classtld_1_1_gui_1aed1a0c246dfc3795560422ae762d58b3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_gui_1aed1a0c246dfc3795560422ae762d58b3" kindref="member">Gui::init</ref>()</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>cvNamedWindow(m_window_name.c_str(),<sp/>CV_WINDOW_AUTOSIZE);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>cvMoveWindow(m_window_name.c_str(),<sp/>100,<sp/>100);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classtld_1_1_gui_1a639a48143e702f183fc4dd626b7900ae" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_gui_1a639a48143e702f183fc4dd626b7900ae" kindref="member">Gui::showImage</ref>(IplImage<sp/>*image)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>cvShowImage(m_window_name.c_str(),<sp/>image);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="classtld_1_1_gui_1a08a00ca08170f5707937aa133c12c415" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_gui_1a08a00ca08170f5707937aa133c12c415" kindref="member">Gui::getKey</ref>()</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cvWaitKey(10);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classtld_1_1_gui_1acc98f1b85990af20927cbf3e691a8f1a" refkind="member"><highlight class="normal">std::string<sp/><ref refid="classtld_1_1_gui_1acc98f1b85990af20927cbf3e691a8f1a" kindref="member">Gui::windowName</ref>()</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_window_name;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>window_name;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>CvFont<sp/>font;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>IplImage<sp/>*img0;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>IplImage<sp/>*img1;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>CvPoint<sp/>point;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>CvRect<sp/>*bb;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>drag<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mouseHandler(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>event,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*param)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>user<sp/>press<sp/>left<sp/>button<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(event<sp/>==<sp/>CV_EVENT_LBUTTONDOWN<sp/>&amp;&amp;<sp/>!drag)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>point<sp/>=<sp/>cvPoint(x,<sp/>y);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>drag<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>user<sp/>drag<sp/>the<sp/>mouse<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(event<sp/>==<sp/>CV_EVENT_MOUSEMOVE<sp/>&amp;&amp;<sp/>drag)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>img1<sp/>=<sp/>(IplImage<sp/>*)<sp/>cvClone(img0);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvRectangle(img1,<sp/>point,<sp/>cvPoint(x,<sp/>y),<sp/>CV_RGB(255,<sp/>0,<sp/>0),<sp/>1,<sp/>8,<sp/>0);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvShowImage(window_name.c_str(),<sp/>img1);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvReleaseImage(&amp;img1);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>user<sp/>release<sp/>left<sp/>button<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(event<sp/>==<sp/>CV_EVENT_LBUTTONUP<sp/>&amp;&amp;<sp/>drag)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*bb<sp/>=<sp/>cvRect(point.x,<sp/>point.y,<sp/>x<sp/>-<sp/>point.x,<sp/>y<sp/>-<sp/>point.y);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>drag<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TODO:<sp/>member<sp/>of<sp/>Gui</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--&gt;<sp/>problem:<sp/>callback<sp/>function<sp/>mouseHandler<sp/>as<sp/>member!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1a75cd208f8053ece69d5d7de9c2ed33fd" kindref="member">getBBFromUser</ref>(IplImage<sp/>*img,<sp/>CvRect<sp/>&amp;rect,<sp/>Gui<sp/>*gui)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>window_name<sp/>=<sp/>gui-&gt;windowName();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>img0<sp/>=<sp/>(IplImage<sp/>*)<sp/>cvClone(img);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>rect<sp/>=<sp/>cvRect(-1,<sp/>-1,<sp/>-1,<sp/>-1);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>bb<sp/>=<sp/>&amp;rect;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>correctBB<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>cvInitFont(&amp;font,<sp/>CV_FONT_HERSHEY_SIMPLEX,<sp/>0.5,<sp/>0.5,<sp/>0,<sp/>1,<sp/>8);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>cvSetMouseCallback(window_name.c_str(),<sp/>mouseHandler,<sp/>NULL);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>cvPutText(img0,<sp/></highlight><highlight class="stringliteral">&quot;Draw<sp/>a<sp/>bounding<sp/>box<sp/>and<sp/>press<sp/>Enter&quot;</highlight><highlight class="normal">,<sp/>cvPoint(<sp/>25,<sp/>42<sp/>),</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;font,<sp/>cvScalar(<sp/>0,<sp/>0,<sp/>255<sp/>));</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>cvShowImage(window_name.c_str(),<sp/>img0);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!correctBB)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>key<sp/>=<sp/>cvWaitKey(0);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tolower(key)<sp/>==<sp/></highlight><highlight class="charliteral">&apos;q&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>PROGRAM_EXIT;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO<sp/>FB:<sp/>complains<sp/>about<sp/>multi-character<sp/>character<sp/>comparison</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(((key<sp/>==<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">)<sp/>||<sp/>(key<sp/>==<sp/></highlight><highlight class="charliteral">&apos;\r&apos;</highlight><highlight class="normal">)<sp/>||<sp/>(key<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;\r\n&apos;</highlight><highlight class="normal">))<sp/>&amp;&amp;<sp/>(bb-&gt;x<sp/>!=<sp/>-1)<sp/>&amp;&amp;<sp/>(bb-&gt;y<sp/>!=<sp/>-1))</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>correctBB<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(rect.width<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rect.x<sp/>+=<sp/>rect.width;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rect.width<sp/>=<sp/>abs(rect.width);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(rect.height<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rect.y<sp/>+=<sp/>rect.height;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rect.height<sp/>=<sp/>abs(rect.height);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>cvSetMouseCallback(window_name.c_str(),<sp/>NULL,<sp/>NULL);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>cvReleaseImage(&amp;img0);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>cvReleaseImage(&amp;img1);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SUCCESS;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp"/>
+  </compounddef>
+</doxygen>

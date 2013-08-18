@@ -1,0 +1,127 @@
+\hypertarget{classtld_1_1_trajectory}{
+\section{tld::Trajectory Class Reference}
+\label{classtld_1_1_trajectory}\index{tld::Trajectory@{tld::Trajectory}}
+}
+
+
+{\ttfamily \#include $<$Trajectory.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtld_1_1_trajectory_ab6baa664e2ea39e5ec0075f525a466ba}{Trajectory} ()
+\item 
+\hyperlink{classtld_1_1_trajectory_add295e2524012793dd3040fe098ddf65}{$\sim$Trajectory} ()
+\item 
+void \hyperlink{classtld_1_1_trajectory_a635927cb2bca22f884ddc00a0e18b6d7}{init} (std::size\_\-t length)
+\item 
+void \hyperlink{classtld_1_1_trajectory_a28a92000e31f71ce0831d72b068ae97b}{addPoint} (CvPoint point, CvScalar color)
+\item 
+void \hyperlink{classtld_1_1_trajectory_af8a0ffc5eb86050e0d26c766e4b2098d}{drawTrajectory} (IplImage $\ast$image)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Detection trajectory; a line which associates the last detections. The data is stored in 2 \char`\"{}shift registers\char`\"{} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtld_1_1_trajectory_ab6baa664e2ea39e5ec0075f525a466ba}{
+\index{tld::Trajectory@{tld::Trajectory}!Trajectory@{Trajectory}}
+\index{Trajectory@{Trajectory}!tld::Trajectory@{tld::Trajectory}}
+\subsubsection[{Trajectory}]{\setlength{\rightskip}{0pt plus 5cm}tld::Trajectory::Trajectory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_trajectory_ab6baa664e2ea39e5ec0075f525a466ba}
+Constructor; don't forget to call init(length) afterwards \hypertarget{classtld_1_1_trajectory_add295e2524012793dd3040fe098ddf65}{
+\index{tld::Trajectory@{tld::Trajectory}!$\sim$Trajectory@{$\sim$Trajectory}}
+\index{$\sim$Trajectory@{$\sim$Trajectory}!tld::Trajectory@{tld::Trajectory}}
+\subsubsection[{$\sim$Trajectory}]{\setlength{\rightskip}{0pt plus 5cm}tld::Trajectory::$\sim$Trajectory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_trajectory_add295e2524012793dd3040fe098ddf65}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classtld_1_1_trajectory_a28a92000e31f71ce0831d72b068ae97b}{
+\index{tld::Trajectory@{tld::Trajectory}!addPoint@{addPoint}}
+\index{addPoint@{addPoint}!tld::Trajectory@{tld::Trajectory}}
+\subsubsection[{addPoint}]{\setlength{\rightskip}{0pt plus 5cm}void tld::Trajectory::addPoint (
+\begin{DoxyParamCaption}
+\item[{CvPoint}]{ point, }
+\item[{CvScalar}]{ color}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_trajectory_a28a92000e31f71ce0831d72b068ae97b}
+Adds a new point to the trajectory. If you want to add a \char`\"{}place holder\char`\"{} point just add a cvPoint(-\/1, -\/1) and cvScalar(-\/1 , -\/1, -\/1) 
+\begin{DoxyParams}{Parameters}
+\item[{\em point}]point which specifies the location of the point \item[{\em color}]defines the color (confidence) of the point \end{DoxyParams}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_trajectory_a28a92000e31f71ce0831d72b068ae97b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1_trajectory_af8a0ffc5eb86050e0d26c766e4b2098d}{
+\index{tld::Trajectory@{tld::Trajectory}!drawTrajectory@{drawTrajectory}}
+\index{drawTrajectory@{drawTrajectory}!tld::Trajectory@{tld::Trajectory}}
+\subsubsection[{drawTrajectory}]{\setlength{\rightskip}{0pt plus 5cm}void tld::Trajectory::drawTrajectory (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ image}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_trajectory_af8a0ffc5eb86050e0d26c766e4b2098d}
+Draws the trajectory into an image. 
+\begin{DoxyParams}{Parameters}
+\item[{\em image}]image to draw \end{DoxyParams}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_trajectory_af8a0ffc5eb86050e0d26c766e4b2098d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1_trajectory_a635927cb2bca22f884ddc00a0e18b6d7}{
+\index{tld::Trajectory@{tld::Trajectory}!init@{init}}
+\index{init@{init}!tld::Trajectory@{tld::Trajectory}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void tld::Trajectory::init (
+\begin{DoxyParamCaption}
+\item[{std::size\_\-t}]{ length}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_trajectory_a635927cb2bca22f884ddc00a0e18b6d7}
+Initializes the trajectory. 
+\begin{DoxyParams}{Parameters}
+\item[{\em length}]specifies the number of the last frames which are considered by the trajectory \end{DoxyParams}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_trajectory_a635927cb2bca22f884ddc00a0e18b6d7_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/opentld/main/\hyperlink{_trajectory_8h}{Trajectory.h}\item 
+src/opentld/main/\hyperlink{_trajectory_8cpp}{Trajectory.cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_config_dialog_8h" kind="file">
+    <compoundname>ConfigDialog.h</compoundname>
+    <includes local="no">QtGui/QApplication</includes>
+    <includes local="no">QFileDialog</includes>
+    <includes local="no">QDialog</includes>
+    <includes local="yes">ui_ConfigDialog.h</includes>
+    <includedby refid="_config_dialog_8cpp" local="yes">src/opentld/qopentld/ConfigDialog.cpp</includedby>
+    <includedby refid="_q_open_t_l_d_8cpp" local="yes">src/opentld/QOpenTLD.cpp</includedby>
+    <incdepgraph>
+      <node id="2025">
+        <label>QtGui/QApplication</label>
+      </node>
+      <node id="2026">
+        <label>QFileDialog</label>
+      </node>
+      <node id="2027">
+        <label>QDialog</label>
+      </node>
+      <node id="2024">
+        <label>src/opentld/qopentld/ConfigDialog.h</label>
+        <link refid="ConfigDialog.h"/>
+        <childnode refid="2025" relation="include">
+        </childnode>
+        <childnode refid="2026" relation="include">
+        </childnode>
+        <childnode refid="2027" relation="include">
+        </childnode>
+        <childnode refid="2028" relation="include">
+        </childnode>
+      </node>
+      <node id="2028">
+        <label>ui_ConfigDialog.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2030">
+        <label>src/opentld/qopentld/ConfigDialog.cpp</label>
+        <link refid="_config_dialog_8cpp"/>
+      </node>
+      <node id="2029">
+        <label>src/opentld/qopentld/ConfigDialog.h</label>
+        <link refid="ConfigDialog.h"/>
+        <childnode refid="2030" relation="include">
+        </childnode>
+        <childnode refid="2031" relation="include">
+        </childnode>
+      </node>
+      <node id="2031">
+        <label>src/opentld/QOpenTLD.cpp</label>
+        <link refid="_q_open_t_l_d_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_config_dialog" prot="public">ConfigDialog</innerclass>
+    <innernamespace refid="namespacetld">tld</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_config_dialog_8h_1accb9e5c3069b3d544b3466ca78635cea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool getSettingsFromConfigDialog</definition>
+        <argsstring>(int argc, char *argv[], tld::Settings *settings)</argsstring>
+        <name>getSettingsFromConfigDialog</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="classtld_1_1_settings" kindref="compound">tld::Settings</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a dialog and provides the configured parameters <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of command line arguments </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>command line arguments </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>all parameters are stored in this object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if everything went right, false if not </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.h" line="46" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.cpp" bodystart="30" bodyend="39"/>
+        <referencedby refid="_q_open_t_l_d_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="_q_open_t_l_d_8cpp" startline="36" endline="73">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor">#ifndef<sp/>CONFIGDIALOG_H</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CONFIGDIALOG_H</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui/QApplication&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QFileDialog&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QDialog&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_ConfigDialog.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">tld</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Settings;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_config_dialog_8cpp_1a25273d83c6fbf5a277f6a46ad99b8bce" kindref="member">getSettingsFromConfigDialog</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[],</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_settings" kindref="compound">tld::Settings</ref><sp/>*settings);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="class_config_dialog" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_config_dialog" kindref="compound">ConfigDialog</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QDialog</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60" refid="class_config_dialog_1a28fcaf732c9f363b30b2fc4a9abd9251" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_config_dialog_1a28fcaf732c9f363b30b2fc4a9abd9251" kindref="member">ConfigDialog</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_config_dialog_1a28fcaf732c9f363b30b2fc4a9abd9251" kindref="member">ConfigDialog</ref>(<ref refid="classtld_1_1_settings" kindref="compound">tld::Settings</ref><sp/>*settings,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*correctClosed,<sp/>QWidget<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_config_dialog_1a485badac4dffa04603f800bb9d396e1d" kindref="member">~ConfigDialog</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_config_dialog_1a1d92274ba705553f051b1458aaf3d17a" kindref="member">changeEvent</ref>(QEvent<sp/>*e);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_settings" kindref="compound">tld::Settings</ref><sp/>*m_settings;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*m_correctClosed;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>Ui_ConfigDialog<sp/>*ui;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_buttonBox_rejected();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_buttonBox_accepted();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_pushButton_printTiming_clicked();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_pushButton_outputDir_clicked();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_pushButton_printResults_clicked();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_pushButton_modelPath_clicked();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_pushButton_imagePath_clicked();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_comboBox_method_activated(QString<sp/>element);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>CONFIGDIALOG_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/opentld/qopentld/ConfigDialog.h"/>
+  </compounddef>
+</doxygen>

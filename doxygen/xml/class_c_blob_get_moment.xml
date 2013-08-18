@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="class_c_blob_get_moment" kind="class" prot="public">
+    <compoundname>CBlobGetMoment</compoundname>
+    <basecompoundref refid="class_c_operador_blob" prot="public" virt="non-virtual">COperadorBlob</basecompoundref>
+    <includes refid="_blob_operators_8h" local="no">BlobOperators.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_blob_get_moment_1aba7216db53d88dad0ea841cd21235b8a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CBlobGetMoment::m_p</definition>
+        <argsstring></argsstring>
+        <name>m_p</name>
+        <briefdescription>
+<para>moment que volem calcular </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="277" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_get_moment_1a35781fb08a15bdcb708a8607744abd4e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CBlobGetMoment::m_q</definition>
+        <argsstring></argsstring>
+        <name>m_q</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="277" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_blob_get_moment_1aca11a36f54e0e9a81937e8aa708d5b35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CBlobGetMoment::CBlobGetMoment</definition>
+        <argsstring>()</argsstring>
+        <name>CBlobGetMoment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor estàndard Standard constructor (gets the 00 moment) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="259" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="258" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_moment_1ac37d370c0a3f1a8190e4a3221df1ae7c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CBlobGetMoment::CBlobGetMoment</definition>
+        <argsstring>(int p, int q)</argsstring>
+        <name>CBlobGetMoment</name>
+        <param>
+          <type>int</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor: indiquem el moment p,q a calcular Constructor: gets the PQ moment </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="265" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="264" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_moment_1aefebc825f026670fab8517bc0ea052ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double CBlobGetMoment::operator()</definition>
+        <argsstring>(CBlob &amp;blob)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="class_c_operador_blob_1a303c4189cc94cafbcbee116bf014e623">operator()</reimplements>
+        <param>
+          <type><ref refid="class_c_blob" kindref="compound">CBlob</ref> &amp;</type>
+          <declname>blob</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCTION: Moment</para></listitem><listitem><para>FUNCTIONALITY: Calculates the pq moment of the blob</para></listitem><listitem><para>PARAMETERS:</para></listitem><listitem><para>RESULT:<itemizedlist>
+<listitem><para>returns the pq moment or 0 if the moment it is not implemented</para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICTIONS:<itemizedlist>
+<listitem><para>Currently, implemented moments up to 3</para></listitem></itemizedlist>
+</para></listitem><listitem><para>AUTHOR: Ricard Borràs</para></listitem><listitem><para>CREATION DATE: 20-07-2004.</para></listitem><listitem><para>MODIFICATION: Date. Author. Description. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="269" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.cpp" bodystart="22" bodyend="25"/>
+        <references refid="class_c_blob_1a4f5dfca1ee933e07a39965375f9f07c5" compoundref="blob_8cpp" startline="379" endline="394">CBlob::Moment</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_moment_1a44e020df4120067b870455a6fe6262e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>const char* CBlobGetMoment::GetNom</definition>
+        <argsstring>()</argsstring>
+        <name>GetNom</name>
+        <reimplements refid="class_c_operador_blob_1a717a19c163a26b45081a2231be24c008">GetNom</reimplements>
+        <briefdescription>
+<para>Get operator name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="271" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="270" bodyend="273"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Classe per calcular el moment PQ del blob Class to calculate the P,Q moment of a blob </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="329">
+        <label>CBlobGetMoment</label>
+        <link refid="class_c_blob_get_moment"/>
+        <childnode refid="330" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="330">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="331">
+        <label>CBlobGetMoment</label>
+        <link refid="class_c_blob_get_moment"/>
+        <childnode refid="332" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="332">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="254" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="253" bodyend="278"/>
+    <listofallmembers>
+      <member refid="class_c_blob_get_moment_1aca11a36f54e0e9a81937e8aa708d5b35" prot="public" virt="non-virtual"><scope>CBlobGetMoment</scope><name>CBlobGetMoment</name></member>
+      <member refid="class_c_blob_get_moment_1ac37d370c0a3f1a8190e4a3221df1ae7c" prot="public" virt="non-virtual"><scope>CBlobGetMoment</scope><name>CBlobGetMoment</name></member>
+      <member refid="class_c_blob_get_moment_1a44e020df4120067b870455a6fe6262e6" prot="public" virt="virtual"><scope>CBlobGetMoment</scope><name>GetNom</name></member>
+      <member refid="class_c_blob_get_moment_1aba7216db53d88dad0ea841cd21235b8a" prot="private" virt="non-virtual"><scope>CBlobGetMoment</scope><name>m_p</name></member>
+      <member refid="class_c_blob_get_moment_1a35781fb08a15bdcb708a8607744abd4e" prot="private" virt="non-virtual"><scope>CBlobGetMoment</scope><name>m_q</name></member>
+      <member refid="class_c_operador_blob_1a477edfe687cf9ef41469bcf6ea636a75" prot="public" virt="non-virtual"><scope>CBlobGetMoment</scope><name>operator COperadorBlob *</name></member>
+      <member refid="class_c_blob_get_moment_1aefebc825f026670fab8517bc0ea052ca" prot="public" virt="virtual"><scope>CBlobGetMoment</scope><name>operator()</name></member>
+      <member refid="class_c_operador_blob_1a25ccc652bfa55e7b0143c88f452729a2" prot="public" virt="virtual"><scope>CBlobGetMoment</scope><name>~COperadorBlob</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

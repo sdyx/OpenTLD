@@ -1,0 +1,649 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_blob_result_8cpp" kind="file">
+    <compoundname>BlobResult.cpp</compoundname>
+    <includes local="no">limits.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">functional</includes>
+    <includes local="no">algorithm</includes>
+    <includes refid="_blob_result_8h" local="yes">BlobResult.h</includes>
+    <incdepgraph>
+      <node id="1125">
+        <label>list</label>
+      </node>
+      <node id="1116">
+        <label>functional</label>
+      </node>
+      <node id="1127">
+        <label>BlobOperators.h</label>
+        <link refid="_blob_operators_8h"/>
+        <childnode refid="1123" relation="include">
+        </childnode>
+      </node>
+      <node id="1121">
+        <label>cxcore.h</label>
+      </node>
+      <node id="1119">
+        <label>BlobLibraryConfiguration.h</label>
+        <link refid="_blob_library_configuration_8h"/>
+      </node>
+      <node id="1128">
+        <label>ComponentLabeling.h</label>
+        <link refid="_component_labeling_8h"/>
+        <childnode refid="1122" relation="include">
+        </childnode>
+        <childnode refid="1124" relation="include">
+        </childnode>
+        <childnode refid="1123" relation="include">
+        </childnode>
+      </node>
+      <node id="1113">
+        <label>src/3rdparty/cvblobs/BlobResult.cpp</label>
+        <link refid="BlobResult.cpp"/>
+        <childnode refid="1114" relation="include">
+        </childnode>
+        <childnode refid="1115" relation="include">
+        </childnode>
+        <childnode refid="1116" relation="include">
+        </childnode>
+        <childnode refid="1117" relation="include">
+        </childnode>
+        <childnode refid="1118" relation="include">
+        </childnode>
+      </node>
+      <node id="1114">
+        <label>limits.h</label>
+      </node>
+      <node id="1124">
+        <label>BlobContour.h</label>
+        <link refid="_blob_contour_8h"/>
+        <childnode refid="1125" relation="include">
+        </childnode>
+        <childnode refid="1126" relation="include">
+        </childnode>
+        <childnode refid="1121" relation="include">
+        </childnode>
+      </node>
+      <node id="1122">
+        <label>vector</label>
+      </node>
+      <node id="1126">
+        <label>cv.h</label>
+      </node>
+      <node id="1120">
+        <label>math.h</label>
+      </node>
+      <node id="1118">
+        <label>BlobResult.h</label>
+        <link refid="_blob_result_8h"/>
+        <childnode refid="1119" relation="include">
+        </childnode>
+        <childnode refid="1120" relation="include">
+        </childnode>
+        <childnode refid="1121" relation="include">
+        </childnode>
+        <childnode refid="1122" relation="include">
+        </childnode>
+        <childnode refid="1116" relation="include">
+        </childnode>
+        <childnode refid="1123" relation="include">
+        </childnode>
+        <childnode refid="1127" relation="include">
+        </childnode>
+        <childnode refid="1128" relation="include">
+        </childnode>
+      </node>
+      <node id="1123">
+        <label>blob.h</label>
+        <link refid="blob_8h"/>
+        <childnode refid="1121" relation="include">
+        </childnode>
+        <childnode refid="1119" relation="include">
+        </childnode>
+        <childnode refid="1124" relation="include">
+        </childnode>
+      </node>
+      <node id="1117">
+        <label>algorithm</label>
+      </node>
+      <node id="1115">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BlobResult.cpp</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">FUNCIONALITAT:<sp/>Implementació<sp/>de<sp/>la<sp/>classe<sp/>CBlobResult</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">AUTOR:<sp/>Inspecta<sp/>S.L.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">MODIFICACIONS<sp/>(Modificació,<sp/>Autor,<sp/>Data):</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;limits.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_blob_result_8h" kindref="compound">BlobResult.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor">#ifdef<sp/>_SHOW_ERRORS</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#include<sp/>&lt;afx.h&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//suport<sp/>per<sp/>a<sp/>CStrings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#include<sp/>&lt;afxwin.h&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//suport<sp/>per<sp/>a<sp/>AfxMessageBox</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Constructors<sp/>/<sp/>Destructors</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">CBlobResult::CBlobResult()</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_blobs<sp/>=<sp/><ref refid="_component_labeling_8h_1a9b2ee33d26a482072b82620e6709e66e" kindref="member" tooltip="definició de que es un vector de blobs">Blob_vector</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">CBlobResult::CBlobResult(IplImage<sp/>*source,<sp/>IplImage<sp/>*mask,<sp/>uchar<sp/>backgroundColor<sp/>)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>success;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>success<sp/>=<sp/><ref refid="_component_labeling_8cpp_1a05b80d9c559310ac95461bd523d888f6" kindref="member">ComponentLabeling</ref>(<sp/>source,<sp/>mask,<sp/>backgroundColor,<sp/>m_blobs<sp/>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal">(...)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>success<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!success<sp/>)<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>EXCEPCIO_CALCUL_BLOBS;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal">CBlobResult::CBlobResult(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CBlobResult<sp/>&amp;source<sp/>)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_blobs<sp/>=<sp/><ref refid="_component_labeling_8h_1a9b2ee33d26a482072b82620e6709e66e" kindref="member" tooltip="definició de que es un vector de blobs">Blob_vector</ref>(<sp/>source.GetNumBlobs()<sp/>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>creem<sp/>el<sp/>nou<sp/>a<sp/>partir<sp/>del<sp/>passat<sp/>com<sp/>a<sp/>paràmetre</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_blobs<sp/>=<sp/><ref refid="_component_labeling_8h_1a9b2ee33d26a482072b82620e6709e66e" kindref="member" tooltip="definició de que es un vector de blobs">Blob_vector</ref>(<sp/>source.GetNumBlobs()<sp/>);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>copiem<sp/>els<sp/>blobs<sp/>de<sp/>l&apos;origen<sp/>a<sp/>l&apos;actual</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Blob_vector::const_iterator<sp/>pBlobsSrc<sp/>=<sp/>source.m_blobs.begin();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Blob_vector::iterator<sp/>pBlobsDst<sp/>=<sp/>m_blobs.begin();</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<sp/>pBlobsSrc<sp/>!=<sp/>source.m_blobs.end()<sp/>)</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>no<sp/>podem<sp/>cridar<sp/>a<sp/>l&apos;operador<sp/>=<sp/>ja<sp/>que<sp/>Blob_vector<sp/>és<sp/>un<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>vector<sp/>de<sp/>CBlob*.<sp/>Per<sp/>tant,<sp/>creem<sp/>un<sp/>blob<sp/>nou<sp/>a<sp/>partir<sp/>del</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>blob<sp/>original</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*pBlobsDst<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref>(**pBlobsSrc);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pBlobsSrc++;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pBlobsDst++;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal">CBlobResult::~CBlobResult()</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ClearBlobs();</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************</highlight></codeline>
+<codeline lineno="185"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Operadors<sp/>/<sp/>Operators</highlight></codeline>
+<codeline lineno="186"><highlight class="comment">**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal">CBlobResult&amp;<sp/>CBlobResult::operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CBlobResult&amp;<sp/>source)</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>si<sp/>ja<sp/>són<sp/>el<sp/>mateix,<sp/>no<sp/>cal<sp/>fer<sp/>res</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>!=<sp/>&amp;source)</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>alliberem<sp/>el<sp/>conjunt<sp/>de<sp/>blobs<sp/>antic</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>GetNumBlobs();<sp/>i++<sp/>)</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>m_blobs[i];</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_blobs.clear();</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>creem<sp/>el<sp/>nou<sp/>a<sp/>partir<sp/>del<sp/>passat<sp/>com<sp/>a<sp/>paràmetre</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_blobs<sp/>=<sp/><ref refid="_component_labeling_8h_1a9b2ee33d26a482072b82620e6709e66e" kindref="member" tooltip="definició de que es un vector de blobs">Blob_vector</ref>(<sp/>source.GetNumBlobs()<sp/>);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>copiem<sp/>els<sp/>blobs<sp/>de<sp/>l&apos;origen<sp/>a<sp/>l&apos;actual</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Blob_vector::const_iterator<sp/>pBlobsSrc<sp/>=<sp/>source.m_blobs.begin();</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Blob_vector::iterator<sp/>pBlobsDst<sp/>=<sp/>m_blobs.begin();</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<sp/>pBlobsSrc<sp/>!=<sp/>source.m_blobs.end()<sp/>)</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>no<sp/>podem<sp/>cridar<sp/>a<sp/>l&apos;operador<sp/>=<sp/>ja<sp/>que<sp/>Blob_vector<sp/>és<sp/>un<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>vector<sp/>de<sp/>CBlob*.<sp/>Per<sp/>tant,<sp/>creem<sp/>un<sp/>blob<sp/>nou<sp/>a<sp/>partir<sp/>del</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>blob<sp/>original</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*pBlobsDst<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref>(**pBlobsSrc);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pBlobsSrc++;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pBlobsDst++;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal">CBlobResult<sp/>CBlobResult::operator+(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CBlobResult&amp;<sp/>source<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="268"><highlight class="keyword"></highlight><highlight class="normal">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//creem<sp/>el<sp/>resultat<sp/>a<sp/>partir<sp/>dels<sp/>blobs<sp/>actuals</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CBlobResult<sp/>resultat(<sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>reservem<sp/>memòria<sp/>per<sp/>als<sp/>nous<sp/>blobs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resultat.m_blobs.resize(<sp/>resultat.GetNumBlobs()<sp/>+<sp/>source.GetNumBlobs()<sp/>);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>declarem<sp/>els<sp/>iterador<sp/>per<sp/>recòrrer<sp/>els<sp/>blobs<sp/>d&apos;origen<sp/>i<sp/>desti</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Blob_vector::const_iterator<sp/>pBlobsSrc<sp/>=<sp/>source.m_blobs.begin();</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Blob_vector::iterator<sp/>pBlobsDst<sp/>=<sp/>resultat.m_blobs.end();</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>insertem<sp/>els<sp/>blobs<sp/>de<sp/>l&apos;origen<sp/>a<sp/>l&apos;actual</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<sp/>pBlobsSrc<sp/>!=<sp/>source.m_blobs.end()<sp/>)</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pBlobsDst--;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*pBlobsDst<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref>(**pBlobsSrc);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pBlobsSrc++;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>resultat;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************</highlight></codeline>
+<codeline lineno="291"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Operacions<sp/>/<sp/>Operations</highlight></codeline>
+<codeline lineno="292"><highlight class="comment">**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CBlobResult::AddBlob(<sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref><sp/>*blob<sp/>)</highlight></codeline>
+<codeline lineno="307"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>blob<sp/>!=<sp/><ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref><sp/>)</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_blobs.push_back(<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref>(<sp/>blob<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MATRIXCV_ACTIU</highlight></codeline>
+<codeline lineno="314"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal">double_vector<sp/>CBlobResult::GetResult(<sp/><ref refid="class_c_operador_blob" kindref="compound">funcio_calculBlob</ref><sp/>*evaluador<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="342"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>GetNumBlobs()<sp/>&lt;=<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>double_vector();</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>definim<sp/>el<sp/>resultat</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double_vector<sp/>result<sp/>=<sp/>double_vector(<sp/>GetNumBlobs()<sp/>);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>i<sp/>iteradors<sp/>sobre<sp/>els<sp/>blobs<sp/>i<sp/>el<sp/>resultat</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double_vector::iterator<sp/>itResult<sp/>=<sp/>result.GetIterator();</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Blob_vector::const_iterator<sp/>itBlobs<sp/>=<sp/>m_blobs.begin();</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>avaluem<sp/>la<sp/>funció<sp/>en<sp/>tots<sp/>els<sp/>blobs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<sp/>itBlobs<sp/>!=<sp/>m_blobs.end()<sp/>)</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*itResult<sp/>=<sp/>(*evaluador)(**itBlobs);</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>itBlobs++;</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>itResult++;</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="362"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="364"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal">double_stl_vector<sp/>CBlobResult::GetSTLResult(<sp/><ref refid="class_c_operador_blob" kindref="compound">funcio_calculBlob</ref><sp/>*evaluador<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="392"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>GetNumBlobs()<sp/>&lt;=<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>double_stl_vector();</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>definim<sp/>el<sp/>resultat</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double_stl_vector<sp/>result<sp/>=<sp/>double_stl_vector(<sp/>GetNumBlobs()<sp/>);</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>i<sp/>iteradors<sp/>sobre<sp/>els<sp/>blobs<sp/>i<sp/>el<sp/>resultat</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double_stl_vector::iterator<sp/>itResult<sp/>=<sp/>result.begin();</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Blob_vector::const_iterator<sp/>itBlobs<sp/>=<sp/>m_blobs.begin();</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"></highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>avaluem<sp/>la<sp/>funció<sp/>en<sp/>tots<sp/>els<sp/>blobs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<sp/>itBlobs<sp/>!=<sp/>m_blobs.end()<sp/>)</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*itResult<sp/>=<sp/>(*evaluador)(**itBlobs);</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>itBlobs++;</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>itResult++;</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="412"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight></codeline>
+<codeline lineno="440"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>CBlobResult::GetNumber(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indexBlob,<sp/><ref refid="class_c_operador_blob" kindref="compound">funcio_calculBlob</ref><sp/>*evaluador<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="441"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>indexBlob<sp/>&lt;<sp/>0<sp/>||<sp/>indexBlob<sp/>&gt;=<sp/>GetNumBlobs()<sp/>)</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RaiseError(<sp/>EXCEPTION_BLOB_OUT_OF_BOUNDS<sp/>);</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(*evaluador)(<sp/>*m_blobs[indexBlob]<sp/>);</highlight></codeline>
+<codeline lineno="445"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight></codeline>
+<codeline lineno="448"></codeline>
+<codeline lineno="500"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CBlobResult::Filter(CBlobResult<sp/>&amp;dst,<sp/></highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filterAction,<sp/></highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_operador_blob" kindref="compound">funcio_calculBlob</ref><sp/>*evaluador,<sp/></highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>condition,<sp/></highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lowLimit,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>highLimit<sp/></highlight><highlight class="comment">/*=0*/</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="505"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="506"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>the<sp/>job</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DoFilter(dst,<sp/>filterAction,<sp/>evaluador,<sp/>condition,<sp/>lowLimit,<sp/>highLimit<sp/>);</highlight></codeline>
+<codeline lineno="509"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"></highlight></codeline>
+<codeline lineno="562"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CBlobResult::Filter(CBlobResult<sp/>&amp;dst,<sp/></highlight></codeline>
+<codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filterAction,<sp/></highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_operador_blob" kindref="compound">funcio_calculBlob</ref><sp/>*evaluador,<sp/></highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>condition,<sp/></highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lowLimit,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>highLimit<sp/></highlight><highlight class="comment">/*=0*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="568"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numBlobs<sp/>=<sp/>GetNumBlobs();</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"></highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>the<sp/>job</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DoFilter(dst,<sp/>filterAction,<sp/>evaluador,<sp/>condition,<sp/>lowLimit,<sp/>highLimit<sp/>);</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"></highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>inline<sp/>operation:<sp/>remove<sp/>previous<sp/>blobs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>&amp;dst<sp/>==<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>)<sp/></highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>esborrem<sp/>els<sp/>primers<sp/>blobs<sp/>(<sp/>que<sp/>són<sp/>els<sp/>originals<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="578"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ja<sp/>que<sp/>els<sp/>tindrem<sp/>replicats<sp/>al<sp/>final<sp/>si<sp/>passen<sp/>el<sp/>filtre</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Blob_vector::iterator<sp/>itBlobs<sp/>=<sp/>m_blobs.begin();</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>numBlobs;<sp/>i++<sp/>)</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>*itBlobs;</highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>itBlobs++;</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_blobs.erase(<sp/>m_blobs.begin(),<sp/>itBlobs<sp/>);</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="587"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"></highlight></codeline>
+<codeline lineno="589"><highlight class="normal"></highlight></codeline>
+<codeline lineno="591"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CBlobResult::DoFilter(CBlobResult<sp/>&amp;dst,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filterAction,<sp/><ref refid="class_c_operador_blob" kindref="compound">funcio_calculBlob</ref><sp/>*evaluador,<sp/></highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>condition,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lowLimit,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>highLimit</highlight><highlight class="comment">/*<sp/>=<sp/>0*/</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="593"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>numBlobs;</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>resultavaluacio;</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double_stl_vector<sp/>avaluacioBlobs;</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double_stl_vector::iterator<sp/>itavaluacioBlobs;</highlight></codeline>
+<codeline lineno="598"><highlight class="normal"></highlight></codeline>
+<codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>GetNumBlobs()<sp/>&lt;=<sp/>0<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!evaluador<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//avaluem<sp/>els<sp/>blobs<sp/>amb<sp/>la<sp/>funció<sp/>pertinent<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>avaluacioBlobs<sp/>=<sp/>GetSTLResult(evaluador);</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>itavaluacioBlobs<sp/>=<sp/>avaluacioBlobs.begin();</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numBlobs<sp/>=<sp/>GetNumBlobs();</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(condition)</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>B_EQUAL:</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;numBlobs;i++,<sp/>itavaluacioBlobs++)</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="610"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resultavaluacio=<sp/>*itavaluacioBlobs<sp/>==<sp/>lowLimit;</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(<sp/>resultavaluacio<sp/>&amp;&amp;<sp/>filterAction<sp/>==<sp/>B_INCLUDE<sp/>)<sp/>||</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>!resultavaluacio<sp/>&amp;&amp;<sp/>filterAction<sp/>==<sp/>B_EXCLUDE<sp/>))</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dst.m_blobs.push_back(<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref>(<sp/>GetBlob(<sp/>i<sp/>)<sp/>));</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="616"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>B_NOT_EQUAL:</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;numBlobs;i++,<sp/>itavaluacioBlobs++)</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resultavaluacio<sp/>=<sp/>*itavaluacioBlobs<sp/>!=<sp/>lowLimit;</highlight></codeline>
+<codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(<sp/>resultavaluacio<sp/>&amp;&amp;<sp/>filterAction<sp/>==<sp/>B_INCLUDE<sp/>)<sp/>||</highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>!resultavaluacio<sp/>&amp;&amp;<sp/>filterAction<sp/>==<sp/>B_EXCLUDE<sp/>))</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dst.m_blobs.push_back(<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref>(<sp/>GetBlob(<sp/>i<sp/>)<sp/>));</highlight></codeline>
+<codeline lineno="626"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="627"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="629"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>B_GREATER:</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;numBlobs;i++,<sp/>itavaluacioBlobs++)</highlight></codeline>
+<codeline lineno="631"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="632"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resultavaluacio=<sp/>*itavaluacioBlobs<sp/>&gt;<sp/>lowLimit;</highlight></codeline>
+<codeline lineno="633"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(<sp/>resultavaluacio<sp/>&amp;&amp;<sp/>filterAction<sp/>==<sp/>B_INCLUDE<sp/>)<sp/>||</highlight></codeline>
+<codeline lineno="634"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>!resultavaluacio<sp/>&amp;&amp;<sp/>filterAction<sp/>==<sp/>B_EXCLUDE<sp/>))</highlight></codeline>
+<codeline lineno="635"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="636"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dst.m_blobs.push_back(<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref>(<sp/>GetBlob(<sp/>i<sp/>)<sp/>));</highlight></codeline>
+<codeline lineno="637"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="640"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>B_LESS:</highlight></codeline>
+<codeline lineno="641"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;numBlobs;i++,<sp/>itavaluacioBlobs++)</highlight></codeline>
+<codeline lineno="642"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="643"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resultavaluacio=<sp/>*itavaluacioBlobs<sp/>&lt;<sp/>lowLimit;</highlight></codeline>
+<codeline lineno="644"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(<sp/>resultavaluacio<sp/>&amp;&amp;<sp/>filterAction<sp/>==<sp/>B_INCLUDE<sp/>)<sp/>||</highlight></codeline>
+<codeline lineno="645"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>!resultavaluacio<sp/>&amp;&amp;<sp/>filterAction<sp/>==<sp/>B_EXCLUDE<sp/>))</highlight></codeline>
+<codeline lineno="646"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="647"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dst.m_blobs.push_back(<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref>(<sp/>GetBlob(<sp/>i<sp/>)<sp/>));</highlight></codeline>
+<codeline lineno="648"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="649"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="650"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="651"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>B_GREATER_OR_EQUAL:</highlight></codeline>
+<codeline lineno="652"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;numBlobs;i++,<sp/>itavaluacioBlobs++)</highlight></codeline>
+<codeline lineno="653"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="654"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resultavaluacio=<sp/>*itavaluacioBlobs&gt;=<sp/>lowLimit;</highlight></codeline>
+<codeline lineno="655"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(<sp/>resultavaluacio<sp/>&amp;&amp;<sp/>filterAction<sp/>==<sp/>B_INCLUDE<sp/>)<sp/>||</highlight></codeline>
+<codeline lineno="656"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>!resultavaluacio<sp/>&amp;&amp;<sp/>filterAction<sp/>==<sp/>B_EXCLUDE<sp/>))</highlight></codeline>
+<codeline lineno="657"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dst.m_blobs.push_back(<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref>(<sp/>GetBlob(<sp/>i<sp/>)<sp/>));</highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="660"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="661"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="662"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>B_LESS_OR_EQUAL:</highlight></codeline>
+<codeline lineno="663"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;numBlobs;i++,<sp/>itavaluacioBlobs++)</highlight></codeline>
+<codeline lineno="664"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="665"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resultavaluacio=<sp/>*itavaluacioBlobs<sp/>&lt;=<sp/>lowLimit;</highlight></codeline>
+<codeline lineno="666"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(<sp/>resultavaluacio<sp/>&amp;&amp;<sp/>filterAction<sp/>==<sp/>B_INCLUDE<sp/>)<sp/>||</highlight></codeline>
+<codeline lineno="667"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>!resultavaluacio<sp/>&amp;&amp;<sp/>filterAction<sp/>==<sp/>B_EXCLUDE<sp/>))</highlight></codeline>
+<codeline lineno="668"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dst.m_blobs.push_back(<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref>(<sp/>GetBlob(<sp/>i<sp/>)<sp/>));</highlight></codeline>
+<codeline lineno="670"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="671"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="672"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="673"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>B_INSIDE:</highlight></codeline>
+<codeline lineno="674"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;numBlobs;i++,<sp/>itavaluacioBlobs++)</highlight></codeline>
+<codeline lineno="675"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="676"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resultavaluacio=(<sp/>*itavaluacioBlobs<sp/>&gt;=<sp/>lowLimit)<sp/>&amp;&amp;<sp/>(<sp/>*itavaluacioBlobs<sp/>&lt;=<sp/>highLimit);<sp/></highlight></codeline>
+<codeline lineno="677"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(<sp/>resultavaluacio<sp/>&amp;&amp;<sp/>filterAction<sp/>==<sp/>B_INCLUDE<sp/>)<sp/>||</highlight></codeline>
+<codeline lineno="678"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>!resultavaluacio<sp/>&amp;&amp;<sp/>filterAction<sp/>==<sp/>B_EXCLUDE<sp/>))</highlight></codeline>
+<codeline lineno="679"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="680"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dst.m_blobs.push_back(<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref>(<sp/>GetBlob(<sp/>i<sp/>)<sp/>));</highlight></codeline>
+<codeline lineno="681"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="682"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="683"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>B_OUTSIDE:</highlight></codeline>
+<codeline lineno="685"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;numBlobs;i++,<sp/>itavaluacioBlobs++)</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="687"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resultavaluacio=(<sp/>*itavaluacioBlobs<sp/>&lt;<sp/>lowLimit)<sp/>||<sp/>(<sp/>*itavaluacioBlobs<sp/>&gt;<sp/>highLimit);<sp/></highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(<sp/>resultavaluacio<sp/>&amp;&amp;<sp/>filterAction<sp/>==<sp/>B_INCLUDE<sp/>)<sp/>||</highlight></codeline>
+<codeline lineno="689"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>!resultavaluacio<sp/>&amp;&amp;<sp/>filterAction<sp/>==<sp/>B_EXCLUDE<sp/>))</highlight></codeline>
+<codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="691"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dst.m_blobs.push_back(<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref>(<sp/>GetBlob(<sp/>i<sp/>)<sp/>));</highlight></codeline>
+<codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="693"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="694"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="695"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="696"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="708"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="709"><highlight class="comment">-<sp/>FUNCTION:<sp/>GetBlob</highlight></codeline>
+<codeline lineno="710"><highlight class="comment">-<sp/>FUNCTIONALITY:<sp/>Gets<sp/>the<sp/>n-th<sp/>blob<sp/>(without<sp/>ordering<sp/>the<sp/>blobs)</highlight></codeline>
+<codeline lineno="711"><highlight class="comment">-<sp/>PARAMETERS:</highlight></codeline>
+<codeline lineno="712"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>indexblob:<sp/>index<sp/>in<sp/>the<sp/>blob<sp/>array</highlight></codeline>
+<codeline lineno="713"><highlight class="comment">-<sp/>RESULT:</highlight></codeline>
+<codeline lineno="714"><highlight class="comment">-<sp/>RESTRICTIONS:</highlight></codeline>
+<codeline lineno="715"><highlight class="comment">-<sp/>AUTHOR:<sp/>Ricard<sp/>Borràs</highlight></codeline>
+<codeline lineno="716"><highlight class="comment">-<sp/>CREATION<sp/>DATE:<sp/>25-05-2005.</highlight></codeline>
+<codeline lineno="717"><highlight class="comment">-<sp/>MODIFICATION:<sp/>Date.<sp/>Author.<sp/>Description.</highlight></codeline>
+<codeline lineno="718"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="719"><highlight class="normal"><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref><sp/>CBlobResult::GetBlob(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indexblob)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="720"><highlight class="keyword"></highlight><highlight class="normal">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="721"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>indexblob<sp/>&lt;<sp/>0<sp/>||<sp/>indexblob<sp/>&gt;=<sp/>GetNumBlobs()<sp/>)</highlight></codeline>
+<codeline lineno="722"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RaiseError(<sp/>EXCEPTION_BLOB_OUT_OF_BOUNDS<sp/>);</highlight></codeline>
+<codeline lineno="723"><highlight class="normal"></highlight></codeline>
+<codeline lineno="724"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*m_blobs[indexblob];</highlight></codeline>
+<codeline lineno="725"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="726"><highlight class="normal"><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref><sp/>*CBlobResult::GetBlob(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indexblob)</highlight></codeline>
+<codeline lineno="727"><highlight class="normal">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="728"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>indexblob<sp/>&lt;<sp/>0<sp/>||<sp/>indexblob<sp/>&gt;=<sp/>GetNumBlobs()<sp/>)</highlight></codeline>
+<codeline lineno="729"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RaiseError(<sp/>EXCEPTION_BLOB_OUT_OF_BOUNDS<sp/>);</highlight></codeline>
+<codeline lineno="730"><highlight class="normal"></highlight></codeline>
+<codeline lineno="731"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_blobs[indexblob];</highlight></codeline>
+<codeline lineno="732"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="733"><highlight class="normal"></highlight></codeline>
+<codeline lineno="751"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="752"><highlight class="comment">-<sp/>FUNCTION:<sp/>GetNthBlob</highlight></codeline>
+<codeline lineno="753"><highlight class="comment">-<sp/>FUNCTIONALITY:<sp/>Gets<sp/>the<sp/>n-th<sp/>blob<sp/>ordering<sp/>first<sp/>the<sp/>blobs<sp/>with<sp/>some<sp/>criteria</highlight></codeline>
+<codeline lineno="754"><highlight class="comment">-<sp/>PARAMETERS:</highlight></codeline>
+<codeline lineno="755"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>criteri:<sp/>criteria<sp/>to<sp/>order<sp/>the<sp/>blob<sp/>array</highlight></codeline>
+<codeline lineno="756"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>nBlob:<sp/>index<sp/>of<sp/>the<sp/>returned<sp/>blob<sp/>in<sp/>the<sp/>ordered<sp/>blob<sp/>array</highlight></codeline>
+<codeline lineno="757"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>dst:<sp/>where<sp/>to<sp/>store<sp/>the<sp/>result</highlight></codeline>
+<codeline lineno="758"><highlight class="comment">-<sp/>RESULT:</highlight></codeline>
+<codeline lineno="759"><highlight class="comment">-<sp/>RESTRICTIONS:</highlight></codeline>
+<codeline lineno="760"><highlight class="comment">-<sp/>AUTHOR:<sp/>Ricard<sp/>Borràs</highlight></codeline>
+<codeline lineno="761"><highlight class="comment">-<sp/>CREATION<sp/>DATE:<sp/>25-05-2005.</highlight></codeline>
+<codeline lineno="762"><highlight class="comment">-<sp/>MODIFICATION:<sp/>Date.<sp/>Author.<sp/>Description.</highlight></codeline>
+<codeline lineno="763"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="764"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CBlobResult::GetNthBlob(<sp/><ref refid="class_c_operador_blob" kindref="compound">funcio_calculBlob</ref><sp/>*criteri,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nBlob,<sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref><sp/>&amp;dst<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="765"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="766"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>verifiquem<sp/>que<sp/>no<sp/>estem<sp/>accedint<sp/>fora<sp/>el<sp/>vector<sp/>de<sp/>blobs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="767"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>nBlob<sp/>&lt;<sp/>0<sp/>||<sp/>nBlob<sp/>&gt;=<sp/>GetNumBlobs()<sp/>)</highlight></codeline>
+<codeline lineno="768"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="769"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//RaiseError(<sp/>EXCEPTION_BLOB_OUT_OF_BOUNDS<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="770"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dst<sp/>=<sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref>();</highlight></codeline>
+<codeline lineno="771"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="772"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="773"><highlight class="normal"></highlight></codeline>
+<codeline lineno="774"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double_stl_vector<sp/>avaluacioBlobs,<sp/>avaluacioBlobsOrdenat;</highlight></codeline>
+<codeline lineno="775"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>valorEnessim;</highlight></codeline>
+<codeline lineno="776"><highlight class="normal"></highlight></codeline>
+<codeline lineno="777"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//avaluem<sp/>els<sp/>blobs<sp/>amb<sp/>la<sp/>funció<sp/>pertinent<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="778"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>avaluacioBlobs<sp/>=<sp/>GetSTLResult(criteri);</highlight></codeline>
+<codeline lineno="779"><highlight class="normal"></highlight></codeline>
+<codeline lineno="780"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>avaluacioBlobsOrdenat<sp/>=<sp/>double_stl_vector(<sp/>GetNumBlobs()<sp/>);</highlight></codeline>
+<codeline lineno="781"><highlight class="normal"></highlight></codeline>
+<codeline lineno="782"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>obtenim<sp/>els<sp/>nBlob<sp/>primers<sp/>resultats<sp/>(en<sp/>ordre<sp/>descendent)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="783"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::partial_sort_copy(<sp/>avaluacioBlobs.begin(),<sp/></highlight></codeline>
+<codeline lineno="784"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>avaluacioBlobs.end(),</highlight></codeline>
+<codeline lineno="785"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>avaluacioBlobsOrdenat.begin(),<sp/></highlight></codeline>
+<codeline lineno="786"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>avaluacioBlobsOrdenat.end(),</highlight></codeline>
+<codeline lineno="787"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::greater&lt;double&gt;()<sp/>);</highlight></codeline>
+<codeline lineno="788"><highlight class="normal"></highlight></codeline>
+<codeline lineno="789"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>valorEnessim<sp/>=<sp/>avaluacioBlobsOrdenat[nBlob];</highlight></codeline>
+<codeline lineno="790"><highlight class="normal"></highlight></codeline>
+<codeline lineno="791"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>busquem<sp/>el<sp/>primer<sp/>blob<sp/>que<sp/>té<sp/>el<sp/>valor<sp/>n-ssim</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="792"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double_stl_vector::const_iterator<sp/>itAvaluacio<sp/>=<sp/>avaluacioBlobs.begin();</highlight></codeline>
+<codeline lineno="793"><highlight class="normal"></highlight></codeline>
+<codeline lineno="794"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>trobatBlob<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="795"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indexBlob<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="796"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<sp/>itAvaluacio<sp/>!=<sp/>avaluacioBlobs.end()<sp/>&amp;&amp;<sp/>!trobatBlob<sp/>)</highlight></codeline>
+<codeline lineno="797"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="798"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>*itAvaluacio<sp/>==<sp/>valorEnessim<sp/>)</highlight></codeline>
+<codeline lineno="799"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="800"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trobatBlob<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="801"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dst<sp/>=<sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref>(<sp/>GetBlob(indexBlob));</highlight></codeline>
+<codeline lineno="802"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="803"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>itAvaluacio++;</highlight></codeline>
+<codeline lineno="804"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>indexBlob++;</highlight></codeline>
+<codeline lineno="805"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="806"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="807"><highlight class="normal"></highlight></codeline>
+<codeline lineno="819"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="820"><highlight class="comment">-<sp/>FUNCTION:<sp/>ClearBlobs</highlight></codeline>
+<codeline lineno="821"><highlight class="comment">-<sp/>FUNCTIONALITY:<sp/>Clears<sp/>all<sp/>the<sp/>blobs<sp/>from<sp/>the<sp/>object<sp/>and<sp/>releases<sp/>all<sp/>its<sp/>memory</highlight></codeline>
+<codeline lineno="822"><highlight class="comment">-<sp/>PARAMETERS:</highlight></codeline>
+<codeline lineno="823"><highlight class="comment">-<sp/>RESULT:</highlight></codeline>
+<codeline lineno="824"><highlight class="comment">-<sp/>RESTRICTIONS:</highlight></codeline>
+<codeline lineno="825"><highlight class="comment">-<sp/>AUTHOR:<sp/>Ricard<sp/>Borràs</highlight></codeline>
+<codeline lineno="826"><highlight class="comment">-<sp/>CREATION<sp/>DATE:<sp/>25-05-2005.</highlight></codeline>
+<codeline lineno="827"><highlight class="comment">-<sp/>MODIFICATION:<sp/>Date.<sp/>Author.<sp/>Description.</highlight></codeline>
+<codeline lineno="828"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="829"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CBlobResult::ClearBlobs()</highlight></codeline>
+<codeline lineno="830"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="831"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Blob_vector::iterator<sp/>itBlobs<sp/>=<sp/>m_blobs.begin();</highlight></codeline>
+<codeline lineno="832"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<sp/>itBlobs<sp/>!=<sp/>m_blobs.end()<sp/>)</highlight></codeline>
+<codeline lineno="833"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="834"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>*itBlobs;</highlight></codeline>
+<codeline lineno="835"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>itBlobs++;</highlight></codeline>
+<codeline lineno="836"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="837"><highlight class="normal"></highlight></codeline>
+<codeline lineno="838"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_blobs.clear();</highlight></codeline>
+<codeline lineno="839"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="840"><highlight class="normal"></highlight></codeline>
+<codeline lineno="854"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="855"><highlight class="comment">-<sp/>FUNCTION:<sp/>RaiseError</highlight></codeline>
+<codeline lineno="856"><highlight class="comment">-<sp/>FUNCTIONALITY:<sp/>Error<sp/>handling<sp/>function</highlight></codeline>
+<codeline lineno="857"><highlight class="comment">-<sp/>PARAMETERS:</highlight></codeline>
+<codeline lineno="858"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>errorCode:<sp/>reason<sp/>of<sp/>the<sp/>error</highlight></codeline>
+<codeline lineno="859"><highlight class="comment">-<sp/>RESULT:</highlight></codeline>
+<codeline lineno="860"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>in<sp/>_SHOW_ERRORS<sp/>version,<sp/>shows<sp/>a<sp/>message<sp/>box<sp/>with<sp/>the<sp/>error.<sp/>In<sp/>release<sp/>is<sp/>silent.</highlight></codeline>
+<codeline lineno="861"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>In<sp/>both<sp/>cases<sp/>throws<sp/>an<sp/>exception<sp/>with<sp/>the<sp/>error.</highlight></codeline>
+<codeline lineno="862"><highlight class="comment">-<sp/>RESTRICTIONS:</highlight></codeline>
+<codeline lineno="863"><highlight class="comment">-<sp/>AUTHOR:<sp/>Ricard<sp/>Borràs</highlight></codeline>
+<codeline lineno="864"><highlight class="comment">-<sp/>CREATION<sp/>DATE:<sp/>25-05-2005.</highlight></codeline>
+<codeline lineno="865"><highlight class="comment">-<sp/>MODIFICATION:<sp/>Date.<sp/>Author.<sp/>Description.</highlight></codeline>
+<codeline lineno="866"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="867"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CBlobResult::RaiseError(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errorCode)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="868"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="870"><highlight class="preprocessor">#ifdef<sp/>_SHOW_ERRORS</highlight></codeline>
+<codeline lineno="871"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CString<sp/>msg,<sp/>format<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Error<sp/>en<sp/>CBlobResult:<sp/>%s&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="872"><highlight class="normal"></highlight></codeline>
+<codeline lineno="873"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(errorCode)</highlight></codeline>
+<codeline lineno="874"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="875"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>EXCEPTION_BLOB_OUT_OF_BOUNDS:</highlight></codeline>
+<codeline lineno="876"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msg.Format(format,<sp/></highlight><highlight class="stringliteral">&quot;Intentant<sp/>accedir<sp/>a<sp/>un<sp/>blob<sp/>no<sp/>existent&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="877"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="878"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="879"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msg.Format(format,<sp/></highlight><highlight class="stringliteral">&quot;Codi<sp/>d&apos;error<sp/>desconegut&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="880"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="881"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="882"><highlight class="normal"></highlight></codeline>
+<codeline lineno="883"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AfxMessageBox(msg);</highlight></codeline>
+<codeline lineno="884"><highlight class="normal"></highlight></codeline>
+<codeline lineno="885"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="886"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>errorCode;</highlight></codeline>
+<codeline lineno="887"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="888"><highlight class="normal"></highlight></codeline>
+<codeline lineno="889"><highlight class="normal"></highlight></codeline>
+<codeline lineno="890"><highlight class="normal"></highlight></codeline>
+<codeline lineno="891"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************</highlight></codeline>
+<codeline lineno="892"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Auxiliars<sp/>/<sp/>Auxiliary<sp/>functions</highlight></codeline>
+<codeline lineno="893"><highlight class="comment">**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="894"><highlight class="normal"></highlight></codeline>
+<codeline lineno="895"><highlight class="normal"></highlight></codeline>
+<codeline lineno="908"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="909"><highlight class="comment">-<sp/>FUNCTION:<sp/>PrintBlobs</highlight></codeline>
+<codeline lineno="910"><highlight class="comment">-<sp/>FUNCTIONALITY:<sp/>Prints<sp/>some<sp/>blob<sp/>features<sp/>in<sp/>an<sp/>ASCII<sp/>file</highlight></codeline>
+<codeline lineno="911"><highlight class="comment">-<sp/>PARAMETERS:</highlight></codeline>
+<codeline lineno="912"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>nom_fitxer:<sp/>full<sp/>path<sp/>+<sp/>filename<sp/>to<sp/>generate</highlight></codeline>
+<codeline lineno="913"><highlight class="comment">-<sp/>RESULT:</highlight></codeline>
+<codeline lineno="914"><highlight class="comment">-<sp/>RESTRICTIONS:</highlight></codeline>
+<codeline lineno="915"><highlight class="comment">-<sp/>AUTHOR:<sp/>Ricard<sp/>Borràs</highlight></codeline>
+<codeline lineno="916"><highlight class="comment">-<sp/>CREATION<sp/>DATE:<sp/>25-05-2005.</highlight></codeline>
+<codeline lineno="917"><highlight class="comment">-<sp/>MODIFICATION:<sp/>Date.<sp/>Author.<sp/>Description.</highlight></codeline>
+<codeline lineno="918"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="919"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CBlobResult::PrintBlobs(<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*nom_fitxer<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="920"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="921"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double_stl_vector<sp/>area,<sp/></highlight><highlight class="comment">/*perimetre,*/</highlight><highlight class="normal"><sp/>exterior,<sp/>compacitat,<sp/>longitud,<sp/></highlight></codeline>
+<codeline lineno="922"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>externPerimeter,<sp/>perimetreConvex,<sp/>perimetre;</highlight></codeline>
+<codeline lineno="923"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="924"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FILE<sp/>*fitxer_sortida;</highlight></codeline>
+<codeline lineno="925"><highlight class="normal"></highlight></codeline>
+<codeline lineno="926"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>area<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>GetSTLResult(<sp/><ref refid="class_c_blob_get_area" kindref="compound">CBlobGetArea</ref>());</highlight></codeline>
+<codeline lineno="927"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>perimetre<sp/>=<sp/>GetSTLResult(<sp/><ref refid="class_c_blob_get_perimeter" kindref="compound">CBlobGetPerimeter</ref>());</highlight></codeline>
+<codeline lineno="928"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exterior<sp/><sp/>=<sp/>GetSTLResult(<sp/><ref refid="class_c_blob_get_exterior" kindref="compound">CBlobGetExterior</ref>());</highlight></codeline>
+<codeline lineno="929"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>compacitat<sp/>=<sp/>GetSTLResult(<ref refid="class_c_blob_get_compactness" kindref="compound">CBlobGetCompactness</ref>());</highlight></codeline>
+<codeline lineno="930"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>longitud<sp/><sp/>=<sp/>GetSTLResult(<sp/><ref refid="class_c_blob_get_length" kindref="compound">CBlobGetLength</ref>());</highlight></codeline>
+<codeline lineno="931"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>externPerimeter<sp/>=<sp/>GetSTLResult(<sp/><ref refid="class_c_blob_get_extern_perimeter" kindref="compound">CBlobGetExternPerimeter</ref>());</highlight></codeline>
+<codeline lineno="932"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>perimetreConvex<sp/>=<sp/>GetSTLResult(<sp/><ref refid="class_c_blob_get_hull_perimeter" kindref="compound">CBlobGetHullPerimeter</ref>());</highlight></codeline>
+<codeline lineno="933"><highlight class="normal"></highlight></codeline>
+<codeline lineno="934"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fitxer_sortida<sp/>=<sp/>fopen(<sp/>nom_fitxer,<sp/></highlight><highlight class="stringliteral">&quot;w&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="935"><highlight class="normal"></highlight></codeline>
+<codeline lineno="936"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;<sp/>i&lt;GetNumBlobs();<sp/>i++)</highlight></codeline>
+<codeline lineno="937"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="938"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(<sp/>fitxer_sortida,<sp/></highlight><highlight class="stringliteral">&quot;blob<sp/>%d<sp/>-&gt;\t<sp/>a=%7.0f\t<sp/>p=%8.2f<sp/>(%8.2f<sp/>extern)\t<sp/>pconvex=%8.2f\t<sp/>ext=%.0f\t<sp/>m=%7.2f\t<sp/>c=%3.2f\t<sp/>l=%8.2f\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="939"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i,<sp/>area[i],<sp/>perimetre[i],<sp/>externPerimeter[i],<sp/>perimetreConvex[i],<sp/>exterior[i],<sp/>compacitat[i],<sp/>longitud[i]<sp/>);</highlight></codeline>
+<codeline lineno="940"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="941"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fclose(<sp/>fitxer_sortida<sp/>);</highlight></codeline>
+<codeline lineno="942"><highlight class="normal"></highlight></codeline>
+<codeline lineno="943"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobResult.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,17 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classtld_1_1_ensemble_classifier.html#a92ddef7701b1062b1f4a53e5cfcd79a2" title="tld::EnsembleClassifier::initFeatureOffsets" alt="" coords="224,5,509,33"/>
+<area shape="rect" id="node5" href="$classtld_1_1_ensemble_classifier.html#ab342db231d14bbaa892b2664d210e152" title="tld::EnsembleClassifier::initPosteriors" alt="" coords="239,55,495,83"/>
+<area shape="rect" id="node7" href="$classtld_1_1_detector_cascade.html#a39760d6c54ddb41785ffd05a7b881d8d" title="tld::DetectorCascade::initWindowOffsets" alt="" coords="229,106,504,134"/>
+<area shape="rect" id="node9" href="$classtld_1_1_detector_cascade.html#a0515043558291c0bfbd5d403315c0334" title="tld::DetectorCascade::initWindowsAndScales" alt="" coords="215,157,519,185"/>
+<area shape="rect" id="node11" href="$classtld_1_1_detector_cascade.html#a809e13a6c7fbc1c13dcb9b4bf9d22964" title="tld::DetectorCascade::propagateMembers" alt="" coords="221,207,512,235"/>
+<area shape="rect" id="node15" href="$classtld_1_1_t_l_d.html#a42636c4a6fef7de9b71af987151a7f9e" title="tld::TLD::release" alt="" coords="304,258,429,286"/>
+<area shape="rect" id="node31" href="$classtld_1_1_ensemble_classifier.html#acfc0c9d71c16dfed9750b6aa409afb0c" title="tld::EnsembleClassifier::updatePosterior" alt="" coords="229,309,504,337"/>
+<area shape="rect" id="node13" href="$classtld_1_1_detection_result.html#a20c6fc21a478b99cf88b6e955931e530" title="tld::DetectionResult::init" alt="" coords="627,207,800,235"/>
+<area shape="rect" id="node17" href="$classtld_1_1_median_flow_tracker.html#ad5c1599acad1607c20c7d2ca8aacf56c" title="tld::MedianFlowTracker::cleanPreviousData" alt="" coords="568,258,859,286"/>
+<area shape="rect" id="node19" href="$classtld_1_1_detector_cascade.html#a4658f60cc03595d55920b4949ff26a69" title="tld::DetectorCascade::release" alt="" coords="608,309,819,337"/>
+<area shape="rect" id="node21" href="$classtld_1_1_detection_result.html#a23dc924e308f7a2d8f3795fb48fb6648" title="tld::DetectionResult::release" alt="" coords="923,207,1123,235"/>
+<area shape="rect" id="node23" href="$classtld_1_1_clustering.html#a2dbde4a94a483e8befe4b710445941bf" title="tld::Clustering::release" alt="" coords="940,258,1105,286"/>
+<area shape="rect" id="node25" href="$classtld_1_1_n_n_classifier.html#aabb548e7b9535ad8040fe65d344b3142" title="tld::NNClassifier::release" alt="" coords="933,309,1112,337"/>
+<area shape="rect" id="node27" href="$classtld_1_1_ensemble_classifier.html#a3fd93c80d37f7f115443c2e147ec9967" title="tld::EnsembleClassifier::release" alt="" coords="912,359,1133,387"/>
+<area shape="rect" id="node29" href="$classtld_1_1_foreground_detector.html#a0bf609b2ba46774804a929253c225aac" title="tld::ForegroundDetector::release" alt="" coords="908,410,1137,438"/>
+</map>

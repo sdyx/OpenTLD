@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_config_8h" kind="file">
+    <compoundname>Config.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">string</includes>
+    <includes refid="libconfig_8h_09_09" local="no">libconfig.h++</includes>
+    <includes refid="_im_acq_8h" local="yes">ImAcq.h</includes>
+    <includes refid="_settings_8h" local="yes">Settings.h</includes>
+    <includes refid="_main_8h" local="yes">Main.h</includes>
+    <includedby refid="_config_8cpp" local="yes">src/opentld/main/Config.cpp</includedby>
+    <includedby refid="_main_8cpp" local="yes">src/opentld/main/Main.cpp</includedby>
+    <includedby refid="_open_t_l_d_8cpp" local="yes">src/opentld/OpenTLD.cpp</includedby>
+    <includedby refid="_q_open_t_l_d_8cpp" local="yes">src/opentld/QOpenTLD.cpp</includedby>
+    <incdepgraph>
+      <node id="1818">
+        <label>Settings.h</label>
+        <link refid="_settings_8h"/>
+        <childnode refid="1819" relation="include">
+        </childnode>
+        <childnode refid="1816" relation="include">
+        </childnode>
+      </node>
+      <node id="1824">
+        <label>DetectorCascade.h</label>
+        <link refid="_detector_cascade_8h"/>
+        <childnode refid="1825" relation="include">
+        </childnode>
+        <childnode refid="1826" relation="include">
+        </childnode>
+        <childnode refid="1827" relation="include">
+        </childnode>
+        <childnode refid="1829" relation="include">
+        </childnode>
+        <childnode refid="1830" relation="include">
+        </childnode>
+        <childnode refid="1831" relation="include">
+        </childnode>
+      </node>
+      <node id="1820">
+        <label>Main.h</label>
+        <link refid="_main_8h"/>
+        <childnode refid="1821" relation="include">
+        </childnode>
+        <childnode refid="1816" relation="include">
+        </childnode>
+        <childnode refid="1833" relation="include">
+        </childnode>
+      </node>
+      <node id="1829">
+        <label>EnsembleClassifier.h</label>
+        <link refid="_ensemble_classifier_8h"/>
+        <childnode refid="1822" relation="include">
+        </childnode>
+      </node>
+      <node id="1831">
+        <label>NNClassifier.h</label>
+        <link refid="_n_n_classifier_8h"/>
+        <childnode refid="1819" relation="include">
+        </childnode>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1832" relation="include">
+        </childnode>
+        <childnode refid="1825" relation="include">
+        </childnode>
+      </node>
+      <node id="1827">
+        <label>VarianceFilter.h</label>
+        <link refid="_variance_filter_8h"/>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1828" relation="include">
+        </childnode>
+        <childnode refid="1825" relation="include">
+        </childnode>
+      </node>
+      <node id="1812">
+        <label>string</label>
+      </node>
+      <node id="1817">
+        <label>highgui.h</label>
+      </node>
+      <node id="1832">
+        <label>NormalizedPatch.h</label>
+        <link refid="_normalized_patch_8h"/>
+      </node>
+      <node id="1815">
+        <label>exception</label>
+      </node>
+      <node id="1810">
+        <label>src/opentld/main/Config.h</label>
+        <link refid="Config.h"/>
+        <childnode refid="1811" relation="include">
+        </childnode>
+        <childnode refid="1812" relation="include">
+        </childnode>
+        <childnode refid="1813" relation="include">
+        </childnode>
+        <childnode refid="1816" relation="include">
+        </childnode>
+        <childnode refid="1818" relation="include">
+        </childnode>
+        <childnode refid="1820" relation="include">
+        </childnode>
+      </node>
+      <node id="1813">
+        <label>libconfig.h++</label>
+        <link refid="libconfig_8h_09_09"/>
+        <childnode refid="1814" relation="include">
+        </childnode>
+        <childnode refid="1815" relation="include">
+        </childnode>
+        <childnode refid="1812" relation="include">
+        </childnode>
+      </node>
+      <node id="1828">
+        <label>IntegralImage.h</label>
+        <link refid="_integral_image_8h"/>
+        <childnode refid="1822" relation="include">
+        </childnode>
+      </node>
+      <node id="1830">
+        <label>Clustering.h</label>
+        <link refid="_clustering_8h"/>
+        <childnode refid="1819" relation="include">
+        </childnode>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1825" relation="include">
+        </childnode>
+      </node>
+      <node id="1826">
+        <label>ForegroundDetector.h</label>
+        <link refid="_foreground_detector_8h"/>
+        <childnode refid="1819" relation="include">
+        </childnode>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1825" relation="include">
+        </childnode>
+      </node>
+      <node id="1833">
+        <label>Gui.h</label>
+        <link refid="_gui_8h"/>
+        <childnode refid="1812" relation="include">
+        </childnode>
+        <childnode refid="1817" relation="include">
+        </childnode>
+      </node>
+      <node id="1819">
+        <label>vector</label>
+      </node>
+      <node id="1816">
+        <label>ImAcq.h</label>
+        <link refid="_im_acq_8h"/>
+        <childnode refid="1817" relation="include">
+        </childnode>
+      </node>
+      <node id="1822">
+        <label>cv.h</label>
+      </node>
+      <node id="1821">
+        <label>TLD.h</label>
+        <link refid="_t_l_d_8h"/>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1823" relation="include">
+        </childnode>
+        <childnode refid="1824" relation="include">
+        </childnode>
+      </node>
+      <node id="1811">
+        <label>iostream</label>
+      </node>
+      <node id="1823">
+        <label>MedianFlowTracker.h</label>
+        <link refid="_median_flow_tracker_8h"/>
+        <childnode refid="1822" relation="include">
+        </childnode>
+      </node>
+      <node id="1825">
+        <label>DetectionResult.h</label>
+        <link refid="_detection_result_8h"/>
+        <childnode refid="1819" relation="include">
+        </childnode>
+        <childnode refid="1822" relation="include">
+        </childnode>
+      </node>
+      <node id="1814">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1834">
+        <label>src/opentld/main/Config.h</label>
+        <link refid="Config.h"/>
+        <childnode refid="1835" relation="include">
+        </childnode>
+        <childnode refid="1836" relation="include">
+        </childnode>
+        <childnode refid="1837" relation="include">
+        </childnode>
+        <childnode refid="1838" relation="include">
+        </childnode>
+      </node>
+      <node id="1836">
+        <label>src/opentld/main/Main.cpp</label>
+        <link refid="_main_8cpp"/>
+      </node>
+      <node id="1837">
+        <label>src/opentld/OpenTLD.cpp</label>
+        <link refid="_open_t_l_d_8cpp"/>
+      </node>
+      <node id="1835">
+        <label>src/opentld/main/Config.cpp</label>
+        <link refid="_config_8cpp"/>
+      </node>
+      <node id="1838">
+        <label>src/opentld/QOpenTLD.cpp</label>
+        <link refid="_q_open_t_l_d_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classtld_1_1_config" prot="public">tld::Config</innerclass>
+    <innernamespace refid="namespacetld">tld</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CONFIG_H</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="libconfig_8h_09_09" kindref="compound">libconfig.h++</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_im_acq_8h" kindref="compound">ImAcq.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_settings_8h" kindref="compound">Settings.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_main_8h" kindref="compound">Main.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">tld</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classtld_1_1_config" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtld_1_1_config" kindref="compound">Config</ref></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_config_1a41ed67defe7392fe1ecc3233ad2a7a62" kindref="member">Config</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_config_1a41ed67defe7392fe1ecc3233ad2a7a62" kindref="member">Config</ref>(<ref refid="classtld_1_1_settings" kindref="compound">Settings</ref><sp/>&amp;settings);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_config_1a794ffe6627a441e41f22d368a279f2e5" kindref="member">~Config</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" kindref="member">init</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" kindref="member">configure</ref>(<ref refid="class_main" kindref="compound">Main</ref><sp/>*<ref refid="_open_t_l_d_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classlibconfig_1_1_config" kindref="compound">libconfig::Config</ref><sp/>m_cfg;<sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>m_configPath;<sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_settings" kindref="compound">Settings</ref><sp/>m_settings;<sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_selectManuallySet;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_methodSet;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_startFrameSet;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_lastFrameSet;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_trajectorySet;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_showDetectionsSet;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_showForegroundSet;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_thetaSet;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_printResultsSet;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_camNoSet;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_imagePathSet;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_modelPathSet;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_initialBBSet;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_showOutputSet;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_exportModelAfterRunSet;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/>POSIX<sp/>getopt<sp/>for<sp/>Windows</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"></highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/>AT&amp;T<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"></highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/>Code<sp/>given<sp/>out<sp/>at<sp/>the<sp/>1985<sp/>UNIFORUM<sp/>conference<sp/>in<sp/>Dallas.</highlight></codeline>
+<codeline lineno="106"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__GNUC__</highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>include<sp/>&lt;getopt.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__GNUC__</highlight></codeline>
+<codeline lineno="112"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1a6e180d5067af278cc277ae9c6f7507c1" kindref="member">opterr</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1ab8c5a378ef03678c537edc84a15abc22" kindref="member">optind</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1a6d6bd80732b9f396bc03e5f2c5cf30f8" kindref="member">optopt</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="namespacetld_1a1bbc7d3201a2ef41da5495e0e48cfd2e" kindref="member">optarg</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1a5b279570cd95fb0067a41b5a222e2642" kindref="member">getopt</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*opts);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>__GNUC__<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>End<sp/>Namespace<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CONFIG_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Config.h"/>
+  </compounddef>
+</doxygen>

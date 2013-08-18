@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classtld_1_1_median_flow_tracker.html#ad5c1599acad1607c20c7d2ca8aacf56c" title="tld::MedianFlowTracker::cleanPreviousData" alt="" coords="179,55,469,83"/>
+<area shape="rect" id="node5" href="$classtld_1_1_detector_cascade.html#a4658f60cc03595d55920b4949ff26a69" title="tld::DetectorCascade::release" alt="" coords="219,106,429,134"/>
+<area shape="rect" id="node7" href="$classtld_1_1_detection_result.html#a23dc924e308f7a2d8f3795fb48fb6648" title="tld::DetectionResult::release" alt="" coords="533,5,733,33"/>
+<area shape="rect" id="node9" href="$classtld_1_1_clustering.html#a2dbde4a94a483e8befe4b710445941bf" title="tld::Clustering::release" alt="" coords="551,55,716,83"/>
+<area shape="rect" id="node11" href="$classtld_1_1_n_n_classifier.html#aabb548e7b9535ad8040fe65d344b3142" title="tld::NNClassifier::release" alt="" coords="544,106,723,134"/>
+<area shape="rect" id="node13" href="$classtld_1_1_ensemble_classifier.html#a3fd93c80d37f7f115443c2e147ec9967" title="tld::EnsembleClassifier::release" alt="" coords="523,157,744,185"/>
+<area shape="rect" id="node15" href="$classtld_1_1_foreground_detector.html#a0bf609b2ba46774804a929253c225aac" title="tld::ForegroundDetector::release" alt="" coords="519,207,748,235"/>
+</map>

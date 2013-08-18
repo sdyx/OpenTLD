@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="classtld_1_1_gui" kind="class" prot="public">
+    <compoundname>tld::Gui</compoundname>
+    <includes refid="_gui_8h" local="no">Gui.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtld_1_1_gui_1a23e2c6bb054fdde33571f9f22eb6c2d4" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tld::Gui::m_window_name</definition>
+        <argsstring></argsstring>
+        <name>m_window_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.h" line="41" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtld_1_1_gui_1a3d8f787eff005a186184741e86de65b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tld::Gui::Gui</definition>
+        <argsstring>()</argsstring>
+        <name>Gui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.h" line="33" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_gui_1ab918b39ef1ff13e7e6be76d521f9357f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tld::Gui::~Gui</definition>
+        <argsstring>()</argsstring>
+        <name>~Gui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.h" line="34" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_gui_1aed1a0c246dfc3795560422ae762d58b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::Gui::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.h" line="35" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp" bodystart="49" bodyend="53"/>
+        <referencedby refid="_open_t_l_d_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="_open_t_l_d_8cpp" startline="33" endline="65">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_gui_1a639a48143e702f183fc4dd626b7900ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::Gui::showImage</definition>
+        <argsstring>(IplImage *image)</argsstring>
+        <name>showImage</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.h" line="36" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp" bodystart="55" bodyend="58"/>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_gui_1a08a00ca08170f5707937aa133c12c415" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char tld::Gui::getKey</definition>
+        <argsstring>()</argsstring>
+        <name>getKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.h" line="37" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp" bodystart="60" bodyend="63"/>
+        <referencedby refid="class_main_1a5effa58c6ae671f8ce4ff31cb6e07aa5" compoundref="_main_8cpp" startline="37" endline="298">Main::doWork</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_gui_1acc98f1b85990af20927cbf3e691a8f1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string tld::Gui::windowName</definition>
+        <argsstring>()</argsstring>
+        <name>windowName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.h" line="38" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.cpp" bodystart="65" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="480">
+        <label>tld::Gui</label>
+        <link refid="classtld_1_1_gui"/>
+        <childnode refid="481" relation="usage">
+          <edgelabel>m_window_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="481">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.h" line="31" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Gui.h" bodystart="30" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classtld_1_1_gui_1a08a00ca08170f5707937aa133c12c415" prot="public" virt="non-virtual"><scope>tld::Gui</scope><name>getKey</name></member>
+      <member refid="classtld_1_1_gui_1a3d8f787eff005a186184741e86de65b2" prot="public" virt="non-virtual"><scope>tld::Gui</scope><name>Gui</name></member>
+      <member refid="classtld_1_1_gui_1aed1a0c246dfc3795560422ae762d58b3" prot="public" virt="non-virtual"><scope>tld::Gui</scope><name>init</name></member>
+      <member refid="classtld_1_1_gui_1a23e2c6bb054fdde33571f9f22eb6c2d4" prot="private" virt="non-virtual"><scope>tld::Gui</scope><name>m_window_name</name></member>
+      <member refid="classtld_1_1_gui_1a639a48143e702f183fc4dd626b7900ae" prot="public" virt="non-virtual"><scope>tld::Gui</scope><name>showImage</name></member>
+      <member refid="classtld_1_1_gui_1acc98f1b85990af20927cbf3e691a8f1a" prot="public" virt="non-virtual"><scope>tld::Gui</scope><name>windowName</name></member>
+      <member refid="classtld_1_1_gui_1ab918b39ef1ff13e7e6be76d521f9357f" prot="public" virt="non-virtual"><scope>tld::Gui</scope><name>~Gui</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

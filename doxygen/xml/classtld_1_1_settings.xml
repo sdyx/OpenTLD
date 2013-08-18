@@ -1,0 +1,681 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="classtld_1_1_settings" kind="class" prot="public">
+    <compoundname>tld::Settings</compoundname>
+    <includes refid="_settings_8h" local="no">Settings.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtld_1_1_settings_1a54a14f7a08a919ee6ff19514205c6b47" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::Settings::m_trackerEnabled</definition>
+        <argsstring></argsstring>
+        <name>m_trackerEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="46" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1ab3100039fb52ee1a41813812320a6ca3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::Settings::m_varianceFilterEnabled</definition>
+        <argsstring></argsstring>
+        <name>m_varianceFilterEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="47" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1af184f95560d875d91951dbbc368ba04d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::Settings::m_ensembleClassifierEnabled</definition>
+        <argsstring></argsstring>
+        <name>m_ensembleClassifierEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="48" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1a8ec793b6668a626308d8ee8d697d9f67" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::Settings::m_nnClassifierEnabled</definition>
+        <argsstring></argsstring>
+        <name>m_nnClassifierEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="49" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1afd89a9d1a0a8dec5ce524eeed5b0f5e0" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::Settings::m_useProportionalShift</definition>
+        <argsstring></argsstring>
+        <name>m_useProportionalShift</name>
+        <briefdescription>
+<para>sets scanwindows off by a percentage value of the window dimensions (specified in proportionalShift) rather than 1px. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="50" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1a6c06df5b2a9028a1c9a77269601f4a36" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::Settings::m_loadModel</definition>
+        <argsstring></argsstring>
+        <name>m_loadModel</name>
+        <briefdescription>
+<para>if true, model specified by &quot;modelPath&quot; is loaded at startup </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="51" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1afadc64d205d5386d94088e87dba72519" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::Settings::m_selectManually</definition>
+        <argsstring></argsstring>
+        <name>m_selectManually</name>
+        <briefdescription>
+<para>if true, user can select initial bounding box (which then overrides the setting &quot;initialBoundingBox&quot;) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="52" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1abd4a98a18a910313cf3590f507f1ceef" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::Settings::m_learningEnabled</definition>
+        <argsstring></argsstring>
+        <name>m_learningEnabled</name>
+        <briefdescription>
+<para>enables learning while processing </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="53" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1abce1f9678efba0511db88545d97bb535" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::Settings::m_showOutput</definition>
+        <argsstring></argsstring>
+        <name>m_showOutput</name>
+        <briefdescription>
+<para>creates a window displaying results </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="54" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1acd69b3d8edc2fe3a05bb763dfd17b30b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::Settings::m_showNotConfident</definition>
+        <argsstring></argsstring>
+        <name>m_showNotConfident</name>
+        <briefdescription>
+<para>show bounding box also if confidence is low </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="55" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1a495b2aba7d0c9ec5fb914ab04b6d42cf" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::Settings::m_showColorImage</definition>
+        <argsstring></argsstring>
+        <name>m_showColorImage</name>
+        <briefdescription>
+<para>shows color images instead of greyscale </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="56" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1abcc93dd632486081ba14ebfaaaecd392" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::Settings::m_showDetections</definition>
+        <argsstring></argsstring>
+        <name>m_showDetections</name>
+        <briefdescription>
+<para>shows detections </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="57" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1ab2398d08ccb9bab01c3240651d07f8c3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::Settings::m_showForeground</definition>
+        <argsstring></argsstring>
+        <name>m_showForeground</name>
+        <briefdescription>
+<para>shows foreground </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="58" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1a46de5897c9f1bc410c0f44f459181e05" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::Settings::m_saveOutput</definition>
+        <argsstring></argsstring>
+        <name>m_saveOutput</name>
+        <briefdescription>
+<para>specifies whether to save visual output </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="59" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1ae4a5b3fb575a1a49823f8305f3aefded" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::Settings::m_alternating</definition>
+        <argsstring></argsstring>
+        <name>m_alternating</name>
+        <briefdescription>
+<para>if set to true, detector is disabled while tracker is running. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="60" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1a5d0b425a526e5f7f78c758bfde3d9ee9" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::Settings::m_exportModelAfterRun</definition>
+        <argsstring></argsstring>
+        <name>m_exportModelAfterRun</name>
+        <briefdescription>
+<para>if set to true, model is exported after run. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="61" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1a56281480120f9cb2dbf69022cf97a30a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::Settings::m_trajectory</definition>
+        <argsstring></argsstring>
+        <name>m_trajectory</name>
+        <briefdescription>
+<para>specifies the number of the last frames which are considered by the trajectory; 0 disables the trajectory </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="62" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="62" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1a2438efb226c38f806bf1b3e023aa3760" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::Settings::m_method</definition>
+        <argsstring></argsstring>
+        <name>m_method</name>
+        <briefdescription>
+<para>method of capturing: IMACQ_CAM, IMACQ_IMGS or IMACQ_VID </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="63" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1ac63c6dfae7c0be1fc167608dd52e1d7f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::Settings::m_startFrame</definition>
+        <argsstring></argsstring>
+        <name>m_startFrame</name>
+        <briefdescription>
+<para>first frame of capturing </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="64" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="64" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1a4935fe002dd6358506813d7c48ec5322" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::Settings::m_lastFrame</definition>
+        <argsstring></argsstring>
+        <name>m_lastFrame</name>
+        <briefdescription>
+<para>last frame of caputing; 0 means take all frames </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="65" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1a46e4d9f59b1f87508cf0ad9a154fdc21" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::Settings::m_minScale</definition>
+        <argsstring></argsstring>
+        <name>m_minScale</name>
+        <briefdescription>
+<para>number of scales smaller than initial object size </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="66" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="66" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1a548c317f8242ea8513d13573acdaaa4c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::Settings::m_maxScale</definition>
+        <argsstring></argsstring>
+        <name>m_maxScale</name>
+        <briefdescription>
+<para>number of scales larger than initial object size </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="67" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="67" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1af15afe9f4ffb32e89686c8e90026e2bc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::Settings::m_numFeatures</definition>
+        <argsstring></argsstring>
+        <name>m_numFeatures</name>
+        <briefdescription>
+<para>number of features </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="68" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="68" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1a959d793b002e13f6758fc84765b7d33d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::Settings::m_numTrees</definition>
+        <argsstring></argsstring>
+        <name>m_numTrees</name>
+        <briefdescription>
+<para>number of trees </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="69" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="69" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1adade7d3269f34113e92abdb3816058f7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float tld::Settings::m_thetaP</definition>
+        <argsstring></argsstring>
+        <name>m_thetaP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="70" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="70" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1aef49627d1ffac7dda7cc83c7ba6a25bd" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float tld::Settings::m_thetaN</definition>
+        <argsstring></argsstring>
+        <name>m_thetaN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="71" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="71" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1a07dc62407c3373e7fa3906c145593b69" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::Settings::m_seed</definition>
+        <argsstring></argsstring>
+        <name>m_seed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="72" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="72" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1aa08ffe8f36cb983224fadfd3d3b28391" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::Settings::m_minSize</definition>
+        <argsstring></argsstring>
+        <name>m_minSize</name>
+        <briefdescription>
+<para>minimum size of scanWindows </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="73" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="73" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1a01db1115a98b15abdab2c03cdacadfdd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tld::Settings::m_camNo</definition>
+        <argsstring></argsstring>
+        <name>m_camNo</name>
+        <briefdescription>
+<para>Which camera to use. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="74" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="74" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1aaa119898fb2f14ce2eed7fc861733eac" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float tld::Settings::m_fps</definition>
+        <argsstring></argsstring>
+        <name>m_fps</name>
+        <briefdescription>
+<para>Frames per second. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="75" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="75" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1afc2357da344888ad2158cbb51f8eb377" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float tld::Settings::m_threshold</definition>
+        <argsstring></argsstring>
+        <name>m_threshold</name>
+        <briefdescription>
+<para>threshold for determining positive results </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="76" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="76" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1afcb52ecca38e4e236a66c3f36ec7cdbf" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float tld::Settings::m_proportionalShift</definition>
+        <argsstring></argsstring>
+        <name>m_proportionalShift</name>
+        <briefdescription>
+<para>proportional shift </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="77" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="77" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1abfd40dee05d0005e6cdaab2e0a84a4a9" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tld::Settings::m_imagePath</definition>
+        <argsstring></argsstring>
+        <name>m_imagePath</name>
+        <briefdescription>
+<para>path to the images or the video if m_method is IMACQ_VID or IMACQ_IMGS </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="78" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="78" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1ac09a844a6ee9727f04e2de086f4fa9ce" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tld::Settings::m_modelPath</definition>
+        <argsstring></argsstring>
+        <name>m_modelPath</name>
+        <briefdescription>
+<para>if modelPath is not set then either an initialBoundingBox must be specified or selectManually must be true. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="79" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="79" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1a2fb70f5b39e773b64d62f902009827fc" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tld::Settings::m_modelExportFile</definition>
+        <argsstring></argsstring>
+        <name>m_modelExportFile</name>
+        <briefdescription>
+<para>Path where model is saved on export. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="80" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="80" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1a8893600d99c4d096e384e4aeff2155f7" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tld::Settings::m_outputDir</definition>
+        <argsstring></argsstring>
+        <name>m_outputDir</name>
+        <briefdescription>
+<para>required if saveOutput = true, no default </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="81" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="81" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1a214e9008680cab432e095e5d07372dd1" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tld::Settings::m_printResults</definition>
+        <argsstring></argsstring>
+        <name>m_printResults</name>
+        <briefdescription>
+<para>path to the file were the results should be printed; NULL -&gt; results will not be printed </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="82" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="82" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1af986bcadbc3f34693dd13191bbf65947" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tld::Settings::m_printTiming</definition>
+        <argsstring></argsstring>
+        <name>m_printTiming</name>
+        <briefdescription>
+<para>path to the file were the timings should be printed; NULL -&gt; results will not be printed </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="83" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="83" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_settings_1a42d73d86dc15625a1394e7491ebaf0e4" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; tld::Settings::m_initialBoundingBox</definition>
+        <argsstring></argsstring>
+        <name>m_initialBoundingBox</name>
+        <briefdescription>
+<para>Initial Bounding Box can be specified here. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="84" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="84" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_config_1ab2f2fb863b08832e2b877e6f09073333" compoundref="_config_8cpp" startline="84" endline="426">tld::Config::init</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtld_1_1_settings_1a1a1d6373d0e350ef0f2697ea2a42894e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tld::Settings::Settings</definition>
+        <argsstring>()</argsstring>
+        <name>Settings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Standard-Constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="44" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.cpp" bodystart="32" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_settings_1a96eee0f4e98b706b8b5f8ec973c24dbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tld::Settings::~Settings</definition>
+        <argsstring>()</argsstring>
+        <name>~Settings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="45" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.cpp" bodystart="70" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>In this class all settings are stored. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="554">
+        <label>string</label>
+      </node>
+      <node id="553">
+        <label>tld::Settings</label>
+        <link refid="classtld_1_1_settings"/>
+        <childnode refid="554" relation="usage">
+          <edgelabel>m_modelExportFile</edgelabel>
+          <edgelabel>m_modelPath</edgelabel>
+          <edgelabel>m_imagePath</edgelabel>
+          <edgelabel>m_printTiming</edgelabel>
+          <edgelabel>m_printResults</edgelabel>
+          <edgelabel>m_outputDir</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" line="39" bodyfile="/home/horst/repos/opentld-sdyx/src/opentld/main/Settings.h" bodystart="38" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classtld_1_1_settings_1ae4a5b3fb575a1a49823f8305f3aefded" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_alternating</name></member>
+      <member refid="classtld_1_1_settings_1a01db1115a98b15abdab2c03cdacadfdd" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_camNo</name></member>
+      <member refid="classtld_1_1_settings_1af184f95560d875d91951dbbc368ba04d" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_ensembleClassifierEnabled</name></member>
+      <member refid="classtld_1_1_settings_1a5d0b425a526e5f7f78c758bfde3d9ee9" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_exportModelAfterRun</name></member>
+      <member refid="classtld_1_1_settings_1aaa119898fb2f14ce2eed7fc861733eac" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_fps</name></member>
+      <member refid="classtld_1_1_settings_1abfd40dee05d0005e6cdaab2e0a84a4a9" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_imagePath</name></member>
+      <member refid="classtld_1_1_settings_1a42d73d86dc15625a1394e7491ebaf0e4" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_initialBoundingBox</name></member>
+      <member refid="classtld_1_1_settings_1a4935fe002dd6358506813d7c48ec5322" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_lastFrame</name></member>
+      <member refid="classtld_1_1_settings_1abd4a98a18a910313cf3590f507f1ceef" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_learningEnabled</name></member>
+      <member refid="classtld_1_1_settings_1a6c06df5b2a9028a1c9a77269601f4a36" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_loadModel</name></member>
+      <member refid="classtld_1_1_settings_1a548c317f8242ea8513d13573acdaaa4c" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_maxScale</name></member>
+      <member refid="classtld_1_1_settings_1a2438efb226c38f806bf1b3e023aa3760" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_method</name></member>
+      <member refid="classtld_1_1_settings_1a46e4d9f59b1f87508cf0ad9a154fdc21" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_minScale</name></member>
+      <member refid="classtld_1_1_settings_1aa08ffe8f36cb983224fadfd3d3b28391" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_minSize</name></member>
+      <member refid="classtld_1_1_settings_1a2fb70f5b39e773b64d62f902009827fc" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_modelExportFile</name></member>
+      <member refid="classtld_1_1_settings_1ac09a844a6ee9727f04e2de086f4fa9ce" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_modelPath</name></member>
+      <member refid="classtld_1_1_settings_1a8ec793b6668a626308d8ee8d697d9f67" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_nnClassifierEnabled</name></member>
+      <member refid="classtld_1_1_settings_1af15afe9f4ffb32e89686c8e90026e2bc" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_numFeatures</name></member>
+      <member refid="classtld_1_1_settings_1a959d793b002e13f6758fc84765b7d33d" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_numTrees</name></member>
+      <member refid="classtld_1_1_settings_1a8893600d99c4d096e384e4aeff2155f7" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_outputDir</name></member>
+      <member refid="classtld_1_1_settings_1a214e9008680cab432e095e5d07372dd1" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_printResults</name></member>
+      <member refid="classtld_1_1_settings_1af986bcadbc3f34693dd13191bbf65947" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_printTiming</name></member>
+      <member refid="classtld_1_1_settings_1afcb52ecca38e4e236a66c3f36ec7cdbf" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_proportionalShift</name></member>
+      <member refid="classtld_1_1_settings_1a46de5897c9f1bc410c0f44f459181e05" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_saveOutput</name></member>
+      <member refid="classtld_1_1_settings_1a07dc62407c3373e7fa3906c145593b69" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_seed</name></member>
+      <member refid="classtld_1_1_settings_1afadc64d205d5386d94088e87dba72519" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_selectManually</name></member>
+      <member refid="classtld_1_1_settings_1a495b2aba7d0c9ec5fb914ab04b6d42cf" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_showColorImage</name></member>
+      <member refid="classtld_1_1_settings_1abcc93dd632486081ba14ebfaaaecd392" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_showDetections</name></member>
+      <member refid="classtld_1_1_settings_1ab2398d08ccb9bab01c3240651d07f8c3" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_showForeground</name></member>
+      <member refid="classtld_1_1_settings_1acd69b3d8edc2fe3a05bb763dfd17b30b" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_showNotConfident</name></member>
+      <member refid="classtld_1_1_settings_1abce1f9678efba0511db88545d97bb535" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_showOutput</name></member>
+      <member refid="classtld_1_1_settings_1ac63c6dfae7c0be1fc167608dd52e1d7f" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_startFrame</name></member>
+      <member refid="classtld_1_1_settings_1aef49627d1ffac7dda7cc83c7ba6a25bd" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_thetaN</name></member>
+      <member refid="classtld_1_1_settings_1adade7d3269f34113e92abdb3816058f7" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_thetaP</name></member>
+      <member refid="classtld_1_1_settings_1afc2357da344888ad2158cbb51f8eb377" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_threshold</name></member>
+      <member refid="classtld_1_1_settings_1a54a14f7a08a919ee6ff19514205c6b47" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_trackerEnabled</name></member>
+      <member refid="classtld_1_1_settings_1a56281480120f9cb2dbf69022cf97a30a" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_trajectory</name></member>
+      <member refid="classtld_1_1_settings_1afd89a9d1a0a8dec5ce524eeed5b0f5e0" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_useProportionalShift</name></member>
+      <member refid="classtld_1_1_settings_1ab3100039fb52ee1a41813812320a6ca3" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>m_varianceFilterEnabled</name></member>
+      <member refid="classtld_1_1_settings_1a1a1d6373d0e350ef0f2697ea2a42894e" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>Settings</name></member>
+      <member refid="classtld_1_1_settings_1a96eee0f4e98b706b8b5f8ec973c24dbc" prot="public" virt="non-virtual"><scope>tld::Settings</scope><name>~Settings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="class_c_blob_get_distance_from_point" kind="class" prot="public">
+    <compoundname>CBlobGetDistanceFromPoint</compoundname>
+    <basecompoundref refid="class_c_operador_blob" prot="public" virt="non-virtual">COperadorBlob</basecompoundref>
+    <includes refid="_blob_operators_8h" local="no">BlobOperators.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_blob_get_distance_from_point_1aedc485cfa4179c2b8aefc4009903fbd4" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CBlobGetDistanceFromPoint::m_x</definition>
+        <argsstring></argsstring>
+        <name>m_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="462" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_get_distance_from_point_1ae98f4a6d2bdad9faa38a62b3b6254745" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CBlobGetDistanceFromPoint::m_y</definition>
+        <argsstring></argsstring>
+        <name>m_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="462" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_blob_get_distance_from_point_1a260df893300cb32bd70a986d7b60bd16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CBlobGetDistanceFromPoint::CBlobGetDistanceFromPoint</definition>
+        <argsstring>()</argsstring>
+        <name>CBlobGetDistanceFromPoint</name>
+        <briefdescription>
+<para>Standard constructor (distance to point 0,0). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="444" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="443" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_distance_from_point_1a9e00456b703a9cd935e8f262e4a0a629" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CBlobGetDistanceFromPoint::CBlobGetDistanceFromPoint</definition>
+        <argsstring>(const double x, const double y)</argsstring>
+        <name>CBlobGetDistanceFromPoint</name>
+        <param>
+          <type>const double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Constructor (distance to point x,y). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="449" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="448" bodyend="452"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_distance_from_point_1a0a17d2d50bcadef8317932e7e1cb138a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double CBlobGetDistanceFromPoint::operator()</definition>
+        <argsstring>(CBlob &amp;blob)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="class_c_operador_blob_1a303c4189cc94cafbcbee116bf014e623">operator()</reimplements>
+        <param>
+          <type><ref refid="class_c_blob" kindref="compound">CBlob</ref> &amp;</type>
+          <declname>blob</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calcula la distància entre un punt i el centre del blob<itemizedlist>
+<listitem><para>FUNCTION: <ref refid="class_c_blob_get_distance_from_point" kindref="compound">CBlobGetDistanceFromPoint</ref></para></listitem><listitem><para>FUNCTIONALITY: Calculates the euclidean distance between the blob center and the point specified in the constructor</para></listitem><listitem><para>PARAMETERS:</para></listitem><listitem><para>RESULT:</para></listitem><listitem><para>RESTRICTIONS:</para></listitem><listitem><para>AUTHOR: Ricard Borràs</para></listitem><listitem><para>CREATION DATE: 25-05-2005.</para></listitem><listitem><para>MODIFICATION: Date. Author. Description. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="454" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.cpp" bodystart="394" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_get_distance_from_point_1ac62cce7fd33668c79df66a9eeb957115" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>const char* CBlobGetDistanceFromPoint::GetNom</definition>
+        <argsstring>()</argsstring>
+        <name>GetNom</name>
+        <reimplements refid="class_c_operador_blob_1a717a19c163a26b45081a2231be24c008">GetNom</reimplements>
+        <briefdescription>
+<para>Get operator name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="456" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="455" bodyend="458"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Classe per calcular la distància entre el centre del blob i un punt donat Class to calculate the euclidean distance between the center of a blob and a given point </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="245">
+        <label>CBlobGetDistanceFromPoint</label>
+        <link refid="class_c_blob_get_distance_from_point"/>
+        <childnode refid="246" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="246">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="247">
+        <label>CBlobGetDistanceFromPoint</label>
+        <link refid="class_c_blob_get_distance_from_point"/>
+        <childnode refid="248" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="248">
+        <label>COperadorBlob</label>
+        <link refid="class_c_operador_blob"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" line="440" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobOperators.h" bodystart="439" bodyend="463"/>
+    <listofallmembers>
+      <member refid="class_c_blob_get_distance_from_point_1a260df893300cb32bd70a986d7b60bd16" prot="public" virt="non-virtual"><scope>CBlobGetDistanceFromPoint</scope><name>CBlobGetDistanceFromPoint</name></member>
+      <member refid="class_c_blob_get_distance_from_point_1a9e00456b703a9cd935e8f262e4a0a629" prot="public" virt="non-virtual"><scope>CBlobGetDistanceFromPoint</scope><name>CBlobGetDistanceFromPoint</name></member>
+      <member refid="class_c_blob_get_distance_from_point_1ac62cce7fd33668c79df66a9eeb957115" prot="public" virt="virtual"><scope>CBlobGetDistanceFromPoint</scope><name>GetNom</name></member>
+      <member refid="class_c_blob_get_distance_from_point_1aedc485cfa4179c2b8aefc4009903fbd4" prot="private" virt="non-virtual"><scope>CBlobGetDistanceFromPoint</scope><name>m_x</name></member>
+      <member refid="class_c_blob_get_distance_from_point_1ae98f4a6d2bdad9faa38a62b3b6254745" prot="private" virt="non-virtual"><scope>CBlobGetDistanceFromPoint</scope><name>m_y</name></member>
+      <member refid="class_c_operador_blob_1a477edfe687cf9ef41469bcf6ea636a75" prot="public" virt="non-virtual"><scope>CBlobGetDistanceFromPoint</scope><name>operator COperadorBlob *</name></member>
+      <member refid="class_c_blob_get_distance_from_point_1a0a17d2d50bcadef8317932e7e1cb138a" prot="public" virt="virtual"><scope>CBlobGetDistanceFromPoint</scope><name>operator()</name></member>
+      <member refid="class_c_operador_blob_1a25ccc652bfa55e7b0143c88f452729a2" prot="public" virt="virtual"><scope>CBlobGetDistanceFromPoint</scope><name>~COperadorBlob</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

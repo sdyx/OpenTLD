@@ -1,0 +1,397 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_ensemble_classifier_8cpp" kind="file">
+    <compoundname>EnsembleClassifier.cpp</compoundname>
+    <includes refid="_detector_cascade_8h" local="yes">DetectorCascade.h</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">cv.h</includes>
+    <includes refid="_ensemble_classifier_8h" local="yes">EnsembleClassifier.h</includes>
+    <incdepgraph>
+      <node id="1516">
+        <label>DetectorCascade.h</label>
+        <link refid="_detector_cascade_8h"/>
+        <childnode refid="1517" relation="include">
+        </childnode>
+        <childnode refid="1520" relation="include">
+        </childnode>
+        <childnode refid="1521" relation="include">
+        </childnode>
+        <childnode refid="1523" relation="include">
+        </childnode>
+        <childnode refid="1524" relation="include">
+        </childnode>
+        <childnode refid="1525" relation="include">
+        </childnode>
+      </node>
+      <node id="1528">
+        <label>cmath</label>
+      </node>
+      <node id="1523">
+        <label>EnsembleClassifier.h</label>
+        <link refid="_ensemble_classifier_8h"/>
+        <childnode refid="1519" relation="include">
+        </childnode>
+      </node>
+      <node id="1525">
+        <label>NNClassifier.h</label>
+        <link refid="_n_n_classifier_8h"/>
+        <childnode refid="1518" relation="include">
+        </childnode>
+        <childnode refid="1519" relation="include">
+        </childnode>
+        <childnode refid="1526" relation="include">
+        </childnode>
+        <childnode refid="1517" relation="include">
+        </childnode>
+      </node>
+      <node id="1521">
+        <label>VarianceFilter.h</label>
+        <link refid="_variance_filter_8h"/>
+        <childnode refid="1519" relation="include">
+        </childnode>
+        <childnode refid="1522" relation="include">
+        </childnode>
+        <childnode refid="1517" relation="include">
+        </childnode>
+      </node>
+      <node id="1526">
+        <label>NormalizedPatch.h</label>
+        <link refid="_normalized_patch_8h"/>
+      </node>
+      <node id="1522">
+        <label>IntegralImage.h</label>
+        <link refid="_integral_image_8h"/>
+        <childnode refid="1519" relation="include">
+        </childnode>
+      </node>
+      <node id="1524">
+        <label>Clustering.h</label>
+        <link refid="_clustering_8h"/>
+        <childnode refid="1518" relation="include">
+        </childnode>
+        <childnode refid="1519" relation="include">
+        </childnode>
+        <childnode refid="1517" relation="include">
+        </childnode>
+      </node>
+      <node id="1520">
+        <label>ForegroundDetector.h</label>
+        <link refid="_foreground_detector_8h"/>
+        <childnode refid="1518" relation="include">
+        </childnode>
+        <childnode refid="1519" relation="include">
+        </childnode>
+        <childnode refid="1517" relation="include">
+        </childnode>
+      </node>
+      <node id="1518">
+        <label>vector</label>
+      </node>
+      <node id="1519">
+        <label>cv.h</label>
+      </node>
+      <node id="1527">
+        <label>cstdlib</label>
+      </node>
+      <node id="1517">
+        <label>DetectionResult.h</label>
+        <link refid="_detection_result_8h"/>
+        <childnode refid="1518" relation="include">
+        </childnode>
+        <childnode refid="1519" relation="include">
+        </childnode>
+      </node>
+      <node id="1515">
+        <label>src/libopentld/tld/EnsembleClassifier.cpp</label>
+        <link refid="EnsembleClassifier.cpp"/>
+        <childnode refid="1516" relation="include">
+        </childnode>
+        <childnode refid="1527" relation="include">
+        </childnode>
+        <childnode refid="1528" relation="include">
+        </childnode>
+        <childnode refid="1519" relation="include">
+        </childnode>
+        <childnode refid="1523" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacetld">tld</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_ensemble_classifier_8cpp_1ae5effd9bd728422d5e50bf875a609421" prot="public" static="no">
+        <name>sub2idx</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>widthstep</defname></param>
+        <initializer>((int) (floor((x)+0.5) + floor((y)+0.5)*(widthstep)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.cpp" line="43" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.cpp" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_ensemble_classifier_1a92ddef7701b1062b1f4a53e5cfcd79a2" compoundref="_ensemble_classifier_8cpp" startline="105" endline="126">tld::EnsembleClassifier::initFeatureOffsets</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>EnsembleClassifier.cpp</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Nov<sp/>16,<sp/>2011</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>Georg<sp/>Nebehay</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_detector_cascade_8h" kindref="compound">DetectorCascade.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cv.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_ensemble_classifier_8h" kindref="compound">EnsembleClassifier.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">cv;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">tld</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//TODO:<sp/>Convert<sp/>this<sp/>to<sp/>a<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="_ensemble_classifier_8cpp_1ae5effd9bd728422d5e50bf875a609421" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>sub2idx(x,y,widthstep)<sp/>((int)<sp/>(floor((x)+0.5)<sp/>+<sp/>floor((y)+0.5)*(widthstep)))</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classtld_1_1_ensemble_classifier_1a7ce76942175fecdf2b44be726f1f7a89" refkind="member"><highlight class="normal">EnsembleClassifier::EnsembleClassifier()<sp/>:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>features(<ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>),</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>featureOffsets(<ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>),</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>posteriors(<ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>),</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>positives(<ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>),</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>negatives(<ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1a60e802769e79c833d1484d96bb345b7c" kindref="member">numTrees</ref><sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1a176aba4e90f0b9373d8aedd7c25fa262" kindref="member">numFeatures</ref><sp/>=<sp/>13;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1a539d429a773ec9b2b86946fddb39ac52" kindref="member">enabled</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classtld_1_1_ensemble_classifier_1a71a3976d9dccf15dcdd6a14826d5ec5a" refkind="member"><highlight class="normal"><ref refid="classtld_1_1_ensemble_classifier_1a71a3976d9dccf15dcdd6a14826d5ec5a" kindref="member">EnsembleClassifier::~EnsembleClassifier</ref>()</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1a3fd93c80d37f7f115443c2e147ec9967" kindref="member">release</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classtld_1_1_ensemble_classifier_1afb0e8ed03adef91257801bf0e3ca73f7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_ensemble_classifier_1afb0e8ed03adef91257801bf0e3ca73f7" kindref="member">EnsembleClassifier::init</ref>()</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1afbfbda1b693525895467fba88a8debe3" kindref="member">numIndices</ref><sp/>=<sp/>pow(2.0f,<sp/><ref refid="classtld_1_1_ensemble_classifier_1a176aba4e90f0b9373d8aedd7c25fa262" kindref="member">numFeatures</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1a3fc444f59e0f23a97f9889e58adaba73" kindref="member">initFeatureLocations</ref>();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1a92ddef7701b1062b1f4a53e5cfcd79a2" kindref="member">initFeatureOffsets</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1ab342db231d14bbaa892b2664d210e152" kindref="member">initPosteriors</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="classtld_1_1_ensemble_classifier_1a3fd93c80d37f7f115443c2e147ec9967" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_ensemble_classifier_1a3fd93c80d37f7f115443c2e147ec9967" kindref="member">EnsembleClassifier::release</ref>()</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="classtld_1_1_ensemble_classifier_1a02deffee640b4106051024d1ae8a55aa" kindref="member">features</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1a02deffee640b4106051024d1ae8a55aa" kindref="member">features</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="classtld_1_1_ensemble_classifier_1acf42e105ca1cb616aaf2d8e4d8755c41" kindref="member">featureOffsets</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1acf42e105ca1cb616aaf2d8e4d8755c41" kindref="member">featureOffsets</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="classtld_1_1_ensemble_classifier_1a34092918268be97eb1e1f2f0fc7d4254" kindref="member">posteriors</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1a34092918268be97eb1e1f2f0fc7d4254" kindref="member">posteriors</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="classtld_1_1_ensemble_classifier_1a572549e31f9bfc34c7b464e02aa41397" kindref="member">positives</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1a572549e31f9bfc34c7b464e02aa41397" kindref="member">positives</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="classtld_1_1_ensemble_classifier_1a2de7561eb20a0f0a1b4909d6dfd89d0b" kindref="member">negatives</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1a2de7561eb20a0f0a1b4909d6dfd89d0b" kindref="member">negatives</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/>*<sp/>Generates<sp/>random<sp/>measurements<sp/>in<sp/>the<sp/>format<sp/>&lt;x1,y1,x2,y2&gt;</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="classtld_1_1_ensemble_classifier_1a3fc444f59e0f23a97f9889e58adaba73" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_ensemble_classifier_1a3fc444f59e0f23a97f9889e58adaba73" kindref="member">EnsembleClassifier::initFeatureLocations</ref>()</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>2<sp/>*<sp/>2<sp/>*<sp/><ref refid="classtld_1_1_ensemble_classifier_1a176aba4e90f0b9373d8aedd7c25fa262" kindref="member">numFeatures</ref><sp/>*<sp/><ref refid="classtld_1_1_ensemble_classifier_1a60e802769e79c833d1484d96bb345b7c" kindref="member">numTrees</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1a02deffee640b4106051024d1ae8a55aa" kindref="member">features</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">[size];</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>size;<sp/>i++)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1a02deffee640b4106051024d1ae8a55aa" kindref="member">features</ref>[i]<sp/>=<sp/>rand()<sp/>/<sp/>(float)RAND_MAX;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">//Creates<sp/>offsets<sp/>that<sp/>can<sp/>be<sp/>added<sp/>to<sp/>bounding<sp/>boxes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">//offsets<sp/>are<sp/>contained<sp/>in<sp/>the<sp/>form<sp/>delta11,<sp/>delta12,...<sp/>(combined<sp/>index<sp/>of<sp/>dw<sp/>and<sp/>dh)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">//Order:<sp/>scale.tree-&gt;feature</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="classtld_1_1_ensemble_classifier_1a92ddef7701b1062b1f4a53e5cfcd79a2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_ensemble_classifier_1a92ddef7701b1062b1f4a53e5cfcd79a2" kindref="member">EnsembleClassifier::initFeatureOffsets</ref>()</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1acf42e105ca1cb616aaf2d8e4d8755c41" kindref="member">featureOffsets</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">[<ref refid="classtld_1_1_ensemble_classifier_1ae10dcd7614a39f9b29b3fbe957889fb9" kindref="member">numScales</ref><sp/>*<sp/><ref refid="classtld_1_1_ensemble_classifier_1a60e802769e79c833d1484d96bb345b7c" kindref="member">numTrees</ref><sp/>*<sp/><ref refid="classtld_1_1_ensemble_classifier_1a176aba4e90f0b9373d8aedd7c25fa262" kindref="member">numFeatures</ref><sp/>*<sp/>2];</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*off<sp/>=<sp/><ref refid="classtld_1_1_ensemble_classifier_1acf42e105ca1cb616aaf2d8e4d8755c41" kindref="member">featureOffsets</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k<sp/>=<sp/>0;<sp/>k<sp/>&lt;<sp/><ref refid="classtld_1_1_ensemble_classifier_1ae10dcd7614a39f9b29b3fbe957889fb9" kindref="member">numScales</ref>;<sp/>k++)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Size<sp/>scale<sp/>=<sp/><ref refid="classtld_1_1_ensemble_classifier_1ae2ea00a933d9c96498ba756a2b4ec6b5" kindref="member">scales</ref>[k];</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classtld_1_1_ensemble_classifier_1a60e802769e79c833d1484d96bb345b7c" kindref="member">numTrees</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/><ref refid="classtld_1_1_ensemble_classifier_1a176aba4e90f0b9373d8aedd7c25fa262" kindref="member">numFeatures</ref>;<sp/>j++)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*currentFeature<sp/><sp/>=<sp/><ref refid="classtld_1_1_ensemble_classifier_1a02deffee640b4106051024d1ae8a55aa" kindref="member">features</ref><sp/>+<sp/>(4<sp/>*<sp/>numFeatures)<sp/>*<sp/>i<sp/>+<sp/>4<sp/>*<sp/>j;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*off++<sp/>=<sp/><ref refid="_ensemble_classifier_8cpp_1ae5effd9bd728422d5e50bf875a609421" kindref="member">sub2idx</ref>((scale.width<sp/>-<sp/>1)<sp/>*<sp/>currentFeature[0]<sp/>+<sp/>1,<sp/>(scale.height<sp/>-<sp/>1)<sp/>*<sp/>currentFeature[1]<sp/>+<sp/>1,<sp/><ref refid="classtld_1_1_ensemble_classifier_1a149e36a3d0d287ee804ec7cf92dc6569" kindref="member">imgWidthStep</ref>);<sp/></highlight><highlight class="comment">//We<sp/>add<sp/>+1<sp/>because<sp/>the<sp/>index<sp/>of<sp/>the<sp/>bounding<sp/>box<sp/>points<sp/>to<sp/>x-1,<sp/>y-1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*off++<sp/>=<sp/><ref refid="_ensemble_classifier_8cpp_1ae5effd9bd728422d5e50bf875a609421" kindref="member">sub2idx</ref>((scale.width<sp/>-<sp/>1)<sp/>*<sp/>currentFeature[2]<sp/>+<sp/>1,<sp/>(scale.height<sp/>-<sp/>1)<sp/>*<sp/>currentFeature[3]<sp/>+<sp/>1,<sp/><ref refid="classtld_1_1_ensemble_classifier_1a149e36a3d0d287ee804ec7cf92dc6569" kindref="member">imgWidthStep</ref>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="classtld_1_1_ensemble_classifier_1ab342db231d14bbaa892b2664d210e152" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_ensemble_classifier_1ab342db231d14bbaa892b2664d210e152" kindref="member">EnsembleClassifier::initPosteriors</ref>()</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1a34092918268be97eb1e1f2f0fc7d4254" kindref="member">posteriors</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">[<ref refid="classtld_1_1_ensemble_classifier_1a60e802769e79c833d1484d96bb345b7c" kindref="member">numTrees</ref><sp/>*<sp/><ref refid="classtld_1_1_ensemble_classifier_1afbfbda1b693525895467fba88a8debe3" kindref="member">numIndices</ref>];</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1a572549e31f9bfc34c7b464e02aa41397" kindref="member">positives</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">[<ref refid="classtld_1_1_ensemble_classifier_1a60e802769e79c833d1484d96bb345b7c" kindref="member">numTrees</ref><sp/>*<sp/><ref refid="classtld_1_1_ensemble_classifier_1afbfbda1b693525895467fba88a8debe3" kindref="member">numIndices</ref>];</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1a2de7561eb20a0f0a1b4909d6dfd89d0b" kindref="member">negatives</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">[<ref refid="classtld_1_1_ensemble_classifier_1a60e802769e79c833d1484d96bb345b7c" kindref="member">numTrees</ref><sp/>*<sp/><ref refid="classtld_1_1_ensemble_classifier_1afbfbda1b693525895467fba88a8debe3" kindref="member">numIndices</ref>];</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classtld_1_1_ensemble_classifier_1a60e802769e79c833d1484d96bb345b7c" kindref="member">numTrees</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/><ref refid="classtld_1_1_ensemble_classifier_1afbfbda1b693525895467fba88a8debe3" kindref="member">numIndices</ref>;<sp/>j++)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1a34092918268be97eb1e1f2f0fc7d4254" kindref="member">posteriors</ref>[i<sp/>*<sp/>numIndices<sp/>+<sp/>j]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1a572549e31f9bfc34c7b464e02aa41397" kindref="member">positives</ref>[i<sp/>*<sp/>numIndices<sp/>+<sp/>j]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1a2de7561eb20a0f0a1b4909d6dfd89d0b" kindref="member">negatives</ref>[i<sp/>*<sp/>numIndices<sp/>+<sp/>j]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_ensemble_classifier_1a7871296c03de06293ebd3dc29ecab5de" kindref="member">EnsembleClassifier::nextIteration</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mat<sp/>&amp;img)</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classtld_1_1_ensemble_classifier_1a539d429a773ec9b2b86946fddb39ac52" kindref="member">enabled</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;img<sp/>=<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*)img.data;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">//Classical<sp/>fern<sp/>algorithm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>EnsembleClassifier::calcFernFeature(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>windowIdx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>treeIdx)</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*bbox<sp/>=<sp/><ref refid="classtld_1_1_ensemble_classifier_1abc6ed3b991a724b07dfcc25108769e92" kindref="member">windowOffsets</ref><sp/>+<sp/>windowIdx<sp/>*<sp/>TLD_WINDOW_OFFSET_SIZE;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*off<sp/>=<sp/><ref refid="classtld_1_1_ensemble_classifier_1acf42e105ca1cb616aaf2d8e4d8755c41" kindref="member">featureOffsets</ref><sp/>+<sp/>bbox[4]<sp/>+<sp/>treeIdx<sp/>*<sp/>2<sp/>*<sp/><ref refid="classtld_1_1_ensemble_classifier_1a176aba4e90f0b9373d8aedd7c25fa262" kindref="member">numFeatures</ref>;<sp/></highlight><highlight class="comment">//bbox[4]<sp/>is<sp/>pointer<sp/>to<sp/>features<sp/>for<sp/>the<sp/>current<sp/>scale</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>numFeatures;<sp/>i++)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index<sp/>&lt;&lt;=<sp/>1;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fp0<sp/>=<sp/>img[bbox[0]<sp/>+<sp/>off[0]];</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fp1<sp/>=<sp/>img[bbox[0]<sp/>+<sp/>off[1]];</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(fp0<sp/>&gt;<sp/>fp1)</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index<sp/>|=<sp/>1;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>off<sp/>+=<sp/>2;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>index;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>EnsembleClassifier::calcFeatureVector(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>windowIdx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*featureVector)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classtld_1_1_ensemble_classifier_1a60e802769e79c833d1484d96bb345b7c" kindref="member">numTrees</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>featureVector[i]<sp/>=<sp/>calcFernFeature(windowIdx,<sp/>i);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>EnsembleClassifier::calcConfidence(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*featureVector)</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>conf<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classtld_1_1_ensemble_classifier_1a60e802769e79c833d1484d96bb345b7c" kindref="member">numTrees</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>conf<sp/>+=<sp/><ref refid="classtld_1_1_ensemble_classifier_1a34092918268be97eb1e1f2f0fc7d4254" kindref="member">posteriors</ref>[i<sp/>*<sp/><ref refid="classtld_1_1_ensemble_classifier_1afbfbda1b693525895467fba88a8debe3" kindref="member">numIndices</ref><sp/>+<sp/>featureVector[i]];</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>conf;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="classtld_1_1_ensemble_classifier_1abf7e915ff675720293502be0452cb6c2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_ensemble_classifier_1abf7e915ff675720293502be0452cb6c2" kindref="member">EnsembleClassifier::classifyWindow</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>windowIdx)</highlight></codeline>
+<codeline lineno="199"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*featureVector<sp/>=<sp/><ref refid="classtld_1_1_ensemble_classifier_1af57e5de2c583e7f1cf39e6de03159323" kindref="member">detectionResult</ref>-&gt;<ref refid="classtld_1_1_detection_result_1a2650bfbdb106c7dd9b774cfccf5fdb25" kindref="member">featureVectors</ref><sp/>+<sp/><ref refid="classtld_1_1_ensemble_classifier_1a60e802769e79c833d1484d96bb345b7c" kindref="member">numTrees</ref><sp/>*<sp/>windowIdx;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>calcFeatureVector(windowIdx,<sp/>featureVector);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1af57e5de2c583e7f1cf39e6de03159323" kindref="member">detectionResult</ref>-&gt;<ref refid="classtld_1_1_detection_result_1abe6b7a8cc4478cce6351207939e96333" kindref="member">posteriors</ref>[windowIdx]<sp/>=<sp/>calcConfidence(featureVector);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206" refid="classtld_1_1_ensemble_classifier_1a42f1f3606d14a7d274f5bb9f4fa5030f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_ensemble_classifier_1a42f1f3606d14a7d274f5bb9f4fa5030f" kindref="member">EnsembleClassifier::filter</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classtld_1_1_ensemble_classifier_1a539d429a773ec9b2b86946fddb39ac52" kindref="member">enabled</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1abf7e915ff675720293502be0452cb6c2" kindref="member">classifyWindow</ref>(i);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classtld_1_1_ensemble_classifier_1af57e5de2c583e7f1cf39e6de03159323" kindref="member">detectionResult</ref>-&gt;<ref refid="classtld_1_1_detection_result_1abe6b7a8cc4478cce6351207939e96333" kindref="member">posteriors</ref>[i]<sp/>&lt;<sp/>0.5)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217" refid="classtld_1_1_ensemble_classifier_1acfc0c9d71c16dfed9750b6aa409afb0c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_ensemble_classifier_1acfc0c9d71c16dfed9750b6aa409afb0c" kindref="member">EnsembleClassifier::updatePosterior</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>treeIdx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>positive,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>amount)</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>arrayIndex<sp/>=<sp/>treeIdx<sp/>*<sp/><ref refid="classtld_1_1_ensemble_classifier_1afbfbda1b693525895467fba88a8debe3" kindref="member">numIndices</ref><sp/>+<sp/>idx;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>(positive)<sp/>?<sp/><ref refid="classtld_1_1_ensemble_classifier_1a572549e31f9bfc34c7b464e02aa41397" kindref="member">positives</ref>[arrayIndex]<sp/>+=<sp/>amount<sp/>:<sp/><ref refid="classtld_1_1_ensemble_classifier_1a2de7561eb20a0f0a1b4909d6dfd89d0b" kindref="member">negatives</ref>[arrayIndex]<sp/>+=<sp/>amount;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1a34092918268be97eb1e1f2f0fc7d4254" kindref="member">posteriors</ref>[arrayIndex]<sp/>=<sp/>((float)<sp/><ref refid="classtld_1_1_ensemble_classifier_1a572549e31f9bfc34c7b464e02aa41397" kindref="member">positives</ref>[arrayIndex])<sp/>/<sp/>(<ref refid="classtld_1_1_ensemble_classifier_1a572549e31f9bfc34c7b464e02aa41397" kindref="member">positives</ref>[arrayIndex]<sp/>+<sp/><ref refid="classtld_1_1_ensemble_classifier_1a2de7561eb20a0f0a1b4909d6dfd89d0b" kindref="member">negatives</ref>[arrayIndex])<sp/>/<sp/>10.0;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>EnsembleClassifier::updatePosteriors(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*featureVector,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>positive,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>amount)</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classtld_1_1_ensemble_classifier_1a60e802769e79c833d1484d96bb345b7c" kindref="member">numTrees</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx<sp/>=<sp/>featureVector[i];</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_ensemble_classifier_1acfc0c9d71c16dfed9750b6aa409afb0c" kindref="member">updatePosterior</ref>(i,<sp/>idx,<sp/>positive,<sp/>amount);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236" refid="classtld_1_1_ensemble_classifier_1ad088404fdea039b774c2eb088e4cfc04" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_ensemble_classifier_1ad088404fdea039b774c2eb088e4cfc04" kindref="member">EnsembleClassifier::learn</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*boundary,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>positive,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*featureVector)</highlight></codeline>
+<codeline lineno="237"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classtld_1_1_ensemble_classifier_1a539d429a773ec9b2b86946fddb39ac52" kindref="member">enabled</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>conf<sp/>=<sp/>calcConfidence(featureVector);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Update<sp/>if<sp/>positive<sp/>patch<sp/>and<sp/>confidence<sp/>&lt;<sp/>0.5<sp/>or<sp/>negative<sp/>and<sp/>conf<sp/>&gt;<sp/>0.5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((positive<sp/>&amp;&amp;<sp/>conf<sp/>&lt;<sp/>0.5)<sp/>||<sp/>(!positive<sp/>&amp;&amp;<sp/>conf<sp/>&gt;<sp/>0.5))</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>updatePosteriors(featureVector,<sp/>positive,<sp/>1);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>tld<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/EnsembleClassifier.cpp"/>
+  </compounddef>
+</doxygen>

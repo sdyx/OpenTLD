@@ -1,0 +1,621 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="blob_8cpp" kind="file">
+    <compoundname>blob.cpp</compoundname>
+    <includes refid="blob_8h" local="yes">blob.h</includes>
+    <incdepgraph>
+      <node id="1021">
+        <label>list</label>
+      </node>
+      <node id="1018">
+        <label>cxcore.h</label>
+      </node>
+      <node id="1019">
+        <label>BlobLibraryConfiguration.h</label>
+        <link refid="_blob_library_configuration_8h"/>
+      </node>
+      <node id="1016">
+        <label>src/3rdparty/cvblobs/blob.cpp</label>
+        <link refid="blob.cpp"/>
+        <childnode refid="1017" relation="include">
+        </childnode>
+      </node>
+      <node id="1020">
+        <label>BlobContour.h</label>
+        <link refid="_blob_contour_8h"/>
+        <childnode refid="1021" relation="include">
+        </childnode>
+        <childnode refid="1022" relation="include">
+        </childnode>
+        <childnode refid="1018" relation="include">
+        </childnode>
+      </node>
+      <node id="1022">
+        <label>cv.h</label>
+      </node>
+      <node id="1017">
+        <label>blob.h</label>
+        <link refid="blob_8h"/>
+        <childnode refid="1018" relation="include">
+        </childnode>
+        <childnode refid="1019" relation="include">
+        </childnode>
+        <childnode refid="1020" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Blob.cpp</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">-<sp/>FUNCIONALITAT:<sp/>Implementació<sp/>de<sp/>la<sp/>classe<sp/>CBlob</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">-<sp/>AUTOR:<sp/>Inspecta<sp/>S.L.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">MODIFICACIONS<sp/>(Modificació,<sp/>Autor,<sp/>Data):</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="comment">FUNCTIONALITY:<sp/>Implementation<sp/>of<sp/>the<sp/>CBlob<sp/>class<sp/>and<sp/>some<sp/>helper<sp/>classes<sp/>to<sp/>perform</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>some<sp/>calculations<sp/>on<sp/>it</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">AUTHOR:<sp/>Inspecta<sp/>S.L.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MODIFICATIONS<sp/>(Modification,<sp/>Author,<sp/>Date):</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="blob_8h" kindref="compound">blob.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_c_blob_1acd24304c1bc98128b24914f3e4bfea7c" refkind="member"><highlight class="normal"><ref refid="class_c_blob_1acd24304c1bc98128b24914f3e4bfea7c" kindref="member">CBlob::CBlob</ref>()</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_area<sp/>=<sp/>m_perimeter<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_externPerimeter<sp/>=<sp/>m_meanGray<sp/>=<sp/>m_stdDevGray<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_boundingBox.width<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_ellipse.size.width<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_storage<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_id<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29" refid="class_c_blob_1a45d7bbe67ef246fe180e16f5a7116c6f" refkind="member"><highlight class="normal"><ref refid="class_c_blob_1acd24304c1bc98128b24914f3e4bfea7c" kindref="member">CBlob::CBlob</ref>(<sp/><ref refid="blob_8h_1ae21ba61a4f023a2f91fc5feaad495073" kindref="member" tooltip="Disable warnings referred to 255 character truncation for the std:map.">t_labelType</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>CvPoint<sp/>startPoint,<sp/>CvSize<sp/>originalImageSize<sp/>)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_id<sp/>=<sp/>id;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_area<sp/>=<sp/>m_perimeter<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_externPerimeter<sp/>=<sp/>m_meanGray<sp/>=<sp/>m_stdDevGray<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_boundingBox.width<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_ellipse.size.width<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_storage<sp/>=<sp/>cvCreateMemStorage();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_externalContour<sp/>=<sp/><ref refid="class_c_blob_contour" kindref="compound" tooltip="Blob contour class (in crack code).">CBlobContour</ref>(startPoint,<sp/>m_storage);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_originalImageSize<sp/>=<sp/>originalImageSize;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41" refid="class_c_blob_1af87156ca1ac7f64a860b7cf8c07fd1fa" refkind="member"><highlight class="normal"><ref refid="class_c_blob_1acd24304c1bc98128b24914f3e4bfea7c" kindref="member">CBlob::CBlob</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref><sp/>&amp;src<sp/>)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_storage<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>=<sp/>src;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="class_c_blob_1a61719b6e5ebff6d3e383b98bce4137dc" refkind="member"><highlight class="normal"><ref refid="class_c_blob_1acd24304c1bc98128b24914f3e4bfea7c" kindref="member">CBlob::CBlob</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref><sp/>*src<sp/>)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(src<sp/>!=<sp/><ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref><sp/>)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_storage<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>=<sp/>*src;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="class_c_blob_1a724e55442a030bf94da856310e324a40" refkind="member"><highlight class="normal"><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref>&amp;<sp/><ref refid="class_c_blob_1a724e55442a030bf94da856310e324a40" kindref="member">CBlob::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref><sp/>&amp;src<sp/>)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>!=<sp/>&amp;src<sp/>)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_id<sp/>=<sp/>src.m_id;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_area<sp/>=<sp/>src.m_area;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_perimeter<sp/>=<sp/>src.m_perimeter;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_externPerimeter<sp/>=<sp/>src.m_externPerimeter;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_meanGray<sp/>=<sp/>src.m_meanGray;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_stdDevGray<sp/>=<sp/>src.m_stdDevGray;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_boundingBox<sp/>=<sp/>src.m_boundingBox;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_ellipse<sp/>=<sp/>src.m_ellipse;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_originalImageSize<sp/>=<sp/>src.m_originalImageSize;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>clear<sp/>all<sp/>current<sp/>blob<sp/>contours</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ClearContours();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>m_storage<sp/>)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvReleaseMemStorage(<sp/>&amp;m_storage<sp/>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_storage<sp/>=<sp/>cvCreateMemStorage();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_externalContour<sp/>=<sp/><ref refid="class_c_blob_contour" kindref="compound" tooltip="Blob contour class (in crack code).">CBlobContour</ref>(src.m_externalContour.<ref refid="class_c_blob_contour_1ac8f0fbdce452ede583013e010ce0c8e3" kindref="member">GetStartPoint</ref>(),<sp/>m_storage<sp/>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>src.m_externalContour.<ref refid="class_c_blob_contour_1a98c36d7be8524da3976fad97b611123e" kindref="member" tooltip="Crack code list.">m_contour</ref><sp/>)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_externalContour.<ref refid="class_c_blob_contour_1a98c36d7be8524da3976fad97b611123e" kindref="member" tooltip="Crack code list.">m_contour</ref><sp/>=<sp/>cvCloneSeq(<sp/>src.m_externalContour.<ref refid="class_c_blob_contour_1a98c36d7be8524da3976fad97b611123e" kindref="member" tooltip="Crack code list.">m_contour</ref>,<sp/>m_storage);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_internalContours.clear();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>copy<sp/>all<sp/>internal<sp/>contours</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>src.m_internalContours.size()<sp/>)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_internalContours<sp/>=<sp/>t_contourList(<sp/>src.m_internalContours.size()<sp/>);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t_contourList::const_iterator<sp/>itSrc;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t_contourList::iterator<sp/>it;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>itSrc<sp/>=<sp/>src.m_internalContours.begin();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it<sp/>=<sp/>m_internalContours.begin();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(itSrc<sp/>!=<sp/>src.m_internalContours.end())</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*it<sp/>=<sp/><ref refid="class_c_blob_contour" kindref="compound" tooltip="Blob contour class (in crack code).">CBlobContour</ref>((*itSrc).GetStartPoint(),<sp/>m_storage);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(*itSrc).m_contour<sp/>)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*it).m_contour<sp/>=<sp/>cvCloneSeq(<sp/>(*itSrc).m_contour,<sp/>m_storage);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it++;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>itSrc++;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="class_c_blob_1a593ffb9ba17290432d04c383f2f104e2" refkind="member"><highlight class="normal"><ref refid="class_c_blob_1a593ffb9ba17290432d04c383f2f104e2" kindref="member">CBlob::~CBlob</ref>()</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ClearContours();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>m_storage<sp/>)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvReleaseMemStorage(<sp/>&amp;m_storage<sp/>);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CBlob::ClearContours()</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t_contourList::iterator<sp/>it;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it<sp/>=<sp/>m_internalContours.begin();</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(it<sp/>!=<sp/>m_internalContours.end())</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*it).ResetChainCode();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it++;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_internalContours.clear();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_externalContour.<ref refid="class_c_blob_contour_1a9a9ea170c2100586ca7bdb4227589fe9" kindref="member" tooltip="Clears chain code contour.">ResetChainCode</ref>();</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="132" refid="class_c_blob_1ad26a1bc4e31809c3bd76424b05824e90" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1ad26a1bc4e31809c3bd76424b05824e90" kindref="member" tooltip="Adds a new internal contour to the blob.">CBlob::AddInternalContour</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_contour" kindref="compound" tooltip="Blob contour class (in crack code).">CBlobContour</ref><sp/>&amp;newContour<sp/>)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_internalContours.push_back(newContour);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="class_c_blob_1ac97e73d3040530de09a187d02632deb1" refkind="member"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1ac97e73d3040530de09a187d02632deb1" kindref="member">CBlob::IsEmpty</ref>()</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1ad136387165bd74c368cb4ecc7632e4cf" kindref="member" tooltip="Retrieves contour in Freeman&amp;#39;s chain code.">GetExternalContour</ref>()-&gt;<ref refid="class_c_blob_contour_1a98c36d7be8524da3976fad97b611123e" kindref="member" tooltip="Crack code list.">m_contour</ref><sp/>==<sp/>NULL;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="class_c_blob_1a6f1db9fcb42c0a3ea003aaeb0ec65a8d" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1a6f1db9fcb42c0a3ea003aaeb0ec65a8d" kindref="member" tooltip="Compute blob&amp;#39;s area.">CBlob::Area</ref>()</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>area;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t_contourList::iterator<sp/>itContour;<sp/></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>area<sp/>=<sp/>m_externalContour.<ref refid="class_c_blob_contour_1a2c68f462fc31a0e7add9a85b007fa42a" kindref="member" tooltip="Computes area from contour.">GetArea</ref>();</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>itContour<sp/>=<sp/>m_internalContours.begin();</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(itContour<sp/>!=<sp/>m_internalContours.end()<sp/>)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>area<sp/>-=<sp/>(*itContour).GetArea();</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>itContour++;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>area;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187" refid="class_c_blob_1af63853ea55dbebbee5b013189e765b51" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1af63853ea55dbebbee5b013189e765b51" kindref="member" tooltip="Compute blob&amp;#39;s perimeter.">CBlob::Perimeter</ref>()</highlight></codeline>
+<codeline lineno="188"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>perimeter;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t_contourList::iterator<sp/>itContour;<sp/></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>perimeter<sp/>=<sp/>m_externalContour.<ref refid="class_c_blob_contour_1a893d57d625bb8f26f4a31ff0b66b8406" kindref="member" tooltip="Computes perimeter from contour.">GetPerimeter</ref>();</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>itContour<sp/>=<sp/>m_internalContours.begin();</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(itContour<sp/>!=<sp/>m_internalContours.end()<sp/>)</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>perimeter<sp/>+=<sp/>(*itContour).GetPerimeter();</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>itContour++;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>perimeter;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219" refid="class_c_blob_1a2d56a7dee1cbeb3178ff083630ee31b0" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_blob_1a2d56a7dee1cbeb3178ff083630ee31b0" kindref="member" tooltip="&amp;gt; 0 for extern blobs, 0 if not">CBlob::Exterior</ref>(IplImage<sp/>*mask,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>xBorder<sp/></highlight><highlight class="comment">/*<sp/>=<sp/>true<sp/>*/</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>yBorder<sp/></highlight><highlight class="comment">/*<sp/>=<sp/>true<sp/>*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="220"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_c_blob_1ab1501b07a2c5ee23843bac66d20974e2" kindref="member" tooltip="Compute extern perimeter.">ExternPerimeter</ref>(mask,<sp/>xBorder,<sp/>yBorder<sp/>)<sp/>&gt;<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="227"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="246" refid="class_c_blob_1ab1501b07a2c5ee23843bac66d20974e2" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1ab1501b07a2c5ee23843bac66d20974e2" kindref="member" tooltip="Compute extern perimeter.">CBlob::ExternPerimeter</ref>(<sp/>IplImage<sp/>*maskImage,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>xBorder<sp/></highlight><highlight class="comment">/*<sp/>=<sp/>true<sp/>*/</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>yBorder<sp/></highlight><highlight class="comment">/*<sp/>=<sp/>true<sp/>*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="247"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_blob_contour_8h_1abf72b29b2c653dd623e9b39a447809c0" kindref="member" tooltip="Type of list of points.">t_PointList</ref><sp/>externContour,<sp/>externalPoints;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvSeqReader<sp/>reader;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvSeqWriter<sp/>writer;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvPoint<sp/>actualPoint,<sp/>previousPoint;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>find<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,j;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>delta<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>it<sp/>is<sp/>calculated?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>m_externPerimeter<sp/>!=<sp/>-1<sp/>)</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_externPerimeter;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>contour<sp/>pixels</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>externContour<sp/>=<sp/>m_externalContour.<ref refid="class_c_blob_contour_1a245d5e59180619aa9ae4ec14acc18744" kindref="member" tooltip="Return all contour points.">GetContourPoints</ref>();</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_externPerimeter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>there<sp/>are<sp/>contour<sp/>pixels?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>externContour<sp/>==<sp/><ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref><sp/>)</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_externPerimeter;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvStartReadSeq(<sp/>externContour,<sp/>&amp;reader);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>a<sp/>sequence<sp/>with<sp/>the<sp/>external<sp/>points<sp/>of<sp/>the<sp/>blob</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>externalPoints<sp/>=<sp/>cvCreateSeq(<sp/>externContour-&gt;flags,<sp/>externContour-&gt;header_size,<sp/>externContour-&gt;elem_size,<sp/></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_storage<sp/>);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvStartAppendToSeq(<sp/>externalPoints,<sp/>&amp;writer<sp/>);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>previousPoint.x<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>which<sp/>contour<sp/>pixels<sp/>touch<sp/>border?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<sp/>j=0;<sp/>j&lt;<sp/>externContour-&gt;total;<sp/>j++)</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CV_READ_SEQ_ELEM(<sp/>actualPoint,<sp/>reader);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>find<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pixel<sp/>is<sp/>touching<sp/>border?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>xBorder<sp/>&amp;<sp/>((actualPoint.x<sp/>==<sp/>0)<sp/>||<sp/>(actualPoint.x<sp/>==<sp/>m_originalImageSize.width<sp/>-<sp/>1<sp/>))<sp/>||</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>yBorder<sp/>&amp;<sp/>((actualPoint.y<sp/>==<sp/>0)<sp/>||<sp/>(actualPoint.y<sp/>==<sp/>m_originalImageSize.height<sp/>-<sp/>1<sp/>)))</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>find<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>maskImage<sp/>!=<sp/><ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref><sp/>)</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>verify<sp/>if<sp/>some<sp/>of<sp/>8-connected<sp/>neighbours<sp/>is<sp/>black<sp/>in<sp/>mask</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pMask;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pMask<sp/>=<sp/>(maskImage-&gt;imageData<sp/>+<sp/>actualPoint.x<sp/>-<sp/>1<sp/>+<sp/>(actualPoint.y<sp/>-<sp/>1)<sp/>*<sp/>maskImage-&gt;widthStep);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>3;<sp/>i++,<sp/>pMask++<sp/>)</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(*pMask<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>!find<sp/>)<sp/></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>find<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!find)</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pMask<sp/>=<sp/>(maskImage-&gt;imageData<sp/>+<sp/>actualPoint.x<sp/>-<sp/>1<sp/>+<sp/>(actualPoint.y<sp/>)<sp/>*<sp/>maskImage-&gt;widthStep);</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>3;<sp/>i++,<sp/>pMask++<sp/>)</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(*pMask<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>!find<sp/>)<sp/></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>find<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!find)</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pMask<sp/>=<sp/>(maskImage-&gt;imageData<sp/>+<sp/>actualPoint.x<sp/>-<sp/>1<sp/>+<sp/>(actualPoint.y<sp/>+<sp/>1)<sp/>*<sp/>maskImage-&gt;widthStep);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>3;<sp/>i++,<sp/>pMask++<sp/>)</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(*pMask<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>!find<sp/>)<sp/></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>find<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>find<sp/>)</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>previousPoint.x<sp/>&gt;<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delta<sp/>=<sp/>abs(previousPoint.x<sp/>-<sp/>actualPoint.x)<sp/>+<sp/>abs(previousPoint.y<sp/>-<sp/>actualPoint.y);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>calculate<sp/>separately<sp/>each<sp/>external<sp/>contour<sp/>segment<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>delta<sp/>&gt;<sp/>2<sp/>)</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvEndWriteSeq(<sp/>&amp;writer<sp/>);</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_externPerimeter<sp/>+=<sp/>cvArcLength(<sp/>externalPoints,<sp/>CV_WHOLE_SEQ,<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvClearSeq(<sp/>externalPoints<sp/>);</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvStartAppendToSeq(<sp/>externalPoints,<sp/>&amp;writer<sp/>);</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delta<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>previousPoint.x<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CV_WRITE_SEQ_ELEM(<sp/>actualPoint,<sp/>writer<sp/>);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>previousPoint<sp/>=<sp/>actualPoint;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvEndWriteSeq(<sp/>&amp;writer<sp/>);</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_externPerimeter<sp/>+=<sp/>cvArcLength(<sp/>externalPoints,<sp/>CV_WHOLE_SEQ,<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvClearSeq(<sp/>externalPoints<sp/>);</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>divide<sp/>by<sp/>two<sp/>because<sp/>external<sp/>points<sp/>have<sp/>one<sp/>side<sp/>inside<sp/>the<sp/>blob<sp/>and<sp/>the<sp/>other<sp/>outside</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Perimeter<sp/>of<sp/>external<sp/>points<sp/>counts<sp/>both<sp/>sides,<sp/>so<sp/>it<sp/>must<sp/>be<sp/>divided</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_externPerimeter<sp/>/=<sp/>2.0;</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_externPerimeter;</highlight></codeline>
+<codeline lineno="376"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379" refid="class_c_blob_1a4f5dfca1ee933e07a39965375f9f07c5" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1a4f5dfca1ee933e07a39965375f9f07c5" kindref="member" tooltip="Compute blob&amp;#39;s moment (p,q up to MAX_CALCULATED_MOMENTS).">CBlob::Moment</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>q)</highlight></codeline>
+<codeline lineno="380"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>moment;</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t_contourList::iterator<sp/>itContour;<sp/></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moment<sp/>=<sp/>m_externalContour.<ref refid="class_c_blob_contour_1a301727633680b38714302593945b748f" kindref="member" tooltip="Get contour moment (p,q up to MAX_CALCULATED_MOMENTS).">GetMoment</ref>(p,q);</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>itContour<sp/>=<sp/>m_internalContours.begin();</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(itContour<sp/>!=<sp/>m_internalContours.end()<sp/>)</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moment<sp/>-=<sp/>(*itContour).GetMoment(p,q);</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>itContour++;</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>moment;</highlight></codeline>
+<codeline lineno="394"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight></codeline>
+<codeline lineno="409" refid="class_c_blob_1a1b12d25f8e470fdd808ac2e3bfe9bad4" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1a1b12d25f8e470fdd808ac2e3bfe9bad4" kindref="member" tooltip="Get mean grey color.">CBlob::Mean</ref>(<sp/>IplImage<sp/>*image<sp/>)</highlight></codeline>
+<codeline lineno="410"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>it<sp/>is<sp/>calculated?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/>if(<sp/>m_meanGray<sp/>!=<sp/>-1<sp/>)</highlight></codeline>
+<codeline lineno="413"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="414"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>m_meanGray;</highlight></codeline>
+<codeline lineno="415"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="416"><highlight class="comment">*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>mask<sp/>with<sp/>same<sp/>size<sp/>as<sp/>blob<sp/>bounding<sp/>box</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IplImage<sp/>*mask;</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvScalar<sp/>mean,<sp/>std;</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvPoint<sp/>offset;</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_blob_1a5391167c172eb461eb762fbdd81306de" kindref="member" tooltip="Get bounding box.">GetBoundingBox</ref>();</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_boundingBox.height<sp/>==<sp/>0<sp/>||m_boundingBox.width<sp/>==<sp/>0<sp/>||<sp/>!CV_IS_IMAGE(<sp/>image<sp/>))</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_meanGray<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_meanGray;</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"></highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>apply<sp/>ROI<sp/>and<sp/>mask<sp/>to<sp/>input<sp/>image<sp/>to<sp/>compute<sp/>mean<sp/>gray<sp/>and<sp/>standard<sp/>deviation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mask<sp/>=<sp/>cvCreateImage(<sp/>cvSize(m_boundingBox.width,<sp/>m_boundingBox.height),<sp/>IPL_DEPTH_8U,<sp/>1);</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvSetZero(mask);</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"></highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset.x<sp/>=<sp/>-m_boundingBox.x;</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset.y<sp/>=<sp/>-m_boundingBox.y;</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"></highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>draw<sp/>contours<sp/>on<sp/>mask</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvDrawContours(<sp/>mask,<sp/>m_externalContour.<ref refid="class_c_blob_contour_1a245d5e59180619aa9ae4ec14acc18744" kindref="member" tooltip="Return all contour points.">GetContourPoints</ref>(),<sp/>CV_RGB(255,255,255),<sp/>CV_RGB(255,255,255),0,<sp/>CV_FILLED,<sp/>8,</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>);</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"></highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>draw<sp/>internal<sp/>contours</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t_contourList::iterator<sp/>it<sp/>=<sp/>m_internalContours.begin();</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(it<sp/>!=<sp/>m_internalContours.end()<sp/>)</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvDrawContours(<sp/>mask,<sp/>(*it).GetContourPoints(),<sp/>CV_RGB(0,0,0),<sp/>CV_RGB(0,0,0),0,<sp/>CV_FILLED,<sp/>8,</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>);</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it++;</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"></highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvSetImageROI(<sp/>image,<sp/>m_boundingBox<sp/>);</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvAvgSdv(<sp/>image,<sp/>&amp;mean,<sp/>&amp;std,<sp/>mask<sp/>);</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_meanGray<sp/>=<sp/>mean.val[0];</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_stdDevGray<sp/>=<sp/>std.val[0];</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"></highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvReleaseImage(<sp/>&amp;mask<sp/>);</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvResetImageROI(<sp/>image<sp/>);</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"></highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_meanGray;</highlight></codeline>
+<codeline lineno="460"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"></highlight></codeline>
+<codeline lineno="462" refid="class_c_blob_1a014b670bb748e6767ef070e1bc25be7a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1a014b670bb748e6767ef070e1bc25be7a" kindref="member" tooltip="Get standard deviation grey color.">CBlob::StdDev</ref>(<sp/>IplImage<sp/>*image<sp/>)</highlight></codeline>
+<codeline lineno="463"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>it<sp/>is<sp/>calculated?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="465"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/>if(<sp/>m_stdDevGray<sp/>!=<sp/>-1<sp/>)</highlight></codeline>
+<codeline lineno="466"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="467"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>m_stdDevGray;</highlight></codeline>
+<codeline lineno="468"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="469"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>call<sp/>mean<sp/>calculation<sp/>(where<sp/>also<sp/>standard<sp/>deviation<sp/>is<sp/>calculated)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_blob_1a1b12d25f8e470fdd808ac2e3bfe9bad4" kindref="member" tooltip="Get mean grey color.">Mean</ref>(<sp/>image<sp/>);</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"></highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_stdDevGray;</highlight></codeline>
+<codeline lineno="474"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="488" refid="class_c_blob_1a5391167c172eb461eb762fbdd81306de" refkind="member"><highlight class="normal">CvRect<sp/><ref refid="class_c_blob_1a5391167c172eb461eb762fbdd81306de" kindref="member" tooltip="Get bounding box.">CBlob::GetBoundingBox</ref>()</highlight></codeline>
+<codeline lineno="489"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>it<sp/>is<sp/>calculated?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>m_boundingBox.width<sp/>!=<sp/>-1<sp/>)</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_boundingBox;</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"></highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_blob_contour_8h_1abf72b29b2c653dd623e9b39a447809c0" kindref="member" tooltip="Type of list of points.">t_PointList</ref><sp/>externContour;</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvSeqReader<sp/>reader;</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvPoint<sp/>actualPoint;</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>contour<sp/>pixels</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>externContour<sp/>=<sp/>m_externalContour.<ref refid="class_c_blob_contour_1a245d5e59180619aa9ae4ec14acc18744" kindref="member" tooltip="Return all contour points.">GetContourPoints</ref>();</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>it<sp/>is<sp/>an<sp/>empty<sp/>blob?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!externContour<sp/>)</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_boundingBox.x<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_boundingBox.y<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_boundingBox.width<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_boundingBox.height<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"></highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_boundingBox;</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"></highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvStartReadSeq(<sp/>externContour,<sp/>&amp;reader);</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"></highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_boundingBox.x<sp/>=<sp/>m_originalImageSize.width;</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_boundingBox.y<sp/>=<sp/>m_originalImageSize.height;</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_boundingBox.width<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_boundingBox.height<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;<sp/>externContour-&gt;total;<sp/>i++)</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CV_READ_SEQ_ELEM(<sp/>actualPoint,<sp/>reader);</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"></highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_boundingBox.x<sp/>=<sp/>MIN(<sp/>actualPoint.x,<sp/>m_boundingBox.x<sp/>);</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_boundingBox.y<sp/>=<sp/>MIN(<sp/>actualPoint.y,<sp/>m_boundingBox.y<sp/>);</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_boundingBox.width<sp/>=<sp/>MAX(<sp/>actualPoint.x,<sp/>m_boundingBox.width<sp/>);</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_boundingBox.height<sp/>=<sp/>MAX(<sp/>actualPoint.y,<sp/>m_boundingBox.height<sp/>);</highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"></highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//m_boundingBox.x<sp/>=<sp/>max(<sp/>m_boundingBox.x<sp/>,<sp/>0<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//m_boundingBox.y<sp/>=<sp/>max(<sp/>m_boundingBox.y<sp/>,<sp/>0<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_boundingBox.width<sp/>-=<sp/>m_boundingBox.x;</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_boundingBox.height<sp/>-=<sp/>m_boundingBox.y;</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_boundingBox;</highlight></codeline>
+<codeline lineno="539"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"></highlight></codeline>
+<codeline lineno="555" refid="class_c_blob_1ad0bb95f395084ee89ca35cf11f203342" refkind="member"><highlight class="normal">CvBox2D<sp/><ref refid="class_c_blob_1ad0bb95f395084ee89ca35cf11f203342" kindref="member" tooltip="Get bounding ellipse.">CBlob::GetEllipse</ref>()</highlight></codeline>
+<codeline lineno="556"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>it<sp/>is<sp/>calculated?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>m_ellipse.size.width<sp/>!=<sp/>-1<sp/>)</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_ellipse;</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="561"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>u00,u11,u01,u10,u20,u02,<sp/>delta,<sp/>num,<sp/>den,<sp/>temp;</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"></highlight></codeline>
+<codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>central<sp/>moments<sp/>calculation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u00<sp/>=<sp/><ref refid="class_c_blob_1a4f5dfca1ee933e07a39965375f9f07c5" kindref="member" tooltip="Compute blob&amp;#39;s moment (p,q up to MAX_CALCULATED_MOMENTS).">Moment</ref>(0,0);</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"></highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>empty<sp/>blob?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>u00<sp/>&lt;=<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_ellipse.size.width<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_ellipse.size.height<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_ellipse.center.x<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_ellipse.center.y<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_ellipse.angle<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_ellipse;</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u10<sp/>=<sp/><ref refid="class_c_blob_1a4f5dfca1ee933e07a39965375f9f07c5" kindref="member" tooltip="Compute blob&amp;#39;s moment (p,q up to MAX_CALCULATED_MOMENTS).">Moment</ref>(1,0)<sp/>/<sp/>u00;</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u01<sp/>=<sp/><ref refid="class_c_blob_1a4f5dfca1ee933e07a39965375f9f07c5" kindref="member" tooltip="Compute blob&amp;#39;s moment (p,q up to MAX_CALCULATED_MOMENTS).">Moment</ref>(0,1)<sp/>/<sp/>u00;</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"></highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u11<sp/>=<sp/>-(<ref refid="class_c_blob_1a4f5dfca1ee933e07a39965375f9f07c5" kindref="member" tooltip="Compute blob&amp;#39;s moment (p,q up to MAX_CALCULATED_MOMENTS).">Moment</ref>(1,1)<sp/>-<sp/><ref refid="class_c_blob_1a4f5dfca1ee933e07a39965375f9f07c5" kindref="member" tooltip="Compute blob&amp;#39;s moment (p,q up to MAX_CALCULATED_MOMENTS).">Moment</ref>(1,0)<sp/>*<sp/><ref refid="class_c_blob_1a4f5dfca1ee933e07a39965375f9f07c5" kindref="member" tooltip="Compute blob&amp;#39;s moment (p,q up to MAX_CALCULATED_MOMENTS).">Moment</ref>(0,1)<sp/>/<sp/>u00<sp/>)<sp/>/<sp/>u00;</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u20<sp/>=<sp/>(<ref refid="class_c_blob_1a4f5dfca1ee933e07a39965375f9f07c5" kindref="member" tooltip="Compute blob&amp;#39;s moment (p,q up to MAX_CALCULATED_MOMENTS).">Moment</ref>(2,0)<sp/>-<sp/><ref refid="class_c_blob_1a4f5dfca1ee933e07a39965375f9f07c5" kindref="member" tooltip="Compute blob&amp;#39;s moment (p,q up to MAX_CALCULATED_MOMENTS).">Moment</ref>(1,0)<sp/>*<sp/><ref refid="class_c_blob_1a4f5dfca1ee933e07a39965375f9f07c5" kindref="member" tooltip="Compute blob&amp;#39;s moment (p,q up to MAX_CALCULATED_MOMENTS).">Moment</ref>(1,0)<sp/>/<sp/>u00<sp/>)<sp/>/<sp/>u00;</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u02<sp/>=<sp/>(<ref refid="class_c_blob_1a4f5dfca1ee933e07a39965375f9f07c5" kindref="member" tooltip="Compute blob&amp;#39;s moment (p,q up to MAX_CALCULATED_MOMENTS).">Moment</ref>(0,2)<sp/>-<sp/><ref refid="class_c_blob_1a4f5dfca1ee933e07a39965375f9f07c5" kindref="member" tooltip="Compute blob&amp;#39;s moment (p,q up to MAX_CALCULATED_MOMENTS).">Moment</ref>(0,1)<sp/>*<sp/><ref refid="class_c_blob_1a4f5dfca1ee933e07a39965375f9f07c5" kindref="member" tooltip="Compute blob&amp;#39;s moment (p,q up to MAX_CALCULATED_MOMENTS).">Moment</ref>(0,1)<sp/>/<sp/>u00<sp/>)<sp/>/<sp/>u00;</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"></highlight></codeline>
+<codeline lineno="583"><highlight class="normal"></highlight></codeline>
+<codeline lineno="584"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>elipse<sp/>calculation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delta<sp/>=<sp/>sqrt(<sp/>4*u11*u11<sp/>+<sp/>(u20-u02)*(u20-u02)<sp/>);</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_ellipse.center.x<sp/>=<sp/>u10;</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_ellipse.center.y<sp/>=<sp/>u01;</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>u20<sp/>+<sp/>u02<sp/>+<sp/>delta;</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>temp<sp/>&gt;<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_ellipse.size.width<sp/>=<sp/>sqrt(<sp/>2*(u20<sp/>+<sp/>u02<sp/>+<sp/>delta<sp/>));</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_ellipse.size.width<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_ellipse;</highlight></codeline>
+<codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"></highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>u20<sp/>+<sp/>u02<sp/>-<sp/>delta;</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>temp<sp/>&gt;<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_ellipse.size.height<sp/>=<sp/>sqrt(<sp/>2*(u20<sp/>+<sp/>u02<sp/>-<sp/>delta<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_ellipse.size.height<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_ellipse;</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="610"><highlight class="normal"></highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>elipse<sp/>orientation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(u20<sp/>&gt;<sp/>u02)</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>num<sp/>=<sp/>u02<sp/>-<sp/>u20<sp/>+<sp/>sqrt((u02<sp/>-<sp/>u20)*(u02<sp/>-<sp/>u20)<sp/>+<sp/>4*u11*u11);</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>den<sp/>=<sp/>2*u11;</highlight></codeline>
+<codeline lineno="616"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>num<sp/>=<sp/>2*u11;</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>den<sp/>=<sp/>u20<sp/>-<sp/>u02<sp/>+<sp/>sqrt((u20<sp/>-<sp/>u02)*(u20<sp/>-<sp/>u02)<sp/>+<sp/>4*u11*u11);</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>num<sp/>!=<sp/>0<sp/>&amp;&amp;<sp/>den<sp/><sp/>!=<sp/>00<sp/>)</highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_ellipse.angle<sp/>=<sp/>180.0<sp/>+<sp/>(180.0<sp/>/<sp/>CV_PI)<sp/>*<sp/>atan(<sp/>num<sp/>/<sp/>den<sp/>);</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="626"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="627"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_ellipse.angle<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="629"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="631"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_ellipse;</highlight></codeline>
+<codeline lineno="632"><highlight class="normal"></highlight></codeline>
+<codeline lineno="633"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="634"><highlight class="normal"></highlight></codeline>
+<codeline lineno="649" refid="class_c_blob_1a1a12b6dee61d2db86cd3a60c0671382e" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1a1a12b6dee61d2db86cd3a60c0671382e" kindref="member">CBlob::FillBlob</ref>(<sp/>IplImage<sp/>*imatge,<sp/>CvScalar<sp/>color,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offsetX<sp/></highlight><highlight class="comment">/*=0*/</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offsetY<sp/></highlight><highlight class="comment">/*=0*/</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="650"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="651"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvDrawContours(<sp/>imatge,<sp/>m_externalContour.<ref refid="class_c_blob_contour_1a245d5e59180619aa9ae4ec14acc18744" kindref="member" tooltip="Return all contour points.">GetContourPoints</ref>(),<sp/>color,<sp/>color,0,<sp/>CV_FILLED,<sp/>8<sp/>);</highlight></codeline>
+<codeline lineno="652"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="653"><highlight class="normal"></highlight></codeline>
+<codeline lineno="654"><highlight class="normal"></highlight></codeline>
+<codeline lineno="667" refid="class_c_blob_1aacc50d5d47e0543d4e0a569d05009006" refkind="member"><highlight class="normal"><ref refid="_blob_contour_8h_1abf72b29b2c653dd623e9b39a447809c0" kindref="member" tooltip="Type of list of points.">t_PointList</ref><sp/><ref refid="class_c_blob_1aacc50d5d47e0543d4e0a569d05009006" kindref="member">CBlob::GetConvexHull</ref>()</highlight></codeline>
+<codeline lineno="668"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvSeq<sp/>*convexHull<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="670"><highlight class="normal"></highlight></codeline>
+<codeline lineno="671"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>m_externalContour.<ref refid="class_c_blob_contour_1a245d5e59180619aa9ae4ec14acc18744" kindref="member" tooltip="Return all contour points.">GetContourPoints</ref>()<sp/>)</highlight></codeline>
+<codeline lineno="672"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>convexHull<sp/>=<sp/>cvConvexHull2(<sp/>m_externalContour.<ref refid="class_c_blob_contour_1a245d5e59180619aa9ae4ec14acc18744" kindref="member" tooltip="Return all contour points.">GetContourPoints</ref>(),<sp/>m_storage,</highlight></codeline>
+<codeline lineno="673"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CV_COUNTER_CLOCKWISE,<sp/>1<sp/>);</highlight></codeline>
+<codeline lineno="674"><highlight class="normal"></highlight></codeline>
+<codeline lineno="675"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>convexHull;</highlight></codeline>
+<codeline lineno="676"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"></highlight></codeline>
+<codeline lineno="690" refid="class_c_blob_1a006463cc42ef0e4b8986fa5020cb6f90" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_1a006463cc42ef0e4b8986fa5020cb6f90" kindref="member" tooltip="Join a blob to current one (add&amp;#39;s contour.">CBlob::JoinBlob</ref>(<sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref><sp/>*blob<sp/>)</highlight></codeline>
+<codeline lineno="691"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvSeqWriter<sp/>writer;</highlight></codeline>
+<codeline lineno="693"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvSeqReader<sp/>reader;</highlight></codeline>
+<codeline lineno="694"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_blob_contour_8h_1a0ccb8765a7971147eaf6cafef4bd3c0e" kindref="member" tooltip="Type of chain codes.">t_chainCode</ref><sp/>chainCode;</highlight></codeline>
+<codeline lineno="695"><highlight class="normal"></highlight></codeline>
+<codeline lineno="696"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvStartAppendToSeq(<sp/>m_externalContour.<ref refid="class_c_blob_contour_1ae783c063f2d89f4d06396b552c92f9a6" kindref="member" tooltip="Return freeman chain coded contour.">GetChainCode</ref>(),<sp/>&amp;writer<sp/>);</highlight></codeline>
+<codeline lineno="697"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvStartReadSeq(<sp/>blob-&gt;<ref refid="class_c_blob_1ad136387165bd74c368cb4ecc7632e4cf" kindref="member" tooltip="Retrieves contour in Freeman&amp;#39;s chain code.">GetExternalContour</ref>()-&gt;<ref refid="class_c_blob_contour_1ae783c063f2d89f4d06396b552c92f9a6" kindref="member" tooltip="Return freeman chain coded contour.">GetChainCode</ref>(),<sp/>&amp;reader<sp/>);</highlight></codeline>
+<codeline lineno="698"><highlight class="normal"></highlight></codeline>
+<codeline lineno="699"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>blob-&gt;<ref refid="class_c_blob_1ad136387165bd74c368cb4ecc7632e4cf" kindref="member" tooltip="Retrieves contour in Freeman&amp;#39;s chain code.">GetExternalContour</ref>()-&gt;<ref refid="class_c_blob_contour_1ae783c063f2d89f4d06396b552c92f9a6" kindref="member" tooltip="Return freeman chain coded contour.">GetChainCode</ref>()-&gt;total;<sp/>i++<sp/>)</highlight></codeline>
+<codeline lineno="700"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="701"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CV_READ_SEQ_ELEM(<sp/>chainCode,<sp/>reader<sp/>);</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CV_WRITE_SEQ_ELEM(<sp/>chainCode,<sp/>writer<sp/>);</highlight></codeline>
+<codeline lineno="703"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="704"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvEndWriteSeq(<sp/>&amp;writer<sp/>);</highlight></codeline>
+<codeline lineno="705"><highlight class="normal"></highlight></codeline>
+<codeline lineno="706"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/blob.cpp"/>
+  </compounddef>
+</doxygen>

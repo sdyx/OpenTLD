@@ -1,0 +1,93 @@
+\hypertarget{class_c_blob_get_compactness}{
+\section{CBlobGetCompactness Class Reference}
+\label{class_c_blob_get_compactness}\index{CBlobGetCompactness@{CBlobGetCompactness}}
+}
+
+
+{\ttfamily \#include $<$BlobOperators.h$>$}
+
+
+
+Inherits \hyperlink{class_c_operador_blob}{COperadorBlob}.
+
+
+
+Collaboration diagram for CBlobGetCompactness:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_c_blob_get_compactness__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_c_blob_get_compactness_a315844b8ce0ea4c05e8422016f70ea2d}{operator()} (\hyperlink{class_c_blob}{CBlob} \&blob)
+\item 
+const char $\ast$ \hyperlink{class_c_blob_get_compactness_a93b67c8c8bd3389cb0cf06324f0583d1}{GetNom} ()
+\begin{DoxyCompactList}\small\item\em Get operator name. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe per calcular la compacitat d'un blob Class to calculate the compactness of a blob 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_blob_get_compactness_a93b67c8c8bd3389cb0cf06324f0583d1}{
+\index{CBlobGetCompactness@{CBlobGetCompactness}!GetNom@{GetNom}}
+\index{GetNom@{GetNom}!CBlobGetCompactness@{CBlobGetCompactness}}
+\subsubsection[{GetNom}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ CBlobGetCompactness::GetNom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_c_blob_get_compactness_a93b67c8c8bd3389cb0cf06324f0583d1}
+
+
+Get operator name. 
+
+
+
+Implements \hyperlink{class_c_operador_blob_a717a19c163a26b45081a2231be24c008}{COperadorBlob}.
+
+\hypertarget{class_c_blob_get_compactness_a315844b8ce0ea4c05e8422016f70ea2d}{
+\index{CBlobGetCompactness@{CBlobGetCompactness}!operator()@{operator()}}
+\index{operator()@{operator()}!CBlobGetCompactness@{CBlobGetCompactness}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}double CBlobGetCompactness::operator() (
+\begin{DoxyParamCaption}
+\item[{{\bf CBlob} \&}]{ blob}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_c_blob_get_compactness_a315844b8ce0ea4c05e8422016f70ea2d}
+Retorna la compacitat del blob
+\begin{DoxyItemize}
+\item FUNCTION: \hyperlink{class_c_blob_get_compactness}{CBlobGetCompactness}
+\item FUNCTIONALITY: Calculates the compactness of the blob ( maximum for circle shaped blobs, minimum for the rest)
+\item PARAMETERS:
+\item RESULT:
+\item RESTRICTIONS:
+\item AUTHOR: Ricard Borràs
+\item CREATION DATE: 25-\/05-\/2005.
+\item MODIFICATION: Date. Author. Description. 
+\end{DoxyItemize}
+
+Implements \hyperlink{class_c_operador_blob_a303c4189cc94cafbcbee116bf014e623}{COperadorBlob}.
+
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_c_blob_get_compactness_a315844b8ce0ea4c05e8422016f70ea2d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/3rdparty/cvblobs/\hyperlink{_blob_operators_8h}{BlobOperators.h}\item 
+src/3rdparty/cvblobs/\hyperlink{_blob_operators_8cpp}{BlobOperators.cpp}\end{DoxyCompactItemize}

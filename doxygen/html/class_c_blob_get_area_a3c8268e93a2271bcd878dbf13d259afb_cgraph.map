@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_c_blob.html#a6f1db9fcb42c0a3ea003aaeb0ec65a8d" title="Compute blob&#39;s area." alt="" coords="241,30,337,58"/>
+<area shape="rect" id="node5" href="$class_c_blob_contour.html#a2c68f462fc31a0e7add9a85b007fa42a" title="Computes area from contour." alt="" coords="387,30,557,58"/>
+<area shape="rect" id="node7" href="$class_c_blob_contour.html#a245d5e59180619aa9ae4ec14acc18744" title="Return all contour points." alt="" coords="607,5,836,33"/>
+<area shape="rect" id="node9" href="$class_c_blob_contour.html#af4e715a94924d5dc1a0e67cf75818bb5" title="CBlobContour::IsEmpty" alt="" coords="637,55,805,83"/>
+</map>

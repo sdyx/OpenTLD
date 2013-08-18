@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="classlibconfig_1_1_setting_not_found_exception" kind="class" prot="public">
+    <compoundname>libconfig::SettingNotFoundException</compoundname>
+    <basecompoundref refid="classlibconfig_1_1_setting_exception" prot="public" virt="non-virtual">libconfig::SettingException</basecompoundref>
+    <includes refid="libconfig_8h_09_09" local="no">libconfig.h++</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classlibconfig_1_1_setting_not_found_exception_1ac3da7e21a05bf8852638db7e4dd1b81a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Config</definition>
+        <argsstring></argsstring>
+        <name>Config</name>
+        <reimplements refid="classlibconfig_1_1_setting_exception_1ac3da7e21a05bf8852638db7e4dd1b81a">Config</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="100" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classlibconfig_1_1_setting_not_found_exception_1a9aa0bc1c3d297cabf9a1848178294d38" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Setting</definition>
+        <argsstring></argsstring>
+        <name>Setting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="101" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlibconfig_1_1_setting_not_found_exception_1a10ddbf9dfba0e1d43e84ad9f746f4dc3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>const char * libconfig::SettingNotFoundException::what</definition>
+        <argsstring>() const </argsstring>
+        <name>what</name>
+        <reimplements refid="classlibconfig_1_1_setting_exception_1aead416e6b1f46683804fff8f4649df05">what</reimplements>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="105" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="255" bodyend="258"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classlibconfig_1_1_setting_not_found_exception_1a6ee6e8926d797116f24f23c26d0ba915" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>libconfig::SettingNotFoundException::SettingNotFoundException</definition>
+        <argsstring>(const Setting &amp;setting, int idx)</argsstring>
+        <name>SettingNotFoundException</name>
+        <param>
+          <type>const <ref refid="classlibconfig_1_1_setting" kindref="compound">Setting</ref> &amp;</type>
+          <declname>setting</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="109" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="232" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_setting_not_found_exception_1ad84a0a49ee86f381a845520e666ad8f6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>libconfig::SettingNotFoundException::SettingNotFoundException</definition>
+        <argsstring>(const Setting &amp;setting, const char *name)</argsstring>
+        <name>SettingNotFoundException</name>
+        <param>
+          <type>const <ref refid="classlibconfig_1_1_setting" kindref="compound">Setting</ref> &amp;</type>
+          <declname>setting</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="110" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="240" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classlibconfig_1_1_setting_not_found_exception_1ab08c153aa8ccc279b4802e447f5c0e63" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>libconfig::SettingNotFoundException::SettingNotFoundException</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>SettingNotFoundException</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="111" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfigcpp.c++" bodystart="248" bodyend="251"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="548">
+        <label>libconfig::ConfigException</label>
+        <link refid="classlibconfig_1_1_config_exception"/>
+      </node>
+      <node id="547">
+        <label>libconfig::SettingException</label>
+        <link refid="classlibconfig_1_1_setting_exception"/>
+        <childnode refid="548" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="546">
+        <label>libconfig::SettingNotFoundException</label>
+        <link refid="classlibconfig_1_1_setting_not_found_exception"/>
+        <childnode refid="547" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="551">
+        <label>libconfig::ConfigException</label>
+        <link refid="classlibconfig_1_1_config_exception"/>
+      </node>
+      <node id="550">
+        <label>libconfig::SettingException</label>
+        <link refid="classlibconfig_1_1_setting_exception"/>
+        <childnode refid="551" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="549">
+        <label>libconfig::SettingNotFoundException</label>
+        <link refid="classlibconfig_1_1_setting_not_found_exception"/>
+        <childnode refid="550" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" line="99" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/libconfig.h++" bodystart="98" bodyend="112"/>
+    <listofallmembers>
+      <member refid="classlibconfig_1_1_setting_not_found_exception_1ac3da7e21a05bf8852638db7e4dd1b81a" prot="private" virt="non-virtual"><scope>libconfig::SettingNotFoundException</scope><name>Config</name></member>
+      <member refid="classlibconfig_1_1_setting_exception_1a3aa229dde3459dbd18d9598f8d1bede4" prot="public" virt="non-virtual"><scope>libconfig::SettingNotFoundException</scope><name>getPath</name></member>
+      <member refid="classlibconfig_1_1_setting_exception_1aec6caeb252c238bde272e5050c6b881f" prot="public" virt="non-virtual"><scope>libconfig::SettingNotFoundException</scope><name>operator=</name></member>
+      <member refid="classlibconfig_1_1_setting_not_found_exception_1a9aa0bc1c3d297cabf9a1848178294d38" prot="private" virt="non-virtual"><scope>libconfig::SettingNotFoundException</scope><name>Setting</name></member>
+      <member refid="classlibconfig_1_1_setting_exception_1a22ad32bab261aa1a6a17e4e1783240e4" prot="public" virt="non-virtual"><scope>libconfig::SettingNotFoundException</scope><name>SettingException</name></member>
+      <member refid="classlibconfig_1_1_setting_exception_1a8e64e378f22317a3daa5824071c38e89" prot="protected" virt="non-virtual"><scope>libconfig::SettingNotFoundException</scope><name>SettingException</name></member>
+      <member refid="classlibconfig_1_1_setting_exception_1a6ed0f32d95fe0730c8a10b2a12a12d7a" prot="protected" virt="non-virtual"><scope>libconfig::SettingNotFoundException</scope><name>SettingException</name></member>
+      <member refid="classlibconfig_1_1_setting_exception_1adfd98e2d09b2689884b9349968ea3477" prot="protected" virt="non-virtual"><scope>libconfig::SettingNotFoundException</scope><name>SettingException</name></member>
+      <member refid="classlibconfig_1_1_setting_exception_1a9e695af9dc4098bed2091f2753b79cf1" prot="protected" virt="non-virtual"><scope>libconfig::SettingNotFoundException</scope><name>SettingException</name></member>
+      <member refid="classlibconfig_1_1_setting_not_found_exception_1a6ee6e8926d797116f24f23c26d0ba915" prot="private" virt="non-virtual"><scope>libconfig::SettingNotFoundException</scope><name>SettingNotFoundException</name></member>
+      <member refid="classlibconfig_1_1_setting_not_found_exception_1ad84a0a49ee86f381a845520e666ad8f6" prot="private" virt="non-virtual"><scope>libconfig::SettingNotFoundException</scope><name>SettingNotFoundException</name></member>
+      <member refid="classlibconfig_1_1_setting_not_found_exception_1ab08c153aa8ccc279b4802e447f5c0e63" prot="private" virt="non-virtual"><scope>libconfig::SettingNotFoundException</scope><name>SettingNotFoundException</name></member>
+      <member refid="classlibconfig_1_1_setting_not_found_exception_1a10ddbf9dfba0e1d43e84ad9f746f4dc3" prot="public" virt="virtual"><scope>libconfig::SettingNotFoundException</scope><name>what</name></member>
+      <member refid="classlibconfig_1_1_setting_exception_1a430c62b735c729be8b1478dae91b59cd" prot="public" virt="virtual"><scope>libconfig::SettingNotFoundException</scope><name>~SettingException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

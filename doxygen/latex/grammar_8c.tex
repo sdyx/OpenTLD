@@ -1,0 +1,1225 @@
+\hypertarget{grammar_8c}{
+\section{src/3rdparty/libconfig/grammar.c File Reference}
+\label{grammar_8c}\index{src/3rdparty/libconfig/grammar.c@{src/3rdparty/libconfig/grammar.c}}
+}
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include \char`\"{}libconfig.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}parsectx.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}scanctx.h\char`\"{}}\par
+Include dependency graph for grammar.c:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=398pt]{grammar_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{union_y_y_s_t_y_p_e}{YYSTYPE}
+\item 
+union \hyperlink{unionyyalloc}{yyalloc}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{grammar_8c_a9f092f5b1dca6a6249fb2c7c8065b031}{YYBISON}~1
+\item 
+\#define \hyperlink{grammar_8c_a72ebd0ca5807efcc6a5ae4fb72dd1553}{YYBISON\_\-VERSION}~\char`\"{}2.4.1\char`\"{}
+\item 
+\#define \hyperlink{grammar_8c_a50db5aef8c2b6f13961b2480b37f84c0}{YYSKELETON\_\-NAME}~\char`\"{}yacc.c\char`\"{}
+\item 
+\#define \hyperlink{grammar_8c_a9fa797a1f3c4fc9b12d1e4d569612767}{YYPURE}~1
+\item 
+\#define \hyperlink{grammar_8c_a3aa6e4af11755f8cf8e5ddb26833e918}{YYPUSH}~0
+\item 
+\#define \hyperlink{grammar_8c_a90f059b8a9d6c30a1e44e1b80d3fd6c8}{YYPULL}~1
+\item 
+\#define \hyperlink{grammar_8c_abb3943553c2b5e911c89a3ea973d3079}{YYLSP\_\-NEEDED}~0
+\item 
+\#define \hyperlink{grammar_8c_a7482716c0f7d5bc8387ad56daa3a9fde}{yyparse}~libconfig\_\-yyparse
+\item 
+\#define \hyperlink{grammar_8c_a5611300548b2030d86b6ab9168132b88}{yylex}~libconfig\_\-yylex
+\item 
+\#define \hyperlink{grammar_8c_afd2adb2274e61b81cf475d1ebea69d50}{yyerror}~libconfig\_\-yyerror
+\item 
+\#define \hyperlink{grammar_8c_a75acfb3798e577ebd296e604e422e86b}{yylval}~libconfig\_\-yylval
+\item 
+\#define \hyperlink{grammar_8c_a34af3aa88645c2f95bbb4d573f8713cb}{yychar}~libconfig\_\-yychar
+\item 
+\#define \hyperlink{grammar_8c_a7fde6236fcb0f6e5d1d20ce98d9f0d01}{yydebug}~libconfig\_\-yydebug
+\item 
+\#define \hyperlink{grammar_8c_a956a31a9c729bfe871bb770d99e1942d}{yynerrs}~libconfig\_\-yynerrs
+\item 
+\#define \hyperlink{grammar_8c_ae75d2f04c29571a14dc66528697efe32}{\_\-delete}(P)~free((void $\ast$)(P))
+\item 
+\#define \hyperlink{grammar_8c_a8d59f7370b518ab03025dc6e3fbc52ef}{IN\_\-ARRAY}()~(ctx-\/$>$parent \&\& (ctx-\/$>$parent-\/$>$type == CONFIG\_\-TYPE\_\-ARRAY))
+\item 
+\#define \hyperlink{grammar_8c_adb192a467809ffee7532369d7ca17f1c}{IN\_\-LIST}()~(ctx-\/$>$parent \&\& (ctx-\/$>$parent-\/$>$type == CONFIG\_\-TYPE\_\-LIST))
+\item 
+\#define \hyperlink{grammar_8c_a9fb1c745cfc3d1942313cebbbae51673}{CAPTURE\_\-PARSE\_\-POS}(S)~capture\_\-parse\_\-pos(scanner, scan\_\-ctx, (S))
+\item 
+\#define \hyperlink{grammar_8c_a853b3bfad6d2b2ff693dce81182e0c2e}{YYDEBUG}~0
+\item 
+\#define \hyperlink{grammar_8c_a0943f558a560b9b5fa0593d7e36496c1}{YYERROR\_\-VERBOSE}~0
+\item 
+\#define \hyperlink{grammar_8c_a3499e31aa832edc82b632ae811286a4b}{YYTOKEN\_\-TABLE}~0
+\item 
+\#define \hyperlink{grammar_8c_a69ca0fbcc6d7aa5e8f47b11fc0048208}{YYTOKENTYPE}
+\item 
+\#define \hyperlink{grammar_8c_a57e5660f647aa60e11ca9782e158949d}{TOK\_\-BOOLEAN}~258
+\item 
+\#define \hyperlink{grammar_8c_afe8234318c40d23aa0ef8d7c6c3bb613}{TOK\_\-INTEGER}~259
+\item 
+\#define \hyperlink{grammar_8c_abbb8340fa8257a75865a060cb4f492d5}{TOK\_\-HEX}~260
+\item 
+\#define \hyperlink{grammar_8c_a88bad54911209df594dc18cf5a862d77}{TOK\_\-INTEGER64}~261
+\item 
+\#define \hyperlink{grammar_8c_ad9c1282beda9a0fcb200efcaf95a2702}{TOK\_\-HEX64}~262
+\item 
+\#define \hyperlink{grammar_8c_a3867e462c2d373a53251ca0b835aada5}{TOK\_\-FLOAT}~263
+\item 
+\#define \hyperlink{grammar_8c_a438ebcf2bfac5fd8af5356f3c0305839}{TOK\_\-STRING}~264
+\item 
+\#define \hyperlink{grammar_8c_ad988fa86b948db0ed4e4093dea41c9d4}{TOK\_\-NAME}~265
+\item 
+\#define \hyperlink{grammar_8c_a2aee9f170594b125ed4275759d0f01f6}{TOK\_\-EQUALS}~266
+\item 
+\#define \hyperlink{grammar_8c_a6d75325443212b60baee084ea24ccc62}{TOK\_\-NEWLINE}~267
+\item 
+\#define \hyperlink{grammar_8c_a937ba1cd996133cb5532011c310d8bdc}{TOK\_\-ARRAY\_\-START}~268
+\item 
+\#define \hyperlink{grammar_8c_a2e7af18fe1642f5eb00831393339400b}{TOK\_\-ARRAY\_\-END}~269
+\item 
+\#define \hyperlink{grammar_8c_a59dead6373ce8a009c37c2acc6bb03de}{TOK\_\-LIST\_\-START}~270
+\item 
+\#define \hyperlink{grammar_8c_a8856a703899dd9d15e7e4eb179aa473f}{TOK\_\-LIST\_\-END}~271
+\item 
+\#define \hyperlink{grammar_8c_ae83b5d27d87a650e964b21698da02fda}{TOK\_\-COMMA}~272
+\item 
+\#define \hyperlink{grammar_8c_a063013921856046cbea18e57736dc1e6}{TOK\_\-GROUP\_\-START}~273
+\item 
+\#define \hyperlink{grammar_8c_a1a07150c25e16b69bc8b8f1a2dd4a068}{TOK\_\-GROUP\_\-END}~274
+\item 
+\#define \hyperlink{grammar_8c_aeed3603d6bcfa2873994098d2bffe4be}{TOK\_\-SEMICOLON}~275
+\item 
+\#define \hyperlink{grammar_8c_aecad1fed21ec8638deecc2c2679b65e1}{TOK\_\-GARBAGE}~276
+\item 
+\#define \hyperlink{grammar_8c_a5d0d20b374e87f59d2aa1df79daf060b}{TOK\_\-ERROR}~277
+\item 
+\#define \hyperlink{grammar_8c_a2e3dbf169c5ee24cf6af37c61cf3995d}{YYSTYPE\_\-IS\_\-TRIVIAL}~1
+\item 
+\#define \hyperlink{grammar_8c_a4ccf5315e8f5c1cec48ec67ca1771e3a}{yystype}~\hyperlink{union_y_y_s_t_y_p_e}{YYSTYPE}
+\item 
+\#define \hyperlink{grammar_8c_af0232d21120b2cfc5e5f82f0fbadab3c}{YYSTYPE\_\-IS\_\-DECLARED}~1
+\item 
+\#define \hyperlink{grammar_8c_a7d535939e93253736c6eeda569d24de5}{YYSIZE\_\-T}~unsigned int
+\item 
+\#define \hyperlink{grammar_8c_ab4bb7ad82d4a7e2df49ff6a8fb484109}{YYSIZE\_\-MAXIMUM}~((YYSIZE\_\-T) -\/1)
+\item 
+\#define \hyperlink{grammar_8c_a86f079016f11f0600f4259f3f03f8d43}{YY\_\-}(msgid)~msgid
+\item 
+\#define \hyperlink{grammar_8c_ad7d1ef1bbc6adfe69894bc8221f557e1}{YYUSE}(e)~((void) (e))
+\item 
+\#define \hyperlink{grammar_8c_a0a6ff515042340dd341cf6ca8dd05f2d}{YYID}(n)~(n)
+\item 
+\#define \hyperlink{grammar_8c_af45042ce56e04d634420d76caeb2ee73}{YYSTACK\_\-ALLOC}~YYMALLOC
+\item 
+\#define \hyperlink{grammar_8c_a1a9dc526fd390d4808252bd631c4c2f7}{YYSTACK\_\-FREE}~YYFREE
+\item 
+\#define \hyperlink{grammar_8c_a7e55d995c7458f2f4af94a426d0adde8}{YYSTACK\_\-ALLOC\_\-MAXIMUM}~YYSIZE\_\-MAXIMUM
+\item 
+\#define \hyperlink{grammar_8c_a573b05852d8f080c907dfba725773d7a}{YYMALLOC}~malloc
+\item 
+\#define \hyperlink{grammar_8c_ac8adfd73c006c1926f387feb1eced3ca}{YYFREE}~free
+\item 
+\#define \hyperlink{grammar_8c_afcd15dd0fa87ffba0371c6d6a0cc9631}{YYSTACK\_\-GAP\_\-MAXIMUM}~(sizeof (union \hyperlink{unionyyalloc}{yyalloc}) -\/ 1)
+\item 
+\#define \hyperlink{grammar_8c_a40beb355f2cf230a99e2e2bb54909a5a}{YYSTACK\_\-BYTES}(N)
+\item 
+\#define \hyperlink{grammar_8c_ad6586b145b5cddce4eec46f35d59b1dd}{YYCOPY}(To, From, Count)
+\item 
+\#define \hyperlink{grammar_8c_ae780b90b638f37309f20dc07f94e8221}{YYSTACK\_\-RELOCATE}(Stack\_\-alloc, Stack)
+\item 
+\#define \hyperlink{grammar_8c_a6419f3fd69ecb6b7e063410fd4e73b2f}{YYFINAL}~6
+\item 
+\#define \hyperlink{grammar_8c_ae67923760a28e3b7ed3aa2cfaef7f9a2}{YYLAST}~35
+\item 
+\#define \hyperlink{grammar_8c_a75d260730a6c379a94ea28f63a7b9275}{YYNTOKENS}~23
+\item 
+\#define \hyperlink{grammar_8c_af54ae9e588f0ecc32eabbfdf1959df10}{YYNNTS}~20
+\item 
+\#define \hyperlink{grammar_8c_aceaba8997dc3867478ae3b816647eb7c}{YYNRULES}~39
+\item 
+\#define \hyperlink{grammar_8c_a2c387ba2caaade8bf8f78ed30023f79f}{YYNSTATES}~47
+\item 
+\#define \hyperlink{grammar_8c_a926181abd06b6d1df27b6133971c24ce}{YYUNDEFTOK}~2
+\item 
+\#define \hyperlink{grammar_8c_af3f5ed4bc4517eff0ef1b17541192a58}{YYMAXUTOK}~277
+\item 
+\#define \hyperlink{grammar_8c_aad19ee88e33c02c4e720b28f78249bd7}{YYTRANSLATE}(YYX)~((unsigned int) (YYX) $<$= YYMAXUTOK ? yytranslate\mbox{[}YYX\mbox{]} : YYUNDEFTOK)
+\item 
+\#define \hyperlink{grammar_8c_a62bf0ed0c4360b077071b5cf3177823b}{YYPACT\_\-NINF}~-\/26
+\item 
+\#define \hyperlink{grammar_8c_a504faa93b92f37fcc147f68e8d111a1d}{YYTABLE\_\-NINF}~-\/1
+\item 
+\#define \hyperlink{grammar_8c_a20bf055e53dc4fd5afddfd752a4d1adb}{yyerrok}~(yyerrstatus = 0)
+\item 
+\#define \hyperlink{grammar_8c_a5035d59933b3f5388c44f596145db047}{yyclearin}~(yychar = YYEMPTY)
+\item 
+\#define \hyperlink{grammar_8c_ae59196b3765411a06cf234cf9bcae2e7}{YYEMPTY}~(-\/2)
+\item 
+\#define \hyperlink{grammar_8c_a3b1e3628411fabac03abe0a337322016}{YYEOF}~0
+\item 
+\#define \hyperlink{grammar_8c_aa6c7a65b580c214b2ea832fd7bdd472e}{YYACCEPT}~goto yyacceptlab
+\item 
+\#define \hyperlink{grammar_8c_a3bcde0b05b9aa4ec5169092d9d211dbd}{YYABORT}~goto yyabortlab
+\item 
+\#define \hyperlink{grammar_8c_af1eef6197be78122699013d0784acc80}{YYERROR}~goto yyerrorlab
+\item 
+\#define \hyperlink{grammar_8c_a383d9671b1abd97e4c6f3708d1ca32f3}{YYFAIL}~goto yyerrlab
+\item 
+\#define \hyperlink{grammar_8c_ad860e18ca4b79fc589895b531bdb7948}{YYRECOVERING}()~(!!yyerrstatus)
+\item 
+\#define \hyperlink{grammar_8c_adfcaf974b837e3efc130377e9837b4fd}{YYBACKUP}(Token, Value)
+\item 
+\#define \hyperlink{grammar_8c_ad2b58b1851184ddb3b60fede50bc7946}{YYTERROR}~1
+\item 
+\#define \hyperlink{grammar_8c_a552f295255821fa7dea11b0237e1d61a}{YYERRCODE}~256
+\item 
+\#define \hyperlink{grammar_8c_ab2b4f027a2b092ac14ca4464e7b3db60}{YYRHSLOC}(Rhs, K)~((Rhs)\mbox{[}K\mbox{]})
+\item 
+\#define \hyperlink{grammar_8c_a485d38f93de30679900c9cad6e7f3446}{YYLLOC\_\-DEFAULT}(Current, Rhs, N)
+\item 
+\#define \hyperlink{grammar_8c_a52c7d936ca7e6c34687ff71f29b8cfd1}{YY\_\-LOCATION\_\-PRINT}(File, Loc)~((void) 0)
+\item 
+\#define \hyperlink{grammar_8c_a0ea34e09602d1ede033f16ba669ef24b}{YYLEX}~yylex (\&yylval, scanner)
+\item 
+\#define \hyperlink{grammar_8c_af6d6ca80e87922f90264f1a4a802ea04}{YYDPRINTF}(Args)
+\item 
+\#define \hyperlink{grammar_8c_a1c510d33cb388afc9411141ba3076a36}{YY\_\-SYMBOL\_\-PRINT}(Title, Type, Value, Location)
+\item 
+\#define \hyperlink{grammar_8c_a7a52157fbe194e3a347afc4ef750af77}{YY\_\-STACK\_\-PRINT}(Bottom, Top)
+\item 
+\#define \hyperlink{grammar_8c_a49ad456240785266cadae498ddae9310}{YY\_\-REDUCE\_\-PRINT}(Rule)
+\item 
+\#define \hyperlink{grammar_8c_aeb1508a3a38ec5d64c27e8eca25330b5}{YYINITDEPTH}~200
+\item 
+\#define \hyperlink{grammar_8c_a14ba2b263c446ffed1c888c4b42ae40c}{YYMAXDEPTH}~10000
+\item 
+\#define \hyperlink{grammar_8c_ad2f9773cd9c031026b2ef4c1ee7be1be}{YYPOPSTACK}(N)~(yyvsp -\/= (N), yyssp -\/= (N))
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef union \hyperlink{union_y_y_s_t_y_p_e}{YYSTYPE} \hyperlink{grammar_8c_a09fb1f7c65e10ed0f0c1aa8ef7ce16b5}{YYSTYPE}
+\item 
+typedef unsigned char \hyperlink{grammar_8c_a79c09f9dcfd0f7a32f598ea3910d2206}{yytype\_\-uint8}
+\item 
+typedef short int \hyperlink{grammar_8c_afd56a33ef7e59189deccc83706e0becd}{yytype\_\-int8}
+\item 
+typedef unsigned short int \hyperlink{grammar_8c_a00c27c9da5ed06a830b216c8934e6b28}{yytype\_\-uint16}
+\item 
+typedef short int \hyperlink{grammar_8c_ade5b97f0021a4f6c5922ead3744ab297}{yytype\_\-int16}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9}{yytokentype} \{ \par
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a86e6652aa292c8e978b68ace2b0f1300}{TOK\_\-BOOLEAN} =  258, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a7a97eb6460bcde5f66faca2e51730a82}{TOK\_\-INTEGER} =  259, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a1f511c1ba767bf05c44dacfa8eeefc2d}{TOK\_\-HEX} =  260, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a4c4ffb217c20c46d7d35faeac7b2ada2}{TOK\_\-INTEGER64} =  261, 
+\par
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a446a605af769360d9c5b511e02be998c}{TOK\_\-HEX64} =  262, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9add470148bc49b9406cab8014f1a05e1a}{TOK\_\-FLOAT} =  263, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a6aed8afdbbec5110277334eba1c8d1ef}{TOK\_\-STRING} =  264, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a2521ed04c163bb1cbdd6af6a3674cb8f}{TOK\_\-NAME} =  265, 
+\par
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a738fab9f730a0fb766fa02328739b7c3}{TOK\_\-EQUALS} =  266, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9af95d944540ec4759be1efca8422b1db7}{TOK\_\-NEWLINE} =  267, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a6b912e59d3b01ff97b3cdc99e34886e8}{TOK\_\-ARRAY\_\-START} =  268, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a32d61fe2e7d849bcd1e50d909c26eb83}{TOK\_\-ARRAY\_\-END} =  269, 
+\par
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9ac508a95b48de48b3afb83ffc60156165}{TOK\_\-LIST\_\-START} =  270, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a10da87e4de3f19460926990feb2b8eea}{TOK\_\-LIST\_\-END} =  271, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a62cdeef3d4613afb658caae912e99272}{TOK\_\-COMMA} =  272, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a37a6f71fb6a5c296e1fb86c95216a317}{TOK\_\-GROUP\_\-START} =  273, 
+\par
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a125079fe82e20957e1cab0f5eb29e655}{TOK\_\-GROUP\_\-END} =  274, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9aea2ea79171e8d0363830add7169ff88f}{TOK\_\-SEMICOLON} =  275, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a47ab3580bbebe6fe293dda08d328dec0}{TOK\_\-GARBAGE} =  276, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a1e45d4c51261381ea32625e93e1c6ea0}{TOK\_\-ERROR} =  277, 
+\par
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a86e6652aa292c8e978b68ace2b0f1300}{TOK\_\-BOOLEAN} =  258, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a7a97eb6460bcde5f66faca2e51730a82}{TOK\_\-INTEGER} =  259, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a1f511c1ba767bf05c44dacfa8eeefc2d}{TOK\_\-HEX} =  260, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a4c4ffb217c20c46d7d35faeac7b2ada2}{TOK\_\-INTEGER64} =  261, 
+\par
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a446a605af769360d9c5b511e02be998c}{TOK\_\-HEX64} =  262, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9add470148bc49b9406cab8014f1a05e1a}{TOK\_\-FLOAT} =  263, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a6aed8afdbbec5110277334eba1c8d1ef}{TOK\_\-STRING} =  264, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a2521ed04c163bb1cbdd6af6a3674cb8f}{TOK\_\-NAME} =  265, 
+\par
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a738fab9f730a0fb766fa02328739b7c3}{TOK\_\-EQUALS} =  266, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9af95d944540ec4759be1efca8422b1db7}{TOK\_\-NEWLINE} =  267, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a6b912e59d3b01ff97b3cdc99e34886e8}{TOK\_\-ARRAY\_\-START} =  268, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a32d61fe2e7d849bcd1e50d909c26eb83}{TOK\_\-ARRAY\_\-END} =  269, 
+\par
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9ac508a95b48de48b3afb83ffc60156165}{TOK\_\-LIST\_\-START} =  270, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a10da87e4de3f19460926990feb2b8eea}{TOK\_\-LIST\_\-END} =  271, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a62cdeef3d4613afb658caae912e99272}{TOK\_\-COMMA} =  272, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a37a6f71fb6a5c296e1fb86c95216a317}{TOK\_\-GROUP\_\-START} =  273, 
+\par
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a125079fe82e20957e1cab0f5eb29e655}{TOK\_\-GROUP\_\-END} =  274, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9aea2ea79171e8d0363830add7169ff88f}{TOK\_\-SEMICOLON} =  275, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a47ab3580bbebe6fe293dda08d328dec0}{TOK\_\-GARBAGE} =  276, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a1e45d4c51261381ea32625e93e1c6ea0}{TOK\_\-ERROR} =  277
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{grammar_8c_ac18f7233e786481972ad879c051492d0}{libconfig\_\-yylex} ()
+\item 
+int \hyperlink{grammar_8c_a8b9e5cf0670f0bc7132836fd8f89a497}{libconfig\_\-yyget\_\-lineno} ()
+\item 
+void \hyperlink{grammar_8c_aed5cee83fa537a585f1bd2a1799db48f}{libconfig\_\-yyerror} (void $\ast$scanner, struct \hyperlink{structparse__context}{parse\_\-context} $\ast$ctx, struct \hyperlink{structscan__context}{scan\_\-context} $\ast$scan\_\-ctx, char const $\ast$s)
+\item 
+int \hyperlink{grammar_8c_acd8617a8f2ac0de8bc1cc032cf449e19}{yyparse} ()
+\item 
+int \hyperlink{grammar_8c_aa95461e463ec8927a2b16e55683cfcaf}{yyparse} (void $\ast$scanner, struct \hyperlink{structparse__context}{parse\_\-context} $\ast$ctx, struct \hyperlink{structscan__context}{scan\_\-context} $\ast$scan\_\-ctx)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{grammar_8c_ae75d2f04c29571a14dc66528697efe32}{
+\index{grammar.c@{grammar.c}!\_\-delete@{\_\-delete}}
+\index{\_\-delete@{\_\-delete}!grammar.c@{grammar.c}}
+\subsubsection[{\_\-delete}]{\setlength{\rightskip}{0pt plus 5cm}\#define \_\-delete(
+\begin{DoxyParamCaption}
+\item[{}]{P}
+\end{DoxyParamCaption}
+)~free((void $\ast$)(P))}}
+\label{grammar_8c_ae75d2f04c29571a14dc66528697efe32}
+\hypertarget{grammar_8c_a9fb1c745cfc3d1942313cebbbae51673}{
+\index{grammar.c@{grammar.c}!CAPTURE\_\-PARSE\_\-POS@{CAPTURE\_\-PARSE\_\-POS}}
+\index{CAPTURE\_\-PARSE\_\-POS@{CAPTURE\_\-PARSE\_\-POS}!grammar.c@{grammar.c}}
+\subsubsection[{CAPTURE\_\-PARSE\_\-POS}]{\setlength{\rightskip}{0pt plus 5cm}\#define CAPTURE\_\-PARSE\_\-POS(
+\begin{DoxyParamCaption}
+\item[{}]{S}
+\end{DoxyParamCaption}
+)~capture\_\-parse\_\-pos(scanner, scan\_\-ctx, (S))}}
+\label{grammar_8c_a9fb1c745cfc3d1942313cebbbae51673}
+\hypertarget{grammar_8c_a8d59f7370b518ab03025dc6e3fbc52ef}{
+\index{grammar.c@{grammar.c}!IN\_\-ARRAY@{IN\_\-ARRAY}}
+\index{IN\_\-ARRAY@{IN\_\-ARRAY}!grammar.c@{grammar.c}}
+\subsubsection[{IN\_\-ARRAY}]{\setlength{\rightskip}{0pt plus 5cm}\#define IN\_\-ARRAY(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~(ctx-\/$>$parent \&\& (ctx-\/$>$parent-\/$>$type == CONFIG\_\-TYPE\_\-ARRAY))}}
+\label{grammar_8c_a8d59f7370b518ab03025dc6e3fbc52ef}
+\hypertarget{grammar_8c_adb192a467809ffee7532369d7ca17f1c}{
+\index{grammar.c@{grammar.c}!IN\_\-LIST@{IN\_\-LIST}}
+\index{IN\_\-LIST@{IN\_\-LIST}!grammar.c@{grammar.c}}
+\subsubsection[{IN\_\-LIST}]{\setlength{\rightskip}{0pt plus 5cm}\#define IN\_\-LIST(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~(ctx-\/$>$parent \&\& (ctx-\/$>$parent-\/$>$type == CONFIG\_\-TYPE\_\-LIST))}}
+\label{grammar_8c_adb192a467809ffee7532369d7ca17f1c}
+\hypertarget{grammar_8c_a2e7af18fe1642f5eb00831393339400b}{
+\index{grammar.c@{grammar.c}!TOK\_\-ARRAY\_\-END@{TOK\_\-ARRAY\_\-END}}
+\index{TOK\_\-ARRAY\_\-END@{TOK\_\-ARRAY\_\-END}!grammar.c@{grammar.c}}
+\subsubsection[{TOK\_\-ARRAY\_\-END}]{\setlength{\rightskip}{0pt plus 5cm}\#define TOK\_\-ARRAY\_\-END~269}}
+\label{grammar_8c_a2e7af18fe1642f5eb00831393339400b}
+\hypertarget{grammar_8c_a937ba1cd996133cb5532011c310d8bdc}{
+\index{grammar.c@{grammar.c}!TOK\_\-ARRAY\_\-START@{TOK\_\-ARRAY\_\-START}}
+\index{TOK\_\-ARRAY\_\-START@{TOK\_\-ARRAY\_\-START}!grammar.c@{grammar.c}}
+\subsubsection[{TOK\_\-ARRAY\_\-START}]{\setlength{\rightskip}{0pt plus 5cm}\#define TOK\_\-ARRAY\_\-START~268}}
+\label{grammar_8c_a937ba1cd996133cb5532011c310d8bdc}
+\hypertarget{grammar_8c_a57e5660f647aa60e11ca9782e158949d}{
+\index{grammar.c@{grammar.c}!TOK\_\-BOOLEAN@{TOK\_\-BOOLEAN}}
+\index{TOK\_\-BOOLEAN@{TOK\_\-BOOLEAN}!grammar.c@{grammar.c}}
+\subsubsection[{TOK\_\-BOOLEAN}]{\setlength{\rightskip}{0pt plus 5cm}\#define TOK\_\-BOOLEAN~258}}
+\label{grammar_8c_a57e5660f647aa60e11ca9782e158949d}
+\hypertarget{grammar_8c_ae83b5d27d87a650e964b21698da02fda}{
+\index{grammar.c@{grammar.c}!TOK\_\-COMMA@{TOK\_\-COMMA}}
+\index{TOK\_\-COMMA@{TOK\_\-COMMA}!grammar.c@{grammar.c}}
+\subsubsection[{TOK\_\-COMMA}]{\setlength{\rightskip}{0pt plus 5cm}\#define TOK\_\-COMMA~272}}
+\label{grammar_8c_ae83b5d27d87a650e964b21698da02fda}
+\hypertarget{grammar_8c_a2aee9f170594b125ed4275759d0f01f6}{
+\index{grammar.c@{grammar.c}!TOK\_\-EQUALS@{TOK\_\-EQUALS}}
+\index{TOK\_\-EQUALS@{TOK\_\-EQUALS}!grammar.c@{grammar.c}}
+\subsubsection[{TOK\_\-EQUALS}]{\setlength{\rightskip}{0pt plus 5cm}\#define TOK\_\-EQUALS~266}}
+\label{grammar_8c_a2aee9f170594b125ed4275759d0f01f6}
+\hypertarget{grammar_8c_a5d0d20b374e87f59d2aa1df79daf060b}{
+\index{grammar.c@{grammar.c}!TOK\_\-ERROR@{TOK\_\-ERROR}}
+\index{TOK\_\-ERROR@{TOK\_\-ERROR}!grammar.c@{grammar.c}}
+\subsubsection[{TOK\_\-ERROR}]{\setlength{\rightskip}{0pt plus 5cm}\#define TOK\_\-ERROR~277}}
+\label{grammar_8c_a5d0d20b374e87f59d2aa1df79daf060b}
+\hypertarget{grammar_8c_a3867e462c2d373a53251ca0b835aada5}{
+\index{grammar.c@{grammar.c}!TOK\_\-FLOAT@{TOK\_\-FLOAT}}
+\index{TOK\_\-FLOAT@{TOK\_\-FLOAT}!grammar.c@{grammar.c}}
+\subsubsection[{TOK\_\-FLOAT}]{\setlength{\rightskip}{0pt plus 5cm}\#define TOK\_\-FLOAT~263}}
+\label{grammar_8c_a3867e462c2d373a53251ca0b835aada5}
+\hypertarget{grammar_8c_aecad1fed21ec8638deecc2c2679b65e1}{
+\index{grammar.c@{grammar.c}!TOK\_\-GARBAGE@{TOK\_\-GARBAGE}}
+\index{TOK\_\-GARBAGE@{TOK\_\-GARBAGE}!grammar.c@{grammar.c}}
+\subsubsection[{TOK\_\-GARBAGE}]{\setlength{\rightskip}{0pt plus 5cm}\#define TOK\_\-GARBAGE~276}}
+\label{grammar_8c_aecad1fed21ec8638deecc2c2679b65e1}
+\hypertarget{grammar_8c_a1a07150c25e16b69bc8b8f1a2dd4a068}{
+\index{grammar.c@{grammar.c}!TOK\_\-GROUP\_\-END@{TOK\_\-GROUP\_\-END}}
+\index{TOK\_\-GROUP\_\-END@{TOK\_\-GROUP\_\-END}!grammar.c@{grammar.c}}
+\subsubsection[{TOK\_\-GROUP\_\-END}]{\setlength{\rightskip}{0pt plus 5cm}\#define TOK\_\-GROUP\_\-END~274}}
+\label{grammar_8c_a1a07150c25e16b69bc8b8f1a2dd4a068}
+\hypertarget{grammar_8c_a063013921856046cbea18e57736dc1e6}{
+\index{grammar.c@{grammar.c}!TOK\_\-GROUP\_\-START@{TOK\_\-GROUP\_\-START}}
+\index{TOK\_\-GROUP\_\-START@{TOK\_\-GROUP\_\-START}!grammar.c@{grammar.c}}
+\subsubsection[{TOK\_\-GROUP\_\-START}]{\setlength{\rightskip}{0pt plus 5cm}\#define TOK\_\-GROUP\_\-START~273}}
+\label{grammar_8c_a063013921856046cbea18e57736dc1e6}
+\hypertarget{grammar_8c_abbb8340fa8257a75865a060cb4f492d5}{
+\index{grammar.c@{grammar.c}!TOK\_\-HEX@{TOK\_\-HEX}}
+\index{TOK\_\-HEX@{TOK\_\-HEX}!grammar.c@{grammar.c}}
+\subsubsection[{TOK\_\-HEX}]{\setlength{\rightskip}{0pt plus 5cm}\#define TOK\_\-HEX~260}}
+\label{grammar_8c_abbb8340fa8257a75865a060cb4f492d5}
+\hypertarget{grammar_8c_ad9c1282beda9a0fcb200efcaf95a2702}{
+\index{grammar.c@{grammar.c}!TOK\_\-HEX64@{TOK\_\-HEX64}}
+\index{TOK\_\-HEX64@{TOK\_\-HEX64}!grammar.c@{grammar.c}}
+\subsubsection[{TOK\_\-HEX64}]{\setlength{\rightskip}{0pt plus 5cm}\#define TOK\_\-HEX64~262}}
+\label{grammar_8c_ad9c1282beda9a0fcb200efcaf95a2702}
+\hypertarget{grammar_8c_afe8234318c40d23aa0ef8d7c6c3bb613}{
+\index{grammar.c@{grammar.c}!TOK\_\-INTEGER@{TOK\_\-INTEGER}}
+\index{TOK\_\-INTEGER@{TOK\_\-INTEGER}!grammar.c@{grammar.c}}
+\subsubsection[{TOK\_\-INTEGER}]{\setlength{\rightskip}{0pt plus 5cm}\#define TOK\_\-INTEGER~259}}
+\label{grammar_8c_afe8234318c40d23aa0ef8d7c6c3bb613}
+\hypertarget{grammar_8c_a88bad54911209df594dc18cf5a862d77}{
+\index{grammar.c@{grammar.c}!TOK\_\-INTEGER64@{TOK\_\-INTEGER64}}
+\index{TOK\_\-INTEGER64@{TOK\_\-INTEGER64}!grammar.c@{grammar.c}}
+\subsubsection[{TOK\_\-INTEGER64}]{\setlength{\rightskip}{0pt plus 5cm}\#define TOK\_\-INTEGER64~261}}
+\label{grammar_8c_a88bad54911209df594dc18cf5a862d77}
+\hypertarget{grammar_8c_a8856a703899dd9d15e7e4eb179aa473f}{
+\index{grammar.c@{grammar.c}!TOK\_\-LIST\_\-END@{TOK\_\-LIST\_\-END}}
+\index{TOK\_\-LIST\_\-END@{TOK\_\-LIST\_\-END}!grammar.c@{grammar.c}}
+\subsubsection[{TOK\_\-LIST\_\-END}]{\setlength{\rightskip}{0pt plus 5cm}\#define TOK\_\-LIST\_\-END~271}}
+\label{grammar_8c_a8856a703899dd9d15e7e4eb179aa473f}
+\hypertarget{grammar_8c_a59dead6373ce8a009c37c2acc6bb03de}{
+\index{grammar.c@{grammar.c}!TOK\_\-LIST\_\-START@{TOK\_\-LIST\_\-START}}
+\index{TOK\_\-LIST\_\-START@{TOK\_\-LIST\_\-START}!grammar.c@{grammar.c}}
+\subsubsection[{TOK\_\-LIST\_\-START}]{\setlength{\rightskip}{0pt plus 5cm}\#define TOK\_\-LIST\_\-START~270}}
+\label{grammar_8c_a59dead6373ce8a009c37c2acc6bb03de}
+\hypertarget{grammar_8c_ad988fa86b948db0ed4e4093dea41c9d4}{
+\index{grammar.c@{grammar.c}!TOK\_\-NAME@{TOK\_\-NAME}}
+\index{TOK\_\-NAME@{TOK\_\-NAME}!grammar.c@{grammar.c}}
+\subsubsection[{TOK\_\-NAME}]{\setlength{\rightskip}{0pt plus 5cm}\#define TOK\_\-NAME~265}}
+\label{grammar_8c_ad988fa86b948db0ed4e4093dea41c9d4}
+\hypertarget{grammar_8c_a6d75325443212b60baee084ea24ccc62}{
+\index{grammar.c@{grammar.c}!TOK\_\-NEWLINE@{TOK\_\-NEWLINE}}
+\index{TOK\_\-NEWLINE@{TOK\_\-NEWLINE}!grammar.c@{grammar.c}}
+\subsubsection[{TOK\_\-NEWLINE}]{\setlength{\rightskip}{0pt plus 5cm}\#define TOK\_\-NEWLINE~267}}
+\label{grammar_8c_a6d75325443212b60baee084ea24ccc62}
+\hypertarget{grammar_8c_aeed3603d6bcfa2873994098d2bffe4be}{
+\index{grammar.c@{grammar.c}!TOK\_\-SEMICOLON@{TOK\_\-SEMICOLON}}
+\index{TOK\_\-SEMICOLON@{TOK\_\-SEMICOLON}!grammar.c@{grammar.c}}
+\subsubsection[{TOK\_\-SEMICOLON}]{\setlength{\rightskip}{0pt plus 5cm}\#define TOK\_\-SEMICOLON~275}}
+\label{grammar_8c_aeed3603d6bcfa2873994098d2bffe4be}
+\hypertarget{grammar_8c_a438ebcf2bfac5fd8af5356f3c0305839}{
+\index{grammar.c@{grammar.c}!TOK\_\-STRING@{TOK\_\-STRING}}
+\index{TOK\_\-STRING@{TOK\_\-STRING}!grammar.c@{grammar.c}}
+\subsubsection[{TOK\_\-STRING}]{\setlength{\rightskip}{0pt plus 5cm}\#define TOK\_\-STRING~264}}
+\label{grammar_8c_a438ebcf2bfac5fd8af5356f3c0305839}
+\hypertarget{grammar_8c_a86f079016f11f0600f4259f3f03f8d43}{
+\index{grammar.c@{grammar.c}!YY\_\-@{YY\_\-}}
+\index{YY\_\-@{YY\_\-}!grammar.c@{grammar.c}}
+\subsubsection[{YY\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\#define YY\_\-(
+\begin{DoxyParamCaption}
+\item[{}]{msgid}
+\end{DoxyParamCaption}
+)~msgid}}
+\label{grammar_8c_a86f079016f11f0600f4259f3f03f8d43}
+\hypertarget{grammar_8c_a52c7d936ca7e6c34687ff71f29b8cfd1}{
+\index{grammar.c@{grammar.c}!YY\_\-LOCATION\_\-PRINT@{YY\_\-LOCATION\_\-PRINT}}
+\index{YY\_\-LOCATION\_\-PRINT@{YY\_\-LOCATION\_\-PRINT}!grammar.c@{grammar.c}}
+\subsubsection[{YY\_\-LOCATION\_\-PRINT}]{\setlength{\rightskip}{0pt plus 5cm}\#define YY\_\-LOCATION\_\-PRINT(
+\begin{DoxyParamCaption}
+\item[{}]{File, }
+\item[{}]{Loc}
+\end{DoxyParamCaption}
+)~((void) 0)}}
+\label{grammar_8c_a52c7d936ca7e6c34687ff71f29b8cfd1}
+\hypertarget{grammar_8c_a49ad456240785266cadae498ddae9310}{
+\index{grammar.c@{grammar.c}!YY\_\-REDUCE\_\-PRINT@{YY\_\-REDUCE\_\-PRINT}}
+\index{YY\_\-REDUCE\_\-PRINT@{YY\_\-REDUCE\_\-PRINT}!grammar.c@{grammar.c}}
+\subsubsection[{YY\_\-REDUCE\_\-PRINT}]{\setlength{\rightskip}{0pt plus 5cm}\#define YY\_\-REDUCE\_\-PRINT(
+\begin{DoxyParamCaption}
+\item[{}]{Rule}
+\end{DoxyParamCaption}
+)}}
+\label{grammar_8c_a49ad456240785266cadae498ddae9310}
+\hypertarget{grammar_8c_a7a52157fbe194e3a347afc4ef750af77}{
+\index{grammar.c@{grammar.c}!YY\_\-STACK\_\-PRINT@{YY\_\-STACK\_\-PRINT}}
+\index{YY\_\-STACK\_\-PRINT@{YY\_\-STACK\_\-PRINT}!grammar.c@{grammar.c}}
+\subsubsection[{YY\_\-STACK\_\-PRINT}]{\setlength{\rightskip}{0pt plus 5cm}\#define YY\_\-STACK\_\-PRINT(
+\begin{DoxyParamCaption}
+\item[{}]{Bottom, }
+\item[{}]{Top}
+\end{DoxyParamCaption}
+)}}
+\label{grammar_8c_a7a52157fbe194e3a347afc4ef750af77}
+\hypertarget{grammar_8c_a1c510d33cb388afc9411141ba3076a36}{
+\index{grammar.c@{grammar.c}!YY\_\-SYMBOL\_\-PRINT@{YY\_\-SYMBOL\_\-PRINT}}
+\index{YY\_\-SYMBOL\_\-PRINT@{YY\_\-SYMBOL\_\-PRINT}!grammar.c@{grammar.c}}
+\subsubsection[{YY\_\-SYMBOL\_\-PRINT}]{\setlength{\rightskip}{0pt plus 5cm}\#define YY\_\-SYMBOL\_\-PRINT(
+\begin{DoxyParamCaption}
+\item[{}]{Title, }
+\item[{}]{Type, }
+\item[{}]{Value, }
+\item[{}]{Location}
+\end{DoxyParamCaption}
+)}}
+\label{grammar_8c_a1c510d33cb388afc9411141ba3076a36}
+\hypertarget{grammar_8c_a3bcde0b05b9aa4ec5169092d9d211dbd}{
+\index{grammar.c@{grammar.c}!YYABORT@{YYABORT}}
+\index{YYABORT@{YYABORT}!grammar.c@{grammar.c}}
+\subsubsection[{YYABORT}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYABORT~goto yyabortlab}}
+\label{grammar_8c_a3bcde0b05b9aa4ec5169092d9d211dbd}
+\hypertarget{grammar_8c_aa6c7a65b580c214b2ea832fd7bdd472e}{
+\index{grammar.c@{grammar.c}!YYACCEPT@{YYACCEPT}}
+\index{YYACCEPT@{YYACCEPT}!grammar.c@{grammar.c}}
+\subsubsection[{YYACCEPT}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYACCEPT~goto yyacceptlab}}
+\label{grammar_8c_aa6c7a65b580c214b2ea832fd7bdd472e}
+\hypertarget{grammar_8c_adfcaf974b837e3efc130377e9837b4fd}{
+\index{grammar.c@{grammar.c}!YYBACKUP@{YYBACKUP}}
+\index{YYBACKUP@{YYBACKUP}!grammar.c@{grammar.c}}
+\subsubsection[{YYBACKUP}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYBACKUP(
+\begin{DoxyParamCaption}
+\item[{}]{Token, }
+\item[{}]{Value}
+\end{DoxyParamCaption}
+)}}
+\label{grammar_8c_adfcaf974b837e3efc130377e9837b4fd}
+{\bfseries Value:}
+\begin{DoxyCode}
+do                                                              \
+  if (yychar == YYEMPTY && yylen == 1)                          \
+    {                                                           \
+      yychar = (Token);                                         \
+      yylval = (Value);                                         \
+      yytoken = YYTRANSLATE (yychar);                           \
+      YYPOPSTACK (1);                                           \
+      goto yybackup;                                            \
+    }                                                           \
+  else                                                          \
+    {                                                           \
+      yyerror (scanner, ctx, scan_ctx, YY_("syntax error: cannot back up")); \
+      YYERROR;                                                  \
+    }                                                           \
+while (YYID (0))
+\end{DoxyCode}
+\hypertarget{grammar_8c_a9f092f5b1dca6a6249fb2c7c8065b031}{
+\index{grammar.c@{grammar.c}!YYBISON@{YYBISON}}
+\index{YYBISON@{YYBISON}!grammar.c@{grammar.c}}
+\subsubsection[{YYBISON}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYBISON~1}}
+\label{grammar_8c_a9f092f5b1dca6a6249fb2c7c8065b031}
+\hypertarget{grammar_8c_a72ebd0ca5807efcc6a5ae4fb72dd1553}{
+\index{grammar.c@{grammar.c}!YYBISON\_\-VERSION@{YYBISON\_\-VERSION}}
+\index{YYBISON\_\-VERSION@{YYBISON\_\-VERSION}!grammar.c@{grammar.c}}
+\subsubsection[{YYBISON\_\-VERSION}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYBISON\_\-VERSION~\char`\"{}2.4.1\char`\"{}}}
+\label{grammar_8c_a72ebd0ca5807efcc6a5ae4fb72dd1553}
+\hypertarget{grammar_8c_a34af3aa88645c2f95bbb4d573f8713cb}{
+\index{grammar.c@{grammar.c}!yychar@{yychar}}
+\index{yychar@{yychar}!grammar.c@{grammar.c}}
+\subsubsection[{yychar}]{\setlength{\rightskip}{0pt plus 5cm}\#define yychar~libconfig\_\-yychar}}
+\label{grammar_8c_a34af3aa88645c2f95bbb4d573f8713cb}
+\hypertarget{grammar_8c_a5035d59933b3f5388c44f596145db047}{
+\index{grammar.c@{grammar.c}!yyclearin@{yyclearin}}
+\index{yyclearin@{yyclearin}!grammar.c@{grammar.c}}
+\subsubsection[{yyclearin}]{\setlength{\rightskip}{0pt plus 5cm}\#define yyclearin~(yychar = YYEMPTY)}}
+\label{grammar_8c_a5035d59933b3f5388c44f596145db047}
+\hypertarget{grammar_8c_ad6586b145b5cddce4eec46f35d59b1dd}{
+\index{grammar.c@{grammar.c}!YYCOPY@{YYCOPY}}
+\index{YYCOPY@{YYCOPY}!grammar.c@{grammar.c}}
+\subsubsection[{YYCOPY}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYCOPY(
+\begin{DoxyParamCaption}
+\item[{}]{To, }
+\item[{}]{From, }
+\item[{}]{Count}
+\end{DoxyParamCaption}
+)}}
+\label{grammar_8c_ad6586b145b5cddce4eec46f35d59b1dd}
+{\bfseries Value:}
+\begin{DoxyCode}
+do                                      \
+        {                                       \
+          YYSIZE_T yyi;                         \
+          for (yyi = 0; yyi < (Count); yyi++)   \
+            (To)[yyi] = (From)[yyi];            \
+        }                                       \
+      while (YYID (0))
+\end{DoxyCode}
+\hypertarget{grammar_8c_a853b3bfad6d2b2ff693dce81182e0c2e}{
+\index{grammar.c@{grammar.c}!YYDEBUG@{YYDEBUG}}
+\index{YYDEBUG@{YYDEBUG}!grammar.c@{grammar.c}}
+\subsubsection[{YYDEBUG}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYDEBUG~0}}
+\label{grammar_8c_a853b3bfad6d2b2ff693dce81182e0c2e}
+\hypertarget{grammar_8c_a7fde6236fcb0f6e5d1d20ce98d9f0d01}{
+\index{grammar.c@{grammar.c}!yydebug@{yydebug}}
+\index{yydebug@{yydebug}!grammar.c@{grammar.c}}
+\subsubsection[{yydebug}]{\setlength{\rightskip}{0pt plus 5cm}\#define yydebug~libconfig\_\-yydebug}}
+\label{grammar_8c_a7fde6236fcb0f6e5d1d20ce98d9f0d01}
+\hypertarget{grammar_8c_af6d6ca80e87922f90264f1a4a802ea04}{
+\index{grammar.c@{grammar.c}!YYDPRINTF@{YYDPRINTF}}
+\index{YYDPRINTF@{YYDPRINTF}!grammar.c@{grammar.c}}
+\subsubsection[{YYDPRINTF}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYDPRINTF(
+\begin{DoxyParamCaption}
+\item[{}]{Args}
+\end{DoxyParamCaption}
+)}}
+\label{grammar_8c_af6d6ca80e87922f90264f1a4a802ea04}
+\hypertarget{grammar_8c_ae59196b3765411a06cf234cf9bcae2e7}{
+\index{grammar.c@{grammar.c}!YYEMPTY@{YYEMPTY}}
+\index{YYEMPTY@{YYEMPTY}!grammar.c@{grammar.c}}
+\subsubsection[{YYEMPTY}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYEMPTY~(-\/2)}}
+\label{grammar_8c_ae59196b3765411a06cf234cf9bcae2e7}
+\hypertarget{grammar_8c_a3b1e3628411fabac03abe0a337322016}{
+\index{grammar.c@{grammar.c}!YYEOF@{YYEOF}}
+\index{YYEOF@{YYEOF}!grammar.c@{grammar.c}}
+\subsubsection[{YYEOF}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYEOF~0}}
+\label{grammar_8c_a3b1e3628411fabac03abe0a337322016}
+\hypertarget{grammar_8c_a552f295255821fa7dea11b0237e1d61a}{
+\index{grammar.c@{grammar.c}!YYERRCODE@{YYERRCODE}}
+\index{YYERRCODE@{YYERRCODE}!grammar.c@{grammar.c}}
+\subsubsection[{YYERRCODE}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYERRCODE~256}}
+\label{grammar_8c_a552f295255821fa7dea11b0237e1d61a}
+\hypertarget{grammar_8c_a20bf055e53dc4fd5afddfd752a4d1adb}{
+\index{grammar.c@{grammar.c}!yyerrok@{yyerrok}}
+\index{yyerrok@{yyerrok}!grammar.c@{grammar.c}}
+\subsubsection[{yyerrok}]{\setlength{\rightskip}{0pt plus 5cm}\#define yyerrok~(yyerrstatus = 0)}}
+\label{grammar_8c_a20bf055e53dc4fd5afddfd752a4d1adb}
+\hypertarget{grammar_8c_af1eef6197be78122699013d0784acc80}{
+\index{grammar.c@{grammar.c}!YYERROR@{YYERROR}}
+\index{YYERROR@{YYERROR}!grammar.c@{grammar.c}}
+\subsubsection[{YYERROR}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYERROR~goto yyerrorlab}}
+\label{grammar_8c_af1eef6197be78122699013d0784acc80}
+\hypertarget{grammar_8c_afd2adb2274e61b81cf475d1ebea69d50}{
+\index{grammar.c@{grammar.c}!yyerror@{yyerror}}
+\index{yyerror@{yyerror}!grammar.c@{grammar.c}}
+\subsubsection[{yyerror}]{\setlength{\rightskip}{0pt plus 5cm}\#define yyerror~libconfig\_\-yyerror}}
+\label{grammar_8c_afd2adb2274e61b81cf475d1ebea69d50}
+\hypertarget{grammar_8c_a0943f558a560b9b5fa0593d7e36496c1}{
+\index{grammar.c@{grammar.c}!YYERROR\_\-VERBOSE@{YYERROR\_\-VERBOSE}}
+\index{YYERROR\_\-VERBOSE@{YYERROR\_\-VERBOSE}!grammar.c@{grammar.c}}
+\subsubsection[{YYERROR\_\-VERBOSE}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYERROR\_\-VERBOSE~0}}
+\label{grammar_8c_a0943f558a560b9b5fa0593d7e36496c1}
+\hypertarget{grammar_8c_a383d9671b1abd97e4c6f3708d1ca32f3}{
+\index{grammar.c@{grammar.c}!YYFAIL@{YYFAIL}}
+\index{YYFAIL@{YYFAIL}!grammar.c@{grammar.c}}
+\subsubsection[{YYFAIL}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYFAIL~goto yyerrlab}}
+\label{grammar_8c_a383d9671b1abd97e4c6f3708d1ca32f3}
+\hypertarget{grammar_8c_a6419f3fd69ecb6b7e063410fd4e73b2f}{
+\index{grammar.c@{grammar.c}!YYFINAL@{YYFINAL}}
+\index{YYFINAL@{YYFINAL}!grammar.c@{grammar.c}}
+\subsubsection[{YYFINAL}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYFINAL~6}}
+\label{grammar_8c_a6419f3fd69ecb6b7e063410fd4e73b2f}
+\hypertarget{grammar_8c_ac8adfd73c006c1926f387feb1eced3ca}{
+\index{grammar.c@{grammar.c}!YYFREE@{YYFREE}}
+\index{YYFREE@{YYFREE}!grammar.c@{grammar.c}}
+\subsubsection[{YYFREE}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYFREE~free}}
+\label{grammar_8c_ac8adfd73c006c1926f387feb1eced3ca}
+\hypertarget{grammar_8c_a0a6ff515042340dd341cf6ca8dd05f2d}{
+\index{grammar.c@{grammar.c}!YYID@{YYID}}
+\index{YYID@{YYID}!grammar.c@{grammar.c}}
+\subsubsection[{YYID}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYID(
+\begin{DoxyParamCaption}
+\item[{}]{n}
+\end{DoxyParamCaption}
+)~(n)}}
+\label{grammar_8c_a0a6ff515042340dd341cf6ca8dd05f2d}
+\hypertarget{grammar_8c_aeb1508a3a38ec5d64c27e8eca25330b5}{
+\index{grammar.c@{grammar.c}!YYINITDEPTH@{YYINITDEPTH}}
+\index{YYINITDEPTH@{YYINITDEPTH}!grammar.c@{grammar.c}}
+\subsubsection[{YYINITDEPTH}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYINITDEPTH~200}}
+\label{grammar_8c_aeb1508a3a38ec5d64c27e8eca25330b5}
+\hypertarget{grammar_8c_ae67923760a28e3b7ed3aa2cfaef7f9a2}{
+\index{grammar.c@{grammar.c}!YYLAST@{YYLAST}}
+\index{YYLAST@{YYLAST}!grammar.c@{grammar.c}}
+\subsubsection[{YYLAST}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYLAST~35}}
+\label{grammar_8c_ae67923760a28e3b7ed3aa2cfaef7f9a2}
+\hypertarget{grammar_8c_a5611300548b2030d86b6ab9168132b88}{
+\index{grammar.c@{grammar.c}!yylex@{yylex}}
+\index{yylex@{yylex}!grammar.c@{grammar.c}}
+\subsubsection[{yylex}]{\setlength{\rightskip}{0pt plus 5cm}\#define yylex~libconfig\_\-yylex}}
+\label{grammar_8c_a5611300548b2030d86b6ab9168132b88}
+\hypertarget{grammar_8c_a0ea34e09602d1ede033f16ba669ef24b}{
+\index{grammar.c@{grammar.c}!YYLEX@{YYLEX}}
+\index{YYLEX@{YYLEX}!grammar.c@{grammar.c}}
+\subsubsection[{YYLEX}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYLEX~yylex (\&yylval, scanner)}}
+\label{grammar_8c_a0ea34e09602d1ede033f16ba669ef24b}
+\hypertarget{grammar_8c_a485d38f93de30679900c9cad6e7f3446}{
+\index{grammar.c@{grammar.c}!YYLLOC\_\-DEFAULT@{YYLLOC\_\-DEFAULT}}
+\index{YYLLOC\_\-DEFAULT@{YYLLOC\_\-DEFAULT}!grammar.c@{grammar.c}}
+\subsubsection[{YYLLOC\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYLLOC\_\-DEFAULT(
+\begin{DoxyParamCaption}
+\item[{}]{Current, }
+\item[{}]{Rhs, }
+\item[{}]{N}
+\end{DoxyParamCaption}
+)}}
+\label{grammar_8c_a485d38f93de30679900c9cad6e7f3446}
+{\bfseries Value:}
+\begin{DoxyCode}
+do                                                                      \
+      if (YYID (N))                                                    \
+        {                                                               \
+          (Current).first_line   = YYRHSLOC (Rhs, 1).first_line;        \
+          (Current).first_column = YYRHSLOC (Rhs, 1).first_column;      \
+          (Current).last_line    = YYRHSLOC (Rhs, N).last_line;         \
+          (Current).last_column  = YYRHSLOC (Rhs, N).last_column;       \
+        }                                                               \
+      else                                                              \
+        {                                                               \
+          (Current).first_line   = (Current).last_line   =              \
+            YYRHSLOC (Rhs, 0).last_line;                                \
+          (Current).first_column = (Current).last_column =              \
+            YYRHSLOC (Rhs, 0).last_column;                              \
+        }                                                               \
+    while (YYID (0))
+\end{DoxyCode}
+\hypertarget{grammar_8c_abb3943553c2b5e911c89a3ea973d3079}{
+\index{grammar.c@{grammar.c}!YYLSP\_\-NEEDED@{YYLSP\_\-NEEDED}}
+\index{YYLSP\_\-NEEDED@{YYLSP\_\-NEEDED}!grammar.c@{grammar.c}}
+\subsubsection[{YYLSP\_\-NEEDED}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYLSP\_\-NEEDED~0}}
+\label{grammar_8c_abb3943553c2b5e911c89a3ea973d3079}
+\hypertarget{grammar_8c_a75acfb3798e577ebd296e604e422e86b}{
+\index{grammar.c@{grammar.c}!yylval@{yylval}}
+\index{yylval@{yylval}!grammar.c@{grammar.c}}
+\subsubsection[{yylval}]{\setlength{\rightskip}{0pt plus 5cm}\#define yylval~libconfig\_\-yylval}}
+\label{grammar_8c_a75acfb3798e577ebd296e604e422e86b}
+\hypertarget{grammar_8c_a573b05852d8f080c907dfba725773d7a}{
+\index{grammar.c@{grammar.c}!YYMALLOC@{YYMALLOC}}
+\index{YYMALLOC@{YYMALLOC}!grammar.c@{grammar.c}}
+\subsubsection[{YYMALLOC}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYMALLOC~malloc}}
+\label{grammar_8c_a573b05852d8f080c907dfba725773d7a}
+\hypertarget{grammar_8c_a14ba2b263c446ffed1c888c4b42ae40c}{
+\index{grammar.c@{grammar.c}!YYMAXDEPTH@{YYMAXDEPTH}}
+\index{YYMAXDEPTH@{YYMAXDEPTH}!grammar.c@{grammar.c}}
+\subsubsection[{YYMAXDEPTH}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYMAXDEPTH~10000}}
+\label{grammar_8c_a14ba2b263c446ffed1c888c4b42ae40c}
+\hypertarget{grammar_8c_af3f5ed4bc4517eff0ef1b17541192a58}{
+\index{grammar.c@{grammar.c}!YYMAXUTOK@{YYMAXUTOK}}
+\index{YYMAXUTOK@{YYMAXUTOK}!grammar.c@{grammar.c}}
+\subsubsection[{YYMAXUTOK}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYMAXUTOK~277}}
+\label{grammar_8c_af3f5ed4bc4517eff0ef1b17541192a58}
+\hypertarget{grammar_8c_a956a31a9c729bfe871bb770d99e1942d}{
+\index{grammar.c@{grammar.c}!yynerrs@{yynerrs}}
+\index{yynerrs@{yynerrs}!grammar.c@{grammar.c}}
+\subsubsection[{yynerrs}]{\setlength{\rightskip}{0pt plus 5cm}\#define yynerrs~libconfig\_\-yynerrs}}
+\label{grammar_8c_a956a31a9c729bfe871bb770d99e1942d}
+\hypertarget{grammar_8c_af54ae9e588f0ecc32eabbfdf1959df10}{
+\index{grammar.c@{grammar.c}!YYNNTS@{YYNNTS}}
+\index{YYNNTS@{YYNNTS}!grammar.c@{grammar.c}}
+\subsubsection[{YYNNTS}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYNNTS~20}}
+\label{grammar_8c_af54ae9e588f0ecc32eabbfdf1959df10}
+\hypertarget{grammar_8c_aceaba8997dc3867478ae3b816647eb7c}{
+\index{grammar.c@{grammar.c}!YYNRULES@{YYNRULES}}
+\index{YYNRULES@{YYNRULES}!grammar.c@{grammar.c}}
+\subsubsection[{YYNRULES}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYNRULES~39}}
+\label{grammar_8c_aceaba8997dc3867478ae3b816647eb7c}
+\hypertarget{grammar_8c_a2c387ba2caaade8bf8f78ed30023f79f}{
+\index{grammar.c@{grammar.c}!YYNSTATES@{YYNSTATES}}
+\index{YYNSTATES@{YYNSTATES}!grammar.c@{grammar.c}}
+\subsubsection[{YYNSTATES}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYNSTATES~47}}
+\label{grammar_8c_a2c387ba2caaade8bf8f78ed30023f79f}
+\hypertarget{grammar_8c_a75d260730a6c379a94ea28f63a7b9275}{
+\index{grammar.c@{grammar.c}!YYNTOKENS@{YYNTOKENS}}
+\index{YYNTOKENS@{YYNTOKENS}!grammar.c@{grammar.c}}
+\subsubsection[{YYNTOKENS}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYNTOKENS~23}}
+\label{grammar_8c_a75d260730a6c379a94ea28f63a7b9275}
+\hypertarget{grammar_8c_a62bf0ed0c4360b077071b5cf3177823b}{
+\index{grammar.c@{grammar.c}!YYPACT\_\-NINF@{YYPACT\_\-NINF}}
+\index{YYPACT\_\-NINF@{YYPACT\_\-NINF}!grammar.c@{grammar.c}}
+\subsubsection[{YYPACT\_\-NINF}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYPACT\_\-NINF~-\/26}}
+\label{grammar_8c_a62bf0ed0c4360b077071b5cf3177823b}
+\hypertarget{grammar_8c_a7482716c0f7d5bc8387ad56daa3a9fde}{
+\index{grammar.c@{grammar.c}!yyparse@{yyparse}}
+\index{yyparse@{yyparse}!grammar.c@{grammar.c}}
+\subsubsection[{yyparse}]{\setlength{\rightskip}{0pt plus 5cm}\#define yyparse~libconfig\_\-yyparse}}
+\label{grammar_8c_a7482716c0f7d5bc8387ad56daa3a9fde}
+\hypertarget{grammar_8c_ad2f9773cd9c031026b2ef4c1ee7be1be}{
+\index{grammar.c@{grammar.c}!YYPOPSTACK@{YYPOPSTACK}}
+\index{YYPOPSTACK@{YYPOPSTACK}!grammar.c@{grammar.c}}
+\subsubsection[{YYPOPSTACK}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYPOPSTACK(
+\begin{DoxyParamCaption}
+\item[{}]{N}
+\end{DoxyParamCaption}
+)~(yyvsp -\/= (N), yyssp -\/= (N))}}
+\label{grammar_8c_ad2f9773cd9c031026b2ef4c1ee7be1be}
+\hypertarget{grammar_8c_a90f059b8a9d6c30a1e44e1b80d3fd6c8}{
+\index{grammar.c@{grammar.c}!YYPULL@{YYPULL}}
+\index{YYPULL@{YYPULL}!grammar.c@{grammar.c}}
+\subsubsection[{YYPULL}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYPULL~1}}
+\label{grammar_8c_a90f059b8a9d6c30a1e44e1b80d3fd6c8}
+\hypertarget{grammar_8c_a9fa797a1f3c4fc9b12d1e4d569612767}{
+\index{grammar.c@{grammar.c}!YYPURE@{YYPURE}}
+\index{YYPURE@{YYPURE}!grammar.c@{grammar.c}}
+\subsubsection[{YYPURE}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYPURE~1}}
+\label{grammar_8c_a9fa797a1f3c4fc9b12d1e4d569612767}
+\hypertarget{grammar_8c_a3aa6e4af11755f8cf8e5ddb26833e918}{
+\index{grammar.c@{grammar.c}!YYPUSH@{YYPUSH}}
+\index{YYPUSH@{YYPUSH}!grammar.c@{grammar.c}}
+\subsubsection[{YYPUSH}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYPUSH~0}}
+\label{grammar_8c_a3aa6e4af11755f8cf8e5ddb26833e918}
+\hypertarget{grammar_8c_ad860e18ca4b79fc589895b531bdb7948}{
+\index{grammar.c@{grammar.c}!YYRECOVERING@{YYRECOVERING}}
+\index{YYRECOVERING@{YYRECOVERING}!grammar.c@{grammar.c}}
+\subsubsection[{YYRECOVERING}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYRECOVERING(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~(!!yyerrstatus)}}
+\label{grammar_8c_ad860e18ca4b79fc589895b531bdb7948}
+\hypertarget{grammar_8c_ab2b4f027a2b092ac14ca4464e7b3db60}{
+\index{grammar.c@{grammar.c}!YYRHSLOC@{YYRHSLOC}}
+\index{YYRHSLOC@{YYRHSLOC}!grammar.c@{grammar.c}}
+\subsubsection[{YYRHSLOC}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYRHSLOC(
+\begin{DoxyParamCaption}
+\item[{}]{Rhs, }
+\item[{}]{K}
+\end{DoxyParamCaption}
+)~((Rhs)\mbox{[}K\mbox{]})}}
+\label{grammar_8c_ab2b4f027a2b092ac14ca4464e7b3db60}
+\hypertarget{grammar_8c_ab4bb7ad82d4a7e2df49ff6a8fb484109}{
+\index{grammar.c@{grammar.c}!YYSIZE\_\-MAXIMUM@{YYSIZE\_\-MAXIMUM}}
+\index{YYSIZE\_\-MAXIMUM@{YYSIZE\_\-MAXIMUM}!grammar.c@{grammar.c}}
+\subsubsection[{YYSIZE\_\-MAXIMUM}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYSIZE\_\-MAXIMUM~((YYSIZE\_\-T) -\/1)}}
+\label{grammar_8c_ab4bb7ad82d4a7e2df49ff6a8fb484109}
+\hypertarget{grammar_8c_a7d535939e93253736c6eeda569d24de5}{
+\index{grammar.c@{grammar.c}!YYSIZE\_\-T@{YYSIZE\_\-T}}
+\index{YYSIZE\_\-T@{YYSIZE\_\-T}!grammar.c@{grammar.c}}
+\subsubsection[{YYSIZE\_\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYSIZE\_\-T~unsigned int}}
+\label{grammar_8c_a7d535939e93253736c6eeda569d24de5}
+\hypertarget{grammar_8c_a50db5aef8c2b6f13961b2480b37f84c0}{
+\index{grammar.c@{grammar.c}!YYSKELETON\_\-NAME@{YYSKELETON\_\-NAME}}
+\index{YYSKELETON\_\-NAME@{YYSKELETON\_\-NAME}!grammar.c@{grammar.c}}
+\subsubsection[{YYSKELETON\_\-NAME}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYSKELETON\_\-NAME~\char`\"{}yacc.c\char`\"{}}}
+\label{grammar_8c_a50db5aef8c2b6f13961b2480b37f84c0}
+\hypertarget{grammar_8c_af45042ce56e04d634420d76caeb2ee73}{
+\index{grammar.c@{grammar.c}!YYSTACK\_\-ALLOC@{YYSTACK\_\-ALLOC}}
+\index{YYSTACK\_\-ALLOC@{YYSTACK\_\-ALLOC}!grammar.c@{grammar.c}}
+\subsubsection[{YYSTACK\_\-ALLOC}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYSTACK\_\-ALLOC~YYMALLOC}}
+\label{grammar_8c_af45042ce56e04d634420d76caeb2ee73}
+\hypertarget{grammar_8c_a7e55d995c7458f2f4af94a426d0adde8}{
+\index{grammar.c@{grammar.c}!YYSTACK\_\-ALLOC\_\-MAXIMUM@{YYSTACK\_\-ALLOC\_\-MAXIMUM}}
+\index{YYSTACK\_\-ALLOC\_\-MAXIMUM@{YYSTACK\_\-ALLOC\_\-MAXIMUM}!grammar.c@{grammar.c}}
+\subsubsection[{YYSTACK\_\-ALLOC\_\-MAXIMUM}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYSTACK\_\-ALLOC\_\-MAXIMUM~YYSIZE\_\-MAXIMUM}}
+\label{grammar_8c_a7e55d995c7458f2f4af94a426d0adde8}
+\hypertarget{grammar_8c_a40beb355f2cf230a99e2e2bb54909a5a}{
+\index{grammar.c@{grammar.c}!YYSTACK\_\-BYTES@{YYSTACK\_\-BYTES}}
+\index{YYSTACK\_\-BYTES@{YYSTACK\_\-BYTES}!grammar.c@{grammar.c}}
+\subsubsection[{YYSTACK\_\-BYTES}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYSTACK\_\-BYTES(
+\begin{DoxyParamCaption}
+\item[{}]{N}
+\end{DoxyParamCaption}
+)}}
+\label{grammar_8c_a40beb355f2cf230a99e2e2bb54909a5a}
+{\bfseries Value:}
+\begin{DoxyCode}
+((N) * (sizeof (yytype_int16) + sizeof (YYSTYPE)) \
+      + YYSTACK_GAP_MAXIMUM)
+\end{DoxyCode}
+\hypertarget{grammar_8c_a1a9dc526fd390d4808252bd631c4c2f7}{
+\index{grammar.c@{grammar.c}!YYSTACK\_\-FREE@{YYSTACK\_\-FREE}}
+\index{YYSTACK\_\-FREE@{YYSTACK\_\-FREE}!grammar.c@{grammar.c}}
+\subsubsection[{YYSTACK\_\-FREE}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYSTACK\_\-FREE~YYFREE}}
+\label{grammar_8c_a1a9dc526fd390d4808252bd631c4c2f7}
+\hypertarget{grammar_8c_afcd15dd0fa87ffba0371c6d6a0cc9631}{
+\index{grammar.c@{grammar.c}!YYSTACK\_\-GAP\_\-MAXIMUM@{YYSTACK\_\-GAP\_\-MAXIMUM}}
+\index{YYSTACK\_\-GAP\_\-MAXIMUM@{YYSTACK\_\-GAP\_\-MAXIMUM}!grammar.c@{grammar.c}}
+\subsubsection[{YYSTACK\_\-GAP\_\-MAXIMUM}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYSTACK\_\-GAP\_\-MAXIMUM~(sizeof (union {\bf yyalloc}) -\/ 1)}}
+\label{grammar_8c_afcd15dd0fa87ffba0371c6d6a0cc9631}
+\hypertarget{grammar_8c_ae780b90b638f37309f20dc07f94e8221}{
+\index{grammar.c@{grammar.c}!YYSTACK\_\-RELOCATE@{YYSTACK\_\-RELOCATE}}
+\index{YYSTACK\_\-RELOCATE@{YYSTACK\_\-RELOCATE}!grammar.c@{grammar.c}}
+\subsubsection[{YYSTACK\_\-RELOCATE}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYSTACK\_\-RELOCATE(
+\begin{DoxyParamCaption}
+\item[{}]{Stack\_\-alloc, }
+\item[{}]{Stack}
+\end{DoxyParamCaption}
+)}}
+\label{grammar_8c_ae780b90b638f37309f20dc07f94e8221}
+{\bfseries Value:}
+\begin{DoxyCode}
+do                                                                      \
+      {                                                                 \
+        YYSIZE_T yynewbytes;                                            \
+        YYCOPY (&yyptr->Stack_alloc, Stack, yysize);                    \
+        Stack = &yyptr->Stack_alloc;                                    \
+        yynewbytes = yystacksize * sizeof (*Stack) + YYSTACK_GAP_MAXIMUM; \
+        yyptr += yynewbytes / sizeof (*yyptr);                          \
+      }                                                                 \
+    while (YYID (0))
+\end{DoxyCode}
+\hypertarget{grammar_8c_a4ccf5315e8f5c1cec48ec67ca1771e3a}{
+\index{grammar.c@{grammar.c}!yystype@{yystype}}
+\index{yystype@{yystype}!grammar.c@{grammar.c}}
+\subsubsection[{yystype}]{\setlength{\rightskip}{0pt plus 5cm}\#define yystype~{\bf YYSTYPE}}}
+\label{grammar_8c_a4ccf5315e8f5c1cec48ec67ca1771e3a}
+\hypertarget{grammar_8c_af0232d21120b2cfc5e5f82f0fbadab3c}{
+\index{grammar.c@{grammar.c}!YYSTYPE\_\-IS\_\-DECLARED@{YYSTYPE\_\-IS\_\-DECLARED}}
+\index{YYSTYPE\_\-IS\_\-DECLARED@{YYSTYPE\_\-IS\_\-DECLARED}!grammar.c@{grammar.c}}
+\subsubsection[{YYSTYPE\_\-IS\_\-DECLARED}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYSTYPE\_\-IS\_\-DECLARED~1}}
+\label{grammar_8c_af0232d21120b2cfc5e5f82f0fbadab3c}
+\hypertarget{grammar_8c_a2e3dbf169c5ee24cf6af37c61cf3995d}{
+\index{grammar.c@{grammar.c}!YYSTYPE\_\-IS\_\-TRIVIAL@{YYSTYPE\_\-IS\_\-TRIVIAL}}
+\index{YYSTYPE\_\-IS\_\-TRIVIAL@{YYSTYPE\_\-IS\_\-TRIVIAL}!grammar.c@{grammar.c}}
+\subsubsection[{YYSTYPE\_\-IS\_\-TRIVIAL}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYSTYPE\_\-IS\_\-TRIVIAL~1}}
+\label{grammar_8c_a2e3dbf169c5ee24cf6af37c61cf3995d}
+\hypertarget{grammar_8c_a504faa93b92f37fcc147f68e8d111a1d}{
+\index{grammar.c@{grammar.c}!YYTABLE\_\-NINF@{YYTABLE\_\-NINF}}
+\index{YYTABLE\_\-NINF@{YYTABLE\_\-NINF}!grammar.c@{grammar.c}}
+\subsubsection[{YYTABLE\_\-NINF}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYTABLE\_\-NINF~-\/1}}
+\label{grammar_8c_a504faa93b92f37fcc147f68e8d111a1d}
+\hypertarget{grammar_8c_ad2b58b1851184ddb3b60fede50bc7946}{
+\index{grammar.c@{grammar.c}!YYTERROR@{YYTERROR}}
+\index{YYTERROR@{YYTERROR}!grammar.c@{grammar.c}}
+\subsubsection[{YYTERROR}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYTERROR~1}}
+\label{grammar_8c_ad2b58b1851184ddb3b60fede50bc7946}
+\hypertarget{grammar_8c_a3499e31aa832edc82b632ae811286a4b}{
+\index{grammar.c@{grammar.c}!YYTOKEN\_\-TABLE@{YYTOKEN\_\-TABLE}}
+\index{YYTOKEN\_\-TABLE@{YYTOKEN\_\-TABLE}!grammar.c@{grammar.c}}
+\subsubsection[{YYTOKEN\_\-TABLE}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYTOKEN\_\-TABLE~0}}
+\label{grammar_8c_a3499e31aa832edc82b632ae811286a4b}
+\hypertarget{grammar_8c_a69ca0fbcc6d7aa5e8f47b11fc0048208}{
+\index{grammar.c@{grammar.c}!YYTOKENTYPE@{YYTOKENTYPE}}
+\index{YYTOKENTYPE@{YYTOKENTYPE}!grammar.c@{grammar.c}}
+\subsubsection[{YYTOKENTYPE}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYTOKENTYPE}}
+\label{grammar_8c_a69ca0fbcc6d7aa5e8f47b11fc0048208}
+\hypertarget{grammar_8c_aad19ee88e33c02c4e720b28f78249bd7}{
+\index{grammar.c@{grammar.c}!YYTRANSLATE@{YYTRANSLATE}}
+\index{YYTRANSLATE@{YYTRANSLATE}!grammar.c@{grammar.c}}
+\subsubsection[{YYTRANSLATE}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYTRANSLATE(
+\begin{DoxyParamCaption}
+\item[{}]{YYX}
+\end{DoxyParamCaption}
+)~((unsigned int) (YYX) $<$= YYMAXUTOK ? yytranslate\mbox{[}YYX\mbox{]} : YYUNDEFTOK)}}
+\label{grammar_8c_aad19ee88e33c02c4e720b28f78249bd7}
+\hypertarget{grammar_8c_a926181abd06b6d1df27b6133971c24ce}{
+\index{grammar.c@{grammar.c}!YYUNDEFTOK@{YYUNDEFTOK}}
+\index{YYUNDEFTOK@{YYUNDEFTOK}!grammar.c@{grammar.c}}
+\subsubsection[{YYUNDEFTOK}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYUNDEFTOK~2}}
+\label{grammar_8c_a926181abd06b6d1df27b6133971c24ce}
+\hypertarget{grammar_8c_ad7d1ef1bbc6adfe69894bc8221f557e1}{
+\index{grammar.c@{grammar.c}!YYUSE@{YYUSE}}
+\index{YYUSE@{YYUSE}!grammar.c@{grammar.c}}
+\subsubsection[{YYUSE}]{\setlength{\rightskip}{0pt plus 5cm}\#define YYUSE(
+\begin{DoxyParamCaption}
+\item[{}]{e}
+\end{DoxyParamCaption}
+)~((void) (e))}}
+\label{grammar_8c_ad7d1ef1bbc6adfe69894bc8221f557e1}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{grammar_8c_a09fb1f7c65e10ed0f0c1aa8ef7ce16b5}{
+\index{grammar.c@{grammar.c}!YYSTYPE@{YYSTYPE}}
+\index{YYSTYPE@{YYSTYPE}!grammar.c@{grammar.c}}
+\subsubsection[{YYSTYPE}]{\setlength{\rightskip}{0pt plus 5cm}typedef union {\bf YYSTYPE}  {\bf YYSTYPE}}}
+\label{grammar_8c_a09fb1f7c65e10ed0f0c1aa8ef7ce16b5}
+\hypertarget{grammar_8c_ade5b97f0021a4f6c5922ead3744ab297}{
+\index{grammar.c@{grammar.c}!yytype\_\-int16@{yytype\_\-int16}}
+\index{yytype\_\-int16@{yytype\_\-int16}!grammar.c@{grammar.c}}
+\subsubsection[{yytype\_\-int16}]{\setlength{\rightskip}{0pt plus 5cm}typedef short int {\bf yytype\_\-int16}}}
+\label{grammar_8c_ade5b97f0021a4f6c5922ead3744ab297}
+\hypertarget{grammar_8c_afd56a33ef7e59189deccc83706e0becd}{
+\index{grammar.c@{grammar.c}!yytype\_\-int8@{yytype\_\-int8}}
+\index{yytype\_\-int8@{yytype\_\-int8}!grammar.c@{grammar.c}}
+\subsubsection[{yytype\_\-int8}]{\setlength{\rightskip}{0pt plus 5cm}typedef short int {\bf yytype\_\-int8}}}
+\label{grammar_8c_afd56a33ef7e59189deccc83706e0becd}
+\hypertarget{grammar_8c_a00c27c9da5ed06a830b216c8934e6b28}{
+\index{grammar.c@{grammar.c}!yytype\_\-uint16@{yytype\_\-uint16}}
+\index{yytype\_\-uint16@{yytype\_\-uint16}!grammar.c@{grammar.c}}
+\subsubsection[{yytype\_\-uint16}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short int {\bf yytype\_\-uint16}}}
+\label{grammar_8c_a00c27c9da5ed06a830b216c8934e6b28}
+\hypertarget{grammar_8c_a79c09f9dcfd0f7a32f598ea3910d2206}{
+\index{grammar.c@{grammar.c}!yytype\_\-uint8@{yytype\_\-uint8}}
+\index{yytype\_\-uint8@{yytype\_\-uint8}!grammar.c@{grammar.c}}
+\subsubsection[{yytype\_\-uint8}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf yytype\_\-uint8}}}
+\label{grammar_8c_a79c09f9dcfd0f7a32f598ea3910d2206}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9}{
+\index{grammar.c@{grammar.c}!yytokentype@{yytokentype}}
+\index{yytokentype@{yytokentype}!grammar.c@{grammar.c}}
+\subsubsection[{yytokentype}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf yytokentype}}}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{TOK\_\-BOOLEAN@{TOK\_\-BOOLEAN}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-BOOLEAN@{TOK\_\-BOOLEAN}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a86e6652aa292c8e978b68ace2b0f1300}{
+TOK\_\-BOOLEAN}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a86e6652aa292c8e978b68ace2b0f1300}
+}]\index{TOK\_\-INTEGER@{TOK\_\-INTEGER}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-INTEGER@{TOK\_\-INTEGER}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a7a97eb6460bcde5f66faca2e51730a82}{
+TOK\_\-INTEGER}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a7a97eb6460bcde5f66faca2e51730a82}
+}]\index{TOK\_\-HEX@{TOK\_\-HEX}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-HEX@{TOK\_\-HEX}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a1f511c1ba767bf05c44dacfa8eeefc2d}{
+TOK\_\-HEX}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a1f511c1ba767bf05c44dacfa8eeefc2d}
+}]\index{TOK\_\-INTEGER64@{TOK\_\-INTEGER64}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-INTEGER64@{TOK\_\-INTEGER64}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a4c4ffb217c20c46d7d35faeac7b2ada2}{
+TOK\_\-INTEGER64}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a4c4ffb217c20c46d7d35faeac7b2ada2}
+}]\index{TOK\_\-HEX64@{TOK\_\-HEX64}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-HEX64@{TOK\_\-HEX64}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a446a605af769360d9c5b511e02be998c}{
+TOK\_\-HEX64}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a446a605af769360d9c5b511e02be998c}
+}]\index{TOK\_\-FLOAT@{TOK\_\-FLOAT}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-FLOAT@{TOK\_\-FLOAT}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9add470148bc49b9406cab8014f1a05e1a}{
+TOK\_\-FLOAT}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9add470148bc49b9406cab8014f1a05e1a}
+}]\index{TOK\_\-STRING@{TOK\_\-STRING}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-STRING@{TOK\_\-STRING}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a6aed8afdbbec5110277334eba1c8d1ef}{
+TOK\_\-STRING}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a6aed8afdbbec5110277334eba1c8d1ef}
+}]\index{TOK\_\-NAME@{TOK\_\-NAME}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-NAME@{TOK\_\-NAME}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a2521ed04c163bb1cbdd6af6a3674cb8f}{
+TOK\_\-NAME}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a2521ed04c163bb1cbdd6af6a3674cb8f}
+}]\index{TOK\_\-EQUALS@{TOK\_\-EQUALS}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-EQUALS@{TOK\_\-EQUALS}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a738fab9f730a0fb766fa02328739b7c3}{
+TOK\_\-EQUALS}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a738fab9f730a0fb766fa02328739b7c3}
+}]\index{TOK\_\-NEWLINE@{TOK\_\-NEWLINE}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-NEWLINE@{TOK\_\-NEWLINE}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9af95d944540ec4759be1efca8422b1db7}{
+TOK\_\-NEWLINE}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9af95d944540ec4759be1efca8422b1db7}
+}]\index{TOK\_\-ARRAY\_\-START@{TOK\_\-ARRAY\_\-START}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-ARRAY\_\-START@{TOK\_\-ARRAY\_\-START}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a6b912e59d3b01ff97b3cdc99e34886e8}{
+TOK\_\-ARRAY\_\-START}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a6b912e59d3b01ff97b3cdc99e34886e8}
+}]\index{TOK\_\-ARRAY\_\-END@{TOK\_\-ARRAY\_\-END}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-ARRAY\_\-END@{TOK\_\-ARRAY\_\-END}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a32d61fe2e7d849bcd1e50d909c26eb83}{
+TOK\_\-ARRAY\_\-END}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a32d61fe2e7d849bcd1e50d909c26eb83}
+}]\index{TOK\_\-LIST\_\-START@{TOK\_\-LIST\_\-START}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-LIST\_\-START@{TOK\_\-LIST\_\-START}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9ac508a95b48de48b3afb83ffc60156165}{
+TOK\_\-LIST\_\-START}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9ac508a95b48de48b3afb83ffc60156165}
+}]\index{TOK\_\-LIST\_\-END@{TOK\_\-LIST\_\-END}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-LIST\_\-END@{TOK\_\-LIST\_\-END}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a10da87e4de3f19460926990feb2b8eea}{
+TOK\_\-LIST\_\-END}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a10da87e4de3f19460926990feb2b8eea}
+}]\index{TOK\_\-COMMA@{TOK\_\-COMMA}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-COMMA@{TOK\_\-COMMA}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a62cdeef3d4613afb658caae912e99272}{
+TOK\_\-COMMA}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a62cdeef3d4613afb658caae912e99272}
+}]\index{TOK\_\-GROUP\_\-START@{TOK\_\-GROUP\_\-START}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-GROUP\_\-START@{TOK\_\-GROUP\_\-START}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a37a6f71fb6a5c296e1fb86c95216a317}{
+TOK\_\-GROUP\_\-START}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a37a6f71fb6a5c296e1fb86c95216a317}
+}]\index{TOK\_\-GROUP\_\-END@{TOK\_\-GROUP\_\-END}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-GROUP\_\-END@{TOK\_\-GROUP\_\-END}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a125079fe82e20957e1cab0f5eb29e655}{
+TOK\_\-GROUP\_\-END}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a125079fe82e20957e1cab0f5eb29e655}
+}]\index{TOK\_\-SEMICOLON@{TOK\_\-SEMICOLON}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-SEMICOLON@{TOK\_\-SEMICOLON}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9aea2ea79171e8d0363830add7169ff88f}{
+TOK\_\-SEMICOLON}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9aea2ea79171e8d0363830add7169ff88f}
+}]\index{TOK\_\-GARBAGE@{TOK\_\-GARBAGE}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-GARBAGE@{TOK\_\-GARBAGE}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a47ab3580bbebe6fe293dda08d328dec0}{
+TOK\_\-GARBAGE}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a47ab3580bbebe6fe293dda08d328dec0}
+}]\index{TOK\_\-ERROR@{TOK\_\-ERROR}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-ERROR@{TOK\_\-ERROR}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a1e45d4c51261381ea32625e93e1c6ea0}{
+TOK\_\-ERROR}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a1e45d4c51261381ea32625e93e1c6ea0}
+}]\index{TOK\_\-BOOLEAN@{TOK\_\-BOOLEAN}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-BOOLEAN@{TOK\_\-BOOLEAN}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a86e6652aa292c8e978b68ace2b0f1300}{
+TOK\_\-BOOLEAN}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a86e6652aa292c8e978b68ace2b0f1300}
+}]\index{TOK\_\-INTEGER@{TOK\_\-INTEGER}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-INTEGER@{TOK\_\-INTEGER}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a7a97eb6460bcde5f66faca2e51730a82}{
+TOK\_\-INTEGER}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a7a97eb6460bcde5f66faca2e51730a82}
+}]\index{TOK\_\-HEX@{TOK\_\-HEX}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-HEX@{TOK\_\-HEX}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a1f511c1ba767bf05c44dacfa8eeefc2d}{
+TOK\_\-HEX}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a1f511c1ba767bf05c44dacfa8eeefc2d}
+}]\index{TOK\_\-INTEGER64@{TOK\_\-INTEGER64}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-INTEGER64@{TOK\_\-INTEGER64}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a4c4ffb217c20c46d7d35faeac7b2ada2}{
+TOK\_\-INTEGER64}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a4c4ffb217c20c46d7d35faeac7b2ada2}
+}]\index{TOK\_\-HEX64@{TOK\_\-HEX64}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-HEX64@{TOK\_\-HEX64}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a446a605af769360d9c5b511e02be998c}{
+TOK\_\-HEX64}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a446a605af769360d9c5b511e02be998c}
+}]\index{TOK\_\-FLOAT@{TOK\_\-FLOAT}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-FLOAT@{TOK\_\-FLOAT}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9add470148bc49b9406cab8014f1a05e1a}{
+TOK\_\-FLOAT}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9add470148bc49b9406cab8014f1a05e1a}
+}]\index{TOK\_\-STRING@{TOK\_\-STRING}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-STRING@{TOK\_\-STRING}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a6aed8afdbbec5110277334eba1c8d1ef}{
+TOK\_\-STRING}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a6aed8afdbbec5110277334eba1c8d1ef}
+}]\index{TOK\_\-NAME@{TOK\_\-NAME}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-NAME@{TOK\_\-NAME}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a2521ed04c163bb1cbdd6af6a3674cb8f}{
+TOK\_\-NAME}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a2521ed04c163bb1cbdd6af6a3674cb8f}
+}]\index{TOK\_\-EQUALS@{TOK\_\-EQUALS}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-EQUALS@{TOK\_\-EQUALS}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a738fab9f730a0fb766fa02328739b7c3}{
+TOK\_\-EQUALS}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a738fab9f730a0fb766fa02328739b7c3}
+}]\index{TOK\_\-NEWLINE@{TOK\_\-NEWLINE}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-NEWLINE@{TOK\_\-NEWLINE}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9af95d944540ec4759be1efca8422b1db7}{
+TOK\_\-NEWLINE}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9af95d944540ec4759be1efca8422b1db7}
+}]\index{TOK\_\-ARRAY\_\-START@{TOK\_\-ARRAY\_\-START}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-ARRAY\_\-START@{TOK\_\-ARRAY\_\-START}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a6b912e59d3b01ff97b3cdc99e34886e8}{
+TOK\_\-ARRAY\_\-START}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a6b912e59d3b01ff97b3cdc99e34886e8}
+}]\index{TOK\_\-ARRAY\_\-END@{TOK\_\-ARRAY\_\-END}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-ARRAY\_\-END@{TOK\_\-ARRAY\_\-END}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a32d61fe2e7d849bcd1e50d909c26eb83}{
+TOK\_\-ARRAY\_\-END}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a32d61fe2e7d849bcd1e50d909c26eb83}
+}]\index{TOK\_\-LIST\_\-START@{TOK\_\-LIST\_\-START}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-LIST\_\-START@{TOK\_\-LIST\_\-START}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9ac508a95b48de48b3afb83ffc60156165}{
+TOK\_\-LIST\_\-START}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9ac508a95b48de48b3afb83ffc60156165}
+}]\index{TOK\_\-LIST\_\-END@{TOK\_\-LIST\_\-END}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-LIST\_\-END@{TOK\_\-LIST\_\-END}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a10da87e4de3f19460926990feb2b8eea}{
+TOK\_\-LIST\_\-END}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a10da87e4de3f19460926990feb2b8eea}
+}]\index{TOK\_\-COMMA@{TOK\_\-COMMA}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-COMMA@{TOK\_\-COMMA}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a62cdeef3d4613afb658caae912e99272}{
+TOK\_\-COMMA}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a62cdeef3d4613afb658caae912e99272}
+}]\index{TOK\_\-GROUP\_\-START@{TOK\_\-GROUP\_\-START}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-GROUP\_\-START@{TOK\_\-GROUP\_\-START}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a37a6f71fb6a5c296e1fb86c95216a317}{
+TOK\_\-GROUP\_\-START}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a37a6f71fb6a5c296e1fb86c95216a317}
+}]\index{TOK\_\-GROUP\_\-END@{TOK\_\-GROUP\_\-END}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-GROUP\_\-END@{TOK\_\-GROUP\_\-END}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a125079fe82e20957e1cab0f5eb29e655}{
+TOK\_\-GROUP\_\-END}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a125079fe82e20957e1cab0f5eb29e655}
+}]\index{TOK\_\-SEMICOLON@{TOK\_\-SEMICOLON}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-SEMICOLON@{TOK\_\-SEMICOLON}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9aea2ea79171e8d0363830add7169ff88f}{
+TOK\_\-SEMICOLON}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9aea2ea79171e8d0363830add7169ff88f}
+}]\index{TOK\_\-GARBAGE@{TOK\_\-GARBAGE}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-GARBAGE@{TOK\_\-GARBAGE}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a47ab3580bbebe6fe293dda08d328dec0}{
+TOK\_\-GARBAGE}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a47ab3580bbebe6fe293dda08d328dec0}
+}]\index{TOK\_\-ERROR@{TOK\_\-ERROR}!grammar.c@{grammar.c}}\index{grammar.c@{grammar.c}!TOK\_\-ERROR@{TOK\_\-ERROR}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a1e45d4c51261381ea32625e93e1c6ea0}{
+TOK\_\-ERROR}
+\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a1e45d4c51261381ea32625e93e1c6ea0}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{grammar_8c_aed5cee83fa537a585f1bd2a1799db48f}{
+\index{grammar.c@{grammar.c}!libconfig\_\-yyerror@{libconfig\_\-yyerror}}
+\index{libconfig\_\-yyerror@{libconfig\_\-yyerror}!grammar.c@{grammar.c}}
+\subsubsection[{libconfig\_\-yyerror}]{\setlength{\rightskip}{0pt plus 5cm}void libconfig\_\-yyerror (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ scanner, }
+\item[{struct {\bf parse\_\-context} $\ast$}]{ ctx, }
+\item[{struct {\bf scan\_\-context} $\ast$}]{ scan\_\-ctx, }
+\item[{char const $\ast$}]{ s}
+\end{DoxyParamCaption}
+)}}
+\label{grammar_8c_aed5cee83fa537a585f1bd2a1799db48f}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{grammar_8c_aed5cee83fa537a585f1bd2a1799db48f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{grammar_8c_aed5cee83fa537a585f1bd2a1799db48f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grammar_8c_a8b9e5cf0670f0bc7132836fd8f89a497}{
+\index{grammar.c@{grammar.c}!libconfig\_\-yyget\_\-lineno@{libconfig\_\-yyget\_\-lineno}}
+\index{libconfig\_\-yyget\_\-lineno@{libconfig\_\-yyget\_\-lineno}!grammar.c@{grammar.c}}
+\subsubsection[{libconfig\_\-yyget\_\-lineno}]{\setlength{\rightskip}{0pt plus 5cm}int libconfig\_\-yyget\_\-lineno (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{grammar_8c_a8b9e5cf0670f0bc7132836fd8f89a497}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{grammar_8c_a8b9e5cf0670f0bc7132836fd8f89a497_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grammar_8c_ac18f7233e786481972ad879c051492d0}{
+\index{grammar.c@{grammar.c}!libconfig\_\-yylex@{libconfig\_\-yylex}}
+\index{libconfig\_\-yylex@{libconfig\_\-yylex}!grammar.c@{grammar.c}}
+\subsubsection[{libconfig\_\-yylex}]{\setlength{\rightskip}{0pt plus 5cm}int libconfig\_\-yylex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{grammar_8c_ac18f7233e786481972ad879c051492d0}
+\hypertarget{grammar_8c_acd8617a8f2ac0de8bc1cc032cf449e19}{
+\index{grammar.c@{grammar.c}!yyparse@{yyparse}}
+\index{yyparse@{yyparse}!grammar.c@{grammar.c}}
+\subsubsection[{yyparse}]{\setlength{\rightskip}{0pt plus 5cm}int yyparse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{grammar_8c_acd8617a8f2ac0de8bc1cc032cf449e19}
+\hypertarget{grammar_8c_aa95461e463ec8927a2b16e55683cfcaf}{
+\index{grammar.c@{grammar.c}!yyparse@{yyparse}}
+\index{yyparse@{yyparse}!grammar.c@{grammar.c}}
+\subsubsection[{yyparse}]{\setlength{\rightskip}{0pt plus 5cm}int yyparse (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ scanner, }
+\item[{struct {\bf parse\_\-context} $\ast$}]{ ctx, }
+\item[{struct {\bf scan\_\-context} $\ast$}]{ scan\_\-ctx}
+\end{DoxyParamCaption}
+)}}
+\label{grammar_8c_aa95461e463ec8927a2b16e55683cfcaf}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{grammar_8c_aa95461e463ec8927a2b16e55683cfcaf_cgraph}
+\end{center}
+\end{figure}
+
+

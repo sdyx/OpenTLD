@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="classtld_1_1_n_n_classifier" kind="class" prot="public">
+    <compoundname>tld::NNClassifier</compoundname>
+    <includes refid="_n_n_classifier_8h" local="no">NNClassifier.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtld_1_1_n_n_classifier_1a7a86c7c4d1bf5664540f476f455dad21" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tld::NNClassifier::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" line="43" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_n_n_classifier_1a6a4aab5ed014405c9dbd9162af1b1d7c" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* tld::NNClassifier::windows</definition>
+        <argsstring></argsstring>
+        <name>windows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" line="45" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">tld::DetectorCascade::propagateMembers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_n_n_classifier_1a5cddbd7f4a38e95a7f00cb1013962b9e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float tld::NNClassifier::thetaFP</definition>
+        <argsstring></argsstring>
+        <name>thetaFP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" line="46" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_n_n_classifier_1a5a71057c2aacdd4935247976e6f49b46" compoundref="_n_n_classifier_8cpp" startline="37" endline="45">NNClassifier</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_n_n_classifier_1aada6ca01c7b5224439e375444947cd16" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float tld::NNClassifier::thetaTP</definition>
+        <argsstring></argsstring>
+        <name>thetaTP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" line="47" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_config_1a920f1659e8823a127eca60b228da416a" compoundref="_config_8cpp" startline="428" endline="486">tld::Config::configure</referencedby>
+        <referencedby refid="classtld_1_1_n_n_classifier_1a5a71057c2aacdd4935247976e6f49b46" compoundref="_n_n_classifier_8cpp" startline="37" endline="45">NNClassifier</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_n_n_classifier_1a5320e517bb5ad4ed524701df5cc200aa" prot="public" static="no" mutable="no">
+        <type><ref refid="classtld_1_1_detection_result" kindref="compound">DetectionResult</ref> *</type>
+        <definition>DetectionResult* tld::NNClassifier::detectionResult</definition>
+        <argsstring></argsstring>
+        <name>detectionResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" line="48" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_detector_cascade_1a809e13a6c7fbc1c13dcb9b4bf9d22964" compoundref="_detector_cascade_8cpp" startline="98" endline="120">tld::DetectorCascade::propagateMembers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_n_n_classifier_1abc088471e8f9e259cc07cbb9a704fb28" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classtld_1_1_normalized_patch" kindref="compound">NormalizedPatch</ref> &gt; *</type>
+        <definition>std::vector&lt;NormalizedPatch&gt;* tld::NNClassifier::falsePositives</definition>
+        <argsstring></argsstring>
+        <name>falsePositives</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" line="49" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_n_n_classifier_1aa59628d72a448c3ee686d9fd78d3e62a" compoundref="_n_n_classifier_8cpp" startline="81" endline="125">classifyPatch</referencedby>
+        <referencedby refid="classtld_1_1_n_n_classifier_1a5a71057c2aacdd4935247976e6f49b46" compoundref="_n_n_classifier_8cpp" startline="37" endline="45">NNClassifier</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+        <referencedby refid="classtld_1_1_n_n_classifier_1aabb548e7b9535ad8040fe65d344b3142" compoundref="_n_n_classifier_8cpp" startline="55" endline="59">release</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" compoundref="_t_l_d_8cpp" startline="374" endline="463">tld::TLD::writeToFile</referencedby>
+        <referencedby refid="classtld_1_1_n_n_classifier_1a475f200dea8dc71cf0f273c57d837242" compoundref="_n_n_classifier_8cpp" startline="47" endline="53">~NNClassifier</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classtld_1_1_n_n_classifier_1ac17849309a8aed1fdc3e3247f22b5fa2" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classtld_1_1_normalized_patch" kindref="compound">NormalizedPatch</ref> &gt; *</type>
+        <definition>std::vector&lt;NormalizedPatch&gt;* tld::NNClassifier::truePositives</definition>
+        <argsstring></argsstring>
+        <name>truePositives</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" line="50" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classtld_1_1_n_n_classifier_1aa59628d72a448c3ee686d9fd78d3e62a" compoundref="_n_n_classifier_8cpp" startline="81" endline="125">classifyPatch</referencedby>
+        <referencedby refid="classtld_1_1_n_n_classifier_1a5a71057c2aacdd4935247976e6f49b46" compoundref="_n_n_classifier_8cpp" startline="37" endline="45">NNClassifier</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1a8474094a32dc39751bac54f8998860c5" compoundref="_t_l_d_8cpp" startline="465" endline="605">tld::TLD::readFromFile</referencedby>
+        <referencedby refid="classtld_1_1_n_n_classifier_1aabb548e7b9535ad8040fe65d344b3142" compoundref="_n_n_classifier_8cpp" startline="55" endline="59">release</referencedby>
+        <referencedby refid="classtld_1_1_t_l_d_1aef7e6414e0334f8d4325360bd4ea3048" compoundref="_t_l_d_8cpp" startline="374" endline="463">tld::TLD::writeToFile</referencedby>
+        <referencedby refid="classtld_1_1_n_n_classifier_1a475f200dea8dc71cf0f273c57d837242" compoundref="_n_n_classifier_8cpp" startline="47" endline="53">~NNClassifier</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classtld_1_1_n_n_classifier_1a8529758da913080fc08ac24dd09c09a9" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float tld::NNClassifier::ncc</definition>
+        <argsstring>(float *f1, float *f2)</argsstring>
+        <name>ncc</name>
+        <param>
+          <type>float *</type>
+          <declname>f1</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>f2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" line="41" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.cpp" bodystart="61" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtld_1_1_n_n_classifier_1a5a71057c2aacdd4935247976e6f49b46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tld::NNClassifier::NNClassifier</definition>
+        <argsstring>()</argsstring>
+        <name>NNClassifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" line="52" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.cpp" bodystart="37" bodyend="45"/>
+        <references refid="classtld_1_1_n_n_classifier_1abc088471e8f9e259cc07cbb9a704fb28" compoundref="_n_n_classifier_8h" startline="49">falsePositives</references>
+        <references refid="classtld_1_1_n_n_classifier_1a5cddbd7f4a38e95a7f00cb1013962b9e" compoundref="_n_n_classifier_8h" startline="46">thetaFP</references>
+        <references refid="classtld_1_1_n_n_classifier_1aada6ca01c7b5224439e375444947cd16" compoundref="_n_n_classifier_8h" startline="47">thetaTP</references>
+        <references refid="classtld_1_1_n_n_classifier_1ac17849309a8aed1fdc3e3247f22b5fa2" compoundref="_n_n_classifier_8h" startline="50">truePositives</references>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_n_n_classifier_1a475f200dea8dc71cf0f273c57d837242" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>tld::NNClassifier::~NNClassifier</definition>
+        <argsstring>()</argsstring>
+        <name>~NNClassifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" line="53" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.cpp" bodystart="47" bodyend="53"/>
+        <references refid="classtld_1_1_n_n_classifier_1abc088471e8f9e259cc07cbb9a704fb28" compoundref="_n_n_classifier_8h" startline="49">falsePositives</references>
+        <references refid="classtld_1_1_n_n_classifier_1aabb548e7b9535ad8040fe65d344b3142" compoundref="_n_n_classifier_8cpp" startline="55" endline="59">release</references>
+        <references refid="classtld_1_1_n_n_classifier_1ac17849309a8aed1fdc3e3247f22b5fa2" compoundref="_n_n_classifier_8h" startline="50">truePositives</references>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_n_n_classifier_1aabb548e7b9535ad8040fe65d344b3142" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::NNClassifier::release</definition>
+        <argsstring>()</argsstring>
+        <name>release</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" line="55" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.cpp" bodystart="55" bodyend="59"/>
+        <references refid="classtld_1_1_n_n_classifier_1abc088471e8f9e259cc07cbb9a704fb28" compoundref="_n_n_classifier_8h" startline="49">falsePositives</references>
+        <references refid="classtld_1_1_n_n_classifier_1ac17849309a8aed1fdc3e3247f22b5fa2" compoundref="_n_n_classifier_8h" startline="50">truePositives</references>
+        <referencedby refid="classtld_1_1_detector_cascade_1a4658f60cc03595d55920b4949ff26a69" compoundref="_detector_cascade_8cpp" startline="122" endline="151">tld::DetectorCascade::release</referencedby>
+        <referencedby refid="classtld_1_1_n_n_classifier_1a475f200dea8dc71cf0f273c57d837242" compoundref="_n_n_classifier_8cpp" startline="47" endline="53">~NNClassifier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_n_n_classifier_1aa59628d72a448c3ee686d9fd78d3e62a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float tld::NNClassifier::classifyPatch</definition>
+        <argsstring>(NormalizedPatch *patch)</argsstring>
+        <name>classifyPatch</name>
+        <param>
+          <type><ref refid="classtld_1_1_normalized_patch" kindref="compound">NormalizedPatch</ref> *</type>
+          <declname>patch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" line="56" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.cpp" bodystart="81" bodyend="125"/>
+        <references refid="classtld_1_1_n_n_classifier_1abc088471e8f9e259cc07cbb9a704fb28" compoundref="_n_n_classifier_8h" startline="49">falsePositives</references>
+        <references refid="classtld_1_1_n_n_classifier_1ac17849309a8aed1fdc3e3247f22b5fa2" compoundref="_n_n_classifier_8h" startline="50">truePositives</references>
+        <references refid="classtld_1_1_normalized_patch_1ae76afafa7dd50901d7c468b92d1c1df5" compoundref="_normalized_patch_8h" startline="37">tld::NormalizedPatch::values</references>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_n_n_classifier_1a4b926da10ab0ce0d05fdb19b7e90bf8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float tld::NNClassifier::classifyBB</definition>
+        <argsstring>(const cv::Mat &amp;img, cv::Rect *bb)</argsstring>
+        <name>classifyBB</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>cv::Rect *</type>
+          <declname>bb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_n_n_classifier_1a88fe1649014e887a12a5a57a552819f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float tld::NNClassifier::classifyWindow</definition>
+        <argsstring>(const cv::Mat &amp;img, int windowIdx)</argsstring>
+        <name>classifyWindow</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>windowIdx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_n_n_classifier_1aa6a34e43628807018da166897063ea02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tld::NNClassifier::learn</definition>
+        <argsstring>(std::vector&lt; NormalizedPatch &gt; patches)</argsstring>
+        <name>learn</name>
+        <param>
+          <type>std::vector&lt; <ref refid="classtld_1_1_normalized_patch" kindref="compound">NormalizedPatch</ref> &gt;</type>
+          <declname>patches</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" line="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classtld_1_1_n_n_classifier_1a173e8f32e073d88c93203ff6ec3352ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tld::NNClassifier::filter</definition>
+        <argsstring>(const cv::Mat &amp;img, int windowIdx)</argsstring>
+        <name>filter</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>windowIdx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" line="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="505">
+        <label>tld::NNClassifier</label>
+        <link refid="classtld_1_1_n_n_classifier"/>
+        <childnode refid="506" relation="usage">
+          <edgelabel>detectionResult</edgelabel>
+        </childnode>
+      </node>
+      <node id="506">
+        <label>tld::DetectionResult</label>
+        <link refid="classtld_1_1_detection_result"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" line="40" bodyfile="/home/horst/repos/opentld-sdyx/src/libopentld/tld/NNClassifier.h" bodystart="39" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classtld_1_1_n_n_classifier_1a4b926da10ab0ce0d05fdb19b7e90bf8b" prot="public" virt="non-virtual"><scope>tld::NNClassifier</scope><name>classifyBB</name></member>
+      <member refid="classtld_1_1_n_n_classifier_1aa59628d72a448c3ee686d9fd78d3e62a" prot="public" virt="non-virtual"><scope>tld::NNClassifier</scope><name>classifyPatch</name></member>
+      <member refid="classtld_1_1_n_n_classifier_1a88fe1649014e887a12a5a57a552819f2" prot="public" virt="non-virtual"><scope>tld::NNClassifier</scope><name>classifyWindow</name></member>
+      <member refid="classtld_1_1_n_n_classifier_1a5320e517bb5ad4ed524701df5cc200aa" prot="public" virt="non-virtual"><scope>tld::NNClassifier</scope><name>detectionResult</name></member>
+      <member refid="classtld_1_1_n_n_classifier_1a7a86c7c4d1bf5664540f476f455dad21" prot="public" virt="non-virtual"><scope>tld::NNClassifier</scope><name>enabled</name></member>
+      <member refid="classtld_1_1_n_n_classifier_1abc088471e8f9e259cc07cbb9a704fb28" prot="public" virt="non-virtual"><scope>tld::NNClassifier</scope><name>falsePositives</name></member>
+      <member refid="classtld_1_1_n_n_classifier_1a173e8f32e073d88c93203ff6ec3352ab" prot="public" virt="non-virtual"><scope>tld::NNClassifier</scope><name>filter</name></member>
+      <member refid="classtld_1_1_n_n_classifier_1aa6a34e43628807018da166897063ea02" prot="public" virt="non-virtual"><scope>tld::NNClassifier</scope><name>learn</name></member>
+      <member refid="classtld_1_1_n_n_classifier_1a8529758da913080fc08ac24dd09c09a9" prot="private" virt="non-virtual"><scope>tld::NNClassifier</scope><name>ncc</name></member>
+      <member refid="classtld_1_1_n_n_classifier_1a5a71057c2aacdd4935247976e6f49b46" prot="public" virt="non-virtual"><scope>tld::NNClassifier</scope><name>NNClassifier</name></member>
+      <member refid="classtld_1_1_n_n_classifier_1aabb548e7b9535ad8040fe65d344b3142" prot="public" virt="non-virtual"><scope>tld::NNClassifier</scope><name>release</name></member>
+      <member refid="classtld_1_1_n_n_classifier_1a5cddbd7f4a38e95a7f00cb1013962b9e" prot="public" virt="non-virtual"><scope>tld::NNClassifier</scope><name>thetaFP</name></member>
+      <member refid="classtld_1_1_n_n_classifier_1aada6ca01c7b5224439e375444947cd16" prot="public" virt="non-virtual"><scope>tld::NNClassifier</scope><name>thetaTP</name></member>
+      <member refid="classtld_1_1_n_n_classifier_1ac17849309a8aed1fdc3e3247f22b5fa2" prot="public" virt="non-virtual"><scope>tld::NNClassifier</scope><name>truePositives</name></member>
+      <member refid="classtld_1_1_n_n_classifier_1a6a4aab5ed014405c9dbd9162af1b1d7c" prot="public" virt="non-virtual"><scope>tld::NNClassifier</scope><name>windows</name></member>
+      <member refid="classtld_1_1_n_n_classifier_1a475f200dea8dc71cf0f273c57d837242" prot="public" virt="virtual"><scope>tld::NNClassifier</scope><name>~NNClassifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

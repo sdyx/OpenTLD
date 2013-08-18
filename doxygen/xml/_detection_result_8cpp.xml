@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_detection_result_8cpp" kind="file">
+    <compoundname>DetectionResult.cpp</compoundname>
+    <includes refid="_detection_result_8h" local="yes">DetectionResult.h</includes>
+    <includes refid="_t_l_d_util_8h" local="yes">TLDUtil.h</includes>
+    <incdepgraph>
+      <node id="1439">
+        <label>src/libopentld/tld/DetectionResult.cpp</label>
+        <link refid="DetectionResult.cpp"/>
+        <childnode refid="1440" relation="include">
+        </childnode>
+        <childnode refid="1443" relation="include">
+        </childnode>
+      </node>
+      <node id="1443">
+        <label>TLDUtil.h</label>
+        <link refid="_t_l_d_util_8h"/>
+        <childnode refid="1444" relation="include">
+        </childnode>
+        <childnode refid="1442" relation="include">
+        </childnode>
+      </node>
+      <node id="1441">
+        <label>vector</label>
+      </node>
+      <node id="1444">
+        <label>utility</label>
+      </node>
+      <node id="1442">
+        <label>cv.h</label>
+      </node>
+      <node id="1440">
+        <label>DetectionResult.h</label>
+        <link refid="_detection_result_8h"/>
+        <childnode refid="1441" relation="include">
+        </childnode>
+        <childnode refid="1442" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacetld">tld</innernamespace>
+    <innernamespace refid="namespacestd">std</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DetectionResult.cpp</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Nov<sp/>16,<sp/>2011</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>Georg<sp/>Nebehay</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_detection_result_8h" kindref="compound">DetectionResult.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_t_l_d_util_8h" kindref="compound">TLDUtil.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">cv;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">tld</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classtld_1_1_detection_result_1a603fdd04a64eb7e6c60ee7e9bb27d747" refkind="member"><highlight class="normal">DetectionResult::DetectionResult()</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result_1af5202404b0b269bd5f8c6b483356c517" kindref="member">containsValidData</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result_1ac640285c436ff5166d0ea34116d4dc69" kindref="member">fgList</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>vector&lt;Rect&gt;();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result_1aae986474ad532795e262e240a3ddb951" kindref="member">confidentIndices</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>vector&lt;int&gt;();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result_1aebf70a6b9d27b4cb34248ac26e5876ab" kindref="member">numClusters</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result_1ab3cade119a99e868902e6bca2e6271df" kindref="member">detectorBB</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result_1ae0725362fbe07964e4ac6861fa1d32fb" kindref="member">variances</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result_1abe6b7a8cc4478cce6351207939e96333" kindref="member">posteriors</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result_1a2650bfbdb106c7dd9b774cfccf5fdb25" kindref="member">featureVectors</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classtld_1_1_detection_result_1a6e76739d206edcdbbac3d2da474fa5ff" refkind="member"><highlight class="normal"><ref refid="classtld_1_1_detection_result_1a6e76739d206edcdbbac3d2da474fa5ff" kindref="member">DetectionResult::~DetectionResult</ref>()</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result_1a23dc924e308f7a2d8f3795fb48fb6648" kindref="member">release</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classtld_1_1_detection_result_1a20c6fc21a478b99cf88b6e955931e530" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detection_result_1a20c6fc21a478b99cf88b6e955931e530" kindref="member">DetectionResult::init</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numWindows,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numTrees)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result_1ae0725362fbe07964e4ac6861fa1d32fb" kindref="member">variances</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">[numWindows];</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result_1abe6b7a8cc4478cce6351207939e96333" kindref="member">posteriors</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">[numWindows];</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result_1a2650bfbdb106c7dd9b774cfccf5fdb25" kindref="member">featureVectors</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">[numWindows<sp/>*<sp/>numTrees];</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result_1aae986474ad532795e262e240a3ddb951" kindref="member">confidentIndices</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>vector&lt;int&gt;();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classtld_1_1_detection_result_1afeda3b61ba3d7ba3304b96baf65d184b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detection_result_1afeda3b61ba3d7ba3304b96baf65d184b" kindref="member">DetectionResult::reset</ref>()</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result_1af5202404b0b269bd5f8c6b483356c517" kindref="member">containsValidData</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classtld_1_1_detection_result_1ac640285c436ff5166d0ea34116d4dc69" kindref="member">fgList</ref><sp/>!=<sp/><ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)<sp/><ref refid="classtld_1_1_detection_result_1ac640285c436ff5166d0ea34116d4dc69" kindref="member">fgList</ref>-&gt;clear();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classtld_1_1_detection_result_1aae986474ad532795e262e240a3ddb951" kindref="member">confidentIndices</ref><sp/>!=<sp/><ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)<sp/><ref refid="classtld_1_1_detection_result_1aae986474ad532795e262e240a3ddb951" kindref="member">confidentIndices</ref>-&gt;clear();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result_1aebf70a6b9d27b4cb34248ac26e5876ab" kindref="member">numClusters</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detection_result_1ab3cade119a99e868902e6bca2e6271df" kindref="member">detectorBB</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result_1ab3cade119a99e868902e6bca2e6271df" kindref="member">detectorBB</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="classtld_1_1_detection_result_1a23dc924e308f7a2d8f3795fb48fb6648" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detection_result_1a23dc924e308f7a2d8f3795fb48fb6648" kindref="member">DetectionResult::release</ref>()</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result_1ac640285c436ff5166d0ea34116d4dc69" kindref="member">fgList</ref>-&gt;clear();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="classtld_1_1_detection_result_1ae0725362fbe07964e4ac6861fa1d32fb" kindref="member">variances</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result_1ae0725362fbe07964e4ac6861fa1d32fb" kindref="member">variances</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="classtld_1_1_detection_result_1abe6b7a8cc4478cce6351207939e96333" kindref="member">posteriors</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result_1abe6b7a8cc4478cce6351207939e96333" kindref="member">posteriors</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="classtld_1_1_detection_result_1a2650bfbdb106c7dd9b774cfccf5fdb25" kindref="member">featureVectors</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result_1a2650bfbdb106c7dd9b774cfccf5fdb25" kindref="member">featureVectors</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detection_result_1aae986474ad532795e262e240a3ddb951" kindref="member">confidentIndices</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result_1aae986474ad532795e262e240a3ddb951" kindref="member">confidentIndices</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_detection_result_1ab3cade119a99e868902e6bca2e6271df" kindref="member">detectorBB</ref>;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result_1ab3cade119a99e868902e6bca2e6271df" kindref="member">detectorBB</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result_1af5202404b0b269bd5f8c6b483356c517" kindref="member">containsValidData</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>tld<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/DetectionResult.cpp"/>
+  </compounddef>
+</doxygen>

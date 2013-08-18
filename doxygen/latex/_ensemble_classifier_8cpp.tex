@@ -1,0 +1,41 @@
+\hypertarget{_ensemble_classifier_8cpp}{
+\section{src/libopentld/tld/EnsembleClassifier.cpp File Reference}
+\label{_ensemble_classifier_8cpp}\index{src/libopentld/tld/EnsembleClassifier.cpp@{src/libopentld/tld/EnsembleClassifier.cpp}}
+}
+{\ttfamily \#include \char`\"{}DetectorCascade.h\char`\"{}}\par
+{\ttfamily \#include $<$cstdlib$>$}\par
+{\ttfamily \#include $<$cmath$>$}\par
+{\ttfamily \#include $<$cv.h$>$}\par
+{\ttfamily \#include \char`\"{}EnsembleClassifier.h\char`\"{}}\par
+Include dependency graph for EnsembleClassifier.cpp:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_ensemble_classifier_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespacetld}{tld}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_ensemble_classifier_8cpp_ae5effd9bd728422d5e50bf875a609421}{sub2idx}(x, y, widthstep)~((int) (floor((x)+0.5) + floor((y)+0.5)$\ast$(widthstep)))
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{_ensemble_classifier_8cpp_ae5effd9bd728422d5e50bf875a609421}{
+\index{EnsembleClassifier.cpp@{EnsembleClassifier.cpp}!sub2idx@{sub2idx}}
+\index{sub2idx@{sub2idx}!EnsembleClassifier.cpp@{EnsembleClassifier.cpp}}
+\subsubsection[{sub2idx}]{\setlength{\rightskip}{0pt plus 5cm}\#define sub2idx(
+\begin{DoxyParamCaption}
+\item[{}]{x, }
+\item[{}]{y, }
+\item[{}]{widthstep}
+\end{DoxyParamCaption}
+)~((int) (floor((x)+0.5) + floor((y)+0.5)$\ast$(widthstep)))}}
+\label{_ensemble_classifier_8cpp_ae5effd9bd728422d5e50bf875a609421}

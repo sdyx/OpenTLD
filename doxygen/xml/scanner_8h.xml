@@ -1,0 +1,1772 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="scanner_8h" kind="file">
+    <compoundname>scanner.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">errno.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includedby refid="libconfig_8c" local="yes">src/3rdparty/libconfig/libconfig.c</includedby>
+    <incdepgraph>
+      <node id="1302">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1301">
+        <label>errno.h</label>
+      </node>
+      <node id="1298">
+        <label>src/3rdparty/libconfig/scanner.h</label>
+        <link refid="scanner.h"/>
+        <childnode refid="1299" relation="include">
+        </childnode>
+        <childnode refid="1300" relation="include">
+        </childnode>
+        <childnode refid="1301" relation="include">
+        </childnode>
+        <childnode refid="1302" relation="include">
+        </childnode>
+      </node>
+      <node id="1300">
+        <label>string.h</label>
+      </node>
+      <node id="1299">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1304">
+        <label>src/3rdparty/libconfig/libconfig.c</label>
+        <link refid="libconfig_8c"/>
+      </node>
+      <node id="1303">
+        <label>src/3rdparty/libconfig/scanner.h</label>
+        <link refid="scanner.h"/>
+        <childnode refid="1304" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structyy__buffer__state" prot="public">yy_buffer_state</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="scanner_8h_1aec6a35d123e3fc6ca4f41030ee18cbf4" prot="public" static="no">
+        <name>libconfig_yyIN_HEADER</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="3" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1a1ae16e642a197fa4948998525813c6f5" prot="public" static="no">
+        <name>YY_INT_ALIGNED</name>
+        <initializer>short int</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="9" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1a3c3d1ef92e93b0bc81d7760a73d5c3b6" prot="public" static="no">
+        <name>FLEX_SCANNER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="13" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1a243ca1d30872935faf05ea5118ed6fdc" prot="public" static="no">
+        <name>YY_FLEX_MAJOR_VERSION</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="14" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1a90f9d458829400869e47efb68a865677" prot="public" static="no">
+        <name>YY_FLEX_MINOR_VERSION</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="15" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1ac676bd06869180ea493e9b6d7c078dbb" prot="public" static="no">
+        <name>YY_FLEX_SUBMINOR_VERSION</name>
+        <initializer>33</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="16" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1a9465c9986fdda27730c9dff8d16a0887" prot="public" static="no">
+        <name>FLEX_BETA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="18" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1aec980b5a71bbe6d67931df20f0ebaec4" prot="public" static="no">
+        <name>FLEXINT_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="34" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1aadcf2a81af243df333b31efa6461ab8e" prot="public" static="no">
+        <name>INT8_MIN</name>
+        <initializer>(-128)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="65" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1ad4e9955955b27624963643eac448118a" prot="public" static="no">
+        <name>INT16_MIN</name>
+        <initializer>(-32767-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="68" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1a688eb21a22db27c2b2bd5836943cdcbe" prot="public" static="no">
+        <name>INT32_MIN</name>
+        <initializer>(-2147483647-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="71" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1aaf7f29f45f1a513b4748a4e5014ddf6a" prot="public" static="no">
+        <name>INT8_MAX</name>
+        <initializer>(127)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="74" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1ac58f2c111cc9989c86db2a7dc4fd84ca" prot="public" static="no">
+        <name>INT16_MAX</name>
+        <initializer>(32767)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="77" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1a181807730d4a375f848ba139813ce04f" prot="public" static="no">
+        <name>INT32_MAX</name>
+        <initializer>(2147483647)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="80" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1aeb4e270a084ee26fe73e799861bd0252" prot="public" static="no">
+        <name>UINT8_MAX</name>
+        <initializer>(255U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="83" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1a3ea490c9b3617d4479bd80ef93cd5602" prot="public" static="no">
+        <name>UINT16_MAX</name>
+        <initializer>(65535U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="86" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1ab5eb23180f7cc12b7d6c04a8ec067fdd" prot="public" static="no">
+        <name>UINT32_MAX</name>
+        <initializer>(4294967295U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="89" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1aa2f1a918be586b44bf08126bde2d7cc9" prot="public" static="no">
+        <name>yyconst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="111" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1a5d5508008cac8fb66fca3baa4e9b6584" prot="public" static="no">
+        <name>YY_TYPEDEF_YY_SCANNER_T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="116" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1aa789f4617e33fb99594cb04a3688a0c1" prot="public" static="no">
+        <name>yyin</name>
+        <initializer>yyg-&gt;yyin_r</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="122" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1a4fd44867d448dcb6fc32ea004a15de54" prot="public" static="no">
+        <name>yyout</name>
+        <initializer>yyg-&gt;yyout_r</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="123" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1a6d98927535a334881d37873915fbc45f" prot="public" static="no">
+        <name>yyextra</name>
+        <initializer>yyg-&gt;yyextra_r</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="124" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1afa07a629486cb790560bb95713ec7794" prot="public" static="no">
+        <name>yyleng</name>
+        <initializer>yyg-&gt;yyleng_r</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="125" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1a0d71f919dbec1ffd74b2460fa7e5ac28" prot="public" static="no">
+        <name>yytext</name>
+        <initializer>yyg-&gt;yytext_r</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="126" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1ad71cf0fddcfe4f61de0929105b33226c" prot="public" static="no">
+        <name>yylineno</name>
+        <initializer>(YY_CURRENT_BUFFER_LVALUE-&gt;yy_bs_lineno)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="127" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1adb60e80d603c103e73f2561c7499095c" prot="public" static="no">
+        <name>yycolumn</name>
+        <initializer>(YY_CURRENT_BUFFER_LVALUE-&gt;yy_bs_column)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="128" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1a301f4439c9b191c80db45f5b1a8c7269" prot="public" static="no">
+        <name>yy_flex_debug</name>
+        <initializer>yyg-&gt;yy_flex_debug_r</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="129" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1aa79d63ed3ff8d2249baf1732a73089f5" prot="public" static="no">
+        <name>YY_TYPEDEF_YY_BUFFER_STATE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="134" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1ae0f2b0b5f04b2338367826b5670774f9" prot="public" static="no">
+        <name>YY_TYPEDEF_YY_SIZE_T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="144" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1a8aaa9e1fa7f13d6954d045ef973a9c84" prot="public" static="no">
+        <name>YY_STRUCT_YY_BUFFER_STATE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="149" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1a5bb3af572edc7abd63a761560c8578d4" prot="public" static="no">
+        <name>libconfig_yywrap</name>
+        <param><defname>n</defname></param>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="215" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1ae1ef5933028cbc587d31328e53d11a99" prot="public" static="no">
+        <name>YY_SKIP_YYWRAP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="216" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1a790a191a93ef4d3b8c0bb43fd7480052" prot="public" static="no">
+        <name>yytext_ptr</name>
+        <initializer>yytext_r</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="218" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1a26938d921de835f6183c02e54cf08828" prot="public" static="no">
+        <name>YY_EXTRA_TYPE</name>
+        <initializer>void *</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="227" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1aab1491ceccb1c95c14320b2903773a1c" prot="public" static="no">
+        <name>YY_READ_BUF_SIZE</name>
+        <initializer>8192</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="289" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1a227e75c43b9e0cd41529974230be7e75" prot="public" static="no">
+        <name>YY_START_STACK_INCR</name>
+        <initializer>25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="294" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1a7682c8d9cec0859408d2421fbe4a5570" prot="public" static="no">
+        <name>YY_DECL_IS_OURS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="301" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanner_8h_1ae5b01ac2fa5a6ad5fb97559638abe686" prot="public" static="no">
+        <name>YY_DECL</name>
+        <initializer>int libconfig_yylex (<ref refid="union_y_y_s_t_y_p_e" kindref="compound">YYSTYPE</ref> * yylval_param , <ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref> yyscanner)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="305" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="scanner_8h_1a7b0840dff4a2ef1702118aa12264b2a7" prot="public" static="no">
+        <type>signed char</type>
+        <definition>typedef signed char flex_int8_t</definition>
+        <argsstring></argsstring>
+        <name>flex_int8_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="55" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="scanner_8h_1a2e73b2c75126814585525fb2e9d51159" prot="public" static="no">
+        <type>short int</type>
+        <definition>typedef short int flex_int16_t</definition>
+        <argsstring></argsstring>
+        <name>flex_int16_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="56" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="scanner_8h_1a838ce943cf44ef7769480714fc6c3ba9" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int flex_int32_t</definition>
+        <argsstring></argsstring>
+        <name>flex_int32_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="57" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="scanner_8h_1a0fac5ea484f64e75dbe6eba4aa61750c" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char flex_uint8_t</definition>
+        <argsstring></argsstring>
+        <name>flex_uint8_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="58" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="scanner_8h_1ac50cdb9eefbef83a1cec89e3a7f6e1d2" prot="public" static="no">
+        <type>unsigned short int</type>
+        <definition>typedef unsigned short int flex_uint16_t</definition>
+        <argsstring></argsstring>
+        <name>flex_uint16_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="59" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="scanner_8h_1a36869712de12820c73aae736762e8e88" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int flex_uint32_t</definition>
+        <argsstring></argsstring>
+        <name>flex_uint32_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="60" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="scanner_8h_1a157535ed0322a026cc197c8985c08d35" prot="public" static="no">
+        <type>void *</type>
+        <definition>typedef void* yyscan_t</definition>
+        <argsstring></argsstring>
+        <name>yyscan_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="117" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="scanner_8h_1a4e5bd2d129903df83f3d13effaf8f3e4" prot="public" static="no">
+        <type>struct <ref refid="structyy__buffer__state" kindref="compound">yy_buffer_state</ref> *</type>
+        <definition>typedef struct yy_buffer_state* YY_BUFFER_STATE</definition>
+        <argsstring></argsstring>
+        <name>YY_BUFFER_STATE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="135" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="scanner_8h_1aa14cc3d400000eef0cd40225fd790cfe" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int yy_size_t</definition>
+        <argsstring></argsstring>
+        <name>yy_size_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="145" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="scanner_8h_1aed639db3260aedb81e2940428f104d7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int libconfig_yylex_init</definition>
+        <argsstring>(yyscan_t *scanner)</argsstring>
+        <name>libconfig_yylex_init</name>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref> *</type>
+          <declname>scanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="131" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="2194" bodyend="2213"/>
+        <references refid="scanner_8c_1a182b1385d7760277395a645045aa9474" compoundref="scanner_8c" startline="2338" endline="2341">libconfig_yyalloc</references>
+        <references refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="_config_8cpp" startline="497">NULL</references>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1a08c14cb755b463f6582a93ad1e431412" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig_yyrestart</definition>
+        <argsstring>(FILE *input_file, yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yyrestart</name>
+        <param>
+          <type>FILE *</type>
+          <declname>input_file</declname>
+        </param>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="199"/>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1a0ec9e62001fe99385561b722bff5a29d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig_yy_switch_to_buffer</definition>
+        <argsstring>(YY_BUFFER_STATE new_buffer, yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yy_switch_to_buffer</name>
+        <param>
+          <type><ref refid="structyy__buffer__state" kindref="compound">YY_BUFFER_STATE</ref></type>
+          <declname>new_buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="200"/>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1afb80695feb88cc40493a776f051bffec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyy__buffer__state" kindref="compound">YY_BUFFER_STATE</ref></type>
+        <definition>YY_BUFFER_STATE libconfig_yy_create_buffer</definition>
+        <argsstring>(FILE *file, int size, yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yy_create_buffer</name>
+        <param>
+          <type>FILE *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="201"/>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1a35408a389c67e00f73eae4b370ba11a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig_yy_delete_buffer</definition>
+        <argsstring>(YY_BUFFER_STATE b, yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yy_delete_buffer</name>
+        <param>
+          <type><ref refid="structyy__buffer__state" kindref="compound">YY_BUFFER_STATE</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="202"/>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1a2262ac14fc607ff8e363b6f2c3c7e7e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig_yy_flush_buffer</definition>
+        <argsstring>(YY_BUFFER_STATE b, yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yy_flush_buffer</name>
+        <param>
+          <type><ref refid="structyy__buffer__state" kindref="compound">YY_BUFFER_STATE</ref></type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Discard all buffered characters. On the next scan, YY_INPUT will be called. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the buffer state to be flushed, usually <computeroutput>YY_CURRENT_BUFFER</computeroutput>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yyscanner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scanner object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="203" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="1791" bodyend="1813"/>
+        <references refid="structyy__buffer__state_1a9d60c60af6e1a6f69de16871fd64f85f" compoundref="scanner_8c" startline="258">yy_buffer_state::yy_at_bol</references>
+        <references refid="structyy__buffer__state_1a8435c3f786bbb55d21d0174e4cfc22a0" compoundref="scanner_8c" startline="229">yy_buffer_state::yy_buf_pos</references>
+        <references refid="structyy__buffer__state_1a70fd925d37a2f0454fbd0def675d106c" compoundref="scanner_8c" startline="268">yy_buffer_state::yy_buffer_status</references>
+        <references refid="structyy__buffer__state_1a0d25458e69eb22207fc633a1255d099d" compoundref="scanner_8c" startline="228">yy_buffer_state::yy_ch_buf</references>
+        <references refid="scanner_8c_1aa093d500a6330d06d8e4760c494fac33" compoundref="scanner_8c" startline="293">YY_CURRENT_BUFFER</references>
+        <references refid="structyy__buffer__state_1a06406208824817acfec2183b79080945" compoundref="scanner_8c" startline="239">yy_buffer_state::yy_n_chars</references>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1a06ec388e41e209ae9a758c000bec51ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig_yypush_buffer_state</definition>
+        <argsstring>(YY_BUFFER_STATE new_buffer, yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yypush_buffer_state</name>
+        <param>
+          <type><ref refid="structyy__buffer__state" kindref="compound">YY_BUFFER_STATE</ref></type>
+          <declname>new_buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pushes the new state onto the stack. The new state becomes the current state. This function will allocate the stack if necessary. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>new_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new state. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yyscanner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scanner object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="204" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="1821" bodyend="1846"/>
+        <references refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="_config_8cpp" startline="497">NULL</references>
+        <references refid="structyyguts__t_1af92507d904af2fcd4509acde654a9850" compoundref="scanner_8c" startline="651">yyguts_t::yy_buffer_stack_top</references>
+        <references refid="structyyguts__t_1ab1b9bcacb33aab1e02b625512bc0e221" compoundref="scanner_8c" startline="657">yyguts_t::yy_c_buf_p</references>
+        <references refid="scanner_8c_1aa093d500a6330d06d8e4760c494fac33" compoundref="scanner_8c" startline="293">YY_CURRENT_BUFFER</references>
+        <references refid="scanner_8c_1a817a6a24af62508b5a35f4bed5f56a2e" compoundref="scanner_8c" startline="300">YY_CURRENT_BUFFER_LVALUE</references>
+        <references refid="structyyguts__t_1a2daec411627700709ef2fd927e69627d" compoundref="scanner_8c" startline="660">yyguts_t::yy_did_buffer_switch_on_eof</references>
+        <references refid="structyyguts__t_1adde3f71374c223bbac47284824996e86" compoundref="scanner_8c" startline="654">yyguts_t::yy_hold_char</references>
+        <references refid="structyyguts__t_1a99c9218941829a6662d358422fd4184a" compoundref="scanner_8c" startline="655">yyguts_t::yy_n_chars</references>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1ad0ccb05f8859b9971c677dd35f522fb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig_yypop_buffer_state</definition>
+        <argsstring>(yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yypop_buffer_state</name>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes and deletes the top of the stack, if present. The next element becomes the new top. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>yyscanner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scanner object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="205" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="1852" bodyend="1867"/>
+        <references refid="scanner_8c_1a35408a389c67e00f73eae4b370ba11a4">libconfig_yy_delete_buffer</references>
+        <references refid="structyyguts__t_1af92507d904af2fcd4509acde654a9850" compoundref="scanner_8c" startline="651">yyguts_t::yy_buffer_stack_top</references>
+        <references refid="scanner_8c_1aa093d500a6330d06d8e4760c494fac33" compoundref="scanner_8c" startline="293">YY_CURRENT_BUFFER</references>
+        <references refid="scanner_8c_1a817a6a24af62508b5a35f4bed5f56a2e" compoundref="scanner_8c" startline="300">YY_CURRENT_BUFFER_LVALUE</references>
+        <references refid="structyyguts__t_1a2daec411627700709ef2fd927e69627d" compoundref="scanner_8c" startline="660">yyguts_t::yy_did_buffer_switch_on_eof</references>
+        <referencedby refid="scanner_8h_1ab3f0aaeea94956aff54a12839c53034b" compoundref="scanner_8c" startline="2285" endline="2312">libconfig_yylex_destroy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1a9e4fc60c40f4d1c4d9bd167073b99bde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyy__buffer__state" kindref="compound">YY_BUFFER_STATE</ref></type>
+        <definition>YY_BUFFER_STATE libconfig_yy_scan_buffer</definition>
+        <argsstring>(char *base, yy_size_t size, yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yy_scan_buffer</name>
+        <param>
+          <type>char *</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type><ref refid="scanner_8c_1ad557845057f187eec4be07e2717d2afa" kindref="member">yy_size_t</ref></type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup the input buffer state to scan directly from a user-specified character buffer. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the character buffer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the size in bytes of the character buffer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yyscanner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scanner object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the newly allocated buffer state object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="207" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="1922" bodyend="1949"/>
+        <references refid="scanner_8c_1a0ec9e62001fe99385561b722bff5a29d">libconfig_yy_switch_to_buffer</references>
+        <references refid="scanner_8c_1a182b1385d7760277395a645045aa9474" compoundref="scanner_8c" startline="2338" endline="2341">libconfig_yyalloc</references>
+        <references refid="structyy__buffer__state_1a9d60c60af6e1a6f69de16871fd64f85f" compoundref="scanner_8c" startline="258">yy_buffer_state::yy_at_bol</references>
+        <references refid="structyy__buffer__state_1a8435c3f786bbb55d21d0174e4cfc22a0" compoundref="scanner_8c" startline="229">yy_buffer_state::yy_buf_pos</references>
+        <references refid="structyy__buffer__state_1a48302f5f3477a9c78bbddf56d356ef54" compoundref="scanner_8c" startline="234">yy_buffer_state::yy_buf_size</references>
+        <references refid="structyy__buffer__state_1a70fd925d37a2f0454fbd0def675d106c" compoundref="scanner_8c" startline="268">yy_buffer_state::yy_buffer_status</references>
+        <references refid="structyy__buffer__state_1a0d25458e69eb22207fc633a1255d099d" compoundref="scanner_8c" startline="228">yy_buffer_state::yy_ch_buf</references>
+        <references refid="scanner_8c_1ab866a64da164ed2d4d444df1ef1fc9b3" compoundref="scanner_8c" startline="158">YY_END_OF_BUFFER_CHAR</references>
+        <references refid="scanner_8c_1ac0586b8b0b092d02f4ba7d45abe328f2" compoundref="scanner_8c" startline="820">YY_FATAL_ERROR</references>
+        <references refid="structyy__buffer__state_1a63d2afbb1d79a3fc63df9e12626f827d" compoundref="scanner_8c" startline="266">yy_buffer_state::yy_fill_buffer</references>
+        <references refid="structyy__buffer__state_1a4360acfb226a1fc240ab2be17dd6beda" compoundref="scanner_8c" startline="226">yy_buffer_state::yy_input_file</references>
+        <references refid="structyy__buffer__state_1abf5c70eea75581b58c0ee7bd31b14490" compoundref="scanner_8c" startline="252">yy_buffer_state::yy_is_interactive</references>
+        <references refid="structyy__buffer__state_1a80ce2431c70dc4f89ced487f18449465" compoundref="scanner_8c" startline="245">yy_buffer_state::yy_is_our_buffer</references>
+        <references refid="structyy__buffer__state_1a06406208824817acfec2183b79080945" compoundref="scanner_8c" startline="239">yy_buffer_state::yy_n_chars</references>
+        <referencedby refid="scanner_8h_1a1b98fc545d3576ed6daae52008a52368" compoundref="scanner_8c" startline="1972" endline="2000">libconfig_yy_scan_bytes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1a6d85748250a6920c6bf48d8c2ba290b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyy__buffer__state" kindref="compound">YY_BUFFER_STATE</ref></type>
+        <definition>YY_BUFFER_STATE libconfig_yy_scan_string</definition>
+        <argsstring>(yyconst char *yy_str, yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yy_scan_string</name>
+        <param>
+          <type>yyconst char *</type>
+          <declname>yy_str</declname>
+        </param>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup the input buffer state to scan a string. The next call to <ref refid="grammar_8c_1ac18f7233e786481972ad879c051492d0" kindref="member">libconfig_yylex()</ref> will scan from a <emphasis>copy</emphasis> of <emphasis>str</emphasis>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>yystr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a NUL-terminated string to scan </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yyscanner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scanner object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the newly allocated buffer state object. </para></simplesect>
+<simplesect kind="note"><para>If you want to scan bytes that may contain NUL values, then use <ref refid="scanner_8c_1a1b98fc545d3576ed6daae52008a52368" kindref="member">libconfig_yy_scan_bytes()</ref> instead. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="208" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="1959" bodyend="1963"/>
+        <references refid="scanner_8c_1a1b98fc545d3576ed6daae52008a52368" compoundref="scanner_8c" startline="1972" endline="2000">libconfig_yy_scan_bytes</references>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1a1b98fc545d3576ed6daae52008a52368" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structyy__buffer__state" kindref="compound">YY_BUFFER_STATE</ref></type>
+        <definition>YY_BUFFER_STATE libconfig_yy_scan_bytes</definition>
+        <argsstring>(yyconst char *bytes, int len, yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yy_scan_bytes</name>
+        <param>
+          <type>yyconst char *</type>
+          <declname>bytes</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup the input buffer state to scan the given bytes. The next call to <ref refid="grammar_8c_1ac18f7233e786481972ad879c051492d0" kindref="member">libconfig_yylex()</ref> will scan from a <emphasis>copy</emphasis> of <emphasis>bytes</emphasis>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>yybytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the byte buffer to scan </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_yybytes_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of bytes in the buffer pointed to by <emphasis>bytes</emphasis>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yyscanner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scanner object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the newly allocated buffer state object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="209" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="1972" bodyend="2000"/>
+        <references refid="scanner_8c_1a9e4fc60c40f4d1c4d9bd167073b99bde" compoundref="scanner_8c" startline="1922" endline="1949">libconfig_yy_scan_buffer</references>
+        <references refid="scanner_8c_1a182b1385d7760277395a645045aa9474" compoundref="scanner_8c" startline="2338" endline="2341">libconfig_yyalloc</references>
+        <references refid="scanner_8c_1ac0586b8b0b092d02f4ba7d45abe328f2" compoundref="scanner_8c" startline="820">YY_FATAL_ERROR</references>
+        <references refid="structyy__buffer__state_1a80ce2431c70dc4f89ced487f18449465" compoundref="scanner_8c" startline="245">yy_buffer_state::yy_is_our_buffer</references>
+        <referencedby refid="scanner_8h_1a6d85748250a6920c6bf48d8c2ba290b4" compoundref="scanner_8c" startline="1959" endline="1963">libconfig_yy_scan_string</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1a9b20051f0947106bf457221048673db6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* libconfig_yyalloc</definition>
+        <argsstring>(yy_size_t, yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yyalloc</name>
+        <param>
+          <type><ref refid="scanner_8c_1ad557845057f187eec4be07e2717d2afa" kindref="member">yy_size_t</ref></type>
+        </param>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="211" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="2338" bodyend="2341"/>
+        <referencedby refid="scanner_8h_1a9e4fc60c40f4d1c4d9bd167073b99bde" compoundref="scanner_8c" startline="1922" endline="1949">libconfig_yy_scan_buffer</referencedby>
+        <referencedby refid="scanner_8h_1a1b98fc545d3576ed6daae52008a52368" compoundref="scanner_8c" startline="1972" endline="2000">libconfig_yy_scan_bytes</referencedby>
+        <referencedby refid="scanner_8h_1aed639db3260aedb81e2940428f104d7a" compoundref="scanner_8c" startline="2194" endline="2213">libconfig_yylex_init</referencedby>
+        <referencedby refid="scanner_8c_1a3eb647c3dbee3b1bff9ee98a7c95cb60" compoundref="scanner_8c" startline="2223" endline="2249">libconfig_yylex_init_extra</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1a5afc91d843b4cae5264829df7bbf7841" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* libconfig_yyrealloc</definition>
+        <argsstring>(void *, yy_size_t, yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yyrealloc</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type><ref refid="scanner_8c_1ad557845057f187eec4be07e2717d2afa" kindref="member">yy_size_t</ref></type>
+        </param>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="212" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="2343" bodyend="2353"/>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1a3dfd3491047e503301bdfbbad32e0066" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig_yyfree</definition>
+        <argsstring>(void *, yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yyfree</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="213" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="2355" bodyend="2358"/>
+        <referencedby refid="scanner_8h_1ab3f0aaeea94956aff54a12839c53034b" compoundref="scanner_8c" startline="2285" endline="2312">libconfig_yylex_destroy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1ab3f0aaeea94956aff54a12839c53034b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int libconfig_yylex_destroy</definition>
+        <argsstring>(yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yylex_destroy</name>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="233" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="2285" bodyend="2312"/>
+        <references refid="scanner_8c_1a35408a389c67e00f73eae4b370ba11a4">libconfig_yy_delete_buffer</references>
+        <references refid="scanner_8c_1a3dfd3491047e503301bdfbbad32e0066" compoundref="scanner_8c" startline="2355" endline="2358">libconfig_yyfree</references>
+        <references refid="scanner_8c_1ad0ccb05f8859b9971c677dd35f522fb7" compoundref="scanner_8c" startline="1852" endline="1867">libconfig_yypop_buffer_state</references>
+        <references refid="structyyguts__t_1ad0b9d576189d518a4482f20ed9b2a416" compoundref="scanner_8c" startline="653">yyguts_t::yy_buffer_stack</references>
+        <references refid="scanner_8c_1aa093d500a6330d06d8e4760c494fac33" compoundref="scanner_8c" startline="293">YY_CURRENT_BUFFER</references>
+        <references refid="scanner_8c_1a817a6a24af62508b5a35f4bed5f56a2e" compoundref="scanner_8c" startline="300">YY_CURRENT_BUFFER_LVALUE</references>
+        <references refid="structyyguts__t_1af6e2e45a5fdba0f313c680b35da4292a" compoundref="scanner_8c" startline="663">yyguts_t::yy_start_stack</references>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1a24d3c7e9ef4d4bd27693f7654dd4a317" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int libconfig_yyget_debug</definition>
+        <argsstring>(yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yyget_debug</name>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="235" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="2161" bodyend="2165"/>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1a11d173d4f81f14a57d31b0946d67297e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig_yyset_debug</definition>
+        <argsstring>(int debug_flag, yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yyset_debug</name>
+        <param>
+          <type>int</type>
+          <declname>debug_flag</declname>
+        </param>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="237" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="2167" bodyend="2171"/>
+        <references refid="scanner_8c_1a301f4439c9b191c80db45f5b1a8c7269" compoundref="scanner_8c" startline="137">yy_flex_debug</references>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1a05a71d4431227ae216b46d196f6b860f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>YY_EXTRA_TYPE</type>
+        <definition>YY_EXTRA_TYPE libconfig_yyget_extra</definition>
+        <argsstring>(yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yyget_extra</name>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the user-defined data for this scanner. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>yyscanner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scanner object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="239" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="2034" bodyend="2038"/>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1a72daae3586284a289ccd926ac1fc0ec7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig_yyset_extra</definition>
+        <argsstring>(YY_EXTRA_TYPE user_defined, yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yyset_extra</name>
+        <param>
+          <type>YY_EXTRA_TYPE</type>
+          <declname>user_defined</declname>
+        </param>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the user-defined data. This data is never touched by the scanner. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user_defined</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data to be associated with this scanner. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yyscanner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scanner object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="241" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="2107" bodyend="2111"/>
+        <references refid="scanner_8c_1a6d98927535a334881d37873915fbc45f" compoundref="scanner_8c" startline="132">yyextra</references>
+        <referencedby refid="scanner_8c_1a3eb647c3dbee3b1bff9ee98a7c95cb60" compoundref="scanner_8c" startline="2223" endline="2249">libconfig_yylex_init_extra</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1aef4fdbf9aed3cc7aa2d9033db712d31d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FILE *</type>
+        <definition>FILE* libconfig_yyget_in</definition>
+        <argsstring>(yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yyget_in</name>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the input stream. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>yyscanner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scanner object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="243" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="2069" bodyend="2073"/>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1af41d73b2eafdd09794b0923758d1a395" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig_yyset_in</definition>
+        <argsstring>(FILE *in_str, yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yyset_in</name>
+        <param>
+          <type>FILE *</type>
+          <declname>in_str</declname>
+        </param>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the input stream. This does not discard the current input buffer. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in_str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A readable stream. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yyscanner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scanner object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="scanner_8h_1a0ec9e62001fe99385561b722bff5a29d" kindref="member">libconfig_yy_switch_to_buffer</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="245" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="2149" bodyend="2153"/>
+        <references refid="scanner_8c_1aa789f4617e33fb99594cb04a3688a0c1" compoundref="scanner_8c" startline="130">yyin</references>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1ae156edf63661333d300468a4da882bd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FILE *</type>
+        <definition>FILE* libconfig_yyget_out</definition>
+        <argsstring>(yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yyget_out</name>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the output stream. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>yyscanner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scanner object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="247" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="2078" bodyend="2082"/>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1a9c5d6cbb147ee9b0b2fb91f459d8cf0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig_yyset_out</definition>
+        <argsstring>(FILE *out_str, yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yyset_out</name>
+        <param>
+          <type>FILE *</type>
+          <declname>out_str</declname>
+        </param>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="249" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="2155" bodyend="2159"/>
+        <references refid="scanner_8c_1a4fd44867d448dcb6fc32ea004a15de54" compoundref="scanner_8c" startline="131">yyout</references>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1aefbb2ef546469affdf41b98b010bf9cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int libconfig_yyget_leng</definition>
+        <argsstring>(yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yyget_leng</name>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the length of the current token. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>yyscanner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scanner object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="251" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="2087" bodyend="2091"/>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1ae21274ca0cd7ca11bf34d5e949f23224" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* libconfig_yyget_text</definition>
+        <argsstring>(yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yyget_text</name>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current token. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>yyscanner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scanner object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="253" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="2097" bodyend="2101"/>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1a83b23cf65372e378cc47c4bbcd0da7ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int libconfig_yyget_lineno</definition>
+        <argsstring>(yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yyget_lineno</name>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current line number. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>yyscanner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scanner object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="255" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="2043" bodyend="2051"/>
+        <references refid="scanner_8c_1aa093d500a6330d06d8e4760c494fac33" compoundref="scanner_8c" startline="293">YY_CURRENT_BUFFER</references>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1a8dd7cf400bb142047c80bdde9d0160c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig_yyset_lineno</definition>
+        <argsstring>(int line_number, yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yyset_lineno</name>
+        <param>
+          <type>int</type>
+          <declname>line_number</declname>
+        </param>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the current line number. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>line_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yyscanner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scanner object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="257" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="2117" bodyend="2126"/>
+        <references refid="scanner_8c_1aa093d500a6330d06d8e4760c494fac33" compoundref="scanner_8c" startline="293">YY_CURRENT_BUFFER</references>
+        <references refid="scanner_8c_1ad71cf0fddcfe4f61de0929105b33226c" compoundref="scanner_8c" startline="135">yylineno</references>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1abdca28de217614194950db1b6d5d52d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="union_y_y_s_t_y_p_e" kindref="compound">YYSTYPE</ref> *</type>
+        <definition>YYSTYPE* libconfig_yyget_lval</definition>
+        <argsstring>(yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yyget_lval</name>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="259" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="2175" bodyend="2179"/>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1a4b122493cc37628d31d994fd3f8cc0bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void libconfig_yyset_lval</definition>
+        <argsstring>(YYSTYPE *yylval_param, yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yyset_lval</name>
+        <param>
+          <type><ref refid="union_y_y_s_t_y_p_e" kindref="compound">YYSTYPE</ref> *</type>
+          <declname>yylval_param</declname>
+        </param>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="261" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.c" bodystart="2181" bodyend="2185"/>
+        <references refid="scanner_8c_1a75acfb3798e577ebd296e604e422e86b" compoundref="scanner_8c" startline="682">yylval</references>
+      </memberdef>
+      <memberdef kind="function" id="scanner_8h_1a92ac4af6351ef15ac9d68c4ab29f037d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int libconfig_yylex</definition>
+        <argsstring>(YYSTYPE *yylval_param, yyscan_t yyscanner)</argsstring>
+        <name>libconfig_yylex</name>
+        <param>
+          <type><ref refid="union_y_y_s_t_y_p_e" kindref="compound">YYSTYPE</ref> *</type>
+          <declname>yylval_param</declname>
+        </param>
+        <param>
+          <type><ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref></type>
+          <declname>yyscanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h" line="303"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>libconfig_yyHEADER_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>libconfig_yyHEADER_H<sp/>1</highlight></codeline>
+<codeline lineno="3" refid="scanner_8h_1aec6a35d123e3fc6ca4f41030ee18cbf4" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>libconfig_yyIN_HEADER<sp/>1</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#line<sp/>6<sp/>&quot;scanner.h&quot;</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#line<sp/>8<sp/>&quot;scanner.h&quot;</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="scanner_8h_1a1ae16e642a197fa4948998525813c6f5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>YY_INT_ALIGNED<sp/>short<sp/>int</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>A<sp/>lexical<sp/>scanner<sp/>generated<sp/>by<sp/>flex<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="scanner_8h_1a3c3d1ef92e93b0bc81d7760a73d5c3b6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLEX_SCANNER</highlight></codeline>
+<codeline lineno="14" refid="scanner_8h_1a243ca1d30872935faf05ea5118ed6fdc" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>YY_FLEX_MAJOR_VERSION<sp/>2</highlight></codeline>
+<codeline lineno="15" refid="scanner_8h_1a90f9d458829400869e47efb68a865677" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>YY_FLEX_MINOR_VERSION<sp/>5</highlight></codeline>
+<codeline lineno="16" refid="scanner_8h_1ac676bd06869180ea493e9b6d7c078dbb" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>YY_FLEX_SUBMINOR_VERSION<sp/>33</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#if<sp/>YY_FLEX_SUBMINOR_VERSION<sp/>&gt;<sp/>0</highlight></codeline>
+<codeline lineno="18" refid="scanner_8h_1a9465c9986fdda27730c9dff8d16a0887" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLEX_BETA</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>First,<sp/>we<sp/>deal<sp/>with<sp/><sp/>platform-specific<sp/>or<sp/>compiler-specific<sp/>issues.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>begin<sp/>standard<sp/>C<sp/>headers.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;errno.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>end<sp/>standard<sp/>C<sp/>headers.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>flex<sp/>integer<sp/>type<sp/>definitions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>FLEXINT_H</highlight></codeline>
+<codeline lineno="34" refid="scanner_8h_1aec980b5a71bbe6d67931df20f0ebaec4" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLEXINT_H</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>C99<sp/>systems<sp/>have<sp/>&lt;inttypes.h&gt;.<sp/>Non-C99<sp/>systems<sp/>may<sp/>or<sp/>may<sp/>not.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__STDC_VERSION__<sp/>&gt;=<sp/>199901L</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>C99<sp/>says<sp/>to<sp/>define<sp/>__STDC_LIMIT_MACROS<sp/>before<sp/>including<sp/>stdint.h,</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>if<sp/>you<sp/>want<sp/>the<sp/>limit<sp/>(max/min)<sp/>macros<sp/>for<sp/>int<sp/>types.<sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__STDC_LIMIT_MACROS</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__STDC_LIMIT_MACROS<sp/>1</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;inttypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int8_t<sp/>flex_int8_t;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>flex_uint8_t;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int16_t<sp/>flex_int16_t;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint16_t<sp/>flex_uint16_t;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t<sp/>flex_int32_t;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/>flex_uint32_t;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="55" refid="scanner_8h_1a7b0840dff4a2ef1702118aa12264b2a7" refkind="member"><highlight class="preprocessor"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>flex_int8_t;</highlight></codeline>
+<codeline lineno="56" refid="scanner_8h_1a2e73b2c75126814585525fb2e9d51159" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flex_int16_t;</highlight></codeline>
+<codeline lineno="57" refid="scanner_8h_1a838ce943cf44ef7769480714fc6c3ba9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flex_int32_t;</highlight></codeline>
+<codeline lineno="58" refid="scanner_8h_1a0fac5ea484f64e75dbe6eba4aa61750c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>flex_uint8_t;<sp/></highlight></codeline>
+<codeline lineno="59" refid="scanner_8h_1ac50cdb9eefbef83a1cec89e3a7f6e1d2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flex_uint16_t;</highlight></codeline>
+<codeline lineno="60" refid="scanner_8h_1a36869712de12820c73aae736762e8e88" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flex_uint32_t;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>!<sp/>C99<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Limits<sp/>of<sp/>integral<sp/>types.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INT8_MIN</highlight></codeline>
+<codeline lineno="65" refid="scanner_8h_1aadcf2a81af243df333b31efa6461ab8e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INT8_MIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-128)</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifndef<sp/>INT16_MIN</highlight></codeline>
+<codeline lineno="68" refid="scanner_8h_1ad4e9955955b27624963643eac448118a" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INT16_MIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-32767-1)</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifndef<sp/>INT32_MIN</highlight></codeline>
+<codeline lineno="71" refid="scanner_8h_1a688eb21a22db27c2b2bd5836943cdcbe" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INT32_MIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-2147483647-1)</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifndef<sp/>INT8_MAX</highlight></codeline>
+<codeline lineno="74" refid="scanner_8h_1aaf7f29f45f1a513b4748a4e5014ddf6a" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INT8_MAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(127)</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifndef<sp/>INT16_MAX</highlight></codeline>
+<codeline lineno="77" refid="scanner_8h_1ac58f2c111cc9989c86db2a7dc4fd84ca" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INT16_MAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(32767)</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifndef<sp/>INT32_MAX</highlight></codeline>
+<codeline lineno="80" refid="scanner_8h_1a181807730d4a375f848ba139813ce04f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INT32_MAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(2147483647)</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifndef<sp/>UINT8_MAX</highlight></codeline>
+<codeline lineno="83" refid="scanner_8h_1aeb4e270a084ee26fe73e799861bd0252" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>UINT8_MAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(255U)</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifndef<sp/>UINT16_MAX</highlight></codeline>
+<codeline lineno="86" refid="scanner_8h_1a3ea490c9b3617d4479bd80ef93cd5602" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>UINT16_MAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(65535U)</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifndef<sp/>UINT32_MAX</highlight></codeline>
+<codeline lineno="89" refid="scanner_8h_1ab5eb23180f7cc12b7d6c04a8ec067fdd" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>UINT32_MAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(4294967295U)</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>!<sp/>FLEXINT_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>The<sp/>&quot;const&quot;<sp/>storage-class-modifier<sp/>is<sp/>valid.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>YY_USE_CONST</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>!<sp/>__cplusplus<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__STDC__</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>YY_USE_CONST</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>__STDC__<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>!<sp/>__cplusplus<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>YY_USE_CONST</highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>yyconst<sp/>const</highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="111" refid="scanner_8h_1aa2f1a918be586b44bf08126bde2d7cc9" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>yyconst</highlight></codeline>
+<codeline lineno="112"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>An<sp/>opaque<sp/>pointer.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>YY_TYPEDEF_YY_SCANNER_T</highlight></codeline>
+<codeline lineno="116" refid="scanner_8h_1a5d5508008cac8fb66fca3baa4e9b6584" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>YY_TYPEDEF_YY_SCANNER_T</highlight></codeline>
+<codeline lineno="117" refid="scanner_8h_1a157535ed0322a026cc197c8985c08d35" refkind="member"><highlight class="preprocessor"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>yyscan_t;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>For<sp/>convenience,<sp/>these<sp/>vars<sp/>(plus<sp/>the<sp/>bison<sp/>vars<sp/>far<sp/>below)</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"><sp/><sp/><sp/>are<sp/>macros<sp/>in<sp/>the<sp/>reentrant<sp/>scanner.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="scanner_8h_1aa789f4617e33fb99594cb04a3688a0c1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>yyin<sp/>yyg-&gt;yyin_r</highlight></codeline>
+<codeline lineno="123" refid="scanner_8h_1a4fd44867d448dcb6fc32ea004a15de54" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>yyout<sp/>yyg-&gt;yyout_r</highlight></codeline>
+<codeline lineno="124" refid="scanner_8h_1a6d98927535a334881d37873915fbc45f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>yyextra<sp/>yyg-&gt;yyextra_r</highlight></codeline>
+<codeline lineno="125" refid="scanner_8h_1afa07a629486cb790560bb95713ec7794" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>yyleng<sp/>yyg-&gt;yyleng_r</highlight></codeline>
+<codeline lineno="126" refid="scanner_8h_1a0d71f919dbec1ffd74b2460fa7e5ac28" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>yytext<sp/>yyg-&gt;yytext_r</highlight></codeline>
+<codeline lineno="127" refid="scanner_8h_1ad71cf0fddcfe4f61de0929105b33226c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>yylineno<sp/>(YY_CURRENT_BUFFER_LVALUE-&gt;yy_bs_lineno)</highlight></codeline>
+<codeline lineno="128" refid="scanner_8h_1adb60e80d603c103e73f2561c7499095c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>yycolumn<sp/>(YY_CURRENT_BUFFER_LVALUE-&gt;yy_bs_column)</highlight></codeline>
+<codeline lineno="129" refid="scanner_8h_1a301f4439c9b191c80db45f5b1a8c7269" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>yy_flex_debug<sp/>yyg-&gt;yy_flex_debug_r</highlight></codeline>
+<codeline lineno="130"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="scanner_8c_1aed639db3260aedb81e2940428f104d7a" kindref="member">libconfig_yylex_init</ref><sp/>(<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref>*<sp/>scanner);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>YY_TYPEDEF_YY_BUFFER_STATE</highlight></codeline>
+<codeline lineno="134" refid="scanner_8h_1aa79d63ed3ff8d2249baf1732a73089f5" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>YY_TYPEDEF_YY_BUFFER_STATE</highlight></codeline>
+<codeline lineno="135" refid="scanner_8h_1a4e5bd2d129903df83f3d13effaf8f3e4" refkind="member"><highlight class="preprocessor"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structyy__buffer__state" kindref="compound">yy_buffer_state</ref><sp/>*<ref refid="structyy__buffer__state" kindref="compound">YY_BUFFER_STATE</ref>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>The<sp/>following<sp/>is<sp/>because<sp/>we<sp/>cannot<sp/>portably<sp/>get<sp/>our<sp/>hands<sp/>on<sp/>size_t</highlight></codeline>
+<codeline lineno="139"><highlight class="comment"><sp/>*<sp/>(without<sp/>autoconf&apos;s<sp/>help,<sp/>which<sp/>isn&apos;t<sp/>available<sp/>because<sp/>we<sp/>want</highlight></codeline>
+<codeline lineno="140"><highlight class="comment"><sp/>*<sp/>flex-generated<sp/>scanners<sp/>to<sp/>compile<sp/>on<sp/>their<sp/>own).</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>YY_TYPEDEF_YY_SIZE_T</highlight></codeline>
+<codeline lineno="144" refid="scanner_8h_1ae0f2b0b5f04b2338367826b5670774f9" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>YY_TYPEDEF_YY_SIZE_T</highlight></codeline>
+<codeline lineno="145" refid="scanner_8h_1aa14cc3d400000eef0cd40225fd790cfe" refkind="member"><highlight class="preprocessor"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>yy_size_t;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>YY_STRUCT_YY_BUFFER_STATE</highlight></codeline>
+<codeline lineno="149" refid="scanner_8h_1a8aaa9e1fa7f13d6954d045ef973a9c84" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>YY_STRUCT_YY_BUFFER_STATE</highlight></codeline>
+<codeline lineno="150"><highlight class="preprocessor"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structyy__buffer__state" kindref="compound">yy_buffer_state</ref></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FILE<sp/>*<ref refid="structyy__buffer__state_1a4360acfb226a1fc240ab2be17dd6beda" kindref="member">yy_input_file</ref>;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structyy__buffer__state_1a0d25458e69eb22207fc633a1255d099d" kindref="member">yy_ch_buf</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>input<sp/>buffer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structyy__buffer__state_1a8435c3f786bbb55d21d0174e4cfc22a0" kindref="member">yy_buf_pos</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>current<sp/>position<sp/>in<sp/>input<sp/>buffer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Size<sp/>of<sp/>input<sp/>buffer<sp/>in<sp/>bytes,<sp/>not<sp/>including<sp/>room<sp/>for<sp/>EOB</highlight></codeline>
+<codeline lineno="158"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>characters.</highlight></codeline>
+<codeline lineno="159"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="scanner_8c_1ad557845057f187eec4be07e2717d2afa" kindref="member">yy_size_t</ref><sp/><ref refid="structyy__buffer__state_1a48302f5f3477a9c78bbddf56d356ef54" kindref="member">yy_buf_size</ref>;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Number<sp/>of<sp/>characters<sp/>read<sp/>into<sp/>yy_ch_buf,<sp/>not<sp/>including<sp/>EOB</highlight></codeline>
+<codeline lineno="163"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>characters.</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structyy__buffer__state_1a06406208824817acfec2183b79080945" kindref="member">yy_n_chars</ref>;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Whether<sp/>we<sp/>&quot;own&quot;<sp/>the<sp/>buffer<sp/>-<sp/>i.e.,<sp/>we<sp/>know<sp/>we<sp/>created<sp/>it,</highlight></codeline>
+<codeline lineno="168"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>and<sp/>can<sp/>realloc()<sp/>it<sp/>to<sp/>grow<sp/>it,<sp/>and<sp/>should<sp/>free()<sp/>it<sp/>to</highlight></codeline>
+<codeline lineno="169"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>delete<sp/>it.</highlight></codeline>
+<codeline lineno="170"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structyy__buffer__state_1a80ce2431c70dc4f89ced487f18449465" kindref="member">yy_is_our_buffer</ref>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Whether<sp/>this<sp/>is<sp/>an<sp/>&quot;interactive&quot;<sp/>input<sp/>source;<sp/>if<sp/>so,<sp/>and</highlight></codeline>
+<codeline lineno="174"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>if<sp/>we&apos;re<sp/>using<sp/>stdio<sp/>for<sp/>input,<sp/>then<sp/>we<sp/>want<sp/>to<sp/>use<sp/>getc()</highlight></codeline>
+<codeline lineno="175"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>instead<sp/>of<sp/>fread(),<sp/>to<sp/>make<sp/>sure<sp/>we<sp/>stop<sp/>fetching<sp/>input<sp/>after</highlight></codeline>
+<codeline lineno="176"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>each<sp/>newline.</highlight></codeline>
+<codeline lineno="177"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structyy__buffer__state_1abf5c70eea75581b58c0ee7bd31b14490" kindref="member">yy_is_interactive</ref>;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Whether<sp/>we&apos;re<sp/>considered<sp/>to<sp/>be<sp/>at<sp/>the<sp/>beginning<sp/>of<sp/>a<sp/>line.</highlight></codeline>
+<codeline lineno="181"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>If<sp/>so,<sp/>&apos;^&apos;<sp/>rules<sp/>will<sp/>be<sp/>active<sp/>on<sp/>the<sp/>next<sp/>match,<sp/>otherwise</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>not.</highlight></codeline>
+<codeline lineno="183"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structyy__buffer__state_1a9d60c60af6e1a6f69de16871fd64f85f" kindref="member">yy_at_bol</ref>;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structyy__buffer__state_1a818e94bc9c766e683c60df1e9fd01199" kindref="member">yy_bs_lineno</ref>;<sp/></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structyy__buffer__state_1a10c4fcd8be759e6bf11e6d3e8cdb0307" kindref="member">yy_bs_column</ref>;<sp/></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Whether<sp/>to<sp/>try<sp/>to<sp/>fill<sp/>the<sp/>input<sp/>buffer<sp/>when<sp/>we<sp/>reach<sp/>the</highlight></codeline>
+<codeline lineno="190"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>end<sp/>of<sp/>it.</highlight></codeline>
+<codeline lineno="191"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structyy__buffer__state_1a63d2afbb1d79a3fc63df9e12626f827d" kindref="member">yy_fill_buffer</ref>;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structyy__buffer__state_1a70fd925d37a2f0454fbd0def675d106c" kindref="member">yy_buffer_status</ref>;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>!YY_STRUCT_YY_BUFFER_STATE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="scanner_8c_1a08c14cb755b463f6582a93ad1e431412" kindref="member">libconfig_yyrestart</ref><sp/>(FILE<sp/>*input_file<sp/>,<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="scanner_8c_1a0ec9e62001fe99385561b722bff5a29d" kindref="member">libconfig_yy_switch_to_buffer</ref><sp/>(YY_BUFFER_STATE<sp/>new_buffer<sp/>,<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">YY_BUFFER_STATE<sp/><ref refid="scanner_8c_1afb80695feb88cc40493a776f051bffec" kindref="member">libconfig_yy_create_buffer</ref><sp/>(FILE<sp/>*file,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size<sp/>,<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="scanner_8c_1a35408a389c67e00f73eae4b370ba11a4" kindref="member">libconfig_yy_delete_buffer</ref><sp/>(YY_BUFFER_STATE<sp/>b<sp/>,<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="scanner_8c_1a2262ac14fc607ff8e363b6f2c3c7e7e0" kindref="member">libconfig_yy_flush_buffer</ref><sp/>(YY_BUFFER_STATE<sp/>b<sp/>,<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="scanner_8c_1a06ec388e41e209ae9a758c000bec51ae" kindref="member">libconfig_yypush_buffer_state</ref><sp/>(YY_BUFFER_STATE<sp/>new_buffer<sp/>,<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="scanner_8c_1ad0ccb05f8859b9971c677dd35f522fb7" kindref="member">libconfig_yypop_buffer_state</ref><sp/>(<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal">YY_BUFFER_STATE<sp/><ref refid="scanner_8c_1a9e4fc60c40f4d1c4d9bd167073b99bde" kindref="member">libconfig_yy_scan_buffer</ref><sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*base,<ref refid="scanner_8c_1ad557845057f187eec4be07e2717d2afa" kindref="member">yy_size_t</ref><sp/>size<sp/>,<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">YY_BUFFER_STATE<sp/><ref refid="scanner_8c_1a6d85748250a6920c6bf48d8c2ba290b4" kindref="member">libconfig_yy_scan_string</ref><sp/>(<ref refid="scanner_8h_1aa2f1a918be586b44bf08126bde2d7cc9" kindref="member">yyconst</ref><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*yy_str<sp/>,<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">YY_BUFFER_STATE<sp/><ref refid="scanner_8c_1a1b98fc545d3576ed6daae52008a52368" kindref="member">libconfig_yy_scan_bytes</ref><sp/>(<ref refid="scanner_8h_1aa2f1a918be586b44bf08126bde2d7cc9" kindref="member">yyconst</ref><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*bytes,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len<sp/>,<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="scanner_8c_1a182b1385d7760277395a645045aa9474" kindref="member">libconfig_yyalloc</ref><sp/>(<ref refid="scanner_8c_1ad557845057f187eec4be07e2717d2afa" kindref="member">yy_size_t</ref><sp/>,<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="scanner_8c_1a6f3299c5e90df0c63044f644540c1394" kindref="member">libconfig_yyrealloc</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<ref refid="scanner_8c_1ad557845057f187eec4be07e2717d2afa" kindref="member">yy_size_t</ref><sp/>,<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="scanner_8c_1a3dfd3491047e503301bdfbbad32e0066" kindref="member">libconfig_yyfree</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>,<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215" refid="scanner_8h_1a5bb3af572edc7abd63a761560c8578d4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>libconfig_yywrap(n)<sp/>1</highlight></codeline>
+<codeline lineno="216" refid="scanner_8h_1ae1ef5933028cbc587d31328e53d11a99" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>YY_SKIP_YYWRAP</highlight></codeline>
+<codeline lineno="217"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218" refid="scanner_8h_1a790a191a93ef4d3b8c0bb43fd7480052" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>yytext_ptr<sp/>yytext_r</highlight></codeline>
+<codeline lineno="219"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>YY_HEADER_EXPORT_START_CONDITIONS</highlight></codeline>
+<codeline lineno="221"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INITIAL<sp/>0</highlight></codeline>
+<codeline lineno="222"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>COMMENT<sp/>1</highlight></codeline>
+<codeline lineno="223"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="225"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>YY_EXTRA_TYPE</highlight></codeline>
+<codeline lineno="227" refid="scanner_8h_1a26938d921de835f6183c02e54cf08828" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>YY_EXTRA_TYPE<sp/>void<sp/>*</highlight></codeline>
+<codeline lineno="228"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="229"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Accessor<sp/>methods<sp/>to<sp/>globals.</highlight></codeline>
+<codeline lineno="231"><highlight class="comment"><sp/><sp/><sp/>These<sp/>are<sp/>made<sp/>visible<sp/>to<sp/>non-reentrant<sp/>scanners<sp/>for<sp/>convenience.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="scanner_8c_1ab3f0aaeea94956aff54a12839c53034b" kindref="member">libconfig_yylex_destroy</ref><sp/>(<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="scanner_8c_1a24d3c7e9ef4d4bd27693f7654dd4a317" kindref="member">libconfig_yyget_debug</ref><sp/>(<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="scanner_8c_1a11d173d4f81f14a57d31b0946d67297e" kindref="member">libconfig_yyset_debug</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>debug_flag<sp/>,<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><ref refid="scanner_8h_1a26938d921de835f6183c02e54cf08828" kindref="member">YY_EXTRA_TYPE</ref><sp/><ref refid="scanner_8c_1a05a71d4431227ae216b46d196f6b860f" kindref="member">libconfig_yyget_extra</ref><sp/>(<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="scanner_8c_1a72daae3586284a289ccd926ac1fc0ec7" kindref="member">libconfig_yyset_extra</ref><sp/>(<ref refid="scanner_8h_1a26938d921de835f6183c02e54cf08828" kindref="member">YY_EXTRA_TYPE</ref><sp/>user_defined<sp/>,<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal">FILE<sp/>*<ref refid="scanner_8c_1a38d656f2c27fd0aba1e0e6b93da1b825" kindref="member">libconfig_yyget_in</ref><sp/>(<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="scanner_8c_1af41d73b2eafdd09794b0923758d1a395" kindref="member">libconfig_yyset_in</ref><sp/><sp/>(FILE<sp/>*<sp/>in_str<sp/>,<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal">FILE<sp/>*<ref refid="scanner_8c_1a2bd05f358bbe938a261a718d9b587548" kindref="member">libconfig_yyget_out</ref><sp/>(<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="scanner_8c_1a9c5d6cbb147ee9b0b2fb91f459d8cf0e" kindref="member">libconfig_yyset_out</ref><sp/><sp/>(FILE<sp/>*<sp/>out_str<sp/>,<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="scanner_8c_1aefbb2ef546469affdf41b98b010bf9cb" kindref="member">libconfig_yyget_leng</ref><sp/>(<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="scanner_8c_1a17ca4db67109a43ee0e570565415854a" kindref="member">libconfig_yyget_text</ref><sp/>(<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="grammar_8c_1a8b9e5cf0670f0bc7132836fd8f89a497" kindref="member">libconfig_yyget_lineno</ref><sp/>(<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="scanner_8c_1a8dd7cf400bb142047c80bdde9d0160c1" kindref="member">libconfig_yyset_lineno</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line_number<sp/>,<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><ref refid="union_y_y_s_t_y_p_e" kindref="compound">YYSTYPE</ref><sp/>*<sp/><ref refid="scanner_8c_1a92311bf0493431b13213a4db636f94be" kindref="member">libconfig_yyget_lval</ref><sp/>(<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="scanner_8c_1a4b122493cc37628d31d994fd3f8cc0bc" kindref="member">libconfig_yyset_lval</ref><sp/>(<ref refid="union_y_y_s_t_y_p_e" kindref="compound">YYSTYPE</ref><sp/>*<sp/>yylval_param<sp/>,<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Macros<sp/>after<sp/>this<sp/>point<sp/>can<sp/>all<sp/>be<sp/>overridden<sp/>by<sp/>user<sp/>definitions<sp/>in</highlight></codeline>
+<codeline lineno="264"><highlight class="comment"><sp/>*<sp/>section<sp/>1.</highlight></codeline>
+<codeline lineno="265"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>YY_SKIP_YYWRAP</highlight></codeline>
+<codeline lineno="268"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="269"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="scanner_8c_1a5bb3af572edc7abd63a761560c8578d4" kindref="member">libconfig_yywrap</ref><sp/>(<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="271"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="scanner_8c_1a5bb3af572edc7abd63a761560c8578d4" kindref="member">libconfig_yywrap</ref><sp/>(<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner<sp/>);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="273"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="274"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>yytext_ptr</highlight></codeline>
+<codeline lineno="276"><highlight class="preprocessor"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>yy_flex_strncpy<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<ref refid="scanner_8h_1aa2f1a918be586b44bf08126bde2d7cc9" kindref="member">yyconst</ref><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>,<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="278"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>YY_NEED_STRLEN</highlight></codeline>
+<codeline lineno="280"><highlight class="preprocessor"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>yy_flex_strlen<sp/>(<ref refid="scanner_8h_1aa2f1a918be586b44bf08126bde2d7cc9" kindref="member">yyconst</ref><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>,<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="282"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>YY_NO_INPUT</highlight></codeline>
+<codeline lineno="284"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="286"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Amount<sp/>of<sp/>stuff<sp/>to<sp/>slurp<sp/>up<sp/>with<sp/>each<sp/>read.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>YY_READ_BUF_SIZE</highlight></codeline>
+<codeline lineno="289" refid="scanner_8h_1aab1491ceccb1c95c14320b2903773a1c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>YY_READ_BUF_SIZE<sp/>8192</highlight></codeline>
+<codeline lineno="290"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="291"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Number<sp/>of<sp/>entries<sp/>by<sp/>which<sp/>start-condition<sp/>stack<sp/>grows.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>YY_START_STACK_INCR</highlight></codeline>
+<codeline lineno="294" refid="scanner_8h_1a227e75c43b9e0cd41529974230be7e75" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>YY_START_STACK_INCR<sp/>25</highlight></codeline>
+<codeline lineno="295"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="296"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Default<sp/>declaration<sp/>of<sp/>generated<sp/>scanner<sp/>-<sp/>a<sp/>define<sp/>so<sp/>the<sp/>user<sp/>can</highlight></codeline>
+<codeline lineno="298"><highlight class="comment"><sp/>*<sp/>easily<sp/>add<sp/>parameters.</highlight></codeline>
+<codeline lineno="299"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>YY_DECL</highlight></codeline>
+<codeline lineno="301" refid="scanner_8h_1a7682c8d9cec0859408d2421fbe4a5570" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>YY_DECL_IS_OURS<sp/>1</highlight></codeline>
+<codeline lineno="302"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="grammar_8c_1ac18f7233e786481972ad879c051492d0" kindref="member">libconfig_yylex</ref><sp/>(<ref refid="union_y_y_s_t_y_p_e" kindref="compound">YYSTYPE</ref><sp/>*<sp/>yylval_param<sp/>,<ref refid="scanner_8c_1a157535ed0322a026cc197c8985c08d35" kindref="member">yyscan_t</ref><sp/>yyscanner);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305" refid="scanner_8h_1ae5b01ac2fa5a6ad5fb97559638abe686" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>YY_DECL<sp/>int<sp/>libconfig_yylex<sp/>(YYSTYPE<sp/>*<sp/>yylval_param<sp/>,<sp/>yyscan_t<sp/>yyscanner)</highlight></codeline>
+<codeline lineno="306"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>!YY_DECL<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>yy_get_previous_state<sp/>-<sp/>get<sp/>the<sp/>state<sp/>just<sp/>before<sp/>the<sp/>EOB<sp/>char<sp/>was<sp/>reached<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>YY_NEW_FILE</highlight></codeline>
+<codeline lineno="311"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>YY_FLUSH_BUFFER</highlight></codeline>
+<codeline lineno="312"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>yy_set_bol</highlight></codeline>
+<codeline lineno="313"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>yy_new_buffer</highlight></codeline>
+<codeline lineno="314"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>yy_set_interactive</highlight></codeline>
+<codeline lineno="315"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>YY_DO_BEFORE_ACTION</highlight></codeline>
+<codeline lineno="316"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>YY_DECL_IS_OURS</highlight></codeline>
+<codeline lineno="318"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>YY_DECL_IS_OURS</highlight></codeline>
+<codeline lineno="319"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>YY_DECL</highlight></codeline>
+<codeline lineno="320"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="321"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="preprocessor">#line<sp/>130<sp/>&quot;scanner.l&quot;</highlight></codeline>
+<codeline lineno="323"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight><highlight class="preprocessor">#line<sp/>325<sp/>&quot;scanner.h&quot;</highlight></codeline>
+<codeline lineno="325"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>libconfig_yyIN_HEADER</highlight></codeline>
+<codeline lineno="326"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>libconfig_yyHEADER_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanner.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,76 @@
+\hypertarget{_config_8cpp}{
+\section{src/opentld/main/Config.cpp File Reference}
+\label{_config_8cpp}\index{src/opentld/main/Config.cpp@{src/opentld/main/Config.cpp}}
+}
+{\ttfamily \#include \char`\"{}Config.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}Main.h\char`\"{}}\par
+Include dependency graph for Config.cpp:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_config_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespacetld}{tld}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_config_8cpp_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}~0
+\item 
+\#define \hyperlink{_config_8cpp_a59adc4c82490d23754cd39c2fb99b0da}{EOF}~(-\/1)
+\item 
+\#define \hyperlink{_config_8cpp_a08aea8facaf5fc0b89d12f3871c5730a}{ERR}(s, c)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{namespacetld_a5b279570cd95fb0067a41b5a222e2642}{tld::getopt} (int argc, char $\ast$$\ast$argv, char $\ast$opts)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{namespacetld_a6e180d5067af278cc277ae9c6f7507c1}{tld::opterr} = 1
+\item 
+int \hyperlink{namespacetld_ab8c5a378ef03678c537edc84a15abc22}{tld::optind} = 1
+\item 
+int \hyperlink{namespacetld_a6d6bd80732b9f396bc03e5f2c5cf30f8}{tld::optopt}
+\item 
+char $\ast$ \hyperlink{namespacetld_a1bbc7d3201a2ef41da5495e0e48cfd2e}{tld::optarg}
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{_config_8cpp_a59adc4c82490d23754cd39c2fb99b0da}{
+\index{Config.cpp@{Config.cpp}!EOF@{EOF}}
+\index{EOF@{EOF}!Config.cpp@{Config.cpp}}
+\subsubsection[{EOF}]{\setlength{\rightskip}{0pt plus 5cm}\#define EOF~(-\/1)}}
+\label{_config_8cpp_a59adc4c82490d23754cd39c2fb99b0da}
+\hypertarget{_config_8cpp_a08aea8facaf5fc0b89d12f3871c5730a}{
+\index{Config.cpp@{Config.cpp}!ERR@{ERR}}
+\index{ERR@{ERR}!Config.cpp@{Config.cpp}}
+\subsubsection[{ERR}]{\setlength{\rightskip}{0pt plus 5cm}\#define ERR(
+\begin{DoxyParamCaption}
+\item[{}]{s, }
+\item[{}]{c}
+\end{DoxyParamCaption}
+)}}
+\label{_config_8cpp_a08aea8facaf5fc0b89d12f3871c5730a}
+{\bfseries Value:}
+\begin{DoxyCode}
+if(opterr){\
+    char errbuf[2];\
+    errbuf[0] = c; errbuf[1] = '\n';\
+    fputs(argv[0], stderr);\
+    fputs(s, stderr);\
+    fputc(c, stderr);}
+\end{DoxyCode}
+\hypertarget{_config_8cpp_a070d2ce7b6bb7e5c05602aa8c308d0c4}{
+\index{Config.cpp@{Config.cpp}!NULL@{NULL}}
+\index{NULL@{NULL}!Config.cpp@{Config.cpp}}
+\subsubsection[{NULL}]{\setlength{\rightskip}{0pt plus 5cm}\#define NULL~0}}
+\label{_config_8cpp_a070d2ce7b6bb7e5c05602aa8c308d0c4}

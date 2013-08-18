@@ -1,0 +1,203 @@
+\hypertarget{classtld_1_1_n_n_classifier}{
+\section{tld::NNClassifier Class Reference}
+\label{classtld_1_1_n_n_classifier}\index{tld::NNClassifier@{tld::NNClassifier}}
+}
+
+
+{\ttfamily \#include $<$NNClassifier.h$>$}
+
+
+
+Collaboration diagram for tld::NNClassifier:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{classtld_1_1_n_n_classifier__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtld_1_1_n_n_classifier_a5a71057c2aacdd4935247976e6f49b46}{NNClassifier} ()
+\item 
+virtual \hyperlink{classtld_1_1_n_n_classifier_a475f200dea8dc71cf0f273c57d837242}{$\sim$NNClassifier} ()
+\item 
+void \hyperlink{classtld_1_1_n_n_classifier_aabb548e7b9535ad8040fe65d344b3142}{release} ()
+\item 
+float \hyperlink{classtld_1_1_n_n_classifier_aa59628d72a448c3ee686d9fd78d3e62a}{classifyPatch} (\hyperlink{classtld_1_1_normalized_patch}{NormalizedPatch} $\ast$patch)
+\item 
+float \hyperlink{classtld_1_1_n_n_classifier_a4b926da10ab0ce0d05fdb19b7e90bf8b}{classifyBB} (const cv::Mat \&img, cv::Rect $\ast$bb)
+\item 
+float \hyperlink{classtld_1_1_n_n_classifier_a88fe1649014e887a12a5a57a552819f2}{classifyWindow} (const cv::Mat \&img, int windowIdx)
+\item 
+void \hyperlink{classtld_1_1_n_n_classifier_aa6a34e43628807018da166897063ea02}{learn} (std::vector$<$ \hyperlink{classtld_1_1_normalized_patch}{NormalizedPatch} $>$ patches)
+\item 
+bool \hyperlink{classtld_1_1_n_n_classifier_a173e8f32e073d88c93203ff6ec3352ab}{filter} (const cv::Mat \&img, int windowIdx)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classtld_1_1_n_n_classifier_a7a86c7c4d1bf5664540f476f455dad21}{enabled}
+\item 
+int $\ast$ \hyperlink{classtld_1_1_n_n_classifier_a6a4aab5ed014405c9dbd9162af1b1d7c}{windows}
+\item 
+float \hyperlink{classtld_1_1_n_n_classifier_a5cddbd7f4a38e95a7f00cb1013962b9e}{thetaFP}
+\item 
+float \hyperlink{classtld_1_1_n_n_classifier_aada6ca01c7b5224439e375444947cd16}{thetaTP}
+\item 
+\hyperlink{classtld_1_1_detection_result}{DetectionResult} $\ast$ \hyperlink{classtld_1_1_n_n_classifier_a5320e517bb5ad4ed524701df5cc200aa}{detectionResult}
+\item 
+std::vector$<$ \hyperlink{classtld_1_1_normalized_patch}{NormalizedPatch} $>$ $\ast$ \hyperlink{classtld_1_1_n_n_classifier_abc088471e8f9e259cc07cbb9a704fb28}{falsePositives}
+\item 
+std::vector$<$ \hyperlink{classtld_1_1_normalized_patch}{NormalizedPatch} $>$ $\ast$ \hyperlink{classtld_1_1_n_n_classifier_ac17849309a8aed1fdc3e3247f22b5fa2}{truePositives}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtld_1_1_n_n_classifier_a5a71057c2aacdd4935247976e6f49b46}{
+\index{tld::NNClassifier@{tld::NNClassifier}!NNClassifier@{NNClassifier}}
+\index{NNClassifier@{NNClassifier}!tld::NNClassifier@{tld::NNClassifier}}
+\subsubsection[{NNClassifier}]{\setlength{\rightskip}{0pt plus 5cm}tld::NNClassifier::NNClassifier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_n_n_classifier_a5a71057c2aacdd4935247976e6f49b46}
+\hypertarget{classtld_1_1_n_n_classifier_a475f200dea8dc71cf0f273c57d837242}{
+\index{tld::NNClassifier@{tld::NNClassifier}!$\sim$NNClassifier@{$\sim$NNClassifier}}
+\index{$\sim$NNClassifier@{$\sim$NNClassifier}!tld::NNClassifier@{tld::NNClassifier}}
+\subsubsection[{$\sim$NNClassifier}]{\setlength{\rightskip}{0pt plus 5cm}tld::NNClassifier::$\sim$NNClassifier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classtld_1_1_n_n_classifier_a475f200dea8dc71cf0f273c57d837242}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_n_n_classifier_a475f200dea8dc71cf0f273c57d837242_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtld_1_1_n_n_classifier_a4b926da10ab0ce0d05fdb19b7e90bf8b}{
+\index{tld::NNClassifier@{tld::NNClassifier}!classifyBB@{classifyBB}}
+\index{classifyBB@{classifyBB}!tld::NNClassifier@{tld::NNClassifier}}
+\subsubsection[{classifyBB}]{\setlength{\rightskip}{0pt plus 5cm}float tld::NNClassifier::classifyBB (
+\begin{DoxyParamCaption}
+\item[{const cv::Mat \&}]{ img, }
+\item[{cv::Rect $\ast$}]{ bb}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_n_n_classifier_a4b926da10ab0ce0d05fdb19b7e90bf8b}
+\hypertarget{classtld_1_1_n_n_classifier_aa59628d72a448c3ee686d9fd78d3e62a}{
+\index{tld::NNClassifier@{tld::NNClassifier}!classifyPatch@{classifyPatch}}
+\index{classifyPatch@{classifyPatch}!tld::NNClassifier@{tld::NNClassifier}}
+\subsubsection[{classifyPatch}]{\setlength{\rightskip}{0pt plus 5cm}float tld::NNClassifier::classifyPatch (
+\begin{DoxyParamCaption}
+\item[{{\bf NormalizedPatch} $\ast$}]{ patch}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_n_n_classifier_aa59628d72a448c3ee686d9fd78d3e62a}
+\hypertarget{classtld_1_1_n_n_classifier_a88fe1649014e887a12a5a57a552819f2}{
+\index{tld::NNClassifier@{tld::NNClassifier}!classifyWindow@{classifyWindow}}
+\index{classifyWindow@{classifyWindow}!tld::NNClassifier@{tld::NNClassifier}}
+\subsubsection[{classifyWindow}]{\setlength{\rightskip}{0pt plus 5cm}float tld::NNClassifier::classifyWindow (
+\begin{DoxyParamCaption}
+\item[{const cv::Mat \&}]{ img, }
+\item[{int}]{ windowIdx}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_n_n_classifier_a88fe1649014e887a12a5a57a552819f2}
+\hypertarget{classtld_1_1_n_n_classifier_a173e8f32e073d88c93203ff6ec3352ab}{
+\index{tld::NNClassifier@{tld::NNClassifier}!filter@{filter}}
+\index{filter@{filter}!tld::NNClassifier@{tld::NNClassifier}}
+\subsubsection[{filter}]{\setlength{\rightskip}{0pt plus 5cm}bool tld::NNClassifier::filter (
+\begin{DoxyParamCaption}
+\item[{const cv::Mat \&}]{ img, }
+\item[{int}]{ windowIdx}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_n_n_classifier_a173e8f32e073d88c93203ff6ec3352ab}
+\hypertarget{classtld_1_1_n_n_classifier_aa6a34e43628807018da166897063ea02}{
+\index{tld::NNClassifier@{tld::NNClassifier}!learn@{learn}}
+\index{learn@{learn}!tld::NNClassifier@{tld::NNClassifier}}
+\subsubsection[{learn}]{\setlength{\rightskip}{0pt plus 5cm}void tld::NNClassifier::learn (
+\begin{DoxyParamCaption}
+\item[{std::vector$<$ {\bf NormalizedPatch} $>$}]{ patches}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_n_n_classifier_aa6a34e43628807018da166897063ea02}
+\hypertarget{classtld_1_1_n_n_classifier_aabb548e7b9535ad8040fe65d344b3142}{
+\index{tld::NNClassifier@{tld::NNClassifier}!release@{release}}
+\index{release@{release}!tld::NNClassifier@{tld::NNClassifier}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}void tld::NNClassifier::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_n_n_classifier_aabb548e7b9535ad8040fe65d344b3142}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_n_n_classifier_aabb548e7b9535ad8040fe65d344b3142_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classtld_1_1_n_n_classifier_a5320e517bb5ad4ed524701df5cc200aa}{
+\index{tld::NNClassifier@{tld::NNClassifier}!detectionResult@{detectionResult}}
+\index{detectionResult@{detectionResult}!tld::NNClassifier@{tld::NNClassifier}}
+\subsubsection[{detectionResult}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DetectionResult}$\ast$ {\bf tld::NNClassifier::detectionResult}}}
+\label{classtld_1_1_n_n_classifier_a5320e517bb5ad4ed524701df5cc200aa}
+\hypertarget{classtld_1_1_n_n_classifier_a7a86c7c4d1bf5664540f476f455dad21}{
+\index{tld::NNClassifier@{tld::NNClassifier}!enabled@{enabled}}
+\index{enabled@{enabled}!tld::NNClassifier@{tld::NNClassifier}}
+\subsubsection[{enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf tld::NNClassifier::enabled}}}
+\label{classtld_1_1_n_n_classifier_a7a86c7c4d1bf5664540f476f455dad21}
+\hypertarget{classtld_1_1_n_n_classifier_abc088471e8f9e259cc07cbb9a704fb28}{
+\index{tld::NNClassifier@{tld::NNClassifier}!falsePositives@{falsePositives}}
+\index{falsePositives@{falsePositives}!tld::NNClassifier@{tld::NNClassifier}}
+\subsubsection[{falsePositives}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf NormalizedPatch}$>$$\ast$ {\bf tld::NNClassifier::falsePositives}}}
+\label{classtld_1_1_n_n_classifier_abc088471e8f9e259cc07cbb9a704fb28}
+\hypertarget{classtld_1_1_n_n_classifier_a5cddbd7f4a38e95a7f00cb1013962b9e}{
+\index{tld::NNClassifier@{tld::NNClassifier}!thetaFP@{thetaFP}}
+\index{thetaFP@{thetaFP}!tld::NNClassifier@{tld::NNClassifier}}
+\subsubsection[{thetaFP}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf tld::NNClassifier::thetaFP}}}
+\label{classtld_1_1_n_n_classifier_a5cddbd7f4a38e95a7f00cb1013962b9e}
+\hypertarget{classtld_1_1_n_n_classifier_aada6ca01c7b5224439e375444947cd16}{
+\index{tld::NNClassifier@{tld::NNClassifier}!thetaTP@{thetaTP}}
+\index{thetaTP@{thetaTP}!tld::NNClassifier@{tld::NNClassifier}}
+\subsubsection[{thetaTP}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf tld::NNClassifier::thetaTP}}}
+\label{classtld_1_1_n_n_classifier_aada6ca01c7b5224439e375444947cd16}
+\hypertarget{classtld_1_1_n_n_classifier_ac17849309a8aed1fdc3e3247f22b5fa2}{
+\index{tld::NNClassifier@{tld::NNClassifier}!truePositives@{truePositives}}
+\index{truePositives@{truePositives}!tld::NNClassifier@{tld::NNClassifier}}
+\subsubsection[{truePositives}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf NormalizedPatch}$>$$\ast$ {\bf tld::NNClassifier::truePositives}}}
+\label{classtld_1_1_n_n_classifier_ac17849309a8aed1fdc3e3247f22b5fa2}
+\hypertarget{classtld_1_1_n_n_classifier_a6a4aab5ed014405c9dbd9162af1b1d7c}{
+\index{tld::NNClassifier@{tld::NNClassifier}!windows@{windows}}
+\index{windows@{windows}!tld::NNClassifier@{tld::NNClassifier}}
+\subsubsection[{windows}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf tld::NNClassifier::windows}}}
+\label{classtld_1_1_n_n_classifier_a6a4aab5ed014405c9dbd9162af1b1d7c}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/libopentld/tld/\hyperlink{_n_n_classifier_8h}{NNClassifier.h}\item 
+src/libopentld/tld/\hyperlink{_n_n_classifier_8cpp}{NNClassifier.cpp}\end{DoxyCompactItemize}

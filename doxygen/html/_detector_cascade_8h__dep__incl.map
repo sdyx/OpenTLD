@@ -1,0 +1,17 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_clustering_8cpp.html" title="src/libopentld/tld/Clustering.cpp" alt="" coords="5,83,227,111"/>
+<area shape="rect" id="node5" href="$_detector_cascade_8cpp.html" title="src/libopentld/tld/DetectorCascade.cpp" alt="" coords="251,83,520,111"/>
+<area shape="rect" id="node7" href="$_ensemble_classifier_8cpp.html" title="src/libopentld/tld/EnsembleClassifier.cpp" alt="" coords="544,83,821,111"/>
+<area shape="rect" id="node9" href="$_n_n_classifier_8cpp.html" title="src/libopentld/tld/NNClassifier.cpp" alt="" coords="845,83,1080,111"/>
+<area shape="rect" id="node11" href="$_t_l_d_8h.html" title="src/libopentld/tld/TLD.h" alt="" coords="1104,83,1269,111"/>
+<area shape="rect" id="node33" href="$_t_l_d_util_8cpp.html" title="src/libopentld/tld/TLDUtil.cpp" alt="" coords="1293,83,1496,111"/>
+<area shape="rect" id="node35" href="$_variance_filter_8cpp.html" title="src/libopentld/tld/VarianceFilter.cpp" alt="" coords="1520,83,1763,111"/>
+<area shape="rect" id="node13" href="$_t_l_d_8cpp.html" title="src/libopentld/tld/TLD.cpp" alt="" coords="995,161,1176,189"/>
+<area shape="rect" id="node15" href="$_main_8h.html" title="src/opentld/main/Main.h" alt="" coords="1200,161,1373,189"/>
+<area shape="rect" id="node17" href="$_config_8h.html" title="src/opentld/main/Config.h" alt="" coords="1131,238,1315,266"/>
+<area shape="rect" id="node19" href="$_config_8cpp.html" title="src/opentld/main/Config.cpp" alt="" coords="800,315,1000,343"/>
+<area shape="rect" id="node21" href="$_main_8cpp.html" title="src/opentld/main/Main.cpp" alt="" coords="1024,315,1213,343"/>
+<area shape="rect" id="node23" href="$_open_t_l_d_8cpp.html" title="src/opentld/OpenTLD.cpp" alt="" coords="1237,315,1419,343"/>
+<area shape="rect" id="node25" href="$_q_open_t_l_d_8cpp.html" title="src/opentld/QOpenTLD.cpp" alt="" coords="1443,315,1635,343"/>
+<area shape="rect" id="node28" href="$_gui_8cpp.html" title="src/opentld/main/Gui.cpp" alt="" coords="1440,238,1621,266"/>
+</map>

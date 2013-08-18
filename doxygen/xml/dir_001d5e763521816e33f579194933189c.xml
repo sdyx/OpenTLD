@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="dir_001d5e763521816e33f579194933189c" kind="dir">
+    <compoundname>src/opentld/main/</compoundname>
+    <innerfile refid="_config_8cpp">Config.cpp</innerfile>
+    <innerfile refid="_config_8h">Config.h</innerfile>
+    <innerfile refid="_gui_8cpp">Gui.cpp</innerfile>
+    <innerfile refid="_gui_8h">Gui.h</innerfile>
+    <innerfile refid="_main_8cpp">Main.cpp</innerfile>
+    <innerfile refid="_main_8h">Main.h</innerfile>
+    <innerfile refid="_settings_8cpp">Settings.cpp</innerfile>
+    <innerfile refid="_settings_8h">Settings.h</innerfile>
+    <innerfile refid="_trajectory_8cpp">Trajectory.cpp</innerfile>
+    <innerfile refid="_trajectory_8h">Trajectory.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/horst/repos/opentld-sdyx/src/opentld/main/"/>
+  </compounddef>
+</doxygen>

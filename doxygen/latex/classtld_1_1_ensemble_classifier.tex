@@ -1,0 +1,394 @@
+\hypertarget{classtld_1_1_ensemble_classifier}{
+\section{tld::EnsembleClassifier Class Reference}
+\label{classtld_1_1_ensemble_classifier}\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+}
+
+
+{\ttfamily \#include $<$EnsembleClassifier.h$>$}
+
+
+
+Collaboration diagram for tld::EnsembleClassifier:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classtld_1_1_ensemble_classifier__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtld_1_1_ensemble_classifier_a7ce76942175fecdf2b44be726f1f7a89}{EnsembleClassifier} ()
+\item 
+virtual \hyperlink{classtld_1_1_ensemble_classifier_a71a3976d9dccf15dcdd6a14826d5ec5a}{$\sim$EnsembleClassifier} ()
+\item 
+void \hyperlink{classtld_1_1_ensemble_classifier_afb0e8ed03adef91257801bf0e3ca73f7}{init} ()
+\item 
+void \hyperlink{classtld_1_1_ensemble_classifier_a3fc444f59e0f23a97f9889e58adaba73}{initFeatureLocations} ()
+\item 
+void \hyperlink{classtld_1_1_ensemble_classifier_a92ddef7701b1062b1f4a53e5cfcd79a2}{initFeatureOffsets} ()
+\item 
+void \hyperlink{classtld_1_1_ensemble_classifier_ab342db231d14bbaa892b2664d210e152}{initPosteriors} ()
+\item 
+void \hyperlink{classtld_1_1_ensemble_classifier_a3fd93c80d37f7f115443c2e147ec9967}{release} ()
+\item 
+void \hyperlink{classtld_1_1_ensemble_classifier_a7871296c03de06293ebd3dc29ecab5de}{nextIteration} (const cv::Mat \&img)
+\item 
+void \hyperlink{classtld_1_1_ensemble_classifier_abf7e915ff675720293502be0452cb6c2}{classifyWindow} (int windowIdx)
+\item 
+void \hyperlink{classtld_1_1_ensemble_classifier_acfc0c9d71c16dfed9750b6aa409afb0c}{updatePosterior} (int treeIdx, int idx, int positive, int amount)
+\item 
+void \hyperlink{classtld_1_1_ensemble_classifier_ad088404fdea039b774c2eb088e4cfc04}{learn} (int $\ast$boundary, int positive, int $\ast$featureVector)
+\item 
+bool \hyperlink{classtld_1_1_ensemble_classifier_a42f1f3606d14a7d274f5bb9f4fa5030f}{filter} (int i)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classtld_1_1_ensemble_classifier_a539d429a773ec9b2b86946fddb39ac52}{enabled}
+\item 
+int \hyperlink{classtld_1_1_ensemble_classifier_a60e802769e79c833d1484d96bb345b7c}{numTrees}
+\item 
+int \hyperlink{classtld_1_1_ensemble_classifier_a176aba4e90f0b9373d8aedd7c25fa262}{numFeatures}
+\item 
+int \hyperlink{classtld_1_1_ensemble_classifier_a149e36a3d0d287ee804ec7cf92dc6569}{imgWidthStep}
+\item 
+int \hyperlink{classtld_1_1_ensemble_classifier_ae10dcd7614a39f9b29b3fbe957889fb9}{numScales}
+\item 
+cv::Size $\ast$ \hyperlink{classtld_1_1_ensemble_classifier_ae2ea00a933d9c96498ba756a2b4ec6b5}{scales}
+\item 
+int $\ast$ \hyperlink{classtld_1_1_ensemble_classifier_abc6ed3b991a724b07dfcc25108769e92}{windowOffsets}
+\item 
+int $\ast$ \hyperlink{classtld_1_1_ensemble_classifier_acf42e105ca1cb616aaf2d8e4d8755c41}{featureOffsets}
+\item 
+float $\ast$ \hyperlink{classtld_1_1_ensemble_classifier_a02deffee640b4106051024d1ae8a55aa}{features}
+\item 
+int \hyperlink{classtld_1_1_ensemble_classifier_afbfbda1b693525895467fba88a8debe3}{numIndices}
+\item 
+float $\ast$ \hyperlink{classtld_1_1_ensemble_classifier_a34092918268be97eb1e1f2f0fc7d4254}{posteriors}
+\item 
+int $\ast$ \hyperlink{classtld_1_1_ensemble_classifier_a572549e31f9bfc34c7b464e02aa41397}{positives}
+\item 
+int $\ast$ \hyperlink{classtld_1_1_ensemble_classifier_a2de7561eb20a0f0a1b4909d6dfd89d0b}{negatives}
+\item 
+\hyperlink{classtld_1_1_detection_result}{DetectionResult} $\ast$ \hyperlink{classtld_1_1_ensemble_classifier_af57e5de2c583e7f1cf39e6de03159323}{detectionResult}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtld_1_1_ensemble_classifier_a7ce76942175fecdf2b44be726f1f7a89}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!EnsembleClassifier@{EnsembleClassifier}}
+\index{EnsembleClassifier@{EnsembleClassifier}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{EnsembleClassifier}]{\setlength{\rightskip}{0pt plus 5cm}tld::EnsembleClassifier::EnsembleClassifier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_ensemble_classifier_a7ce76942175fecdf2b44be726f1f7a89}
+\hypertarget{classtld_1_1_ensemble_classifier_a71a3976d9dccf15dcdd6a14826d5ec5a}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!$\sim$EnsembleClassifier@{$\sim$EnsembleClassifier}}
+\index{$\sim$EnsembleClassifier@{$\sim$EnsembleClassifier}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{$\sim$EnsembleClassifier}]{\setlength{\rightskip}{0pt plus 5cm}tld::EnsembleClassifier::$\sim$EnsembleClassifier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classtld_1_1_ensemble_classifier_a71a3976d9dccf15dcdd6a14826d5ec5a}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_ensemble_classifier_a71a3976d9dccf15dcdd6a14826d5ec5a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtld_1_1_ensemble_classifier_abf7e915ff675720293502be0452cb6c2}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!classifyWindow@{classifyWindow}}
+\index{classifyWindow@{classifyWindow}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{classifyWindow}]{\setlength{\rightskip}{0pt plus 5cm}void tld::EnsembleClassifier::classifyWindow (
+\begin{DoxyParamCaption}
+\item[{int}]{ windowIdx}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_ensemble_classifier_abf7e915ff675720293502be0452cb6c2}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_ensemble_classifier_abf7e915ff675720293502be0452cb6c2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1_ensemble_classifier_a42f1f3606d14a7d274f5bb9f4fa5030f}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!filter@{filter}}
+\index{filter@{filter}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{filter}]{\setlength{\rightskip}{0pt plus 5cm}bool tld::EnsembleClassifier::filter (
+\begin{DoxyParamCaption}
+\item[{int}]{ i}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_ensemble_classifier_a42f1f3606d14a7d274f5bb9f4fa5030f}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_ensemble_classifier_a42f1f3606d14a7d274f5bb9f4fa5030f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1_ensemble_classifier_afb0e8ed03adef91257801bf0e3ca73f7}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!init@{init}}
+\index{init@{init}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void tld::EnsembleClassifier::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_ensemble_classifier_afb0e8ed03adef91257801bf0e3ca73f7}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_ensemble_classifier_afb0e8ed03adef91257801bf0e3ca73f7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_ensemble_classifier_afb0e8ed03adef91257801bf0e3ca73f7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1_ensemble_classifier_a3fc444f59e0f23a97f9889e58adaba73}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!initFeatureLocations@{initFeatureLocations}}
+\index{initFeatureLocations@{initFeatureLocations}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{initFeatureLocations}]{\setlength{\rightskip}{0pt plus 5cm}void tld::EnsembleClassifier::initFeatureLocations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_ensemble_classifier_a3fc444f59e0f23a97f9889e58adaba73}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_ensemble_classifier_a3fc444f59e0f23a97f9889e58adaba73_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1_ensemble_classifier_a92ddef7701b1062b1f4a53e5cfcd79a2}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!initFeatureOffsets@{initFeatureOffsets}}
+\index{initFeatureOffsets@{initFeatureOffsets}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{initFeatureOffsets}]{\setlength{\rightskip}{0pt plus 5cm}void tld::EnsembleClassifier::initFeatureOffsets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_ensemble_classifier_a92ddef7701b1062b1f4a53e5cfcd79a2}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_ensemble_classifier_a92ddef7701b1062b1f4a53e5cfcd79a2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1_ensemble_classifier_ab342db231d14bbaa892b2664d210e152}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!initPosteriors@{initPosteriors}}
+\index{initPosteriors@{initPosteriors}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{initPosteriors}]{\setlength{\rightskip}{0pt plus 5cm}void tld::EnsembleClassifier::initPosteriors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_ensemble_classifier_ab342db231d14bbaa892b2664d210e152}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_ensemble_classifier_ab342db231d14bbaa892b2664d210e152_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1_ensemble_classifier_ad088404fdea039b774c2eb088e4cfc04}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!learn@{learn}}
+\index{learn@{learn}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{learn}]{\setlength{\rightskip}{0pt plus 5cm}void tld::EnsembleClassifier::learn (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{ boundary, }
+\item[{int}]{ positive, }
+\item[{int $\ast$}]{ featureVector}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_ensemble_classifier_ad088404fdea039b774c2eb088e4cfc04}
+\hypertarget{classtld_1_1_ensemble_classifier_a7871296c03de06293ebd3dc29ecab5de}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!nextIteration@{nextIteration}}
+\index{nextIteration@{nextIteration}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{nextIteration}]{\setlength{\rightskip}{0pt plus 5cm}void tld::EnsembleClassifier::nextIteration (
+\begin{DoxyParamCaption}
+\item[{const cv::Mat \&}]{ img}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_ensemble_classifier_a7871296c03de06293ebd3dc29ecab5de}
+\hypertarget{classtld_1_1_ensemble_classifier_a3fd93c80d37f7f115443c2e147ec9967}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!release@{release}}
+\index{release@{release}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}void tld::EnsembleClassifier::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_ensemble_classifier_a3fd93c80d37f7f115443c2e147ec9967}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_ensemble_classifier_a3fd93c80d37f7f115443c2e147ec9967_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1_ensemble_classifier_acfc0c9d71c16dfed9750b6aa409afb0c}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!updatePosterior@{updatePosterior}}
+\index{updatePosterior@{updatePosterior}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{updatePosterior}]{\setlength{\rightskip}{0pt plus 5cm}void tld::EnsembleClassifier::updatePosterior (
+\begin{DoxyParamCaption}
+\item[{int}]{ treeIdx, }
+\item[{int}]{ idx, }
+\item[{int}]{ positive, }
+\item[{int}]{ amount}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_ensemble_classifier_acfc0c9d71c16dfed9750b6aa409afb0c}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classtld_1_1_ensemble_classifier_acfc0c9d71c16dfed9750b6aa409afb0c_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classtld_1_1_ensemble_classifier_af57e5de2c583e7f1cf39e6de03159323}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!detectionResult@{detectionResult}}
+\index{detectionResult@{detectionResult}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{detectionResult}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DetectionResult}$\ast$ {\bf tld::EnsembleClassifier::detectionResult}}}
+\label{classtld_1_1_ensemble_classifier_af57e5de2c583e7f1cf39e6de03159323}
+\hypertarget{classtld_1_1_ensemble_classifier_a539d429a773ec9b2b86946fddb39ac52}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!enabled@{enabled}}
+\index{enabled@{enabled}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf tld::EnsembleClassifier::enabled}}}
+\label{classtld_1_1_ensemble_classifier_a539d429a773ec9b2b86946fddb39ac52}
+\hypertarget{classtld_1_1_ensemble_classifier_acf42e105ca1cb616aaf2d8e4d8755c41}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!featureOffsets@{featureOffsets}}
+\index{featureOffsets@{featureOffsets}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{featureOffsets}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf tld::EnsembleClassifier::featureOffsets}}}
+\label{classtld_1_1_ensemble_classifier_acf42e105ca1cb616aaf2d8e4d8755c41}
+\hypertarget{classtld_1_1_ensemble_classifier_a02deffee640b4106051024d1ae8a55aa}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!features@{features}}
+\index{features@{features}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{features}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ {\bf tld::EnsembleClassifier::features}}}
+\label{classtld_1_1_ensemble_classifier_a02deffee640b4106051024d1ae8a55aa}
+\hypertarget{classtld_1_1_ensemble_classifier_a149e36a3d0d287ee804ec7cf92dc6569}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!imgWidthStep@{imgWidthStep}}
+\index{imgWidthStep@{imgWidthStep}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{imgWidthStep}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::EnsembleClassifier::imgWidthStep}}}
+\label{classtld_1_1_ensemble_classifier_a149e36a3d0d287ee804ec7cf92dc6569}
+\hypertarget{classtld_1_1_ensemble_classifier_a2de7561eb20a0f0a1b4909d6dfd89d0b}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!negatives@{negatives}}
+\index{negatives@{negatives}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{negatives}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf tld::EnsembleClassifier::negatives}}}
+\label{classtld_1_1_ensemble_classifier_a2de7561eb20a0f0a1b4909d6dfd89d0b}
+\hypertarget{classtld_1_1_ensemble_classifier_a176aba4e90f0b9373d8aedd7c25fa262}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!numFeatures@{numFeatures}}
+\index{numFeatures@{numFeatures}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{numFeatures}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::EnsembleClassifier::numFeatures}}}
+\label{classtld_1_1_ensemble_classifier_a176aba4e90f0b9373d8aedd7c25fa262}
+\hypertarget{classtld_1_1_ensemble_classifier_afbfbda1b693525895467fba88a8debe3}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!numIndices@{numIndices}}
+\index{numIndices@{numIndices}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{numIndices}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::EnsembleClassifier::numIndices}}}
+\label{classtld_1_1_ensemble_classifier_afbfbda1b693525895467fba88a8debe3}
+\hypertarget{classtld_1_1_ensemble_classifier_ae10dcd7614a39f9b29b3fbe957889fb9}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!numScales@{numScales}}
+\index{numScales@{numScales}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{numScales}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::EnsembleClassifier::numScales}}}
+\label{classtld_1_1_ensemble_classifier_ae10dcd7614a39f9b29b3fbe957889fb9}
+\hypertarget{classtld_1_1_ensemble_classifier_a60e802769e79c833d1484d96bb345b7c}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!numTrees@{numTrees}}
+\index{numTrees@{numTrees}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{numTrees}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::EnsembleClassifier::numTrees}}}
+\label{classtld_1_1_ensemble_classifier_a60e802769e79c833d1484d96bb345b7c}
+\hypertarget{classtld_1_1_ensemble_classifier_a572549e31f9bfc34c7b464e02aa41397}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!positives@{positives}}
+\index{positives@{positives}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{positives}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf tld::EnsembleClassifier::positives}}}
+\label{classtld_1_1_ensemble_classifier_a572549e31f9bfc34c7b464e02aa41397}
+\hypertarget{classtld_1_1_ensemble_classifier_a34092918268be97eb1e1f2f0fc7d4254}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!posteriors@{posteriors}}
+\index{posteriors@{posteriors}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{posteriors}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ {\bf tld::EnsembleClassifier::posteriors}}}
+\label{classtld_1_1_ensemble_classifier_a34092918268be97eb1e1f2f0fc7d4254}
+\hypertarget{classtld_1_1_ensemble_classifier_ae2ea00a933d9c96498ba756a2b4ec6b5}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!scales@{scales}}
+\index{scales@{scales}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{scales}]{\setlength{\rightskip}{0pt plus 5cm}cv::Size$\ast$ {\bf tld::EnsembleClassifier::scales}}}
+\label{classtld_1_1_ensemble_classifier_ae2ea00a933d9c96498ba756a2b4ec6b5}
+\hypertarget{classtld_1_1_ensemble_classifier_abc6ed3b991a724b07dfcc25108769e92}{
+\index{tld::EnsembleClassifier@{tld::EnsembleClassifier}!windowOffsets@{windowOffsets}}
+\index{windowOffsets@{windowOffsets}!tld::EnsembleClassifier@{tld::EnsembleClassifier}}
+\subsubsection[{windowOffsets}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf tld::EnsembleClassifier::windowOffsets}}}
+\label{classtld_1_1_ensemble_classifier_abc6ed3b991a724b07dfcc25108769e92}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/libopentld/tld/\hyperlink{_ensemble_classifier_8h}{EnsembleClassifier.h}\item 
+src/libopentld/tld/\hyperlink{_ensemble_classifier_8cpp}{EnsembleClassifier.cpp}\end{DoxyCompactItemize}

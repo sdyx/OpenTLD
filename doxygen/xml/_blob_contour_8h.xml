@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_blob_contour_8h" kind="file">
+    <compoundname>BlobContour.h</compoundname>
+    <includes local="yes">list</includes>
+    <includes local="no">cv.h</includes>
+    <includes local="no">cxcore.h</includes>
+    <includedby refid="blob_8h" local="yes">src/3rdparty/cvblobs/blob.h</includedby>
+    <includedby refid="_blob_contour_8cpp" local="yes">src/3rdparty/cvblobs/BlobContour.cpp</includedby>
+    <includedby refid="_blob_properties_8h" local="yes">src/3rdparty/cvblobs/BlobProperties.h</includedby>
+    <includedby refid="_component_labeling_8h" local="yes">src/3rdparty/cvblobs/ComponentLabeling.h</includedby>
+    <incdepgraph>
+      <node id="1046">
+        <label>list</label>
+      </node>
+      <node id="1048">
+        <label>cxcore.h</label>
+      </node>
+      <node id="1045">
+        <label>src/3rdparty/cvblobs/BlobContour.h</label>
+        <link refid="BlobContour.h"/>
+        <childnode refid="1046" relation="include">
+        </childnode>
+        <childnode refid="1047" relation="include">
+        </childnode>
+        <childnode refid="1048" relation="include">
+        </childnode>
+      </node>
+      <node id="1047">
+        <label>cv.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1052">
+        <label>src/3rdparty/cvblobs/BlobOperators.h</label>
+        <link refid="_blob_operators_8h"/>
+        <childnode refid="1053" relation="include">
+        </childnode>
+        <childnode refid="1054" relation="include">
+        </childnode>
+      </node>
+      <node id="1056">
+        <label>src/libopentld/tld/ForegroundDetector.cpp</label>
+        <link refid="_foreground_detector_8cpp"/>
+      </node>
+      <node id="1061">
+        <label>src/3rdparty/cvblobs/BlobProperties.cpp</label>
+        <link refid="_blob_properties_8cpp"/>
+      </node>
+      <node id="1051">
+        <label>src/3rdparty/cvblobs/blob.cpp</label>
+        <link refid="blob_8cpp"/>
+      </node>
+      <node id="1057">
+        <label>src/3rdparty/cvblobs/ComponentLabeling.h</label>
+        <link refid="_component_labeling_8h"/>
+        <childnode refid="1054" relation="include">
+        </childnode>
+        <childnode refid="1058" relation="include">
+        </childnode>
+      </node>
+      <node id="1055">
+        <label>src/3rdparty/cvblobs/BlobResult.cpp</label>
+        <link refid="_blob_result_8cpp"/>
+      </node>
+      <node id="1059">
+        <label>src/3rdparty/cvblobs/BlobContour.cpp</label>
+        <link refid="_blob_contour_8cpp"/>
+      </node>
+      <node id="1058">
+        <label>src/3rdparty/cvblobs/ComponentLabeling.cpp</label>
+        <link refid="_component_labeling_8cpp"/>
+      </node>
+      <node id="1049">
+        <label>src/3rdparty/cvblobs/BlobContour.h</label>
+        <link refid="BlobContour.h"/>
+        <childnode refid="1050" relation="include">
+        </childnode>
+        <childnode refid="1059" relation="include">
+        </childnode>
+        <childnode refid="1060" relation="include">
+        </childnode>
+        <childnode refid="1057" relation="include">
+        </childnode>
+      </node>
+      <node id="1053">
+        <label>src/3rdparty/cvblobs/BlobOperators.cpp</label>
+        <link refid="_blob_operators_8cpp"/>
+      </node>
+      <node id="1054">
+        <label>src/3rdparty/cvblobs/BlobResult.h</label>
+        <link refid="_blob_result_8h"/>
+        <childnode refid="1055" relation="include">
+        </childnode>
+        <childnode refid="1056" relation="include">
+        </childnode>
+      </node>
+      <node id="1060">
+        <label>src/3rdparty/cvblobs/BlobProperties.h</label>
+        <link refid="_blob_properties_8h"/>
+        <childnode refid="1061" relation="include">
+        </childnode>
+      </node>
+      <node id="1050">
+        <label>src/3rdparty/cvblobs/blob.h</label>
+        <link refid="blob_8h"/>
+        <childnode refid="1051" relation="include">
+        </childnode>
+        <childnode refid="1052" relation="include">
+        </childnode>
+        <childnode refid="1054" relation="include">
+        </childnode>
+        <childnode refid="1057" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_c_blob_contour" prot="public">CBlobContour</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_blob_contour_8h_1a151d88ca40f6e7d179e1b13ed82488b8" prot="public" static="no">
+        <name>MAX_MOMENTS_ORDER</name>
+        <initializer>3</initializer>
+        <briefdescription>
+<para>Max order of calculated moments. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="19" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_c_blob_contour_1a301727633680b38714302593945b748f" compoundref="_blob_contour_8cpp" startline="180" endline="200">CBlobContour::GetMoment</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_blob_contour_8h_1a0ccb8765a7971147eaf6cafef4bd3c0e" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char t_chainCode</definition>
+        <argsstring></argsstring>
+        <name>t_chainCode</name>
+        <briefdescription>
+<para>Type of chain codes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="11" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_blob_contour_8h_1af4605a71deb8fb5bf67011c89418c970" prot="public" static="no">
+        <type>CvSeq *</type>
+        <definition>typedef CvSeq* t_chainCodeList</definition>
+        <argsstring></argsstring>
+        <name>t_chainCodeList</name>
+        <briefdescription>
+<para>Type of list of chain codes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="13" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_blob_contour_8h_1abf72b29b2c653dd623e9b39a447809c0" prot="public" static="no">
+        <type>CvSeq *</type>
+        <definition>typedef CvSeq* t_PointList</definition>
+        <argsstring></argsstring>
+        <name>t_PointList</name>
+        <briefdescription>
+<para>Type of list of points. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="15" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>BLOBCONTOUR_H_INCLUDED</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BLOBCONTOUR_H_INCLUDED</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;list&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cv.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;cxtypes.h&quot;<sp/><sp/>//AO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cxcore.h&gt;</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="_blob_contour_8h_1a0ccb8765a7971147eaf6cafef4bd3c0e" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>t_chainCode;</highlight></codeline>
+<codeline lineno="13" refid="_blob_contour_8h_1af4605a71deb8fb5bf67011c89418c970" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>CvSeq*<sp/>t_chainCodeList;</highlight></codeline>
+<codeline lineno="15" refid="_blob_contour_8h_1abf72b29b2c653dd623e9b39a447809c0" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>CvSeq*<sp/>t_PointList;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="_blob_contour_8h_1a151d88ca40f6e7d179e1b13ed82488b8" refkind="member"><highlight class="preprocessor">#define<sp/>MAX_MOMENTS_ORDER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_c_blob_contour" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_c_blob_contour" kindref="compound" tooltip="Blob contour class (in crack code).">CBlobContour</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25" refid="class_c_blob_contour_1ae1a0519c97d58c87882ff9a1462ae464" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref>;</highlight></codeline>
+<codeline lineno="26" refid="class_c_blob_contour_1a107dcb6bc234839a49f6a53dde777713" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_c_blob_properties" kindref="compound" tooltip="Blob class.">CBlobProperties</ref>;<sp/></highlight><highlight class="comment">//AO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_blob_contour_1a4cfb475c4e55945fe13618768bef57c7" kindref="member" tooltip="Constructors.">CBlobContour</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_blob_contour_1a4cfb475c4e55945fe13618768bef57c7" kindref="member" tooltip="Constructors.">CBlobContour</ref>(CvPoint<sp/>startPoint,<sp/>CvMemStorage<sp/>*storage<sp/>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_blob_contour_1a4cfb475c4e55945fe13618768bef57c7" kindref="member" tooltip="Constructors.">CBlobContour</ref>(<sp/><ref refid="class_c_blob_contour" kindref="compound" tooltip="Blob contour class (in crack code).">CBlobContour</ref><sp/>*source<sp/>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_blob_contour_1a24c825e7c0fab7e98237a2db60a7fc7a" kindref="member">~CBlobContour</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_blob_contour" kindref="compound" tooltip="Blob contour class (in crack code).">CBlobContour</ref>&amp;<sp/><ref refid="class_c_blob_contour_1a9ed6e0471a8d1b7d6c9a1465e539bbd4" kindref="member" tooltip="Assigment operator.">operator=</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_contour" kindref="compound" tooltip="Blob contour class (in crack code).">CBlobContour</ref><sp/>&amp;source<sp/>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_contour_1a5a10813d71e48c52e099001e6581366c" kindref="member" tooltip="Add chain code to contour.">AddChainCode</ref>(<ref refid="_blob_contour_8h_1a0ccb8765a7971147eaf6cafef4bd3c0e" kindref="member" tooltip="Type of chain codes.">t_chainCode</ref><sp/>code);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="class_c_blob_contour_1ae783c063f2d89f4d06396b552c92f9a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_blob_contour_8h_1af4605a71deb8fb5bf67011c89418c970" kindref="member" tooltip="Type of list of chain codes.">t_chainCodeList</ref><sp/><ref refid="class_c_blob_contour_1ae783c063f2d89f4d06396b552c92f9a6" kindref="member" tooltip="Return freeman chain coded contour.">GetChainCode</ref>()</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_contour_1a98c36d7be8524da3976fad97b611123e" kindref="member" tooltip="Crack code list.">m_contour</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="class_c_blob_contour_1af4e715a94924d5dc1a0e67cf75818bb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_contour_1af4e715a94924d5dc1a0e67cf75818bb5" kindref="member">IsEmpty</ref>()</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_contour_1a98c36d7be8524da3976fad97b611123e" kindref="member" tooltip="Crack code list.">m_contour</ref><sp/>==<sp/><ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref><sp/>||<sp/><ref refid="class_c_blob_contour_1a98c36d7be8524da3976fad97b611123e" kindref="member" tooltip="Crack code list.">m_contour</ref>-&gt;total<sp/>==<sp/>0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_blob_contour_8h_1af4605a71deb8fb5bf67011c89418c970" kindref="member" tooltip="Type of list of chain codes.">t_chainCodeList</ref><sp/><ref refid="class_c_blob_contour_1a245d5e59180619aa9ae4ec14acc18744" kindref="member" tooltip="Return all contour points.">GetContourPoints</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="class_c_blob_contour_1ac8f0fbdce452ede583013e010ce0c8e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvPoint<sp/><ref refid="class_c_blob_contour_1ac8f0fbdce452ede583013e010ce0c8e3" kindref="member">GetStartPoint</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="59"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_startPoint;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_contour_1a9a9ea170c2100586ca7bdb4227589fe9" kindref="member" tooltip="Clears chain code contour.">ResetChainCode</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_contour_1a2c68f462fc31a0e7add9a85b007fa42a" kindref="member" tooltip="Computes area from contour.">GetArea</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_contour_1a893d57d625bb8f26f4a31ff0b66b8406" kindref="member" tooltip="Computes perimeter from contour.">GetPerimeter</ref>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_c_blob_contour_1a301727633680b38714302593945b748f" kindref="member" tooltip="Get contour moment (p,q up to MAX_CALCULATED_MOMENTS).">GetMoment</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>q);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="class_c_blob_contour_1a98c36d7be8524da3976fad97b611123e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_blob_contour_8h_1af4605a71deb8fb5bf67011c89418c970" kindref="member" tooltip="Type of list of chain codes.">t_chainCodeList</ref><sp/><ref refid="class_c_blob_contour_1a98c36d7be8524da3976fad97b611123e" kindref="member" tooltip="Crack code list.">m_contour</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvPoint<sp/>m_startPoint;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_blob_contour_8h_1abf72b29b2c653dd623e9b39a447809c0" kindref="member" tooltip="Type of list of points.">t_PointList</ref><sp/>m_contourPoints;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_area;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_perimeter;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvMoments<sp/>m_moments;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvMemStorage<sp/>*m_parentStorage;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//!BLOBCONTOUR_H_INCLUDED</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h"/>
+  </compounddef>
+</doxygen>

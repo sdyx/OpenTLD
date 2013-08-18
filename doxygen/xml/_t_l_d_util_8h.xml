@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_t_l_d_util_8h" kind="file">
+    <compoundname>TLDUtil.h</compoundname>
+    <includes local="no">utility</includes>
+    <includes local="no">cv.h</includes>
+    <includedby refid="_clustering_8cpp" local="yes">src/libopentld/tld/Clustering.cpp</includedby>
+    <includedby refid="_detection_result_8cpp" local="yes">src/libopentld/tld/DetectionResult.cpp</includedby>
+    <includedby refid="_detector_cascade_8cpp" local="yes">src/libopentld/tld/DetectorCascade.cpp</includedby>
+    <includedby refid="_n_n_classifier_8cpp" local="yes">src/libopentld/tld/NNClassifier.cpp</includedby>
+    <includedby refid="_t_l_d_8cpp" local="yes">src/libopentld/tld/TLD.cpp</includedby>
+    <includedby refid="_t_l_d_util_8cpp" local="yes">src/libopentld/tld/TLDUtil.cpp</includedby>
+    <includedby refid="_main_8cpp" local="yes">src/opentld/main/Main.cpp</includedby>
+    <incdepgraph>
+      <node id="1738">
+        <label>src/libopentld/tld/TLDUtil.h</label>
+        <link refid="TLDUtil.h"/>
+        <childnode refid="1739" relation="include">
+        </childnode>
+        <childnode refid="1740" relation="include">
+        </childnode>
+      </node>
+      <node id="1739">
+        <label>utility</label>
+      </node>
+      <node id="1740">
+        <label>cv.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1743">
+        <label>src/libopentld/tld/DetectionResult.cpp</label>
+        <link refid="_detection_result_8cpp"/>
+      </node>
+      <node id="1744">
+        <label>src/libopentld/tld/DetectorCascade.cpp</label>
+        <link refid="_detector_cascade_8cpp"/>
+      </node>
+      <node id="1741">
+        <label>src/libopentld/tld/TLDUtil.h</label>
+        <link refid="TLDUtil.h"/>
+        <childnode refid="1742" relation="include">
+        </childnode>
+        <childnode refid="1743" relation="include">
+        </childnode>
+        <childnode refid="1744" relation="include">
+        </childnode>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1746" relation="include">
+        </childnode>
+        <childnode refid="1747" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+      </node>
+      <node id="1747">
+        <label>src/libopentld/tld/TLDUtil.cpp</label>
+        <link refid="_t_l_d_util_8cpp"/>
+      </node>
+      <node id="1748">
+        <label>src/opentld/main/Main.cpp</label>
+        <link refid="_main_8cpp"/>
+      </node>
+      <node id="1745">
+        <label>src/libopentld/tld/NNClassifier.cpp</label>
+        <link refid="_n_n_classifier_8cpp"/>
+      </node>
+      <node id="1746">
+        <label>src/libopentld/tld/TLD.cpp</label>
+        <link refid="_t_l_d_8cpp"/>
+      </node>
+      <node id="1742">
+        <label>src/libopentld/tld/Clustering.cpp</label>
+        <link refid="_clustering_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacetld">tld</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>util.h</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>30.05.2011</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>Georg<sp/>Nebehay<sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Modified<sp/>on:<sp/>8th<sp/>August<sp/>2013</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>By:<sp/>Felix<sp/>Baumann</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TLDUTIL_H_</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TLDUTIL_H_</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cv.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">tld</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T1,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T2&gt;</highlight></codeline>
+<codeline lineno="40" refid="namespacetld_1add9262bbbd3c30e3b3bf213e9db13eaf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1add9262bbbd3c30e3b3bf213e9db13eaf" kindref="member">tldConvertBB</ref>(T1<sp/>*src,<sp/>T2<sp/>*dest)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>dest[0]<sp/>=<sp/>src[0];</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>dest[1]<sp/>=<sp/>src[1];</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>dest[2]<sp/>=<sp/>src[2];</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>dest[3]<sp/>=<sp/>src[3];</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="49" refid="namespacetld_1a30509a7fb73b21f5006046344ffab792" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1a30509a7fb73b21f5006046344ffab792" kindref="member">tldCopyBB</ref>(T<sp/>*src,<sp/>T<sp/>*dest)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>tldConvertBB&lt;T,<sp/>T&gt;(src,<sp/>dest);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="55" refid="namespacetld_1a8ea4baf48c6ac8c9fc11d0aa36c612e3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1a8ea4baf48c6ac8c9fc11d0aa36c612e3" kindref="member">tldCopyBoundaryToArray</ref>(T<sp/>x,<sp/>T<sp/>y,<sp/>T<sp/>width,<sp/>T<sp/>height,<sp/>T<sp/>*array)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>array[0]<sp/>=<sp/>x;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>array[1]<sp/>=<sp/>y;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>array[2]<sp/>=<sp/>width;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>array[3]<sp/>=<sp/>height;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="64" refid="namespacetld_1aa675c63accc23d4c92133be7f5d93f1f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1aa675c63accc23d4c92133be7f5d93f1f" kindref="member">tldExtractDimsFromArray</ref>(T<sp/>*boundary,<sp/>T<sp/>*x,<sp/>T<sp/>*y,<sp/>T<sp/>*width,<sp/>T<sp/>*height)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>*x<sp/>=<sp/>boundary[0];</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>*y<sp/>=<sp/>boundary[1];</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>*width<sp/>=<sp/>boundary[2];</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>*height<sp/>=<sp/>boundary[3];</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="73" refid="namespacetld_1acca496d96df1e566f1a08bebb7e75f1c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1acca496d96df1e566f1a08bebb7e75f1c" kindref="member">tldRectToArray</ref>(cv::Rect<sp/>rect,<sp/>T<sp/>*boundary)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>boundary[0]<sp/>=<sp/>rect.x;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>boundary[1]<sp/>=<sp/>rect.y;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>boundary[2]<sp/>=<sp/>rect.width;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>boundary[3]<sp/>=<sp/>rect.height;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="82" refid="namespacetld_1a8f2edbadab9bc04731c73571340969a9" refkind="member"><highlight class="normal">cv::Rect<sp/><ref refid="namespacetld_1a8f2edbadab9bc04731c73571340969a9" kindref="member">tldArrayToRect</ref>(T<sp/>*boundary)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::Rect<sp/>rect;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>rect.x<sp/>=<sp/>boundary[0];</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>rect.y<sp/>=<sp/>boundary[1];</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>rect.width<sp/>=<sp/>boundary[2];</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>rect.height<sp/>=<sp/>boundary[3];</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rect;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1a8b28e6d4868ad30e826a6248dd2ae7a0" kindref="member">tldIsInside</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*bb1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*bb2);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FB:<sp/>commented<sp/>them<sp/>out<sp/>because<sp/>they<sp/>were<sp/>never<sp/>called<sp/>(cppcheck-1.61)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">//void<sp/>tldRectToPoints(CvRect<sp/>rect,<sp/>CvPoint<sp/>*p1,<sp/>CvPoint<sp/>*p2);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">//void<sp/>tldBoundingBoxToPoints(int<sp/>*bb,<sp/>CvPoint<sp/>*p1,<sp/>CvPoint<sp/>*p2);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1a87d078ec7492f2a2a4ef8856abaf6881" kindref="member">tldNormalizeImg</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat<sp/>&amp;img,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*result,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1a1bf69e140ab91bdd7bfc794a93a1a096" kindref="member">tldExtractNormalizedPatch</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat<sp/>&amp;img,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*output);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1adf30e26ca7073712ac0eae4a1f1136ba" kindref="member">tldExtractNormalizedPatchBB</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat<sp/>&amp;img,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*boundary,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*output);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1a7bbab27cff309fae59b25b37268c22d4" kindref="member">tldExtractNormalizedPatchRect</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat<sp/>&amp;img,<sp/>cv::Rect<sp/>*rect,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*output);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1a200bdf631ed45b6d0875996d2e4709f2" kindref="member">tldExtractSubImage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat<sp/>&amp;img,<sp/>cv::Mat<sp/>&amp;subImage,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*boundary);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1a200bdf631ed45b6d0875996d2e4709f2" kindref="member">tldExtractSubImage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat<sp/>&amp;img,<sp/>cv::Mat<sp/>&amp;subImage,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1ac0065f4088098aca6e1edd49b2b0f9d3" kindref="member">tldCalcMean</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*value,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1a53d4a014fd3df2b3e8a3026a1c1768a7" kindref="member">tldCalcVariance</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*value,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1a1899d52f23a94a9042fb95249b4714ba" kindref="member">tldSortByOverlapDesc</ref>(std::pair&lt;int,<sp/>float&gt;<sp/>bb1<sp/>,<sp/>std::pair&lt;int,<sp/>float&gt;<sp/>bb2);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">cv::Rect<sp/>*<ref refid="namespacetld_1a05ea18fc911b12873acd2211f83689f7" kindref="member">tldCopyRect</ref>(cv::Rect<sp/>*r);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">//TODO:<sp/>Change<sp/>function<sp/>names</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1afe4210f75b17cb13bb95c8d4c08a543a" kindref="member">tldOverlapRectRect</ref>(cv::Rect<sp/>r1,<sp/>cv::Rect<sp/>r2);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1a6db9360f372b596337a075a09b715ee4" kindref="member">tldOverlapOne</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*windows,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numWindows,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index,<sp/>std::vector&lt;int&gt;<sp/>*<sp/>indices,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*overlap);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1aa9470de30170cb8b3f877dcae45df1b1" kindref="member">tldOverlap</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*windows,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numWindows,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*boundary,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*overlap);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1ab71405a293095380c793589e8d59d4c7" kindref="member">tldOverlapRect</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*windows,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numWindows,<sp/>cv::Rect<sp/>*boundary,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*overlap);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespacetld_1a53d4a014fd3df2b3e8a3026a1c1768a7" kindref="member">tldCalcVariance</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*value,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>UTIL_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>End<sp/>Namespace<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/TLDUtil.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,462 @@
+\hypertarget{classtld_1_1_settings}{
+\section{tld::Settings Class Reference}
+\label{classtld_1_1_settings}\index{tld::Settings@{tld::Settings}}
+}
+
+
+{\ttfamily \#include $<$Settings.h$>$}
+
+
+
+Collaboration diagram for tld::Settings:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classtld_1_1_settings__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtld_1_1_settings_a1a1d6373d0e350ef0f2697ea2a42894e}{Settings} ()
+\item 
+\hyperlink{classtld_1_1_settings_a96eee0f4e98b706b8b5f8ec973c24dbc}{$\sim$Settings} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classtld_1_1_settings_a54a14f7a08a919ee6ff19514205c6b47}{m\_\-trackerEnabled}
+\item 
+bool \hyperlink{classtld_1_1_settings_ab3100039fb52ee1a41813812320a6ca3}{m\_\-varianceFilterEnabled}
+\item 
+bool \hyperlink{classtld_1_1_settings_af184f95560d875d91951dbbc368ba04d}{m\_\-ensembleClassifierEnabled}
+\item 
+bool \hyperlink{classtld_1_1_settings_a8ec793b6668a626308d8ee8d697d9f67}{m\_\-nnClassifierEnabled}
+\item 
+bool \hyperlink{classtld_1_1_settings_afd89a9d1a0a8dec5ce524eeed5b0f5e0}{m\_\-useProportionalShift}
+\begin{DoxyCompactList}\small\item\em sets scanwindows off by a percentage value of the window dimensions (specified in proportionalShift) rather than 1px. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1_settings_a6c06df5b2a9028a1c9a77269601f4a36}{m\_\-loadModel}
+\begin{DoxyCompactList}\small\item\em if true, model specified by \char`\"{}modelPath\char`\"{} is loaded at startup \item\end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1_settings_afadc64d205d5386d94088e87dba72519}{m\_\-selectManually}
+\begin{DoxyCompactList}\small\item\em if true, user can select initial bounding box (which then overrides the setting \char`\"{}initialBoundingBox\char`\"{}) \item\end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1_settings_abd4a98a18a910313cf3590f507f1ceef}{m\_\-learningEnabled}
+\begin{DoxyCompactList}\small\item\em enables learning while processing \item\end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1_settings_abce1f9678efba0511db88545d97bb535}{m\_\-showOutput}
+\begin{DoxyCompactList}\small\item\em creates a window displaying results \item\end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1_settings_acd69b3d8edc2fe3a05bb763dfd17b30b}{m\_\-showNotConfident}
+\begin{DoxyCompactList}\small\item\em show bounding box also if confidence is low \item\end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1_settings_a495b2aba7d0c9ec5fb914ab04b6d42cf}{m\_\-showColorImage}
+\begin{DoxyCompactList}\small\item\em shows color images instead of greyscale \item\end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1_settings_abcc93dd632486081ba14ebfaaaecd392}{m\_\-showDetections}
+\begin{DoxyCompactList}\small\item\em shows detections \item\end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1_settings_ab2398d08ccb9bab01c3240651d07f8c3}{m\_\-showForeground}
+\begin{DoxyCompactList}\small\item\em shows foreground \item\end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1_settings_a46de5897c9f1bc410c0f44f459181e05}{m\_\-saveOutput}
+\begin{DoxyCompactList}\small\item\em specifies whether to save visual output \item\end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1_settings_ae4a5b3fb575a1a49823f8305f3aefded}{m\_\-alternating}
+\begin{DoxyCompactList}\small\item\em if set to true, detector is disabled while tracker is running. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1_settings_a5d0b425a526e5f7f78c758bfde3d9ee9}{m\_\-exportModelAfterRun}
+\begin{DoxyCompactList}\small\item\em if set to true, model is exported after run. \item\end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1_settings_a56281480120f9cb2dbf69022cf97a30a}{m\_\-trajectory}
+\begin{DoxyCompactList}\small\item\em specifies the number of the last frames which are considered by the trajectory; 0 disables the trajectory \item\end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1_settings_a2438efb226c38f806bf1b3e023aa3760}{m\_\-method}
+\begin{DoxyCompactList}\small\item\em method of capturing: IMACQ\_\-CAM, IMACQ\_\-IMGS or IMACQ\_\-VID \item\end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1_settings_ac63c6dfae7c0be1fc167608dd52e1d7f}{m\_\-startFrame}
+\begin{DoxyCompactList}\small\item\em first frame of capturing \item\end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1_settings_a4935fe002dd6358506813d7c48ec5322}{m\_\-lastFrame}
+\begin{DoxyCompactList}\small\item\em last frame of caputing; 0 means take all frames \item\end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1_settings_a46e4d9f59b1f87508cf0ad9a154fdc21}{m\_\-minScale}
+\begin{DoxyCompactList}\small\item\em number of scales smaller than initial object size \item\end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1_settings_a548c317f8242ea8513d13573acdaaa4c}{m\_\-maxScale}
+\begin{DoxyCompactList}\small\item\em number of scales larger than initial object size \item\end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1_settings_af15afe9f4ffb32e89686c8e90026e2bc}{m\_\-numFeatures}
+\begin{DoxyCompactList}\small\item\em number of features \item\end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1_settings_a959d793b002e13f6758fc84765b7d33d}{m\_\-numTrees}
+\begin{DoxyCompactList}\small\item\em number of trees \item\end{DoxyCompactList}\item 
+float \hyperlink{classtld_1_1_settings_adade7d3269f34113e92abdb3816058f7}{m\_\-thetaP}
+\item 
+float \hyperlink{classtld_1_1_settings_aef49627d1ffac7dda7cc83c7ba6a25bd}{m\_\-thetaN}
+\item 
+int \hyperlink{classtld_1_1_settings_a07dc62407c3373e7fa3906c145593b69}{m\_\-seed}
+\item 
+int \hyperlink{classtld_1_1_settings_aa08ffe8f36cb983224fadfd3d3b28391}{m\_\-minSize}
+\begin{DoxyCompactList}\small\item\em minimum size of scanWindows \item\end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1_settings_a01db1115a98b15abdab2c03cdacadfdd}{m\_\-camNo}
+\begin{DoxyCompactList}\small\item\em Which camera to use. \item\end{DoxyCompactList}\item 
+float \hyperlink{classtld_1_1_settings_aaa119898fb2f14ce2eed7fc861733eac}{m\_\-fps}
+\begin{DoxyCompactList}\small\item\em Frames per second. \item\end{DoxyCompactList}\item 
+float \hyperlink{classtld_1_1_settings_afc2357da344888ad2158cbb51f8eb377}{m\_\-threshold}
+\begin{DoxyCompactList}\small\item\em threshold for determining positive results \item\end{DoxyCompactList}\item 
+float \hyperlink{classtld_1_1_settings_afcb52ecca38e4e236a66c3f36ec7cdbf}{m\_\-proportionalShift}
+\begin{DoxyCompactList}\small\item\em proportional shift \item\end{DoxyCompactList}\item 
+std::string \hyperlink{classtld_1_1_settings_abfd40dee05d0005e6cdaab2e0a84a4a9}{m\_\-imagePath}
+\begin{DoxyCompactList}\small\item\em path to the images or the video if m\_\-method is IMACQ\_\-VID or IMACQ\_\-IMGS \item\end{DoxyCompactList}\item 
+std::string \hyperlink{classtld_1_1_settings_ac09a844a6ee9727f04e2de086f4fa9ce}{m\_\-modelPath}
+\begin{DoxyCompactList}\small\item\em if modelPath is not set then either an initialBoundingBox must be specified or selectManually must be true. \item\end{DoxyCompactList}\item 
+std::string \hyperlink{classtld_1_1_settings_a2fb70f5b39e773b64d62f902009827fc}{m\_\-modelExportFile}
+\begin{DoxyCompactList}\small\item\em Path where model is saved on export. \item\end{DoxyCompactList}\item 
+std::string \hyperlink{classtld_1_1_settings_a8893600d99c4d096e384e4aeff2155f7}{m\_\-outputDir}
+\begin{DoxyCompactList}\small\item\em required if saveOutput = true, no default \item\end{DoxyCompactList}\item 
+std::string \hyperlink{classtld_1_1_settings_a214e9008680cab432e095e5d07372dd1}{m\_\-printResults}
+\begin{DoxyCompactList}\small\item\em path to the file were the results should be printed; NULL -\/$>$ results will not be printed \item\end{DoxyCompactList}\item 
+std::string \hyperlink{classtld_1_1_settings_af986bcadbc3f34693dd13191bbf65947}{m\_\-printTiming}
+\begin{DoxyCompactList}\small\item\em path to the file were the timings should be printed; NULL -\/$>$ results will not be printed \item\end{DoxyCompactList}\item 
+std::vector$<$ int $>$ \hyperlink{classtld_1_1_settings_a42d73d86dc15625a1394e7491ebaf0e4}{m\_\-initialBoundingBox}
+\begin{DoxyCompactList}\small\item\em Initial Bounding Box can be specified here. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+In this class all settings are stored. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtld_1_1_settings_a1a1d6373d0e350ef0f2697ea2a42894e}{
+\index{tld::Settings@{tld::Settings}!Settings@{Settings}}
+\index{Settings@{Settings}!tld::Settings@{tld::Settings}}
+\subsubsection[{Settings}]{\setlength{\rightskip}{0pt plus 5cm}tld::Settings::Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_settings_a1a1d6373d0e350ef0f2697ea2a42894e}
+Standard-\/Constructor \hypertarget{classtld_1_1_settings_a96eee0f4e98b706b8b5f8ec973c24dbc}{
+\index{tld::Settings@{tld::Settings}!$\sim$Settings@{$\sim$Settings}}
+\index{$\sim$Settings@{$\sim$Settings}!tld::Settings@{tld::Settings}}
+\subsubsection[{$\sim$Settings}]{\setlength{\rightskip}{0pt plus 5cm}tld::Settings::$\sim$Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classtld_1_1_settings_a96eee0f4e98b706b8b5f8ec973c24dbc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classtld_1_1_settings_ae4a5b3fb575a1a49823f8305f3aefded}{
+\index{tld::Settings@{tld::Settings}!m\_\-alternating@{m\_\-alternating}}
+\index{m\_\-alternating@{m\_\-alternating}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-alternating}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf tld::Settings::m\_\-alternating}}}
+\label{classtld_1_1_settings_ae4a5b3fb575a1a49823f8305f3aefded}
+
+
+if set to true, detector is disabled while tracker is running. 
+
+\hypertarget{classtld_1_1_settings_a01db1115a98b15abdab2c03cdacadfdd}{
+\index{tld::Settings@{tld::Settings}!m\_\-camNo@{m\_\-camNo}}
+\index{m\_\-camNo@{m\_\-camNo}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-camNo}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::Settings::m\_\-camNo}}}
+\label{classtld_1_1_settings_a01db1115a98b15abdab2c03cdacadfdd}
+
+
+Which camera to use. 
+
+\hypertarget{classtld_1_1_settings_af184f95560d875d91951dbbc368ba04d}{
+\index{tld::Settings@{tld::Settings}!m\_\-ensembleClassifierEnabled@{m\_\-ensembleClassifierEnabled}}
+\index{m\_\-ensembleClassifierEnabled@{m\_\-ensembleClassifierEnabled}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-ensembleClassifierEnabled}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf tld::Settings::m\_\-ensembleClassifierEnabled}}}
+\label{classtld_1_1_settings_af184f95560d875d91951dbbc368ba04d}
+\hypertarget{classtld_1_1_settings_a5d0b425a526e5f7f78c758bfde3d9ee9}{
+\index{tld::Settings@{tld::Settings}!m\_\-exportModelAfterRun@{m\_\-exportModelAfterRun}}
+\index{m\_\-exportModelAfterRun@{m\_\-exportModelAfterRun}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-exportModelAfterRun}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf tld::Settings::m\_\-exportModelAfterRun}}}
+\label{classtld_1_1_settings_a5d0b425a526e5f7f78c758bfde3d9ee9}
+
+
+if set to true, model is exported after run. 
+
+\hypertarget{classtld_1_1_settings_aaa119898fb2f14ce2eed7fc861733eac}{
+\index{tld::Settings@{tld::Settings}!m\_\-fps@{m\_\-fps}}
+\index{m\_\-fps@{m\_\-fps}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-fps}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf tld::Settings::m\_\-fps}}}
+\label{classtld_1_1_settings_aaa119898fb2f14ce2eed7fc861733eac}
+
+
+Frames per second. 
+
+\hypertarget{classtld_1_1_settings_abfd40dee05d0005e6cdaab2e0a84a4a9}{
+\index{tld::Settings@{tld::Settings}!m\_\-imagePath@{m\_\-imagePath}}
+\index{m\_\-imagePath@{m\_\-imagePath}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-imagePath}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf tld::Settings::m\_\-imagePath}}}
+\label{classtld_1_1_settings_abfd40dee05d0005e6cdaab2e0a84a4a9}
+
+
+path to the images or the video if m\_\-method is IMACQ\_\-VID or IMACQ\_\-IMGS 
+
+\hypertarget{classtld_1_1_settings_a42d73d86dc15625a1394e7491ebaf0e4}{
+\index{tld::Settings@{tld::Settings}!m\_\-initialBoundingBox@{m\_\-initialBoundingBox}}
+\index{m\_\-initialBoundingBox@{m\_\-initialBoundingBox}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-initialBoundingBox}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$int$>$ {\bf tld::Settings::m\_\-initialBoundingBox}}}
+\label{classtld_1_1_settings_a42d73d86dc15625a1394e7491ebaf0e4}
+
+
+Initial Bounding Box can be specified here. 
+
+\hypertarget{classtld_1_1_settings_a4935fe002dd6358506813d7c48ec5322}{
+\index{tld::Settings@{tld::Settings}!m\_\-lastFrame@{m\_\-lastFrame}}
+\index{m\_\-lastFrame@{m\_\-lastFrame}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-lastFrame}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::Settings::m\_\-lastFrame}}}
+\label{classtld_1_1_settings_a4935fe002dd6358506813d7c48ec5322}
+
+
+last frame of caputing; 0 means take all frames 
+
+\hypertarget{classtld_1_1_settings_abd4a98a18a910313cf3590f507f1ceef}{
+\index{tld::Settings@{tld::Settings}!m\_\-learningEnabled@{m\_\-learningEnabled}}
+\index{m\_\-learningEnabled@{m\_\-learningEnabled}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-learningEnabled}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf tld::Settings::m\_\-learningEnabled}}}
+\label{classtld_1_1_settings_abd4a98a18a910313cf3590f507f1ceef}
+
+
+enables learning while processing 
+
+\hypertarget{classtld_1_1_settings_a6c06df5b2a9028a1c9a77269601f4a36}{
+\index{tld::Settings@{tld::Settings}!m\_\-loadModel@{m\_\-loadModel}}
+\index{m\_\-loadModel@{m\_\-loadModel}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-loadModel}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf tld::Settings::m\_\-loadModel}}}
+\label{classtld_1_1_settings_a6c06df5b2a9028a1c9a77269601f4a36}
+
+
+if true, model specified by \char`\"{}modelPath\char`\"{} is loaded at startup 
+
+\hypertarget{classtld_1_1_settings_a548c317f8242ea8513d13573acdaaa4c}{
+\index{tld::Settings@{tld::Settings}!m\_\-maxScale@{m\_\-maxScale}}
+\index{m\_\-maxScale@{m\_\-maxScale}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-maxScale}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::Settings::m\_\-maxScale}}}
+\label{classtld_1_1_settings_a548c317f8242ea8513d13573acdaaa4c}
+
+
+number of scales larger than initial object size 
+
+\hypertarget{classtld_1_1_settings_a2438efb226c38f806bf1b3e023aa3760}{
+\index{tld::Settings@{tld::Settings}!m\_\-method@{m\_\-method}}
+\index{m\_\-method@{m\_\-method}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-method}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::Settings::m\_\-method}}}
+\label{classtld_1_1_settings_a2438efb226c38f806bf1b3e023aa3760}
+
+
+method of capturing: IMACQ\_\-CAM, IMACQ\_\-IMGS or IMACQ\_\-VID 
+
+\hypertarget{classtld_1_1_settings_a46e4d9f59b1f87508cf0ad9a154fdc21}{
+\index{tld::Settings@{tld::Settings}!m\_\-minScale@{m\_\-minScale}}
+\index{m\_\-minScale@{m\_\-minScale}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-minScale}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::Settings::m\_\-minScale}}}
+\label{classtld_1_1_settings_a46e4d9f59b1f87508cf0ad9a154fdc21}
+
+
+number of scales smaller than initial object size 
+
+\hypertarget{classtld_1_1_settings_aa08ffe8f36cb983224fadfd3d3b28391}{
+\index{tld::Settings@{tld::Settings}!m\_\-minSize@{m\_\-minSize}}
+\index{m\_\-minSize@{m\_\-minSize}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-minSize}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::Settings::m\_\-minSize}}}
+\label{classtld_1_1_settings_aa08ffe8f36cb983224fadfd3d3b28391}
+
+
+minimum size of scanWindows 
+
+\hypertarget{classtld_1_1_settings_a2fb70f5b39e773b64d62f902009827fc}{
+\index{tld::Settings@{tld::Settings}!m\_\-modelExportFile@{m\_\-modelExportFile}}
+\index{m\_\-modelExportFile@{m\_\-modelExportFile}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-modelExportFile}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf tld::Settings::m\_\-modelExportFile}}}
+\label{classtld_1_1_settings_a2fb70f5b39e773b64d62f902009827fc}
+
+
+Path where model is saved on export. 
+
+\hypertarget{classtld_1_1_settings_ac09a844a6ee9727f04e2de086f4fa9ce}{
+\index{tld::Settings@{tld::Settings}!m\_\-modelPath@{m\_\-modelPath}}
+\index{m\_\-modelPath@{m\_\-modelPath}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-modelPath}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf tld::Settings::m\_\-modelPath}}}
+\label{classtld_1_1_settings_ac09a844a6ee9727f04e2de086f4fa9ce}
+
+
+if modelPath is not set then either an initialBoundingBox must be specified or selectManually must be true. 
+
+\hypertarget{classtld_1_1_settings_a8ec793b6668a626308d8ee8d697d9f67}{
+\index{tld::Settings@{tld::Settings}!m\_\-nnClassifierEnabled@{m\_\-nnClassifierEnabled}}
+\index{m\_\-nnClassifierEnabled@{m\_\-nnClassifierEnabled}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-nnClassifierEnabled}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf tld::Settings::m\_\-nnClassifierEnabled}}}
+\label{classtld_1_1_settings_a8ec793b6668a626308d8ee8d697d9f67}
+\hypertarget{classtld_1_1_settings_af15afe9f4ffb32e89686c8e90026e2bc}{
+\index{tld::Settings@{tld::Settings}!m\_\-numFeatures@{m\_\-numFeatures}}
+\index{m\_\-numFeatures@{m\_\-numFeatures}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-numFeatures}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::Settings::m\_\-numFeatures}}}
+\label{classtld_1_1_settings_af15afe9f4ffb32e89686c8e90026e2bc}
+
+
+number of features 
+
+\hypertarget{classtld_1_1_settings_a959d793b002e13f6758fc84765b7d33d}{
+\index{tld::Settings@{tld::Settings}!m\_\-numTrees@{m\_\-numTrees}}
+\index{m\_\-numTrees@{m\_\-numTrees}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-numTrees}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::Settings::m\_\-numTrees}}}
+\label{classtld_1_1_settings_a959d793b002e13f6758fc84765b7d33d}
+
+
+number of trees 
+
+\hypertarget{classtld_1_1_settings_a8893600d99c4d096e384e4aeff2155f7}{
+\index{tld::Settings@{tld::Settings}!m\_\-outputDir@{m\_\-outputDir}}
+\index{m\_\-outputDir@{m\_\-outputDir}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-outputDir}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf tld::Settings::m\_\-outputDir}}}
+\label{classtld_1_1_settings_a8893600d99c4d096e384e4aeff2155f7}
+
+
+required if saveOutput = true, no default 
+
+\hypertarget{classtld_1_1_settings_a214e9008680cab432e095e5d07372dd1}{
+\index{tld::Settings@{tld::Settings}!m\_\-printResults@{m\_\-printResults}}
+\index{m\_\-printResults@{m\_\-printResults}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-printResults}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf tld::Settings::m\_\-printResults}}}
+\label{classtld_1_1_settings_a214e9008680cab432e095e5d07372dd1}
+
+
+path to the file were the results should be printed; NULL -\/$>$ results will not be printed 
+
+\hypertarget{classtld_1_1_settings_af986bcadbc3f34693dd13191bbf65947}{
+\index{tld::Settings@{tld::Settings}!m\_\-printTiming@{m\_\-printTiming}}
+\index{m\_\-printTiming@{m\_\-printTiming}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-printTiming}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf tld::Settings::m\_\-printTiming}}}
+\label{classtld_1_1_settings_af986bcadbc3f34693dd13191bbf65947}
+
+
+path to the file were the timings should be printed; NULL -\/$>$ results will not be printed 
+
+\hypertarget{classtld_1_1_settings_afcb52ecca38e4e236a66c3f36ec7cdbf}{
+\index{tld::Settings@{tld::Settings}!m\_\-proportionalShift@{m\_\-proportionalShift}}
+\index{m\_\-proportionalShift@{m\_\-proportionalShift}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-proportionalShift}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf tld::Settings::m\_\-proportionalShift}}}
+\label{classtld_1_1_settings_afcb52ecca38e4e236a66c3f36ec7cdbf}
+
+
+proportional shift 
+
+\hypertarget{classtld_1_1_settings_a46de5897c9f1bc410c0f44f459181e05}{
+\index{tld::Settings@{tld::Settings}!m\_\-saveOutput@{m\_\-saveOutput}}
+\index{m\_\-saveOutput@{m\_\-saveOutput}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-saveOutput}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf tld::Settings::m\_\-saveOutput}}}
+\label{classtld_1_1_settings_a46de5897c9f1bc410c0f44f459181e05}
+
+
+specifies whether to save visual output 
+
+\hypertarget{classtld_1_1_settings_a07dc62407c3373e7fa3906c145593b69}{
+\index{tld::Settings@{tld::Settings}!m\_\-seed@{m\_\-seed}}
+\index{m\_\-seed@{m\_\-seed}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-seed}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::Settings::m\_\-seed}}}
+\label{classtld_1_1_settings_a07dc62407c3373e7fa3906c145593b69}
+\hypertarget{classtld_1_1_settings_afadc64d205d5386d94088e87dba72519}{
+\index{tld::Settings@{tld::Settings}!m\_\-selectManually@{m\_\-selectManually}}
+\index{m\_\-selectManually@{m\_\-selectManually}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-selectManually}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf tld::Settings::m\_\-selectManually}}}
+\label{classtld_1_1_settings_afadc64d205d5386d94088e87dba72519}
+
+
+if true, user can select initial bounding box (which then overrides the setting \char`\"{}initialBoundingBox\char`\"{}) 
+
+\hypertarget{classtld_1_1_settings_a495b2aba7d0c9ec5fb914ab04b6d42cf}{
+\index{tld::Settings@{tld::Settings}!m\_\-showColorImage@{m\_\-showColorImage}}
+\index{m\_\-showColorImage@{m\_\-showColorImage}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-showColorImage}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf tld::Settings::m\_\-showColorImage}}}
+\label{classtld_1_1_settings_a495b2aba7d0c9ec5fb914ab04b6d42cf}
+
+
+shows color images instead of greyscale 
+
+\hypertarget{classtld_1_1_settings_abcc93dd632486081ba14ebfaaaecd392}{
+\index{tld::Settings@{tld::Settings}!m\_\-showDetections@{m\_\-showDetections}}
+\index{m\_\-showDetections@{m\_\-showDetections}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-showDetections}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf tld::Settings::m\_\-showDetections}}}
+\label{classtld_1_1_settings_abcc93dd632486081ba14ebfaaaecd392}
+
+
+shows detections 
+
+\hypertarget{classtld_1_1_settings_ab2398d08ccb9bab01c3240651d07f8c3}{
+\index{tld::Settings@{tld::Settings}!m\_\-showForeground@{m\_\-showForeground}}
+\index{m\_\-showForeground@{m\_\-showForeground}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-showForeground}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf tld::Settings::m\_\-showForeground}}}
+\label{classtld_1_1_settings_ab2398d08ccb9bab01c3240651d07f8c3}
+
+
+shows foreground 
+
+\hypertarget{classtld_1_1_settings_acd69b3d8edc2fe3a05bb763dfd17b30b}{
+\index{tld::Settings@{tld::Settings}!m\_\-showNotConfident@{m\_\-showNotConfident}}
+\index{m\_\-showNotConfident@{m\_\-showNotConfident}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-showNotConfident}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf tld::Settings::m\_\-showNotConfident}}}
+\label{classtld_1_1_settings_acd69b3d8edc2fe3a05bb763dfd17b30b}
+
+
+show bounding box also if confidence is low 
+
+\hypertarget{classtld_1_1_settings_abce1f9678efba0511db88545d97bb535}{
+\index{tld::Settings@{tld::Settings}!m\_\-showOutput@{m\_\-showOutput}}
+\index{m\_\-showOutput@{m\_\-showOutput}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-showOutput}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf tld::Settings::m\_\-showOutput}}}
+\label{classtld_1_1_settings_abce1f9678efba0511db88545d97bb535}
+
+
+creates a window displaying results 
+
+\hypertarget{classtld_1_1_settings_ac63c6dfae7c0be1fc167608dd52e1d7f}{
+\index{tld::Settings@{tld::Settings}!m\_\-startFrame@{m\_\-startFrame}}
+\index{m\_\-startFrame@{m\_\-startFrame}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-startFrame}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::Settings::m\_\-startFrame}}}
+\label{classtld_1_1_settings_ac63c6dfae7c0be1fc167608dd52e1d7f}
+
+
+first frame of capturing 
+
+\hypertarget{classtld_1_1_settings_aef49627d1ffac7dda7cc83c7ba6a25bd}{
+\index{tld::Settings@{tld::Settings}!m\_\-thetaN@{m\_\-thetaN}}
+\index{m\_\-thetaN@{m\_\-thetaN}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-thetaN}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf tld::Settings::m\_\-thetaN}}}
+\label{classtld_1_1_settings_aef49627d1ffac7dda7cc83c7ba6a25bd}
+\hypertarget{classtld_1_1_settings_adade7d3269f34113e92abdb3816058f7}{
+\index{tld::Settings@{tld::Settings}!m\_\-thetaP@{m\_\-thetaP}}
+\index{m\_\-thetaP@{m\_\-thetaP}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-thetaP}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf tld::Settings::m\_\-thetaP}}}
+\label{classtld_1_1_settings_adade7d3269f34113e92abdb3816058f7}
+\hypertarget{classtld_1_1_settings_afc2357da344888ad2158cbb51f8eb377}{
+\index{tld::Settings@{tld::Settings}!m\_\-threshold@{m\_\-threshold}}
+\index{m\_\-threshold@{m\_\-threshold}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-threshold}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf tld::Settings::m\_\-threshold}}}
+\label{classtld_1_1_settings_afc2357da344888ad2158cbb51f8eb377}
+
+
+threshold for determining positive results 
+
+\hypertarget{classtld_1_1_settings_a54a14f7a08a919ee6ff19514205c6b47}{
+\index{tld::Settings@{tld::Settings}!m\_\-trackerEnabled@{m\_\-trackerEnabled}}
+\index{m\_\-trackerEnabled@{m\_\-trackerEnabled}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-trackerEnabled}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf tld::Settings::m\_\-trackerEnabled}}}
+\label{classtld_1_1_settings_a54a14f7a08a919ee6ff19514205c6b47}
+\hypertarget{classtld_1_1_settings_a56281480120f9cb2dbf69022cf97a30a}{
+\index{tld::Settings@{tld::Settings}!m\_\-trajectory@{m\_\-trajectory}}
+\index{m\_\-trajectory@{m\_\-trajectory}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-trajectory}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf tld::Settings::m\_\-trajectory}}}
+\label{classtld_1_1_settings_a56281480120f9cb2dbf69022cf97a30a}
+
+
+specifies the number of the last frames which are considered by the trajectory; 0 disables the trajectory 
+
+\hypertarget{classtld_1_1_settings_afd89a9d1a0a8dec5ce524eeed5b0f5e0}{
+\index{tld::Settings@{tld::Settings}!m\_\-useProportionalShift@{m\_\-useProportionalShift}}
+\index{m\_\-useProportionalShift@{m\_\-useProportionalShift}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-useProportionalShift}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf tld::Settings::m\_\-useProportionalShift}}}
+\label{classtld_1_1_settings_afd89a9d1a0a8dec5ce524eeed5b0f5e0}
+
+
+sets scanwindows off by a percentage value of the window dimensions (specified in proportionalShift) rather than 1px. 
+
+\hypertarget{classtld_1_1_settings_ab3100039fb52ee1a41813812320a6ca3}{
+\index{tld::Settings@{tld::Settings}!m\_\-varianceFilterEnabled@{m\_\-varianceFilterEnabled}}
+\index{m\_\-varianceFilterEnabled@{m\_\-varianceFilterEnabled}!tld::Settings@{tld::Settings}}
+\subsubsection[{m\_\-varianceFilterEnabled}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf tld::Settings::m\_\-varianceFilterEnabled}}}
+\label{classtld_1_1_settings_ab3100039fb52ee1a41813812320a6ca3}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/opentld/main/\hyperlink{_settings_8h}{Settings.h}\item 
+src/opentld/main/\hyperlink{_settings_8cpp}{Settings.cpp}\end{DoxyCompactItemize}

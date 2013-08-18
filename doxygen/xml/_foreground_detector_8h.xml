@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_foreground_detector_8h" kind="file">
+    <compoundname>ForegroundDetector.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">cv.h</includes>
+    <includes refid="_detection_result_8h" local="yes">DetectionResult.h</includes>
+    <includedby refid="_detector_cascade_8h" local="yes">src/libopentld/tld/DetectorCascade.h</includedby>
+    <includedby refid="_foreground_detector_8cpp" local="yes">src/libopentld/tld/ForegroundDetector.cpp</includedby>
+    <incdepgraph>
+      <node id="1565">
+        <label>src/libopentld/tld/ForegroundDetector.h</label>
+        <link refid="ForegroundDetector.h"/>
+        <childnode refid="1566" relation="include">
+        </childnode>
+        <childnode refid="1567" relation="include">
+        </childnode>
+        <childnode refid="1568" relation="include">
+        </childnode>
+      </node>
+      <node id="1566">
+        <label>vector</label>
+      </node>
+      <node id="1567">
+        <label>cv.h</label>
+      </node>
+      <node id="1568">
+        <label>DetectionResult.h</label>
+        <link refid="_detection_result_8h"/>
+        <childnode refid="1566" relation="include">
+        </childnode>
+        <childnode refid="1567" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1586">
+        <label>src/libopentld/tld/ForegroundDetector.cpp</label>
+        <link refid="_foreground_detector_8cpp"/>
+      </node>
+      <node id="1570">
+        <label>src/libopentld/tld/DetectorCascade.h</label>
+        <link refid="_detector_cascade_8h"/>
+        <childnode refid="1571" relation="include">
+        </childnode>
+        <childnode refid="1572" relation="include">
+        </childnode>
+        <childnode refid="1573" relation="include">
+        </childnode>
+        <childnode refid="1574" relation="include">
+        </childnode>
+        <childnode refid="1575" relation="include">
+        </childnode>
+        <childnode refid="1584" relation="include">
+        </childnode>
+        <childnode refid="1585" relation="include">
+        </childnode>
+      </node>
+      <node id="1577">
+        <label>src/opentld/main/Main.h</label>
+        <link refid="_main_8h"/>
+        <childnode refid="1578" relation="include">
+        </childnode>
+        <childnode refid="1579" relation="include">
+        </childnode>
+        <childnode refid="1583" relation="include">
+        </childnode>
+        <childnode refid="1580" relation="include">
+        </childnode>
+        <childnode refid="1581" relation="include">
+        </childnode>
+        <childnode refid="1582" relation="include">
+        </childnode>
+      </node>
+      <node id="1572">
+        <label>src/libopentld/tld/DetectorCascade.cpp</label>
+        <link refid="_detector_cascade_8cpp"/>
+      </node>
+      <node id="1585">
+        <label>src/libopentld/tld/VarianceFilter.cpp</label>
+        <link refid="_variance_filter_8cpp"/>
+      </node>
+      <node id="1578">
+        <label>src/opentld/main/Config.h</label>
+        <link refid="_config_8h"/>
+        <childnode refid="1579" relation="include">
+        </childnode>
+        <childnode refid="1580" relation="include">
+        </childnode>
+        <childnode refid="1581" relation="include">
+        </childnode>
+        <childnode refid="1582" relation="include">
+        </childnode>
+      </node>
+      <node id="1583">
+        <label>src/opentld/main/Gui.cpp</label>
+        <link refid="_gui_8cpp"/>
+      </node>
+      <node id="1584">
+        <label>src/libopentld/tld/TLDUtil.cpp</label>
+        <link refid="_t_l_d_util_8cpp"/>
+      </node>
+      <node id="1580">
+        <label>src/opentld/main/Main.cpp</label>
+        <link refid="_main_8cpp"/>
+      </node>
+      <node id="1581">
+        <label>src/opentld/OpenTLD.cpp</label>
+        <link refid="_open_t_l_d_8cpp"/>
+      </node>
+      <node id="1579">
+        <label>src/opentld/main/Config.cpp</label>
+        <link refid="_config_8cpp"/>
+      </node>
+      <node id="1569">
+        <label>src/libopentld/tld/ForegroundDetector.h</label>
+        <link refid="ForegroundDetector.h"/>
+        <childnode refid="1570" relation="include">
+        </childnode>
+        <childnode refid="1586" relation="include">
+        </childnode>
+      </node>
+      <node id="1574">
+        <label>src/libopentld/tld/NNClassifier.cpp</label>
+        <link refid="_n_n_classifier_8cpp"/>
+      </node>
+      <node id="1576">
+        <label>src/libopentld/tld/TLD.cpp</label>
+        <link refid="_t_l_d_8cpp"/>
+      </node>
+      <node id="1575">
+        <label>src/libopentld/tld/TLD.h</label>
+        <link refid="_t_l_d_8h"/>
+        <childnode refid="1576" relation="include">
+        </childnode>
+        <childnode refid="1577" relation="include">
+        </childnode>
+      </node>
+      <node id="1571">
+        <label>src/libopentld/tld/Clustering.cpp</label>
+        <link refid="_clustering_8cpp"/>
+      </node>
+      <node id="1582">
+        <label>src/opentld/QOpenTLD.cpp</label>
+        <link refid="_q_open_t_l_d_8cpp"/>
+      </node>
+      <node id="1573">
+        <label>src/libopentld/tld/EnsembleClassifier.cpp</label>
+        <link refid="_ensemble_classifier_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classtld_1_1_foreground_detector" prot="public">tld::ForegroundDetector</innerclass>
+    <innernamespace refid="namespacetld">tld</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>ForegroundDetector.h</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Nov<sp/>16,<sp/>2011</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>Georg<sp/>Nebehay</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>FOREGROUNDDETECTOR_H_</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FOREGROUNDDETECTOR_H_</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cv.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_detection_result_8h" kindref="compound">DetectionResult.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">tld</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classtld_1_1_foreground_detector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtld_1_1_foreground_detector" kindref="compound">ForegroundDetector</ref></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42" refid="classtld_1_1_foreground_detector_1a317e60e1eb84270f60e818c0cb896416" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_foreground_detector_1a317e60e1eb84270f60e818c0cb896416" kindref="member">fgThreshold</ref>;</highlight></codeline>
+<codeline lineno="43" refid="classtld_1_1_foreground_detector_1ac274f17680c4551c9b3198e88b5bcd42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_foreground_detector_1ac274f17680c4551c9b3198e88b5bcd42" kindref="member">minBlobSize</ref>;</highlight></codeline>
+<codeline lineno="44" refid="classtld_1_1_foreground_detector_1a03accab9e786b8dcb6c332424ed5dee0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::Mat<sp/><ref refid="classtld_1_1_foreground_detector_1a03accab9e786b8dcb6c332424ed5dee0" kindref="member">bgImg</ref>;</highlight></codeline>
+<codeline lineno="45" refid="classtld_1_1_foreground_detector_1a01d0c37f4019847febbea0f9a121b49b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_detection_result" kindref="compound">DetectionResult</ref><sp/>*<ref refid="classtld_1_1_foreground_detector_1a01d0c37f4019847febbea0f9a121b49b" kindref="member">detectionResult</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_foreground_detector_1afb086f8195e7358d8afb7c24194fc131" kindref="member">ForegroundDetector</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_foreground_detector_1ade0fb08c42a39ce8a2482b2bacea8c02" kindref="member">~ForegroundDetector</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_foreground_detector_1a0bf609b2ba46774804a929253c225aac" kindref="member">release</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_foreground_detector_1a4f34509fa3a36529a39b911ed7693623" kindref="member">nextIteration</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat<sp/>&amp;img);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_foreground_detector_1abe107144cdd28271253a431cc6a22392" kindref="member">isActive</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>tld<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FOREGROUNDDETECTOR_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/ForegroundDetector.h"/>
+  </compounddef>
+</doxygen>

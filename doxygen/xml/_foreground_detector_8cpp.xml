@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="_foreground_detector_8cpp" kind="file">
+    <compoundname>ForegroundDetector.cpp</compoundname>
+    <includes refid="_foreground_detector_8h" local="yes">ForegroundDetector.h</includes>
+    <includes refid="_blob_result_8h" local="yes">BlobResult.h</includes>
+    <incdepgraph>
+      <node id="1561">
+        <label>list</label>
+      </node>
+      <node id="1558">
+        <label>functional</label>
+      </node>
+      <node id="1562">
+        <label>BlobOperators.h</label>
+        <link refid="_blob_operators_8h"/>
+        <childnode refid="1559" relation="include">
+        </childnode>
+      </node>
+      <node id="1557">
+        <label>cxcore.h</label>
+      </node>
+      <node id="1549">
+        <label>src/libopentld/tld/ForegroundDetector.cpp</label>
+        <link refid="ForegroundDetector.cpp"/>
+        <childnode refid="1550" relation="include">
+        </childnode>
+        <childnode refid="1554" relation="include">
+        </childnode>
+      </node>
+      <node id="1555">
+        <label>BlobLibraryConfiguration.h</label>
+        <link refid="_blob_library_configuration_8h"/>
+      </node>
+      <node id="1563">
+        <label>ComponentLabeling.h</label>
+        <link refid="_component_labeling_8h"/>
+        <childnode refid="1551" relation="include">
+        </childnode>
+        <childnode refid="1560" relation="include">
+        </childnode>
+        <childnode refid="1559" relation="include">
+        </childnode>
+      </node>
+      <node id="1560">
+        <label>BlobContour.h</label>
+        <link refid="_blob_contour_8h"/>
+        <childnode refid="1561" relation="include">
+        </childnode>
+        <childnode refid="1552" relation="include">
+        </childnode>
+        <childnode refid="1557" relation="include">
+        </childnode>
+      </node>
+      <node id="1550">
+        <label>ForegroundDetector.h</label>
+        <link refid="_foreground_detector_8h"/>
+        <childnode refid="1551" relation="include">
+        </childnode>
+        <childnode refid="1552" relation="include">
+        </childnode>
+        <childnode refid="1553" relation="include">
+        </childnode>
+      </node>
+      <node id="1551">
+        <label>vector</label>
+      </node>
+      <node id="1552">
+        <label>cv.h</label>
+      </node>
+      <node id="1556">
+        <label>math.h</label>
+      </node>
+      <node id="1554">
+        <label>BlobResult.h</label>
+        <link refid="_blob_result_8h"/>
+        <childnode refid="1555" relation="include">
+        </childnode>
+        <childnode refid="1556" relation="include">
+        </childnode>
+        <childnode refid="1557" relation="include">
+        </childnode>
+        <childnode refid="1551" relation="include">
+        </childnode>
+        <childnode refid="1558" relation="include">
+        </childnode>
+        <childnode refid="1559" relation="include">
+        </childnode>
+        <childnode refid="1562" relation="include">
+        </childnode>
+        <childnode refid="1563" relation="include">
+        </childnode>
+      </node>
+      <node id="1553">
+        <label>DetectionResult.h</label>
+        <link refid="_detection_result_8h"/>
+        <childnode refid="1551" relation="include">
+        </childnode>
+        <childnode refid="1552" relation="include">
+        </childnode>
+      </node>
+      <node id="1559">
+        <label>blob.h</label>
+        <link refid="blob_8h"/>
+        <childnode refid="1557" relation="include">
+        </childnode>
+        <childnode refid="1555" relation="include">
+        </childnode>
+        <childnode refid="1560" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacetld">tld</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/><sp/>Copyright<sp/>2011<sp/>AIT<sp/>Austrian<sp/>Institute<sp/>of<sp/>Technology</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenTLD.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*<sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/><sp/><sp/>OpenTLD<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*<sp/><sp/><sp/>along<sp/>with<sp/>OpenTLD.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>ForegroundDetector.cpp</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Nov<sp/>16,<sp/>2011</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>Georg<sp/>Nebehay</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_foreground_detector_8h" kindref="compound">ForegroundDetector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_blob_result_8h" kindref="compound">BlobResult.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">cv;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">tld</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classtld_1_1_foreground_detector_1afb086f8195e7358d8afb7c24194fc131" refkind="member"><highlight class="normal">ForegroundDetector::ForegroundDetector()</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_foreground_detector_1a317e60e1eb84270f60e818c0cb896416" kindref="member">fgThreshold</ref><sp/>=<sp/>16;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtld_1_1_foreground_detector_1ac274f17680c4551c9b3198e88b5bcd42" kindref="member">minBlobSize</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classtld_1_1_foreground_detector_1ade0fb08c42a39ce8a2482b2bacea8c02" refkind="member"><highlight class="normal"><ref refid="classtld_1_1_foreground_detector_1ade0fb08c42a39ce8a2482b2bacea8c02" kindref="member">ForegroundDetector::~ForegroundDetector</ref>()</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classtld_1_1_foreground_detector_1a0bf609b2ba46774804a929253c225aac" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_foreground_detector_1a0bf609b2ba46774804a929253c225aac" kindref="member">ForegroundDetector::release</ref>()</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_foreground_detector_1a4f34509fa3a36529a39b911ed7693623" kindref="member">ForegroundDetector::nextIteration</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mat<sp/>&amp;img)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classtld_1_1_foreground_detector_1a03accab9e786b8dcb6c332424ed5dee0" kindref="member">bgImg</ref>.empty())</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>Mat<sp/>absImg<sp/>=<sp/>Mat(img.cols,<sp/>img.rows,<sp/>img.type());</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>Mat<sp/>threshImg<sp/>=<sp/>Mat(img.cols,<sp/>img.rows,<sp/>img.type());</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>absdiff(<ref refid="classtld_1_1_foreground_detector_1a03accab9e786b8dcb6c332424ed5dee0" kindref="member">bgImg</ref>,<sp/>img,<sp/>absImg);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>threshold(absImg,<sp/>threshImg,<sp/><ref refid="classtld_1_1_foreground_detector_1a317e60e1eb84270f60e818c0cb896416" kindref="member">fgThreshold</ref>,<sp/>255,<sp/>CV_THRESH_BINARY);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>IplImage<sp/>im<sp/>=<sp/>(IplImage)threshImg;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>CBlobResult<sp/>blobs<sp/>=<sp/>CBlobResult(&amp;im,<sp/><ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>blobs.Filter(blobs,<sp/>B_EXCLUDE,<sp/><ref refid="class_c_blob_get_area" kindref="compound">CBlobGetArea</ref>(),<sp/>B_LESS,<sp/><ref refid="classtld_1_1_foreground_detector_1ac274f17680c4551c9b3198e88b5bcd42" kindref="member">minBlobSize</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Rect&gt;*<sp/>fgList<sp/>=<sp/><ref refid="classtld_1_1_foreground_detector_1a01d0c37f4019847febbea0f9a121b49b" kindref="member">detectionResult</ref>-&gt;fgList;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>fgList-&gt;clear();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>blobs.GetNumBlobs();<sp/>i++)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_blob" kindref="compound" tooltip="Blob class.">CBlob</ref><sp/>*blob<sp/>=<sp/>blobs.GetBlob(i);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvRect<sp/>rect<sp/>=<sp/>blob-&gt;<ref refid="class_c_blob_1a5391167c172eb461eb762fbdd81306de" kindref="member" tooltip="Get bounding box.">GetBoundingBox</ref>();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fgList-&gt;push_back(rect);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classtld_1_1_foreground_detector_1abe107144cdd28271253a431cc6a22392" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtld_1_1_foreground_detector_1abe107144cdd28271253a431cc6a22392" kindref="member">ForegroundDetector::isActive</ref>()</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!<ref refid="classtld_1_1_foreground_detector_1a03accab9e786b8dcb6c332424ed5dee0" kindref="member">bgImg</ref>.empty();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>tld<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/libopentld/tld/ForegroundDetector.cpp"/>
+  </compounddef>
+</doxygen>

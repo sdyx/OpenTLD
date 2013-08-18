@@ -1,0 +1,378 @@
+\hypertarget{_im_acq_8h}{
+\section{src/libopentld/imacq/ImAcq.h File Reference}
+\label{_im_acq_8h}\index{src/libopentld/imacq/ImAcq.h@{src/libopentld/imacq/ImAcq.h}}
+}
+{\ttfamily \#include $<$highgui.h$>$}\par
+Include dependency graph for ImAcq.h:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{_im_acq_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_im_acq_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_im_acq}{ImAcq}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_im_acq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959}{ImacqMethod} \{ \par
+\hyperlink{_im_acq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959aa4ee82d42669445b20f5a7ae43e8707d}{IMACQ\_\-IMGS}, 
+\hyperlink{_im_acq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959a745a2a615a5c4db28edf11ae52cf64fa}{IMACQ\_\-CAM}, 
+\hyperlink{_im_acq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959ad1eefb7dbceaeefceacd799645c0693d}{IMACQ\_\-VID}, 
+\hyperlink{_im_acq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959a398473240a6805610efe8a8e7ff80640}{IMACQ\_\-LIVESIM}, 
+\par
+\hyperlink{_im_acq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959a3751056006d266c090ed230dbfd082f5}{IMACQ\_\-STREAM}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_im_acq}{ImAcq} $\ast$ \hyperlink{_im_acq_8h_a92fb66a856dbc776d02d3f39e2373679}{imAcqAlloc} ()
+\item 
+void \hyperlink{_im_acq_8h_a9d45e2a76bf8d7db08e938dd16383f10}{imAcqInit} (\hyperlink{struct_im_acq}{ImAcq} $\ast$imAcq)
+\item 
+void \hyperlink{_im_acq_8h_a6092ef2b2b5f8a414d67f192a7dfbccc}{imAcqRelease} (\hyperlink{struct_im_acq}{ImAcq} $\ast$imAcq)
+\item 
+int \hyperlink{_im_acq_8h_a443b3a926d4435ab46a37f483138681b}{imAcqVidGetNumberOfFrames} (\hyperlink{struct_im_acq}{ImAcq} $\ast$imAcq)
+\item 
+int \hyperlink{_im_acq_8h_a864124578948857087e2ba9021351e80}{imAcqHasMoreFrames} (\hyperlink{struct_im_acq}{ImAcq} $\ast$imAcq)
+\item 
+IplImage $\ast$ \hyperlink{_im_acq_8h_aa2d578629cc485cf191adede101d032f}{imAcqGetImg} (\hyperlink{struct_im_acq}{ImAcq} $\ast$imAcq)
+\item 
+IplImage $\ast$ \hyperlink{_im_acq_8h_adad11684c86a1fcdbb6f736878bba8cc}{imAcqGetImgByCurrentTime} (\hyperlink{struct_im_acq}{ImAcq} $\ast$imAcq)
+\item 
+IplImage $\ast$ \hyperlink{_im_acq_8h_a302e2a11dfe69f3925807ae0ff9cb2ec}{imAcqLoadCurrentFrame} (\hyperlink{struct_im_acq}{ImAcq} $\ast$imAcq)
+\item 
+IplImage $\ast$ \hyperlink{_im_acq_8h_a5c97842aa89ab53c3a600b6710d7a793}{imAcqLoadVidFrame} (CvCapture $\ast$capture)
+\item 
+IplImage $\ast$ \hyperlink{_im_acq_8h_affd4242000946f8dcf68beed336cb540}{imAcqGrab} (CvCapture $\ast$capture)
+\item 
+void \hyperlink{_im_acq_8h_a8f0d4ea2207021c8b2f9884edcb50fee}{imAcqAdvance} (\hyperlink{struct_im_acq}{ImAcq} $\ast$imAcq)
+\item 
+void \hyperlink{_im_acq_8h_a03fcfd168e7e1542fdf4274118443c18}{imAcqFree} (\hyperlink{struct_im_acq}{ImAcq} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{_im_acq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959}{
+\index{ImAcq.h@{ImAcq.h}!ImacqMethod@{ImacqMethod}}
+\index{ImacqMethod@{ImacqMethod}!ImAcq.h@{ImAcq.h}}
+\subsubsection[{ImacqMethod}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf ImacqMethod}}}
+\label{_im_acq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959}
+Capturing method \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{IMACQ\_\-IMGS@{IMACQ\_\-IMGS}!ImAcq.h@{ImAcq.h}}\index{ImAcq.h@{ImAcq.h}!IMACQ\_\-IMGS@{IMACQ\_\-IMGS}}\item[{\em 
+\hypertarget{_im_acq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959aa4ee82d42669445b20f5a7ae43e8707d}{
+IMACQ\_\-IMGS}
+\label{_im_acq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959aa4ee82d42669445b20f5a7ae43e8707d}
+}]Images. \index{IMACQ\_\-CAM@{IMACQ\_\-CAM}!ImAcq.h@{ImAcq.h}}\index{ImAcq.h@{ImAcq.h}!IMACQ\_\-CAM@{IMACQ\_\-CAM}}\item[{\em 
+\hypertarget{_im_acq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959a745a2a615a5c4db28edf11ae52cf64fa}{
+IMACQ\_\-CAM}
+\label{_im_acq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959a745a2a615a5c4db28edf11ae52cf64fa}
+}]Camera. \index{IMACQ\_\-VID@{IMACQ\_\-VID}!ImAcq.h@{ImAcq.h}}\index{ImAcq.h@{ImAcq.h}!IMACQ\_\-VID@{IMACQ\_\-VID}}\item[{\em 
+\hypertarget{_im_acq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959ad1eefb7dbceaeefceacd799645c0693d}{
+IMACQ\_\-VID}
+\label{_im_acq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959ad1eefb7dbceaeefceacd799645c0693d}
+}]Video. \index{IMACQ\_\-LIVESIM@{IMACQ\_\-LIVESIM}!ImAcq.h@{ImAcq.h}}\index{ImAcq.h@{ImAcq.h}!IMACQ\_\-LIVESIM@{IMACQ\_\-LIVESIM}}\item[{\em 
+\hypertarget{_im_acq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959a398473240a6805610efe8a8e7ff80640}{
+IMACQ\_\-LIVESIM}
+\label{_im_acq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959a398473240a6805610efe8a8e7ff80640}
+}]Livesim. \index{IMACQ\_\-STREAM@{IMACQ\_\-STREAM}!ImAcq.h@{ImAcq.h}}\index{ImAcq.h@{ImAcq.h}!IMACQ\_\-STREAM@{IMACQ\_\-STREAM}}\item[{\em 
+\hypertarget{_im_acq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959a3751056006d266c090ed230dbfd082f5}{
+IMACQ\_\-STREAM}
+\label{_im_acq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959a3751056006d266c090ed230dbfd082f5}
+}]Stream. \end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_im_acq_8h_a8f0d4ea2207021c8b2f9884edcb50fee}{
+\index{ImAcq.h@{ImAcq.h}!imAcqAdvance@{imAcqAdvance}}
+\index{imAcqAdvance@{imAcqAdvance}!ImAcq.h@{ImAcq.h}}
+\subsubsection[{imAcqAdvance}]{\setlength{\rightskip}{0pt plus 5cm}void imAcqAdvance (
+\begin{DoxyParamCaption}
+\item[{{\bf ImAcq} $\ast$}]{ imAcq}
+\end{DoxyParamCaption}
+)}}
+\label{_im_acq_8h_a8f0d4ea2207021c8b2f9884edcb50fee}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_im_acq_8h_a8f0d4ea2207021c8b2f9884edcb50fee_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_im_acq_8h_a92fb66a856dbc776d02d3f39e2373679}{
+\index{ImAcq.h@{ImAcq.h}!imAcqAlloc@{imAcqAlloc}}
+\index{imAcqAlloc@{imAcqAlloc}!ImAcq.h@{ImAcq.h}}
+\subsubsection[{imAcqAlloc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ImAcq}$\ast$ imAcqAlloc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{_im_acq_8h_a92fb66a856dbc776d02d3f39e2373679}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{_im_acq_8h_a92fb66a856dbc776d02d3f39e2373679_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_im_acq_8h_a03fcfd168e7e1542fdf4274118443c18}{
+\index{ImAcq.h@{ImAcq.h}!imAcqFree@{imAcqFree}}
+\index{imAcqFree@{imAcqFree}!ImAcq.h@{ImAcq.h}}
+\subsubsection[{imAcqFree}]{\setlength{\rightskip}{0pt plus 5cm}void imAcqFree (
+\begin{DoxyParamCaption}
+\item[{{\bf ImAcq} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}
+\label{_im_acq_8h_a03fcfd168e7e1542fdf4274118443c18}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{_im_acq_8h_a03fcfd168e7e1542fdf4274118443c18_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_im_acq_8h_aa2d578629cc485cf191adede101d032f}{
+\index{ImAcq.h@{ImAcq.h}!imAcqGetImg@{imAcqGetImg}}
+\index{imAcqGetImg@{imAcqGetImg}!ImAcq.h@{ImAcq.h}}
+\subsubsection[{imAcqGetImg}]{\setlength{\rightskip}{0pt plus 5cm}IplImage$\ast$ imAcqGetImg (
+\begin{DoxyParamCaption}
+\item[{{\bf ImAcq} $\ast$}]{ imAcq}
+\end{DoxyParamCaption}
+)}}
+\label{_im_acq_8h_aa2d578629cc485cf191adede101d032f}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_im_acq_8h_aa2d578629cc485cf191adede101d032f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_im_acq_8h_aa2d578629cc485cf191adede101d032f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_im_acq_8h_adad11684c86a1fcdbb6f736878bba8cc}{
+\index{ImAcq.h@{ImAcq.h}!imAcqGetImgByCurrentTime@{imAcqGetImgByCurrentTime}}
+\index{imAcqGetImgByCurrentTime@{imAcqGetImgByCurrentTime}!ImAcq.h@{ImAcq.h}}
+\subsubsection[{imAcqGetImgByCurrentTime}]{\setlength{\rightskip}{0pt plus 5cm}IplImage$\ast$ imAcqGetImgByCurrentTime (
+\begin{DoxyParamCaption}
+\item[{{\bf ImAcq} $\ast$}]{ imAcq}
+\end{DoxyParamCaption}
+)}}
+\label{_im_acq_8h_adad11684c86a1fcdbb6f736878bba8cc}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=370pt]{_im_acq_8h_adad11684c86a1fcdbb6f736878bba8cc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_im_acq_8h_adad11684c86a1fcdbb6f736878bba8cc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_im_acq_8h_affd4242000946f8dcf68beed336cb540}{
+\index{ImAcq.h@{ImAcq.h}!imAcqGrab@{imAcqGrab}}
+\index{imAcqGrab@{imAcqGrab}!ImAcq.h@{ImAcq.h}}
+\subsubsection[{imAcqGrab}]{\setlength{\rightskip}{0pt plus 5cm}IplImage$\ast$ imAcqGrab (
+\begin{DoxyParamCaption}
+\item[{CvCapture $\ast$}]{ capture}
+\end{DoxyParamCaption}
+)}}
+\label{_im_acq_8h_affd4242000946f8dcf68beed336cb540}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_im_acq_8h_affd4242000946f8dcf68beed336cb540_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_im_acq_8h_a864124578948857087e2ba9021351e80}{
+\index{ImAcq.h@{ImAcq.h}!imAcqHasMoreFrames@{imAcqHasMoreFrames}}
+\index{imAcqHasMoreFrames@{imAcqHasMoreFrames}!ImAcq.h@{ImAcq.h}}
+\subsubsection[{imAcqHasMoreFrames}]{\setlength{\rightskip}{0pt plus 5cm}int imAcqHasMoreFrames (
+\begin{DoxyParamCaption}
+\item[{{\bf ImAcq} $\ast$}]{ imAcq}
+\end{DoxyParamCaption}
+)}}
+\label{_im_acq_8h_a864124578948857087e2ba9021351e80}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_im_acq_8h_a864124578948857087e2ba9021351e80_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_im_acq_8h_a9d45e2a76bf8d7db08e938dd16383f10}{
+\index{ImAcq.h@{ImAcq.h}!imAcqInit@{imAcqInit}}
+\index{imAcqInit@{imAcqInit}!ImAcq.h@{ImAcq.h}}
+\subsubsection[{imAcqInit}]{\setlength{\rightskip}{0pt plus 5cm}void imAcqInit (
+\begin{DoxyParamCaption}
+\item[{{\bf ImAcq} $\ast$}]{ imAcq}
+\end{DoxyParamCaption}
+)}}
+\label{_im_acq_8h_a9d45e2a76bf8d7db08e938dd16383f10}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{_im_acq_8h_a9d45e2a76bf8d7db08e938dd16383f10_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{_im_acq_8h_a9d45e2a76bf8d7db08e938dd16383f10_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_im_acq_8h_a302e2a11dfe69f3925807ae0ff9cb2ec}{
+\index{ImAcq.h@{ImAcq.h}!imAcqLoadCurrentFrame@{imAcqLoadCurrentFrame}}
+\index{imAcqLoadCurrentFrame@{imAcqLoadCurrentFrame}!ImAcq.h@{ImAcq.h}}
+\subsubsection[{imAcqLoadCurrentFrame}]{\setlength{\rightskip}{0pt plus 5cm}IplImage$\ast$ imAcqLoadCurrentFrame (
+\begin{DoxyParamCaption}
+\item[{{\bf ImAcq} $\ast$}]{ imAcq}
+\end{DoxyParamCaption}
+)}}
+\label{_im_acq_8h_a302e2a11dfe69f3925807ae0ff9cb2ec}
+
+
+Here is the call graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=352pt]{_im_acq_8h_a302e2a11dfe69f3925807ae0ff9cb2ec_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_im_acq_8h_a302e2a11dfe69f3925807ae0ff9cb2ec_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_im_acq_8h_a5c97842aa89ab53c3a600b6710d7a793}{
+\index{ImAcq.h@{ImAcq.h}!imAcqLoadVidFrame@{imAcqLoadVidFrame}}
+\index{imAcqLoadVidFrame@{imAcqLoadVidFrame}!ImAcq.h@{ImAcq.h}}
+\subsubsection[{imAcqLoadVidFrame}]{\setlength{\rightskip}{0pt plus 5cm}IplImage$\ast$ imAcqLoadVidFrame (
+\begin{DoxyParamCaption}
+\item[{CvCapture $\ast$}]{ capture}
+\end{DoxyParamCaption}
+)}}
+\label{_im_acq_8h_a5c97842aa89ab53c3a600b6710d7a793}
+\hypertarget{_im_acq_8h_a6092ef2b2b5f8a414d67f192a7dfbccc}{
+\index{ImAcq.h@{ImAcq.h}!imAcqRelease@{imAcqRelease}}
+\index{imAcqRelease@{imAcqRelease}!ImAcq.h@{ImAcq.h}}
+\subsubsection[{imAcqRelease}]{\setlength{\rightskip}{0pt plus 5cm}void imAcqRelease (
+\begin{DoxyParamCaption}
+\item[{{\bf ImAcq} $\ast$}]{ imAcq}
+\end{DoxyParamCaption}
+)}}
+\label{_im_acq_8h_a6092ef2b2b5f8a414d67f192a7dfbccc}
+\hypertarget{_im_acq_8h_a443b3a926d4435ab46a37f483138681b}{
+\index{ImAcq.h@{ImAcq.h}!imAcqVidGetNumberOfFrames@{imAcqVidGetNumberOfFrames}}
+\index{imAcqVidGetNumberOfFrames@{imAcqVidGetNumberOfFrames}!ImAcq.h@{ImAcq.h}}
+\subsubsection[{imAcqVidGetNumberOfFrames}]{\setlength{\rightskip}{0pt plus 5cm}int imAcqVidGetNumberOfFrames (
+\begin{DoxyParamCaption}
+\item[{{\bf ImAcq} $\ast$}]{ imAcq}
+\end{DoxyParamCaption}
+)}}
+\label{_im_acq_8h_a443b3a926d4435ab46a37f483138681b}
+
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_im_acq_8h_a443b3a926d4435ab46a37f483138681b_icgraph}
+\end{center}
+\end{figure}
+
+

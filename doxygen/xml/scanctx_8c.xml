@@ -1,0 +1,472 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="scanctx_8c" kind="file">
+    <compoundname>scanctx.c</compoundname>
+    <includes refid="scanctx_8h" local="yes">scanctx.h</includes>
+    <includes refid="wincompat_8h" local="yes">wincompat.h</includes>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <incdepgraph>
+      <node id="1264">
+        <label>libconfig.h</label>
+        <link refid="libconfig_8h"/>
+        <childnode refid="1265" relation="include">
+        </childnode>
+      </node>
+      <node id="1269">
+        <label>wincompat.h</label>
+        <link refid="wincompat_8h"/>
+      </node>
+      <node id="1271">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1270">
+        <label>stddef.h</label>
+      </node>
+      <node id="1262">
+        <label>src/3rdparty/libconfig/scanctx.c</label>
+        <link refid="scanctx.c"/>
+        <childnode refid="1263" relation="include">
+        </childnode>
+        <childnode refid="1269" relation="include">
+        </childnode>
+        <childnode refid="1270" relation="include">
+        </childnode>
+        <childnode refid="1271" relation="include">
+        </childnode>
+        <childnode refid="1267" relation="include">
+        </childnode>
+      </node>
+      <node id="1263">
+        <label>scanctx.h</label>
+        <link refid="scanctx_8h"/>
+        <childnode refid="1264" relation="include">
+        </childnode>
+        <childnode refid="1266" relation="include">
+        </childnode>
+        <childnode refid="1265" relation="include">
+        </childnode>
+        <childnode refid="1268" relation="include">
+        </childnode>
+      </node>
+      <node id="1268">
+        <label>sys/types.h</label>
+      </node>
+      <node id="1267">
+        <label>string.h</label>
+      </node>
+      <node id="1266">
+        <label>strbuf.h</label>
+        <link refid="strbuf_8h"/>
+        <childnode refid="1267" relation="include">
+        </childnode>
+        <childnode refid="1268" relation="include">
+        </childnode>
+      </node>
+      <node id="1265">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="scanctx_8c_1ad58e8dedb18e631dc57a9f8f623effb9" prot="public" static="no">
+        <name>STRING_BLOCK_SIZE</name>
+        <initializer>64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanctx.c" line="30" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanctx.c" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="scanctx_8c_1aea3cfda4f3a9f978ec759f206cf186fe" prot="public" static="no">
+        <name>CHUNK_SIZE</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanctx.c" line="31" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanctx.c" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="scanctx_8c_1abd1a4e9338d18eae190b44d756f0a8b7" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* err_bad_include</definition>
+        <argsstring></argsstring>
+        <name>err_bad_include</name>
+        <initializer>&quot;cannot open include file&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanctx.c" line="35" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanctx.c" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="scanctx_8c_1af6d67f74a1228092b3c1f1ff1fec74f0" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* err_include_too_deep</definition>
+        <argsstring></argsstring>
+        <name>err_include_too_deep</name>
+        <initializer>&quot;include file nesting too deep&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanctx.c" line="36" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanctx.c" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="scanctx_8c_1a31b7667e42fd1a2dc55f20bd5e33f61f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* __scanctx_add_filename</definition>
+        <argsstring>(struct scan_context *ctx, const char *filename)</argsstring>
+        <name>__scanctx_add_filename</name>
+        <param>
+          <type>struct <ref refid="structscan__context" kindref="compound">scan_context</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanctx.c" line="42" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanctx.c" bodystart="40" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="scanctx_8c_1a71411477cefb2144fa40af836f994bc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void scanctx_init</definition>
+        <argsstring>(struct scan_context *ctx, const char *top_filename)</argsstring>
+        <name>scanctx_init</name>
+        <param>
+          <type>struct <ref refid="structscan__context" kindref="compound">scan_context</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>top_filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanctx.c" line="70" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanctx.c" bodystart="69" bodyend="74"/>
+        <references refid="structscan__context_1ae3db7eaa46cd30631e3f154bdc514feb" compoundref="scanctx_8h" startline="37">scan_context::top_filename</references>
+      </memberdef>
+      <memberdef kind="function" id="scanctx_8c_1a14a602e9acf5d8b5b1bb527082a84f19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char **</type>
+        <definition>const char** scanctx_cleanup</definition>
+        <argsstring>(struct scan_context *ctx, unsigned int *num_filenames)</argsstring>
+        <name>scanctx_cleanup</name>
+        <param>
+          <type>struct <ref refid="structscan__context" kindref="compound">scan_context</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>num_filenames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanctx.c" line="80" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanctx.c" bodystart="78" bodyend="90"/>
+        <references refid="structscan__context_1aad7af2747860597a923bdd8cca07bd83" compoundref="scanctx_8h" startline="41">scan_context::depth</references>
+        <references refid="structscan__context_1a772a7e1bd1d4c20a03393667835557c8" compoundref="scanctx_8h" startline="43">scan_context::filenames</references>
+        <references refid="structscan__context_1a62c81b43eb67d92788088d4835aa4d04" compoundref="scanctx_8h" startline="44">scan_context::num_filenames</references>
+        <references refid="strbuf_8c_1afd2cb5519e41bc819733aae836c7a0f3" compoundref="strbuf_8c" startline="32" endline="37">strbuf_release</references>
+        <references refid="structscan__context_1a42b7e86466be147d557499f45d47cfb9" compoundref="scanctx_8h" startline="40">scan_context::streams</references>
+        <references refid="structscan__context_1aa23d5c633b40966b509c91068b72fc47" compoundref="scanctx_8h" startline="42">scan_context::string</references>
+      </memberdef>
+      <memberdef kind="function" id="scanctx_8c_1af28664df4b16ade27bd69da00f9cb292" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FILE *</type>
+        <definition>FILE* scanctx_push_include</definition>
+        <argsstring>(struct scan_context *ctx, void *buffer, const char **error)</argsstring>
+        <name>scanctx_push_include</name>
+        <param>
+          <type>struct <ref refid="structscan__context" kindref="compound">scan_context</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const char **</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanctx.c" line="96" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanctx.c" bodystart="94" bodyend="136"/>
+        <references refid="structscan__context_1a49a22b83cacfde03f8f3ac70784ef202" compoundref="scanctx_8h" startline="39">scan_context::buffers</references>
+        <references refid="structscan__context_1a535f3ae7e1140baf91f736e833192147" compoundref="scanctx_8h" startline="36">scan_context::config</references>
+        <references refid="structscan__context_1aad7af2747860597a923bdd8cca07bd83" compoundref="scanctx_8h" startline="41">scan_context::depth</references>
+        <references refid="wincompat_8h_1a2ff80281d1896ad6e969b11d60c6c19d" compoundref="wincompat_8h" startline="65">FILE_SEPARATOR</references>
+        <references refid="structscan__context_1a2b37e18ccf435f4a0d302dd3e01c9b12" compoundref="scanctx_8h" startline="38">scan_context::files</references>
+        <references refid="structconfig__t_1a4cfbc200fe5186e02b39a81d6d9171fc" compoundref="libconfig_8h" startline="108">config_t::include_dir</references>
+        <references refid="scanctx_8h_1a641f7209d924c2c4cb24420dcd631f37" compoundref="scanctx_8h" startline="32">MAX_INCLUDE_DEPTH</references>
+        <references refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="_config_8cpp" startline="497">NULL</references>
+        <references refid="scanctx_8c_1a8865cbf5960e1a551474e363f459083b" compoundref="scanctx_8c" startline="156" endline="161">scanctx_take_string</references>
+        <references refid="structscan__context_1a42b7e86466be147d557499f45d47cfb9" compoundref="scanctx_8h" startline="40">scan_context::streams</references>
+      </memberdef>
+      <memberdef kind="function" id="scanctx_8c_1a101e8ed9a1d768c5b70697f6ff14fca3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* scanctx_pop_include</definition>
+        <argsstring>(struct scan_context *ctx)</argsstring>
+        <name>scanctx_pop_include</name>
+        <param>
+          <type>struct <ref refid="structscan__context" kindref="compound">scan_context</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanctx.c" line="141" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanctx.c" bodystart="140" bodyend="152"/>
+        <references refid="structscan__context_1a49a22b83cacfde03f8f3ac70784ef202" compoundref="scanctx_8h" startline="39">scan_context::buffers</references>
+        <references refid="structscan__context_1aad7af2747860597a923bdd8cca07bd83" compoundref="scanctx_8h" startline="41">scan_context::depth</references>
+        <references refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="_config_8cpp" startline="497">NULL</references>
+        <references refid="structscan__context_1a42b7e86466be147d557499f45d47cfb9" compoundref="scanctx_8h" startline="40">scan_context::streams</references>
+      </memberdef>
+      <memberdef kind="function" id="scanctx_8c_1a8865cbf5960e1a551474e363f459083b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* scanctx_take_string</definition>
+        <argsstring>(struct scan_context *ctx)</argsstring>
+        <name>scanctx_take_string</name>
+        <param>
+          <type>struct <ref refid="structscan__context" kindref="compound">scan_context</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanctx.c" line="157" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanctx.c" bodystart="156" bodyend="161"/>
+        <references refid="strbuf_8c_1afd2cb5519e41bc819733aae836c7a0f3" compoundref="strbuf_8c" startline="32" endline="37">strbuf_release</references>
+        <references refid="structscan__context_1aa23d5c633b40966b509c91068b72fc47" compoundref="scanctx_8h" startline="42">scan_context::string</references>
+        <referencedby refid="scanctx_8h_1a7f822b7d87edd355a54135b238e107b3" compoundref="scanctx_8c" startline="94" endline="136">scanctx_push_include</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="scanctx_8c_1abb4cccee04b8644306427be8df2978d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* scanctx_current_filename</definition>
+        <argsstring>(struct scan_context *ctx)</argsstring>
+        <name>scanctx_current_filename</name>
+        <param>
+          <type>struct <ref refid="structscan__context" kindref="compound">scan_context</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanctx.c" line="166" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanctx.c" bodystart="165" bodyend="168"/>
+        <references refid="structscan__context_1aad7af2747860597a923bdd8cca07bd83" compoundref="scanctx_8h" startline="41">scan_context::depth</references>
+        <references refid="structscan__context_1a2b37e18ccf435f4a0d302dd3e01c9b12" compoundref="scanctx_8h" startline="38">scan_context::files</references>
+        <references refid="structscan__context_1ae3db7eaa46cd30631e3f154bdc514feb" compoundref="scanctx_8h" startline="37">scan_context::top_filename</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/>libconfig<sp/>-<sp/>A<sp/>library<sp/>for<sp/>processing<sp/>structured<sp/>configuration<sp/>files</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2005-2010<sp/><sp/>Mark<sp/>A<sp/>Lindner</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>libconfig.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/>This<sp/>library<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2.1<sp/>of</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/>This<sp/>library<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Library<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/>License<sp/>along<sp/>with<sp/>this<sp/>library;<sp/>if<sp/>not,<sp/>see</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/>----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="scanctx_8h" kindref="compound">scanctx.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wincompat_8h" kindref="compound">wincompat.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="scanctx_8c_1ad58e8dedb18e631dc57a9f8f623effb9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STRING_BLOCK_SIZE<sp/>64</highlight></codeline>
+<codeline lineno="31" refid="scanctx_8c_1aea3cfda4f3a9f978ec759f206cf186fe" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CHUNK_SIZE<sp/>32</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>-------------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*err_bad_include<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;cannot<sp/>open<sp/>include<sp/>file&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*err_include_too_deep<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;include<sp/>file<sp/>nesting<sp/>too<sp/>deep&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>-------------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*__scanctx_add_filename(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structscan__context" kindref="compound">scan_context</ref><sp/>*ctx,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count<sp/>=<sp/>ctx-&gt;<ref refid="structscan__context_1a62c81b43eb67d92788088d4835aa4d04" kindref="member">num_filenames</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**f;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(f<sp/>=<sp/>ctx-&gt;<ref refid="structscan__context_1a772a7e1bd1d4c20a03393667835557c8" kindref="member">filenames</ref>;<sp/>count<sp/>&gt;<sp/>0;<sp/>++f,<sp/>--count)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!strcmp(*f,<sp/>filename))</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>free((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)filename);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(*f);<sp/></highlight><highlight class="comment">/*<sp/>already<sp/>in<sp/>list<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((ctx-&gt;<ref refid="structscan__context_1a62c81b43eb67d92788088d4835aa4d04" kindref="member">num_filenames</ref><sp/>%<sp/><ref refid="scanctx_8c_1aea3cfda4f3a9f978ec759f206cf186fe" kindref="member">CHUNK_SIZE</ref>)<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>ctx-&gt;<ref refid="structscan__context_1a772a7e1bd1d4c20a03393667835557c8" kindref="member">filenames</ref><sp/>=<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**)realloc(</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)ctx-&gt;<ref refid="structscan__context_1a772a7e1bd1d4c20a03393667835557c8" kindref="member">filenames</ref>,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>(ctx-&gt;<ref refid="structscan__context_1a62c81b43eb67d92788088d4835aa4d04" kindref="member">num_filenames</ref><sp/>+<sp/>CHUNK_SIZE)<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*));</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>ctx-&gt;<ref refid="structscan__context_1a772a7e1bd1d4c20a03393667835557c8" kindref="member">filenames</ref>[ctx-&gt;<ref refid="structscan__context_1a62c81b43eb67d92788088d4835aa4d04" kindref="member">num_filenames</ref>]<sp/>=<sp/>filename;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>++ctx-&gt;<ref refid="structscan__context_1a62c81b43eb67d92788088d4835aa4d04" kindref="member">num_filenames</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(filename);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>-------------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="scanctx_8h_1a71411477cefb2144fa40af836f994bc7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="scanctx_8c_1a71411477cefb2144fa40af836f994bc7" kindref="member">scanctx_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structscan__context" kindref="compound">scan_context</ref><sp/>*ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*top_filename)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>memset(ctx,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structscan__context" kindref="compound">scan_context</ref>));</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(top_filename)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>ctx-&gt;<ref refid="structscan__context_1ae3db7eaa46cd30631e3f154bdc514feb" kindref="member">top_filename</ref><sp/>=<sp/>__scanctx_add_filename(ctx,<sp/>strdup(top_filename));</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>-------------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="scanctx_8h_1a14a602e9acf5d8b5b1bb527082a84f19" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<ref refid="scanctx_8c_1a14a602e9acf5d8b5b1bb527082a84f19" kindref="member">scanctx_cleanup</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structscan__context" kindref="compound">scan_context</ref><sp/>*ctx,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*num_filenames)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>ctx-&gt;<ref refid="structscan__context_1aad7af2747860597a923bdd8cca07bd83" kindref="member">depth</ref>;<sp/>++i)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>fclose(ctx-&gt;<ref refid="structscan__context_1a42b7e86466be147d557499f45d47cfb9" kindref="member">streams</ref>[i]);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>free((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)(<ref refid="strbuf_8c_1afd2cb5519e41bc819733aae836c7a0f3" kindref="member">strbuf_release</ref>(&amp;(ctx-&gt;<ref refid="structscan__context_1aa23d5c633b40966b509c91068b72fc47" kindref="member">string</ref>))));</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>*num_filenames<sp/>=<sp/>ctx-&gt;<ref refid="structscan__context_1a62c81b43eb67d92788088d4835aa4d04" kindref="member">num_filenames</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(ctx-&gt;<ref refid="structscan__context_1a772a7e1bd1d4c20a03393667835557c8" kindref="member">filenames</ref>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>-------------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="scanctx_8h_1a7f822b7d87edd355a54135b238e107b3" refkind="member"><highlight class="normal">FILE<sp/>*<ref refid="scanctx_8c_1af28664df4b16ade27bd69da00f9cb292" kindref="member">scanctx_push_include</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structscan__context" kindref="compound">scan_context</ref><sp/>*ctx,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buffer,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**error)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>FILE<sp/>*fp<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*full_file<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>*error<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ctx-&gt;<ref refid="structscan__context_1aad7af2747860597a923bdd8cca07bd83" kindref="member">depth</ref><sp/>==<sp/><ref refid="scanctx_8h_1a641f7209d924c2c4cb24420dcd631f37" kindref="member">MAX_INCLUDE_DEPTH</ref>)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>*error<sp/>=<sp/>err_include_too_deep;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>file<sp/>=<sp/><ref refid="scanctx_8c_1a8865cbf5960e1a551474e363f459083b" kindref="member">scanctx_take_string</ref>(ctx);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ctx-&gt;<ref refid="structscan__context_1a535f3ae7e1140baf91f736e833192147" kindref="member">config</ref>-&gt;<ref refid="structconfig__t_1a4cfbc200fe5186e02b39a81d6d9171fc" kindref="member">include_dir</ref>)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>full_file<sp/>=<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*)malloc(strlen(ctx-&gt;<ref refid="structscan__context_1a535f3ae7e1140baf91f736e833192147" kindref="member">config</ref>-&gt;<ref refid="structconfig__t_1a4cfbc200fe5186e02b39a81d6d9171fc" kindref="member">include_dir</ref>)<sp/>+<sp/>strlen(file)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>2);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(full_file,<sp/>ctx-&gt;<ref refid="structscan__context_1a535f3ae7e1140baf91f736e833192147" kindref="member">config</ref>-&gt;<ref refid="structconfig__t_1a4cfbc200fe5186e02b39a81d6d9171fc" kindref="member">include_dir</ref>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>strcat(full_file,<sp/><ref refid="wincompat_8h_1a2ff80281d1896ad6e969b11d60c6c19d" kindref="member">FILE_SEPARATOR</ref>);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>strcat(full_file,<sp/>file);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>fp<sp/>=<sp/>fopen(full_file<sp/>?<sp/>full_file<sp/>:<sp/>file,<sp/></highlight><highlight class="stringliteral">&quot;rt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>free((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)full_file);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(fp)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>ctx-&gt;<ref refid="structscan__context_1a42b7e86466be147d557499f45d47cfb9" kindref="member">streams</ref>[ctx-&gt;<ref refid="structscan__context_1aad7af2747860597a923bdd8cca07bd83" kindref="member">depth</ref>]<sp/>=<sp/>fp;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>ctx-&gt;<ref refid="structscan__context_1a2b37e18ccf435f4a0d302dd3e01c9b12" kindref="member">files</ref>[ctx-&gt;<ref refid="structscan__context_1aad7af2747860597a923bdd8cca07bd83" kindref="member">depth</ref>]<sp/>=<sp/>__scanctx_add_filename(ctx,<sp/>file);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>ctx-&gt;<ref refid="structscan__context_1a49a22b83cacfde03f8f3ac70784ef202" kindref="member">buffers</ref>[ctx-&gt;<ref refid="structscan__context_1aad7af2747860597a923bdd8cca07bd83" kindref="member">depth</ref>]<sp/>=<sp/>buffer;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>++(ctx-&gt;<ref refid="structscan__context_1aad7af2747860597a923bdd8cca07bd83" kindref="member">depth</ref>);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>free((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)file);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>*error<sp/>=<sp/>err_bad_include;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(fp);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>-------------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="scanctx_8h_1a101e8ed9a1d768c5b70697f6ff14fca3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="scanctx_8c_1a101e8ed9a1d768c5b70697f6ff14fca3" kindref="member">scanctx_pop_include</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structscan__context" kindref="compound">scan_context</ref><sp/>*ctx)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buffer;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ctx-&gt;<ref refid="structscan__context_1aad7af2747860597a923bdd8cca07bd83" kindref="member">depth</ref><sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<ref refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);<sp/></highlight><highlight class="comment">/*<sp/>stack<sp/>underflow<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/>--(ctx-&gt;<ref refid="structscan__context_1aad7af2747860597a923bdd8cca07bd83" kindref="member">depth</ref>);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/>buffer<sp/>=<sp/>ctx-&gt;<ref refid="structscan__context_1a49a22b83cacfde03f8f3ac70784ef202" kindref="member">buffers</ref>[ctx-&gt;<ref refid="structscan__context_1aad7af2747860597a923bdd8cca07bd83" kindref="member">depth</ref>];</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>fclose(ctx-&gt;<ref refid="structscan__context_1a42b7e86466be147d557499f45d47cfb9" kindref="member">streams</ref>[ctx-&gt;<ref refid="structscan__context_1aad7af2747860597a923bdd8cca07bd83" kindref="member">depth</ref>]);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(buffer);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>-------------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="scanctx_8h_1a8865cbf5960e1a551474e363f459083b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="scanctx_8c_1a8865cbf5960e1a551474e363f459083b" kindref="member">scanctx_take_string</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structscan__context" kindref="compound">scan_context</ref><sp/>*ctx)</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*r<sp/>=<sp/><ref refid="strbuf_8c_1afd2cb5519e41bc819733aae836c7a0f3" kindref="member">strbuf_release</ref>(&amp;(ctx-&gt;<ref refid="structscan__context_1aa23d5c633b40966b509c91068b72fc47" kindref="member">string</ref>));</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(r<sp/>?<sp/>r<sp/>:<sp/>strdup(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>-------------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="scanctx_8h_1abb4cccee04b8644306427be8df2978d5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="scanctx_8c_1abb4cccee04b8644306427be8df2978d5" kindref="member">scanctx_current_filename</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structscan__context" kindref="compound">scan_context</ref><sp/>*ctx)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">((ctx-&gt;<ref refid="structscan__context_1aad7af2747860597a923bdd8cca07bd83" kindref="member">depth</ref><sp/>==<sp/>0)<sp/>?<sp/>ctx-&gt;<ref refid="structscan__context_1ae3db7eaa46cd30631e3f154bdc514feb" kindref="member">top_filename</ref><sp/>:<sp/>ctx-&gt;<ref refid="structscan__context_1a2b37e18ccf435f4a0d302dd3e01c9b12" kindref="member">files</ref>[ctx-&gt;<ref refid="structscan__context_1aad7af2747860597a923bdd8cca07bd83" kindref="member">depth</ref><sp/>-<sp/>1]);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>-------------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>eof<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/libconfig/scanctx.c"/>
+  </compounddef>
+</doxygen>

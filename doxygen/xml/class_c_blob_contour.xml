@@ -1,0 +1,452 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="class_c_blob_contour" kind="class" prot="public">
+    <compoundname>CBlobContour</compoundname>
+    <includes refid="_blob_contour_8h" local="no">BlobContour.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_c_blob_contour_1ae1a0519c97d58c87882ff9a1462ae464" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class CBlob</definition>
+        <argsstring></argsstring>
+        <name>CBlob</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="25" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_c_blob_contour_1a107dcb6bc234839a49f6a53dde777713" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class CBlobProperties</definition>
+        <argsstring></argsstring>
+        <name>CBlobProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="26" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_c_blob_contour_1a98c36d7be8524da3976fad97b611123e" prot="protected" static="no" mutable="no">
+        <type><ref refid="_blob_contour_8h_1af4605a71deb8fb5bf67011c89418c970" kindref="member">t_chainCodeList</ref></type>
+        <definition>t_chainCodeList CBlobContour::m_contour</definition>
+        <argsstring></argsstring>
+        <name>m_contour</name>
+        <briefdescription>
+<para>Crack code list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="76" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" bodystart="76" bodyend="-1"/>
+        <referencedby refid="class_c_blob_contour_1a5a10813d71e48c52e099001e6581366c" compoundref="_blob_contour_8cpp" startline="99" endline="102">AddChainCode</referencedby>
+        <referencedby refid="class_c_blob_contour_1a4cfb475c4e55945fe13618768bef57c7" compoundref="_blob_contour_8cpp" startline="4" endline="14">CBlobContour</referencedby>
+        <referencedby refid="class_c_blob_contour_1ae783c063f2d89f4d06396b552c92f9a6" compoundref="_blob_contour_8h" startline="43" endline="46">GetChainCode</referencedby>
+        <referencedby refid="class_c_blob_contour_1a245d5e59180619aa9ae4ec14acc18744" compoundref="_blob_contour_8cpp" startline="203" endline="258">GetContourPoints</referencedby>
+        <referencedby refid="class_c_blob_contour_1af4e715a94924d5dc1a0e67cf75818bb5" compoundref="_blob_contour_8h" startline="48" endline="51">IsEmpty</referencedby>
+        <referencedby refid="class_c_blob_1ac97e73d3040530de09a187d02632deb1" compoundref="blob_8cpp" startline="139" endline="142">CBlob::IsEmpty</referencedby>
+        <referencedby refid="class_c_blob_contour_1a9ed6e0471a8d1b7d6c9a1465e539bbd4" compoundref="_blob_contour_8cpp" startline="53" endline="83">operator=</referencedby>
+        <referencedby refid="class_c_blob_1a724e55442a030bf94da856310e324a40" compoundref="blob_8cpp" startline="56" endline="106">CBlob::operator=</referencedby>
+        <referencedby refid="class_c_blob_contour_1a9a9ea170c2100586ca7bdb4227589fe9" compoundref="_blob_contour_8cpp" startline="105" endline="117">ResetChainCode</referencedby>
+        <referencedby refid="class_c_blob_contour_1a24c825e7c0fab7e98237a2db60a7fc7a" compoundref="_blob_contour_8cpp" startline="44" endline="49">~CBlobContour</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_blob_contour_1afe5180a7ce89174ef095d37455c5cab7" prot="private" static="no" mutable="no">
+        <type>CvPoint</type>
+        <definition>CvPoint CBlobContour::m_startPoint</definition>
+        <argsstring></argsstring>
+        <name>m_startPoint</name>
+        <briefdescription>
+<para>Starting point of the contour. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="80" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_contour_1a828a1556bfe21818a83dd9e7ce0f15c8" prot="private" static="no" mutable="no">
+        <type><ref refid="_blob_contour_8h_1abf72b29b2c653dd623e9b39a447809c0" kindref="member">t_PointList</ref></type>
+        <definition>t_PointList CBlobContour::m_contourPoints</definition>
+        <argsstring></argsstring>
+        <name>m_contourPoints</name>
+        <briefdescription>
+<para>All points from the contour. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="82" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_contour_1abb127d27a1cf1b9a670165506ed32c7a" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CBlobContour::m_area</definition>
+        <argsstring></argsstring>
+        <name>m_area</name>
+        <briefdescription>
+<para>Computed area from contour. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="87" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_contour_1a23523e72cfb2f442e3afdc91b6021578" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CBlobContour::m_perimeter</definition>
+        <argsstring></argsstring>
+        <name>m_perimeter</name>
+        <briefdescription>
+<para>Computed perimeter from contour. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="89" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_contour_1acf0822fad2d18208d34b44e507d9ea6f" prot="private" static="no" mutable="no">
+        <type>CvMoments</type>
+        <definition>CvMoments CBlobContour::m_moments</definition>
+        <argsstring></argsstring>
+        <name>m_moments</name>
+        <briefdescription>
+<para>Computed moments from contour. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="91" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_blob_contour_1ac08cef4325eeecfa0b3d7cdab634156a" prot="private" static="no" mutable="no">
+        <type>CvMemStorage *</type>
+        <definition>CvMemStorage* CBlobContour::m_parentStorage</definition>
+        <argsstring></argsstring>
+        <name>m_parentStorage</name>
+        <briefdescription>
+<para>Pointer to storage. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="94" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_blob_contour_1a4cfb475c4e55945fe13618768bef57c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CBlobContour::CBlobContour</definition>
+        <argsstring>()</argsstring>
+        <name>CBlobContour</name>
+        <briefdescription>
+<para>Constructors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="30" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.cpp" bodystart="4" bodyend="14"/>
+        <references refid="class_c_blob_contour_1a98c36d7be8524da3976fad97b611123e" compoundref="_blob_contour_8h" startline="76">m_contour</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_contour_1a66a78de7519f1e8ae7b92bdc30a726cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CBlobContour::CBlobContour</definition>
+        <argsstring>(CvPoint startPoint, CvMemStorage *storage)</argsstring>
+        <name>CBlobContour</name>
+        <param>
+          <type>CvPoint</type>
+          <declname>startPoint</declname>
+        </param>
+        <param>
+          <type>CvMemStorage *</type>
+          <declname>storage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="31" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.cpp" bodystart="15" bodyend="32"/>
+        <references refid="class_c_blob_contour_1a98c36d7be8524da3976fad97b611123e" compoundref="_blob_contour_8h" startline="76">m_contour</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_contour_1a24b82910c8cfb9b0a31a3fb55fd29e28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CBlobContour::CBlobContour</definition>
+        <argsstring>(CBlobContour *source)</argsstring>
+        <name>CBlobContour</name>
+        <param>
+          <type><ref refid="class_c_blob_contour" kindref="compound">CBlobContour</ref> *</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="33" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.cpp" bodystart="36" bodyend="42"/>
+        <references refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="_config_8cpp" startline="497">NULL</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_contour_1a24c825e7c0fab7e98237a2db60a7fc7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CBlobContour::~CBlobContour</definition>
+        <argsstring>()</argsstring>
+        <name>~CBlobContour</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="35" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.cpp" bodystart="44" bodyend="49"/>
+        <references refid="class_c_blob_contour_1a98c36d7be8524da3976fad97b611123e" compoundref="_blob_contour_8h" startline="76">m_contour</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_contour_1a9ed6e0471a8d1b7d6c9a1465e539bbd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_c_blob_contour" kindref="compound">CBlobContour</ref> &amp;</type>
+        <definition>CBlobContour &amp; CBlobContour::operator=</definition>
+        <argsstring>(const CBlobContour &amp;source)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_c_blob_contour" kindref="compound">CBlobContour</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Assigment operator. </para>        </briefdescription>
+        <detaileddescription>
+<para>Copy operator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="37" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.cpp" bodystart="53" bodyend="83"/>
+        <references refid="class_c_blob_contour_1a98c36d7be8524da3976fad97b611123e" compoundref="_blob_contour_8h" startline="76">m_contour</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_contour_1a5a10813d71e48c52e099001e6581366c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CBlobContour::AddChainCode</definition>
+        <argsstring>(t_chainCode code)</argsstring>
+        <name>AddChainCode</name>
+        <param>
+          <type><ref refid="_blob_contour_8h_1a0ccb8765a7971147eaf6cafef4bd3c0e" kindref="member">t_chainCode</ref></type>
+          <declname>code</declname>
+          <defname>chaincode</defname>
+        </param>
+        <briefdescription>
+<para>Add chain code to contour. </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCIÓ: AddChainCode</para></listitem><listitem><para>FUNCIONALITAT: Add chain code to contour</para></listitem><listitem><para>PARÀMETRES:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULTAT:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICCIONS:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>AUTOR: rborras</para></listitem><listitem><para>DATA DE CREACIÓ: 2008/05/06</para></listitem><listitem><para>MODIFICACIÓ: Data. Autor. Descripció. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="40" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.cpp" bodystart="99" bodyend="102"/>
+        <references refid="class_c_blob_contour_1a98c36d7be8524da3976fad97b611123e" compoundref="_blob_contour_8h" startline="76">m_contour</references>
+        <referencedby refid="_component_labeling_8h_1aae4e0baf3210d155e7b07f46212b4031" compoundref="_component_labeling_8cpp" startline="286" endline="349">contourTracing</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_contour_1ae783c063f2d89f4d06396b552c92f9a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_blob_contour_8h_1af4605a71deb8fb5bf67011c89418c970" kindref="member">t_chainCodeList</ref></type>
+        <definition>t_chainCodeList CBlobContour::GetChainCode</definition>
+        <argsstring>()</argsstring>
+        <name>GetChainCode</name>
+        <briefdescription>
+<para>Return freeman chain coded contour. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="44" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" bodystart="43" bodyend="46"/>
+        <references refid="class_c_blob_contour_1a98c36d7be8524da3976fad97b611123e" compoundref="_blob_contour_8h" startline="76">m_contour</references>
+        <referencedby refid="class_c_blob_1a006463cc42ef0e4b8986fa5020cb6f90" compoundref="blob_8cpp" startline="690" endline="706">CBlob::JoinBlob</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_contour_1af4e715a94924d5dc1a0e67cf75818bb5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CBlobContour::IsEmpty</definition>
+        <argsstring>()</argsstring>
+        <name>IsEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="49" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" bodystart="48" bodyend="51"/>
+        <references refid="class_c_blob_contour_1a98c36d7be8524da3976fad97b611123e" compoundref="_blob_contour_8h" startline="76">m_contour</references>
+        <references refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="_config_8cpp" startline="497">NULL</references>
+        <referencedby refid="class_c_blob_contour_1a2c68f462fc31a0e7add9a85b007fa42a" compoundref="_blob_contour_8cpp" startline="163" endline="177">GetArea</referencedby>
+        <referencedby refid="class_c_blob_contour_1a301727633680b38714302593945b748f" compoundref="_blob_contour_8cpp" startline="180" endline="200">GetMoment</referencedby>
+        <referencedby refid="class_c_blob_contour_1a893d57d625bb8f26f4a31ff0b66b8406" compoundref="_blob_contour_8cpp" startline="133" endline="147">GetPerimeter</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_contour_1a245d5e59180619aa9ae4ec14acc18744" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_blob_contour_8h_1af4605a71deb8fb5bf67011c89418c970" kindref="member">t_chainCodeList</ref></type>
+        <definition>t_PointList CBlobContour::GetContourPoints</definition>
+        <argsstring>()</argsstring>
+        <name>GetContourPoints</name>
+        <briefdescription>
+<para>Return all contour points. </para>        </briefdescription>
+        <detaileddescription>
+<para>Calculate contour points from crack codes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="54" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.cpp" bodystart="203" bodyend="258"/>
+        <references refid="class_c_blob_contour_1a98c36d7be8524da3976fad97b611123e" compoundref="_blob_contour_8h" startline="76">m_contour</references>
+        <references refid="_config_8cpp_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="_config_8cpp" startline="497">NULL</references>
+        <referencedby refid="class_c_blob_1ab1501b07a2c5ee23843bac66d20974e2" compoundref="blob_8cpp" startline="246" endline="376">CBlob::ExternPerimeter</referencedby>
+        <referencedby refid="class_c_blob_1a1a12b6dee61d2db86cd3a60c0671382e" compoundref="blob_8cpp" startline="649" endline="652">CBlob::FillBlob</referencedby>
+        <referencedby refid="class_c_blob_contour_1a2c68f462fc31a0e7add9a85b007fa42a" compoundref="_blob_contour_8cpp" startline="163" endline="177">GetArea</referencedby>
+        <referencedby refid="class_c_blob_1a5391167c172eb461eb762fbdd81306de" compoundref="blob_8cpp" startline="488" endline="539">CBlob::GetBoundingBox</referencedby>
+        <referencedby refid="class_c_blob_1aacc50d5d47e0543d4e0a569d05009006" compoundref="blob_8cpp" startline="667" endline="676">CBlob::GetConvexHull</referencedby>
+        <referencedby refid="class_c_blob_contour_1a301727633680b38714302593945b748f" compoundref="_blob_contour_8cpp" startline="180" endline="200">GetMoment</referencedby>
+        <referencedby refid="class_c_blob_contour_1a893d57d625bb8f26f4a31ff0b66b8406" compoundref="_blob_contour_8cpp" startline="133" endline="147">GetPerimeter</referencedby>
+        <referencedby refid="class_c_blob_1a1b12d25f8e470fdd808ac2e3bfe9bad4" compoundref="blob_8cpp" startline="409" endline="460">CBlob::Mean</referencedby>
+        <referencedby refid="class_c_blob_get_x_y_inside_1a5f816b668c59d6f782bea83076ccf96e" compoundref="_blob_operators_8cpp" startline="418" endline="426">CBlobGetXYInside::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_max_yat_min_x_1a107cc7896ca6af559e8410b3c452e80d" compoundref="_blob_operators_8cpp" startline="204" endline="229">CBlobGetMaxYatMinX::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_max_xat_max_y_1a45c075e8968d1078c6b49ea2acbb6d58" compoundref="_blob_operators_8cpp" startline="168" endline="192">CBlobGetMaxXatMaxY::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_min_yat_max_x_1a41bc24b0214b58f979396208296d3dd6" compoundref="_blob_operators_8cpp" startline="133" endline="156">CBlobGetMinYatMaxX::operator()</referencedby>
+        <referencedby refid="class_c_blob_get_min_xat_min_y_1ae2f3ba428e780a826de213726d2a8f35" compoundref="_blob_operators_8cpp" startline="98" endline="121">CBlobGetMinXatMinY::operator()</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_c_blob_contour_1ac8f0fbdce452ede583013e010ce0c8e3" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>CvPoint</type>
+        <definition>CvPoint CBlobContour::GetStartPoint</definition>
+        <argsstring>() const </argsstring>
+        <name>GetStartPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="59" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" bodystart="58" bodyend="61"/>
+        <referencedby refid="class_c_blob_1a724e55442a030bf94da856310e324a40" compoundref="blob_8cpp" startline="56" endline="106">CBlob::operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_contour_1a9a9ea170c2100586ca7bdb4227589fe9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CBlobContour::ResetChainCode</definition>
+        <argsstring>()</argsstring>
+        <name>ResetChainCode</name>
+        <briefdescription>
+<para>Clears chain code contour. </para>        </briefdescription>
+        <detaileddescription>
+<para>Clears chain code contour and points. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="64" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.cpp" bodystart="105" bodyend="117"/>
+        <references refid="class_c_blob_contour_1a98c36d7be8524da3976fad97b611123e" compoundref="_blob_contour_8h" startline="76">m_contour</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_contour_1a2c68f462fc31a0e7add9a85b007fa42a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double CBlobContour::GetArea</definition>
+        <argsstring>()</argsstring>
+        <name>GetArea</name>
+        <briefdescription>
+<para>Computes area from contour. </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCIÓ: GetArea</para></listitem><listitem><para>FUNCIONALITAT: Computes area from chain code</para></listitem><listitem><para>PARÀMETRES:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULTAT:<itemizedlist>
+<listitem><para>May give negative areas for clock wise contours</para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICCIONS:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>AUTOR: rborras</para></listitem><listitem><para>DATA DE CREACIÓ: 2008/04/30</para></listitem><listitem><para>MODIFICACIÓ: Data. Autor. Descripció.</para></listitem><listitem><para>NOTA: Algorithm derived from &quot;Properties of contour codes&quot;, G.R. Wilson </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="69" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.cpp" bodystart="163" bodyend="177"/>
+        <references refid="class_c_blob_contour_1a245d5e59180619aa9ae4ec14acc18744" compoundref="_blob_contour_8cpp" startline="203" endline="258">GetContourPoints</references>
+        <references refid="class_c_blob_contour_1af4e715a94924d5dc1a0e67cf75818bb5" compoundref="_blob_contour_8h" startline="48" endline="51">IsEmpty</references>
+        <referencedby refid="class_c_blob_1a6f1db9fcb42c0a3ea003aaeb0ec65a8d" compoundref="blob_8cpp" startline="157" endline="172">CBlob::Area</referencedby>
+        <referencedby refid="class_c_blob_properties_1abfae07a81bcc204d18c790fc365ad53c" compoundref="_blob_properties_8cpp" startline="34" endline="49">CBlobProperties::GetArea</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_contour_1a893d57d625bb8f26f4a31ff0b66b8406" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double CBlobContour::GetPerimeter</definition>
+        <argsstring>()</argsstring>
+        <name>GetPerimeter</name>
+        <briefdescription>
+<para>Computes perimeter from contour. </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>FUNCIÓ: GetPerimeter</para></listitem><listitem><para>FUNCIONALITAT: Get perimeter from chain code. Diagonals sum sqrt(2) and horizontal and vertical codes 1</para></listitem><listitem><para>PARÀMETRES:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESULTAT:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>RESTRICCIONS:<itemizedlist>
+<listitem><para></para></listitem></itemizedlist>
+</para></listitem><listitem><para>AUTOR: rborras</para></listitem><listitem><para>DATA DE CREACIÓ: 2008/04/30</para></listitem><listitem><para>MODIFICACIÓ: Data. Autor. Descripció.</para></listitem><listitem><para>NOTA: Algorithm derived from &quot;Methods to estimate area and perimeters of blob-like objects: A comparison&quot;, L.Yang </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="71" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.cpp" bodystart="133" bodyend="147"/>
+        <references refid="class_c_blob_contour_1a245d5e59180619aa9ae4ec14acc18744" compoundref="_blob_contour_8cpp" startline="203" endline="258">GetContourPoints</references>
+        <references refid="class_c_blob_contour_1af4e715a94924d5dc1a0e67cf75818bb5" compoundref="_blob_contour_8h" startline="48" endline="51">IsEmpty</references>
+        <referencedby refid="class_c_blob_properties_1a46a968d4567e6aefd9451f4468595f0a" compoundref="_blob_properties_8cpp" startline="64" endline="79">CBlobProperties::GetPerimeter</referencedby>
+        <referencedby refid="class_c_blob_1af63853ea55dbebbee5b013189e765b51" compoundref="blob_8cpp" startline="187" endline="203">CBlob::Perimeter</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_blob_contour_1a301727633680b38714302593945b748f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double CBlobContour::GetMoment</definition>
+        <argsstring>(int p, int q)</argsstring>
+        <name>GetMoment</name>
+        <param>
+          <type>int</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+<para>Get contour moment (p,q up to MAX_CALCULATED_MOMENTS). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="73" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.cpp" bodystart="180" bodyend="200"/>
+        <references refid="class_c_blob_contour_1a245d5e59180619aa9ae4ec14acc18744" compoundref="_blob_contour_8cpp" startline="203" endline="258">GetContourPoints</references>
+        <references refid="class_c_blob_contour_1af4e715a94924d5dc1a0e67cf75818bb5" compoundref="_blob_contour_8h" startline="48" endline="51">IsEmpty</references>
+        <references refid="_blob_contour_8h_1a151d88ca40f6e7d179e1b13ed82488b8" compoundref="_blob_contour_8h" startline="19">MAX_MOMENTS_ORDER</references>
+        <referencedby refid="class_c_blob_1a4f5dfca1ee933e07a39965375f9f07c5" compoundref="blob_8cpp" startline="379" endline="394">CBlob::Moment</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Blob contour class (in crack code). </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" line="24" bodyfile="/home/horst/repos/opentld-sdyx/src/3rdparty/cvblobs/BlobContour.h" bodystart="23" bodyend="95"/>
+    <listofallmembers>
+      <member refid="class_c_blob_contour_1a5a10813d71e48c52e099001e6581366c" prot="public" virt="non-virtual"><scope>CBlobContour</scope><name>AddChainCode</name></member>
+      <member refid="class_c_blob_contour_1ae1a0519c97d58c87882ff9a1462ae464" prot="private" virt="non-virtual"><scope>CBlobContour</scope><name>CBlob</name></member>
+      <member refid="class_c_blob_contour_1a4cfb475c4e55945fe13618768bef57c7" prot="public" virt="non-virtual"><scope>CBlobContour</scope><name>CBlobContour</name></member>
+      <member refid="class_c_blob_contour_1a66a78de7519f1e8ae7b92bdc30a726cc" prot="public" virt="non-virtual"><scope>CBlobContour</scope><name>CBlobContour</name></member>
+      <member refid="class_c_blob_contour_1a24b82910c8cfb9b0a31a3fb55fd29e28" prot="public" virt="non-virtual"><scope>CBlobContour</scope><name>CBlobContour</name></member>
+      <member refid="class_c_blob_contour_1a107dcb6bc234839a49f6a53dde777713" prot="private" virt="non-virtual"><scope>CBlobContour</scope><name>CBlobProperties</name></member>
+      <member refid="class_c_blob_contour_1a2c68f462fc31a0e7add9a85b007fa42a" prot="protected" virt="non-virtual"><scope>CBlobContour</scope><name>GetArea</name></member>
+      <member refid="class_c_blob_contour_1ae783c063f2d89f4d06396b552c92f9a6" prot="public" virt="non-virtual"><scope>CBlobContour</scope><name>GetChainCode</name></member>
+      <member refid="class_c_blob_contour_1a245d5e59180619aa9ae4ec14acc18744" prot="public" virt="non-virtual"><scope>CBlobContour</scope><name>GetContourPoints</name></member>
+      <member refid="class_c_blob_contour_1a301727633680b38714302593945b748f" prot="protected" virt="non-virtual"><scope>CBlobContour</scope><name>GetMoment</name></member>
+      <member refid="class_c_blob_contour_1a893d57d625bb8f26f4a31ff0b66b8406" prot="protected" virt="non-virtual"><scope>CBlobContour</scope><name>GetPerimeter</name></member>
+      <member refid="class_c_blob_contour_1ac8f0fbdce452ede583013e010ce0c8e3" prot="protected" virt="non-virtual"><scope>CBlobContour</scope><name>GetStartPoint</name></member>
+      <member refid="class_c_blob_contour_1af4e715a94924d5dc1a0e67cf75818bb5" prot="public" virt="non-virtual"><scope>CBlobContour</scope><name>IsEmpty</name></member>
+      <member refid="class_c_blob_contour_1abb127d27a1cf1b9a670165506ed32c7a" prot="private" virt="non-virtual"><scope>CBlobContour</scope><name>m_area</name></member>
+      <member refid="class_c_blob_contour_1a98c36d7be8524da3976fad97b611123e" prot="protected" virt="non-virtual"><scope>CBlobContour</scope><name>m_contour</name></member>
+      <member refid="class_c_blob_contour_1a828a1556bfe21818a83dd9e7ce0f15c8" prot="private" virt="non-virtual"><scope>CBlobContour</scope><name>m_contourPoints</name></member>
+      <member refid="class_c_blob_contour_1acf0822fad2d18208d34b44e507d9ea6f" prot="private" virt="non-virtual"><scope>CBlobContour</scope><name>m_moments</name></member>
+      <member refid="class_c_blob_contour_1ac08cef4325eeecfa0b3d7cdab634156a" prot="private" virt="non-virtual"><scope>CBlobContour</scope><name>m_parentStorage</name></member>
+      <member refid="class_c_blob_contour_1a23523e72cfb2f442e3afdc91b6021578" prot="private" virt="non-virtual"><scope>CBlobContour</scope><name>m_perimeter</name></member>
+      <member refid="class_c_blob_contour_1afe5180a7ce89174ef095d37455c5cab7" prot="private" virt="non-virtual"><scope>CBlobContour</scope><name>m_startPoint</name></member>
+      <member refid="class_c_blob_contour_1a9ed6e0471a8d1b7d6c9a1465e539bbd4" prot="public" virt="non-virtual"><scope>CBlobContour</scope><name>operator=</name></member>
+      <member refid="class_c_blob_contour_1a9a9ea170c2100586ca7bdb4227589fe9" prot="protected" virt="non-virtual"><scope>CBlobContour</scope><name>ResetChainCode</name></member>
+      <member refid="class_c_blob_contour_1a24c825e7c0fab7e98237a2db60a7fc7a" prot="public" virt="non-virtual"><scope>CBlobContour</scope><name>~CBlobContour</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

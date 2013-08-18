@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="dir_e24ae0aa4c79a3bafb398aea0a0ab59d" kind="dir">
+    <compoundname>src/3rdparty/</compoundname>
+    <innerdir refid="dir_46d581e813f95d133537014cce45e351">src/3rdparty/cvblobs/</innerdir>
+    <innerdir refid="dir_37e394255f6f704a4ec23b198181062a">src/3rdparty/libconfig/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/horst/repos/opentld-sdyx/src/3rdparty/"/>
+  </compounddef>
+</doxygen>

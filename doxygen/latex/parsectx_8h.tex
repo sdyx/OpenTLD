@@ -1,0 +1,78 @@
+\hypertarget{parsectx_8h}{
+\section{src/3rdparty/libconfig/parsectx.h File Reference}
+\label{parsectx_8h}\index{src/3rdparty/libconfig/parsectx.h@{src/3rdparty/libconfig/parsectx.h}}
+}
+{\ttfamily \#include \char`\"{}libconfig.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}strbuf.h\char`\"{}}\par
+Include dependency graph for parsectx.h:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{parsectx_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{parsectx_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structparse__context}{parse\_\-context}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{parsectx_8h_aef833c188a39409f420bd7c42fcac28b}{parsectx\_\-init}(C)~memset((C), 0, sizeof(struct \hyperlink{structparse__context}{parse\_\-context}))
+\item 
+\#define \hyperlink{parsectx_8h_a6b425cd29c1ffed36ab410829ba1e80d}{parsectx\_\-cleanup}(C)~free((void $\ast$)(strbuf\_\-release(\&((C)-\/$>$string))))
+\item 
+\#define \hyperlink{parsectx_8h_a72f375662e32ee3949db87110b1497c0}{parsectx\_\-append\_\-string}(C, S)~strbuf\_\-append(\&((C)-\/$>$string), (S))
+\item 
+\#define \hyperlink{parsectx_8h_a3afa9b8362d647a4cc7b64bf9bea9a9f}{parsectx\_\-take\_\-string}(C)~strbuf\_\-release(\&((C)-\/$>$string))
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{parsectx_8h_a72f375662e32ee3949db87110b1497c0}{
+\index{parsectx.h@{parsectx.h}!parsectx\_\-append\_\-string@{parsectx\_\-append\_\-string}}
+\index{parsectx\_\-append\_\-string@{parsectx\_\-append\_\-string}!parsectx.h@{parsectx.h}}
+\subsubsection[{parsectx\_\-append\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}\#define parsectx\_\-append\_\-string(
+\begin{DoxyParamCaption}
+\item[{}]{C, }
+\item[{}]{S}
+\end{DoxyParamCaption}
+)~strbuf\_\-append(\&((C)-\/$>$string), (S))}}
+\label{parsectx_8h_a72f375662e32ee3949db87110b1497c0}
+\hypertarget{parsectx_8h_a6b425cd29c1ffed36ab410829ba1e80d}{
+\index{parsectx.h@{parsectx.h}!parsectx\_\-cleanup@{parsectx\_\-cleanup}}
+\index{parsectx\_\-cleanup@{parsectx\_\-cleanup}!parsectx.h@{parsectx.h}}
+\subsubsection[{parsectx\_\-cleanup}]{\setlength{\rightskip}{0pt plus 5cm}\#define parsectx\_\-cleanup(
+\begin{DoxyParamCaption}
+\item[{}]{C}
+\end{DoxyParamCaption}
+)~free((void $\ast$)(strbuf\_\-release(\&((C)-\/$>$string))))}}
+\label{parsectx_8h_a6b425cd29c1ffed36ab410829ba1e80d}
+\hypertarget{parsectx_8h_aef833c188a39409f420bd7c42fcac28b}{
+\index{parsectx.h@{parsectx.h}!parsectx\_\-init@{parsectx\_\-init}}
+\index{parsectx\_\-init@{parsectx\_\-init}!parsectx.h@{parsectx.h}}
+\subsubsection[{parsectx\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}\#define parsectx\_\-init(
+\begin{DoxyParamCaption}
+\item[{}]{C}
+\end{DoxyParamCaption}
+)~memset((C), 0, sizeof(struct {\bf parse\_\-context}))}}
+\label{parsectx_8h_aef833c188a39409f420bd7c42fcac28b}
+\hypertarget{parsectx_8h_a3afa9b8362d647a4cc7b64bf9bea9a9f}{
+\index{parsectx.h@{parsectx.h}!parsectx\_\-take\_\-string@{parsectx\_\-take\_\-string}}
+\index{parsectx\_\-take\_\-string@{parsectx\_\-take\_\-string}!parsectx.h@{parsectx.h}}
+\subsubsection[{parsectx\_\-take\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}\#define parsectx\_\-take\_\-string(
+\begin{DoxyParamCaption}
+\item[{}]{C}
+\end{DoxyParamCaption}
+)~strbuf\_\-release(\&((C)-\/$>$string))}}
+\label{parsectx_8h_a3afa9b8362d647a4cc7b64bf9bea9a9f}
