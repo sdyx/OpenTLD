@@ -68,6 +68,7 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 #-------------------------------------------------------------------------------
 #add subdirectories
 add_subdirectory(src/3rdparty/cvblobs)
+add_subdirectory(src/3rdparty/flandmark)
 
 if(NOT USE_SYSTEM_LIBS)
     add_subdirectory(src/3rdparty/libconfig)
