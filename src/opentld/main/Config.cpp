@@ -94,6 +94,8 @@ int Config::init(int argc, char **argv)
             m_settings.m_startFrame = atoi(optarg);
             m_startFrameSet = true;
             break;
+		// FB: this will be our entry point where we use flandmark to
+		// search for a face and use this as a bb.
         case 'b':
             char *pch;
             pch = strtok(optarg, ",");

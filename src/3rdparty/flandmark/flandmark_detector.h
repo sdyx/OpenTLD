@@ -12,8 +12,16 @@
 #define __FLANDMARK_DETECTOR_H_
 
 #include "msvc-compat.h"
-#include <cv.h>
-#include <cvaux.h>
+//#include <cv.h>
+//#include <cvaux.h>
+
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/video/video.hpp>
+#include <opencv2/objdetect/objdetect.hpp>
+#include <opencv2/video/tracking.hpp>
+#include "opencv2/core/core.hpp"
+
 
 // index row-order matrices
 #define INDEX(ROW, COL, NUM_ROWS) ((COL)*(NUM_ROWS)+(ROW))

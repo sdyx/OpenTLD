@@ -16,6 +16,13 @@
 #include "liblbp.h"
 #include "flandmark_detector.h"
 
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/video/video.hpp>
+#include <opencv2/objdetect/objdetect.hpp>
+#include <opencv2/video/tracking.hpp>
+#include "opencv2/core/core.hpp"
+
 void flandmark_write_model(const char* filename, FLANDMARK_Model* model)
 {
 	int * p_int = 0, tsize = -1, tmp_tsize = -1;

@@ -58,7 +58,7 @@ if(APPLE)
 	add_definitions(-DHAVE_XLOCALE_H)
 endif(APPLE)
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fopenmp -fPIC")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99 -fopenmp -fPIC")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fopenmp -fPIC")
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -lgomp")
 
@@ -66,7 +66,11 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 
 #-------------------------------------------------------------------------------
+#include_directories(src/3rdparty/asef)
+#include_directories(src/3rdparty/cvblobs)
+#include_directories(src/3rdparty/flandmark)
 #add subdirectories
+add_subdirectory(src/3rdparty/asef)
 add_subdirectory(src/3rdparty/cvblobs)
 add_subdirectory(src/3rdparty/flandmark)
 

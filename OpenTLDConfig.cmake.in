@@ -4,6 +4,7 @@ set(bin_dir "@PROJECT_BINARY_DIR@")
 set(src_dir "@PROJECT_SOURCE_DIR@")
 
 set(OPENTLD_INCLUDE_DIRS
+	${src_dir}/src/3rdparty/asef
     ${src_dir}/src/3rdparty/cvblobs
     ${src_dir}/src/3rdparty/libconfig
     ${src_dir}/src/3rdparty/flandmark
@@ -16,4 +17,4 @@ INCLUDE_DIRECTORIES(${OPENTLD_INCLUDE_DIRS})
 SET(OPENTLD_LIB_DIRS ${LIBRARY_OUTPUT_PATH})
 LINK_DIRECTORIES(${OPENTLD_LIB_DIRS})
 
-set(OPENTLD_LIBS cvblobs flandmark libconfig libopentld)
+set(OPENTLD_LIBS asef cvblobs flandmark libconfig libopentld )

@@ -30,10 +30,10 @@ using tld::Config;
 using tld::Gui;
 using tld::Settings;
 
-int main(int argc, char **argv)
+int main( int argc, char **argv )
 {
-
     Main *main = new Main();
+    
     Config config;
     ImAcq *imAcq = imAcqAlloc();
     Gui *gui = new Gui();
@@ -41,18 +41,18 @@ int main(int argc, char **argv)
     main->gui = gui;
     main->imAcq = imAcq;
 
-    if(config.init(argc, argv) == PROGRAM_EXIT)
+    if( config.init( argc, argv ) == PROGRAM_EXIT )
     {
         return EXIT_FAILURE;
     }
 
-    config.configure(main);
+    config.configure( main );
 
-    srand(main->seed);
+    srand( main->seed );
 
-    imAcqInit(imAcq);
+    imAcqInit( imAcq );
 
-    if(main->showOutput)
+    if( main->showOutput )
     {
         gui->init();
     }
@@ -60,6 +60,5 @@ int main(int argc, char **argv)
     main->doWork();
 
     delete main;
-
     return EXIT_SUCCESS;
 }
